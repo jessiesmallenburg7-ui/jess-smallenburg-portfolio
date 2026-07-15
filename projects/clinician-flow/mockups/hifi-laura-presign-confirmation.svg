@@ -1,0 +1,94 @@
+<svg viewBox="36 40 2648.0 1502.0" width="2648.0" height="1502.0" xmlns="http://www.w3.org/2000/svg"><defs><filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6.0" stdDeviation="24.0" flood-color="#1C1C1A" flood-opacity="0.09"/></filter></defs><rect x="0" y="0" width="2720.0" height="1566" rx="0" fill="#F5F5F0" stroke="none" stroke-width="2.0" />
+<rect x="80.0" y="248" width="1820.0" height="68" rx="24" fill="#EDEDE7" stroke="none" stroke-width="2.0" />
+<rect x="80.0" y="292" width="1820.0" height="24" rx="0" fill="#EDEDE7" stroke="none" stroke-width="2.0" />
+<line x1="80.0" y1="316" x2="1900.0" y2="316" stroke="#C4C3BB" stroke-width="2.0"/>
+<circle cx="112.0" cy="282" r="9" fill="#FF5F57"/>
+<circle cx="142.0" cy="282" r="9" fill="#FFBD2E"/>
+<circle cx="172.0" cy="282" r="9" fill="#28C840"/>
+<rect x="218.0" y="272" width="1564.0" height="20" rx="8" fill="#DDDDD5" stroke="none" stroke-width="2.0" />
+<text x="1872.0" y="289" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">app.lumenchart.com/notes/bennett-c/sign</text>
+<rect x="80.0" y="316" width="1820.0" height="124" rx="0" fill="#FFFFFF" stroke="none" stroke-width="2.0" />
+<line x1="80.0" y1="440" x2="1900.0" y2="440" stroke="#E2E1DA" stroke-width="2.0"/>
+<rect x="124" y="352" width="52" height="52" rx="14" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="150" y="388" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:600;">L</text>
+<text x="196" y="388" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.0px;font-weight:500;">Lumen Chart</text>
+<line x1="380" y1="352" x2="380" y2="404" stroke="#E2E1DA" stroke-width="2.0"/>
+<text x="420" y="374" text-anchor="start" fill="#1A3A2C" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.0px;font-weight:700;">Dr. Laura Mitchell</text>
+<rect x="720" y="350" width="132" height="34" rx="17" fill="#EEF7F2" stroke="none" stroke-width="2.0" />
+<text x="786" y="373.51" text-anchor="middle" fill="#157A58" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.6px;font-weight:700;">ATTENDING</text>
+<text x="420" y="406" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:400;">Internal medicine · Ambulatory</text>
+<rect x="988.0" y="348" width="184" height="60" rx="16" fill="#EEF7F2" stroke="#BFE3D2" stroke-width="2.0" />
+<circle cx="1018.0" cy="378" r="6.4" fill="#1D9E75"/>
+<text x="1038.0" y="385" text-anchor="start" fill="#157A58" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:500;">On time</text>
+<rect x="1192.0" y="348" width="216" height="60" rx="16" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="2.0" />
+<text x="1300.0" y="384" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Standard view</text>
+<rect x="1428.0" y="348" width="236" height="60" rx="16" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="2.0" />
+<text x="1546.0" y="384" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">⊕ Flow &amp; notes</text>
+<rect x="1796.0" y="348" width="60" height="60" rx="30" fill="#534AB7" stroke="none" stroke-width="2.0" />
+<text x="1826.0" y="386.05" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">LM</text>
+<circle cx="1726.0" cy="378" r="30" fill="#F5F4EF"/>
+<text x="1726.0" y="387" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:400;">🔔</text>
+<circle cx="1740.0" cy="358" r="8" fill="#E24B4A"/>
+<!-- app-content-fill -->
+<rect x="80.0" y="440" width="1820.0" height="1102" fill="#FFFFFF" stroke="none" stroke-width="2.0" />
+<rect x="80.0" y="248" width="1820.0" height="1294" rx="24" fill="none" stroke="#C4C3BB" stroke-width="2.4" />
+<text x="80" y="106" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:700;letter-spacing:1.6px;">LUMEN CHART · CONCEPTUAL UX PROJECT</text>
+<text x="80" y="160" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:42.0px;font-weight:600;">Dr. Laura Mitchell — Pre-sign Confirmation</text>
+<text x="80" y="200" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:400;">High-fidelity mockup · Attending physician · two-gate safety model</text>
+<text x="124" y="488" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:700;letter-spacing:1.2px;">DOCUMENTATION</text>
+<text x="124" y="528" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:40.0px;font-weight:600;">Confirm &amp; Sign — Bennett, Carol</text>
+<text x="124" y="568" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:400;">9:00 am visit · T2DM · HTN · HLD · All 4 SOAP sections accepted</text>
+<text x="1856.0" y="568" text-anchor="end" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">4 of 4 sections reviewed · 0 of 2 acknowledgments complete</text>
+<rect x="124" y="604" width="1732.0" height="112" rx="18" fill="#FAEEDA" stroke="#E8C96A" stroke-width="2.4" />
+<circle cx="172" cy="660.0" r="26" fill="#EF9F27"/>
+<text x="172" y="669.0" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:700;">⚠</text>
+<text x="224" y="648" text-anchor="start" fill="#8A5A0F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:25.0px;font-weight:600;">Final review before signing</text>
+<text x="224" y="684" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:400;">This note contains AI-assisted content. Signing makes it permanent in the legal medical record.</text>
+<rect x="124" y="744" width="1732.0" height="302" rx="20" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="156" y="786" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:600;">Required acknowledgments</text>
+<rect x="156" y="810" width="1668.0" height="96" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="836.0" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<text x="240" y="865.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.5px;font-weight:400;">I have reviewed all sections and verified this note against the patient's presentation.</text>
+<rect x="156" y="922" width="1668.0" height="96" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="948.0" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<text x="240" y="977.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.5px;font-weight:400;">The orders listed above are accurate and intentional.</text>
+<rect x="124" y="1074" width="1732.0" height="308" rx="20" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="156" y="1114" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:15.0px;font-weight:700;letter-spacing:1.4px;">ELECTRONIC SIGNATURE</text>
+<text x="156" y="1186" text-anchor="start" fill="#2A2A28" style="font-family:Georgia, 'Times New Roman', serif;font-size:44.0px;font-weight:400;font-style:italic;">Laura Mitchell, MD</text>
+<line x1="156" y1="1200" x2="561.636" y2="1200" stroke="#2A2A28" stroke-width="2.2"/>
+<text x="156" y="1238" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Signing as Dr. Laura Mitchell · Internal Medicine · credentials verified</text>
+<rect x="156" y="1266" width="1220" height="88" rx="12" fill="#FBF6EC" stroke="#EFD4A0" stroke-width="1.6" />
+<text x="174" y="1302" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">Signing writes this note permanently to the patient record via FHIR. Signed notes are amendment-only and carry full legal weight —</text>
+<text x="174" y="1328" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">AI-assisted content you sign is your responsibility.</text>
+<rect x="124" y="1410" width="1732.0" height="76" rx="16" fill="#D8D7D0" stroke="none" stroke-width="2.0" />
+<text x="990.0" y="1456.0" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:25.0px;font-weight:500;">🔒  Sign locked — complete both acknowledgments</text>
+<rect x="1960.0" y="248" width="680.0" height="287" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="248" width="6" height="287" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="296" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — TWO-GATE SIGNING</text>
+<text x="1992.0" y="340" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Section-level review (SOAP accept) and note-level signing</text>
+<text x="1992.0" y="373" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">are two separate deliberate gates. Passing the first</text>
+<text x="1992.0" y="406" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">doesn't grant the second — Laura must actively confirm</text>
+<text x="1992.0" y="439" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">intent to sign before the note becomes part of the legal</text>
+<text x="1992.0" y="472" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">record.</text>
+<rect x="1960.0" y="559" width="680.0" height="254" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="559" width="6" height="254" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="607" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — FORCED DELIBERATION</text>
+<text x="1992.0" y="651" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Both acknowledgment checkboxes must be selected</text>
+<text x="1992.0" y="684" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">individually before the sign button unlocks. There is no</text>
+<text x="1992.0" y="717" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">single “I agree to everything” shortcut that could be</text>
+<text x="1992.0" y="750" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">tapped without reading either statement.</text>
+<rect x="1960.0" y="837" width="680.0" height="254" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="837" width="6" height="254" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="885" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — LEGAL WEIGHT OF AI CONTENT</text>
+<text x="1992.0" y="929" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">The legal note names ambient-drafted, AI-assisted</text>
+<text x="1992.0" y="962" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">content directly and states that responsibility for</text>
+<text x="1992.0" y="995" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">anything Laura signs is hers — the warning appears at the</text>
+<text x="1992.0" y="1028" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">exact moment before the action becomes irreversible.</text>
+<rect x="1960.0" y="1115" width="680.0" height="254" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="1115" width="6" height="254" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="1163" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — NO SILENT BULK-ACCEPT</text>
+<text x="1992.0" y="1207" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Unlike accepting SOAP sections, there is no “accept all”</text>
+<text x="1992.0" y="1240" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">shortcut on this screen. Each acknowledgment requires its</text>
+<text x="1992.0" y="1273" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">own deliberate tap, keeping the final gate slower than the</text>
+<text x="1992.0" y="1306" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">drafting review that preceded it.</text>
+</svg>

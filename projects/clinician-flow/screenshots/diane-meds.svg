@@ -1,0 +1,51 @@
+<!-- wireframe-crop -->
+<svg viewBox="24 24 1824.0 1761.0" width="1824.0" height="1761.0" xmlns="http://www.w3.org/2000/svg">
+<rect width="1872.0" height="1809.0" fill="#F5F5F0"/>
+<rect x="50.4" y="183.6" width="1771.2" height="1350.0" rx="10.8" fill="#FCFCFA" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<rect x="50.4" y="183.6" width="1771.2" height="82.8" rx="10.8" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<rect x="50.4" y="241.20000000000002" width="1771.2" height="25.2" rx="0.0" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<line x1="50.4" y1="266.40000000000003" x2="1821.6000000000001" y2="266.40000000000003" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<circle cx="90.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="126.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="162.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<rect x="212.4" y="210.6" width="1141.2" height="28.8" rx="5.4" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<text x="1785.6000000000001" y="234.0" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Medications · Santos, Maria</text>
+<text x="50.4" y="79.2" text-anchor="start" fill="#3F3E3A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;letter-spacing:1.4400000000000002px;">DIANE SANTOS</text>
+<text x="50.4" y="133.20000000000002" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:39.6px;font-weight:600;">Screen 6 — Medication tracker · prior auth (low-fidelity)</text>
+<rect x="97.2" y="316.8" width="1677.6000000000001" height="118.8" rx="5.4" fill="#F1F0EA" stroke="#8B8A82" stroke-width="2.3400000000000003"/>
+<text x="936.0" y="367.2" text-anchor="middle" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:30.6px;font-weight:700;">✓ Maria is doing well</text>
+<text x="936.0" y="403.2" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">No urgent med actions</text>
+<text x="97.2" y="478.8" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Status banner persists across all screens</text>
+<text x="97.2" y="525.6" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Same neutral banner style as the portal home screen — one visual language, not two</text>
+<text x="97.2" y="579.6" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">MEDICATIONS (3)</text>
+<rect x="97.2" y="615.6" width="1677.6000000000001" height="172.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="126.0" y="662.4" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.1px;font-weight:700;">Metformin 1000mg · twice daily</text>
+<text x="1746.0" y="662.4" text-anchor="end" fill="#E24B4A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;">3 days</text>
+<rect x="126.0" y="680.4" width="1620.0" height="14.4" rx="3.6" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<rect x="126.0" y="680.4" width="243.0" height="14.4" rx="3.6" fill="#E24B4A" stroke="none" stroke-width="1.8"/>
+<text x="126.0" y="723.6" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">Dose increased June 24 · pick up today</text>
+<rect x="126.0" y="741.6" width="204.192" height="43.2" rx="10.8" fill="#FAEEDA" stroke="none" stroke-width="1.8"/>
+<text x="140.4" y="770.76" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">dose changed ↑</text>
+<text x="97.2" y="831.6" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Proactive dose-change notification — Diane learns of changes without a phone call</text>
+<rect x="97.2" y="889.2" width="1677.6000000000001" height="118.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="126.0" y="936.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.1px;font-weight:700;">Lisinopril 10mg · once daily</text>
+<text x="1746.0" y="936.0" text-anchor="end" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;">18 days</text>
+<rect x="126.0" y="954.0" width="1620.0" height="14.4" rx="3.6" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<rect x="126.0" y="954.0" width="1166.4" height="14.4" rx="3.6" fill="#8B8A82" stroke="none" stroke-width="1.8"/>
+<text x="126.0" y="997.2" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">Next refill: July 14</text>
+<text x="97.2" y="1051.2" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Only the low-supply medication is colored — healthy refills stay neutral</text>
+<rect x="97.2" y="1108.8" width="1677.6000000000001" height="165.6" rx="5.4" fill="#FFFBF0" stroke="#E8C96A" stroke-width="2.16"/>
+<text x="126.0" y="1155.6000000000001" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.1px;font-weight:700;">Jardiance 10mg · once daily</text>
+<rect x="1562.4" y="1128.6000000000001" width="154.07999999999998" height="43.2" rx="10.8" fill="#FAEEDA" stroke="none" stroke-width="1.8"/>
+<text x="1576.8" y="1157.7600000000002" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">Prior auth</text>
+<text x="126.0" y="1195.2" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">Insurance review in progress · submitted June 23 · estimated approval June 26–27</text>
+<text x="126.0" y="1252.8" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:600;">No action needed — we'll notify you</text>
+<text x="97.2" y="1317.6000000000001" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Prior auth status — single source of truth, no phone calls to pharmacy or office</text>
+<text x="97.2" y="1364.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Amber, not red — pending is expected, not urgent; reserves red for genuine problems</text>
+<rect x="97.2" y="1422.0" width="468.0" height="72.0" rx="5.4" fill="#3F3E3A" stroke="none" stroke-width="1.8"/>
+<text x="331.2" y="1468.8" text-anchor="middle" fill="#F5F4EF" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">Share medication list with Carlos →</text>
+<line x1="50.4" y1="1587.6000000000001" x2="1821.6000000000001" y2="1587.6000000000001" stroke="#B8B7AF" stroke-width="2.3400000000000003"/>
+<text x="50.4" y="1627.2" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:700;letter-spacing:1.4400000000000002px;">PERSONA ANNOTATION</text>
+<text x="50.4" y="1666.8" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">Prior auth status is surfaced directly — ends the phone loop. Dose-change flag answers Diane's question before she even knows</text>
+<text x="50.4" y="1704.6000000000001" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">to ask. Status banner persists.</text>
+</svg>

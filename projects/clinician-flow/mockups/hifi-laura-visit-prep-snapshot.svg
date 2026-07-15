@@ -1,0 +1,191 @@
+<svg viewBox="36 40 2648.0 2264.0" width="2648.0" height="2264.0" xmlns="http://www.w3.org/2000/svg"><defs><filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6.0" stdDeviation="24.0" flood-color="#1C1C1A" flood-opacity="0.09"/></filter></defs><rect x="0" y="0" width="2720.0" height="2328" rx="0" fill="#F5F5F0" stroke="none" stroke-width="2.0" />
+<rect x="80.0" y="248" width="1820.0" height="68" rx="24" fill="#EDEDE7" stroke="none" stroke-width="2.0" />
+<rect x="80.0" y="292" width="1820.0" height="24" rx="0" fill="#EDEDE7" stroke="none" stroke-width="2.0" />
+<line x1="80.0" y1="316" x2="1900.0" y2="316" stroke="#C4C3BB" stroke-width="2.0"/>
+<circle cx="112.0" cy="282" r="9" fill="#FF5F57"/>
+<circle cx="142.0" cy="282" r="9" fill="#FFBD2E"/>
+<circle cx="172.0" cy="282" r="9" fill="#28C840"/>
+<rect x="218.0" y="272" width="1564.0" height="20" rx="8" fill="#DDDDD5" stroke="none" stroke-width="2.0" />
+<text x="1872.0" y="289" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">app.lumenchart.com/visit-prep/bennett-c</text>
+<rect x="80.0" y="316" width="1820.0" height="124" rx="0" fill="#FFFFFF" stroke="none" stroke-width="2.0" />
+<line x1="80.0" y1="440" x2="1900.0" y2="440" stroke="#E2E1DA" stroke-width="2.0"/>
+<rect x="124" y="352" width="52" height="52" rx="14" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="150" y="388" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:600;">L</text>
+<text x="196" y="388" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.0px;font-weight:500;">Lumen Chart</text>
+<line x1="380" y1="352" x2="380" y2="404" stroke="#E2E1DA" stroke-width="2.0"/>
+<text x="420" y="374" text-anchor="start" fill="#1A3A2C" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.0px;font-weight:700;">Dr. Laura Mitchell</text>
+<rect x="720" y="350" width="132" height="34" rx="17" fill="#EEF7F2" stroke="none" stroke-width="2.0" />
+<text x="786" y="373.51" text-anchor="middle" fill="#157A58" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.6px;font-weight:700;">ATTENDING</text>
+<text x="420" y="406" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:400;">Internal medicine · Ambulatory</text>
+<rect x="1796.0" y="348" width="60" height="60" rx="30" fill="#534AB7" stroke="none" stroke-width="2.0" />
+<text x="1826.0" y="386.05" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">LM</text>
+<circle cx="1726.0" cy="378" r="30" fill="#F5F4EF"/>
+<text x="1726.0" y="387" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:400;">🔔</text>
+<circle cx="1740.0" cy="358" r="8" fill="#E24B4A"/>
+<rect x="1424.0" y="348" width="240" height="60" rx="16" fill="#EEEDF8" stroke="#CBC7EC" stroke-width="2.0" />
+<text x="1544.0" y="384" text-anchor="middle" fill="#473e9e" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:500;">Open note →</text>
+<rect x="1180.0" y="348" width="220" height="60" rx="16" fill="#EEF7F2" stroke="#BFE3D2" stroke-width="2.0" />
+<text x="1290.0" y="384" text-anchor="middle" fill="#157A58" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:500;">← Dashboard</text>
+<!-- app-content-fill -->
+<rect x="80.0" y="440" width="1820.0" height="1864" fill="#FFFFFF" stroke="none" stroke-width="2.0" />
+<rect x="80.0" y="248" width="1820.0" height="2056" rx="24" fill="none" stroke="#C4C3BB" stroke-width="2.4" />
+<text x="80" y="106" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:700;letter-spacing:1.6px;">LUMEN CHART · CONCEPTUAL UX PROJECT</text>
+<text x="80" y="160" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:42.0px;font-weight:600;">Dr. Laura Mitchell — AI patient snapshot / visit prep</text>
+<text x="80" y="200" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:400;">High-fidelity mockup · Attending physician · Bennett, Carol · desktop</text>
+<text x="124" y="488" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:700;letter-spacing:1.2px;">AI PATIENT SNAPSHOT</text>
+<text x="124" y="524" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:400;">Thursday, June 26 · 9:00 AM visit · Chronic care follow-up</text>
+<rect x="124" y="552" width="1732.0" height="148" rx="20" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="156" y="580" width="92" height="92" rx="20" fill="#534AB7" stroke="none" stroke-width="2.0" />
+<text x="202" y="642" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:34.0px;font-weight:500;">CB</text>
+<text x="280" y="610" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:34.0px;font-weight:500;">Bennett, Carol</text>
+<rect x="540" y="576.0" width="320" height="44" rx="14" fill="#F0EFEA" stroke="none" stroke-width="2.0" />
+<text x="700.0" y="605" text-anchor="middle" fill="#4A4A46" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:500;">Chronic care follow-up</text>
+<text x="280" y="648" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">67 F · DOB 11/02/1958 · MRN 2238104 · Medicare + Medicaid</text>
+<rect x="928.0" y="592" width="240" height="50" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="930.0" y="594" width="78" height="46" rx="12" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="969.0" y="624" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:600;">EN</text>
+<text x="1046.0" y="624" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:400;">ES</text>
+<text x="1123.0" y="624" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:400;">中文</text>
+<rect x="1208.0" y="592" width="220" height="50" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<text x="1318.0" y="624" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Full chart</text>
+<rect x="1468.0" y="592" width="356" height="50" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<text x="1646.0" y="624" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Open progress note →</text>
+<rect x="124" y="722" width="1732.0" height="84" rx="18" fill="#EAF3FB" stroke="#BBD9F2" stroke-width="2.4" />
+<circle cx="168" cy="764" r="20" fill="#378ADD"/>
+<text x="168" y="772" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:600;">i</text>
+<text x="208" y="760" text-anchor="start" fill="#2A6196" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:500;">AI snapshot · last 6 months · updated 8:54 AM.</text>
+<text x="208" y="790" text-anchor="start" fill="#4A6E92" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Always verify against the full chart before acting.</text>
+<rect x="124" y="834" width="537.0" height="232" rx="18" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="150" y="876" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">Active problems</text>
+<circle cx="157" cy="907.0" r="7" fill="#EF9F27"/>
+<text x="176" y="914.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Type 2 diabetes</text>
+<text x="380" y="914.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">monitoring</text>
+<circle cx="157" cy="951.0" r="7" fill="#E24B4A"/>
+<text x="176" y="958.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Hypertension</text>
+<text x="380" y="958.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">active concern</text>
+<circle cx="157" cy="995.0" r="7" fill="#1D9E75"/>
+<text x="176" y="1002.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Hyperlipidemia</text>
+<text x="380" y="1002.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">controlled</text>
+<rect x="685.0" y="834" width="537.0" height="232" rx="18" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="711.0" y="876" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">Medications</text>
+<text x="711.0" y="914" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Metformin 1000 mg BID</text>
+<rect x="1038.0" y="884" width="158" height="38" rx="12" fill="#FAEEDA" stroke="none" stroke-width="2.0" />
+<text x="1117.0" y="910" text-anchor="middle" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:17.0px;font-weight:500;">refill due</text>
+<text x="711.0" y="958" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Lisinopril 20 mg daily</text>
+<text x="711.0" y="1002" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Atorvastatin 40 mg daily</text>
+<rect x="124" y="1090" width="537.0" height="232" rx="18" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="150" y="1132" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">Labs</text>
+<rect x="134" y="1202.0" width="517.0" height="54.0" rx="6" fill="#F7F6F1" stroke="none" stroke-width="2.0" />
+<text x="150" y="1172.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">HbA1c</text>
+<text x="635.0" y="1172.0" text-anchor="end" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:500;">7.2% ↓</text>
+<text x="635.0" y="1192.0" text-anchor="end" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:16.0px;font-weight:400;">from 7.8%</text>
+<text x="150" y="1236.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">LDL</text>
+<text x="635.0" y="1236.0" text-anchor="end" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:500;">88 mg/dL</text>
+<text x="150" y="1290.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">eGFR</text>
+<text x="635.0" y="1290.0" text-anchor="end" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:500;">64</text>
+<rect x="685.0" y="1090" width="537.0" height="232" rx="18" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="711.0" y="1132" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">Last visit · 03/04</text>
+<text x="711.0" y="1172" text-anchor="start" fill="#4A4A46" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">Routine T2DM follow-up.</text>
+<rect x="703.0" y="1198" width="501.0" height="34" rx="8" fill="#FAEEDA" stroke="none" stroke-width="2.0" />
+<text x="711.0" y="1222" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">Foot exam deferred — patient missed</text>
+<text x="711.0" y="1272" text-anchor="start" fill="#4A4A46" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">BP 146/90.</text>
+<rect x="1254" y="834" width="602.0" height="642" rx="18" fill="#FFFFFF" stroke="#EFD4A0" stroke-width="2.0" />
+<rect x="1254" y="834" width="6" height="642" rx="3" fill="#EF9F27" stroke="none" stroke-width="2.0" />
+<text x="1288" y="876" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:600;">Social drivers of health</text>
+<rect x="1706.0" y="856" width="116" height="38" rx="14" fill="#FAEEDA" stroke="none" stroke-width="2.0" />
+<text x="1764.0" y="881" text-anchor="middle" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:500;">3 active</text>
+<text x="1288" y="910" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.5px;font-weight:400;">Select the actions to take for this visit, then submit —</text>
+<text x="1288" y="932" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.5px;font-weight:400;">nothing is sent until you confirm.</text>
+<rect x="1280" y="946" width="550.0" height="108" rx="14" fill="#FFFFFF" stroke="#EFE2C8" stroke-width="1.6" />
+<rect x="1296" y="984.0" width="32" height="32" rx="8" fill="#1D9E75" stroke="#1D9E75" stroke-width="1.8" />
+<text x="1312.0" y="1006.0" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:700;">✓</text>
+<circle cx="1348" cy="976.0" r="6" fill="#E24B4A"/>
+<text x="1364" y="982.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:500;">Food insecurity</text>
+<rect x="1692.0" y="984.0" width="120" height="32" rx="10" fill="#FBE7E7" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="1006.0" text-anchor="middle" fill="#E24B4A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:16.5px;font-weight:500;">High</text>
+<text x="1364" y="1008.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:400;">Hunger Vital Sign positive (2/2)</text>
+<text x="1364" y="1034.0" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:500;">Refer to community food bank</text>
+<rect x="1280" y="1068" width="550.0" height="108" rx="14" fill="#FFFFFF" stroke="#EFE2C8" stroke-width="1.6" />
+<rect x="1296" y="1106.0" width="32" height="32" rx="8" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<circle cx="1348" cy="1098.0" r="6" fill="#EF9F27"/>
+<text x="1364" y="1104.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:500;">Transportation barrier</text>
+<rect x="1692.0" y="1106.0" width="120" height="32" rx="10" fill="#FAEEDA" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="1128.0" text-anchor="middle" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:16.5px;font-weight:500;">Moderate</text>
+<text x="1364" y="1130.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:400;">2 of 6 visits missed in 12 months</text>
+<text x="1364" y="1156.0" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:500;">Offer telehealth conversion</text>
+<rect x="1280" y="1190" width="550.0" height="108" rx="14" fill="#FFFFFF" stroke="#EFE2C8" stroke-width="1.6" />
+<rect x="1296" y="1228.0" width="32" height="32" rx="8" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<circle cx="1348" cy="1220.0" r="6" fill="#5B93B5"/>
+<text x="1364" y="1226.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:500;">Language preference</text>
+<rect x="1692.0" y="1228.0" width="120" height="32" rx="10" fill="#E7F1F6" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="1250.0" text-anchor="middle" fill="#3A6B8A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:16.5px;font-weight:500;">Note</text>
+<text x="1364" y="1252.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:400;">English preferred for written material</text>
+<text x="1364" y="1278.0" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.0px;font-weight:500;">Confirm English after-visit summary</text>
+<rect x="1280" y="1326" width="550.0" height="56" rx="12" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1555.0" y="1362" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:500;">Submit selected actions</text>
+<rect x="1280" y="1396" width="550.0" height="56" rx="12" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<text x="1555.0" y="1432" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">Re-screen SDOH</text>
+<rect x="124" y="1508" width="1732.0" height="782" rx="20" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="156" y="1554" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:600;">AI-suggested visit agenda</text>
+<text x="1824.0" y="1552" text-anchor="end" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.0px;font-weight:400;">2 of 5 addressed · checks pre-fill the note</text>
+<text x="156" y="1586" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.5px;font-weight:400;">Pulled from overdue screenings and active SDOH flags. Open “Why?” for the guideline source.</text>
+<rect x="156" y="1614" width="1668.0" height="84" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="1632" width="48" height="48" rx="10" fill="#1D9E75" stroke="#1D9E75" stroke-width="1.8" />
+<text x="198" y="1664" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:700;">✓</text>
+<text x="242" y="1666" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;" text-decoration="line-through">Repeat HbA1c in 3 months (now 7.2%)</text>
+<rect x="1704.0" y="1628.0" width="96" height="56" rx="10" fill="#EEEDF8" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="1663.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:500;">Why?</text>
+<rect x="156" y="1712" width="1668.0" height="160" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="1730" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<text x="242" y="1764" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Diabetic foot exam — overdue since last visit</text>
+<rect x="1704.0" y="1726.0" width="96" height="56" rx="10" fill="#EEEDF8" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="1761.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:500;">Why?</text>
+<rect x="174" y="1814" width="150" height="32" rx="8" fill="#EEEDF8" stroke="none" stroke-width="2.0" />
+<text x="249" y="1836.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:17.0px;font-weight:600;">ADA / USPSTF</text>
+<text x="340" y="1836.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:400;">Annual comprehensive foot exam for all T2DM patients; deferred at 03/04 visit.</text>
+<rect x="156" y="1886" width="1668.0" height="84" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="1904" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<text x="242" y="1938" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Address BP 146/90 — adjust antihypertensive</text>
+<rect x="1704.0" y="1900.0" width="96" height="56" rx="10" fill="#EEEDF8" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="1935.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:500;">Why?</text>
+<rect x="156" y="1984" width="1668.0" height="84" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="2002" width="48" height="48" rx="10" fill="#1D9E75" stroke="#1D9E75" stroke-width="1.8" />
+<text x="198" y="2034" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:700;">✓</text>
+<text x="242" y="2036" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;" text-decoration="line-through">Food bank referral (food insecurity, High)</text>
+<rect x="1704.0" y="1998.0" width="96" height="56" rx="10" fill="#EEEDF8" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="2033.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:500;">Why?</text>
+<rect x="156" y="2082" width="1668.0" height="84" rx="14" fill="#FFFFFF" stroke="#E2E1DA" stroke-width="1.6" />
+<rect x="174" y="2100" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8" />
+<text x="242" y="2134" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Statin adherence review (LDL 88)</text>
+<rect x="1704.0" y="2096.0" width="96" height="56" rx="10" fill="#EEEDF8" stroke="none" stroke-width="2.0" />
+<text x="1752.0" y="2131.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:500;">Why?</text>
+<rect x="156" y="2190" width="1668.0" height="68" rx="14" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="990.0" y="2234" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:500;">●  Start visit + enable ambient capture</text>
+<rect x="1960.0" y="248" width="680.0" height="254" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="248" width="6" height="254" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="296" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — SINGLE-SCREEN PRE-VISIT BRIEF</text>
+<text x="1992.0" y="340" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Problems, medications, labs, SDOH, and a suggested visit</text>
+<text x="1992.0" y="373" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">agenda all live on one screen so Laura can prepare for</text>
+<text x="1992.0" y="406" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Carol's visit in under a minute, instead of opening four</text>
+<text x="1992.0" y="439" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">different chart tabs.</text>
+<rect x="1960.0" y="526" width="680.0" height="254" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="526" width="6" height="254" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="574" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — SDOH REQUIRES EXPLICIT SUBMIT</text>
+<text x="1992.0" y="618" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Social risk factors are pre-flagged by AI, but nothing is</text>
+<text x="1992.0" y="651" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">referred, offered, or logged until Laura reviews the list</text>
+<text x="1992.0" y="684" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">and taps submit — there are no silent automated actions on</text>
+<text x="1992.0" y="717" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">a patient's behalf.</text>
+<rect x="1960.0" y="804" width="680.0" height="254" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="804" width="6" height="254" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="852" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — EVERY AGENDA ITEM CITES A SOURCE</text>
+<text x="1992.0" y="896" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Each suggested agenda item links to the specific guideline</text>
+<text x="1992.0" y="929" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">— ADA, USPSTF, or CMS — that generated it, so Laura can</text>
+<text x="1992.0" y="962" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">verify the recommendation instead of trusting the AI</text>
+<text x="1992.0" y="995" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">blindly.</text>
+<rect x="1960.0" y="1082" width="680.0" height="221" rx="24" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="1960.0" y="1082" width="6" height="221" rx="3" fill="#1D9E75" stroke="none" stroke-width="2.0" />
+<text x="1992.0" y="1130" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — CONSENT IS PART OF THE CTA</text>
+<text x="1992.0" y="1174" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">The primary action states plainly that starting the visit</text>
+<text x="1992.0" y="1207" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">also enables ambient listening, so consent to record is</text>
+<text x="1992.0" y="1240" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">never buried in a separate settings toggle.</text>
+</svg>

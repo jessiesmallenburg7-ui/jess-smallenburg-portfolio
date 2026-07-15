@@ -1,0 +1,196 @@
+/* Path Compass journey map viewer */
+.tt-journeys {
+  --tt-ink: #1f3330;
+  --tt-paper: #edeee7;
+  --tt-surface: #ffffff;
+  --tt-rose: #5c7a8a;
+  --tt-amber: #b98a3e;
+  --tt-line: #dad9ce;
+  --tt-muted: #5c6963;
+
+  margin-top: 1.5rem;
+  background: var(--tt-paper);
+  color: var(--tt-ink);
+  border-radius: 24px;
+  font-family: "Lato", -apple-system, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.tt-journeys-controls {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--tt-line);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tt-journeys .control-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tt-muted);
+  margin: 0 0 8px;
+}
+
+.tt-journeys .tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: var(--tt-surface);
+  padding: 5px;
+  border-radius: 999px;
+  border: 1px solid var(--tt-line);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.tt-journeys .tab {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--tt-muted);
+  transition: background 0.2s ease, color 0.2s ease;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.tt-journeys .tab:focus-visible {
+  outline: 2px solid var(--tt-ink);
+  outline-offset: 2px;
+}
+
+.tt-journeys .tab[aria-selected="true"] {
+  background: var(--tt-ink);
+  color: var(--tt-surface);
+}
+
+.tt-journeys .tab-role {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-top: 1px;
+}
+
+.tt-journeys .tablist--state .tab {
+  padding: 9px 18px;
+  font-size: 13px;
+}
+
+.tt-journeys-viewer {
+  padding: 16px;
+}
+
+.tt-journeys .user-flow-figure {
+  margin-top: 0;
+}
+
+.tt-journeys .diagram-expand-btn {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
+}
+
+.tt-journeys .diagram-expand-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .tt-journeys .diagram-expand-btn {
+    display: flex;
+  }
+}
+
+.tt-journeys-hint {
+  margin: 12px 4px 0;
+  font-size: 13px;
+  color: var(--tt-muted);
+  line-height: 1.5;
+}
+
+.tt-journeys-meta {
+  margin: 14px 4px 4px;
+  font-size: 14.5px;
+  color: var(--tt-ink);
+  max-width: 70ch;
+}
+
+.tt-journeys-meta strong {
+  font-family: "Cormorant", serif;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .tt-journeys-controls,
+  .tt-journeys-viewer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .tt-journeys .tab {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .tt-journeys .tablist {
+    width: 100%;
+  }
+
+  .tt-journeys .tablist .tab {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+.tt-journeys .diagram-zoom-stage > svg.journey-map-svg,
+.tt-journeys .diagram-zoom-stage > svg.diagram-zoom-content,
+.wireframe-lightbox .diagram-zoom-stage > svg.diagram-zoom-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Inline SVG has no intrinsic width like <img>; stretch the lightbox stage full-width.
+   Must override .wireframe-lightbox-body items-center + default row flex. */
+.wireframe-lightbox-body.wireframe-lightbox-body--diagram-zoom {
+  display: flex;
+  width: 100%;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0;
+  min-height: 0;
+}
+
+.wireframe-lightbox-body.wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport--lightbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+}

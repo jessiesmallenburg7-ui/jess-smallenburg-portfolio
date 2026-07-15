@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact — Jessie Smallenburg</title>
+    <meta name="description" content="Get in touch with Jessie Smallenburg about healthcare UX research and design.">
+  <link rel="canonical" href="https://www.jessamynsmallenburg.com/contact">
+
+  <link rel="icon" href="../assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="../assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — Jessie Smallenburg">
+    <meta property="og:description" content="Get in touch with Jessie Smallenburg about healthcare UX research and design.">
+  <meta property="og:url" content="https://www.jessamynsmallenburg.com/contact">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — Jessie Smallenburg">
+    <meta name="twitter:description" content="Get in touch with Jessie Smallenburg about healthcare UX research and design.">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div id="main">
+
+    <!-- ============ Header ============ -->
+    <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
+      <div class="flex items-center justify-between md:contents">
+        <a href="../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
+        <button type="button" class="nav-toggle relative z-50 flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+          <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="primary-nav" class="site-nav hidden flex-col md:flex md:flex-row md:items-center md:gap-2.5" aria-label="Primary">
+        <a href="../" class="nav-link">Home</a>
+        <a href="../projects" class="nav-link">Projects</a>
+        <a href="../resume" class="nav-link">Résumé</a>
+        <a href="../about" class="nav-link">About</a>
+        <a href="../contact" class="nav-link nav-link-active">Contact</a>
+        <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-link gap-3">
+          <span class="nav-linkedin-badge md:hidden" aria-hidden="true">in</span>
+          <svg class="hidden h-[18px] w-[18px] shrink-0 md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span class="md:hidden">LinkedIn</span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- ============ Contact ============ -->
+    <main class="container-content pt-6 pb-16 lg:pt-12">
+      <div class="mx-auto flex max-w-[640px] flex-col gap-8">
+
+        <div class="flex flex-col gap-5">
+          <p class="eyebrow">Contact</p>
+          <h1 class="h-display text-[40px] sm:text-[52px] lg:text-[60px]">Let&rsquo;s work together.</h1>
+          <div class="flex flex-col gap-4 font-sans text-[24px] font-light leading-[1.6em] tracking-[-0.02em] text-white">
+            <p>Have a project, role, or research challenge in mind? Send a note and I&rsquo;ll get back to you.</p>
+            <p>You can also connect with me on <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" class="font-medium text-teal-accent underline-offset-4 hover:underline">LinkedIn</a>.</p>
+          </div>
+        </div>
+
+        <hr class="border-white/10">
+
+        <!--
+          Contact form posts to FormSubmit → jess@jessamynsmallenburg.com
+          First submission requires a one-time confirmation link from FormSubmit.
+        -->
+        <form id="contact-form" action="https://formsubmit.co/jess@jessamynsmallenburg.com" method="POST" class="flex flex-col gap-6">
+          <input type="hidden" name="_subject" value="Portfolio contact form — jessamynsmallenburg.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_replyto" value="">
+          <!-- Honeypot (anti-spam) -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] h-0 w-0 opacity-0">
+
+          <label class="flex flex-col gap-2">
+            <span class="font-sans text-base font-medium tracking-[0.04em] text-white/90">Name</span>
+            <input type="text" name="name" required placeholder="Your name"
+              class="rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3.5 font-sans text-[17px] text-white placeholder:text-white/35
+                     outline-none transition-colors focus:border-teal-accent/70 focus:bg-white/[0.06]">
+          </label>
+
+          <label class="flex flex-col gap-2">
+            <span class="font-sans text-base font-medium tracking-[0.04em] text-white/90">Email</span>
+            <input id="contact-email" type="email" name="email" required placeholder="you@email.com"
+              class="rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3.5 font-sans text-[17px] text-white placeholder:text-white/35
+                     outline-none transition-colors focus:border-teal-accent/70 focus:bg-white/[0.06]">
+          </label>
+
+          <label class="flex flex-col gap-2">
+            <span class="font-sans text-base font-medium tracking-[0.04em] text-white/90">Message</span>
+            <textarea name="message" required rows="5" placeholder="Tell me a little about your project&hellip;"
+              class="rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3.5 font-sans text-[17px] text-white placeholder:text-white/35
+                     outline-none transition-colors focus:border-teal-accent/70 focus:bg-white/[0.06] resize-y"></textarea>
+          </label>
+
+          <p id="contact-form-status" class="hidden font-sans text-[16px] text-white/70" role="status" aria-live="polite"></p>
+
+          <button type="submit" id="contact-submit" class="btn btn-cta btn-lg w-fit">
+            Send message
+          </button>
+        </form>
+
+</div>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer mt-auto">
+      <div class="container-content flex flex-col gap-6 py-10">
+        <div class="flex flex-col items-end gap-3">
+          <p class="font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white/45">Connect</p>
+          <div class="flex items-center gap-3">
+            <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="mailto:jess@jessamynsmallenburg.com" aria-label="Email" class="footer-social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 5L2 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="border-white/10">
+        <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. All rights reserved.</p>
+          <p class="font-sans text-[17px] text-white/40">Designed with care for accessible healthcare.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/contact.js"></script>
+</body>
+</html>

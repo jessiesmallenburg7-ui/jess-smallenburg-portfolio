@@ -1,0 +1,84 @@
+<!-- wireframe-crop -->
+<svg viewBox="24 24 1824.0 2193.0" width="1824.0" height="2193.0" xmlns="http://www.w3.org/2000/svg">
+<rect width="1872.0" height="2241.0" fill="#F5F5F0"/>
+<rect x="50.4" y="183.6" width="1771.2" height="1782.0" rx="10.8" fill="#FCFCFA" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<rect x="50.4" y="183.6" width="1771.2" height="82.8" rx="10.8" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<rect x="50.4" y="241.20000000000002" width="1771.2" height="25.2" rx="0.0" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<line x1="50.4" y1="266.40000000000003" x2="1821.6000000000001" y2="266.40000000000003" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<circle cx="90.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="126.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="162.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<rect x="212.4" y="210.6" width="1141.2" height="28.8" rx="5.4" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<text x="1785.6000000000001" y="234.0" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Dr. Laura Mitchell · Internal medicine</text>
+<text x="50.4" y="79.2" text-anchor="start" fill="#3F3E3A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;letter-spacing:1.4400000000000002px;">DR. LAURA MITCHELL · ATTENDING PHYSICIAN</text>
+<text x="50.4" y="133.20000000000002" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:39.6px;font-weight:600;">Screen 1 — Smart daily dashboard (low-fidelity)</text>
+<rect x="97.2" y="316.8" width="117.0" height="54.0" rx="5.4" fill="#5A5952" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="155.70000000000002" y="352.8" text-anchor="middle" fill="#F5F4EF" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Today</text>
+<rect x="228.6" y="316.8" width="117.0" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="287.1" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Chart</text>
+<rect x="360.0" y="316.8" width="117.0" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="418.5" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Notes</text>
+<rect x="491.40000000000003" y="316.8" width="102.24" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="542.52" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Team</text>
+<rect x="608.0400000000001" y="316.8" width="146.51999999999998" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="681.3000000000001" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Inbox 7</text>
+<rect x="97.2" y="417.6" width="400.5" height="133.20000000000002" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="297.45" y="486.0" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:46.800000000000004px;font-weight:700;">18</text>
+<text x="297.45" y="522.0" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">Patients</text>
+<rect x="522.9" y="417.6" width="400.5" height="133.20000000000002" rx="5.4" fill="#FBE7E7" stroke="#E24B4A" stroke-width="1.8"/>
+<text x="723.15" y="486.0" text-anchor="middle" fill="#E24B4A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:46.800000000000004px;font-weight:700;">2</text>
+<text x="723.15" y="522.0" text-anchor="middle" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">Critical ▲</text>
+<rect x="948.6" y="417.6" width="400.5" height="133.20000000000002" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="1148.8500000000001" y="486.0" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:46.800000000000004px;font-weight:700;">3</text>
+<text x="1148.8500000000001" y="522.0" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">Unsigned</text>
+<rect x="1374.3" y="417.6" width="400.5" height="133.20000000000002" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="1574.55" y="486.0" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:46.800000000000004px;font-weight:700;">7</text>
+<text x="1574.55" y="522.0" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">Inbox</text>
+<text x="97.2" y="594.0" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ KPIs sorted by urgency — alerts always left of unsigned notes</text>
+<text x="97.2" y="640.8000000000001" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Numbers-only KPI style keeps scan time low during a 10-patient morning</text>
+<rect x="97.2" y="702.0" width="1677.6000000000001" height="75.60000000000001" rx="5.4" fill="#FBE7E7" stroke="#E24B4A" stroke-width="2.3400000000000003"/>
+<text x="122.4" y="750.6" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:600;">⚠ CRITICAL — Bennett: Troponin 2.1 — requires action before next patient</text>
+<text x="97.2" y="820.8000000000001" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Critical alert: red border + icon — visually unmistakable</text>
+<rect x="97.2" y="874.8000000000001" width="1677.6000000000001" height="72.0" rx="5.4" fill="#E7F0F8" stroke="#5B8FBB" stroke-width="1.8"/>
+<text x="122.4" y="921.6" text-anchor="start" fill="#33607F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:500;">△ Reminder — Martinez: BP follow-up overdue 14 days</text>
+<text x="97.2" y="990.0" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Informational alert: blue — distinct from critical red and from AI-content amber</text>
+<line x1="97.2" y1="1044.0" x2="1774.8" y2="1044.0" stroke="#D8D7CF" stroke-width="1.8"/>
+<text x="97.2" y="1087.2" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">PATIENT QUEUE</text>
+<rect x="97.2" y="1123.2" width="1107.2160000000001" height="158.4" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="97.2" y="1123.2" width="7.2" height="158.4" rx="1.8" fill="#3F3E3A" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="1170.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:700;">Bennett, Carol · 9:00</text>
+<text x="129.6" y="1209.6000000000001" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">T2DM · HTN · HLD</text>
+<rect x="129.6" y="1227.6000000000001" width="141.552" height="43.2" rx="10.8" fill="#EAE9E3" stroke="none" stroke-width="1.8"/>
+<text x="144.0" y="1256.7600000000002" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">SDOH flag</text>
+<rect x="285.55199999999996" y="1227.6000000000001" width="166.60799999999998" height="43.2" rx="10.8" fill="#FBE7E7" stroke="none" stroke-width="1.8"/>
+<text x="299.952" y="1256.7600000000002" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">Action req.</text>
+<rect x="97.2" y="1299.6000000000001" width="1107.2160000000001" height="154.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="129.6" y="1346.4" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:700;">Kowalski, James · 9:30</text>
+<text x="129.6" y="1386.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">CKD3 · Hypertension</text>
+<rect x="129.6" y="1400.4" width="116.496" height="43.2" rx="10.8" fill="#F0EFEA" stroke="none" stroke-width="1.8"/>
+<text x="144.0" y="1429.5600000000002" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">Routine</text>
+<g opacity="0.55">
+<rect x="97.2" y="1472.4" width="1107.2160000000001" height="104.4" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="129.6" y="1519.2" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:700;">Pierce, Margaret · 10:00</text>
+<text x="129.6" y="1558.8" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Hypothyroid · follow-up</text>
+</g>
+<text x="97.2" y="1616.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Faded row = not yet checked in — reduces visual competition with active patients</text>
+<text x="1247.616" y="1144.8" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:700;letter-spacing:1.08px;">AI SNAPSHOT</text>
+<rect x="1247.616" y="1162.8" width="527.184" height="270.0" rx="5.4" fill="#EFEEE8" stroke="#B8B7AF" stroke-width="1.8"/>
+<rect x="1269.2160000000001" y="1184.4" width="232.902" height="43.2" rx="10.8" fill="#FAEEDA" stroke="none" stroke-width="1.8"/>
+<text x="1283.616" y="1213.245" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:500;">AI draft · verify</text>
+<text x="1269.2160000000001" y="1256.4" text-anchor="start" fill="#4A4A46" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">Key labs · A1c 9.1 · BP 148/92 ·</text>
+<text x="1269.2160000000001" y="1288.8" text-anchor="start" fill="#4A4A46" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">Metformin refill pending</text>
+<text x="1247.616" y="1472.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;font-style:italic;">↑ Amber = AI-generated text only — never reused for alerts</text>
+<line x1="97.2" y1="1663.2" x2="1774.8" y2="1663.2" stroke="#D8D7CF" stroke-width="1.8"/>
+<text x="97.2" y="1706.4" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">NOTE SIGN QUEUE</text>
+<rect x="97.2" y="1742.4" width="1677.6000000000001" height="82.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="126.0" y="1794.6000000000001" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:400;">Martinez note · 2 sections pending review</text>
+<rect x="1594.8" y="1758.6000000000001" width="151.20000000000002" height="50.4" rx="5.4" fill="#F0EFEA" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="1670.4" y="1792.8" text-anchor="middle" fill="#B8B7AF" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Sign ✗</text>
+<text x="97.2" y="1868.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Sign button disabled — per-section accept required first</text>
+<line x1="50.4" y1="2019.6000000000001" x2="1821.6000000000001" y2="2019.6000000000001" stroke="#B8B7AF" stroke-width="2.3400000000000003"/>
+<text x="50.4" y="2059.2000000000003" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:700;letter-spacing:1.4400000000000002px;">PERSONA ANNOTATION</text>
+<text x="50.4" y="2098.8" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">Laura cannot distinguish AI-authored text from chart data. Amber diff + per-section gates address this directly. Critical</text>
+<text x="50.4" y="2136.6" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">alerts have dedicated visual treatment. Sign button is gated.</text>
+</svg>

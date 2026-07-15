@@ -1,0 +1,87 @@
+<svg viewBox="0 0 2720.0 1809.0" width="2720.0" height="1809.0" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6.0" stdDeviation="24.0" flood-color="#1C1C1A" flood-opacity="0.09"/></filter>
+</defs>
+<rect width="2720.0" height="1809.0" fill="#F5F5F0"/>
+<rect x="80.0" y="248.0" width="760.0" height="68.0" rx="24.0" fill="#EDEDE7" stroke="none" stroke-width="2.0"/>
+<rect x="80.0" y="292.0" width="760.0" height="24.0" rx="0.0" fill="#EDEDE7" stroke="none" stroke-width="2.0"/>
+<line x1="80.0" y1="316.0" x2="840.0" y2="316.0" stroke="#C4C3BB" stroke-width="2.0"/>
+<circle cx="108.0" cy="282.0" r="8.0" fill="#FF5F57"/>
+<circle cx="134.0" cy="282.0" r="8.0" fill="#FFBD2E"/>
+<circle cx="160.0" cy="282.0" r="8.0" fill="#28C840"/>
+<text x="816.0" y="289.0" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:400;">Diane · Caregiver</text>
+<rect x="80.0" y="316.0" width="760.0" height="116.0" rx="0.0" fill="#FFFFFF" stroke="none" stroke-width="2.0"/>
+<line x1="80.0" y1="432.0" x2="840.0" y2="432.0" stroke="#E2E1DA" stroke-width="2.0"/>
+<rect x="116.0" y="346.0" width="56.0" height="56.0" rx="16.0" fill="#534AB7" stroke="none" stroke-width="2.0"/>
+<text x="144.0" y="382.75" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:25.0px;font-weight:600;">L</text>
+<text x="192.0" y="368.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:26.0px;font-weight:600;">Lumen Chart</text>
+<text x="192.0" y="400.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.6px;font-weight:400;">Santos, Maria · your mom</text>
+<line x1="80.0" y1="1617.0" x2="840.0" y2="1617.0" stroke="#E2E1DA" stroke-width="2.0"/>
+<rect x="80.0" y="1617.0" width="760.0" height="112.0" rx="0.0" fill="#FFFFFF" stroke="none" stroke-width="2.0"/>
+<text x="175.0" y="1669.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:30.0px;font-weight:400;">⌂</text>
+<text x="175.0" y="1705.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.6px;font-weight:600;">Home</text>
+<text x="365.0" y="1669.0" text-anchor="middle" fill="#A8A79F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:30.0px;font-weight:400;">💊</text>
+<text x="365.0" y="1705.0" text-anchor="middle" fill="#A8A79F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.6px;font-weight:400;">Meds</text>
+<text x="555.0" y="1669.0" text-anchor="middle" fill="#A8A79F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:30.0px;font-weight:400;">💬</text>
+<text x="555.0" y="1705.0" text-anchor="middle" fill="#A8A79F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.6px;font-weight:400;">Messages</text>
+<text x="745.0" y="1669.0" text-anchor="middle" fill="#A8A79F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:30.0px;font-weight:400;">👤</text>
+<text x="745.0" y="1705.0" text-anchor="middle" fill="#A8A79F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.6px;font-weight:400;">Profile</text>
+<rect x="822.0" y="440.0" width="8.0" height="1169.0" rx="4.0" fill="rgba(31,30,29,0.05)" stroke="none" stroke-width="2.0"/>
+<rect x="822.0" y="440.0" width="8.0" height="350.7" rx="4.0" fill="rgba(31,30,29,0.22)" stroke="none" stroke-width="2.0"/>
+<rect x="80.0" y="248.0" width="760.0" height="1481.0" rx="24.0" fill="none" stroke="#C4C3BB" stroke-width="2.4"/>
+<text x="80.0" y="106.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:700;letter-spacing:1.6px;">LUMEN CHART · CONCEPTUAL UX PROJECT</text>
+<text x="80.0" y="160.0" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:42.0px;font-weight:600;">Diane Santos — Caregiver portal home</text>
+<text x="80.0" y="200.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.0px;font-weight:400;">High-fidelity mockup · Family caregiver · mobile</text>
+<rect x="116.0" y="464.0" width="688.0" height="140.0" rx="24.0" fill="#EEF7F2" stroke="#1D9E75" stroke-width="2.8" filter="url(#cardShadow)"/>
+<text x="460.0" y="524.0" text-anchor="middle" fill="#157A58" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:32.0px;font-weight:600;">✓ Maria is doing well</text>
+<text x="460.0" y="564.0" text-anchor="middle" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.6px;font-weight:400;">No urgent actions needed · Updated today, 9:41 am</text>
+<text x="116.0" y="652.0" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:700;letter-spacing:0.8px;">LAST VISIT — TUESDAY, JUNE 24</text>
+<rect x="116.0" y="680.0" width="688.0" height="253.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="146.0" y="728.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Dr. Laura Mitchell says mom's blood sugar is a</text>
+<text x="146.0" y="761.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">little high this month. Her blood pressure has</text>
+<text x="146.0" y="794.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">improved — great news. The doctor increased her</text>
+<text x="146.0" y="827.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Metformin dose to help with blood sugar.</text>
+<rect x="146.0" y="867.0" width="190.39999999999998" height="38.0" rx="19.0" fill="#FAEEDA" stroke="none" stroke-width="2.0"/>
+<text x="160.0" y="893.0" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:500;">dose changed ↑</text>
+<text x="116.0" y="981.0" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:700;letter-spacing:0.8px;">WHAT YOU NEED TO DO</text>
+<rect x="116.0" y="1009.0" width="688.0" height="100.0" rx="24.0" fill="#FAEEDA" stroke="#E8C96A" stroke-width="2.4" filter="url(#cardShadow)"/>
+<text x="146.0" y="1049.0" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.4px;font-weight:600;">Pick up Metformin 1000mg at CVS</text>
+<text x="146.0" y="1081.0" text-anchor="start" fill="#A87C30" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.4px;font-weight:400;">Ready today · 4-week supply · dose increased Jun 24</text>
+<rect x="116.0" y="1129.0" width="688.0" height="116.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="146.0" y="1163.0" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:17.4px;font-weight:700;letter-spacing:0.4px;">PRIOR AUTHORIZATION — JARDIANCE</text>
+<text x="146.0" y="1195.0" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.0px;font-weight:500;">Submitted to insurance · est. June 26–27</text>
+<text x="146.0" y="1223.0" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.2px;font-weight:400;">No action needed — we'll notify you when approved</text>
+<text x="116.0" y="1293.0" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:19.0px;font-weight:700;letter-spacing:0.8px;">MEDICATIONS</text>
+<rect x="116.0" y="1321.0" width="334.0" height="132.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="140.0" y="1361.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.4px;font-weight:500;">Metformin 1000mg</text>
+<rect x="140.0" y="1379.0" width="286.0" height="10.0" rx="5.0" fill="#E2E1DA" stroke="none" stroke-width="2.0"/>
+<rect x="140.0" y="1379.0" width="42.9" height="10.0" rx="5.0" fill="#E24B4A" stroke="none" stroke-width="2.0"/>
+<text x="140.0" y="1417.0" text-anchor="start" fill="#E24B4A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.8px;font-weight:400;">3 days · pick up today</text>
+<rect x="470.0" y="1321.0" width="334.0" height="132.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<text x="494.0" y="1361.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.4px;font-weight:500;">Lisinopril 10mg</text>
+<rect x="494.0" y="1379.0" width="286.0" height="10.0" rx="5.0" fill="#E2E1DA" stroke="none" stroke-width="2.0"/>
+<rect x="494.0" y="1379.0" width="205.92" height="10.0" rx="5.0" fill="#1D9E75" stroke="none" stroke-width="2.0"/>
+<text x="494.0" y="1417.0" text-anchor="start" fill="#1D9E75" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:18.8px;font-weight:400;">18 days</text>
+<rect x="116.0" y="1485.0" width="688.0" height="88.0" rx="20.0" fill="#534AB7" stroke="none" stroke-width="2.0"/>
+<text x="460.0" y="1539.0" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.4px;font-weight:500;">Share summary with Carlos →</text>
+<rect x="900.0" y="248.0" width="1740.0" height="174.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="900.0" y="248.0" width="6.0" height="174.0" rx="3.0" fill="#534AB7" stroke="none" stroke-width="2.0"/>
+<text x="936.0" y="296.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — STATUS FIRST</text>
+<text x="936.0" y="332.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">The status banner is the first element on every screen — not after a scroll. Diane should never have to hunt for “is mom okay.” Ambiguity</text>
+<text x="936.0" y="365.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">creates active emotional distress, not neutral confusion.</text>
+<rect x="900.0" y="450.0" width="1740.0" height="174.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="900.0" y="450.0" width="6.0" height="174.0" rx="3.0" fill="#534AB7" stroke="none" stroke-width="2.0"/>
+<text x="936.0" y="498.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — PLAIN LANGUAGE</text>
+<text x="936.0" y="534.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">No ICD codes, no clinical abbreviations, no medical jargon. “Blood sugar is a little high” replaces “HbA1c 9.1% — uncontrolled T2DM.” Dose</text>
+<text x="936.0" y="567.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">changes are proactively surfaced — Diane doesn't wait until mom runs out of the wrong medication.</text>
+<rect x="900.0" y="652.0" width="1740.0" height="174.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="900.0" y="652.0" width="6.0" height="174.0" rx="3.0" fill="#534AB7" stroke="none" stroke-width="2.0"/>
+<text x="936.0" y="700.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — PRIOR AUTH TRACKER</text>
+<text x="936.0" y="736.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Diane called the pharmacy twice with no resolution. The prior auth tracker is a single authoritative source: submitted → under review →</text>
+<text x="936.0" y="769.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">approved. No phone calls required. Status is shown inline, with estimated timeline.</text>
+<rect x="900.0" y="854.0" width="1740.0" height="174.0" rx="24.0" fill="#FFFFFF" stroke="#D8D7CF" stroke-width="1.6" filter="url(#cardShadow)"/>
+<rect x="900.0" y="854.0" width="6.0" height="174.0" rx="3.0" fill="#534AB7" stroke="none" stroke-width="2.0"/>
+<text x="936.0" y="902.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.0px;font-weight:700;letter-spacing:0.6px;">DESIGN DECISION — SHAREABLE SUMMARY</text>
+<text x="936.0" y="938.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">Diane coordinates with her brother Carlos. The share button produces a plain-language summary (text or PDF) she can forward without having</text>
+<text x="936.0" y="971.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.0px;font-weight:400;">to interpret clinical content herself first.</text>
+</svg>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframes · Lumen Chart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-50">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <div class="text-emerald-700 text-xs font-semibold tracking-[2px] uppercase">Lumen Chart</div>
+        <h1 class="text-4xl font-semibold tracking-tight text-zinc-900 mt-1">Lo-fi Wireframes</h1>
+        <p class="mt-2 text-zinc-600 max-w-md">High-fidelity screenshots of key screens across three personas.</p>
+      </div>
+      <a href="wireframes.html" target="_blank"
+         class="px-4 py-2 text-sm border border-zinc-300 rounded-xl hover:bg-white transition-colors">
+        View original HTML →
+      </a>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div onclick="openModal('laura-dashboard', 'Smart Daily Dashboard', 'Dr. Laura Mitchell')"
+           class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
+        <div class="bg-zinc-100 overflow-hidden">
+          <img src="screenshots/laura-dashboard.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Smart Daily Dashboard">
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-zinc-500">Dr. Laura Mitchell</div>
+          <h3 class="font-semibold text-lg mt-1">Smart Daily Dashboard</h3>
+          <p class="text-sm text-zinc-600 mt-1">KPIs, critical alerts, patient queue & AI snapshot</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div onclick="openModal('kevin-queue', 'Tablet Patient Queue', 'Kevin Hartley, RN')"
+           class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
+        <div class="bg-zinc-100 overflow-hidden">
+          <img src="screenshots/kevin-queue.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Tablet Patient Queue">
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-zinc-500">Kevin Hartley, RN</div>
+          <h3 class="font-semibold text-lg mt-1">Tablet Patient Queue</h3>
+          <p class="text-sm text-zinc-600 mt-1">Deterioration flags, 3-tap vitals, ambient capture</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div onclick="openModal('diane-portal', 'Caregiver Portal Home', 'Diane Santos')"
+           class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
+        <div class="bg-zinc-100 overflow-hidden">
+          <img src="screenshots/diane-portal.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Caregiver Portal Home">
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-zinc-500">Diane Santos</div>
+          <h3 class="font-semibold text-lg mt-1">Caregiver Portal Home</h3>
+          <p class="text-sm text-zinc-600 mt-1">Status-first, plain language, prior auth tracker</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div onclick="openModal('laura-soap', 'SOAP Note Editor + AI', 'Dr. Laura Mitchell')"
+           class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
+        <div class="bg-zinc-100 overflow-hidden">
+          <img src="screenshots/laura-soap.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="SOAP Note Editor">
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-zinc-500">Dr. Laura Mitchell</div>
+          <h3 class="font-semibold text-lg mt-1">SOAP Note Editor + AI</h3>
+          <p class="text-sm text-zinc-600 mt-1">Per-section accept, amber AI highlights</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div onclick="openModal('kevin-handoff', 'Shift Handoff (SBAR)', 'Kevin Hartley, RN')"
+           class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
+        <div class="bg-zinc-100 overflow-hidden">
+          <img src="screenshots/kevin-handoff.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Shift Handoff">
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-zinc-500">Kevin Hartley, RN</div>
+          <h3 class="font-semibold text-lg mt-1">Shift Handoff (SBAR)</h3>
+          <p class="text-sm text-zinc-600 mt-1">Structured handoff with ambient notes</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div onclick="openModal('diane-meds', 'Medication Tracker', 'Diane Santos')"
+           class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
+        <div class="bg-zinc-100 overflow-hidden">
+          <img src="screenshots/diane-meds.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Medication Tracker">
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-zinc-500">Diane Santos</div>
+          <h3 class="font-semibold text-lg mt-1">Medication Tracker</h3>
+          <p class="text-sm text-zinc-600 mt-1">Dose change flags, prior auth status</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" onclick="closeModal()" 
+       class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+    <div onclick="event.stopImmediatePropagation()" 
+         class="bg-white rounded-3xl shadow-2xl max-w-[1200px] w-full overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b">
+        <div>
+          <h2 id="modal-title" class="text-2xl font-semibold text-zinc-900"></h2>
+          <p id="modal-subtitle" class="text-sm text-zinc-500"></p>
+        </div>
+        <button onclick="closeModal()" class="text-4xl text-zinc-400 hover:text-zinc-600 leading-none px-3">×</button>
+      </div>
+
+      <!-- Image -->
+      <div class="p-6 bg-zinc-100 flex justify-center">
+        <img id="modal-image" class="w-full max-h-[80vh] object-contain rounded-xl shadow" alt="Wireframe">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id, title, subtitle) {
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modal-image');
+      const titleEl = document.getElementById('modal-title');
+      const subtitleEl = document.getElementById('modal-subtitle');
+
+      img.src = `screenshots/${id}.svg`;
+      titleEl.textContent = title;
+      subtitleEl.textContent = subtitle;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

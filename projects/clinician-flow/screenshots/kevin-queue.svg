@@ -1,0 +1,70 @@
+<!-- wireframe-crop -->
+<svg viewBox="24 24 1824.0 1901.4" width="1824.0" height="1901.4" xmlns="http://www.w3.org/2000/svg">
+<rect width="1872.0" height="1949.4" fill="#F5F5F0"/>
+<rect x="50.4" y="183.6" width="1771.2" height="1490.4" rx="10.8" fill="#FCFCFA" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<rect x="50.4" y="183.6" width="1771.2" height="82.8" rx="10.8" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<rect x="50.4" y="241.20000000000002" width="1771.2" height="25.2" rx="0.0" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<line x1="50.4" y1="266.40000000000003" x2="1821.6000000000001" y2="266.40000000000003" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<circle cx="90.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="126.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="162.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<rect x="212.4" y="210.6" width="1141.2" height="28.8" rx="5.4" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<text x="1785.6000000000001" y="234.0" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Kevin Hartley, RN · Floor 4W · 12:34</text>
+<text x="50.4" y="79.2" text-anchor="start" fill="#3F3E3A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;letter-spacing:1.4400000000000002px;">KEVIN HARTLEY, RN · CHARGE NURSE · FLOOR 4W</text>
+<text x="50.4" y="133.20000000000002" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:39.6px;font-weight:600;">Screen 2 — Tablet patient queue, bedside (low-fidelity)</text>
+<rect x="97.2" y="316.8" width="213.48" height="54.0" rx="5.4" fill="#5A5952" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="203.94" y="352.8" text-anchor="middle" fill="#F5F4EF" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">My patients</text>
+<rect x="325.08" y="316.8" width="120.60000000000001" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="385.38" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Floor</text>
+<rect x="460.08" y="316.8" width="151.55999999999997" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="535.86" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">Handoff</text>
+<rect x="626.04" y="316.8" width="151.55999999999997" height="54.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="701.8199999999999" y="352.8" text-anchor="middle" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">⊕ Vital</text>
+<text x="97.2" y="424.8" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">6 PATIENTS · 1 DETERIORATING</text>
+<rect x="97.2" y="464.40000000000003" width="1677.6000000000001" height="172.8" rx="5.4" fill="#FBE7E7" stroke="#E24B4A" stroke-width="2.3400000000000003"/>
+<rect x="97.2" y="464.40000000000003" width="7.2" height="172.8" rx="1.8" fill="#E24B4A" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="514.8000000000001" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.8px;font-weight:700;">Rm 412 — Whitfield, Karen</text>
+<text x="1746.0" y="514.8000000000001" text-anchor="end" fill="#E24B4A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;">⬆ DETERIORATING</text>
+<text x="129.6" y="554.4" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">HR 118 · BP 88/54 · RR 24 · Flagged 11:42</text>
+<rect x="129.6" y="576.0" width="204.192" height="43.2" rx="10.8" fill="#F6D2D1" stroke="none" stroke-width="1.8"/>
+<text x="144.0" y="605.16" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">Vitals overdue</text>
+<rect x="348.192" y="576.0" width="141.552" height="43.2" rx="10.8" fill="#F6D2D1" stroke="none" stroke-width="1.8"/>
+<text x="362.592" y="605.16" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">Escalate?</text>
+<text x="97.2" y="680.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Deterioration flag visible at queue level — no chart needed to triage</text>
+<text x="97.2" y="727.2" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Room number leads every row — matches how staff refer to patients verbally</text>
+<rect x="97.2" y="784.8000000000001" width="1677.6000000000001" height="118.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="97.2" y="784.8000000000001" width="7.2" height="118.8" rx="1.8" fill="#EF9F27" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="831.6" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.8px;font-weight:700;">Rm 408 — Chen, Michael</text>
+<text x="1746.0" y="831.6" text-anchor="end" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:500;">△ Watch</text>
+<text x="129.6" y="871.2" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">BP 142/88 · Meds due 13:00</text>
+<rect x="97.2" y="921.6" width="1677.6000000000001" height="118.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="97.2" y="921.6" width="7.2" height="118.8" rx="1.8" fill="#C4C3BB" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="968.4" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.8px;font-weight:700;">Rm 404 — Simmons, Grace</text>
+<text x="1746.0" y="968.4" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Stable</text>
+<text x="129.6" y="1008.0" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Vitals current · Post-op day 2</text>
+<text x="97.2" y="1080.0" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Acuity-first ordering — deteriorating and watch rows always sort above stable</text>
+<line x1="97.2" y1="1130.4" x2="1774.8" y2="1130.4" stroke="#D8D7CF" stroke-width="1.8"/>
+<text x="97.2" y="1173.6000000000001" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">3-TAP VITAL ENTRY — BEDSIDE</text>
+<rect x="97.2" y="1209.6000000000001" width="460.8" height="111.60000000000001" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="327.6" y="1252.8" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">BP</text>
+<text x="327.6" y="1296.0" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:36.0px;font-weight:700;">—/—</text>
+<rect x="579.6" y="1209.6000000000001" width="460.8" height="111.60000000000001" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="810.0" y="1252.8" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">HR</text>
+<text x="810.0" y="1296.0" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:36.0px;font-weight:700;">—</text>
+<rect x="1062.0" y="1209.6000000000001" width="460.8" height="111.60000000000001" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="1292.4" y="1252.8" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">SpO₂</text>
+<text x="1292.4" y="1296.0" text-anchor="middle" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:36.0px;font-weight:700;">—%</text>
+<rect x="1544.4" y="1229.4" width="230.4" height="72.0" rx="5.4" fill="#3F3E3A" stroke="none" stroke-width="1.8"/>
+<text x="1659.6000000000001" y="1274.4" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:600;">Save</text>
+<text x="97.2" y="1364.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Vital entry in 3 taps — no screen changes required</text>
+<text x="97.2" y="1411.2" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Large numeric fields sized for gloved, one-handed bedside use</text>
+<line x1="97.2" y1="1465.2" x2="1774.8" y2="1465.2" stroke="#D8D7CF" stroke-width="1.8"/>
+<text x="97.2" y="1508.4" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">AMBIENT CAPTURE</text>
+<rect x="97.2" y="1544.4" width="1677.6000000000001" height="86.4" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<circle cx="140.4" cy="1587.6000000000001" r="10.8" fill="#E24B4A"/>
+<text x="172.8" y="1596.6000000000001" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:400;">Recording shift notes — tap to pause</text>
+<line x1="50.4" y1="1728.0" x2="1821.6000000000001" y2="1728.0" stroke="#B8B7AF" stroke-width="2.3400000000000003"/>
+<text x="50.4" y="1767.6000000000001" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:700;letter-spacing:1.4400000000000002px;">PERSONA ANNOTATION</text>
+<text x="50.4" y="1807.2" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">Kevin cannot leave the patient to chart. Queue shows deterioration flags before chart opens. Vital entry is 3-tap. Ambient</text>
+<text x="50.4" y="1845.0" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">capture runs in background. Mobile-first — works on tablet at bedside.</text>
+</svg>

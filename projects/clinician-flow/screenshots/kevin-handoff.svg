@@ -1,0 +1,51 @@
+<!-- wireframe-crop -->
+<svg viewBox="24 24 1824.0 1631.4" width="1824.0" height="1631.4" xmlns="http://www.w3.org/2000/svg">
+<rect width="1872.0" height="1679.4" fill="#F5F5F0"/>
+<rect x="50.4" y="183.6" width="1771.2" height="1220.4" rx="10.8" fill="#FCFCFA" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<rect x="50.4" y="183.6" width="1771.2" height="82.8" rx="10.8" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<rect x="50.4" y="241.20000000000002" width="1771.2" height="25.2" rx="0.0" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<line x1="50.4" y1="266.40000000000003" x2="1821.6000000000001" y2="266.40000000000003" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<circle cx="90.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="126.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="162.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<rect x="212.4" y="210.6" width="1141.2" height="28.8" rx="5.4" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<text x="1785.6000000000001" y="234.0" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Handoff · Floor 4W · 19:00</text>
+<text x="50.4" y="79.2" text-anchor="start" fill="#3F3E3A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;letter-spacing:1.4400000000000002px;">KEVIN HARTLEY, RN</text>
+<text x="50.4" y="133.20000000000002" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:39.6px;font-weight:600;">Screen 5 — Shift handoff · SBAR format (low-fidelity)</text>
+<text x="97.2" y="345.6" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:28.8px;font-weight:700;">Shift handoff — 6 patients</text>
+<rect x="1576.8" y="313.2" width="159.3" height="43.2" rx="10.8" fill="#FBE7E7" stroke="none" stroke-width="1.8"/>
+<text x="1591.2" y="342.675" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:500;">1 critical</text>
+<rect x="97.2" y="370.8" width="1677.6000000000001" height="237.6" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="97.2" y="370.8" width="7.2" height="237.6" rx="1.8" fill="#E24B4A" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="417.6" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:700;">412 — Whitfield · SBAR</text>
+<text x="129.6" y="460.8" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:700;">S:</text>
+<text x="172.8" y="460.8" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">BP dropped 88/54 at 11:42 · HR 118</text>
+<text x="129.6" y="498.6" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:700;">B:</text>
+<text x="172.8" y="498.6" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Post-op day 1 · hx hypertension</text>
+<text x="129.6" y="536.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:700;">A:</text>
+<text x="172.8" y="536.4" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Sepsis protocol initiated at 12:05</text>
+<text x="129.6" y="574.2" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:700;">R:</text>
+<text x="172.8" y="574.2" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Monitor q1h · MD notified</text>
+<text x="97.2" y="651.6" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ SBAR format — structured, complete, current as of handoff time</text>
+<text x="97.2" y="698.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Only the Situation line is colored — it's the one abnormal vital that changes the plan</text>
+<rect x="97.2" y="756.0" width="1677.6000000000001" height="122.4" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="97.2" y="756.0" width="7.2" height="122.4" rx="1.8" fill="#EF9F27" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="802.8000000000001" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:700;">408 — Chen · Watch</text>
+<text x="129.6" y="842.4" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">BP elevated 142/88 · Amlodipine 10mg given 13:05 · next BP check 19:30</text>
+<rect x="97.2" y="896.4" width="1677.6000000000001" height="104.4" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="97.2" y="896.4" width="7.2" height="104.4" rx="1.8" fill="#C4C3BB" stroke="none" stroke-width="1.8"/>
+<text x="129.6" y="943.2" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:700;">404 — Simmons · Stable</text>
+<text x="129.6" y="979.2" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">Stable · post-op day 2 · discharge planning tomorrow</text>
+<text x="97.2" y="1040.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Acuity ordering carries into handoff — critical patient briefed first, every time</text>
+<line x1="97.2" y1="1090.8" x2="1774.8" y2="1090.8" stroke="#D8D7CF" stroke-width="1.8"/>
+<rect x="97.2" y="1130.4" width="1677.6000000000001" height="72.0" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<circle cx="140.4" cy="1166.4" r="10.8" fill="#E24B4A"/>
+<text x="172.8" y="1175.4" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Ambient note — tap to stop recording</text>
+<rect x="97.2" y="1231.2" width="1677.6000000000001" height="79.2" rx="5.4" fill="#3F3E3A" stroke="none" stroke-width="1.8"/>
+<text x="936.0" y="1281.6000000000001" text-anchor="middle" fill="#ffffff" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:25.2px;font-weight:600;">Send handoff to incoming nurse →</text>
+<text x="97.2" y="1353.6000000000001" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Incoming nurse receives current status, not end-of-shift reconstruction</text>
+<line x1="50.4" y1="1458.0" x2="1821.6000000000001" y2="1458.0" stroke="#B8B7AF" stroke-width="2.3400000000000003"/>
+<text x="50.4" y="1497.6000000000001" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:700;letter-spacing:1.4400000000000002px;">PERSONA ANNOTATION</text>
+<text x="50.4" y="1537.2" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">SBAR format ensures structured, unambiguous handoff. Ambient capture populates notes during the shift — not reconstructed from</text>
+<text x="50.4" y="1575.0" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">memory.</text>
+</svg>

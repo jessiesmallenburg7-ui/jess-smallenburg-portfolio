@@ -1,0 +1,1117 @@
+/* TraumaTrack competitive benchmarking */
+.tt-benchmark {
+  --tt-ink: #1f3330;
+  --tt-paper: #edeee7;
+  --tt-surface: #ffffff;
+  --tt-line: #dad9ce;
+  --tt-muted: #5c6963;
+  --tt-accent: #3d6b66;
+
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tt-benchmark-shortlist {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015));
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.tt-benchmark-shortlist-head {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .tt-benchmark-shortlist-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr);
+    gap: 1rem;
+    padding: 0.75rem 1.15rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(95, 211, 224, 0.06);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(95, 211, 224, 0.9);
+  }
+}
+
+.tt-benchmark-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.tt-benchmark-item {
+  display: grid;
+  gap: 0.45rem 1.15rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 2px solid transparent;
+  transition: background 0.15s ease, border-left-color 0.15s ease;
+}
+
+.tt-benchmark-item:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tt-benchmark-item:last-child {
+  border-bottom: none;
+}
+
+.tt-benchmark-item:hover {
+  background: rgba(95, 211, 224, 0.05);
+  border-left-color: rgba(95, 211, 224, 0.45);
+}
+
+.tt-benchmark-item-info {
+  min-width: 0;
+}
+
+.tt-benchmark-item-name {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.tt-benchmark-item-meta {
+  display: inline-block;
+  margin: 0.4rem 0 0;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.35;
+}
+
+.tt-benchmark-item-why {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.62);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .tt-benchmark-item {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr);
+    align-items: center;
+    padding: 1.05rem 1.15rem;
+  }
+
+  .tt-benchmark-item-why {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.tt-benchmark-acronyms {
+  margin: 0;
+  padding: 0.95rem 1.1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.025);
+  font-family: "Lato", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.48);
+}
+
+@media (min-width: 768px) {
+  .tt-benchmark-acronyms {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.tt-benchmark-acronyms abbr {
+  font-weight: 700;
+  color: rgba(95, 211, 224, 0.85);
+  text-decoration: none;
+}
+
+.tt-benchmark-swipe-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: -0.35rem 0 0.15rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media (min-width: 900px) {
+  .tt-benchmark-swipe-hint {
+    display: none;
+  }
+}
+
+.tt-benchmark-matrix-panel {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--tt-paper);
+  color: var(--tt-ink);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tt-benchmark-matrix-scroll {
+  position: relative;
+}
+
+.tt-benchmark-matrix-scroll::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2.75rem;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(237, 238, 231, 0), var(--tt-paper) 90%);
+}
+
+@media (min-width: 900px) {
+  .tt-benchmark-matrix-scroll::after {
+    display: none;
+  }
+}
+
+.tt-benchmark-matrix-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--tt-paper);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(61, 107, 102, 0.35) transparent;
+}
+
+.tt-benchmark-matrix-wrap:focus-visible {
+  outline: 2px solid var(--tt-accent);
+  outline-offset: -2px;
+}
+
+.tt-benchmark-matrix {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.tt-benchmark-matrix th,
+.tt-benchmark-matrix td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--tt-line);
+  vertical-align: middle;
+}
+
+.tt-benchmark-matrix tbody tr:last-child th,
+.tt-benchmark-matrix tbody tr:last-child td {
+  border-bottom: none;
+  padding-bottom: 22px;
+}
+
+.tt-benchmark-matrix thead th {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3d4a44;
+  background: #e4e5dc;
+  position: sticky;
+  top: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.tt-benchmark-matrix th:first-child,
+.tt-benchmark-matrix td:first-child {
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tt-benchmark-matrix tbody th {
+  font-size: 13.5px;
+  color: var(--tt-ink);
+  background: transparent;
+}
+
+.tt-benchmark-matrix .tt-target-col {
+  background: rgba(45, 125, 115, 0.16);
+  box-shadow: inset 2px 0 0 0 #2f7a70;
+}
+
+.tt-benchmark-matrix thead .tt-target-col {
+  color: #1f5c55;
+  font-weight: 500;
+  background: rgba(45, 125, 115, 0.22);
+  letter-spacing: 0.03em;
+}
+
+.tt-benchmark-matrix tbody .tt-target-col {
+  background: rgba(45, 125, 115, 0.14);
+}
+
+.tt-benchmark-matrix tbody tr:nth-child(even) .tt-target-col {
+  background: rgba(45, 125, 115, 0.2);
+}
+
+.tt-benchmark-matrix .cell-strong,
+.tt-benchmark-legend .cell-strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a6b63;
+}
+
+.tt-benchmark-matrix .cell-partial,
+.tt-benchmark-legend .cell-partial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c6418;
+}
+
+.tt-benchmark-matrix .cell-absent,
+.tt-benchmark-legend .cell-absent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d4a44;
+}
+
+.tt-benchmark-matrix .tt-target-col .cell-strong {
+  color: #0f4f47;
+  filter: drop-shadow(0 0 0.5px rgba(15, 79, 71, 0.35));
+}
+
+.tt-benchmark-matrix .tt-target-col .cell-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tt-benchmark .cell-icon {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+/* Precise geometric half — left 50% of the circle */
+.tt-benchmark .cell-icon-half {
+  clip-path: inset(0 50% 0 0);
+}
+
+.tt-target-col-note {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2f7a70;
+  opacity: 0.9;
+}
+
+.tt-benchmark-legend-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 14px 16px 13px;
+  background: var(--tt-paper);
+  border-bottom: 1px solid var(--tt-line);
+}
+
+.tt-benchmark-legend-label {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tt-muted);
+}
+
+.tt-benchmark-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: var(--tt-ink);
+}
+
+.tt-benchmark-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.tt-benchmark-patterns {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 900px) {
+  .tt-benchmark-patterns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.35rem 1.15rem;
+  }
+}
+
+.tt-benchmark-pattern {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  text-align: left;
+}
+
+.tt-benchmark-pattern-media {
+  position: relative;
+  background: #060f27;
+}
+
+.tt-benchmark-pattern-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 780;
+  object-fit: contain;
+  object-position: center top;
+  background: #060f27;
+}
+
+.tt-benchmark-pattern .diagram-expand-btn {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  z-index: 2;
+}
+
+.tt-benchmark-pattern figcaption {
+  padding: 0.9rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tt-benchmark-pattern-role {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.85);
+}
+
+.tt-benchmark-screen-label {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.tt-benchmark-screen-note {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0.35rem 0 0;
+}
+
+.tt-benchmark-pattern .tt-benchmark-screen-note {
+  font-family: "Lato", sans-serif;
+  font-size: 14.5px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.62);
+  margin: 0.15rem 0 0;
+}
+
+.tt-benchmark-pattern-hit {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.tt-benchmark-pattern-hit:focus-visible {
+  outline: 2px solid rgba(95, 211, 224, 0.8);
+  outline-offset: -2px;
+}
+
+.tt-benchmark-pattern-hit .diagram-expand-btn {
+  pointer-events: none;
+}
+
+.tt-benchmark-clusters {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.tt-benchmark-cluster {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+  font-family: "Lato", sans-serif;
+}
+
+.tt-benchmark-cluster-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+  border-radius: 9999px;
+  background: rgba(95, 211, 224, 0.12);
+  color: #5fd3e0;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tt-benchmark-cluster-title {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.tt-benchmark-cluster-body {
+  margin: 0.4rem 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tt-benchmark-cluster strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.tt-benchmark-wedge {
+  margin: 1.35rem 0 0;
+  padding: 1.25rem 1.35rem 1.35rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(95, 211, 224, 0.32);
+  background:
+    radial-gradient(ellipse 70% 90% at 0% 0%, rgba(95, 211, 224, 0.14), transparent 55%),
+    rgba(95, 211, 224, 0.06);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.tt-benchmark-wedge-kicker {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.95);
+}
+
+.tt-benchmark-wedge-text {
+  margin: 0.65rem 0 0;
+  font-family: "Cormorant", Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (min-width: 640px) {
+  .tt-benchmark-wedge {
+    padding: 1.4rem 1.55rem 1.5rem;
+  }
+
+  .tt-benchmark-wedge-text {
+    font-size: 25px;
+  }
+}
+
+/* Path Compass APA references */
+.tt-references {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tt-references li {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.65);
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+.tt-references em {
+  font-style: italic;
+}
+
+.tt-references a {
+  color: #7dd3fc;
+  text-decoration: underline;
+  text-decoration-color: rgba(125, 211, 252, 0.35);
+  text-underline-offset: 2px;
+  word-break: break-all;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.tt-references a:hover {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ---- TraumaTrack page layout polish ---- */
+
+.tt-hero {
+  position: relative;
+  isolation: isolate;
+  margin: 0 0 0.5rem;
+  padding: 1.75rem 1.25rem 2rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.tt-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 80% 70% at 12% 20%, rgba(103, 232, 249, 0.1), transparent 55%),
+    radial-gradient(ellipse 70% 60% at 88% 30%, rgba(167, 139, 250, 0.08), transparent 50%),
+    radial-gradient(ellipse 60% 50% at 50% 100%, rgba(95, 211, 224, 0.05), transparent 45%),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 45%, transparent 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.tt-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.04'%3E%3Cpath d='M0 30h60M30 0v60'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .tt-hero {
+    padding: 2rem 1.75rem 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tt-hero {
+    padding: 2.25rem 2rem 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.tt-hero-inner {
+  position: relative;
+}
+
+.tt-hero-badge {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.tt-disclaimer {
+  margin: 0.35rem 0 0;
+  max-width: 48ch;
+  padding: 0.55rem 0.85rem;
+  border-left: 2px solid rgba(95, 211, 224, 0.28);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: rgba(255, 255, 255, 0.03);
+  font-family: "Lato", sans-serif;
+  font-size: 12.5px;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+/* Full-width top TOC instead of left sidebar (scoped; clinician-flow unchanged) */
+.case-layout.case-layout--top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .case-layout.case-layout--top {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    gap: 2.25rem;
+  }
+}
+
+.case-nav--top {
+  top: 0;
+  z-index: 30;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 1024px) {
+  .case-nav--top {
+    position: sticky;
+    top: 0.75rem;
+    z-index: 25;
+    margin-left: 0;
+    margin-right: 0;
+    max-height: none;
+    align-self: stretch;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background: rgba(7, 11, 22, 0.88);
+    padding: 0.65rem 0.75rem;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .case-nav--top .case-nav-toggle {
+    display: none;
+  }
+
+  .case-nav--top .case-nav-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .case-nav--top .case-nav-link {
+    padding: 0.45rem 0.75rem;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .case-nav--top .case-nav-link-active {
+    background: rgba(95, 211, 224, 0.12);
+    border-color: rgba(95, 211, 224, 0.28);
+    color: #fff;
+  }
+}
+
+/* Feature banner — integrates product icon with overview copy */
+.tt-feature-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.25rem;
+  padding: 1.35rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(ellipse 55% 80% at 8% 50%, rgba(103, 232, 249, 0.08), transparent 60%),
+    rgba(255, 255, 255, 0.035);
+}
+
+@media (min-width: 768px) {
+  .tt-feature-banner {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 1.5rem 1.75rem;
+  }
+}
+
+.tt-feature-banner-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 auto;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  background:
+    radial-gradient(circle at 40% 35%, rgba(103, 232, 249, 0.12), transparent 65%),
+    rgba(7, 11, 22, 0.45);
+}
+
+@media (min-width: 768px) {
+  .tt-feature-banner-visual {
+    width: 9rem;
+    height: 9rem;
+    margin: 0;
+  }
+}
+
+.tt-feature-banner-icon {
+  width: 85%;
+  height: 85%;
+  display: block;
+}
+
+.tt-feature-banner-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.tt-feature-banner-kicker {
+  margin: 0 0 0.4rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.85);
+}
+
+.tt-feature-banner-lede {
+  margin: 0;
+  max-width: 48ch;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.tt-pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 1.15rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .tt-pillar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
+  }
+}
+
+.tt-pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 11, 22, 0.35);
+}
+
+.tt-pillar-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.tt-pillar-label {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tt-pillar-text {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Light key-point cards */
+.tt-key-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tt-key-card {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  padding: 1.05rem 1.15rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tt-key-card-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.tt-key-card-title {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tt-key-card-body {
+  margin: 0.35rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* PRACTICE chips */
+.tt-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .tt-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tt-practice-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+  font-family: "Lato", sans-serif;
+}
+
+.tt-practice-label {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.tt-practice-label strong {
+  color: #5fd3e0;
+  font-weight: 700;
+  margin-right: 0.15rem;
+}
+
+.tt-practice-desc {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.tt-eval-cards {
+  margin: 0;
+  padding: 0;
+}
+
+.tt-eval-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.15rem 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tt-eval-card-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: rgba(95, 211, 224, 0.12);
+  color: #5fd3e0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tt-eval-card-body {
+  margin: 0.4rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* Section separation */
+.case-layout--top .tt-case-body {
+  gap: 0;
+}
+
+.case-layout--top .case-section {
+  padding: 2rem 0 2.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.case-layout--top .case-section:first-child {
+  padding-top: 0.5rem;
+}
+
+.case-layout--top .case-section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .case-layout--top .case-section {
+    padding: 2.75rem 0 3rem;
+  }
+
+  .case-layout--top .case-section:first-child {
+    padding-top: 0.75rem;
+  }
+
+  .case-layout--top .case-section:nth-child(even) {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.015);
+  }
+}
+
+/* Design process phase cards */
+.tt-process-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.tt-process-phase {
+  padding: 1.15rem 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tt-process-phase-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tt-process-phase-link:hover .tt-process-phase-title {
+  color: #5fd3e0;
+}
+
+.tt-process-phase-num {
+  flex-shrink: 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #5fd3e0;
+}
+
+.tt-process-phase-title {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.15s ease;
+}
+
+.tt-process-phase-body {
+  margin: 0.65rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.58);
+}
+

@@ -1,0 +1,55 @@
+<!-- wireframe-crop -->
+<svg viewBox="24 24 1824.0 1937.4" width="1824.0" height="1937.4" xmlns="http://www.w3.org/2000/svg">
+<rect width="1872.0" height="1985.4" fill="#F5F5F0"/>
+<rect x="50.4" y="183.6" width="1771.2" height="1526.4" rx="10.8" fill="#FCFCFA" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<rect x="50.4" y="183.6" width="1771.2" height="82.8" rx="10.8" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<rect x="50.4" y="241.20000000000002" width="1771.2" height="25.2" rx="0.0" fill="#EEEDE8" stroke="none" stroke-width="1.8"/>
+<line x1="50.4" y1="266.40000000000003" x2="1821.6000000000001" y2="266.40000000000003" stroke="#C4C3BB" stroke-width="2.3400000000000003"/>
+<circle cx="90.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="126.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<circle cx="162.0" cy="225.0" r="10.8" fill="#C7C6BF"/>
+<rect x="212.4" y="210.6" width="1141.2" height="28.8" rx="5.4" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<text x="1785.6000000000001" y="234.0" text-anchor="end" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Diane Santos · Caregiver view</text>
+<text x="50.4" y="79.2" text-anchor="start" fill="#3F3E3A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:700;letter-spacing:0.9px;">DIANE SANTOS · FAMILY CAREGIVER · MARIA SANTOS'S DAUGHTER</text>
+<text x="50.4" y="133.20000000000002" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:39.6px;font-weight:600;">Screen 3 — Caregiver portal home, mobile (low-fidelity)</text>
+<rect x="97.2" y="316.8" width="1677.6000000000001" height="151.20000000000002" rx="5.4" fill="#F1F0EA" stroke="#8B8A82" stroke-width="2.3400000000000003"/>
+<text x="936.0" y="378.0" text-anchor="middle" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:36.0px;font-weight:700;">✓ Maria is doing well</text>
+<text x="936.0" y="421.2" text-anchor="middle" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">No urgent actions needed · updated today 9:41 am</text>
+<text x="97.2" y="511.2" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Status-first: first element on every page answers “is mom okay?” — no scrolling required</text>
+<text x="97.2" y="565.2" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.08px;">LAST VISIT — TUESDAY JUNE 24</text>
+<rect x="97.2" y="601.2" width="1677.6000000000001" height="172.8" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="126.0" y="648.0" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:25.2px;font-weight:700;">What Dr. Laura Mitchell said (in plain language)</text>
+<text x="126.0" y="687.6" text-anchor="start" fill="#3A3A36" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;">Mom's blood sugar is slightly high. Her blood pressure has improved. The doctor increased her Metformin dose —</text>
+<rect x="126.0" y="720.0" width="204.192" height="43.2" rx="10.8" fill="#FAEEDA" stroke="none" stroke-width="1.8"/>
+<text x="140.4" y="749.16" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:21.6px;font-weight:500;">dose changed ↑</text>
+<text x="97.2" y="817.2" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ No ICD codes, no abbreviations — plain language only</text>
+<text x="97.2" y="864.0" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Written in second-person ('mom') to match how Diane actually thinks about the patient</text>
+<text x="97.2" y="918.0" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.08px;">WHAT YOU NEED TO DO</text>
+<rect x="97.2" y="954.0" width="1677.6000000000001" height="72.0" rx="5.4" fill="#FAEEDA" stroke="#E8C96A" stroke-width="1.8"/>
+<text x="122.4" y="1000.8000000000001" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:500;">Pick up Metformin 1000mg at CVS — ready today</text>
+<rect x="97.2" y="1044.0" width="1677.6000000000001" height="79.2" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<rect x="122.4" y="1060.2" width="244.90800000000002" height="43.2" rx="10.8" fill="#FAEEDA" stroke="none" stroke-width="1.8"/>
+<text x="136.8" y="1089.045" text-anchor="start" fill="#9A6B14" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:500;">Prior auth pending</text>
+<text x="385.308" y="1092.6000000000001" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">Jardiance — status: submitted to insurance · est. 2–3 days</text>
+<text x="97.2" y="1166.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Prior auth tracker — single authoritative source, no phone calls</text>
+<line x1="97.2" y1="1220.4" x2="1774.8" y2="1220.4" stroke="#D8D7CF" stroke-width="1.8"/>
+<text x="97.2" y="1263.6000000000001" text-anchor="start" fill="#888780" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:700;letter-spacing:1.4400000000000002px;">MEDICATIONS</text>
+<rect x="97.2" y="1299.6000000000001" width="824.4" height="151.20000000000002" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="122.4" y="1342.8" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:500;">Metformin 1000mg</text>
+<rect x="122.4" y="1364.4" width="774.0" height="14.4" rx="3.6" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<rect x="122.4" y="1364.4" width="116.10000000000001" height="14.4" rx="3.6" fill="#E24B4A" stroke="none" stroke-width="1.8"/>
+<text x="122.4" y="1411.2" text-anchor="start" fill="#C0322F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">3 days supply</text>
+<rect x="950.4" y="1299.6000000000001" width="824.4" height="151.20000000000002" rx="5.4" fill="#FFFFFF" stroke="#C4C3BB" stroke-width="1.8"/>
+<text x="975.6" y="1342.8" text-anchor="start" fill="#2A2A28" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:500;">Lisinopril 10mg</text>
+<rect x="975.6" y="1364.4" width="774.0" height="14.4" rx="3.6" fill="#E2E1DA" stroke="none" stroke-width="1.8"/>
+<rect x="975.6" y="1364.4" width="557.2800000000001" height="14.4" rx="3.6" fill="#8B8A82" stroke="none" stroke-width="1.8"/>
+<text x="975.6" y="1411.2" text-anchor="start" fill="#6B6A64" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:22.5px;font-weight:400;">18 days supply</text>
+<text x="97.2" y="1490.4" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Only the low-supply medication is colored — avoids alarm fatigue on routine refills</text>
+<rect x="97.2" y="1540.8" width="540.0" height="75.60000000000001" rx="5.4" fill="#3F3E3A" stroke="none" stroke-width="1.8"/>
+<text x="367.2" y="1589.4" text-anchor="middle" fill="#F5F4EF" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:24.3px;font-weight:500;">Share summary with Carlos →</text>
+<text x="97.2" y="1659.6000000000001" text-anchor="start" fill="#57564F" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:23.400000000000002px;font-weight:400;font-style:italic;">↑ Shareable summary for brother Carlos</text>
+<line x1="50.4" y1="1764.0" x2="1821.6000000000001" y2="1764.0" stroke="#B8B7AF" stroke-width="2.3400000000000003"/>
+<text x="50.4" y="1803.6000000000001" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:20.7px;font-weight:700;letter-spacing:1.4400000000000002px;">PERSONA ANNOTATION</text>
+<text x="50.4" y="1843.2" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">Diane experiences anxiety from incomplete information. Status-first layout removes ambiguity immediately. Plain language</text>
+<text x="50.4" y="1881.0" text-anchor="start" fill="#1C1C1A" style="font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;font-size:27.0px;font-weight:500;">replaces clinical abbreviations. Every screen answers: is mom okay? Is there anything I need to do?</text>
+</svg>

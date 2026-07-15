@@ -1,0 +1,133 @@
+<svg viewBox="0 0 2400 1966.0" width="2400" height="1966.0" xmlns="http://www.w3.org/2000/svg">
+<rect width="2400" height="1966.0" fill="#F5F5F0"/>
+<rect x="36.0" y="574.0" width="2324.0" height="1296.0" fill="#FFFFFF" rx="36.0" stroke="#E5E3DA" stroke-width="2.0"/>
+<text x="96.0" y="134.0" text-anchor="start" fill="#534AB7" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:38.0px;font-weight:700;letter-spacing:1.8px;">EHR PROVIDER INTERFACE</text>
+<text x="96.0" y="200.0" text-anchor="start" fill="#1F1E1D" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:60.0px;font-weight:600;">Site map — home dashboard to every screen</text>
+<text x="96.0" y="276.0" text-anchor="start" fill="#1F1E1D" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:32.0px;font-weight:500;">A five-column tree rooted at the Home dashboard, mapping all 26 screens in the EHR provider interface. Each of the five top-level</text>
+<text x="96.0" y="322.0" text-anchor="start" fill="#1F1E1D" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:32.0px;font-weight:500;">sections — Today's schedule, Patient chart, Documentation, Team &amp; handoff, and Settings &amp; profile — expands into its own list of</text>
+<text x="96.0" y="368.0" text-anchor="start" fill="#1F1E1D" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:32.0px;font-weight:500;">leaf screens below, and every screen in the product is reachable in two clicks from Home. Navigation is capped at three depth levels</text>
+<text x="96.0" y="414.0" text-anchor="start" fill="#1F1E1D" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:32.0px;font-weight:500;">(L0 Home, L1 Section, L2 Leaf screen) to keep the structure predictable as new screens are added.</text>
+<rect x="96.0" y="482.0" width="128.8" height="60.0" rx="14.0" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.6"/>
+<text x="160.4" y="522.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:27.0px;font-weight:500;">Home</text>
+<rect x="256.8" y="482.0" width="174.4" height="60.0" rx="14.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="344.0" y="522.0" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:27.0px;font-weight:500;">Section</text>
+<rect x="463.20000000000005" y="482.0" width="235.2" height="60.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.6"/>
+<text x="580.8000000000001" y="522.0" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:27.0px;font-weight:500;">Leaf screen</text>
+<rect x="936.0" y="622.0" width="524.0" height="112.0" rx="14.0" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.6"/>
+<text x="1198.0" y="689.9" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:34.0px;font-weight:700;">Home dashboard</text>
+<line x1="1198.0" y1="734.0" x2="1198.0" y2="790.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="286.0" y1="790.0" x2="2110.0" y2="790.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="286.0" y1="790.0" x2="286.0" y2="826.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="742.0" y1="790.0" x2="742.0" y2="826.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="1198.0" y1="790.0" x2="1198.0" y2="826.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="1654.0" y1="790.0" x2="1654.0" y2="826.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="2110.0" y1="790.0" x2="2110.0" y2="826.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="96.0" y="826.0" width="380.0" height="100.0" rx="14.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="286.0" y="886.15" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:29.0px;font-weight:700;">Today's schedule</text>
+<line x1="286.0" y1="926.0" x2="286.0" y2="1338.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="286.0" y1="1002.0" x2="310.0" y2="1002.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="110.0" y="970.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="286.0" y="1011.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Patient queue</text>
+<line x1="286.0" y1="1086.0" x2="310.0" y2="1086.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="110.0" y="1054.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="286.0" y="1095.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Alert detail</text>
+<line x1="286.0" y1="1170.0" x2="310.0" y2="1170.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="110.0" y="1138.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="286.0" y="1179.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Tasks &amp; inbox</text>
+<line x1="286.0" y1="1254.0" x2="310.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="110.0" y="1222.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="286.0" y="1263.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Unsigned notes</text>
+<line x1="286.0" y1="1338.0" x2="310.0" y2="1338.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="110.0" y="1306.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="286.0" y="1347.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Schedule view</text>
+<rect x="552.0" y="826.0" width="380.0" height="100.0" rx="14.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="742.0" y="886.15" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:29.0px;font-weight:700;">Patient chart</text>
+<line x1="742.0" y1="926.0" x2="742.0" y2="1506.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="742.0" y1="1002.0" x2="766.0" y2="1002.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="970.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1011.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">AI snapshot</text>
+<line x1="742.0" y1="1086.0" x2="766.0" y2="1086.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="1054.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1095.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Problem list</text>
+<line x1="742.0" y1="1170.0" x2="766.0" y2="1170.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="1138.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1179.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Medications</text>
+<line x1="742.0" y1="1254.0" x2="766.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="1222.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1263.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Labs &amp; results</text>
+<line x1="742.0" y1="1338.0" x2="766.0" y2="1338.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="1306.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1347.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Lab trend view</text>
+<line x1="742.0" y1="1422.0" x2="766.0" y2="1422.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="1390.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1431.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Visit history</text>
+<line x1="742.0" y1="1506.0" x2="766.0" y2="1506.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="566.0" y="1474.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="742.0" y="1515.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Imaging &amp; reports</text>
+<rect x="1008.0" y="826.0" width="380.0" height="100.0" rx="14.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="1198.0" y="886.15" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:29.0px;font-weight:700;">Documentation</text>
+<line x1="1198.0" y1="926.0" x2="1198.0" y2="1422.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="1198.0" y1="1002.0" x2="1222.0" y2="1002.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1022.0" y="970.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1198.0" y="1011.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">SOAP note editor</text>
+<line x1="1198.0" y1="1086.0" x2="1222.0" y2="1086.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1022.0" y="1054.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1198.0" y="1095.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Ambient capture</text>
+<line x1="1198.0" y1="1170.0" x2="1222.0" y2="1170.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1022.0" y="1138.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1198.0" y="1179.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Orders &amp; Rx</text>
+<line x1="1198.0" y1="1254.0" x2="1222.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1022.0" y="1222.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1198.0" y="1263.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Referrals</text>
+<line x1="1198.0" y1="1338.0" x2="1222.0" y2="1338.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1022.0" y="1306.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1198.0" y="1347.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">After-visit summary</text>
+<line x1="1198.0" y1="1422.0" x2="1222.0" y2="1422.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1022.0" y="1390.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1198.0" y="1431.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Sign queue</text>
+<rect x="1464.0" y="826.0" width="380.0" height="100.0" rx="14.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="1654.0" y="886.15" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:29.0px;font-weight:700;">Team &amp; handoff</text>
+<line x1="1654.0" y1="926.0" x2="1654.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="1654.0" y1="1002.0" x2="1678.0" y2="1002.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1478.0" y="970.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1654.0" y="1011.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Handoff notes</text>
+<line x1="1654.0" y1="1086.0" x2="1678.0" y2="1086.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1478.0" y="1054.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1654.0" y="1095.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Team messages</text>
+<line x1="1654.0" y1="1170.0" x2="1678.0" y2="1170.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1478.0" y="1138.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1654.0" y="1179.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Co-management</text>
+<line x1="1654.0" y1="1254.0" x2="1678.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1478.0" y="1222.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="1654.0" y="1263.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Referral tracking</text>
+<rect x="1920.0" y="826.0" width="380.0" height="100.0" rx="14.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="2110.0" y="886.15" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:29.0px;font-weight:700;">Settings &amp; profile</text>
+<line x1="2110.0" y1="926.0" x2="2110.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<line x1="2110.0" y1="1002.0" x2="2134.0" y2="1002.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1934.0" y="970.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="2110.0" y="1011.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Notification prefs</text>
+<line x1="2110.0" y1="1086.0" x2="2134.0" y2="1086.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1934.0" y="1054.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="2110.0" y="1095.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Template library</text>
+<line x1="2110.0" y1="1170.0" x2="2134.0" y2="1170.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1934.0" y="1138.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="2110.0" y="1179.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Role &amp; access</text>
+<line x1="2110.0" y1="1254.0" x2="2134.0" y2="1254.0" stroke="rgba(31,30,29,0.28)" stroke-width="2.0"/>
+<rect x="1934.0" y="1222.0" width="352.0" height="64.0" rx="14.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.4"/>
+<text x="2110.0" y="1263.1" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">AI preferences</text>
+<line x1="84.0" y1="1002.0" x2="2312.0" y2="1002.0" stroke="rgba(31,30,29,0.10)" stroke-width="2.0" stroke-dasharray="4.0 10.0"/>
+<line x1="84.0" y1="1086.0" x2="2312.0" y2="1086.0" stroke="rgba(31,30,29,0.10)" stroke-width="2.0" stroke-dasharray="4.0 10.0"/>
+<line x1="84.0" y1="1170.0" x2="2312.0" y2="1170.0" stroke="rgba(31,30,29,0.10)" stroke-width="2.0" stroke-dasharray="4.0 10.0"/>
+<line x1="84.0" y1="1254.0" x2="2312.0" y2="1254.0" stroke="rgba(31,30,29,0.10)" stroke-width="2.0" stroke-dasharray="4.0 10.0"/>
+<line x1="84.0" y1="1338.0" x2="2312.0" y2="1338.0" stroke="rgba(31,30,29,0.10)" stroke-width="2.0" stroke-dasharray="4.0 10.0"/>
+<line x1="84.0" y1="1422.0" x2="2312.0" y2="1422.0" stroke="rgba(31,30,29,0.10)" stroke-width="2.0" stroke-dasharray="4.0 10.0"/>
+<text x="96.0" y="1630.0" text-anchor="start" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:28.0px;font-weight:500;">All sections reachable in 2 clicks · Role-based visibility enforced · HIPAA-compliant audit logging throughout</text>
+<text x="96.0" y="1726.0" text-anchor="start" fill="#87867F" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:25.0px;font-weight:700;letter-spacing:1.6px;">DEPTH KEY</text>
+<rect x="96.0" y="1758.0" width="201.2" height="56.0" rx="12.0" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.6"/>
+<text x="196.6" y="1796.0" text-anchor="middle" fill="#534AB7" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:25.0px;font-weight:600;">L0 — Home</text>
+<rect x="325.2" y="1758.0" width="245.6" height="56.0" rx="12.0" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="448.0" y="1796.0" text-anchor="middle" fill="#0F6E56" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:25.0px;font-weight:600;">L1 — Section</text>
+<rect x="598.8" y="1758.0" width="304.8" height="56.0" rx="12.0" fill="#F5F4ED" stroke="rgba(31,30,29,0.3)" stroke-width="1.6"/>
+<text x="751.1999999999999" y="1796.0" text-anchor="middle" fill="#5F5E5A" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:25.0px;font-weight:600;">L2 — Leaf screen</text>
+<text x="2300.0" y="1796.0" text-anchor="end" fill="#87867F" style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:26.0px;font-weight:500;">Max depth: 2 clicks from home</text>
+</svg>

@@ -1,0 +1,433 @@
+/* Path Compass personas — light paper island (scoped) */
+.tt-personas {
+  --tt-ink: #1f3330;
+  --tt-paper: #edeee7;
+  --tt-surface: #ffffff;
+  --tt-rose: #5c7a8a;
+  --tt-rose-tint: #e7eef0;
+  --tt-amber: #b98a3e;
+  --tt-amber-tint: #f5eee1;
+  --tt-sage: #6b8f71;
+  --tt-sage-tint: #ebf0ea;
+  --tt-line: #dad9ce;
+  --tt-muted: #5c6963;
+
+  margin-top: 2.5rem;
+  background: var(--tt-paper);
+  color: var(--tt-ink);
+  border-radius: 24px;
+  font-family: "Lato", -apple-system, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tt-personas a {
+  color: inherit;
+}
+
+.tt-personas-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--tt-paper);
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--tt-line);
+  border-radius: 24px 24px 0 0;
+}
+
+.tt-personas .tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--tt-surface);
+  padding: 5px;
+  border-radius: 999px;
+  border: 1px solid var(--tt-line);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.tt-personas .tab {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--tt-muted);
+  transition: background 0.18s ease, color 0.18s ease;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.tt-personas .tab:focus-visible {
+  outline: 2px solid var(--tt-ink);
+  outline-offset: 2px;
+}
+
+.tt-personas .tab[aria-selected="true"] {
+  background: var(--tt-ink);
+  color: var(--tt-surface);
+}
+
+.tt-personas .tab-role {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-top: 1px;
+}
+
+.tt-personas-body {
+  padding: 0 24px;
+}
+
+.tt-personas .panel {
+  display: none;
+  padding: 36px 0 0;
+  animation: tt-persona-fade 0.3s ease;
+}
+
+.tt-personas .panel.active {
+  display: block;
+}
+
+@keyframes tt-persona-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tt-personas .panel {
+    animation: none;
+  }
+}
+
+.tt-personas .persona-head {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.tt-personas .avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 28px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant", serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--tt-surface);
+}
+
+.tt-personas .persona-name {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: clamp(28px, 4.4vw, 38px);
+  margin: 0 0 4px;
+  color: var(--tt-ink);
+  line-height: 1.15;
+}
+
+.tt-personas .persona-role {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin: 0;
+  color: var(--tt-ink);
+}
+
+.tt-personas blockquote.pull {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(21px, 2.8vw, 27px);
+  line-height: 1.4;
+  margin: 0 0 32px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid var(--accent, var(--tt-ink));
+  color: var(--tt-ink);
+}
+
+.tt-personas .meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 28px;
+}
+
+.tt-personas .meta-chip {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+  padding: 7px 15px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.tt-personas .meta-chip.primary {
+  background: var(--accent, var(--tt-ink));
+  color: var(--tt-surface);
+  font-weight: 500;
+}
+
+.tt-personas .meta-chip.secondary {
+  background: var(--accent-tint, var(--tt-paper));
+  color: var(--tt-ink);
+  border: 1px solid var(--accent, var(--tt-line));
+}
+
+.tt-personas .tic-strip-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tt-muted);
+  margin: 0 0 10px;
+}
+
+.tt-personas .tic-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.tt-personas .chip {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--tt-line);
+  color: var(--tt-muted);
+  background: var(--tt-surface);
+}
+
+.tt-personas .chip.on {
+  border-color: var(--accent, var(--tt-ink));
+  background: var(--accent-tint, var(--tt-paper));
+  color: var(--tt-ink);
+  font-weight: 500;
+}
+
+.tt-personas .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .tt-personas .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tt-personas .persona-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .tt-personas-tabs,
+  .tt-personas-body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.tt-personas .card {
+  background: var(--tt-surface);
+  border: 1px solid var(--tt-line);
+  border-radius: 16px;
+  padding: 22px 24px;
+  color: var(--tt-ink);
+}
+
+.tt-personas .card h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent, var(--tt-ink));
+  margin: 0 0 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.tt-personas .card p,
+.tt-personas .card li {
+  font-size: 14.5px;
+  color: var(--tt-ink);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.tt-personas .card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.tt-personas .card li {
+  margin-bottom: 6px;
+}
+
+.tt-personas .card li:last-child {
+  margin-bottom: 0;
+}
+
+.tt-personas .full {
+  grid-column: 1 / -1;
+}
+
+.tt-personas .impl-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tt-personas .impl-list li {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--tt-line);
+  font-size: 14.5px;
+  color: var(--tt-ink);
+}
+
+.tt-personas .impl-list li:last-child {
+  border-bottom: none;
+}
+
+.tt-personas .impl-list .num {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--accent, var(--tt-ink));
+  flex: none;
+  padding-top: 1px;
+}
+
+.tt-personas details.sources {
+  margin-top: 8px;
+  background: var(--tt-surface);
+  border: 1px solid var(--tt-line);
+  border-radius: 16px;
+  padding: 18px 24px;
+}
+
+.tt-personas details.sources summary {
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tt-muted);
+  font-weight: 500;
+}
+
+.tt-personas details.sources summary:focus-visible {
+  outline: 2px solid var(--tt-ink);
+  outline-offset: 3px;
+}
+
+.tt-personas .source-item {
+  font-size: 13px;
+  color: var(--tt-muted);
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--tt-line);
+  line-height: 1.6;
+}
+
+.tt-personas .source-item:first-of-type {
+  border-top: none;
+  padding-top: 12px;
+}
+
+.tt-personas .source-item a {
+  color: var(--tt-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+
+.tt-personas .source-item a:hover {
+  color: var(--accent, var(--tt-ink));
+}
+
+.tt-personas-note {
+  margin: 20px 24px;
+  padding: 0;
+  color: var(--tt-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.tt-personas-note strong {
+  color: var(--tt-ink);
+}
+
+@media (max-width: 640px) {
+  .tt-personas-note {
+    margin: 20px 16px;
+  }
+}
+
+#panel-nia {
+  --accent: var(--tt-rose);
+  --accent-tint: var(--tt-rose-tint);
+}
+
+#panel-marcus {
+  --accent: var(--tt-amber);
+  --accent-tint: var(--tt-amber-tint);
+}
+
+#panel-denise {
+  --accent: var(--tt-sage);
+  --accent-tint: var(--tt-sage-tint);
+}
+
+#panel-nia .persona-head {
+  background: var(--tt-rose-tint);
+}
+
+#panel-marcus .persona-head {
+  background: var(--tt-amber-tint);
+}
+
+#panel-denise .persona-head {
+  background: var(--tt-sage-tint);
+}
+
+#panel-nia .avatar {
+  background: var(--tt-rose);
+}
+
+#panel-marcus .avatar {
+  background: var(--tt-amber);
+}
+
+#panel-denise .avatar {
+  background: var(--tt-sage);
+}
