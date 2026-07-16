@@ -10,7 +10,7 @@
     } catch (_) {
       /* ignore */
     }
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    return 'dark';
   }
 
   function syncToggle(theme) {
@@ -71,16 +71,4 @@
     });
   });
 
-  try {
-    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function (event) {
-      try {
-        if (localStorage.getItem(STORAGE_KEY)) return;
-      } catch (_) {
-        /* ignore */
-      }
-      applyTheme(event.matches ? 'light' : 'dark', false);
-    });
-  } catch (_) {
-    /* ignore */
-  }
 })();
