@@ -1,7 +1,14 @@
 (function () {
-  var STORAGE_KEY = 'theme';
+  // New key so an earlier testing preference of "light" does not override the dark default.
+  var STORAGE_KEY = 'portfolio-theme';
   var root = document.documentElement;
   var ICON_PATTERN = /(tt-icon-[a-z0-9-]+|path-compass-care-network-icon|heart-with-pulse-line-icon-representing-health-and|growing-sprout-icon-representing-personal-and-prof|overlapping-circles-icon-representing-intersecting|decorative-heartbeat-pulse-line-divider|mind-icon-layered-with-a-lotus-flower-symbolizing-)(-light)?\.svg(\?.*)?$/i;
+
+  try {
+    localStorage.removeItem('theme');
+  } catch (_) {
+    /* ignore */
+  }
 
   function getPreferredTheme() {
     try {
@@ -10,7 +17,7 @@
     } catch (_) {
       /* ignore */
     }
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    return 'dark';
   }
 
   function syncToggle(theme) {
@@ -71,16 +78,4 @@
     });
   });
 
-  try {
-    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function (event) {
-      try {
-        if (localStorage.getItem(STORAGE_KEY)) return;
-      } catch (_) {
-        /* ignore */
-      }
-      applyTheme(event.matches ? 'light' : 'dark', false);
-    });
-  } catch (_) {
-    /* ignore */
-  }
 })();
