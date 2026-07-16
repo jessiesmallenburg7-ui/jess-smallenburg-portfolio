@@ -580,8 +580,33 @@ body {
 }
 
 #main {
+  position: relative;
+  margin: 0.65rem;
+  min-height: calc(100vh - 1.3rem);
   background-color: transparent;
-  min-height: 100%;
+  border: 1px solid rgba(186, 230, 253, 0.28);
+  border-radius: 1.15rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 0 0 1px rgba(125, 211, 252, 0.16),
+    0 0 0 1px rgba(2, 7, 19, 0.7),
+    0 16px 48px rgba(0, 0, 0, 0.28);
+}
+
+@media (min-width: 768px) {
+  #main {
+    margin: 1rem;
+    min-height: calc(100vh - 2rem);
+    border-radius: 1.35rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #main {
+    margin: 1.25rem;
+    min-height: calc(100vh - 2.5rem);
+    border-radius: 1.5rem;
+  }
 }
 
 ::-moz-selection {
@@ -956,7 +981,7 @@ body {
 
 @media (min-width: 1024px) {
   .metrics-strip {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
@@ -1563,6 +1588,21 @@ body {
   border-top-width: 1px;
   border-color: rgb(255 255 255 / 0.15);
   background-color: rgb(255 255 255 / 0.02);
+}
+
+.site-footer .text-sm {
+  font-size: 0.75rem;
+  line-height: 1.15rem;
+}
+
+.site-footer .text-\[18px\] {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.site-footer .text-\[17px\] {
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .footer-social {
@@ -2245,8 +2285,8 @@ body {
 
 .process-step-icon {
   order: 2;
-  height: 4.75rem;
-  width: 4.75rem;
+  height: 5.5rem;
+  width: 5.5rem;
   flex-shrink: 0;
   color: rgb(125 211 252 / 0.9);
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -2257,8 +2297,8 @@ body {
 @media (min-width: 640px) {
   .process-step-icon {
     order: 1;
-    height: 4rem;
-    width: 4rem;
+    height: 4.75rem;
+    width: 4.75rem;
   }
 }
 
@@ -4258,7 +4298,16 @@ body {
 }
 
 .he-download-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-top: 1rem;
+}
+
+.he-download-row .he-download {
+  flex: 1 1 17.5rem;
+  min-width: min(100%, 17.5rem);
+  max-width: 36rem;
 }
 
 .he-download {

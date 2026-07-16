@@ -132,6 +132,18 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
+}
+
+.case-layout--top > .case-nav--top {
+  position: sticky;
+  z-index: 60;
+}
+
+.case-layout--top > .tt-case-body,
+.case-layout--top > .case-body {
+  position: relative;
+  z-index: 0;
 }
 
 @media (min-width: 1024px) {
@@ -143,7 +155,7 @@
 
 .case-nav--top {
   top: 0;
-  z-index: 30;
+  z-index: 60;
   border-radius: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -152,12 +164,12 @@
   .case-nav--top {
     position: sticky;
     top: 0.75rem;
-    z-index: 25;
+    z-index: 60;
     max-height: none;
     align-self: stretch;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
-    background: rgba(7, 11, 22, 0.88);
+    background: rgba(7, 11, 22, 0.94);
     padding: 0.65rem 0.75rem;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -311,4 +323,291 @@
 .case-impact-note strong {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
+}
+
+/* Usability testing / findings subsections */
+.case-finding-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.case-finding-block {
+  padding: 1.2rem 1.25rem 1.3rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-left: 2px solid rgba(95, 211, 224, 0.4);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.case-block-label {
+  margin: 0 0 0.7rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.35;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (min-width: 640px) {
+  .case-block-label {
+    font-size: 1rem;
+    letter-spacing: 0.11em;
+  }
+
+  .case-finding-block {
+    padding: 1.35rem 1.4rem 1.45rem;
+  }
+}
+
+.case-finding-block .he-download-row {
+  margin-top: 1.1rem;
+}
+
+/* Before → After iteration cards (Refine) */
+.iteration-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.iteration-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.2rem 1.25rem 1.3rem;
+}
+
+.iteration-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.iteration-priority {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(95, 211, 224, 0.35);
+  background: rgba(95, 211, 224, 0.1);
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5fd3e0;
+}
+
+.iteration-priority--p0 {
+  border-color: rgba(251, 146, 60, 0.45);
+  background: rgba(251, 146, 60, 0.12);
+  color: #fdba74;
+}
+
+.iteration-priority--p1 {
+  border-color: rgba(125, 211, 252, 0.4);
+  background: rgba(125, 211, 252, 0.1);
+  color: #7dd3fc;
+}
+
+.iteration-priority--polish {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.iteration-card-titles {
+  min-width: 0;
+}
+
+.iteration-card-title {
+  margin: 0;
+  font-family: "Cormorant", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.iteration-source {
+  margin: 0.35rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.iteration-ba {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .iteration-ba {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+
+.iteration-col {
+  min-width: 0;
+  padding: 0.95rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.iteration-col--before {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.iteration-col--after {
+  border-color: rgba(95, 211, 224, 0.22);
+  background: rgba(95, 211, 224, 0.06);
+}
+
+.iteration-kicker {
+  margin: 0 0 0.4rem;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.iteration-col--after .iteration-kicker {
+  color: #5fd3e0;
+}
+
+.iteration-body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.iteration-arrow {
+  display: none;
+  color: rgba(95, 211, 224, 0.65);
+}
+
+@media (min-width: 768px) {
+  .iteration-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .iteration-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    padding: 0.15rem 0;
+  }
+}
+
+/* Key design decision cards */
+.decision-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.decision-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.2rem 1.25rem 1.3rem;
+}
+
+.decision-card-title {
+  margin: 0 0 1rem;
+  font-family: "Cormorant", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.decision-pair {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .decision-pair {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 1rem;
+  }
+}
+
+.decision-col {
+  min-width: 0;
+  padding: 0.95rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.decision-col--decision {
+  border-color: rgba(125, 211, 252, 0.22);
+  background: rgba(125, 211, 252, 0.06);
+}
+
+.decision-col--rationale {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.decision-kicker {
+  margin: 0 0 0.4rem;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.decision-col--decision .decision-kicker {
+  color: #7dd3fc;
+}
+
+.decision-body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.decision-code {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.decision-swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin: 0 0.2rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--swatch, #faeeda);
+  vertical-align: -0.1em;
 }

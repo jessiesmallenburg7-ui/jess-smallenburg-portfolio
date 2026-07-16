@@ -706,6 +706,18 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
+}
+
+.case-layout--top > .case-nav--top {
+  position: sticky;
+  z-index: 60;
+}
+
+.case-layout--top > .tt-case-body,
+.case-layout--top > .case-body {
+  position: relative;
+  z-index: 0;
 }
 
 @media (min-width: 1024px) {
@@ -719,7 +731,7 @@
 
 .case-nav--top {
   top: 0;
-  z-index: 30;
+  z-index: 60;
   border-radius: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -728,14 +740,14 @@
   .case-nav--top {
     position: sticky;
     top: 0.75rem;
-    z-index: 25;
+    z-index: 60;
     margin-left: 0;
     margin-right: 0;
     max-height: none;
     align-self: stretch;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
-    background: rgba(7, 11, 22, 0.88);
+    background: rgba(7, 11, 22, 0.94);
     padding: 0.65rem 0.75rem;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -916,10 +928,10 @@
 }
 
 .tt-key-card-icon {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3.85rem;
+  height: 3.85rem;
   flex-shrink: 0;
-  margin-top: 0;
+  margin-top: 0.1rem;
 }
 
 .tt-key-card-title {

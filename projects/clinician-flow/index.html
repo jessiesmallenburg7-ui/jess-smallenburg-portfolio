@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 	<title>Lumen Chart — Jessie Smallenburg</title>
   <meta name="description" content="Lumen Chart — reducing cognitive load so clinicians can focus on patients, not paperwork. A healthcare UX case study redesigning EHR documentation workflows with clearer AI transparency and caregiver-facing summaries.">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/clinician-flow">
@@ -24,6 +25,7 @@
 
   <link rel="stylesheet" href="../../assets/css/styles.css">
   <link rel="stylesheet" href="../../assets/css/lumen-case.css">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css">
 </head>
 <body>
   <div id="main">
@@ -32,14 +34,25 @@
     <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
       <div class="flex items-center justify-between md:contents">
         <a href="../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
-        <button type="button" class="nav-toggle relative z-50 flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-          <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-          <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-            <path d="M18 6 6 18M6 6l12 12"/>
-          </svg>
-        </button>
+        <div class="header-actions relative z-50 md:order-last">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode" aria-pressed="false">
+            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+            </svg>
+          </button>
+          <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+            <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
       </div>
       <nav id="primary-nav" class="site-nav hidden flex-col md:flex md:flex-row md:items-center md:gap-2.5" aria-label="Primary">
         <a href="../../" class="nav-link">Home</a>
@@ -49,7 +62,7 @@
         <a href="../../contact" class="nav-link">Contact</a>
         <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-link gap-3">
           <span class="nav-linkedin-badge md:hidden" aria-hidden="true">in</span>
-          <svg class="hidden h-[18px] w-[18px] shrink-0 md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="icon-linkedin hidden h-[18px] w-[18px] shrink-0 md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
             <rect x="2" y="9" width="4" height="12"/>
             <circle cx="4" cy="4" r="2"/>
@@ -1690,12 +1703,119 @@
               </div>
             </div>
 
-            <h3 class="case-subtitle mt-10">Informal Moderated Usability Evaluation</h3>
-            <p class="prose-body">
-              One in-home moderated session with a surgical technologist who has clinical documentation and handoff experience, using the same task script prepared for remote testing. <strong class="text-white">Transparency note:</strong> n=1 and budget constraints limited formal recruitment; findings are directional and were triangulated against the heuristic evaluation rather than treated as statistically generalizable.
-            </p>
-            <div class="coming-soon-block">
-              <p>Key observations, quotes, and how findings related to the heuristic evaluation will be documented here.</p>
+            <h3 class="case-subtitle mt-10">Informal Moderated User Testing</h3>
+
+            <div class="case-finding-stack">
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Participant Profile</h4>
+                <p class="prose-body">
+                  Surgical First Assistant with 2 years in her current role and additional prior experience in healthcare. Complete novice to Electronic Health Record (EHR) systems and AI-powered clinical documentation tools. Reported moderate concern about AI accuracy (4&ndash;5/7).
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Testing Overview</h4>
+                <p class="prose-body">
+                  Conducted a 15&ndash;20 minute moderated think-aloud session focused exclusively on the core Dr. Laura Mitchell / Carol Bennett chronic care documentation workflow. This early-stage test evaluated learnability, AI transparency (especially the amber diff highlighting), and overall usability with a healthcare-adjacent professional.
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Methodology</h4>
+                <ul class="flex flex-col gap-2 pl-1">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Pre-test questionnaire (current role, EHR/AI experience, AI in clinical notes concerns)</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Moderated tasks with think-aloud protocol</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Post-test Likert scales + open-ended reflections</span></li>
+                </ul>
+
+                <div class="he-download-row" role="group" aria-label="Usability testing questionnaires">
+                  <a class="he-download he-download--primary" href="./reports/Lumen_Chart_Pre-Test_Questionnaire.pdf" download>
+                    <span class="he-download-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </span>
+                    <span class="he-download-copy">
+                      <span class="he-download-title">View Pre-Test Questionnaire</span>
+                      <span class="he-download-meta">PDF &middot; Role, EHR/AI experience, AI concerns</span>
+                    </span>
+                  </a>
+                  <a class="he-download he-download--primary" href="./reports/Lumen_Chart_Post-Test_Questionnaire.pdf" download>
+                    <span class="he-download-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </span>
+                    <span class="he-download-copy">
+                      <span class="he-download-title">View Post-Test Questionnaire</span>
+                      <span class="he-download-meta">PDF &middot; Likert scales &amp; open-ended reflections</span>
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <h3 class="case-subtitle mt-10">Key Findings</h3>
+
+            <div class="case-finding-stack">
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Strong Learnability Despite EHR Inexperience</h4>
+                <p class="prose-body">
+                  The participant successfully completed the entire documentation workflow&mdash;from dashboard selection through AI snapshot review, SOAP note editing, and gated signing&mdash;despite having no prior exposure to EHR systems. She rated every usability metric 7/7:
+                </p>
+                <ul class="flex flex-col gap-2 pl-1 mt-3">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Overall ease of completing the documentation workflow</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Confidence distinguishing AI-generated content from verified chart data</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Helpfulness of amber highlighting for AI text</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Usefulness of the transcript toggle</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Appropriateness of the two-gate signing process</span></li>
+                </ul>
+              </article>
+
+              <article class="case-finding-block">
+                <h4 class="case-block-label">AI Transparency &mdash; Positive but Needs Stronger Signifiers</h4>
+                <p class="prose-body">
+                  She noticed the amber highlighting and found it visually clear (&ldquo;Text in each tab is clear&rdquo;). However, she interpreted the amber color as a general &ldquo;this needs attention&rdquo; flag rather than a specific marker for AI-generated content. She did not connect it to the AI origin until prompted.
+                </p>
+                <p class="prose-body mt-3">
+                  This confirms the visual treatment successfully draws attention but requires clearer explicit mapping (e.g., via onboarding or improved labeling).
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Trust &amp; Safeguards</h4>
+                <p class="prose-body">
+                  She expressed confidence in the process and stated she would trust signing notes in this system, citing the visible cues and confirmation steps (&ldquo;It has confirm icon at the right corners to show when I sign&rdquo;).
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Major Opportunity: First-Time User Onboarding</h4>
+                <p class="prose-body">
+                  The participant overlooked or did not fully understand several key explanatory elements, including the specific meaning of the amber highlighting and the pencil edit icon for modifying AI-generated text in the SOAP sections.
+                </p>
+                <p class="prose-body mt-3">
+                  She commented multiple times that &ldquo;It will be easier if I could use it before&rdquo; and that an introduction or training would significantly improve the experience.
+                </p>
+              </article>
+
+              <div class="persona-callout persona-callout--info">
+                <p class="persona-callout-label">Design Response</p>
+                <p class="prose-body">
+                  In direct response to these insights, I will implement a skippable onboarding wizard on first load of the live prototype. The wizard will progressively highlight and explain:
+                </p>
+                <ul class="flex flex-col gap-2 pl-1 mt-3">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Amber text = AI-generated draft + &ldquo;Always verify&rdquo; banner</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Pencil icon = ability to edit AI content</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Per-section Accept buttons and two-gate signing safeguards</span></li>
+                </ul>
+                <p class="prose-body mt-3">
+                  This addresses discoverability gaps for new users while preserving a clean interface for experienced clinicians.
+                </p>
+              </div>
+
+              <article class="case-finding-block">
+                <h4 class="case-block-label">Next Steps</h4>
+                <p class="prose-body">
+                  Due to project constraints (time and budget), heuristic evaluation combined with this user test will serve as the primary sources of analysis and refinement data. Future testing could expand to practicing physicians (target users) to further validate and build upon these findings. This initial session provided high-signal insights into foundational learnability and AI transparency effectiveness.
+                </p>
+              </article>
             </div>
           </section>
 
@@ -1703,11 +1823,143 @@
           <section id="refine" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">05</span> Refine &mdash; Iteration Story</h2>
             <p class="prose-body">
-              Three high-severity issues from the heuristic evaluation and key observations from the moderated session drove the following design changes.
+              Following the initial design and heuristic evaluation, I conducted an informal moderated usability test with a Surgical First Assistant (healthcare professional with 2 years in her current role but no prior EHR experience). This early test focused on learnability and the core AI transparency features in the Dr. Laura Mitchell / Carol Bennett chronic care documentation flow.
             </p>
-            <div class="coming-soon-block">
-              <p>Before &rarr; After iteration cards (source, problem, decision, and why it matters) will be documented here.</p>
+
+            <h3 class="case-subtitle mt-8">Key Insights from Testing</h3>
+            <ul class="flex flex-col gap-2 pl-1 mt-3">
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">The participant successfully completed the full workflow and rated every metric 7/7, demonstrating strong overall learnability.</span></li>
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">The amber AI diff highlighting successfully drew attention and was described as visually clear (&ldquo;Text in each tab is clear&rdquo;). However, she initially interpreted it as a general &ldquo;needs attention&rdquo; flag rather than specifically AI-generated content.</span></li>
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">She overlooked the pencil edit icon and did not fully internalize the &ldquo;Always verify&rdquo; banner.</span></li>
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">She repeatedly noted that &ldquo;It will be easier if I could use it before,&rdquo; highlighting the need for better first-time user support.</span></li>
+            </ul>
+            <p class="prose-body mt-4">
+              These findings, combined with the heuristic evaluation (which flagged missing Unaccept controls, weak error recovery on the pre-sign gate, and discoverability issues), drove targeted refinements.
+            </p>
+
+            <h3 class="case-subtitle mt-10">Planned Iterations</h3>
+            <p class="prose-body mt-2">Implementation priority ordered from P0 (ship before live prototype) through minor polish.</p>
+
+            <div class="iteration-card-list">
+              <article class="iteration-card">
+                <div class="iteration-card-head">
+                  <span class="iteration-priority iteration-priority--p0">P0</span>
+                  <div class="iteration-card-titles">
+                    <h4 class="iteration-card-title">Skippable Onboarding Wizard</h4>
+                    <p class="iteration-source">Source: Usability test &middot; Learnability &amp; AI transparency</p>
+                  </div>
+                </div>
+                <div class="iteration-ba">
+                  <div class="iteration-col iteration-col--before">
+                    <p class="iteration-kicker">Before</p>
+                    <p class="iteration-body">Amber highlighting was read as a generic &ldquo;needs attention&rdquo; flag. The pencil edit icon and &ldquo;Always verify&rdquo; banner were overlooked. Participant asked for a chance to &ldquo;use it before.&rdquo;</p>
+                  </div>
+                  <div class="iteration-arrow" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </div>
+                  <div class="iteration-col iteration-col--after">
+                    <p class="iteration-kicker">After</p>
+                    <p class="iteration-body">Skippable first-load wizard with progressive highlights explaining amber = AI-generated draft, the pencil edit control, and two-gate signing&mdash;dismissible for returning users.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="iteration-card">
+                <div class="iteration-card-head">
+                  <span class="iteration-priority iteration-priority--p0">P0</span>
+                  <div class="iteration-card-titles">
+                    <h4 class="iteration-card-title">Unaccept / Re-review Control</h4>
+                    <p class="iteration-source">Source: Heuristic H3 &middot; User Control &amp; Freedom + trust concerns</p>
+                  </div>
+                </div>
+                <div class="iteration-ba">
+                  <div class="iteration-col iteration-col--before">
+                    <p class="iteration-kicker">Before</p>
+                    <p class="iteration-body">Once a SOAP section was Accepted, clinicians had no clear path to reverse that decision and re-review AI content before signing.</p>
+                  </div>
+                  <div class="iteration-arrow" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </div>
+                  <div class="iteration-col iteration-col--after">
+                    <p class="iteration-kicker">After</p>
+                    <p class="iteration-body">Add an Unaccept control so any Accepted section can be reverted for re-review, restoring clinician agency and supporting trust in AI-assisted notes.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="iteration-card">
+                <div class="iteration-card-head">
+                  <span class="iteration-priority iteration-priority--p0">P0</span>
+                  <div class="iteration-card-titles">
+                    <h4 class="iteration-card-title">Strengthened Pre-Sign Gate</h4>
+                    <p class="iteration-source">Source: Heuristic evaluation &middot; Error prevention &amp; recovery</p>
+                  </div>
+                </div>
+                <div class="iteration-ba">
+                  <div class="iteration-col iteration-col--before">
+                    <p class="iteration-kicker">Before</p>
+                    <p class="iteration-body">Pre-sign checkboxes could be raced through, and the &ldquo;Writing to chart&hellip;&rdquo; state lacked clear failure and retry guidance.</p>
+                  </div>
+                  <div class="iteration-arrow" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </div>
+                  <div class="iteration-col iteration-col--after">
+                    <p class="iteration-kicker">After</p>
+                    <p class="iteration-body">Strengthen prevention (e.g., progressive disclosure or hold-to-confirm) and add explicit failure/retry UI for the chart-write state.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="iteration-card">
+                <div class="iteration-card-head">
+                  <span class="iteration-priority iteration-priority--p1">P1</span>
+                  <div class="iteration-card-titles">
+                    <h4 class="iteration-card-title">Persistent Visit Context</h4>
+                    <p class="iteration-source">Source: Heuristic &amp; workflow continuity &middot; Discoverability</p>
+                  </div>
+                </div>
+                <div class="iteration-ba">
+                  <div class="iteration-col iteration-col--before">
+                    <p class="iteration-kicker">Before</p>
+                    <p class="iteration-body">Checked agenda items and open SDOH actions dropped out of view once clinicians moved into SOAP editing and pre-sign.</p>
+                  </div>
+                  <div class="iteration-arrow" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </div>
+                  <div class="iteration-col iteration-col--after">
+                    <p class="iteration-kicker">After</p>
+                    <p class="iteration-body">Sticky visit summary of checked agenda items and open SDOH actions remains visible across SOAP and pre-sign screens.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="iteration-card">
+                <div class="iteration-card-head">
+                  <span class="iteration-priority iteration-priority--polish">Polish</span>
+                  <div class="iteration-card-titles">
+                    <h4 class="iteration-card-title">Minor Polish</h4>
+                    <p class="iteration-source">Source: Heuristic evaluation &middot; Accessibility &amp; efficiency</p>
+                  </div>
+                </div>
+                <div class="iteration-ba">
+                  <div class="iteration-col iteration-col--before">
+                    <p class="iteration-kicker">Before</p>
+                    <p class="iteration-body">Keyboard paths, live announcements, and remaining-section feedback on the disabled Sign button were incomplete or unclear.</p>
+                  </div>
+                  <div class="iteration-arrow" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </div>
+                  <div class="iteration-col iteration-col--after">
+                    <p class="iteration-kicker">After</p>
+                    <p class="iteration-body">Add keyboard accelerators, improved aria-live announcements, and clearer remaining-section indicators on the disabled Sign button.</p>
+                  </div>
+                </div>
+              </article>
             </div>
+
+            <p class="case-impact-note mt-6">
+              <strong>Next:</strong> These changes will be implemented before launching the live prototype for broader (unmoderated) testing.
+            </p>
           </section>
 
           <!-- Launch -->
@@ -1721,19 +1973,128 @@
             </div>
           </section>
 
-          <!-- Key decisions (coming soon) -->
+          <!-- Key decisions -->
           <section id="key-decisions" class="case-section">
             <h2 class="case-section-title">Key Design Decisions &amp; Rationale</h2>
-            <div class="coming-soon-block">
-              <p>This section is coming soon &mdash; pivotal tradeoffs and the reasoning behind them will be documented here.</p>
+            <p class="prose-body">
+              Five pivotal choices that shape how Lumen Chart earns clinician trust, reduces cognitive load, and keeps AI assistance accountable at the point of care.
+            </p>
+
+            <div class="decision-card-list">
+              <article class="decision-card">
+                <h3 class="decision-card-title">Amber AI Diff Highlighting</h3>
+                <div class="decision-pair">
+                  <div class="decision-col decision-col--decision">
+                    <p class="decision-kicker">Decision</p>
+                    <p class="decision-body">Used amber background <span class="decision-swatch" style="--swatch:#FAEEDA" title="#FAEEDA"></span> (<code class="decision-code">#FAEEDA</code>) for all AI-generated text that clears to normal upon Accept.</p>
+                  </div>
+                  <div class="decision-col decision-col--rationale">
+                    <p class="decision-kicker">Rationale</p>
+                    <p class="decision-body">Directly addresses the most common clinician complaint with ambient AI tools&mdash;inability to distinguish AI-generated content from verified chart data (supported by 2025&ndash;2026 research on hallucinations and trust erosion). The user test validated that the color draws attention effectively, while the wizard will strengthen the signifier.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="decision-card">
+                <h3 class="decision-card-title">Per-Section Accept + Two-Gate Signing</h3>
+                <div class="decision-pair">
+                  <div class="decision-col decision-col--decision">
+                    <p class="decision-kicker">Decision</p>
+                    <p class="decision-body">Sign button remains disabled until every SOAP section is Accepted + both pre-sign acknowledgments are checked.</p>
+                  </div>
+                  <div class="decision-col decision-col--rationale">
+                    <p class="decision-kicker">Rationale</p>
+                    <p class="decision-body">Responds to Laura Mitchell&rsquo;s persona insight (&ldquo;One-click sign feels like a red flag, not a feature&rdquo;) and real-world liability concerns. Creates deliberate friction where it matters most, reducing risk of signing unreviewed AI content.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="decision-card">
+                <h3 class="decision-card-title">Transcript Toggle (&ldquo;Show me what it heard&rdquo;)</h3>
+                <div class="decision-pair">
+                  <div class="decision-col decision-col--decision">
+                    <p class="decision-kicker">Decision</p>
+                    <p class="decision-body">Prominent, collapsible panel with speaker-labeled, timestamped lines.</p>
+                  </div>
+                  <div class="decision-col decision-col--rationale">
+                    <p class="decision-kicker">Rationale</p>
+                    <p class="decision-body">Provides immediate provenance and verification, addressing the #1 trust barrier identified in ambient AI studies. The user test participant rated it 7/7 for helpfulness.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="decision-card">
+                <h3 class="decision-card-title">Queue-Level Critical Alerts &amp; SDOH Visibility</h3>
+                <div class="decision-pair">
+                  <div class="decision-col decision-col--decision">
+                    <p class="decision-kicker">Decision</p>
+                    <p class="decision-body">Critical alerts and SDOH tags visible on patient queue rows before opening a chart.</p>
+                  </div>
+                  <div class="decision-col decision-col--rationale">
+                    <p class="decision-kicker">Rationale</p>
+                    <p class="decision-body">Supports Kevin Hartley&rsquo;s need to surface deteriorating patients and social risks at a glance, reducing cognitive load and improving patient safety.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="decision-card">
+                <h3 class="decision-card-title">Simplified View Toggle</h3>
+                <div class="decision-pair">
+                  <div class="decision-col decision-col--decision">
+                    <p class="decision-kicker">Decision</p>
+                    <p class="decision-body">One-click toggle that reduces interface density.</p>
+                  </div>
+                  <div class="decision-col decision-col--rationale">
+                    <p class="decision-kicker">Rationale</p>
+                    <p class="decision-body">Addresses varying tech comfort levels across personas and supports interrupted clinical workflows.</p>
+                  </div>
+                </div>
+              </article>
             </div>
           </section>
 
-          <!-- Reflection (coming soon) -->
+          <!-- Reflection -->
           <section id="reflection" class="case-section">
             <h2 class="case-section-title">Reflection &amp; Learnings</h2>
-            <div class="coming-soon-block">
-              <p>This section is coming soon &mdash; lessons learned and what would be explored next will be documented here.</p>
+            <p class="prose-body">
+              This project reinforced several core lessons in healthcare UX:
+            </p>
+
+            <div class="case-finding-stack">
+              <article class="case-finding-block">
+                <h3 class="case-block-label">Visual salience is not enough</h3>
+                <p class="prose-body">
+                  Even when a design element (amber highlighting) successfully draws attention, users may assign incorrect meaning without explicit onboarding. This was a powerful reminder of the importance of clear signifiers and progressive disclosure.
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h3 class="case-block-label">Novice perspectives are invaluable</h3>
+                <p class="prose-body">
+                  Testing with a complete EHR novice revealed foundational discoverability issues that expert users might overlook. The perfect 7/7 scores despite zero prior experience validated the overall flow structure while highlighting the need for better first-use support.
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h3 class="case-block-label">AI in high-stakes domains requires intentional friction</h3>
+                <p class="prose-body">
+                  The two-gate signing process and per-section review model deliberately slow down the final commitment step. This is not a usability flaw&mdash;it is a safety feature calibrated to clinical reality and liability concerns.
+                </p>
+              </article>
+
+              <article class="case-finding-block">
+                <h3 class="case-block-label">Iteration drives clarity</h3>
+                <p class="prose-body">
+                  The combination of heuristic evaluation and real-user testing provided convergent evidence that led to concrete, high-impact improvements (onboarding wizard, Unaccept control, stronger gates).
+                </p>
+              </article>
+            </div>
+
+            <div class="persona-callout persona-callout--info mt-6">
+              <p class="persona-callout-label">Overall Reflection</p>
+              <p class="prose-body">
+                The Lumen Chart prototype demonstrates a thoughtful balance between efficiency gains from ambient AI and the critical need for clinician trust, control, and verification. While constraints limited testing to one participant plus heuristics, the insights were high-signal and directly actionable. Future work will expand to practicing physicians to further refine the experience.
+              </p>
             </div>
           </section>
 
@@ -1748,7 +2109,7 @@
           <p class="font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white/45">Connect</p>
           <div class="flex items-center gap-3">
             <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg class="icon-linkedin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
                 <rect x="2" y="9" width="4" height="12"/>
                 <circle cx="4" cy="4" r="2"/>
@@ -1765,12 +2126,16 @@
         <hr class="border-white/10">
         <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
           <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. All rights reserved.</p>
-          <p class="font-sans text-[17px] text-white/40">Designed with care for accessible healthcare.</p>
+          <div class="font-sans text-[17px] text-white/40 md:text-right">
+            <p>Built with AI assistance and human care.</p>
+            <p class="mt-1 max-w-xl md:ml-auto">Research, design, and writing were supported by AI tools. All final decisions and refinements are my own.</p>
+          </div>
         </div>
       </div>
     </footer>
 
   </div>
+  <script src="../../assets/js/theme.js"></script>
   <script src="../../assets/js/nav.js"></script>
   <script src="../../assets/js/case-nav.js"></script>
   <script src="../../assets/js/diagram-zoom.js"></script>
