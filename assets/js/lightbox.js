@@ -109,11 +109,14 @@
   }
 
   function clonePageSvg(trigger, alt) {
+    // Only clone an SVG already rendered for *this* trigger's figure.
+    // Never fall back to another diagram on the page (e.g. journey maps),
+    // or pattern thumbnails would open the wrong SVG.
     const figure = trigger.closest('.user-flow-figure') || trigger.closest('[data-journey-viewer]');
+    if (!figure) return null;
     const source =
-      figure?.querySelector('.diagram-zoom-stage > svg.diagram-zoom-content') ||
-      figure?.querySelector('.diagram-zoom-stage > svg') ||
-      document.querySelector('.tt-journeys .diagram-zoom-stage > svg');
+      figure.querySelector('.diagram-zoom-stage > svg.diagram-zoom-content') ||
+      figure.querySelector('.diagram-zoom-stage > svg');
     if (!source) return null;
     return finalizeInlineSvg(source.cloneNode(true), alt);
   }
