@@ -277,10 +277,10 @@
 
 .tt-personas .card p,
 .tt-personas .card li {
-  font-size: 21px;
+  font-size: 19px;
   color: var(--tt-ink);
   margin: 0;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .tt-personas .card ul {
@@ -311,9 +311,9 @@
   gap: 12px;
   padding: 10px 0;
   border-bottom: 1px solid var(--tt-line);
-  font-size: 21px;
+  font-size: 19px;
   color: var(--tt-ink);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .tt-personas .impl-list li:last-child {
