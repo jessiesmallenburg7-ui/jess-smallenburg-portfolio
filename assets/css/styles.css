@@ -1009,7 +1009,7 @@ body {
 
 .metrics-value {
   font-family: Cormorant, Cormorant Placeholder, serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.01em;
@@ -1019,19 +1019,19 @@ body {
 
 @media (min-width: 640px) {
   .metrics-value {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
 @media (min-width: 1024px) {
   .metrics-value {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
 .metrics-label {
   font-family: Lato, Lato Placeholder, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.375;
   color: rgb(255 255 255 / 0.55);
@@ -1039,7 +1039,7 @@ body {
 
 @media (min-width: 640px) {
   .metrics-label {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1323,15 +1323,9 @@ body {
 .skill-card-body {
   text-align: center;
   font-family: Lato, Lato Placeholder, sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.65em;
   color: rgb(255 255 255 / 0.65);
-}
-
-@media (min-width: 640px) {
-  .skill-card-body {
-    font-size: 18px;
-  }
 }
 
 @media (min-width: 768px) {

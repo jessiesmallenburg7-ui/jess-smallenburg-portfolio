@@ -978,7 +978,7 @@
 }
 
 .tt-practice-label {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.35;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.82);
@@ -991,9 +991,19 @@
 }
 
 .tt-practice-desc {
-  font-size: 13.5px;
-  line-height: 1.45;
+  font-size: 16px;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.48);
+}
+
+@media (min-width: 768px) {
+  .tt-practice-label {
+    font-size: 16px;
+  }
+
+  .tt-practice-desc {
+    font-size: 15px;
+  }
 }
 
 .tt-eval-cards {
@@ -1105,7 +1115,7 @@
 .tt-process-phase-num {
   flex-shrink: 0;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: #5fd3e0;
@@ -1113,7 +1123,7 @@
 
 .tt-process-phase-title {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   transition: color 0.15s ease;
@@ -1122,8 +1132,22 @@
 .tt-process-phase-body {
   margin: 0.65rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.58);
+}
+
+@media (min-width: 768px) {
+  .tt-process-phase-num {
+    font-size: 12px;
+  }
+
+  .tt-process-phase-title {
+    font-size: 16px;
+  }
+
+  .tt-process-phase-body {
+    font-size: 15px;
+  }
 }
 

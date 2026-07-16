@@ -208,12 +208,12 @@
   }
 
   .metrics-value {
-    @apply font-serif text-[22px] font-semibold leading-tight tracking-[-0.01em] text-sky-accent
-           sm:text-[24px] lg:text-[26px];
+    @apply font-serif text-[24px] font-semibold leading-tight tracking-[-0.01em] text-sky-accent
+           sm:text-[26px] lg:text-[28px];
   }
 
   .metrics-label {
-    @apply font-sans text-[13px] font-medium leading-snug text-white/55 sm:text-[14px];
+    @apply font-sans text-[15px] font-medium leading-snug text-white/55 sm:text-[16px];
   }
 
   /* Selected work project cards */
@@ -333,8 +333,8 @@
   }
 
   .skill-card-body {
-    @apply text-center font-sans text-[17px] leading-[1.65em] text-white/65
-           md:text-left sm:text-[18px];
+    @apply text-center font-sans text-[19px] leading-[1.65em] text-white/65
+           md:text-left;
   }
 
   /* Home — My approach principles */
