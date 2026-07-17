@@ -379,6 +379,13 @@ html[data-theme="light"] .nav-toggle {
     background-color: #F0EDE4;
   }
 
+  html[data-theme="light"] .site-nav .nav-link,
+  html[data-theme="light"] .site-nav .nav-link:hover {
+    border-width: 0;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
   html[data-theme="light"] .site-nav .nav-link {
     color: rgba(31, 41, 55, 0.8);
   }
@@ -389,6 +396,9 @@ html[data-theme="light"] .nav-toggle {
 
   html[data-theme="light"] .site-nav .nav-link-active,
   html[data-theme="light"] .site-nav .nav-link-active:hover {
+    border-width: 0;
+    border-color: transparent;
+    background-color: transparent;
     color: #2563EB;
   }
 }
