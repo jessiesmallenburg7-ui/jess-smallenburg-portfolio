@@ -4,20 +4,21 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
-	<title>Lumen Chart — Jessie Smallenburg</title>
-  <meta name="description" content="Lumen Chart — reducing cognitive load so clinicians can focus on patients, not paperwork. A healthcare UX case study redesigning EHR documentation workflows with clearer AI transparency and caregiver-facing summaries.">
+	<title>Lumen Chart — Light Mode Lab (Experiment)</title>
+  <meta name="description" content="Local Lumen Chart light-mode color experiment — not the live case study.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/clinician-flow">
 
   <link rel="icon" href="../../assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
   <link rel="icon" href="../../assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Lumen Chart — Reducing Cognitive Load in EHR Workflows">
-  <meta property="og:description" content="Reducing cognitive load so clinicians can focus on patients, not paperwork. A healthcare UX case study on EHR documentation, AI transparency, and caregiver-facing summaries.">
-  <meta property="og:url" content="https://www.jessamynsmallenburg.com/projects/clinician-flow">
+  <meta property="og:title" content="Lumen Chart — Light Mode Lab (Experiment)">
+  <meta property="og:description" content="Local Lumen Chart light-mode color experiment — not the live case study.">
+  <meta property="og:url" content="https://www.jessamynsmallenburg.com/projects/clinician-flow/index-experiment">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lumen Chart — Reducing Cognitive Load in EHR Workflows">
-  <meta name="twitter:description" content="Reducing cognitive load so clinicians can focus on patients, not paperwork. A healthcare UX case study on EHR documentation, AI transparency, and caregiver-facing summaries.">
+  <meta name="twitter:title" content="Lumen Chart — Light Mode Lab (Experiment)">
+  <meta name="twitter:description" content="Local Lumen Chart light-mode color experiment — not the live case study.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,18 +26,27 @@
 
   <link rel="stylesheet" href="../../assets/css/styles.css">
   <link rel="stylesheet" href="../../assets/css/lumen-case.css">
-  <link rel="stylesheet" href="../../assets/css/theme-light.css">
+  <!-- Experiment-only light theme: edit freely; production Lumen page uses theme-light.css -->
+  <link rel="stylesheet" href="../../assets/css/theme-light-lumen-experiment.css">
 </head>
 <body>
   <div id="main">
+
+    <aside class="container-content pt-4" aria-label="Experiment notice">
+      <div class="theme-lab-banner">
+        <p class="theme-lab-banner-text">
+          <strong>Lumen Light Mode Lab</strong> — Day Mode palette: warm beige + mid-blue (#2563EB), emerald accents, WCAG-minded contrast.
+          Edit <code>assets/css/theme-light-lumen-experiment.css</code>. The live Lumen case study is unchanged.
+        </p>
+        <a href="./" class="theme-lab-banner-link">← Back to live Lumen page</a>
+      </div>
+    </aside>
 
     <!-- ============ Header ============ -->
     <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
       <div class="flex items-center justify-between md:contents">
         <a href="../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
         <div class="header-actions relative z-50 md:order-last">
-          <!-- TEMP: remove when light-mode experiments are done -->
-          <a href="./index-experiment.html" class="theme-lab-temp-btn" title="Open Lumen light mode color lab">Light lab</a>
           <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode" aria-pressed="false">
             <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="4"/>
@@ -2173,20 +2183,11 @@
     </footer>
 
   </div>
-
-  <button type="button" class="back-to-top" data-back-to-top hidden aria-label="Back to top" aria-hidden="true">
-    <svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M12 19V5"/>
-      <path d="m5 12 7-7 7 7"/>
-    </svg>
-  </button>
-
   <script src="../../assets/js/theme.js"></script>
   <script src="../../assets/js/nav.js"></script>
   <script src="../../assets/js/case-nav.js"></script>
   <script src="../../assets/js/diagram-zoom.js"></script>
   <script src="../../assets/js/lightbox.js"></script>
   <script src="../../assets/js/prototype-launch.js"></script>
-  <script src="../../assets/js/back-to-top.js"></script>
 </body>
 </html>

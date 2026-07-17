@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
-	<title>Jessamyn Smallenburg | Healthcare UX Portfolio</title>
-    <meta name="description" content="Crafting intuitive healthcare experiences through empathy and evidence.">
+	<title>Jessamyn Smallenburg | Light Mode Lab (Experiment)</title>
+    <meta name="description" content="Local light-mode color experiment — not the live homepage.">
+    <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/">
 
   <!-- Favicon -->
@@ -14,12 +15,12 @@
 
   <!-- Open Graph / X -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Jessamyn Smallenburg | Healthcare UX Portfolio">
-    <meta property="og:description" content="Crafting intuitive healthcare experiences through empathy and evidence.">
-  <meta property="og:url" content="https://www.jessamynsmallenburg.com/">
+    <meta property="og:title" content="Jessamyn Smallenburg | Light Mode Lab (Experiment)">
+    <meta property="og:description" content="Local light-mode color experiment — not the live homepage.">
+  <meta property="og:url" content="https://www.jessamynsmallenburg.com/home-experiment">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jessamyn Smallenburg | Healthcare UX Portfolio">
-    <meta name="twitter:description" content="Crafting intuitive healthcare experiences through empathy and evidence.">
+    <meta name="twitter:title" content="Jessamyn Smallenburg | Light Mode Lab (Experiment)">
+    <meta name="twitter:description" content="Local light-mode color experiment — not the live homepage.">
 	
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,18 +28,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/theme-light.css">
+  <!-- Experiment-only light theme: edit this file freely; production uses theme-light.css -->
+  <link rel="stylesheet" href="assets/css/theme-light-experiment.css">
 </head>
 <body>
   <div id="main">
+
+    <aside class="container-content pt-4" aria-label="Experiment notice">
+      <div class="theme-lab-banner">
+        <p class="theme-lab-banner-text">
+          <strong>Light Mode Lab</strong> — Day Mode palette: warm beige + mid-blue (#2563EB), emerald accents.
+          Edit <code>assets/css/theme-light-experiment.css</code>. The real homepage is unchanged.
+        </p>
+        <a href="./" class="theme-lab-banner-link">← Back to real homepage</a>
+      </div>
+    </aside>
 
     <!-- ============ Header ============ -->
     <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
       <div class="flex items-center justify-between md:contents">
         <a href="./" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
         <div class="header-actions relative z-50 md:order-last">
-          <!-- TEMP: remove when light-mode experiments are done -->
-          <a href="./home-experiment.html" class="theme-lab-temp-btn" title="Open light mode color lab">Light lab</a>
           <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode" aria-pressed="false">
             <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="4"/>

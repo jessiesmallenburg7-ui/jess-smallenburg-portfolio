@@ -1,15 +1,78 @@
 /* ============================================================
-   Light theme — Day Mode (warm beige + mid-blue healthcare UX)
-   Additive only. Dark mode styles are untouched.
-   Activated via html[data-theme="light"]
-
-   Palette:
-     --bg-primary / --bg-surface / --bg-subtle
-     --accent-primary (#2563EB) + --accent-secondary (#10B981)
-     --text-primary / --text-secondary / --text-muted / --border
-   Sandbox copies (theme-light-experiment.css,
-   theme-light-lumen-experiment.css) remain for further experiments.
+   EXPERIMENT Light theme — Lumen Chart sandbox
+   Used only by projects/clinician-flow/index-experiment.html.
+   Edit freely. Live Lumen page uses theme-light.css and is unaffected.
+   Independent from home-experiment.css / theme-light-experiment.css.
    ============================================================ */
+
+/* ---------- Lab chrome (Lumen experiment page only) ---------- */
+.theme-lab-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.theme-lab-banner-text {
+  margin: 0;
+  max-width: 52rem;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.theme-lab-banner-text strong {
+  color: #fde68a;
+  font-weight: 700;
+}
+
+.theme-lab-banner-text code {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: #fde68a;
+}
+
+.theme-lab-banner-link {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8eb6d9;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.theme-lab-banner-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+html[data-theme="light"] .theme-lab-banner {
+  border-color: rgba(180, 83, 9, 0.28);
+  background: rgba(254, 243, 199, 0.85);
+}
+
+html[data-theme="light"] .theme-lab-banner-text {
+  color: rgba(31, 41, 55, 0.78);
+}
+
+html[data-theme="light"] .theme-lab-banner-text strong,
+html[data-theme="light"] .theme-lab-banner-text code {
+  color: rgb(146, 64, 14);
+}
+
+html[data-theme="light"] .theme-lab-banner-link {
+  color: rgb(37, 99, 235);
+}
+
+html[data-theme="light"] .theme-lab-banner-link:hover {
+  color: rgb(30, 64, 175);
+}
 
 /* ---------- TEMP: light-mode lab entry (homepage only) ---------- */
 .theme-lab-temp-btn {
@@ -38,15 +101,15 @@
 }
 
 html[data-theme="light"] .theme-lab-temp-btn {
-  border-color: rgba(37, 99, 235, 0.28);
-  background: rgba(37, 99, 235, 0.06);
-  color: var(--accent-primary);
+  border-color: rgba(31, 41, 55, 0.22);
+  background: rgba(31, 41, 55, 0.04);
+  color: rgba(31, 41, 55, 0.7);
 }
 
 html[data-theme="light"] .theme-lab-temp-btn:hover {
   border-color: rgba(37, 99, 235, 0.45);
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--accent-primary-hover);
+  background: rgba(37, 99, 235, 0.1);
+  color: rgb(30, 64, 175);
 }
 
 /* ---------- Theme toggle ---------- */
@@ -117,7 +180,7 @@ html[data-theme="light"] .theme-lab-temp-btn:hover {
 }
 
 /* ---------- Base ----------
-   Day Mode (warm beige + mid-blue healthcare UX)
+   EXPERIMENT — Day Mode (warm beige + mid-blue healthcare UX)
    Surfaces: --bg-primary / --bg-surface / --bg-subtle
    Accent:   --accent-primary (#2563EB) + --accent-secondary (#10B981)
    Text:     --text-primary / --text-secondary / --text-muted
@@ -417,54 +480,6 @@ html[data-theme="light"] .metrics-item {
   background-color: #ffffff;
 }
 
-/* Project + About graphics — same SVGs, Day Mode prominence
-   Cyan/violet strokes were tuned for dark; boost contrast + blue glow on beige */
-html[data-theme="light"] .card-icon,
-html[data-theme="light"] .feature-icon,
-html[data-theme="light"] .about-feature-icon {
-  border-radius: 1.5rem;
-  background:
-    radial-gradient(ellipse 72% 68% at 38% 32%, rgba(37, 99, 235, 0.16), transparent 62%),
-    radial-gradient(ellipse 58% 52% at 78% 72%, rgba(16, 185, 129, 0.1), transparent 58%),
-    linear-gradient(165deg, #FFFFFF 0%, var(--bg-surface) 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    0 0 0 1px rgba(37, 99, 235, 0.08),
-    0 8px 22px rgba(37, 99, 235, 0.07),
-    0 2px 8px rgba(31, 41, 55, 0.04);
-  filter:
-    saturate(1.55)
-    contrast(1.22)
-    brightness(0.9)
-    hue-rotate(12deg)
-    drop-shadow(0 1px 4px rgba(37, 99, 235, 0.1));
-  transition: filter 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-html[data-theme="light"] a.card:hover .card-icon {
-  filter:
-    saturate(1.7)
-    contrast(1.28)
-    brightness(0.88)
-    hue-rotate(14deg)
-    drop-shadow(0 2px 8px rgba(37, 99, 235, 0.14));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    0 0 0 1px rgba(37, 99, 235, 0.14),
-    0 10px 28px rgba(37, 99, 235, 0.1),
-    0 3px 10px rgba(31, 41, 55, 0.05);
-}
-
-/* About page pulse dividers — filter only (no well) so they stay thin accents */
-html[data-theme="light"] img[src*="decorative-heartbeat-pulse-line-divider"] {
-  opacity: 1;
-  filter:
-    saturate(1.45)
-    contrast(1.18)
-    brightness(0.92)
-    hue-rotate(10deg);
-}
-
 html[data-theme="light"] .skill-card-icon-wrap {
   border-color: rgba(37, 99, 235, 0.22);
   background-image: linear-gradient(to bottom right, rgba(37, 99, 235, 0.12), rgba(37, 99, 235, 0.08), transparent);
@@ -535,25 +550,6 @@ html[data-theme="light"] .footer-social {
 html[data-theme="light"] .footer-social:hover {
   border-color: rgba(37, 99, 235, 0.35);
   color: #2563EB;
-}
-
-html[data-theme="light"] .back-to-top {
-  border-color: rgba(37, 99, 235, 0.22);
-  background: rgba(255, 255, 255, 0.88);
-  color: var(--accent-primary);
-  box-shadow:
-    0 1px 2px rgba(31, 41, 55, 0.05),
-    0 8px 20px rgba(37, 99, 235, 0.1);
-}
-
-html[data-theme="light"] .back-to-top:hover {
-  border-color: rgba(37, 99, 235, 0.4);
-  background: #ffffff;
-  color: var(--accent-primary-hover);
-}
-
-html[data-theme="light"] .back-to-top:focus-visible {
-  outline-color: rgba(37, 99, 235, 0.65);
 }
 
 /* LinkedIn monogram: blue outline in light mode (keeps dark-mode stroke weight) */
