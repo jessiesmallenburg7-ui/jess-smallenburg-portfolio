@@ -277,10 +277,10 @@
 
 .tt-personas .card p,
 .tt-personas .card li {
-  font-size: 14.5px;
+  font-size: 19px;
   color: var(--tt-ink);
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.7;
 }
 
 .tt-personas .card ul {
@@ -308,11 +308,12 @@
 
 .tt-personas .impl-list li {
   display: flex;
-  gap: 10px;
-  padding: 8px 0;
+  gap: 12px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--tt-line);
-  font-size: 14.5px;
+  font-size: 19px;
   color: var(--tt-ink);
+  line-height: 1.7;
 }
 
 .tt-personas .impl-list li:last-child {
@@ -321,10 +322,11 @@
 
 .tt-personas .impl-list .num {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--accent, var(--tt-ink));
   flex: none;
-  padding-top: 1px;
+  padding-top: 2px;
 }
 
 .tt-personas details.sources {

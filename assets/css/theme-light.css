@@ -935,6 +935,23 @@ html[data-theme="light"] .wireframe-lightbox-close {
   color: #1F2937;
 }
 
+html[data-theme="light"] .wireframe-lightbox--diagram .wireframe-lightbox-close {
+  background: rgba(15, 118, 110, 0.12);
+  color: #122038;
+}
+
+html[data-theme="light"] .wireframe-lightbox--diagram .wireframe-lightbox-exit {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(18, 32, 56, 0.16);
+  color: #122038;
+  box-shadow: 0 8px 28px rgba(18, 32, 56, 0.18);
+}
+
+html[data-theme="light"] .wireframe-lightbox-exit-x {
+  background: rgba(15, 118, 110, 0.14);
+  color: #0f766e;
+}
+
 html[data-theme="light"] #lightbox-caption {
   color: rgba(31, 41, 55, 0.6);
 }

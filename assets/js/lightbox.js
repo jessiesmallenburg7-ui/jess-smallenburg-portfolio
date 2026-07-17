@@ -13,6 +13,7 @@
   let activeDiagramZoom = null;
   let lastTrigger = null;
   let inlineSvgEl = null;
+  let historyOpen = false;
   const svgCache = Object.create(null);
 
   function isTouchDevice() {
@@ -173,30 +174,92 @@
     });
   }
 
+  function ensureExitControl() {
+    if (lightbox.querySelector('[data-lightbox-exit]')) return;
+    const dialog = lightbox.querySelector('.wireframe-lightbox-dialog');
+    if (!dialog) return;
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'wireframe-lightbox-exit';
+    btn.setAttribute('data-lightbox-close', '');
+    btn.setAttribute('data-lightbox-exit', '');
+    btn.setAttribute('aria-label', 'Close map');
+    btn.innerHTML =
+      '<span class="wireframe-lightbox-exit-x" aria-hidden="true">&times;</span>' +
+      '<span class="wireframe-lightbox-exit-label">Close map</span>';
+    btn.addEventListener('click', closeLightbox);
+    dialog.appendChild(btn);
+  }
+
+  function setCaption(trigger, isZoomable) {
+    if (!caption) return;
+    const base = (trigger.dataset.lightboxCaption || '').trim();
+    if (!isZoomable) {
+      caption.textContent = base;
+      return;
+    }
+    if (isTouchDevice()) {
+      caption.textContent = base
+        ? `${base} · Pinch to zoom · drag to pan · tap Close map to exit`
+        : 'Pinch to zoom · drag to pan · tap Close map to exit';
+      return;
+    }
+    caption.textContent = base
+      ? `${base} · Ctrl + / − zooms the mockup (not the page) · drag to pan · Esc to close`
+      : 'Ctrl + / − zooms the mockup (not the page) · drag to pan · Esc to close';
+  }
+
+  function pushLightboxHistory() {
+    if (historyOpen) return;
+    try {
+      history.pushState({ wireframeLightbox: true }, '', window.location.href);
+      historyOpen = true;
+    } catch (_) {
+      historyOpen = false;
+    }
+  }
+
+  function clearLightboxHistory() {
+    if (!historyOpen) return;
+    historyOpen = false;
+    try {
+      if (history.state && history.state.wireframeLightbox) {
+        history.back();
+      }
+    } catch (_) {
+      /* ignore */
+    }
+  }
+
   function openLightbox(trigger) {
     const src = trigger.dataset.lightboxSrc;
     if (!src || !image) return;
 
     lastTrigger = trigger;
     if (title) title.textContent = trigger.dataset.lightboxTitle || '';
-    if (caption) {
-      const base = (trigger.dataset.lightboxCaption || '').trim();
-      caption.textContent = base
-        ? `${base} · Ctrl + / − zooms the mockup (not the page) · drag to pan`
-        : 'Ctrl + / − zooms the mockup (not the page) · drag to pan';
-    }
 
     const isZoomable = trigger.hasAttribute('data-lightbox-diagram');
     const useInlineSvg = trigger.hasAttribute('data-lightbox-inline-svg') && /\.svg(\?|$)/i.test(src);
+    setCaption(trigger, isZoomable);
     lightbox.classList.toggle('wireframe-lightbox--diagram', isZoomable);
     resetDiagramZoom();
     clearInlineSvg();
+    if (isZoomable) ensureExitControl();
 
     lightbox.hidden = false;
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    pushLightboxHistory();
 
     const finishOpen = () => {
+      const exitBtn =
+        lightbox.querySelector('[data-lightbox-exit]') ||
+        lightbox.querySelector('.wireframe-lightbox-close');
+      if (isZoomable && isTouchDevice() && exitBtn) {
+        exitBtn.focus({ preventScroll: true });
+        return;
+      }
       if (diagramZoomViewport && !diagramZoomViewport.hidden) {
         diagramZoomViewport.setAttribute('tabindex', '-1');
         diagramZoomViewport.focus({ preventScroll: true });
@@ -264,6 +327,7 @@
       image.alt = '';
     }
     document.body.style.overflow = '';
+    clearLightboxHistory();
     lastTrigger?.focus?.();
     lastTrigger = null;
   }
@@ -353,6 +417,17 @@
 
   closeTargets.forEach((node) => {
     node.addEventListener('click', closeLightbox);
+  });
+
+  window.addEventListener('popstate', () => {
+    if (!isLightboxOpen()) return;
+    historyOpen = false;
+    closeLightbox();
+  });
+
+  window.addEventListener('pagehide', () => {
+    if (!isLightboxOpen()) return;
+    document.body.style.overflow = '';
   });
 
   window.DiagramZoom?.initInline();

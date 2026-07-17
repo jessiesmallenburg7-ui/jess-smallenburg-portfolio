@@ -530,15 +530,15 @@
 .tt-benchmark-cluster-title {
   display: block;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
 }
 
 .tt-benchmark-cluster-body {
   margin: 0.4rem 0 0;
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 19px;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -679,11 +679,27 @@
   position: relative;
 }
 
+.tt-hero-subtitle {
+  max-width: 54ch;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (min-width: 640px) {
+  .tt-hero-subtitle {
+    font-size: 19px;
+  }
+}
+
 .tt-hero-badge {
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  line-height: 1.45;
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -695,8 +711,8 @@
   border-radius: 0 0.5rem 0.5rem 0;
   background: rgba(255, 255, 255, 0.03);
   font-family: "Lato", sans-serif;
-  font-size: 12.5px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.38);
 }
@@ -937,7 +953,7 @@
 .tt-key-card-title {
   display: block;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
 }
@@ -945,8 +961,8 @@
 .tt-key-card-body {
   margin: 0.35rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 19px;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -978,9 +994,9 @@
 }
 
 .tt-practice-label {
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.35;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.82);
 }
 
@@ -991,8 +1007,8 @@
 }
 
 .tt-practice-desc {
-  font-size: 13.5px;
-  line-height: 1.45;
+  font-size: 19px;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.48);
 }
 
@@ -1026,11 +1042,18 @@
   font-weight: 700;
 }
 
+.tt-eval-card strong {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 .tt-eval-card-body {
   margin: 0.4rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 19px;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.62);
 }
 
@@ -1105,7 +1128,7 @@
 .tt-process-phase-num {
   flex-shrink: 0;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: #5fd3e0;
@@ -1113,7 +1136,7 @@
 
 .tt-process-phase-title {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
   transition: color 0.15s ease;
@@ -1122,8 +1145,14 @@
 .tt-process-phase-body {
   margin: 0.65rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 19px;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.58);
+}
+
+@media (min-width: 768px) {
+  .tt-process-phase-num {
+    font-size: 12px;
+  }
 }
 
