@@ -15,6 +15,28 @@
   let inlineSvgEl = null;
   let historyOpen = false;
   const svgCache = Object.create(null);
+  const PAGE_CHROME_SELECTOR = '.site-header, [data-case-nav], .case-nav, .back-to-top';
+
+  function setPageChromeHidden(hidden) {
+    document.documentElement.classList.toggle('is-lightbox-open', hidden);
+    document.querySelectorAll(PAGE_CHROME_SELECTOR).forEach((el) => {
+      if (hidden) {
+        el.setAttribute('aria-hidden', 'true');
+        try {
+          el.inert = true;
+        } catch (_) {
+          /* older browsers */
+        }
+      } else {
+        el.removeAttribute('aria-hidden');
+        try {
+          el.inert = false;
+        } catch (_) {
+          /* older browsers */
+        }
+      }
+    });
+  }
 
   function isTouchDevice() {
     return window.DiagramZoom?.isTouchDevice?.() ?? window.matchMedia('(hover: none), (pointer: coarse)').matches;
@@ -184,10 +206,10 @@
     btn.className = 'wireframe-lightbox-exit';
     btn.setAttribute('data-lightbox-close', '');
     btn.setAttribute('data-lightbox-exit', '');
-    btn.setAttribute('aria-label', 'Close map');
+    btn.setAttribute('aria-label', 'Close');
     btn.innerHTML =
       '<span class="wireframe-lightbox-exit-x" aria-hidden="true">&times;</span>' +
-      '<span class="wireframe-lightbox-exit-label">Close map</span>';
+      '<span class="wireframe-lightbox-exit-label">Close</span>';
     btn.addEventListener('click', closeLightbox);
     dialog.appendChild(btn);
   }
@@ -201,8 +223,8 @@
     }
     if (isTouchDevice()) {
       caption.textContent = base
-        ? `${base} · Pinch to zoom · drag to pan · tap Close map to exit`
-        : 'Pinch to zoom · drag to pan · tap Close map to exit';
+        ? `${base} · Pinch to zoom · drag to pan · tap Close to exit`
+        : 'Pinch to zoom · drag to pan · tap Close to exit';
       return;
     }
     caption.textContent = base
@@ -250,6 +272,7 @@
     lightbox.hidden = false;
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    setPageChromeHidden(true);
     pushLightboxHistory();
 
     const finishOpen = () => {
@@ -327,6 +350,7 @@
       image.alt = '';
     }
     document.body.style.overflow = '';
+    setPageChromeHidden(false);
     clearLightboxHistory();
     lastTrigger?.focus?.();
     lastTrigger = null;
@@ -428,6 +452,7 @@
   window.addEventListener('pagehide', () => {
     if (!isLightboxOpen()) return;
     document.body.style.overflow = '';
+    setPageChromeHidden(false);
   });
 
   window.DiagramZoom?.initInline();

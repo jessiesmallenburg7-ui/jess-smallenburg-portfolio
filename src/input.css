@@ -1444,6 +1444,14 @@
     @apply fixed inset-0 z-[100] flex items-center justify-center p-0;
   }
 
+  html.is-lightbox-open .site-header,
+  html.is-lightbox-open [data-case-nav],
+  html.is-lightbox-open .case-nav,
+  html.is-lightbox-open .back-to-top {
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
   .wireframe-lightbox[hidden] {
     display: none !important;
   }
@@ -1515,10 +1523,7 @@
   }
 
   .wireframe-lightbox--diagram .wireframe-lightbox-close {
-    position: relative;
-    z-index: 41;
-    background: rgba(95, 211, 224, 0.14);
-    color: #fff;
+    display: none;
   }
 
   @media (max-width: 767px) {

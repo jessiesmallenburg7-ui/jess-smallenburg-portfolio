@@ -23,11 +23,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260716f">
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260717b">
   <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260716f">
   <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260716f">
   <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260716f">
-  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260716f">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260717b">
 </head>
 <body>
   <div id="main">
@@ -1063,6 +1063,42 @@
                 </figure>
               </div>
             </div>
+
+            <h3 id="low-fidelity-explorations" class="case-subtitle mt-12">Low-Fidelity Explorations</h3>
+            <p class="prose-body">
+              Before moving into high-fidelity design, I explored two key screens in low fidelity: the Youth Check-in screen and the Clinician In-Session Fidelity Checklist.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-8">
+              <div>
+                <h4 class="font-sans text-[18px] font-semibold text-sky-accent">Youth Check-In Screen</h4>
+                <p class="prose-body mt-2">
+                  The Youth Check-in allows participants like Nia (14) to complete brief self-report measures at five timepoints during the TF-CBT evaluation. Because many youth have trauma histories, the flow must feel safe and give clear control over personal information.
+                </p>
+                <p class="prose-body mt-4">
+                  I explored the check-in flow in low fidelity to test structure and privacy interactions before committing to high-fidelity design.
+                </p>
+                <p class="prose-body mt-4">
+                  I tested mood-first versus questions-first sequencing and found that starting with mood created a lower-stakes entry point. Discrete response options performed better than open text fields, as they reduced pressure to disclose more than intended. Early versions buried privacy messaging as a footnote, but testing showed this minimized its importance, leading to a more prominent treatment in the final design.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-sans text-[18px] font-semibold text-sky-accent">Clinician In-Session Fidelity Checklist</h4>
+                <p class="prose-body mt-2">
+                  I compared a single flat list of PRACTICE components against collapsible sections. A visible, always-on list performed better, allowing clinicians to track progress at a glance. I also found that keeping the optional note field as a small expandable row (rather than a modal) reduced context switching during a session.
+                </p>
+              </div>
+            </div>
+
+            <h4 class="case-subtitle mt-10">Key Decisions Carried into High Fidelity</h4>
+            <ul class="mt-4 flex flex-col gap-3">
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Mood-first sequencing and discrete response options were retained.</span></li>
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">Privacy controls were made more prominent rather than buried.</span></li>
+              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span class="prose-body">The fidelity checklist was designed as a single, scannable list to support real-time marking with minimal friction.</span></li>
+            </ul>
+            <p class="prose-body mt-6">
+              These explorations confirmed that the core interactions should prioritize psychological safety for youth and reduce documentation burden for clinicians.
+            </p>
           </section>
 
 
@@ -1174,7 +1210,7 @@
   <script src="../../assets/js/case-nav.js"></script>
   <script src="../../assets/js/tt-personas.js"></script>
   <script src="../../assets/js/diagram-zoom.js"></script>
-  <script src="../../assets/js/lightbox.js?v=20260716f"></script>
+  <script src="../../assets/js/lightbox.js?v=20260717b"></script>
   <script src="../../assets/js/tt-journeys.js"></script>
   <script src="../../assets/js/back-to-top.js"></script>
 </body>
