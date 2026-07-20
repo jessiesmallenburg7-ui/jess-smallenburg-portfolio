@@ -1,5 +1,4 @@
 (function () {
-  // New key so an earlier testing preference of "light" does not override the dark default.
   var STORAGE_KEY = 'portfolio-theme';
   var root = document.documentElement;
   var ICON_PATTERN = /(tt-icon-[a-z0-9-]+|path-compass-care-network-icon|heart-with-pulse-line-icon-representing-health-and|growing-sprout-icon-representing-personal-and-prof|overlapping-circles-icon-representing-intersecting|decorative-heartbeat-pulse-line-divider|mind-icon-layered-with-a-lotus-flower-symbolizing-)(-light)?\.svg(\?.*)?$/i;
@@ -17,7 +16,7 @@
     } catch (_) {
       /* ignore */
     }
-    return 'dark';
+    return 'light';
   }
 
   function syncToggle(theme) {
@@ -66,7 +65,7 @@
   applyTheme(getPreferredTheme(), false);
 
   document.addEventListener('DOMContentLoaded', function () {
-    var theme = root.getAttribute('data-theme') || 'dark';
+    var theme = root.getAttribute('data-theme') || 'light';
     syncToggle(theme);
     syncThemeIcons(theme);
 

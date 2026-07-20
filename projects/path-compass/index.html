@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
 	<title>Path Compass — Jessie Smallenburg</title>
   <meta name="description" content="Path Compass — your guide on the path to healing. From evaluation plan to user-centered design — supporting high-fidelity trauma-focused care through guided progress in community mental health.">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/path-compass">
@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260717b">
-  <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260716f">
+  <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260720a">
   <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260716f">
   <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260716f">
   <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260717b">
@@ -37,7 +37,7 @@
       <div class="flex items-center justify-between md:contents">
         <a href="../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
         <div class="header-actions relative z-50 md:order-last">
-          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode" aria-pressed="false">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
             <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="4"/>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
@@ -88,9 +88,15 @@
           <p class="tt-hero-subtitle">
             From evaluation plan to user-centered design &mdash; supporting high-fidelity trauma-focused care through guided progress in community mental health.
           </p>
-          <div class="tt-hero-meta flex flex-wrap items-center gap-3">
-            <span class="status-pill w-fit">In Progress</span>
-            <p class="tt-hero-badge m-0">M.S. Community Health Education &middot; Measurement &amp; Evaluation &middot; Wayne State University</p>
+          <div class="tt-hero-meta">
+            <span class="tt-hero-eval-mark" aria-hidden="true" title="Measurement &amp; Evaluation">
+              <svg class="tt-hero-eval-icon" viewBox="0 0 32 32" width="40" height="40" fill="none" focusable="false">
+                <rect x="2" y="2" width="28" height="28" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.32"/>
+                <path d="M9.5 22.5V15M16 22.5V10.5M22.5 22.5V17" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/>
+                <path d="M7.5 23h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              </svg>
+            </span>
+            <p class="tt-hero-badge m-0">M.S. Community Health Education &middot; Measurement &amp; Evaluation Course &middot; Wayne State University, College of Education, Division of Kinesiology, Health &amp; Sports Studies</p>
           </div>
           <p class="tt-disclaimer">
             Conceptual case study &middot; Trauma-informed design principles &middot; No real patient data used
@@ -129,7 +135,7 @@
 
             <div class="case-hmw case-hmw--featured">
               <p class="case-hmw-label"><em>&ldquo;How might we&rdquo;</em></p>
-              <p class="case-hmw-text">How might we support high-fidelity TF-CBT delivery in community clinics while giving youth greater agency over their information and reducing documentation burden for clinicians and caregivers?</p>
+              <p class="case-hmw-text">How might we support high-fidelity Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) delivery in community clinics while giving youth greater agency over their information and reducing documentation burden for clinicians and caregivers?</p>
             </div>
 
             <div class="tt-feature-banner">
@@ -149,36 +155,58 @@
                 </p>
                 <ul class="tt-pillar-grid">
                   <li class="tt-pillar">
-                    <img src="../../assets/images/tt-icon-fidelity.svg" alt="" width="44" height="44" class="tt-pillar-icon" aria-hidden="true">
-                    <span class="tt-pillar-label">Fidelity</span>
-                    <span class="tt-pillar-text">Session-level PRACTICE checklist</span>
+                    <img src="../../assets/images/tt-icon-fidelity.svg" alt="" width="52" height="52" class="tt-pillar-icon" aria-hidden="true">
+                    <div class="tt-pillar-copy">
+                      <p class="tt-pillar-label">Fidelity</p>
+                      <p class="tt-pillar-text">Session-level PRACTICE checklist</p>
+                    </div>
                   </li>
                   <li class="tt-pillar">
-                    <img src="../../assets/images/tt-icon-outcomes.svg" alt="" width="44" height="44" class="tt-pillar-icon" aria-hidden="true">
-                    <span class="tt-pillar-label">Outcomes</span>
-                    <span class="tt-pillar-text">SDQ &amp; FSSQ across five timepoints</span>
+                    <img src="../../assets/images/tt-icon-outcomes.svg" alt="" width="52" height="52" class="tt-pillar-icon" aria-hidden="true">
+                    <div class="tt-pillar-copy">
+                      <p class="tt-pillar-label">Outcomes</p>
+                      <p class="tt-pillar-text">Outcome measures across five timepoints</p>
+                    </div>
                   </li>
                   <li class="tt-pillar">
-                    <img src="../../assets/images/tt-icon-privacy.svg" alt="" width="44" height="44" class="tt-pillar-icon" aria-hidden="true">
-                    <span class="tt-pillar-label">Privacy</span>
-                    <span class="tt-pillar-text">Trauma-informed consent &amp; control</span>
+                    <img src="../../assets/images/tt-icon-privacy.svg" alt="" width="52" height="52" class="tt-pillar-icon" aria-hidden="true">
+                    <div class="tt-pillar-copy">
+                      <p class="tt-pillar-label">Privacy</p>
+                      <p class="tt-pillar-text">Trauma-informed consent &amp; control</p>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <p class="prose-body mt-8">
-              Path Compass is a speculative UX project grounded in a master&rsquo;s-level program evaluation for Wayne State University&rsquo;s M.S. in Community Health Education (Measurement and Evaluation).
-            </p>
-            <p class="prose-body mt-5">
-              The evaluation plan compared Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) with Therapy As Usual (TAU) for 300 youth ages 10&ndash;18 with post-traumatic stress symptoms in community outpatient clinics.
-            </p>
-            <p class="prose-body mt-5">
-              It required five data collection timepoints and ongoing fidelity monitoring with the <a href="https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">TF-CBT PRACTICE Fidelity Checklist</a> (Deblinger et al., 2014).
-            </p>
-            <p class="prose-body mt-5">
-              This case study translates that framework into user-centered design: how systems-level tooling could support high-fidelity TF-CBT delivery and outcome measurement in real-world clinics.
-            </p>
+            <div class="tt-overview-context">
+              <p class="tt-overview-kicker">Evaluation context</p>
+              <p class="tt-overview-lede">
+                Path Compass is a speculative UX project grounded in a master&rsquo;s-level program evaluation for Wayne State University&rsquo;s M.S. in Community Health Education (Measurement and Evaluation Course).
+              </p>
+
+              <ul class="tt-overview-stats" aria-label="Evaluation plan at a glance">
+                <li class="tt-overview-stat">
+                  <span class="tt-overview-stat-value">300</span>
+                  <span class="tt-overview-stat-label">youth ages 10&ndash;18 with post-traumatic stress symptoms</span>
+                </li>
+                <li class="tt-overview-stat">
+                  <span class="tt-overview-stat-value">TF-CBT vs Therapy as Usual (TAU)</span>
+                  <span class="tt-overview-stat-label">compared in community outpatient clinics</span>
+                </li>
+                <li class="tt-overview-stat">
+                  <span class="tt-overview-stat-value">5 timepoints</span>
+                  <span class="tt-overview-stat-label">plus ongoing PRACTICE fidelity monitoring</span>
+                </li>
+              </ul>
+
+              <p class="tt-overview-body">
+                Outcome measurement used the <a href="https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">TF-CBT PRACTICE Fidelity Checklist</a> (Deblinger et al., 2014) alongside longitudinal collection with the Strengths and Difficulties Questionnaire (SDQ) (Goodman et al., 1998) and the Duke-UNC Functional Social Support Questionnaire (FSSQ) (Broadhead et al., 1988).
+              </p>
+              <p class="tt-overview-close">
+                This case study translates that framework into user-centered design&mdash;how systems-level tooling could support high-fidelity TF-CBT delivery and outcome measurement in real-world clinics.
+              </p>
+            </div>
           </section>
 
           <section id="process" class="case-section">
@@ -193,35 +221,59 @@
                   <span class="tt-process-phase-num">01</span>
                   <span class="tt-process-phase-title">Foundation &amp; Research</span>
                 </a>
-                <p class="tt-process-phase-body">Grounded the work in the existing TF-CBT Evaluation Plan: study design, SDQ/FSSQ instruments, five timepoints, and PRACTICE fidelity requirements. Reviewed clinical constraints in community outpatient settings and trauma-informed digital design literature. Defined non-negotiables early&mdash;HIPAA-aware workflows, youth agency over disclosure, and documentation that can keep pace with session care.</p>
+                <p class="tt-process-phase-body">Grounded the work in the existing TF-CBT Evaluation Plan and clinical constraints in community outpatient settings.</p>
+                <ul class="tt-process-phase-list">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Study design, SDQ/FSSQ instruments, five timepoints, and PRACTICE fidelity requirements</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Trauma-informed digital design literature review</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Early non-negotiables: HIPAA-aware workflows, youth agency over disclosure, and documentation that keeps pace with session care</span></li>
+                </ul>
               </li>
               <li class="tt-process-phase">
                 <a href="#synthesis" class="tt-process-phase-link">
                   <span class="tt-process-phase-num">02</span>
                   <span class="tt-process-phase-title">Synthesis &amp; Insight Generation</span>
                 </a>
-                <p class="tt-process-phase-body">Translated the evaluation plan into three research-grounded personas&mdash;youth, clinician, and caregiver&mdash;representing the primary roles across the product. Built Current State and Ideal State journey maps across evaluation phases to surface friction: documentation burden, privacy risk, dropout pressure, and fragmented outcome tracking. Those insights became design priorities: live PRACTICE fidelity, automated multi-timepoint surveys, and trauma-informed privacy controls.</p>
+                <p class="tt-process-phase-body">Translated the evaluation plan into three research-grounded personas&mdash;youth, clinician, and caregiver&mdash;and mapped Current State vs Ideal State journeys across evaluation phases.</p>
+                <ul class="tt-process-phase-list">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Friction surfaced: documentation burden, privacy risk, dropout pressure, and fragmented outcome tracking</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Design priorities: live PRACTICE fidelity, automated multi-timepoint surveys, and trauma-informed privacy controls</span></li>
+                </ul>
               </li>
               <li class="tt-process-phase">
                 <a href="#exploration" class="tt-process-phase-link">
                   <span class="tt-process-phase-num">03</span>
                   <span class="tt-process-phase-title">Exploration &amp; Benchmarking</span>
                 </a>
-                <p class="tt-process-phase-body">Benchmarked adjacent tools against the jobs Path Compass must cover: real-time PRACTICE fidelity, five-timepoint SDQ/FSSQ collection for youth and caregivers, and multi-party privacy. No single product owns that stack. Pattern comparisons clarified the product wedge versus paper checklists, TF-CBT training platforms, in-session toolkits, and measurement-based care systems.</p>
+                <p class="tt-process-phase-body">Benchmarked adjacent tools against the jobs Path Compass must cover. No single product owns that stack&mdash;pattern comparisons clarified the product wedge.</p>
+                <ul class="tt-process-phase-list">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Real-time PRACTICE fidelity monitoring</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Five-timepoint SDQ/FSSQ collection for youth and caregivers</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Multi-party, trauma-informed privacy</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Compared against paper checklists, TF-CBT training platforms, in-session toolkits, and measurement-based care systems</span></li>
+                </ul>
               </li>
               <li class="tt-process-phase">
                 <a href="#design" class="tt-process-phase-link">
                   <span class="tt-process-phase-num">04</span>
                   <span class="tt-process-phase-title">Design &amp; Prototyping</span>
                 </a>
-                <p class="tt-process-phase-body">Moving from insights into interface: information architecture and task flows that mirror PRACTICE sequencing and evaluation timepoints. Wireframes and high-fidelity mockups for the youth app, clinician dashboard, and caregiver portal will culminate in an interactive prototype of the end-to-end experience.</p>
+                <p class="tt-process-phase-body">Moving from insights into interface: information architecture and task flows that mirror PRACTICE sequencing and evaluation timepoints.</p>
+                <ul class="tt-process-phase-list">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Wireframes and high-fidelity mockups for the youth app, clinician dashboard, and caregiver portal</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Interactive prototype of the end-to-end experience</span></li>
+                </ul>
               </li>
               <li class="tt-process-phase">
                 <a href="#validation" class="tt-process-phase-link">
                   <span class="tt-process-phase-num">05</span>
                   <span class="tt-process-phase-title">Evaluation &amp; Validation</span>
                 </a>
-                <p class="tt-process-phase-body">Validation focuses on heuristic evaluation against usability heuristics and trauma-informed digital principles, complemented by expert review with clinical and UX stakeholders. Findings will refine accessibility, cognitive load, and trust cues before any future live evaluation.</p>
+                <p class="tt-process-phase-body">Validation centers on expert review rather than primary research with clinic participants, given project scope.</p>
+                <ul class="tt-process-phase-list">
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Heuristic evaluation against usability heuristics and trauma-informed digital principles</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Expert review with clinical and UX stakeholders</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">◆</span><span>Refinements focused on accessibility, cognitive load, and trust cues before any future live evaluation</span></li>
+                </ul>
               </li>
             </ol>
 
@@ -247,7 +299,7 @@
                 <div>
                   <strong class="tt-key-card-title">Primary measures</strong>
                   <p class="tt-key-card-body">
-                    <a href="https://www.sdqinfo.org/a0.html" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">SDQ</a> Emotional Symptoms subscale (worries, fears, emotion regulation) and the <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">Duke-UNC FSSQ</a> (Broadhead et al., 1988; as used in <a href="https://doi.org/10.1016/j.brat.2020.103655" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">Birkeland et al., 2020</a>), plus eight custom items.
+                    <a href="https://doi.org/10.1007/s007870050057" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">Strengths and Difficulties Questionnaire (SDQ)</a> Emotional Symptoms subscale (worries, fears, emotion regulation) and the <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">Duke-UNC Functional Social Support Questionnaire (FSSQ)</a> (Broadhead et al., 1988; as used in <a href="https://doi.org/10.1016/j.brat.2020.103655" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">Birkeland et al., 2020</a>), plus eight custom items.
                   </p>
                 </div>
               </li>
@@ -273,7 +325,11 @@
 
             <h3 id="practice" class="case-subtitle mt-12">Clinical Framework &mdash; TF-CBT PRACTICE</h3>
             <p class="prose-body">
-              TF-CBT is delivered through the PRACTICE model:
+              TF-CBT is delivered through the PRACTICE model.
+              Learn more:
+              <a href="https://www.nctsn.org/sites/default/files/resources/how_to_implement_tfcbt.pdf" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">NCTSN How to Implement TF-CBT guide</a>
+              and a
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4396183/" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">research review of the PRACTICE components</a>.
             </p>
             <ul class="tt-practice-grid mt-5">
               <li class="tt-practice-chip">

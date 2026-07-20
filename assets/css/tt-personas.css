@@ -254,6 +254,29 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  /* Stack tabs in a rounded card so active pills stay inside the shape */
+  .tt-personas .tablist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    gap: 4px;
+    padding: 6px;
+    border-radius: 20px;
+  }
+
+  .tt-personas .tab {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 14px;
+  }
+
+  .tt-personas .tab-role {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .tt-personas .card {

@@ -680,7 +680,7 @@
 }
 
 .tt-hero-subtitle {
-  max-width: 54ch;
+  max-width: none;
   margin: 0;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -696,11 +696,37 @@
 
 .tt-hero-badge {
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.45);
+}
+
+.tt-hero-meta {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.tt-hero-eval-mark {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+  color: #5fd3e0;
+}
+
+.tt-hero-eval-icon {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.tt-hero-meta .tt-hero-badge {
+  min-width: 0;
+  flex: 1;
 }
 
 .tt-disclaimer {
@@ -711,10 +737,16 @@
   border-radius: 0 0.5rem 0.5rem 0;
   background: rgba(255, 255, 255, 0.03);
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.38);
+}
+
+@media (min-width: 1024px) {
+  .tt-disclaimer {
+    max-width: none;
+  }
 }
 
 /* Full-width top TOC instead of left sidebar (scoped; clinician-flow unchanged) */
@@ -815,6 +847,99 @@
     rgba(255, 255, 255, 0.035);
 }
 
+/* Overview evaluation context panel */
+.tt-overview-context {
+  margin-top: 1.75rem;
+  padding: 1.35rem 1.25rem 1.45rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(95, 211, 224, 0.55);
+  background:
+    linear-gradient(135deg, rgba(95, 211, 224, 0.06), transparent 42%),
+    rgba(255, 255, 255, 0.03);
+}
+
+@media (min-width: 768px) {
+  .tt-overview-context {
+    padding: 1.5rem 1.6rem 1.6rem;
+  }
+}
+
+.tt-overview-kicker {
+  margin: 0 0 0.55rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.9);
+}
+
+.tt-overview-lede {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.tt-overview-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .tt-overview-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+}
+
+.tt-overview-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(7, 11, 22, 0.35);
+}
+
+.tt-overview-stat-value {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #7dd3fc;
+}
+
+.tt-overview-stat-label {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tt-overview-body,
+.tt-overview-close {
+  margin: 1.15rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.tt-overview-close {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.72);
+}
+
 @media (min-width: 768px) {
   .tt-feature-banner {
     flex-direction: row;
@@ -870,7 +995,6 @@
 
 .tt-feature-banner-lede {
   margin: 0;
-  max-width: 48ch;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.55;
@@ -895,32 +1019,50 @@
 
 .tt-pillar {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding: 0.75rem 0.85rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 0.95rem;
   border-radius: 0.85rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(7, 11, 22, 0.35);
 }
 
 .tt-pillar-icon {
-  width: 2.75rem;
-  height: 2.75rem;
-  margin-bottom: 0.4rem;
+  display: block;
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin: 0;
+}
+
+.tt-pillar-copy {
+  display: block;
+  min-width: 0;
+  flex: 1;
+}
+
+.tt-pillar-label,
+.tt-pillar-text {
+  display: block;
+  width: 100%;
+  margin: 0;
 }
 
 .tt-pillar-label {
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
+  line-height: 1.25;
   color: #fff;
 }
 
 .tt-pillar-text {
+  margin-top: 0.2rem;
   font-family: "Lato", sans-serif;
-  font-size: 13px;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 /* Light key-point cards */
@@ -1148,6 +1290,26 @@
   font-size: 19px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.58);
+}
+
+.tt-process-phase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tt-process-phase-list .case-bullet {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.tt-process-phase-list .case-bullet-mark {
+  height: calc(17px * 1.55);
 }
 
 @media (min-width: 768px) {
