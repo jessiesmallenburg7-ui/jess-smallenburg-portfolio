@@ -4107,6 +4107,53 @@ html.is-lightbox-open .site-header,
 
 /* Always-visible exit control for fullscreen diagram / journey maps */
 
+.wireframe-lightbox-exit {
+  display: none;
+}
+
+.wireframe-lightbox--diagram .wireframe-lightbox-exit {
+  position: absolute;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1rem 0.55rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 9999px;
+  background: rgba(4, 6, 14, 0.92);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  top: calc(0.75rem + env(safe-area-inset-top, 0px));
+  right: calc(0.75rem + env(safe-area-inset-right, 0px));
+}
+
+.wireframe-lightbox--diagram .wireframe-lightbox-exit:hover,
+.wireframe-lightbox--diagram .wireframe-lightbox-exit:focus-visible {
+  background: #0b1626;
+  border-color: rgba(95, 211, 224, 0.55);
+  outline: none;
+}
+
+.wireframe-lightbox-exit-x {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: rgba(95, 211, 224, 0.18);
+  color: #5fd3e0;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
 .wireframe-lightbox--diagram .wireframe-lightbox-close {
   display: none;
 }

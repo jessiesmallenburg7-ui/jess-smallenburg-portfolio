@@ -197,21 +197,24 @@
   }
 
   function ensureExitControl() {
-    if (lightbox.querySelector('[data-lightbox-exit]')) return;
-    const dialog = lightbox.querySelector('.wireframe-lightbox-dialog');
-    if (!dialog) return;
+    let btn = lightbox.querySelector('[data-lightbox-exit]');
+    if (!btn) {
+      const dialog = lightbox.querySelector('.wireframe-lightbox-dialog');
+      if (!dialog) return;
 
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'wireframe-lightbox-exit';
-    btn.setAttribute('data-lightbox-close', '');
-    btn.setAttribute('data-lightbox-exit', '');
+      btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'wireframe-lightbox-exit';
+      btn.setAttribute('data-lightbox-close', '');
+      btn.setAttribute('data-lightbox-exit', '');
+      btn.addEventListener('click', closeLightbox);
+      dialog.appendChild(btn);
+    }
+
     btn.setAttribute('aria-label', 'Close');
     btn.innerHTML =
       '<span class="wireframe-lightbox-exit-x" aria-hidden="true">&times;</span>' +
       '<span class="wireframe-lightbox-exit-label">Close</span>';
-    btn.addEventListener('click', closeLightbox);
-    dialog.appendChild(btn);
   }
 
   function setCaption(trigger, isZoomable) {

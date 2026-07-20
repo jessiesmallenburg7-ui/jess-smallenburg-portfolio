@@ -157,6 +157,7 @@
       expandBtn.setAttribute("data-lightbox-src", mapUrl(map.src));
       expandBtn.setAttribute("data-lightbox-title", map.title);
       expandBtn.setAttribute("data-lightbox-caption", map.caption);
+      expandBtn.setAttribute("data-lightbox-diagram", "");
       expandBtn.setAttribute("data-lightbox-inline-svg", "");
       expandBtn.setAttribute("aria-label", "Open " + map.title + " full size");
     }
