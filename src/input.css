@@ -357,29 +357,29 @@
   }
 
   /* Mobile: enlarge approach, work-card, and credentials copy for readability */
-  @media (max-width: 639.98px) {
+  @media (max-width: 767.98px) {
     .metrics-value {
-      @apply text-[28px];
+      font-size: 30px;
     }
 
     .metrics-label {
-      @apply text-[17px];
+      font-size: 18px;
     }
 
     .work-card-outcome {
-      @apply text-[19px];
+      font-size: 20px;
     }
 
     .work-card-tags li {
-      @apply text-[15px];
+      font-size: 16px;
     }
 
     .approach-title {
-      @apply text-[26px];
+      font-size: 28px;
     }
 
     .approach-body {
-      @apply text-[19px];
+      font-size: 20px;
     }
   }
 

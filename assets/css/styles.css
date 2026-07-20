@@ -1450,29 +1450,29 @@ body {
 }
 
 /* Mobile: enlarge approach, work-card, and credentials copy for readability */
-@media (max-width: 639.98px) {
+@media (max-width: 767.98px) {
   .metrics-value {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .metrics-label {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .work-card-outcome {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .work-card-tags li {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .approach-title {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .approach-body {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
