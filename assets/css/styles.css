@@ -1449,6 +1449,33 @@ body {
   }
 }
 
+/* Mobile: enlarge approach, work-card, and credentials copy for readability */
+@media (max-width: 639.98px) {
+  .metrics-value {
+    font-size: 28px;
+  }
+
+  .metrics-label {
+    font-size: 17px;
+  }
+
+  .work-card-outcome {
+    font-size: 19px;
+  }
+
+  .work-card-tags li {
+    font-size: 15px;
+  }
+
+  .approach-title {
+    font-size: 26px;
+  }
+
+  .approach-body {
+    font-size: 19px;
+  }
+}
+
 /* Status pill */
 
 .status-pill {

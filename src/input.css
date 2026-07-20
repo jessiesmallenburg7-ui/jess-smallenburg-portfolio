@@ -356,6 +356,33 @@
     @apply mt-2 font-sans text-[16px] leading-[1.6em] text-white/65 sm:text-[17px];
   }
 
+  /* Mobile: enlarge approach, work-card, and credentials copy for readability */
+  @media (max-width: 639.98px) {
+    .metrics-value {
+      @apply text-[28px];
+    }
+
+    .metrics-label {
+      @apply text-[17px];
+    }
+
+    .work-card-outcome {
+      @apply text-[19px];
+    }
+
+    .work-card-tags li {
+      @apply text-[15px];
+    }
+
+    .approach-title {
+      @apply text-[26px];
+    }
+
+    .approach-body {
+      @apply text-[19px];
+    }
+  }
+
   /* Status pill */
   .status-pill {
     @apply inline-flex items-center rounded-full bg-teal-accent/10 px-3 py-1
