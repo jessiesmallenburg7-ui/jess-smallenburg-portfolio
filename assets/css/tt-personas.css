@@ -412,9 +412,10 @@
   color: var(--tt-ink);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767.98px) {
   .tt-personas-note {
     margin: 20px 16px;
+    font-size: 14px;
   }
 }
 
