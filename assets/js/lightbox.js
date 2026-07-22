@@ -157,15 +157,28 @@
       });
   }
 
+  function hidePlaceholderImage() {
+    if (!image) return;
+    // Keep the <img> out of the zoom stage while inlining vector SVG.
+    // Empty/missing src + visible alt was rendering as a broken-image chip.
+    body?.appendChild(image);
+    image.removeAttribute('src');
+    image.alt = '';
+    image.setAttribute('aria-hidden', 'true');
+    image.hidden = true;
+  }
+
+  function showPlaceholderImage(alt) {
+    if (!image) return;
+    image.hidden = false;
+    image.removeAttribute('aria-hidden');
+    if (alt != null) image.alt = alt;
+  }
+
   function mountInlineSvg(svg) {
     if (!diagramStage) return;
     clearInlineSvg();
-    if (image) {
-      // Keep img out of the zoom stage while inlining vector SVG.
-      body?.appendChild(image);
-      image.removeAttribute('src');
-      image.hidden = true;
-    }
+    hidePlaceholderImage();
     inlineSvgEl = svg;
     diagramStage.appendChild(svg);
     diagramZoomViewport.hidden = false;
@@ -175,7 +188,7 @@
   function mountDiagramImage() {
     if (!diagramStage || !image) return;
     clearInlineSvg();
-    image.hidden = false;
+    showPlaceholderImage();
     diagramStage.appendChild(image);
     diagramZoomViewport.hidden = false;
     body?.classList.add('wireframe-lightbox-body--diagram-zoom');
@@ -184,7 +197,7 @@
   function mountStandardImage() {
     if (!body || !image) return;
     clearInlineSvg();
-    image.hidden = false;
+    showPlaceholderImage();
     body.appendChild(image);
     if (diagramZoomViewport) diagramZoomViewport.hidden = true;
     body.classList.remove('wireframe-lightbox-body--diagram-zoom');
@@ -294,14 +307,14 @@
       }
     };
 
-    if (isZoomable && diagramZoomViewport && useInlineSvg) {
-      image.alt = trigger.dataset.lightboxTitle || 'Expanded diagram';
+    const altText = trigger.dataset.lightboxTitle || 'Expanded diagram';
 
+    if (isZoomable && diagramZoomViewport && useInlineSvg) {
       // Prefer cloning the already-rendered page SVG (avoids empty lightbox if fetch/parse fails).
+      hidePlaceholderImage();
       try {
-        const cloned = clonePageSvg(trigger, image.alt);
+        const cloned = clonePageSvg(trigger, altText);
         if (cloned) {
-          image.removeAttribute('src');
           mountInlineSvg(cloned);
           startDiagramZoom();
           finishOpen();
@@ -311,16 +324,16 @@
         /* fall through to fetch / img */
       }
 
-      image.removeAttribute('src');
       fetchSvg(src)
         .then((markup) => {
-          const svg = prepareInlineSvg(markup, image.alt);
+          const svg = prepareInlineSvg(markup, altText);
           mountInlineSvg(svg);
           startDiagramZoom();
           finishOpen();
         })
         .catch(() => {
           image.src = src;
+          showPlaceholderImage(altText);
           mountDiagramImage();
           startDiagramZoom();
           finishOpen();
@@ -329,7 +342,7 @@
     }
 
     image.src = src;
-    image.alt = trigger.dataset.lightboxTitle || 'Expanded diagram';
+    showPlaceholderImage(altText);
 
     if (isZoomable && diagramZoomViewport) {
       mountDiagramImage();
@@ -351,6 +364,8 @@
     if (image) {
       image.removeAttribute('src');
       image.alt = '';
+      image.setAttribute('aria-hidden', 'true');
+      image.hidden = true;
     }
     document.body.style.overflow = '';
     setPageChromeHidden(false);

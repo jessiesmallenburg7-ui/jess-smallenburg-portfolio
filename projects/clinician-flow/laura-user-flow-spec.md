@@ -122,12 +122,12 @@ main card).
 | — | ↳ annotation (dashed border, left, below callout) | skips AI draft → goes to step 7 | — | neutral, dashed outline, no fill |
 | — | ↳ dashed reroute | rejoins flow at Step 7 (bypassing "Review AI draft") | — | gray dashed |
 | — | "Yes" (down arrow label) | Yes | — | green text |
-| 9 | Action box | Review AI draft | Edit · accept · verify transcript | purple (doc) |
+| 9 | Action box (**AI review gate**) | **AI REVIEW GATE 1 — Per-section Accept** | Amber draft · edit · Accept each SOAP section | purple, thick border |
 | 10 | Action box | Step 7 — Review full note | Accuracy · completeness · ICD codes | purple (doc) |
 | 11 | Decision | Changes needed? | — | neutral diamond |
-| — | ↳ "Yes" loop (right, dashed) | **Edit & re-review** | loops back up to "Review AI draft" | amber-2 |
+| — | ↳ "Yes" loop (right, dashed) | **Edit & re-review** | loops back up to Gate 1 | amber-2 |
 | — | "No" (down arrow label) | No | — | green text |
-| 12 | Action box | Step 8 — Sign & close note | Submit to chart · orders release | purple (doc) |
+| 12 | Action box (**AI review gate**) | **AI REVIEW GATE 2 — Pre-sign confirmation** | Two-gate acknowledgments · sign & close · orders release | purple, thick border |
 | 13 | End pill | Return to schedule / next patient | — | gray |
 
 ## 8. Connector rules

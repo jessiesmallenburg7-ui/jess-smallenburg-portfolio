@@ -4174,6 +4174,11 @@ html.is-lightbox-open .site-header,
   .wireframe-lightbox--diagram .wireframe-lightbox-header {
     padding-top: calc(0.75rem + env(safe-area-inset-top, 0px));
   }
+
+  /* Keep map footer / legend clear of the bottom Close control */
+  .wireframe-lightbox--diagram .wireframe-lightbox-body--diagram-zoom {
+    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 .wireframe-lightbox-body {
@@ -4264,6 +4269,13 @@ html.is-lightbox-open .site-header,
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   shape-rendering: geometricPrecision;
+}
+
+/* Placeholder <img> must stay hidden while vector SVG is mounted.
+   Without this, display:block above beats [hidden] (Tailwind [hidden] has no !important). */
+.wireframe-lightbox-body--diagram-zoom img[hidden],
+#lightbox-image[hidden] {
+  display: none !important;
 }
 
 .coming-soon-block {

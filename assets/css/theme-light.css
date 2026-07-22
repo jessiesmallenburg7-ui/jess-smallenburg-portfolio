@@ -1973,3 +1973,72 @@ html[data-theme="light"] .insight-bridge-list > .insight-bridge:nth-child(4) .in
   background-color: rgba(16, 185, 129, 0.06);
 }
 
+/* Lumen Chart — role block + captions */
+html[data-theme="light"] .lumen-role-block {
+  border-color: rgba(8, 145, 178, 0.28);
+  background:
+    radial-gradient(ellipse 70% 80% at 0% 0%, rgba(8, 145, 178, 0.1), transparent 55%),
+    radial-gradient(ellipse 50% 60% at 100% 100%, rgba(14, 116, 144, 0.05), transparent 50%),
+    rgba(255, 255, 255, 0.72);
+}
+html[data-theme="light"] .lumen-role-head {
+  border-bottom-color: rgba(8, 145, 178, 0.16);
+  background: linear-gradient(90deg, rgba(8, 145, 178, 0.09), transparent 70%);
+}
+html[data-theme="light"] .lumen-role-block-title {
+  color: #0e7490;
+}
+html[data-theme="light"] .lumen-role-lead {
+  color: rgba(15, 23, 42, 0.62);
+}
+html[data-theme="light"] .lumen-role-item {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(15, 23, 42, 0.07);
+}
+html[data-theme="light"] .lumen-role-icon {
+  color: #0e7490;
+  background: rgba(8, 145, 178, 0.1);
+  border-color: rgba(8, 145, 178, 0.22);
+}
+html[data-theme="light"] .lumen-role-item-title {
+  color: rgba(15, 23, 42, 0.95);
+}
+html[data-theme="light"] .lumen-role-item-body {
+  color: rgba(15, 23, 42, 0.62);
+}
+html[data-theme="light"] .artifact-caption {
+  border-color: rgba(8, 145, 178, 0.24);
+  border-left-color: #0891b2;
+  background:
+    linear-gradient(90deg, rgba(8, 145, 178, 0.1), rgba(8, 145, 178, 0.03) 55%, transparent),
+    rgba(255, 255, 255, 0.85);
+  color: rgba(15, 23, 42, 0.78);
+}
+html[data-theme="light"] .artifact-caption-label {
+  background: rgba(8, 145, 178, 0.12);
+  border-color: rgba(8, 145, 178, 0.28);
+  color: #0e7490;
+}
+html[data-theme="light"] .lumen-constraint-term {
+  color: #2563EB;
+  text-decoration-color: rgba(37, 99, 235, 0.4);
+}
+html[data-theme="light"] .lumen-constraint-term:hover,
+html[data-theme="light"] .lumen-constraint-term:focus-visible {
+  color: #1E40AF;
+  text-decoration-color: rgba(30, 64, 175, 0.55);
+}
+html[data-theme="light"] .measured-learning {
+  border-color: rgba(8, 145, 178, 0.28);
+  background: rgba(8, 145, 178, 0.06);
+}
+html[data-theme="light"] .measured-learning-title {
+  color: #0e7490;
+}
+html[data-theme="light"] .measured-learning li {
+  color: rgba(15, 23, 42, 0.82);
+}
+html[data-theme="light"] .measured-learning li::before {
+  background: #0891b2;
+}
+
