@@ -30,6 +30,10 @@
 
     const captureModifierZoom = Boolean(options && options.captureModifierZoom);
     const isSvg = content.tagName.toLowerCase() === 'svg';
+    const optionMaxScale =
+      options && typeof options.maxScale === 'number' && options.maxScale > 0
+        ? options.maxScale
+        : null;
 
     let scale = 1;
     let baseWidth = 0;
@@ -64,6 +68,19 @@
       baseWidth = content.getBoundingClientRect().width || content.offsetWidth || viewport.clientWidth;
       content.style.width = prevWidth;
       content.style.maxWidth = prevMax;
+    }
+
+    /** Cap zoom so bitmap images never display larger than their native pixel size. */
+    function getMaxScale() {
+      if (optionMaxScale != null) return optionMaxScale;
+      if (isSvg) return MAX_SCALE;
+      const nativeWidth = content.naturalWidth || 0;
+      if (!nativeWidth || !baseWidth) return MAX_SCALE;
+      return Math.max(1, Math.min(MAX_SCALE, nativeWidth / baseWidth));
+    }
+
+    function preferredDoubleTapScale() {
+      return Math.min(2.25, getMaxScale());
     }
 
     function updateCursor() {
@@ -116,7 +133,7 @@
     function zoomTo(newScale, clientX, clientY) {
       if (!baseWidth) measureBaseWidth();
 
-      const clamped = clamp(newScale, MIN_SCALE, MAX_SCALE);
+      const clamped = clamp(newScale, MIN_SCALE, getMaxScale());
       if (clamped <= 1) {
         reset();
         return;
@@ -202,7 +219,7 @@
       if (scale > 1) {
         reset();
       } else {
-        zoomTo(2.25, event.clientX, event.clientY);
+        zoomTo(preferredDoubleTapScale(), event.clientX, event.clientY);
       }
     }
 
@@ -255,7 +272,11 @@
             if (scale > 1) {
               reset();
             } else {
-              zoomTo(2.25, event.changedTouches[0].clientX, event.changedTouches[0].clientY);
+              zoomTo(
+                preferredDoubleTapScale(),
+                event.changedTouches[0].clientX,
+                event.changedTouches[0].clientY
+              );
             }
             event.preventDefault();
           }

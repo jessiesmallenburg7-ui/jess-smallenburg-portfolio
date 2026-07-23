@@ -1,0 +1,332 @@
+/* Healthcare consulting — private access gate */
+
+.hc-access-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.hc-access-main {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.25rem 3.5rem;
+  overflow: hidden;
+}
+
+.hc-access-atmosphere {
+  pointer-events: none;
+  position: absolute;
+  inset: -20% -10%;
+  background:
+    radial-gradient(ellipse 55% 45% at 18% 30%, rgba(95, 211, 224, 0.16), transparent 58%),
+    radial-gradient(ellipse 50% 40% at 82% 70%, rgba(14, 116, 144, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(255, 255, 255, 0.04), transparent 60%);
+  animation: hc-access-drift 18s ease-in-out infinite alternate;
+}
+
+@keyframes hc-access-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(1.5%, -1.2%, 0) scale(1.03); }
+}
+
+.hc-access-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 28.5rem;
+  padding: 2rem 1.65rem 1.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.35rem;
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow:
+    0 0 0 1px rgba(95, 211, 224, 0.06),
+    0 28px 60px -28px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  animation: hc-access-rise 0.7s ease-out both;
+}
+
+@keyframes hc-access-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hc-access-back {
+  display: inline-block;
+  margin-bottom: 1.35rem;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.hc-access-back:hover {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hc-access-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(95, 211, 224, 0.28);
+  background: rgba(95, 211, 224, 0.08);
+  color: #5fd3e0;
+  animation: hc-access-glow 3.4s ease-in-out infinite;
+}
+
+@keyframes hc-access-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(95, 211, 224, 0.15); }
+  50% { box-shadow: 0 0 22px 2px rgba(95, 211, 224, 0.18); }
+}
+
+.hc-access-eyebrow {
+  margin-bottom: 0.55rem;
+}
+
+.hc-access-title {
+  margin: 0;
+  font-family: Cormorant, serif;
+  font-size: clamp(2.1rem, 5vw, 2.85rem);
+  font-weight: 600;
+  line-height: 1.12;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.hc-access-lead {
+  margin: 0.85rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.hc-access-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  margin-top: 1.75rem;
+}
+
+.hc-access-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.hc-access-label {
+  font-family: "Lato", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hc-access-input {
+  width: 100%;
+  padding: 0.95rem 1.05rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hc-access-input::placeholder {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.hc-access-input:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.hc-access-input:focus {
+  border-color: rgba(95, 211, 224, 0.65);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 3px rgba(95, 211, 224, 0.15);
+}
+
+.hc-access-hint {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.hc-access-error {
+  margin: 0;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  background: rgba(248, 113, 113, 0.08);
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  color: #fecaca;
+}
+
+.hc-access-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 1rem 1.35rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(105deg, #5fd3e0 0%, #2dd4bf 55%, #14b8a6 100%);
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #061327;
+  cursor: pointer;
+  transition: transform 0.18s ease, opacity 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 12px 28px -14px rgba(45, 212, 191, 0.7);
+}
+
+.hc-access-submit:hover {
+  opacity: 0.94;
+  transform: translateY(-1px);
+}
+
+.hc-access-submit:active {
+  transform: translateY(0);
+}
+
+.hc-access-submit:focus-visible {
+  outline: 2px solid rgba(95, 211, 224, 0.8);
+  outline-offset: 3px;
+}
+
+.hc-access-footnote {
+  margin: 1.5rem 0 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: "Lato", sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+@media (min-width: 640px) {
+  .hc-access-panel {
+    padding: 2.35rem 2.15rem 2rem;
+  }
+
+  .hc-access-main {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Light theme */
+html[data-theme="light"] .hc-access-atmosphere {
+  background:
+    radial-gradient(ellipse 55% 45% at 18% 28%, rgba(8, 145, 178, 0.14), transparent 58%),
+    radial-gradient(ellipse 48% 42% at 85% 72%, rgba(20, 184, 166, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 50% 100%, rgba(15, 23, 42, 0.04), transparent 60%);
+}
+
+html[data-theme="light"] .hc-access-panel {
+  border-color: rgba(15, 23, 42, 0.1);
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.92) 0%, rgba(247, 249, 252, 0.88) 100%);
+  box-shadow:
+    0 0 0 1px rgba(8, 145, 178, 0.06),
+    0 28px 50px -30px rgba(15, 23, 42, 0.28);
+}
+
+html[data-theme="light"] .hc-access-back {
+  color: rgba(15, 23, 42, 0.48);
+}
+
+html[data-theme="light"] .hc-access-back:hover {
+  color: rgba(15, 23, 42, 0.78);
+}
+
+html[data-theme="light"] .hc-access-mark {
+  border-color: rgba(8, 145, 178, 0.3);
+  background: rgba(8, 145, 178, 0.08);
+  color: #0e7490;
+}
+
+html[data-theme="light"] .hc-access-title {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .hc-access-lead {
+  color: rgba(15, 23, 42, 0.62);
+}
+
+html[data-theme="light"] .hc-access-label {
+  color: rgba(15, 23, 42, 0.88);
+}
+
+html[data-theme="light"] .hc-access-input {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(15, 23, 42, 0.03);
+  color: #0f172a;
+}
+
+html[data-theme="light"] .hc-access-input::placeholder {
+  color: rgba(15, 23, 42, 0.35);
+}
+
+html[data-theme="light"] .hc-access-input:hover {
+  border-color: rgba(15, 23, 42, 0.2);
+  background: rgba(15, 23, 42, 0.045);
+}
+
+html[data-theme="light"] .hc-access-input:focus {
+  border-color: rgba(8, 145, 178, 0.55);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.14);
+}
+
+html[data-theme="light"] .hc-access-hint,
+html[data-theme="light"] .hc-access-footnote {
+  color: rgba(15, 23, 42, 0.48);
+}
+
+html[data-theme="light"] .hc-access-footnote {
+  border-top-color: rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .hc-access-error {
+  border-color: rgba(220, 38, 38, 0.28);
+  background: rgba(220, 38, 38, 0.06);
+  color: #b91c1c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hc-access-atmosphere,
+  .hc-access-panel,
+  .hc-access-mark {
+    animation: none;
+  }
+
+  .hc-access-submit {
+    transition: none;
+  }
+}

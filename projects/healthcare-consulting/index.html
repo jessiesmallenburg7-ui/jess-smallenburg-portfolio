@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+	<title>Usability Analysis: Eligibility &amp; Enrollment Findability &mdash; Jessie Smallenburg</title>
+  <meta name="description" content="Usability Analysis: Improving Findability of Eligibility &amp; Enrollment Information on a Public Health Benefits Portal. Anonymized case study | Behavioral analytics + survey synthesis | 2022.">
+  <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/healthcare-consulting">
+
+  <link rel="icon" href="../../assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="../../assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Usability Analysis: Eligibility &amp; Enrollment Findability">
+  <meta property="og:description" content="Anonymized healthcare consulting case study &mdash; behavioral analytics and survey synthesis to improve findability on a public health benefits portal.">
+  <meta property="og:url" content="https://www.jessamynsmallenburg.com/projects/healthcare-consulting">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Usability Analysis: Eligibility &amp; Enrollment Findability">
+  <meta name="twitter:description" content="Anonymized healthcare consulting case study &mdash; behavioral analytics and survey synthesis to improve findability on a public health benefits portal.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260720d">
+  <link rel="stylesheet" href="../../assets/css/lumen-case.css">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260720d">
+  <link rel="stylesheet" href="../../assets/css/healthcare-consulting.css">
+</head>
+<body>
+  <div id="main">
+
+    <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
+      <div class="flex items-center justify-between md:contents">
+        <a href="../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
+        <div class="header-actions relative z-50 md:order-last">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
+            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+            </svg>
+          </button>
+          <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+            <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav id="primary-nav" class="site-nav hidden flex-col md:flex md:flex-row md:items-center md:gap-2.5" aria-label="Primary">
+        <a href="../../" class="nav-link">Home</a>
+        <a href="../" class="nav-link nav-link-active">Projects</a>
+        <a href="../../resume" class="nav-link">R&eacute;sum&eacute;</a>
+        <a href="../../about" class="nav-link">About</a>
+        <a href="../../contact" class="nav-link">Contact</a>
+        <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-link gap-3">
+          <span class="nav-linkedin-badge md:hidden" aria-hidden="true">in</span>
+          <svg class="icon-linkedin hidden h-[18px] w-[18px] shrink-0 md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span class="md:hidden">LinkedIn</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="container-content pb-16 pt-6 lg:pt-12">
+
+      <section class="case-hero">
+        <div class="case-hero-inner">
+          <a href="../" class="font-sans text-[15px] font-medium text-white/55 transition-colors hover:text-white/80">&larr; Back to Projects</a>
+          <p class="eyebrow">Usability Analysis</p>
+          <h1 class="h-display w-full max-w-none text-[34px] sm:text-[44px] lg:text-[52px]">
+            Improving Findability of Eligibility &amp; Enrollment Information on a Public Health Benefits Portal
+          </h1>
+          <aside class="hc-disclaimer" aria-label="Disclaimer">
+            <p class="hc-disclaimer-label">Disclaimer</p>
+            <p class="hc-disclaimer-body">
+              This case study has been fully anonymized and generalized to respect prior confidentiality agreements and proprietary information. It describes only my role, research process, and key learnings. No confidential client data, internal metrics, screenshots, or proprietary artifacts from the original project are included.
+            </p>
+          </aside>
+          <div class="hc-meta-row mt-2">
+            <span class="hc-meta-chip">Anonymized Case Study</span>
+            <span class="hc-meta-chip">Behavioral Analytics + Survey Synthesis</span>
+            <span class="hc-meta-chip">2022</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="case-layout case-layout--top">
+
+        <nav class="case-nav case-nav--top" data-case-nav aria-label="Case study sections">
+          <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="case-nav-panel">
+            <span class="case-nav-toggle-meta">
+              <span class="case-nav-toggle-kicker">On this page</span>
+              <span class="case-nav-toggle-current" data-case-nav-current>Overview</span>
+            </span>
+            <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div id="case-nav-panel" class="case-nav-panel">
+            <a href="#overview" class="case-nav-link case-nav-link-active" data-nav-label="Overview">Overview</a>
+            <a href="#challenge" class="case-nav-link" data-nav-label="Challenge">Challenge</a>
+            <a href="#role" class="case-nav-link" data-nav-label="Role">Role</a>
+            <a href="#methods" class="case-nav-link" data-nav-label="Methods">Methods</a>
+            <a href="#insights" class="case-nav-link" data-nav-label="Insights">Insights</a>
+            <a href="#recommendations" class="case-nav-link" data-nav-label="Recommendations">Recommendations</a>
+            <a href="#visuals" class="case-nav-link" data-nav-label="Design Directions">Design Directions</a>
+            <a href="#outcomes" class="case-nav-link" data-nav-label="Outcomes">Outcomes</a>
+            <a href="#reflections" class="case-nav-link" data-nav-label="Reflections">Reflections</a>
+          </div>
+        </nav>
+
+        <div class="hc-sections flex min-w-0 flex-col">
+
+          <section id="overview" class="case-section">
+            <h2 class="case-section-title">Project Overview</h2>
+            <p class="prose-body">
+              A major public health benefits portal was receiving high volumes of visitors seeking coverage and eligibility information for themselves or family members. Many struggled to locate clear pathways to enrollment details or state-specific resources. The goal was to identify the primary barriers preventing high-intent users from finding the information they needed and to recommend targeted improvements that would reduce friction and improve access.
+            </p>
+          </section>
+
+          <section id="challenge" class="case-section">
+            <h2 class="case-section-title">The Challenge</h2>
+            <ul class="hc-challenge-list">
+              <li>A significant percentage of visitors arrived with the explicit goal of finding coverage or eligibility information.</li>
+              <li>Key calls-to-action were underperforming relative to user intent.</li>
+              <li>Navigation and content discoverability issues led to abandonment or over-reliance on search.</li>
+              <li>Content readability appeared mismatched with the literacy levels and needs of the target audience (often including individuals navigating government systems under time pressure or with varying health literacy).</li>
+            </ul>
+            <p class="prose-body mt-6">
+              These barriers mattered because they directly affected timely access to essential health coverage for vulnerable populations.
+            </p>
+          </section>
+
+          <section id="role" class="case-section">
+            <h2 class="case-section-title">My Role</h2>
+            <p class="prose-body">
+              As a Usability Analyst, I conducted behavioral UX research and analysis for a client&rsquo;s public health benefits platform. I led mixed-methods analysis (session replays, heatmaps, and survey synthesis) to identify key usability barriers for users seeking coverage and eligibility information. I delivered prioritized insights and actionable recommendations directly to the client.
+            </p>
+          </section>
+
+          <section id="methods" class="case-section">
+            <h2 class="case-section-title">Research Approach &amp; Methods</h2>
+            <p class="prose-body">
+              I employed a mixed-methods approach centered on real user behavior:
+            </p>
+            <ul class="hc-method-grid">
+              <li class="hc-method-card">
+                <p class="hc-method-num">01</p>
+                <h3 class="hc-method-title">Session replay &amp; heatmap analysis</h3>
+                <p class="hc-method-body">Reviewed how visitors actually interacted with critical pages (homepage, navigation, and resource/search results pages). This revealed scrolling patterns, hesitation, click behaviors, and navigation struggles in real time.</p>
+              </li>
+              <li class="hc-method-card">
+                <p class="hc-method-num">02</p>
+                <h3 class="hc-method-title">Survey data synthesis</h3>
+                <p class="hc-method-body">Analyzed responses from recent site visitors, focusing on those seeking coverage information. Prioritized negative satisfaction signals, primary visit reasons, and open-ended comments about findability and comprehension.</p>
+              </li>
+              <li class="hc-method-card">
+                <p class="hc-method-num">03</p>
+                <h3 class="hc-method-title">Prioritization framework</h3>
+                <p class="hc-method-body">Evaluated findings based on negative feedback volume, coverage-seeking intent, and site information quality metrics.</p>
+              </li>
+            </ul>
+            <aside class="hc-why-callout">
+              <p class="hc-why-label">Why these methods?</p>
+              <p class="prose-body">
+                Session replays and heatmaps show what users actually do (vs. what they report), which is particularly valuable for high-stakes public services where users face cognitive load, stress, or time constraints. Pairing this with survey comments provided rich context on the why.
+              </p>
+            </aside>
+          </section>
+
+          <section id="insights" class="case-section">
+            <h2 class="case-section-title">Key Insights</h2>
+            <p class="prose-body">Four core barriers emerged from the analysis:</p>
+            <ul class="hc-insight-grid">
+              <li class="hc-insight-card">
+                <p class="hc-insight-kicker">Insight 01</p>
+                <h3 class="hc-insight-title">Primary Call-to-Action Lacked Prominence</h3>
+                <p class="hc-insight-body">The main pathway for coverage-seeking visitors was not visually distinct. It blended into the page design, lacked standard button styling or hover feedback, and was sometimes positioned below the fold. Many users who wanted enrollment information scrolled past it or failed to recognize it as interactive. Feedback frequently referenced the need for clearer enrollment directions.</p>
+              </li>
+              <li class="hc-insight-card">
+                <p class="hc-insight-kicker">Insight 02</p>
+                <h3 class="hc-insight-title">Complex Megamenu Navigation</h3>
+                <p class="hc-insight-body">Visitors spent significant time hovering over global navigation without selecting options, often switching to search instead. This indicated the menu was overly broad or deep for users needing quick access to eligibility or enrollment resources.</p>
+              </li>
+              <li class="hc-insight-card">
+                <p class="hc-insight-kicker">Insight 03</p>
+                <h3 class="hc-insight-title">Buried Pagination on Resource Pages</h3>
+                <p class="hc-insight-body">On documentation and resource listing pages, few visitors scrolled far enough to reach pagination controls, leaving additional valuable content undiscovered.</p>
+              </li>
+              <li class="hc-insight-card">
+                <p class="hc-insight-kicker">Insight 04</p>
+                <h3 class="hc-insight-title">Readability &amp; Health Literacy Gap</h3>
+                <p class="hc-insight-body">Open-ended comments repeatedly noted that content was difficult to understand and overly complex. A readability assessment of key eligibility pages showed the text required education levels well above what is recommended for broad public accessibility in health-related information (typically aiming for 4th&ndash;7th grade using plain language principles).</p>
+              </li>
+            </ul>
+          </section>
+
+          <section id="recommendations" class="case-section">
+            <h2 class="case-section-title">Recommendations</h2>
+            <p class="prose-body">
+              I delivered a clear, prioritized set of recommendations focused on visibility, simplicity, and inclusivity:
+            </p>
+            <ol class="hc-rec-list">
+              <li>Redesign the primary CTA(s) with conventional button styling, strong contrast, hover states, and higher placement on the page (e.g., overlaying part of the hero area). Include brief scope notes explaining each pathway.</li>
+              <li>Test variations of CTA wording (e.g., common user terms like &ldquo;enroll&rdquo; vs. site language).</li>
+              <li>Simplify the megamenu by consolidating categories and reducing depth.</li>
+              <li>Add pagination and &ldquo;items per page&rdquo; controls at both the top and bottom of resource lists.</li>
+              <li>Systematically simplify on-page language to plain-language standards appropriate for the general public, using readability tools for validation and iteration.</li>
+            </ol>
+          </section>
+
+          <section id="visuals" class="case-section">
+            <h2 class="case-section-title">Proposed Design Directions (Portfolio Visuals)</h2>
+            <p class="prose-body">
+              Since original materials are confidential, I created new conceptual mockups and artifacts reflecting the recommended improvements:
+            </p>
+
+            <figure class="hc-ba" data-hc-ba data-hc-ba-state="before">
+              <div class="hc-ba-header">
+                <h3 class="hc-ba-title">Homepage CTA Improvement</h3>
+                <div class="hc-ba-toggle" role="group" aria-label="Compare before and after designs">
+                  <button type="button" class="hc-ba-btn is-active" data-hc-ba-btn="before" aria-pressed="true">Before</button>
+                  <button type="button" class="hc-ba-btn" data-hc-ba-btn="after" aria-pressed="false">After</button>
+                </div>
+              </div>
+
+              <div class="hc-ba-stage" data-hc-ba-stage>
+                <div class="hc-ba-panel is-active" data-hc-ba-panel="before">
+                  <span class="hc-ba-badge">Before</span>
+                  <img
+                    src="../../assets/images/healthcare-consulting/Before.png?v=20260723b"
+                    alt="Before: original homepage with low-prominence text links placed low on the page and large unused hero space"
+                    width="2880"
+                    height="2048"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div class="hc-ba-panel" data-hc-ba-panel="after" hidden>
+                  <span class="hc-ba-badge hc-ba-badge--after">After</span>
+                  <img
+                    src="../../assets/images/healthcare-consulting/After.png?v=20260723b"
+                    alt="After: redesigned homepage with high-contrast enrollment CTAs, clearer wording, and a supporting scope note"
+                    width="2880"
+                    height="2048"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="hc-ba-expand"
+                  data-hc-ba-expand
+                  data-lightbox-src="../../assets/images/healthcare-consulting/Before.png?v=20260723b"
+                  data-lightbox-title="Homepage CTA Improvement — Before"
+                  data-lightbox-caption="Original low-prominence text links and unused hero space"
+                  data-lightbox-diagram
+                  aria-label="Enlarge before design to zoom and pan"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <path d="m21 21-4.3-4.3"/>
+                    <path d="M11 8v6M8 11h6"/>
+                  </svg>
+                  <span>Enlarge</span>
+                </button>
+                <p class="hc-ba-hint">Tap Enlarge to zoom &amp; pan</p>
+              </div>
+
+              <figcaption class="hc-ba-caption">
+                The original design used a low-prominence text link placed low on the page with significant unused space. The redesigned version features high-contrast buttons, clearer user-centered wording, and a supporting scope note. These conceptual designs were created in Figma to illustrate the recommended improvements.
+              </figcaption>
+            </figure>
+
+            <div class="hc-visual-grid">
+              <figure class="hc-fig-placeholder">
+                <div class="hc-fig-frame" role="img" aria-label="Placeholder for Figma artifact: simplified navigation structure">
+                  <p class="hc-fig-label">Figma placeholder</p>
+                  <p class="hc-fig-title">Simplified navigation structure</p>
+                  <p class="hc-fig-note">Embed your Figma prototype or high-fidelity mockup here.</p>
+                </div>
+                <figcaption>These are the visuals hiring managers will engage with most.</figcaption>
+              </figure>
+              <figure class="hc-fig-placeholder">
+                <div class="hc-fig-frame" role="img" aria-label="Placeholder for Figma mockup: resource pages with dual pagination controls">
+                  <p class="hc-fig-label">Figma placeholder</p>
+                  <p class="hc-fig-title">Resource pages with dual pagination controls</p>
+                  <p class="hc-fig-note">Embed your Figma prototype or high-fidelity mockup here.</p>
+                </div>
+                <figcaption>These are the visuals hiring managers will engage with most.</figcaption>
+              </figure>
+              <figure class="hc-fig-placeholder">
+                <div class="hc-fig-frame" role="img" aria-label="Placeholder for Figma artifact: before/after plain-language content rewrites">
+                  <p class="hc-fig-label">Figma placeholder</p>
+                  <p class="hc-fig-title">Before/after examples of plain-language content rewrites</p>
+                  <p class="hc-fig-note">Embed your Figma prototype or high-fidelity mockup here.</p>
+                </div>
+                <figcaption>These are the visuals hiring managers will engage with most.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section id="outcomes" class="case-section">
+            <h2 class="case-section-title">Outcomes &amp; Impact</h2>
+            <p class="prose-body">
+              The analysis equipped the teams with evidence-based priorities for reducing friction in coverage-seeking journeys. Recommendations aligned with broader goals around equitable access, health literacy, and user-centered government digital services. Several suggestions (improved CTA visibility, navigation simplification, and plain-language efforts) were directly actionable for enhancing outcomes for the target audience.
+            </p>
+          </section>
+
+          <section id="reflections" class="case-section">
+            <h2 class="case-section-title">Reflections &amp; Key Learnings</h2>
+            <p class="prose-body">
+              This project highlighted critical principles for healthcare-adjacent and public-sector UX:
+            </p>
+            <ul class="hc-learn-list">
+              <li><strong>Behavioral data is irreplaceable</strong> for uncovering hidden friction points.</li>
+              <li><strong>Health literacy is foundational accessibility</strong> &mdash; complex language creates real barriers to care.</li>
+              <li><strong>Small design details scale dramatically</strong> in high-intent, high-stakes flows.</li>
+              <li><strong>Designing for public benefits</strong> reinforced the human impact of UX decisions on vulnerable populations.</li>
+            </ul>
+            <p class="prose-body mt-6">
+              I apply these lessons ongoing in my health education work and healthcare UX portfolio projects, emphasizing plain language, equitable design, and systems that support users under cognitive or emotional load.
+            </p>
+
+            <h3 class="case-subtitle mt-10">Skills Demonstrated</h3>
+            <ul class="hc-skills">
+              <li>Behavioral analytics (session replays, heatmaps, scroll analysis)</li>
+              <li>Mixed-methods research synthesis</li>
+              <li>Usability evaluation of complex information architectures</li>
+              <li>Health literacy assessment and plain-language advocacy</li>
+              <li>Translating insights into prioritized, feasible recommendations</li>
+              <li>Designing for inclusive access in regulated public services</li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer mt-auto">
+      <div class="container-content flex flex-col gap-6 py-10">
+        <div class="flex flex-col items-end gap-3">
+          <p class="font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white/45">Connect</p>
+          <div class="flex items-center gap-3">
+            <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
+              <svg class="icon-linkedin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="mailto:jess@jessamynsmallenburg.com" aria-label="Email" class="footer-social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 5L2 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="border-white/10">
+        <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. All rights reserved.</p>
+          <div class="font-sans text-[17px] text-white/40 md:text-right">
+            <p>Built with AI assistance and human care.</p>
+            <p class="mt-1 max-w-xl md:ml-auto">Research, design, and writing were supported by AI tools. All final decisions and refinements are my own.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="wireframe-lightbox" class="wireframe-lightbox" hidden aria-hidden="true">
+    <div class="wireframe-lightbox-backdrop" data-lightbox-close></div>
+    <div class="wireframe-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <div class="wireframe-lightbox-header">
+        <div>
+          <h3 id="lightbox-title" class="font-serif text-[22px] font-semibold text-white"></h3>
+          <p id="lightbox-caption" class="mt-1 font-sans text-[15px] text-white/60"></p>
+        </div>
+        <button type="button" class="wireframe-lightbox-close" data-lightbox-close aria-label="Close">&times;</button>
+      </div>
+      <div class="wireframe-lightbox-body">
+        <div id="lightbox-diagram-zoom" class="diagram-zoom-viewport diagram-zoom-viewport--lightbox" hidden>
+          <div class="diagram-zoom-stage">
+            <img id="lightbox-image" alt="" hidden>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="wireframe-lightbox-exit" data-lightbox-close data-lightbox-exit aria-label="Close">
+        <span class="wireframe-lightbox-exit-x" aria-hidden="true">&times;</span>
+        <span class="wireframe-lightbox-exit-label">Close</span>
+      </button>
+    </div>
+  </div>
+
+  <button type="button" class="back-to-top" data-back-to-top hidden aria-label="Back to top" aria-hidden="true">
+    <svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5"/>
+      <path d="m5 12 7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="../../assets/js/theme.js"></script>
+  <script src="../../assets/js/nav.js"></script>
+  <script src="../../assets/js/case-nav.js"></script>
+  <script src="../../assets/js/diagram-zoom.js?v=20260723a"></script>
+  <script src="../../assets/js/lightbox.js?v=20260723a"></script>
+  <script src="../../assets/js/hc-before-after.js?v=20260723a"></script>
+  <script src="../../assets/js/back-to-top.js"></script>
+</body>
+</html>

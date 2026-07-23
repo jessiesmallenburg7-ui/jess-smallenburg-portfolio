@@ -9,6 +9,9 @@
  *
  * To REMOVE a photo:
  *   Delete or comment out its object in the array below.
+ *
+ * Numbered series (I → II → III) are spaced apart but appear in ascending
+ * order as visitors scroll from start to finish.
  */
 window.PHOTO_GALLERY_FLORAL = [
   {
@@ -27,6 +30,11 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Dahlia garden",
   },
   {
+    file: "pink-dahlia.jpg",
+    alt: "Close layers of vibrant pink dahlia petals",
+    caption: "Pink dahlia",
+  },
+  {
     file: "ethereal-dahlia.jpg",
     alt: "Side profile of an orange and pink dahlia with soft ethereal blur",
     caption: "Ethereal dahlia",
@@ -37,14 +45,14 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Passion flower",
   },
   {
-    file: "pink-dahlia.jpg",
-    alt: "Close layers of vibrant pink dahlia petals",
-    caption: "Pink dahlia",
-  },
-  {
     file: "gerbera-daisy.jpg",
     alt: "Gerbera daisy in bloom",
     caption: "Gerbera daisy",
+  },
+  {
+    file: "ethereal-garden-1.jpg",
+    alt: "Soft ethereal garden floral study",
+    caption: "Ethereal garden I",
   },
   {
     file: "daffodils.jpg",
@@ -67,6 +75,11 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Dahlia",
   },
   {
+    file: "pink-dahlia-2.jpg",
+    alt: "Pink dahlia petals",
+    caption: "Pink dahlia II",
+  },
+  {
     file: "lilies.jpg",
     alt: "Lilies in bloom",
     caption: "Lilies",
@@ -75,6 +88,11 @@ window.PHOTO_GALLERY_FLORAL = [
     file: "pink-peony.jpg",
     alt: "Pink peony bloom",
     caption: "Pink peony",
+  },
+  {
+    file: "ethereal-garden-2.jpg",
+    alt: "Soft ethereal garden floral study II",
+    caption: "Ethereal garden II",
   },
   {
     file: "daffodil.jpg",
@@ -90,11 +108,6 @@ window.PHOTO_GALLERY_FLORAL = [
     file: "gerbera-daisy-2.jpg",
     alt: "Gerbera daisy study",
     caption: "Gerbera daisy II",
-  },
-  {
-    file: "pink-dahlia-2.jpg",
-    alt: "Pink dahlia petals",
-    caption: "Pink dahlia II",
   },
   {
     file: "orange-dahlia-2.jpg",
@@ -128,13 +141,18 @@ window.PHOTO_GALLERY_FLORAL = [
   },
   {
     file: "collage.jpg",
-    alt: "Floral collage arrangement",
-    caption: "Collage",
+    alt: "Plains Coreopsis, also known as Calliopsis or Golden Tickseed",
+    caption: "Plains Coreopsis — also known as Calliopsis or Golden Tickseed",
   },
   {
     file: "rose.jpg",
     alt: "Rose bloom",
     caption: "Rose",
+  },
+  {
+    file: "ethereal-garden-3.jpg",
+    alt: "Soft ethereal garden floral study III",
+    caption: "Ethereal garden III",
   },
   {
     file: "loire-valley.jpg",
@@ -146,10 +164,20 @@ window.PHOTO_GALLERY_FLORAL = [
     alt: "Rose photographed in the Loire Valley",
     caption: "Loire Valley rose",
   },
+  {
+    file: "echinacea.jpg",
+    alt: "Magenta echinacea flowers with deep orange cone centers in a sunlit garden",
+    caption: "Echinacea",
+  },
+  {
+    file: "american-pokeweed.jpg",
+    alt: "American pokeweed",
+    caption: "American pokeweed",
+  },
   // Lower resolution than the rest (~1024px) — remove if it looks soft in lightbox:
   {
-    file: "white-flower.jpg",
-    alt: "White flower bloom",
-    caption: "White flower",
+    file: "zinnia.jpg",
+    alt: "Zinnia bloom",
+    caption: "Zinnia",
   },
 ];

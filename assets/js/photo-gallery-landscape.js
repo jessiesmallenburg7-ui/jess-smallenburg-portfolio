@@ -9,6 +9,9 @@
  *
  * To REMOVE a photo:
  *   Delete or comment out its object in the array below.
+ *
+ * Numbered series (I → II → III) are spaced apart but appear in ascending
+ * order as visitors scroll from start to finish.
  */
 window.PHOTO_GALLERY_LANDSCAPE = [
   {
@@ -52,6 +55,11 @@ window.PHOTO_GALLERY_LANDSCAPE = [
     caption: "Tahquamenon Falls",
   },
   {
+    file: "mountain-ridges.jpg",
+    alt: "Desert mountain ridges under a clear blue sky",
+    caption: "Mountain ridges",
+  },
+  {
     file: "zion_2.jpg",
     alt: "Layered red and cream sandstone cliffs rising above green trees",
     caption: "Zion cliffs",
@@ -62,19 +70,14 @@ window.PHOTO_GALLERY_LANDSCAPE = [
     caption: "Autumn bridge",
   },
   {
-    file: "mountain-ridges.jpg",
-    alt: "Desert mountain ridges under a clear blue sky",
-    caption: "Mountain ridges",
-  },
-  {
     file: "big_sur_2.jpg",
     alt: "Turquoise surf and orange-stained rocks along a rugged coastline",
-    caption: "Big Sur coast",
+    caption: "Big Sur II",
   },
   {
     file: "IMG_3522.jpg",
     alt: "Tahquamenon Falls framed by dense green forest",
-    caption: "Tahquamenon Falls",
+    caption: "Tahquamenon Falls II",
   },
   {
     file: "beach-CA.jpg",
@@ -82,24 +85,24 @@ window.PHOTO_GALLERY_LANDSCAPE = [
     caption: "California coast",
   },
   {
+    file: "mountain-ridges-2.jpg",
+    alt: "Layered mountain ridges in soft atmospheric light",
+    caption: "Mountain ridges II",
+  },
+  {
     file: "out-west.jpg",
     alt: "Prairie and distant mesas under a streaked sunset sky",
     caption: "Western sunset",
   },
   {
-    file: "mountain-ridges-2.jpg",
-    alt: "Layered mountain ridges in soft atmospheric light",
-    caption: "Ridges II",
+    file: "up-1.jpg",
+    alt: "Rocky stream with silky long-exposure water and green leaves",
+    caption: "Upper Peninsula",
   },
   {
     file: "mountain-ridges-3.jpg",
     alt: "Sunlit mountain ridges with deep canyon shadows",
-    caption: "Ridges III",
-  },
-  {
-    file: "up-1.jpg",
-    alt: "Rocky stream with silky long-exposure water and green leaves",
-    caption: "Upper Peninsula",
+    caption: "Mountain ridges III",
   },
   {
     file: "stream-michigan.jpg",

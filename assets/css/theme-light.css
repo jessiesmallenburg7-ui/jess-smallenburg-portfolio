@@ -2042,3 +2042,66 @@ html[data-theme="light"] .measured-learning li::before {
   background: #0891b2;
 }
 
+/* Healthcare consulting case study */
+html[data-theme="light"] .hc-meta-chip {
+  border-color: rgba(8, 145, 178, 0.28);
+  background: rgba(8, 145, 178, 0.08);
+  color: #0e7490;
+}
+html[data-theme="light"] .hc-challenge-list li {
+  border-color: rgba(15, 23, 42, 0.08);
+  border-left-color: #0891b2;
+  background: rgba(15, 23, 42, 0.03);
+  color: rgba(15, 23, 42, 0.78);
+}
+html[data-theme="light"] .hc-method-card,
+html[data-theme="light"] .hc-insight-card {
+  border-color: rgba(15, 23, 42, 0.1);
+  background:
+    radial-gradient(ellipse 80% 70% at 0% 0%, rgba(8, 145, 178, 0.08), transparent 55%),
+    rgba(255, 255, 255, 0.72);
+}
+html[data-theme="light"] .hc-method-num,
+html[data-theme="light"] .hc-insight-kicker,
+html[data-theme="light"] .hc-why-label,
+html[data-theme="light"] .hc-fig-label {
+  color: #0e7490;
+}
+html[data-theme="light"] .hc-method-title,
+html[data-theme="light"] .hc-insight-title,
+html[data-theme="light"] .hc-fig-title,
+html[data-theme="light"] .hc-learn-list strong {
+  color: rgba(15, 23, 42, 0.95);
+}
+html[data-theme="light"] .hc-method-body,
+html[data-theme="light"] .hc-insight-body,
+html[data-theme="light"] .hc-fig-note,
+html[data-theme="light"] .hc-fig-placeholder figcaption {
+  color: rgba(15, 23, 42, 0.62);
+}
+html[data-theme="light"] .hc-rec-list li,
+html[data-theme="light"] .hc-learn-list li {
+  border-color: rgba(15, 23, 42, 0.08);
+  background: rgba(15, 23, 42, 0.03);
+  color: rgba(15, 23, 42, 0.78);
+}
+html[data-theme="light"] .hc-rec-list li::before {
+  color: #0e7490;
+}
+html[data-theme="light"] .hc-fig-frame {
+  border-color: rgba(8, 145, 178, 0.35);
+  background:
+    radial-gradient(ellipse 70% 60% at 15% 20%, rgba(8, 145, 178, 0.1), transparent 55%),
+    linear-gradient(165deg, rgba(8, 145, 178, 0.04), rgba(255, 255, 255, 0.6));
+}
+html[data-theme="light"] .hc-skills li {
+  border-color: rgba(15, 23, 42, 0.1);
+  background: rgba(15, 23, 42, 0.04);
+  color: rgba(15, 23, 42, 0.78);
+}
+html[data-theme="light"] .hc-why-callout {
+  border-color: rgba(8, 145, 178, 0.28);
+  background: rgba(8, 145, 178, 0.06);
+}
+
+
