@@ -13,13 +13,13 @@
 
   const ASSETS = {
     before: {
-      src: "../../assets/images/healthcare-consulting/Before.png?v=20260723b",
+      src: "../../assets/images/healthcare-consulting/Before.png?v=20260723c",
       title: "Homepage CTA Improvement — Before",
       caption: "Original low-prominence text links and unused hero space",
       label: "Enlarge before design to zoom and pan",
     },
     after: {
-      src: "../../assets/images/healthcare-consulting/After.png?v=20260723b",
+      src: "../../assets/images/healthcare-consulting/After.png?v=20260723c",
       title: "Homepage CTA Improvement — After",
       caption: "High-contrast CTAs, clearer wording, and supporting scope note",
       label: "Enlarge after design to zoom and pan",
