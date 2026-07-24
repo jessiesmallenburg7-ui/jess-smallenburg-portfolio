@@ -108,7 +108,7 @@
 
   function scheduleCorrections(id) {
     pendingTargetId = id;
-    correctUntil = Date.now() + 2200;
+    correctUntil = Date.now() + 900;
 
     function correct() {
       if (pendingTargetId !== id) return;
@@ -126,15 +126,27 @@
 
       var expected = stickyOffset();
       var drift = el.getBoundingClientRect().top - expected;
-      if (Math.abs(drift) > 6) {
+      // User has clearly moved on — stop fighting their scroll.
+      if (Math.abs(drift) >= 240) {
+        stopCorrections();
+        updateFromScroll();
+        return;
+      }
+      // Only nudge while still parked on the jump target.
+      if (Math.abs(drift) > 10) {
         scrollToId(id, 'auto');
       }
 
-      correctTimer = window.setTimeout(correct, 100);
+      correctTimer = window.setTimeout(correct, 120);
     }
 
     if (correctTimer) window.clearTimeout(correctTimer);
     correctTimer = window.setTimeout(correct, 80);
+  }
+
+  function onUserScrollIntent() {
+    // Once the visitor takes over scrolling, stop auto re-aligning to the TOC target.
+    if (pendingTargetId) stopCorrections();
   }
 
   function goToSection(id, behavior) {
@@ -220,16 +232,28 @@
     setOpen(false);
   });
 
-  // Lazy images above the target can expand after the first scroll — re-align.
+  // Lazy images above the target can expand after the first scroll — re-align lightly.
   document.addEventListener(
     'load',
     function (event) {
       if (!pendingTargetId) return;
-      if (!event.target || event.target.tagName !== 'IMG') return;
-      scrollToId(pendingTargetId, 'auto');
+      if (!event.target || (event.target.tagName !== 'IMG' && event.target.tagName !== 'IFRAME')) return;
+      var el = document.getElementById(pendingTargetId);
+      if (!el) return;
+      var drift = el.getBoundingClientRect().top - stickyOffset();
+      if (Math.abs(drift) > 10 && Math.abs(drift) < 240) {
+        scrollToId(pendingTargetId, 'auto');
+      }
     },
     true
   );
+
+  window.addEventListener('wheel', onUserScrollIntent, { passive: true });
+  window.addEventListener('touchmove', onUserScrollIntent, { passive: true });
+  window.addEventListener('keydown', function (event) {
+    var keys = ['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ', 'Spacebar'];
+    if (keys.indexOf(event.key) !== -1) onUserScrollIntent();
+  });
 
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll, { passive: true });

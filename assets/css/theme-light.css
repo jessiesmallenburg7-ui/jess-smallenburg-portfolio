@@ -2069,8 +2069,7 @@ html[data-theme="light"] .hc-fig-label {
 }
 html[data-theme="light"] .hc-method-title,
 html[data-theme="light"] .hc-insight-title,
-html[data-theme="light"] .hc-fig-title,
-html[data-theme="light"] .hc-learn-list strong {
+html[data-theme="light"] .hc-fig-title {
   color: rgba(15, 23, 42, 0.95);
 }
 html[data-theme="light"] .hc-method-body,
@@ -2079,13 +2078,12 @@ html[data-theme="light"] .hc-fig-note,
 html[data-theme="light"] .hc-fig-placeholder figcaption {
   color: rgba(15, 23, 42, 0.62);
 }
-html[data-theme="light"] .hc-rec-list li,
-html[data-theme="light"] .hc-learn-list li {
+html[data-theme="light"] .hc-rec-list > li {
   border-color: rgba(15, 23, 42, 0.08);
   background: rgba(15, 23, 42, 0.03);
   color: rgba(15, 23, 42, 0.78);
 }
-html[data-theme="light"] .hc-rec-list li::before {
+html[data-theme="light"] .hc-rec-list > li::before {
   color: #0e7490;
 }
 html[data-theme="light"] .hc-fig-frame {
@@ -2093,11 +2091,6 @@ html[data-theme="light"] .hc-fig-frame {
   background:
     radial-gradient(ellipse 70% 60% at 15% 20%, rgba(8, 145, 178, 0.1), transparent 55%),
     linear-gradient(165deg, rgba(8, 145, 178, 0.04), rgba(255, 255, 255, 0.6));
-}
-html[data-theme="light"] .hc-skills li {
-  border-color: rgba(15, 23, 42, 0.1);
-  background: rgba(15, 23, 42, 0.04);
-  color: rgba(15, 23, 42, 0.78);
 }
 html[data-theme="light"] .hc-why-callout {
   border-color: rgba(8, 145, 178, 0.28);
