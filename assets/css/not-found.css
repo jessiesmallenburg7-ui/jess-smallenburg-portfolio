@@ -1,0 +1,217 @@
+/* 404 — centered detour composition */
+
+.nf-page {
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+.nf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.nf-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0 3.5rem;
+  overflow: hidden;
+}
+
+.nf-atmosphere {
+  pointer-events: none;
+  position: absolute;
+  inset: -18% -12%;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 55% 45% at 16% 28%, rgba(95, 211, 224, 0.14), transparent 58%),
+    radial-gradient(ellipse 50% 42% at 84% 72%, rgba(14, 116, 144, 0.16), transparent 55%),
+    radial-gradient(ellipse 70% 48% at 50% 100%, rgba(167, 139, 250, 0.08), transparent 60%);
+  animation: nf-atmosphere-drift 18s ease-in-out infinite alternate;
+}
+
+.nf-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 36rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+
+.nf-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  color: #5fd3e0;
+  margin-bottom: 1.35rem;
+  animation: nf-icon-in 0.7s ease both, nf-icon-float 4.5s ease-in-out 0.7s infinite;
+}
+
+.nf-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nf-code {
+  margin: 0 0 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  text-transform: uppercase;
+  color: #5fd3e0;
+  animation: nf-fade-up 0.65s ease 0.08s both;
+}
+
+.nf-title {
+  margin: 0 0 1rem;
+  max-width: 18ch;
+  font-family: "Cormorant", Georgia, serif;
+  font-size: clamp(2rem, 5.5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.96);
+  animation: nf-fade-up 0.7s ease 0.14s both;
+}
+
+.nf-body {
+  margin: 0 0 2rem;
+  max-width: 36ch;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+  animation: nf-fade-up 0.7s ease 0.2s both;
+}
+
+.nf-cta {
+  animation: nf-fade-up 0.7s ease 0.28s both;
+}
+
+.nf-links {
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem 1.5rem;
+  animation: nf-fade-up 0.7s ease 0.36s both;
+}
+
+.nf-links a {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.nf-links a:hover,
+.nf-links a:focus-visible {
+  color: #5fd3e0;
+  outline: none;
+}
+
+@keyframes nf-atmosphere-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(1.4%, -1.1%, 0) scale(1.03);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nf-atmosphere,
+  .nf-icon,
+  .nf-code,
+  .nf-title,
+  .nf-body,
+  .nf-cta,
+  .nf-links {
+    animation: none;
+  }
+}
+
+@keyframes nf-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.65rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nf-icon-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.4rem) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes nf-icon-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.28rem);
+  }
+}
+
+/* Light theme — warmer cyan wash (echoes private access atmosphere) */
+html[data-theme="light"] .nf-atmosphere {
+  background:
+    radial-gradient(ellipse 58% 48% at 14% 26%, rgba(8, 145, 178, 0.2), transparent 58%),
+    radial-gradient(ellipse 52% 44% at 86% 70%, rgba(20, 184, 166, 0.16), transparent 55%),
+    radial-gradient(ellipse 60% 42% at 48% 8%, rgba(37, 99, 235, 0.1), transparent 55%),
+    radial-gradient(ellipse 72% 50% at 50% 100%, rgba(15, 23, 42, 0.035), transparent 60%);
+}
+
+html[data-theme="light"] .nf-icon {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .nf-code {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .nf-title {
+  color: #1f2937;
+}
+
+html[data-theme="light"] .nf-body {
+  color: #374151;
+}
+
+html[data-theme="light"] .nf-links a {
+  color: rgba(31, 41, 55, 0.78);
+}
+
+html[data-theme="light"] .nf-links a:hover,
+html[data-theme="light"] .nf-links a:focus-visible {
+  color: #0e7490;
+}
