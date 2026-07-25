@@ -21,11 +21,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260720d">
-  <link rel="stylesheet" href="../../assets/css/lumen-case.css">
-  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260720d">
+  <link rel="stylesheet" href="../../assets/css/lumen-case.css?v=20260725s">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260725s">
 </head>
 <body>
   <div id="main">
@@ -1833,57 +1833,66 @@
 
             <h3 class="case-subtitle mt-10">Key Findings</h3>
 
-            <div class="case-finding-stack">
-              <article class="case-finding-block">
-                <h4 class="case-block-label">Strong learnability despite EHR inexperience</h4>
-                <p class="prose-body">
-                  She finished the full documentation workflow cold and scored every usability metric 7/7: overall ease, AI-vs-verified confidence, amber helpfulness, transcript usefulness, and two-gate appropriateness.
-                </p>
-              </article>
+            <ol class="lumen-findings-list">
+              <li>
+                <span class="lumen-findings-num" aria-hidden="true">01</span>
+                <div class="lumen-findings-copy">
+                  <h4 class="lumen-findings-lead">Strong learnability despite EHR inexperience</h4>
+                  <p class="lumen-findings-body">
+                    She finished the full documentation workflow cold and scored every usability metric 7/7: overall ease, AI-vs-verified confidence, amber helpfulness, transcript usefulness, and two-gate appropriateness.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="lumen-findings-num" aria-hidden="true">02</span>
+                <div class="lumen-findings-copy">
+                  <h4 class="lumen-findings-lead">AI transparency works visually&mdash;semantics need work</h4>
+                  <p class="lumen-findings-body">
+                    She noticed amber and called the tabs clear, but read it as a general &ldquo;needs attention&rdquo; flag until prompted. Attention worked; meaning needed an explicit map.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="lumen-findings-num" aria-hidden="true">03</span>
+                <div class="lumen-findings-copy">
+                  <h4 class="lumen-findings-lead">Trust &amp; safeguards</h4>
+                  <p class="lumen-findings-body">
+                    She said she would trust signing in this system, citing confirm icons and gated steps.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="lumen-findings-num" aria-hidden="true">04</span>
+                <div class="lumen-findings-copy">
+                  <h4 class="lumen-findings-lead">Major opportunity: first-time onboarding</h4>
+                  <p class="lumen-findings-body">
+                    Amber meaning and the pencil edit icon were not self-evident. She repeated that prior exposure or a short intro would make the flow easier.
+                  </p>
+                </div>
+              </li>
+            </ol>
 
-              <article class="case-finding-block">
-                <h4 class="case-block-label">AI transparency works visually&mdash;semantics need work</h4>
-                <p class="prose-body">
-                  She noticed amber and called the tabs clear, but read it as a general &ldquo;needs attention&rdquo; flag until prompted. Attention worked; meaning needed an explicit map.
-                </p>
-              </article>
+            <aside class="lumen-findings-response" aria-labelledby="lumen-findings-response-label">
+              <p id="lumen-findings-response-label" class="lumen-findings-response-label">Design response</p>
+              <p class="lumen-findings-response-lead">
+                I added a skippable first-load onboarding wizard that progressively explains:
+              </p>
+              <ul class="lumen-findings-response-list">
+                <li>Amber text = AI-generated draft + &ldquo;Always verify&rdquo; banner</li>
+                <li>Pencil icon = edit AI content</li>
+                <li>Per-section Accept + two-gate signing safeguards</li>
+              </ul>
+              <p class="lumen-findings-response-close">
+                New users get the map; experienced clinicians keep a clean surface.
+              </p>
+            </aside>
 
-              <article class="case-finding-block">
-                <h4 class="case-block-label">Trust &amp; safeguards</h4>
-                <p class="prose-body">
-                  She said she would trust signing in this system, citing confirm icons and gated steps.
-                </p>
-              </article>
-
-              <article class="case-finding-block">
-                <h4 class="case-block-label">Major opportunity: first-time onboarding</h4>
-                <p class="prose-body">
-                  Amber meaning and the pencil edit icon were not self-evident. She repeated that prior exposure or a short intro would make the flow easier.
-                </p>
-              </article>
-
-              <div class="persona-callout persona-callout--info">
-                <p class="persona-callout-label">Design Response</p>
-                <p class="prose-body">
-                  I added a skippable first-load onboarding wizard that progressively explains:
-                </p>
-                <ul class="flex flex-col gap-2 pl-1 mt-3">
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">Amber text = AI-generated draft + &ldquo;Always verify&rdquo; banner</span></li>
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">Pencil icon = edit AI content</span></li>
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">Per-section Accept + two-gate signing safeguards</span></li>
-                </ul>
-                <p class="prose-body mt-3">
-                  New users get the map; experienced clinicians keep a clean surface.
-                </p>
-              </div>
-
-              <article class="case-finding-block">
-                <h4 class="case-block-label">Scope note</h4>
-                <p class="prose-body">
-                  Timeboxed access meant HE + this single session drove refinement. Next validation step: practicing physicians on the primary path.
-                </p>
-              </article>
-            </div>
+            <aside class="lumen-findings-scope" aria-label="Scope note">
+              <p class="lumen-findings-scope-label">Scope note</p>
+              <p class="lumen-findings-scope-text">
+                Timeboxed access meant heuristic evaluation and this single session drove refinement.
+              </p>
+            </aside>
           </section>
 
           <!-- Refine -->
@@ -2024,9 +2033,6 @@
               </article>
             </div>
 
-            <p class="case-impact-note mt-6">
-              <strong>Next:</strong> These changes will be implemented before launching the live prototype for broader (unmoderated) testing.
-            </p>
           </section>
 
           <!-- Launch -->
@@ -2160,42 +2166,49 @@
           <section id="reflection" class="case-section">
             <h2 class="case-section-title">Reflection &amp; Learnings</h2>
 
-            <div class="case-finding-stack">
-              <article class="case-finding-block">
-                <h3 class="case-block-label">Visual salience is not enough</h3>
-                <p class="prose-body">
-                  Amber drew the eye but not the meaning. Without an explicit map, users invent the wrong story&mdash;signifiers and progressive disclosure matter as much as color.
-                </p>
-              </article>
+            <ol class="lumen-reflect-list">
+              <li>
+                <span class="lumen-reflect-num" aria-hidden="true">01</span>
+                <div class="lumen-reflect-copy">
+                  <h3 class="lumen-reflect-lead">Visual salience is not enough</h3>
+                  <p class="lumen-reflect-body">
+                    Amber drew the eye but not the meaning. Without an explicit map, users invent the wrong story&mdash;signifiers and progressive disclosure matter as much as color.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="lumen-reflect-num" aria-hidden="true">02</span>
+                <div class="lumen-reflect-copy">
+                  <h3 class="lumen-reflect-lead">Novice perspectives catch foundational gaps</h3>
+                  <p class="lumen-reflect-body">
+                    An EHR novice exposed discoverability issues experts might skip. 7/7 scores validated the flow; missing first-use support was the real finding.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="lumen-reflect-num" aria-hidden="true">03</span>
+                <div class="lumen-reflect-copy">
+                  <h3 class="lumen-reflect-lead">High-stakes AI needs intentional friction</h3>
+                  <p class="lumen-reflect-body">
+                    Per-section Accept and two-gate signing slow the commitment step on purpose&mdash;safety and liability, not a usability bug.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="lumen-reflect-num" aria-hidden="true">04</span>
+                <div class="lumen-reflect-copy">
+                  <h3 class="lumen-reflect-lead">Convergent evaluation sharpens decisions</h3>
+                  <p class="lumen-reflect-body">
+                    HE + one moderated session produced the same priorities: onboarding, Unaccept, stronger gates. Small sample, clear signal.
+                  </p>
+                </div>
+              </li>
+            </ol>
 
-              <article class="case-finding-block">
-                <h3 class="case-block-label">Novice perspectives catch foundational gaps</h3>
-                <p class="prose-body">
-                  An EHR novice exposed discoverability issues experts might skip. 7/7 scores validated the flow; missing first-use support was the real finding.
-                </p>
-              </article>
-
-              <article class="case-finding-block">
-                <h3 class="case-block-label">High-stakes AI needs intentional friction</h3>
-                <p class="prose-body">
-                  Per-section Accept and two-gate signing slow the commitment step on purpose&mdash;safety and liability, not a usability bug.
-                </p>
-              </article>
-
-              <article class="case-finding-block">
-                <h3 class="case-block-label">Convergent evaluation sharpens decisions</h3>
-                <p class="prose-body">
-                  HE + one moderated session produced the same priorities: onboarding, Unaccept, stronger gates. Small sample, clear signal.
-                </p>
-              </article>
-            </div>
-
-            <div class="persona-callout persona-callout--info mt-6">
-              <p class="persona-callout-label">Overall</p>
-              <p class="prose-body">
-                Lumen Chart balances ambient-AI speed with clinician trust and verification. Access constraints limited testing to heuristics plus one healthcare-adjacent session; next, validate with practicing physicians.
-              </p>
-            </div>
+            <p class="lumen-reflect-close">
+              <span class="lumen-reflect-close-label">Overall</span>
+              Ambient AI only works in clinical documentation when trust is designed as carefully as speed. Visual cues draw attention, but users still need a clear map of what AI wrote, what they verified, and how to reverse a choice. Novice testing proved especially useful: strong scores coexisted with first-use gaps experts might overlook. Heuristic evaluation and a moderated session pointed to the same fixes&mdash;onboarding, Unaccept, and stronger signing gates&mdash;showing that high-stakes AI needs intentional friction. Lumen Chart is less about automating notes and more about making AI-assisted documentation accountable, reversible, and learnable under pressure.
+            </p>
           </section>
 
         </div>
