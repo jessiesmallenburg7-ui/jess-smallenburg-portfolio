@@ -64,7 +64,7 @@
 
   applyTheme(getPreferredTheme(), false);
 
-  document.addEventListener('DOMContentLoaded', function () {
+  function initThemeToggle() {
     var theme = root.getAttribute('data-theme') || 'light';
     syncToggle(theme);
     syncThemeIcons(theme);
@@ -75,6 +75,13 @@
         applyTheme(current === 'light' ? 'dark' : 'light', true);
       });
     });
-  });
+  }
+
+  /* 404 loads this script after DOMContentLoaded, so bind immediately when already ready */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
 
 })();
