@@ -1,4 +1,13 @@
-/* Healthcare Consulting case study */
+/* Healthcare Consulting case study
+   Type scale (for scannability):
+   - Section titles: site `.case-section-title` (~32–38px)
+   - Subsection titles: ~24px
+   - Pull quotes / closings: ~22px
+   - Body: 19px
+   - Supporting: 17px
+   - Captions / meta: 15–16px
+   - Kickers / labels: 14px (floor — nothing smaller for readable UI text)
+*/
 
 /* Tighter rhythm: divider → section title (overrides lumen-case + theme-light) */
 .hc-sections {
@@ -73,7 +82,7 @@ html[data-theme="light"] .case-layout--top .hc-sections .case-section:last-child
 .hc-disclaimer-label {
   margin: 0 0 0.35rem;
   font-family: "Lato", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -83,7 +92,7 @@ html[data-theme="light"] .case-layout--top .hc-sections .case-section:last-child
 .hc-disclaimer-body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.58);
 }
@@ -110,51 +119,89 @@ html[data-theme="light"] .hc-disclaimer-body {
   border: 1px solid rgba(103, 232, 249, 0.22);
   background: rgba(103, 232, 249, 0.08);
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: rgba(103, 232, 249, 0.95);
 }
 
 .hc-challenge-list {
-  margin: 1.35rem 0 0;
+  margin: 1.5rem 0 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 1.5rem;
+  border-top: 0;
 }
 
 .hc-challenge-list > li {
   margin: 0;
-  padding: 1.35rem 0.25rem 1.35rem 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: 3.5rem 1fr;
-  gap: 1rem;
-  align-items: start;
+  grid-template-columns: 3.1rem 1fr;
+  gap: 0.55rem 0.7rem;
+  align-items: center;
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background: transparent;
+  box-shadow: none;
+}
+
+@media (min-width: 640px) {
+  .hc-challenge-list > li {
+    grid-template-columns: minmax(4.5rem, 5.5rem) 1fr;
+    gap: 1.25rem 1.5rem;
+  }
 }
 
 .hc-challenge-num {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.45rem;
+  min-width: 0;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.75rem, 3vw, 2.15rem);
+  font-size: clamp(2rem, 6vw, 2.75rem);
   font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
   color: rgba(103, 232, 249, 0.95);
 }
 
+.hc-challenge-num::after {
+  content: "";
+  display: block;
+  width: 1.65rem;
+  height: 2px;
+  background: rgba(103, 232, 249, 0.55);
+}
+
+@media (min-width: 640px) {
+  .hc-challenge-num {
+    gap: 0.55rem;
+  }
+
+  .hc-challenge-num::after {
+    width: 2rem;
+  }
+}
+
 .hc-challenge-text {
-  margin: 0.15rem 0 0;
+  margin: 0;
+  padding: 0;
+  border-top: 0;
   font-family: "Lato", sans-serif;
   font-size: 19px;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hc-challenge-close {
@@ -165,28 +212,43 @@ html[data-theme="light"] .hc-disclaimer-body {
     linear-gradient(90deg, rgba(103, 232, 249, 0.08), transparent 70%),
     rgba(255, 255, 255, 0.03);
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.3rem, 2.3vw, 1.55rem);
+  font-size: 22px;
   font-weight: 500;
   font-style: italic;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.9);
 }
 
+@media (min-width: 640px) {
+  .hc-challenge-close {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+}
+
 html[data-theme="light"] .hc-challenge-list {
-  border-top-color: rgba(15, 23, 42, 0.12);
+  border-top: 0;
 }
 
 html[data-theme="light"] .hc-challenge-list > li {
-  border-bottom-color: rgba(15, 23, 42, 0.12);
+  border: 0;
   background: transparent;
+  box-shadow: none;
 }
 
 html[data-theme="light"] .hc-challenge-num {
+  border: 0;
+  background: transparent;
   color: #0e7490;
 }
 
+html[data-theme="light"] .hc-challenge-num::after {
+  background: rgba(8, 145, 178, 0.55);
+}
+
 html[data-theme="light"] .hc-challenge-text {
-  color: rgba(15, 23, 42, 0.82);
+  border-top: 0;
+  color: rgba(15, 23, 42, 0.84);
 }
 
 html[data-theme="light"] .hc-challenge-close {
@@ -225,7 +287,7 @@ html[data-theme="light"] .hc-challenge-close {
 .hc-method-num {
   margin: 0 0 0.55rem;
   font-family: "IBM Plex Mono", "Lato", monospace;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -235,7 +297,7 @@ html[data-theme="light"] .hc-challenge-close {
 .hc-method-title {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.95);
 }
@@ -243,7 +305,7 @@ html[data-theme="light"] .hc-challenge-close {
 .hc-method-body {
   margin: 0.45rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -274,7 +336,7 @@ html[data-theme="light"] .hc-challenge-close {
 .hc-insight-kicker {
   margin: 0 0 0.45rem;
   font-family: "Lato", sans-serif;
-  font-size: 0.7rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -284,7 +346,7 @@ html[data-theme="light"] .hc-challenge-close {
 .hc-insight-title {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: 1.45rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.95);
@@ -293,7 +355,7 @@ html[data-theme="light"] .hc-challenge-close {
 .hc-insight-body {
   margin: 0.55rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.62);
 }
@@ -312,7 +374,7 @@ html[data-theme="light"] .hc-challenge-close {
   counter-increment: hc-rec;
   position: relative;
   margin: 0;
-  padding: 1.1rem 1.25rem 1.1rem 3.5rem;
+  padding: 1.15rem 1.25rem 1.15rem 4rem;
   border-radius: 0.85rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
@@ -326,9 +388,9 @@ html[data-theme="light"] .hc-challenge-close {
   content: counter(hc-rec, decimal-leading-zero);
   position: absolute;
   left: 1rem;
-  top: 1.15rem;
+  top: 1.25rem;
   font-family: "IBM Plex Mono", "Lato", monospace;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: rgba(103, 232, 249, 0.95);
@@ -394,7 +456,7 @@ html[data-theme="light"] .hc-ba + .hc-ba {
 .hc-ba-title {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.45rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.95);
@@ -417,7 +479,7 @@ html[data-theme="light"] .hc-ba + .hc-ba {
   padding: 0.55rem 1.15rem;
   background: transparent;
   font-family: "Lato", sans-serif;
-  font-size: 0.92rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -466,7 +528,7 @@ html[data-theme="light"] .hc-ba + .hc-ba {
   background: rgba(6, 15, 39, 0.72);
   backdrop-filter: blur(8px);
   font-family: "Lato", sans-serif;
-  font-size: 0.78rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -512,7 +574,7 @@ html[data-theme="light"] .hc-ba + .hc-ba {
   background: rgba(6, 15, 39, 0.72);
   backdrop-filter: blur(8px);
   font-family: "Lato", sans-serif;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -536,7 +598,7 @@ html[data-theme="light"] .hc-ba + .hc-ba {
   border-radius: 999px;
   background: rgba(6, 15, 39, 0.55);
   font-family: "Lato", sans-serif;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.55);
@@ -548,14 +610,14 @@ html[data-theme="light"] .hc-ba + .hc-ba {
   width: 100%;
   max-width: none;
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: 17px;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.68);
 }
 
 @media (min-width: 640px) {
   .hc-ba-caption {
-    font-size: 1.45rem;
+    font-size: 17px;
   }
 }
 
@@ -640,7 +702,7 @@ html[data-theme="light"] .hc-ba-caption {
 .hc-proto-kicker {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 0.95rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -650,7 +712,7 @@ html[data-theme="light"] .hc-ba-caption {
 .hc-proto-title {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.45rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.95);
@@ -693,7 +755,7 @@ html[data-theme="light"] .hc-ba-caption {
 .hc-proto-note {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 0.95rem;
+  font-size: 16px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -769,7 +831,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-fig-label {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 0.68rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -779,7 +841,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-fig-title {
   margin: 0.4rem 0 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: 1.35rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.92);
@@ -788,7 +850,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-fig-note {
   margin: 0.35rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -796,7 +858,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-fig-placeholder figcaption {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-style: italic;
   color: rgba(255, 255, 255, 0.5);
@@ -820,7 +882,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-skills-kicker {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 0.95rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -830,7 +892,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-skills-title {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.95);
@@ -909,7 +971,7 @@ html[data-theme="light"] .hc-skills li {
 .hc-why-label {
   margin: 0 0 0.4rem;
   font-family: "Lato", sans-serif;
-  font-size: 0.7rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -959,7 +1021,7 @@ html[data-theme="light"] .hc-skills li {
   border-radius: 0;
   background: transparent;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(3.5rem, 7vw, 4.75rem);
+  font-size: clamp(2.75rem, 5vw, 3.5rem);
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -981,7 +1043,7 @@ html[data-theme="light"] .hc-skills li {
 .hc-learn-lead {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.4rem, 2.4vw, 1.7rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.95);
@@ -990,7 +1052,7 @@ html[data-theme="light"] .hc-skills li {
 .hc-learn-body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.62);
 }
@@ -1001,7 +1063,7 @@ html[data-theme="light"] .hc-skills li {
   border-top: 0;
   max-width: none;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.45rem, 2.6vw, 1.85rem);
+  font-size: 22px;
   font-weight: 500;
   font-style: italic;
   line-height: 1.45;
@@ -1053,7 +1115,7 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-kicker {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1063,7 +1125,7 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-title {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.6rem, 2.6vw, 2rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.95);
@@ -1088,7 +1150,7 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-quotes-label {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1120,7 +1182,7 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-quote-list blockquote p {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.4rem, 2.4vw, 1.65rem);
+  font-size: clamp(1.4rem, 2.4vw, 1.6rem);
   font-weight: 500;
   font-style: italic;
   line-height: 1.4;
@@ -1140,7 +1202,7 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-finding-kicker {
   margin: 0 0 1rem;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1171,7 +1233,7 @@ html[data-theme="light"] .hc-learn-close {
 
 .hc-plain-stat-value {
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(3.5rem, 6.5vw, 4.25rem);
+  font-size: clamp(3rem, 5.5vw, 3.75rem);
   font-weight: 600;
   line-height: 0.9;
   letter-spacing: -0.02em;
@@ -1180,7 +1242,7 @@ html[data-theme="light"] .hc-learn-close {
 
 .hc-plain-stat-label {
   font-family: "Lato", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
@@ -1203,7 +1265,7 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-recs-title {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1213,30 +1275,31 @@ html[data-theme="light"] .hc-learn-close {
 .hc-plain-recs-heading {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.35rem, 2.2vw, 1.6rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   font-weight: 600;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.95);
 }
 
 .hc-plain-recs--nested {
-  margin: 0.15rem 0 0;
-  margin-left: 0.15rem;
-  padding: 1.05rem 1.1rem 1.15rem 1.15rem;
-  border-radius: 0.7rem;
-  border: 1px dashed rgba(103, 232, 249, 0.35);
-  border-left: 3px solid rgba(103, 232, 249, 0.55);
-  background: rgba(103, 232, 249, 0.06);
-  gap: 0.8rem;
+  margin: 0.85rem 0 0;
+  margin-left: 0;
+  padding: 1.15rem 0 0;
+  border: 0;
+  border-radius: 0;
+  border-top: 1px solid rgba(103, 232, 249, 0.28);
+  background: transparent;
+  gap: 0.95rem;
 }
 
 .hc-plain-recs-label {
   margin: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: "Cormorant", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: none;
   color: rgba(103, 232, 249, 0.95);
 }
 
@@ -1246,49 +1309,67 @@ html[data-theme="light"] .hc-learn-close {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0;
   counter-reset: hc-plain-rec;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hc-plain-rec-list > li {
   counter-increment: hc-plain-rec;
   position: relative;
   margin: 0;
-  padding: 0.85rem 0.95rem 0.85rem 2.65rem;
+  padding: 1rem 0.25rem 1rem 3.35rem;
   border: 0;
   border-radius: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background: transparent;
   font-family: "Lato", sans-serif;
   font-size: 19px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hc-plain-rec-list > li::before {
-  content: counter(hc-plain-rec, lower-alpha) ".";
+  content: counter(hc-plain-rec, lower-alpha);
   position: absolute;
-  left: 0.35rem;
-  top: 0.9rem;
-  font-family: "IBM Plex Mono", "Lato", monospace;
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: rgba(103, 232, 249, 0.9);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(103, 232, 249, 0.4);
+  background: rgba(103, 232, 249, 0.1);
+  font-family: "Cormorant", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 1;
+  color: rgba(103, 232, 249, 0.98);
+  text-transform: lowercase;
 }
 
 .hc-plain-recs--nested .hc-plain-close {
   margin: 0.15rem 0 0;
   max-width: none;
-  font-size: 19px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.7);
+  padding-top: 0.15rem;
+  font-family: "Cormorant", Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .hc-plain-close {
   margin: 0.25rem 0 0;
   max-width: 62ch;
   font-family: "Lato", sans-serif;
-  font-size: 1.05rem;
+  font-size: 17px;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.72);
 }
@@ -1316,21 +1397,28 @@ html[data-theme="light"] .hc-plain-close {
 }
 
 html[data-theme="light"] .hc-plain-recs--nested {
-  border-color: rgba(8, 145, 178, 0.35);
-  border-left-color: rgba(8, 145, 178, 0.55);
-  background: rgba(224, 242, 254, 0.55);
+  border: 0;
+  border-top: 1px solid rgba(8, 145, 178, 0.28);
+  background: transparent;
+}
+
+html[data-theme="light"] .hc-plain-rec-list {
+  border-top-color: rgba(15, 23, 42, 0.1);
 }
 
 html[data-theme="light"] .hc-plain-rec-list > li {
-  color: rgba(15, 23, 42, 0.72);
+  border-bottom-color: rgba(15, 23, 42, 0.1);
+  color: rgba(15, 23, 42, 0.8);
 }
 
 html[data-theme="light"] .hc-plain-rec-list > li::before {
+  border-color: rgba(8, 145, 178, 0.4);
+  background: rgba(224, 242, 254, 0.95);
   color: #0e7490;
 }
 
 html[data-theme="light"] .hc-plain-recs--nested .hc-plain-close {
-  color: rgba(15, 23, 42, 0.62);
+  color: rgba(15, 23, 42, 0.78);
 }
 
 html[data-theme="light"] .hc-plain-quotes-label {
