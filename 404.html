@@ -3,27 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <script>
+    (function () {
+      try {
+        localStorage.removeItem('theme');
+        var t = localStorage.getItem('portfolio-theme');
+        if (t !== 'light' && t !== 'dark') t = 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+
+      /* Project Pages live at /repo-name/; custom domain is site root.
+         404 can be served from any deep URL, so root-absolute "/assets/..."
+         breaks on github.io — prefix with the repo segment when needed. */
+      var base = '';
+      if (/\.github\.io$/i.test(location.hostname)) {
+        var seg = location.pathname.split('/').filter(Boolean)[0];
+        if (seg) base = '/' + seg;
+      }
+      window.__SITE_BASE__ = base;
+
+      function addStylesheet(href) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = base + href;
+        document.head.appendChild(link);
+      }
+
+      function addIcon(href, media) {
+        var link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = base + href;
+        if (media) link.media = media;
+        document.head.appendChild(link);
+      }
+
+      addIcon('/assets/images/image-extra-1.png', '(prefers-color-scheme: light)');
+      addIcon('/assets/images/image-extra-2.png', '(prefers-color-scheme: dark)');
+      addStylesheet('/assets/css/styles.css?v=20260725e');
+      addStylesheet('/assets/css/theme-light.css?v=20260725e');
+      addStylesheet('/assets/css/not-found.css?v=20260725e');
+    })();
+  </script>
   <title>Page not found — Jessie Smallenburg</title>
   <meta name="description" content="That page took a detour. Find your way back to Jessie Smallenburg’s healthcare UX portfolio.">
   <meta name="robots" content="noindex">
 
-  <link rel="icon" href="/assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="/assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20260725b">
-  <link rel="stylesheet" href="/assets/css/theme-light.css?v=20260725b">
-  <link rel="stylesheet" href="/assets/css/not-found.css?v=20260725d">
 </head>
 <body>
   <div id="main" class="nf-page">
 
     <header class="nf-header container-content">
-      <a href="/" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
+      <a data-root-href="/" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
       <div class="header-actions relative z-50">
         <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
           <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -52,18 +87,29 @@
         <h1 class="nf-title">Looks like that page took a detour.</h1>
         <p class="nf-body">The page you&rsquo;re looking for might have moved, or the link could be outdated.</p>
 
-        <a href="/" class="btn btn-lg btn-cta nf-cta">Go back to homepage</a>
+        <a data-root-href="/" class="btn btn-lg btn-cta nf-cta">Go back to homepage</a>
 
         <ul class="nf-links" aria-label="Site sections">
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/resume">Résumé</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a data-root-href="/about">About</a></li>
+          <li><a data-root-href="/projects">Projects</a></li>
+          <li><a data-root-href="/resume">Résumé</a></li>
+          <li><a data-root-href="/contact">Contact</a></li>
         </ul>
       </div>
     </main>
 
   </div>
-  <script src="/assets/js/theme.js"></script>
+  <script>
+    (function () {
+      var base = window.__SITE_BASE__ || '';
+      document.querySelectorAll('[data-root-href]').forEach(function (el) {
+        var path = el.getAttribute('data-root-href') || '/';
+        el.setAttribute('href', path === '/' ? (base || '/') : base + path);
+      });
+      var script = document.createElement('script');
+      script.src = base + '/assets/js/theme.js';
+      document.body.appendChild(script);
+    })();
+  </script>
 </body>
 </html>
