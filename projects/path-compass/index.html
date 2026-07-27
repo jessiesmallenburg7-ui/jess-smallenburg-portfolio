@@ -23,11 +23,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260720d">
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260727bh">
   <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260720c">
   <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260716f">
-  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260720c">
-  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260720d">
+  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260727bh">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260727bh">
 </head>
 <body>
   <div id="main">
@@ -1185,11 +1185,103 @@
           <section id="design" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">04</span> Design &amp; Prototyping</h2>
             <p class="prose-body">
-              This phase turns priorities into structure and interface: IA and task flows aligned to PRACTICE and evaluation timepoints, then wireframes, high-fidelity mockups, and an interactive prototype across youth, clinician, and caregiver surfaces.
+              This phase turns priorities into structure and interface: IA and task flows aligned to PRACTICE and evaluation timepoints, then wireframes and interactive prototypes across youth and clinician surfaces.
             </p>
-            <div class="coming-soon-block mt-6">
-              <p>Wireframes, mockups, and the interactive prototype will be added as this case study develops.</p>
+
+            <h3 class="case-subtitle mt-10">High-fidelity screens</h3>
+            <p class="prose-body mt-3">
+              Two youth surfaces that carry the evaluation plan into trauma-informed product design: a low-stakes check-in for longitudinal self-report, and privacy controls that keep sharing explicit, granular, and reversible.
+            </p>
+            <p class="diagram-hint diagram-hint-desktop mt-4 font-sans text-sm text-white/45">Click any screen to enlarge, zoom, and pan.</p>
+            <div class="pc-hifi-grid mt-6" aria-label="Youth high-fidelity screens">
+              <figure class="pc-hifi-screen">
+                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-check-in.png?v=hc6" data-lightbox-title="Youth check-in" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram aria-label="Enlarge youth check-in screen to zoom and pan">
+                  <img
+                    class="pc-hifi-screen-img"
+                    src="./screens/youth-check-in-display.png?v=hc6"
+                    srcset="./screens/youth-check-in-display.png?v=hc6 1024w, ./screens/youth-check-in.png?v=hc6 1560w"
+                    sizes="(min-width: 640px) 32rem, 92vw"
+                    alt="Youth app check-in screen with mood, school safety, and sleep prompts"
+                    width="1024"
+                    height="2216"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </button>
+                <figcaption>
+                  <p class="pc-screen-caption-title">Youth check-in</p>
+                  <p class="pc-screen-caption-body">
+                    Used for brief, repeatable self-report across the evaluation&rsquo;s five timepoints&mdash;mood, safety, and sleep prompts that feed longitudinal youth outcomes without recreating a paper form.
+                  </p>
+                  <p class="pc-screen-caption-body">
+                    Research and journey work showed first-use anxiety and pressure to over-disclose. The design leads with mood as a lower-stakes entry, uses discrete choices instead of open text, and keeps a clear <em>Private</em> signal in view so trauma-informed choice stays visible while data is collected.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="pc-hifi-screen">
+                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-privacy-controls.png?v=hc6" data-lightbox-title="Youth privacy controls" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram aria-label="Enlarge youth privacy controls screen to zoom and pan">
+                  <img
+                    class="pc-hifi-screen-img"
+                    src="./screens/youth-privacy-controls-display.png?v=hc6"
+                    srcset="./screens/youth-privacy-controls-display.png?v=hc6 1024w, ./screens/youth-privacy-controls.png?v=hc6 1560w"
+                    sizes="(min-width: 640px) 32rem, 92vw"
+                    alt="Youth privacy controls for sharing check-in and journal content with caregiver or clinician"
+                    width="1024"
+                    height="2287"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </button>
+                <figcaption>
+                  <p class="pc-screen-caption-title">Privacy controls</p>
+                  <p class="pc-screen-caption-body">
+                    Used when a youth decides what a caregiver or clinician can see&mdash;mood check-ins, sleep answers, safety answers, and journal entries&mdash;with a discrete control on each category rather than a single account-wide switch.
+                  </p>
+                  <p class="pc-screen-caption-body">
+                    Personas and competitive review pointed to privacy risk when tools default to parent visibility or one-time intake settings. Path Compass stays private by default, makes sharing explicit and reversible, and separates audiences so control, trustworthiness, and empowerment stay intact alongside multi-party care.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
+
+            <h3 class="case-subtitle mt-12">Interactive prototypes</h3>
+            <p class="prose-body mt-3">
+              Two clickable Figma prototypes: youth first (mobile), then clinician (desktop or tablet).
+            </p>
+
+            <article class="pc-proto mt-8" aria-labelledby="pc-proto-youth-title">
+              <p class="pc-proto-kicker">Youth &middot; Mobile</p>
+              <h4 id="pc-proto-youth-title" class="pc-proto-title">Youth app prototype</h4>
+              <p class="prose-body mt-3">
+                A clickable walkthrough of the youth experience&mdash;guided check-ins and privacy controls&mdash;best viewed full-screen in Figma.
+              </p>
+
+              <div class="prototype-launch">
+                <a
+                  class="btn btn-lg btn-cta prototype-launch-cta"
+                  href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Open Live Interactive Prototype &rarr;
+                </a>
+                <p class="prototype-launch-note">Best experienced in Figma &middot; Opens in a new tab</p>
+              </div>
+            </article>
+
+            <article class="pc-proto mt-12" aria-labelledby="pc-proto-clinician-title">
+              <p class="pc-proto-kicker">Clinician &middot; Desktop / tablet</p>
+              <h4 id="pc-proto-clinician-title" class="pc-proto-title">Clinician prototype</h4>
+              <p class="prose-body mt-3">
+                Desktop or tablet prototype for the clinician workflow will be embedded here.
+              </p>
+              <div class="pc-media-placeholder pc-media-placeholder--wide mt-6">
+                <div class="pc-media-frame" role="img" aria-label="Clinician prototype placeholder">
+                  <p class="pc-media-label">Prototype 02</p>
+                  <p class="pc-media-title">Clinician experience</p>
+                  <p class="pc-media-note">Desktop / tablet &middot; embed coming soon</p>
+                </div>
+              </div>
+            </article>
           </section>
 
           <section id="validation" class="case-section">
@@ -1269,8 +1361,8 @@
   <script src="../../assets/js/nav.js"></script>
   <script src="../../assets/js/case-nav.js"></script>
   <script src="../../assets/js/tt-personas.js"></script>
-  <script src="../../assets/js/diagram-zoom.js"></script>
-  <script src="../../assets/js/lightbox.js?v=20260720d"></script>
+  <script src="../../assets/js/diagram-zoom.js?v=20260727bh"></script>
+  <script src="../../assets/js/lightbox.js?v=20260727bh"></script>
   <script src="../../assets/js/tt-journeys.js?v=20260720d"></script>
   <script src="../../assets/js/back-to-top.js"></script>
 </body>

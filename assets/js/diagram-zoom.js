@@ -63,11 +63,26 @@
     function measureBaseWidth() {
       const prevWidth = content.style.width;
       const prevMax = content.style.maxWidth;
+      const prevHeight = content.style.height;
       content.style.width = '';
       content.style.maxWidth = '';
-      baseWidth = content.getBoundingClientRect().width || content.offsetWidth || viewport.clientWidth;
+      content.style.height = '';
+
+      if (!isSvg && content.naturalWidth) {
+        const vw = Math.max(1, viewport.clientWidth);
+        const vh = Math.max(1, viewport.clientHeight);
+        const nw = content.naturalWidth;
+        const nh = content.naturalHeight || nw;
+        const fit = Math.min(1, vw / nw, vh / nh);
+        baseWidth = Math.max(1, nw * fit);
+      } else {
+        baseWidth =
+          content.getBoundingClientRect().width || content.offsetWidth || viewport.clientWidth;
+      }
+
       content.style.width = prevWidth;
       content.style.maxWidth = prevMax;
+      content.style.height = prevHeight;
     }
 
     /** Cap zoom so bitmap images never display larger than their native pixel size. */
@@ -105,6 +120,7 @@
       // Grow layout size so SVG stays vector-crisp (and <img src=svg> re-rasterizes).
       // Avoid CSS transform: scale() — that stretches a bitmap and looks soft.
       content.style.maxWidth = 'none';
+      content.style.maxHeight = 'none';
       content.style.width = `${nextWidth}px`;
       content.style.height = 'auto';
 
@@ -152,6 +168,7 @@
       scale = 1;
       content.style.width = '';
       content.style.maxWidth = '';
+      content.style.maxHeight = '';
       content.style.height = '';
       stage.style.transform = '';
       viewport.scrollLeft = 0;

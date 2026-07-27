@@ -204,9 +204,30 @@
   }
 
   function startDiagramZoom() {
-    activeDiagramZoom = window.DiagramZoom?.create(diagramZoomViewport, {
-      captureModifierZoom: true,
-    });
+    const init = () => {
+      activeDiagramZoom?.destroy?.();
+      activeDiagramZoom = window.DiagramZoom?.create(diagramZoomViewport, {
+        captureModifierZoom: true,
+      });
+    };
+
+    // Wait for bitmap decode so nativeWidth is known (needed for zoom ceiling).
+    if (image && !image.hidden && image.parentElement === diagramStage) {
+      if (image.complete && image.naturalWidth > 0) {
+        requestAnimationFrame(init);
+      } else {
+        image.addEventListener(
+          'load',
+          () => {
+            requestAnimationFrame(init);
+          },
+          { once: true }
+        );
+      }
+      return;
+    }
+
+    requestAnimationFrame(init);
   }
 
   function ensureExitControl() {

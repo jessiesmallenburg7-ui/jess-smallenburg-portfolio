@@ -4253,10 +4253,12 @@ html.is-lightbox-open .site-header,
 .wireframe-lightbox-body--diagram-zoom .diagram-zoom-stage {
   min-height: 100%;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.wireframe-lightbox-body--diagram-zoom .user-flow-svg,
-  .wireframe-lightbox-body--diagram-zoom img {
+.wireframe-lightbox-body--diagram-zoom .user-flow-svg {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -4269,6 +4271,37 @@ html.is-lightbox-open .site-header,
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   shape-rendering: geometricPrecision;
+}
+
+/* Bitmap mockups: contain-fit at 1× so zoom can grow up to native pixels */
+.wireframe-lightbox-body--diagram-zoom img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 5.5rem);
+  border: 0;
+  border-radius: 0.75rem;
+  background: transparent;
+  box-shadow: none;
+  object-fit: contain;
+  object-position: top center;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  shape-rendering: geometricPrecision;
+}
+
+/* While zoomed, size is driven by JS — never letterbox into a white frame */
+.wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport.is-zoomed img {
+  max-width: none;
+  max-height: none;
+  object-fit: fill;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 /* Placeholder <img> must stay hidden while vector SVG is mounted.
