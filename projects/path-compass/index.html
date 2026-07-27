@@ -26,8 +26,8 @@
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260727bh">
   <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260720c">
   <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260716f">
-  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260727bh">
-  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260727bh">
+  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260727bu">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260727bu">
 </head>
 <body>
   <div id="main">
@@ -257,10 +257,10 @@
                   <span class="tt-process-phase-num">04</span>
                   <span class="tt-process-phase-title">Design &amp; Prototyping</span>
                 </a>
-                <p class="tt-process-phase-body">Moving from insights into interface: information architecture and task flows that mirror PRACTICE sequencing and evaluation timepoints.</p>
+                <p class="tt-process-phase-body">Translated research insights and trauma-informed principles into wireframes, high-fidelity mockups, and interactive prototypes for youth and clinician surfaces.</p>
                 <ul class="tt-process-phase-list">
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Wireframes and high-fidelity mockups for the youth app, clinician dashboard, and caregiver portal</span></li>
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Interactive prototype of the end-to-end experience</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Two wireframes, four mockups (two youth mobile, two clinician desktop), and two prototypes</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Design decisions grounded in journeys, personas, and competitive pattern review</span></li>
                 </ul>
               </li>
               <li class="tt-process-phase">
@@ -1185,103 +1185,262 @@
           <section id="design" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">04</span> Design &amp; Prototyping</h2>
             <p class="prose-body">
-              This phase turns priorities into structure and interface: IA and task flows aligned to PRACTICE and evaluation timepoints, then wireframes and interactive prototypes across youth and clinician surfaces.
+              Research pointed to three pressure points: youth anxiety and over-disclosure at first use, privacy risk when caregiver visibility is the default, and clinicians postponing fidelity paperwork until after the session so they can stay present with the youth&mdash;then reconstructing adherence from memory. Trauma-informed principles&mdash;safety, choice, trustworthiness, collaboration, and empowerment&mdash;set the bar for every surface: controls stay visible, sharing stays explicit, and documentation must not compete with care.
+            </p>
+            <p class="prose-body mt-4">
+              Those insights drove the design decisions carried forward: mood-first check-ins with discrete choices and a persistent Private signal; private-by-default privacy with granular, reversible share per audience; and a live PRACTICE fidelity checklist with collapsed notes plus a clinician dashboard that surfaces fidelity, PROM completion, and actionable alerts. This phase produced two low-fidelity wireframes (one youth, one clinician), four high-fidelity mockups (two youth mobile, two clinician desktop), and two interactive prototypes&mdash;one linking the youth mobile screens, and one linking the clinician flow.
             </p>
 
-            <h3 class="case-subtitle mt-10">High-fidelity screens</h3>
+            <h3 class="case-subtitle mt-10">Low-fidelity wireframes</h3>
             <p class="prose-body mt-3">
-              Two youth surfaces that carry the evaluation plan into trauma-informed product design: a low-stakes check-in for longitudinal self-report, and privacy controls that keep sharing explicit, granular, and reversible.
+              Two annotated wireframes tested structure before visual polish: youth check-in and the clinician in-session PRACTICE fidelity checklist.
             </p>
-            <p class="diagram-hint diagram-hint-desktop mt-4 font-sans text-sm text-white/45">Click any screen to enlarge, zoom, and pan.</p>
-            <div class="pc-hifi-grid mt-6" aria-label="Youth high-fidelity screens">
-              <figure class="pc-hifi-screen">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-check-in.png?v=hc6" data-lightbox-title="Youth check-in" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram aria-label="Enlarge youth check-in screen to zoom and pan">
+            <p class="diagram-hint diagram-hint-desktop mt-4 font-sans text-sm text-white/45">Click either wireframe to enlarge, zoom, and pan&mdash;annotations stay sharp.</p>
+
+            <div class="pc-lofi-stack mt-6" aria-label="Low-fidelity wireframes">
+              <figure class="pc-lofi-figure">
+                <button
+                  type="button"
+                  class="pc-lofi-hit"
+                  data-lightbox-src="./screens/lofi-youth-checkin.svg"
+                  data-lightbox-title="Youth check-in — Low-fidelity wireframe"
+                  data-lightbox-caption="Annotated structure exploration · Youth mobile"
+                  data-lightbox-diagram
+                  data-lightbox-inline-svg
+                  aria-label="Enlarge youth check-in wireframe to zoom and pan"
+                >
                   <img
-                    class="pc-hifi-screen-img"
-                    src="./screens/youth-check-in-display.png?v=hc6"
-                    srcset="./screens/youth-check-in-display.png?v=hc6 1024w, ./screens/youth-check-in.png?v=hc6 1560w"
-                    sizes="(min-width: 640px) 32rem, 92vw"
-                    alt="Youth app check-in screen with mood, school safety, and sleep prompts"
-                    width="1024"
-                    height="2216"
+                    class="pc-lofi-img"
+                    src="./screens/lofi-youth-checkin.svg"
+                    alt="Low-fidelity youth check-in wireframe with annotations for privacy cue, mood-first sequencing, discrete responses, and prominent privacy messaging"
+                    width="760"
+                    height="672"
                     loading="lazy"
                     decoding="async"
                   >
                 </button>
                 <figcaption>
                   <p class="pc-screen-caption-title">Youth check-in</p>
-                  <p class="pc-screen-caption-body">
-                    Used for brief, repeatable self-report across the evaluation&rsquo;s five timepoints&mdash;mood, safety, and sleep prompts that feed longitudinal youth outcomes without recreating a paper form.
-                  </p>
-                  <p class="pc-screen-caption-body">
-                    Research and journey work showed first-use anxiety and pressure to over-disclose. The design leads with mood as a lower-stakes entry, uses discrete choices instead of open text, and keeps a clear <em>Private</em> signal in view so trauma-informed choice stays visible while data is collected.
-                  </p>
+                  <p class="pc-screen-caption-body">Explored mood-first sequencing, discrete response options, timepoint progress, and a privacy trust cue shown before input&mdash;decisions carried into high fidelity.</p>
+                </figcaption>
+              </figure>
+
+              <figure class="pc-lofi-figure">
+                <button
+                  type="button"
+                  class="pc-lofi-hit"
+                  data-lightbox-src="./screens/lofi-clinician-fidelity.svg"
+                  data-lightbox-title="Clinician PRACTICE fidelity — Low-fidelity wireframe"
+                  data-lightbox-caption="Annotated structure exploration · Clinician desktop"
+                  data-lightbox-diagram
+                  data-lightbox-inline-svg
+                  aria-label="Enlarge clinician fidelity wireframe to zoom and pan"
+                >
+                  <img
+                    class="pc-lofi-img"
+                    src="./screens/lofi-clinician-fidelity.svg"
+                    alt="Low-fidelity clinician PRACTICE fidelity checklist wireframe with annotations for live marking, real-time score, shared youth check-in, flat list, and expandable notes"
+                    width="1060"
+                    height="776"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </button>
+                <figcaption>
+                  <p class="pc-screen-caption-title">Clinician in-session fidelity checklist</p>
+                  <p class="pc-screen-caption-body">Tested a live flat PRACTICE list against collapsible sections, and expandable notes against a modal&mdash;favoring glanceable progress with minimal mid-session context switching.</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <h3 class="case-subtitle mt-12">High-fidelity screens</h3>
+            <p class="prose-body mt-3">
+              Four mockups: youth check-in and privacy controls (mobile), plus the clinician PRACTICE fidelity checklist and dashboard (desktop).
+            </p>
+            <p class="diagram-hint diagram-hint-desktop mt-4 font-sans text-sm text-white/45">Click any screen to enlarge, zoom, and pan.</p>
+            <div class="pc-hifi-grid mt-6" aria-label="Youth high-fidelity screens">
+              <figure class="pc-hifi-screen">
+                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-check-in.svg?v=faces1" data-lightbox-title="Youth check-in" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth check-in screen to zoom and pan">
+                  <img
+                    class="pc-hifi-screen-img"
+                    src="./screens/youth-check-in.svg?v=faces1"
+                    alt="Youth app check-in screen with mood, school safety, and sleep prompts"
+                    width="390"
+                    height="844"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </button>
+                <figcaption>
+                  <p class="pc-screen-caption-title">Youth check-in</p>
+                  <div class="pc-screen-notes" aria-label="Check-in annotations">
+                    <p class="pc-screen-note">
+                      <span class="pc-screen-note-label">Final solution</span>
+                      <span class="pc-screen-note-text">A brief, repeatable check-in for the five evaluation timepoints&mdash;mood first, then discrete school-safety and sleep prompts, with a persistent <em>Private</em> signal.</span>
+                    </p>
+                    <p class="pc-screen-note">
+                      <span class="pc-screen-note-label">Research insight</span>
+                      <span class="pc-screen-note-text">Journeys showed first-use anxiety and pressure to over-disclose. Lower-stakes mood entry and closed choices reduce cognitive load while keeping trauma-informed choice visible.</span>
+                    </p>
+                  </div>
                 </figcaption>
               </figure>
               <figure class="pc-hifi-screen">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-privacy-controls.png?v=hc6" data-lightbox-title="Youth privacy controls" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram aria-label="Enlarge youth privacy controls screen to zoom and pan">
+                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-privacy-controls.svg?v=save2" data-lightbox-title="Youth privacy controls" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth privacy controls screen to zoom and pan">
                   <img
                     class="pc-hifi-screen-img"
-                    src="./screens/youth-privacy-controls-display.png?v=hc6"
-                    srcset="./screens/youth-privacy-controls-display.png?v=hc6 1024w, ./screens/youth-privacy-controls.png?v=hc6 1560w"
-                    sizes="(min-width: 640px) 32rem, 92vw"
+                    src="./screens/youth-privacy-controls.svg?v=save2"
                     alt="Youth privacy controls for sharing check-in and journal content with caregiver or clinician"
-                    width="1024"
-                    height="2287"
+                    width="390"
+                    height="871"
                     loading="lazy"
                     decoding="async"
                   >
                 </button>
                 <figcaption>
                   <p class="pc-screen-caption-title">Privacy controls</p>
-                  <p class="pc-screen-caption-body">
-                    Used when a youth decides what a caregiver or clinician can see&mdash;mood check-ins, sleep answers, safety answers, and journal entries&mdash;with a discrete control on each category rather than a single account-wide switch.
-                  </p>
-                  <p class="pc-screen-caption-body">
-                    Personas and competitive review pointed to privacy risk when tools default to parent visibility or one-time intake settings. Path Compass stays private by default, makes sharing explicit and reversible, and separates audiences so control, trustworthiness, and empowerment stay intact alongside multi-party care.
-                  </p>
+                  <div class="pc-screen-notes" aria-label="Privacy controls annotations">
+                    <p class="pc-screen-note">
+                      <span class="pc-screen-note-label">Final solution</span>
+                      <span class="pc-screen-note-text">Private by default, with per-category share controls for mood, sleep, safety, and journal&mdash;explicit, reversible, and separated by caregiver vs clinician.</span>
+                    </p>
+                    <p class="pc-screen-note">
+                      <span class="pc-screen-note-label">Research insight</span>
+                      <span class="pc-screen-note-text">Competitive review and personas showed risk when tools default to parent visibility or one-time intake settings. Granular revoke preserves trust, empowerment, and multi-party care.</span>
+                    </p>
+                  </div>
                 </figcaption>
               </figure>
             </div>
 
+            <figure class="pc-hifi-screen pc-hifi-screen--wide" aria-label="Clinician high-fidelity screen">
+              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-fidelity-checklist.svg?v=svg3" data-lightbox-title="Clinician PRACTICE fidelity checklist" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician PRACTICE fidelity checklist to zoom and pan">
+                <img
+                  class="pc-hifi-screen-img"
+                  src="./screens/clinician-fidelity-checklist.svg?v=svg3"
+                  alt="Clinician PRACTICE fidelity checklist with live session timer, shared youth check-in signals, and markable TF-CBT components"
+                  width="1440"
+                  height="1355"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </button>
+              <figcaption>
+                <p class="pc-screen-caption-title">Clinician PRACTICE fidelity checklist</p>
+                <div class="pc-screen-notes" aria-label="Fidelity checklist annotations">
+                  <p class="pc-screen-note">
+                    <span class="pc-screen-note-label">Final solution</span>
+                    <span class="pc-screen-note-text">A live PRACTICE checklist markable during the session&mdash;running fidelity score, optional collapsed notes, and shared youth check-in signals (mood, safety, sleep) for context.</span>
+                  </p>
+                  <p class="pc-screen-note">
+                    <span class="pc-screen-note-label">Research insight</span>
+                    <span class="pc-screen-note-text">Personas and journeys showed clinicians choosing presence over after-the-fact paper forms, which erodes fidelity accuracy under high caseloads. In-session marking keeps documentation from competing with care.</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="pc-hifi-screen pc-hifi-screen--wide" aria-label="Clinician dashboard high-fidelity screen">
+              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-dashboard.svg?v=svg1" data-lightbox-title="Clinician dashboard" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician dashboard to zoom and pan">
+                <img
+                  class="pc-hifi-screen-img"
+                  src="./screens/clinician-dashboard.svg?v=svg1"
+                  alt="Clinician dashboard with fidelity average, PROM completion, today's schedule, and priority alerts"
+                  width="1440"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </button>
+              <figcaption>
+                <p class="pc-screen-caption-title">Clinician dashboard</p>
+                <div class="pc-screen-notes" aria-label="Clinician dashboard annotations">
+                  <p class="pc-screen-note">
+                    <span class="pc-screen-note-label">Final solution</span>
+                    <span class="pc-screen-note-text">A day-of workspace for fidelity trends, PROM completion, today&rsquo;s schedule, and priority alerts&mdash;so longitudinal evaluation data and session prep stay in one glanceable view.</span>
+                  </p>
+                  <p class="pc-screen-note">
+                    <span class="pc-screen-note-label">Research insight</span>
+                    <span class="pc-screen-note-text">Competitive review showed measurement tools that trend outcomes but ignore PRACTICE fidelity, and fidelity tools that never surface youth signals. The dashboard joins both so community-clinic caseloads stay actionable without EHR feature sprawl.</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+
             <h3 class="case-subtitle mt-12">Interactive prototypes</h3>
             <p class="prose-body mt-3">
-              Two clickable Figma prototypes: youth first (mobile), then clinician (desktop or tablet).
+              Two Figma prototypes: one links the youth mobile screens; the other links the clinician desktop flow.
             </p>
 
-            <article class="pc-proto mt-8" aria-labelledby="pc-proto-youth-title">
-              <p class="pc-proto-kicker">Youth &middot; Mobile</p>
-              <h4 id="pc-proto-youth-title" class="pc-proto-title">Youth app prototype</h4>
-              <p class="prose-body mt-3">
-                A clickable walkthrough of the youth experience&mdash;guided check-ins and privacy controls&mdash;best viewed full-screen in Figma.
-              </p>
+            <div class="pc-proto-grid mt-8" aria-label="Interactive prototypes">
+              <article class="pc-proto" aria-labelledby="pc-proto-youth-title">
+                <p class="pc-proto-kicker">Youth &middot; Mobile</p>
+                <h4 id="pc-proto-youth-title" class="pc-proto-title">Youth app prototype</h4>
+                <p class="prose-body mt-3">
+                  Connects the youth check-in and privacy controls into a clickable mobile walkthrough&mdash;best viewed full-screen in Figma.
+                </p>
 
-              <div class="prototype-launch">
-                <a
-                  class="btn btn-lg btn-cta prototype-launch-cta"
-                  href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Open Live Interactive Prototype &rarr;
-                </a>
-                <p class="prototype-launch-note">Best experienced in Figma &middot; Opens in a new tab</p>
-              </div>
-            </article>
-
-            <article class="pc-proto mt-12" aria-labelledby="pc-proto-clinician-title">
-              <p class="pc-proto-kicker">Clinician &middot; Desktop / tablet</p>
-              <h4 id="pc-proto-clinician-title" class="pc-proto-title">Clinician prototype</h4>
-              <p class="prose-body mt-3">
-                Desktop or tablet prototype for the clinician workflow will be embedded here.
-              </p>
-              <div class="pc-media-placeholder pc-media-placeholder--wide mt-6">
-                <div class="pc-media-frame" role="img" aria-label="Clinician prototype placeholder">
-                  <p class="pc-media-label">Prototype 02</p>
-                  <p class="pc-media-title">Clinician experience</p>
-                  <p class="pc-media-note">Desktop / tablet &middot; embed coming soon</p>
+                <div class="prototype-launch">
+                  <a
+                    class="pc-proto-thumb pc-proto-thumb--mobile"
+                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open youth app prototype in Figma">
+                    <img
+                      src="./screens/youth-check-in.svg?v=faces1"
+                      alt="Youth check-in screen preview"
+                      width="390"
+                      height="844"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </a>
+                  <a
+                    class="btn btn-lg btn-cta prototype-launch-cta"
+                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Open Live Interactive Prototype &rarr;
+                  </a>
+                  <p class="prototype-launch-note">Best experienced in Figma &middot; Opens in a new tab</p>
                 </div>
-              </div>
-            </article>
+              </article>
+
+              <article class="pc-proto" aria-labelledby="pc-proto-clinician-title">
+                <p class="pc-proto-kicker">Clinician &middot; Desktop / tablet</p>
+                <h4 id="pc-proto-clinician-title" class="pc-proto-title">Clinician Dashboard Prototype</h4>
+                <p class="prose-body mt-3">
+                  Interactive walkthrough of the in-session PRACTICE fidelity checklist and clinician workflow&mdash;best viewed full-screen in Figma.
+                </p>
+
+                <div class="prototype-launch">
+                  <a
+                    class="pc-proto-thumb pc-proto-thumb--desktop"
+                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr/Untitled?node-id=2-666&amp;starting-point-node-id=2-666&amp;scaling=scale-down&amp;content-scaling=fixed"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open clinician dashboard prototype in Figma">
+                    <img
+                      src="./screens/clinician-dashboard.svg?v=svg1"
+                      alt="Clinician dashboard screen preview"
+                      width="1440"
+                      height="1024"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </a>
+                  <a
+                    class="btn btn-lg btn-cta prototype-launch-cta"
+                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr/Untitled?node-id=2-666&amp;starting-point-node-id=2-666&amp;scaling=scale-down&amp;content-scaling=fixed"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Open Live Interactive Prototype &rarr;
+                  </a>
+                  <p class="prototype-launch-note">Best experienced in Figma &middot; Opens in a new tab</p>
+                </div>
+              </article>
+            </div>
           </section>
 
           <section id="validation" class="case-section">

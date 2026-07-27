@@ -920,6 +920,17 @@ html[data-theme="light"] .prototype-launch-note {
   color: rgba(71, 85, 105, 0.68);
 }
 
+html[data-theme="light"] .pc-proto-thumb {
+  border-color: rgba(15, 23, 42, 0.1);
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme="light"] .pc-proto-thumb:hover {
+  border-color: rgba(14, 116, 144, 0.35);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
 html[data-theme="light"] .prototype-embed-frame {
   border-color: rgba(31, 41, 55, 0.14);
   background: #fff;
@@ -1433,10 +1444,32 @@ html[data-theme="light"] .pc-screen-caption-body {
   color: rgba(71, 85, 105, 0.78);
 }
 
+html[data-theme="light"] .pc-screen-note {
+  border-color: rgba(8, 145, 178, 0.22);
+  border-left-color: rgba(8, 145, 178, 0.7);
+  background:
+    linear-gradient(90deg, rgba(8, 145, 178, 0.08), rgba(8, 145, 178, 0.02) 60%, transparent),
+    rgba(255, 255, 255, 0.55);
+}
+
+html[data-theme="light"] .pc-screen-note-label {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-screen-note-text {
+  color: rgba(71, 85, 105, 0.82);
+}
+
 html[data-theme="light"] .pc-hifi-screen-img,
 html[data-theme="light"] .pc-wireframe-grid .wireframe-thumb-media {
   border-color: rgba(31, 41, 55, 0.18);
   background: #f0f1ea;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+html[data-theme="light"] .pc-lofi-img {
+  border-color: rgba(31, 41, 55, 0.16);
+  background: #ffffff;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
 

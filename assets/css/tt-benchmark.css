@@ -1480,6 +1480,71 @@
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
 
+/* Desktop/tablet mockups — full content width like healthcare-consulting */
+.pc-hifi-screen--wide {
+  max-width: none;
+  margin-top: 2.75rem;
+}
+
+.pc-hifi-screen--wide .pc-hifi-screen-hit {
+  border-radius: 0.75rem;
+}
+
+.pc-hifi-screen--wide .pc-hifi-screen-img {
+  border-radius: 0.75rem;
+  /* Prefer native pixels; avoid soft browser upscaling habits */
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Low-fidelity annotated wireframes — full width so callouts stay readable */
+.pc-lofi-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.pc-lofi-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.pc-lofi-hit {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.pc-lofi-hit:focus {
+  outline: none;
+}
+
+.pc-lofi-hit:focus-visible {
+  outline: 2px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 3px;
+}
+
+.pc-lofi-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(31, 41, 55, 0.18);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
 .pc-media-placeholder {
   margin: 0;
   display: flex;
@@ -1566,6 +1631,47 @@
   font-style: italic;
 }
 
+.pc-screen-notes {
+  margin: 0.65rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.pc-screen-note {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(103, 232, 249, 0.2);
+  border-left: 3px solid rgba(103, 232, 249, 0.75);
+  background:
+    linear-gradient(90deg, rgba(103, 232, 249, 0.08), rgba(103, 232, 249, 0.02) 60%, transparent),
+    rgba(7, 11, 22, 0.18);
+}
+
+.pc-screen-note-label {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(103, 232, 249, 0.95);
+}
+
+.pc-screen-note-text {
+  font-family: "Lato", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.pc-screen-note-text em {
+  font-style: italic;
+}
+
 .pc-proto-kicker {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -1638,24 +1744,92 @@
   -ms-interpolation-mode: bicubic;
 }
 
+.pc-proto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.75rem;
+}
+
+@media (min-width: 900px) {
+  .pc-proto-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 2.5rem;
+    align-items: start;
+  }
+}
+
+.pc-proto-grid .pc-proto {
+  min-width: 0;
+}
+
+.pc-proto-grid .pc-proto-kicker,
+.pc-proto-grid .pc-proto-title,
+.pc-proto-grid .pc-proto .prose-body {
+  text-align: center;
+}
+
 .prototype-launch {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.85rem;
   margin-top: 1.75rem;
+  text-align: center;
+}
+
+.pc-proto-thumb {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  text-decoration: none;
+}
+
+.pc-proto-thumb:hover {
+  border-color: rgba(103, 232, 249, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+}
+
+.pc-proto-thumb:focus-visible {
+  outline: 2px solid rgba(103, 232, 249, 0.85);
+  outline-offset: 3px;
+}
+
+.pc-proto-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.pc-proto-thumb--mobile {
+  width: min(100%, 9.5rem);
+  aspect-ratio: 390 / 844;
+}
+
+.pc-proto-thumb--desktop {
+  width: min(100%, 100%);
+  max-width: 22rem;
+  aspect-ratio: 1440 / 1024;
 }
 
 .prototype-launch-cta {
   text-decoration: none;
+  text-align: center;
 }
 
 .prototype-launch-note {
   margin: 0;
-  max-width: 48rem;
+  max-width: 22rem;
   font-family: "Lato", sans-serif;
   font-size: 14.5px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.55);
+  text-align: center;
 }
 
