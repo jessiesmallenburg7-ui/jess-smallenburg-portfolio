@@ -1,0 +1,13 @@
+{
+  "name": "jess-smallenburg-portfolio",
+  "version": "1.0.0",
+  "description": "Jess Smallenburg UX Portfolio",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
