@@ -1422,13 +1422,25 @@ html[data-theme="light"] .pc-media-frame {
 }
 
 html[data-theme="light"] .pc-media-label,
-html[data-theme="light"] .pc-proto-kicker {
+html[data-theme="light"] .pc-proto-kicker,
+html[data-theme="light"] .pc-hifi-group-kicker {
   color: #0e7490;
 }
 
 html[data-theme="light"] .pc-media-title,
-html[data-theme="light"] .pc-proto-title {
-  color: rgba(15, 23, 42, 0.92);
+html[data-theme="light"] .pc-proto-title,
+html[data-theme="light"] .pc-hifi-group-title {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-hifi-group-head {
+  border-color: rgba(31, 41, 55, 0.16);
+  background: #f8f9f6;
+  box-shadow: none;
+}
+
+html[data-theme="light"] .pc-hifi-group-head-accent {
+  background: #0e7490;
 }
 
 html[data-theme="light"] .pc-media-note,
@@ -1503,6 +1515,10 @@ html[data-theme="light"] .tt-proto-refinement-item {
 
 html[data-theme="light"] .tt-proto-refinement-decision {
   color: rgba(15, 23, 42, 0.92);
+}
+
+html[data-theme="light"] .tt-proto-refinement-heuristic {
+  color: #A17630;
 }
 
 html[data-theme="light"] .tt-proto-refinement-rationale {
@@ -1604,12 +1620,20 @@ html[data-theme="light"] .tt-validation-finding--priority .tt-validation-finding
   color: #A17630;
 }
 
+html[data-theme="light"] .tt-validation-finding--priority .tt-validation-finding-heuristic {
+  color: #A17630;
+}
+
 html[data-theme="light"] .tt-validation-finding--lower {
   border-left-color: rgba(31, 41, 55, 0.22);
 }
 
 html[data-theme="light"] .tt-validation-finding--lower .tt-validation-finding-label {
   color: rgba(71, 85, 105, 0.62);
+}
+
+html[data-theme="light"] .tt-validation-finding--lower .tt-validation-finding-heuristic {
+  color: rgba(71, 85, 105, 0.55);
 }
 
 html[data-theme="light"] .tt-validation-finding-mark {
