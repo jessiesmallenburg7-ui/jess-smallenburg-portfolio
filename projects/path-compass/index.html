@@ -26,8 +26,8 @@
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260727bh">
   <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260720c">
   <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260716f">
-  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260727bu">
-  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260727bu">
+  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260728cb">
+  <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260728cb">
 </head>
 <body>
   <div id="main">
@@ -1229,7 +1229,7 @@
                 <button
                   type="button"
                   class="pc-lofi-hit"
-                  data-lightbox-src="./screens/lofi-clinician-fidelity.svg"
+                  data-lightbox-src="./screens/lofi-clinician-fidelity.svg?v=ann18"
                   data-lightbox-title="Clinician PRACTICE fidelity — Low-fidelity wireframe"
                   data-lightbox-caption="Annotated structure exploration · Clinician desktop"
                   data-lightbox-diagram
@@ -1238,7 +1238,7 @@
                 >
                   <img
                     class="pc-lofi-img"
-                    src="./screens/lofi-clinician-fidelity.svg"
+                    src="./screens/lofi-clinician-fidelity.svg?v=ann18"
                     alt="Low-fidelity clinician PRACTICE fidelity checklist wireframe with annotations for live marking, real-time score, shared youth check-in, flat list, and expandable notes"
                     width="1060"
                     height="776"
@@ -1313,11 +1313,12 @@
               </figure>
             </div>
 
+            <h4 class="font-sans text-[18px] font-semibold text-sky-accent mt-10">Clinician high-fidelity screens</h4>
             <figure class="pc-hifi-screen pc-hifi-screen--wide" aria-label="Clinician high-fidelity screen">
-              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-fidelity-checklist.svg?v=svg3" data-lightbox-title="Clinician PRACTICE fidelity checklist" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician PRACTICE fidelity checklist to zoom and pan">
+              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-fidelity-checklist.svg?v=icons2" data-lightbox-title="Clinician PRACTICE fidelity checklist" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician PRACTICE fidelity checklist to zoom and pan">
                 <img
                   class="pc-hifi-screen-img"
-                  src="./screens/clinician-fidelity-checklist.svg?v=svg3"
+                  src="./screens/clinician-fidelity-checklist.svg?v=icons2"
                   alt="Clinician PRACTICE fidelity checklist with live session timer, shared youth check-in signals, and markable TF-CBT components"
                   width="1440"
                   height="1355"
@@ -1341,13 +1342,13 @@
             </figure>
 
             <figure class="pc-hifi-screen pc-hifi-screen--wide" aria-label="Clinician dashboard high-fidelity screen">
-              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-dashboard.svg?v=svg1" data-lightbox-title="Clinician dashboard" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician dashboard to zoom and pan">
+              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-dashboard-updated.svg?v=icons2" data-lightbox-title="Clinician dashboard" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician dashboard to zoom and pan">
                 <img
                   class="pc-hifi-screen-img"
-                  src="./screens/clinician-dashboard.svg?v=svg1"
+                  src="./screens/clinician-dashboard-updated.svg?v=icons2"
                   alt="Clinician dashboard with fidelity average, PROM completion, today's schedule, and priority alerts"
                   width="1440"
-                  height="1024"
+                  height="1144"
                   loading="lazy"
                   decoding="async"
                 >
@@ -1422,10 +1423,10 @@
                     rel="noopener noreferrer"
                     aria-label="Open clinician dashboard prototype in Figma">
                     <img
-                      src="./screens/clinician-dashboard.svg?v=svg1"
+                      src="./screens/clinician-dashboard-updated.svg?v=icons2"
                       alt="Clinician dashboard screen preview"
                       width="1440"
-                      height="1024"
+                      height="1144"
                       loading="lazy"
                       decoding="async"
                     >
@@ -1441,15 +1442,136 @@
                 </div>
               </article>
             </div>
+
+            <h3 id="proto-refinements" class="case-subtitle mt-12">Refinements from evaluation</h3>
+            <p class="prose-body mt-3">
+              Following the heuristic review, I translated the feedback into targeted design decisions reflected in the interactive prototypes above.
+            </p>
+
+            <div class="tt-proto-refinements-grid mt-8" aria-label="Design decisions from evaluation refinements">
+              <article class="tt-proto-refinement-card">
+                <p class="tt-proto-refinement-kicker">Youth &middot; Mobile</p>
+                <ul class="tt-proto-refinement-list">
+                  <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-decision">Built an exit path into check-in</p>
+                    <p class="tt-proto-refinement-rationale">So youth can pause mid-flow without feeling trapped or forced to finish disclosure.</p>
+                  </li>
+                  <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-decision">Linked Privacy &amp; Sharing back to home</p>
+                    <p class="tt-proto-refinement-rationale">So privacy controls feel reversible and youth can return to the app without a dead end.</p>
+                  </li>
+                  <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-decision">Condensed measure prompts to single-line labels</p>
+                    <p class="tt-proto-refinement-rationale">To reduce visual crowding and make each screen easier to scan on a small display.</p>
+                  </li>
+                  <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-decision">Connected every bottom-nav tab</p>
+                    <p class="tt-proto-refinement-rationale">So the youth prototype reads as one coherent walkthrough, not isolated screens.</p>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="tt-proto-refinement-card">
+                <p class="tt-proto-refinement-kicker">Clinician &middot; Desktop</p>
+                <ul class="tt-proto-refinement-list">
+                  <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-decision">Kept the flat PRACTICE list and live marking pattern</p>
+                    <p class="tt-proto-refinement-rationale">Heuristic review confirmed this structure supports in-session fidelity without added navigation overhead.</p>
+                  </li>
+                  <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-decision">Linked the fidelity checklist to the dashboard</p>
+                    <p class="tt-proto-refinement-rationale">So reviewers can follow marking in session through to caseload context in one end-to-end flow.</p>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <p class="tt-proto-refinements-xref">
+              Design strengths from the same evaluation are in <a href="#validation">Evaluation &amp; Validation</a>.
+            </p>
           </section>
 
           <section id="validation" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">05</span> Evaluation &amp; Validation</h2>
             <p class="prose-body">
-              Validation plans center on heuristic evaluation (usability heuristics + trauma-informed digital design principles) and expert review with clinical and UX stakeholders. Scope does not include primary user testing with clinic participants.
+              This section documents how I evaluated the Path Compass prototypes and what I learned&mdash;the method, scope, and findings. Because this is a conceptual case study grounded in an existing evaluation plan, validation centered on expert heuristic review rather than primary research with clinic participants.
             </p>
-            <div class="coming-soon-block mt-6">
-              <p>Heuristic evaluation findings and expert-review notes will be documented here.</p>
+
+            <h3 class="case-subtitle mt-10">Evaluation method</h3>
+            <div class="tt-overview-context mt-6">
+              <p class="tt-overview-kicker">Heuristic evaluation</p>
+              <p class="tt-overview-lede">
+                I conducted a structured heuristic evaluation of the youth and clinician flows using Nielsen&rsquo;s 10 usability heuristics, layered with trauma-informed digital design principles from the scoping literature on safety, trustworthiness, choice, collaboration, and empowerment.
+              </p>
+              <ul class="tt-validation-principles" aria-label="Trauma-informed digital design principles applied">
+                <li class="tt-validation-principle">Safety</li>
+                <li class="tt-validation-principle">Trustworthiness</li>
+                <li class="tt-validation-principle">Choice</li>
+                <li class="tt-validation-principle">Collaboration</li>
+                <li class="tt-validation-principle">Empowerment</li>
+              </ul>
+            </div>
+
+            <h3 class="case-subtitle mt-10">Scope</h3>
+            <p class="prose-body mt-3">
+              Review covered the interactive prototypes and their supporting high-fidelity screens across both product surfaces.
+            </p>
+            <div class="tt-validation-scope-grid mt-6" aria-label="Evaluation scope by flow">
+              <div class="tt-validation-scope-flow">
+                <p class="tt-validation-scope-kicker">Youth &middot; Mobile</p>
+                <ul class="tt-validation-scope-list">
+                  <li>Check-in flow (mood entry through clinical measure prompts)</li>
+                  <li>Privacy &amp; Sharing controls and share/revoke patterns</li>
+                  <li>Bottom navigation linking home, check-in, progress, and settings</li>
+                </ul>
+              </div>
+              <div class="tt-validation-scope-flow">
+                <p class="tt-validation-scope-kicker">Clinician &middot; Desktop</p>
+                <ul class="tt-validation-scope-list">
+                  <li>In-session PRACTICE fidelity checklist and live marking</li>
+                  <li>Clinician dashboard (fidelity summary, PROM completion, alerts)</li>
+                  <li>Prototype linkage between checklist and dashboard</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 class="case-subtitle mt-10">Key findings</h3>
+            <p class="prose-body mt-3">
+              Findings are grouped by severity&mdash;strengths to preserve, higher-priority issues affecting agency and navigation, and lower-priority polish items.
+            </p>
+            <ul class="tt-validation-findings mt-6">
+              <li class="tt-validation-finding tt-validation-finding--strength">
+                <p class="tt-validation-finding-label">Strengths</p>
+                <ul class="tt-validation-finding-list">
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Privacy-first ordering surfaces control cues before sensitive questions, reinforcing agency before disclosure</span></li>
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Mood-first sequencing opens with a low-stakes check-in before clinical measures</span></li>
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Discrete response options use tappable choices instead of open text, reducing pressure to overshare</span></li>
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Share and Revoke carry equal visual weight, so revoking access feels as legitimate as granting it</span></li>
+                </ul>
+              </li>
+              <li class="tt-validation-finding tt-validation-finding--priority">
+                <p class="tt-validation-finding-label">Higher priority</p>
+                <ul class="tt-validation-finding-list">
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>No exit path during check-in left youth unable to pause or leave mid-flow without feeling trapped</span></li>
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Missing back navigation on Privacy &amp; Sharing made the screen feel like a dead end, not a reversible choice</span></li>
+                </ul>
+              </li>
+              <li class="tt-validation-finding tt-validation-finding--lower">
+                <p class="tt-validation-finding-label">Lower priority</p>
+                <ul class="tt-validation-finding-list">
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Measure screens crowd too many scale options into limited mobile space, increasing scan effort</span></li>
+                  <li class="tt-validation-finding-item"><span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span><span>Unfinished bottom-nav tabs need empty states that explain what&rsquo;s coming, not blank dead ends</span></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="tt-overview-context tt-validation-impact mt-10">
+              <p class="tt-overview-kicker">How findings informed the final design</p>
+              <p class="tt-overview-lede">
+                Higher-priority issues targeted youth agency and reversible navigation; lower-priority items focused on scanability and prototype coherence. Clinician surfaces largely validated existing patterns, with linkage added for end-to-end review.
+              </p>
+              <p class="tt-validation-impact-link">
+                The six design decisions that address these findings are documented in <a href="#proto-refinements">Refinements from evaluation</a> under Design.
+              </p>
             </div>
           </section>
 

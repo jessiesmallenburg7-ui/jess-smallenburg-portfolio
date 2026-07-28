@@ -1199,6 +1199,207 @@
   color: rgba(255, 255, 255, 0.62);
 }
 
+/* Validation findings */
+.tt-validation-principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tt-validation-principle {
+  padding: 0.35rem 0.7rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(95, 211, 224, 0.28);
+  background: rgba(95, 211, 224, 0.08);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.95);
+}
+
+.tt-validation-scope-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .tt-validation-scope-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem 1.25rem;
+  }
+}
+
+.tt-validation-scope-flow {
+  padding: 1rem 1.1rem 1.05rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tt-validation-scope-kicker {
+  margin: 0 0 0.55rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.9);
+}
+
+.tt-validation-scope-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tt-validation-scope-list li {
+  position: relative;
+  padding-left: 0.85rem;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.tt-validation-scope-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: rgba(95, 211, 224, 0.65);
+}
+
+.tt-validation-impact {
+  border-left-color: rgba(107, 143, 113, 0.65);
+}
+
+.tt-validation-impact-link {
+  margin: 0.85rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.tt-validation-impact-link a {
+  color: rgba(103, 232, 249, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.tt-validation-impact-link a:hover {
+  color: #fff;
+}
+
+.tt-validation-findings {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 900px) {
+  .tt-validation-findings {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
+.tt-validation-finding {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.1rem 1.15rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tt-validation-finding--strength {
+  border-left: 3px solid rgba(107, 143, 113, 0.85);
+}
+
+.tt-validation-finding--priority {
+  border-left: 3px solid rgba(185, 138, 62, 0.9);
+}
+
+.tt-validation-finding--lower {
+  border-left: 3px solid rgba(255, 255, 255, 0.22);
+}
+
+.tt-validation-finding-label {
+  margin: 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tt-validation-finding--strength .tt-validation-finding-label {
+  color: rgba(143, 184, 150, 0.95);
+}
+
+.tt-validation-finding--priority .tt-validation-finding-label {
+  color: rgba(212, 168, 96, 0.98);
+}
+
+.tt-validation-finding--lower .tt-validation-finding-label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tt-validation-finding-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tt-validation-finding-item {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.tt-validation-finding-mark {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  font-size: 10px;
+  line-height: 1;
+  color: rgba(95, 211, 224, 0.75);
+}
+
+.tt-validation-finding-note {
+  margin: 0.15rem 0 0;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.52);
+}
+
 /* Section separation */
 .case-layout--top .tt-case-body {
   gap: 0;
@@ -1815,7 +2016,7 @@
 .pc-proto-thumb--desktop {
   width: min(100%, 100%);
   max-width: 22rem;
-  aspect-ratio: 1440 / 1024;
+  aspect-ratio: 1440 / 1144;
 }
 
 .prototype-launch-cta {
@@ -1831,5 +2032,93 @@
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.55);
   text-align: center;
+}
+
+/* Prototype refinements from heuristic evaluation */
+.tt-proto-refinements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .tt-proto-refinements-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
+.tt-proto-refinement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.1rem 1.15rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tt-proto-refinement-kicker {
+  margin: 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.9);
+}
+
+.tt-proto-refinement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tt-proto-refinement-item {
+  padding-left: 0.85rem;
+  border-left: 3px solid rgba(95, 211, 224, 0.35);
+}
+
+.tt-proto-refinement-decision {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.tt-proto-refinement-rationale {
+  margin: 0.25rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.tt-proto-refinements-xref {
+  margin: 1rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.tt-proto-refinements-xref a {
+  color: rgba(103, 232, 249, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  font-style: normal;
+}
+
+.tt-proto-refinements-xref a:hover {
+  color: #fff;
 }
 

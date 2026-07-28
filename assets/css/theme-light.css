@@ -1187,7 +1187,8 @@ html[data-theme="light"] .tt-process-phase,
 html[data-theme="light"] .tt-benchmark-cluster,
 html[data-theme="light"] .tt-benchmark-wedge,
 html[data-theme="light"] .tt-benchmark-pattern,
-html[data-theme="light"] .tt-feature-banner {
+html[data-theme="light"] .tt-feature-banner,
+html[data-theme="light"] .tt-validation-finding {
   border-color: rgba(31, 41, 55, 0.12);
   background: rgba(255, 255, 255, 0.78);
   box-shadow: none;
@@ -1487,6 +1488,39 @@ html[data-theme="light"] .pc-proto-note a:hover {
   color: #155e75;
 }
 
+html[data-theme="light"] .tt-proto-refinement-card {
+  border-color: rgba(31, 41, 55, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="light"] .tt-proto-refinement-kicker {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .tt-proto-refinement-item {
+  border-left-color: rgba(14, 116, 144, 0.35);
+}
+
+html[data-theme="light"] .tt-proto-refinement-decision {
+  color: rgba(15, 23, 42, 0.92);
+}
+
+html[data-theme="light"] .tt-proto-refinement-rationale {
+  color: rgba(71, 85, 105, 0.78);
+}
+
+html[data-theme="light"] .tt-proto-refinements-xref {
+  color: rgba(71, 85, 105, 0.65);
+}
+
+html[data-theme="light"] .tt-proto-refinements-xref a {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .tt-proto-refinements-xref a:hover {
+  color: #155e75;
+}
+
 html[data-theme="light"] .status-pill {
   background-color: rgba(37, 99, 235, 0.14);
   color: #1E40AF;
@@ -1510,8 +1544,81 @@ html[data-theme="light"] .metrics-label {
 html[data-theme="light"] .tt-process-phase-body,
 html[data-theme="light"] .tt-process-phase-list .case-bullet,
 html[data-theme="light"] .tt-key-card-body,
-html[data-theme="light"] .tt-eval-card-body {
+html[data-theme="light"] .tt-eval-card-body,
+html[data-theme="light"] .tt-validation-finding-item {
   color: rgba(71, 85, 105, 0.86);
+}
+
+html[data-theme="light"] .tt-validation-principle {
+  border-color: rgba(37, 99, 235, 0.22);
+  background: rgba(37, 99, 235, 0.07);
+  color: #2563EB;
+}
+
+html[data-theme="light"] .tt-validation-scope-flow {
+  border-color: rgba(31, 41, 55, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="light"] .tt-validation-scope-kicker {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .tt-validation-scope-list li {
+  color: rgba(71, 85, 105, 0.86);
+}
+
+html[data-theme="light"] .tt-validation-scope-list li::before {
+  background: rgba(14, 116, 144, 0.55);
+}
+
+html[data-theme="light"] .tt-validation-impact {
+  border-left-color: rgba(74, 124, 89, 0.75);
+}
+
+html[data-theme="light"] .tt-validation-impact-link {
+  color: rgba(71, 85, 105, 0.86);
+}
+
+html[data-theme="light"] .tt-validation-impact-link a {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .tt-validation-impact-link a:hover {
+  color: #155e75;
+}
+
+html[data-theme="light"] .tt-validation-finding--strength {
+  border-left-color: rgba(74, 124, 89, 0.85);
+}
+
+html[data-theme="light"] .tt-validation-finding--strength .tt-validation-finding-label {
+  color: #4A7C59;
+}
+
+html[data-theme="light"] .tt-validation-finding--priority {
+  border-left-color: rgba(161, 118, 48, 0.9);
+}
+
+html[data-theme="light"] .tt-validation-finding--priority .tt-validation-finding-label {
+  color: #A17630;
+}
+
+html[data-theme="light"] .tt-validation-finding--lower {
+  border-left-color: rgba(31, 41, 55, 0.22);
+}
+
+html[data-theme="light"] .tt-validation-finding--lower .tt-validation-finding-label {
+  color: rgba(71, 85, 105, 0.62);
+}
+
+html[data-theme="light"] .tt-validation-finding-mark {
+  color: rgba(37, 99, 235, 0.65);
+}
+
+html[data-theme="light"] .tt-validation-finding-note {
+  border-top-color: rgba(31, 41, 55, 0.1);
+  color: rgba(71, 85, 105, 0.72);
 }
 
 /* Lumen / shared case body copy that still used pale whites */
