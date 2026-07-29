@@ -713,7 +713,7 @@
   .diagram-expand-btn {
     @apply absolute right-3 top-3 z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full
            border border-[#E5E3DA] bg-white/95 text-[#1F1E1D] shadow-md transition-colors
-           hover:bg-white md:hidden;
+           hover:bg-white;
   }
 
   .diagram-expand-btn svg {
@@ -723,11 +723,21 @@
   }
 
   .diagram-hint-desktop {
-    @apply hidden md:block;
+    @apply hidden;
   }
 
   .diagram-hint-mobile {
-    @apply md:hidden;
+    @apply block;
+  }
+
+  @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+    .diagram-hint-desktop {
+      @apply block;
+    }
+
+    .diagram-hint-mobile {
+      @apply hidden;
+    }
   }
 
   .diagram-hint-icon {

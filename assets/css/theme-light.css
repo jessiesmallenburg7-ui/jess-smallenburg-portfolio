@@ -1116,7 +1116,7 @@ html[data-theme="light"] .tt-hero-tagline {
 
 html[data-theme="light"] .tt-hero-badge,
 html[data-theme="light"] .case-hero-badge {
-  color: rgba(71, 85, 105, 0.78);
+  color: #475569;
 }
 
 html[data-theme="light"] .tt-hero-eval-mark {
@@ -1125,14 +1125,14 @@ html[data-theme="light"] .tt-hero-eval-mark {
 
 html[data-theme="light"] .tt-hero-subtitle,
 html[data-theme="light"] .case-hero-subtitle {
-  color: rgba(71, 85, 105, 0.84);
+  color: #334155;
 }
 
 html[data-theme="light"] .tt-disclaimer,
 html[data-theme="light"] .case-disclaimer {
-  border-left-color: rgba(37, 99, 235, 0.45);
-  background: rgba(37, 99, 235, 0.06);
-  color: rgba(71, 85, 105, 0.82);
+  border-left-color: rgba(14, 116, 144, 0.55);
+  background: rgba(14, 116, 144, 0.08);
+  color: #1e293b;
 }
 
 /* Sticky top TOC: opaque surface + above all case content while scrolling */
@@ -2694,4 +2694,165 @@ html[data-theme="light"] .hc-why-callout {
   background: rgba(8, 145, 178, 0.06);
 }
 
+/* Path Compass portfolio refresh */
+html[data-theme="light"] .pc-at-a-glance-title {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-at-a-glance .tt-overview-stat-label {
+  color: #64748b;
+}
+
+html[data-theme="light"] .pc-at-a-glance .tt-overview-stat-value {
+  color: #1e293b;
+}
+
+html[data-theme="light"] .pc-at-a-glance .tt-overview-body {
+  color: #334155;
+}
+
+html[data-theme="light"] .pc-at-a-glance .tt-overview-body strong {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-hero-prototypes-title {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-hero-prototype-label {
+  color: #1e293b;
+}
+
+html[data-theme="light"] .pc-key-screen-caption {
+  color: #475569;
+}
+
+html[data-theme="light"] .pc-key-screen-caption strong {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-key-screens-bridge {
+  color: #64748b;
+}
+
+html[data-theme="light"] .pc-foundation-details {
+  border-color: rgba(31, 41, 55, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="light"] .pc-foundation-details-summary {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-foundation-details-body {
+  border-top-color: rgba(31, 41, 55, 0.1);
+}
+
+html[data-theme="light"] .pc-decision-card,
+html[data-theme="light"] .pc-reflect-card {
+  border-color: rgba(31, 41, 55, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="light"] .pc-decision-title,
+html[data-theme="light"] .pc-reflect-heading {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-decision-kicker {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-decision-col--rationale .pc-decision-kicker {
+  color: #b45309;
+}
+
+html[data-theme="light"] .pc-decision-body,
+html[data-theme="light"] .pc-reflect-list,
+html[data-theme="light"] .pc-reflect-card .prose-body {
+  color: #475569;
+}
+
+html[data-theme="light"] .pc-design-xref {
+  border-color: rgba(14, 116, 144, 0.2);
+  background: rgba(14, 116, 144, 0.06);
+}
+
+html[data-theme="light"] .pc-design-xref-title {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-design-xref .prose-body a {
+  color: #2563eb;
+}
+
+html[data-theme="light"] .pc-design-xref .prose-body a:hover {
+  color: #1e40af;
+}
+
+/* Compact scannable components — light theme */
+html[data-theme="light"] .pc-insight-list {
+  color: #475569;
+}
+
+html[data-theme="light"] .pc-insight-list strong {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-constraints-callout {
+  border-color: rgba(180, 83, 9, 0.25);
+  background: rgba(251, 191, 36, 0.08);
+}
+
+html[data-theme="light"] .pc-constraints-title {
+  color: #b45309;
+}
+
+html[data-theme="light"] .pc-constraints-list {
+  color: #334155;
+}
+
+html[data-theme="light"] .pc-eval-brief {
+  color: #475569;
+}
+
+html[data-theme="light"] .pc-eval-brief strong {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-persona-compact-card {
+  border-color: rgba(15, 23, 42, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+html[data-theme="light"] .pc-persona-compact-avatar {
+  color: #0e7490;
+  background: rgba(14, 116, 144, 0.08);
+  border-color: rgba(14, 116, 144, 0.2);
+}
+
+html[data-theme="light"] .pc-persona-compact-name {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .pc-persona-compact-role {
+  color: #64748b;
+}
+
+html[data-theme="light"] .pc-persona-compact-dl dt {
+  color: #0e7490;
+}
+
+html[data-theme="light"] .pc-persona-compact-dl dd {
+  color: #475569;
+}
+
+html[data-theme="light"] .pc-validation-summary-col {
+  border-color: rgba(15, 23, 42, 0.08);
+  background: rgba(248, 250, 252, 0.9);
+}
+
+html[data-theme="light"] .pc-validation-summary-heading {
+  color: #64748b;
+}
 

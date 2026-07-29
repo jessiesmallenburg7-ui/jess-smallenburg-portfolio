@@ -67,21 +67,51 @@
       el.setAttribute('id', next);
     });
     if (!idMap.size) return;
-    svg.querySelectorAll('[fill],[stroke],[href],[xlink\\:href]').forEach((el) => {
-      ['fill', 'stroke', 'href'].forEach((attr) => {
+
+    const remapUrl = (val) => {
+      if (!val || !val.includes('url(#')) return val;
+      return val.replace(/url\(#([^)]+)\)/g, (match, id) =>
+        idMap.has(id) ? `url(#${idMap.get(id)})` : match
+      );
+    };
+
+    const remapHash = (val) => {
+      if (!val || !val.startsWith('#')) return val;
+      const id = val.slice(1);
+      return idMap.has(id) ? `#${idMap.get(id)}` : val;
+    };
+
+    const urlAttrs = [
+      'fill',
+      'stroke',
+      'filter',
+      'clip-path',
+      'mask',
+      'marker-start',
+      'marker-mid',
+      'marker-end',
+    ];
+
+    svg.querySelectorAll('*').forEach((el) => {
+      urlAttrs.forEach((attr) => {
         const val = el.getAttribute(attr);
-        if (!val || !val.includes('url(#')) return;
-        el.setAttribute(
-          attr,
-          val.replace(/url\(#([^)]+)\)/g, (match, id) =>
-            idMap.has(id) ? `url(#${idMap.get(id)})` : match
-          )
-        );
+        if (!val) return;
+        const next = remapUrl(val);
+        if (next !== val) el.setAttribute(attr, next);
       });
-      const xlink = el.getAttribute('xlink:href') || el.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href');
-      if (xlink && xlink.startsWith('#') && idMap.has(xlink.slice(1))) {
-        el.setAttribute('href', `#${idMap.get(xlink.slice(1))}`);
-      }
+
+      ['href', 'xlink:href'].forEach((attr) => {
+        const val =
+          el.getAttribute(attr) ||
+          (attr === 'xlink:href'
+            ? el.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href')
+            : null);
+        if (!val) return;
+        const next = remapHash(val);
+        if (next === val) return;
+        el.setAttribute('href', next);
+        el.setAttributeNS('http://www.w3.org/1999/xlink', 'href', next);
+      });
     });
   }
 

@@ -2305,7 +2305,7 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (hover: hover) and (pointer: fine) {
   .diagram-expand-btn {
     display: none;
   }
@@ -2323,7 +2323,7 @@ body {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (hover: hover) and (pointer: fine) {
   .diagram-hint-desktop {
     display: block;
   }

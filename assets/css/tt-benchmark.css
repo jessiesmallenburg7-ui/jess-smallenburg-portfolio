@@ -747,24 +747,18 @@
   max-width: none;
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: var(--pc-text-secondary);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.55);
-}
-
-@media (min-width: 640px) {
-  .tt-hero-subtitle {
-    font-size: 19px;
-  }
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .tt-hero-badge {
   font-family: "Lato", sans-serif;
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-meta);
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .tt-hero-meta {
@@ -797,14 +791,14 @@
   margin: 0.35rem 0 0;
   max-width: 48ch;
   padding: 0.55rem 0.85rem;
-  border-left: 2px solid rgba(95, 211, 224, 0.28);
+  border-left: 2px solid rgba(95, 211, 224, 0.4);
   border-radius: 0 0.5rem 0.5rem 0;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.06);
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: var(--pc-text-meta);
   line-height: 1.5;
   letter-spacing: 0.01em;
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 @media (min-width: 1024px) {
@@ -1628,15 +1622,15 @@
   }
 
   .tt-hero-subtitle {
-    font-size: 19px;
+    font-size: var(--pc-text-secondary);
   }
 
   .tt-hero-badge {
-    font-size: 17px;
+    font-size: var(--pc-text-meta);
   }
 
   .tt-disclaimer {
-    font-size: 16px;
+    font-size: var(--pc-text-meta);
   }
 
   .tt-feature-banner-kicker {
@@ -2825,5 +2819,527 @@
 
 .tt-proto-refinements-xref a:hover {
   color: #fff;
+}
+
+/* Hero at-a-glance — reuses tt-overview-context panel */
+.pc-at-a-glance {
+  margin-top: 1.5rem;
+}
+
+.pc-at-a-glance-title {
+  margin: 0 0 0.55rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.95);
+}
+
+.pc-at-a-glance-stats {
+  margin-top: 0.85rem;
+}
+
+.pc-at-a-glance .tt-overview-stat-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pc-at-a-glance .tt-overview-stat-value {
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pc-at-a-glance .tt-overview-body {
+  font-size: var(--pc-text-secondary);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.pc-at-a-glance .tt-overview-body strong {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.pc-hero-prototypes {
+  margin-top: 1.25rem;
+  padding-top: 0.25rem;
+}
+
+.pc-hero-prototypes-title {
+  margin: 0 0 0.85rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.95);
+}
+
+.pc-hero-prototype-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .pc-hero-prototype-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.pc-hero-prototype-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.pc-hero-prototype-label {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.pc-hero-prototypes .prototype-launch-note {
+  margin-top: 0.85rem;
+}
+
+/* Key screens preview */
+.pc-key-screens-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .pc-key-screens-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pc-key-screen--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+.pc-key-screen figcaption {
+  margin-top: 0.75rem;
+}
+
+.pc-key-screen-caption {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.pc-key-screen-caption strong {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+}
+
+.pc-key-screens-bridge {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  line-height: 1.6;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+/* Foundation expandable detail */
+.pc-foundation-details {
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pc-foundation-details-summary {
+  padding: 0.95rem 1.1rem;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  font-weight: 600;
+  color: rgba(103, 232, 249, 0.9);
+  list-style: none;
+}
+
+.pc-foundation-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.pc-foundation-details-body {
+  padding: 0 1.1rem 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Persona focus grid */
+.pc-persona-focus-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .pc-persona-focus-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Design decision cards */
+.pc-decision-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.pc-decision-card {
+  padding: 1.1rem 1.2rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pc-decision-title {
+  margin: 0 0 0.85rem;
+  font-family: "Cormorant", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.pc-decision-pair {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 900px) {
+  .pc-decision-pair {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.pc-decision-kicker {
+  margin: 0 0 0.3rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.85);
+}
+
+.pc-decision-body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-meta);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.pc-decision-col--rationale .pc-decision-kicker {
+  color: rgba(212, 168, 96, 0.95);
+}
+
+/* Reflection section */
+.pc-reflect-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .pc-reflect-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.pc-reflect-card {
+  padding: 1.15rem 1.2rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pc-reflect-card--wide {
+  grid-column: 1 / -1;
+}
+
+.pc-reflect-heading {
+  margin: 0 0 0.65rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.pc-reflect-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.pc-reflect-list li + li {
+  margin-top: 0.35rem;
+}
+
+.pc-reflect-card .prose-body {
+  margin: 0;
+  font-size: var(--pc-text-secondary);
+}
+
+/* Design section cross-reference to Key Screens */
+.pc-design-xref {
+  padding: 1rem 1.15rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(95, 211, 224, 0.18);
+  background: rgba(95, 211, 224, 0.05);
+}
+
+.pc-design-xref-title {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pc-design-xref .prose-body a {
+  color: rgba(103, 232, 249, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.pc-design-xref .prose-body a:hover {
+  color: #fff;
+}
+
+/* Compact scannable components (Path Compass scan pass) */
+.pc-insight-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary, 1rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.pc-insight-list li + li {
+  margin-top: 0.45rem;
+}
+
+.pc-insight-list strong {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 700;
+}
+
+.pc-constraints-callout {
+  padding: 1.15rem 1.25rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(212, 168, 96, 0.28);
+  background: rgba(212, 168, 96, 0.06);
+}
+
+.pc-constraints-title {
+  margin: 0 0 0.65rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: rgba(212, 168, 96, 0.95);
+}
+
+.pc-constraints-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary, 1rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.pc-constraints-list li + li {
+  margin-top: 0.4rem;
+}
+
+.pc-eval-brief {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--pc-text-secondary, 1rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.pc-eval-brief li + li {
+  margin-top: 0.55rem;
+}
+
+.pc-eval-brief strong {
+  color: rgba(95, 211, 224, 0.95);
+  font-weight: 700;
+}
+
+.tt-practice-grid--compact {
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .tt-practice-grid--compact {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tt-practice-grid--compact .tt-practice-chip {
+  padding: 0.55rem 0.75rem;
+}
+
+.tt-practice-grid--compact .tt-practice-label {
+  font-size: 0.9rem;
+}
+
+.pc-persona-compact-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .pc-persona-compact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.pc-persona-compact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.1rem 1.15rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pc-persona-compact-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pc-persona-compact-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  font-family: "Cormorant", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgba(95, 211, 224, 0.95);
+  background: rgba(95, 211, 224, 0.1);
+  border: 1px solid rgba(95, 211, 224, 0.25);
+}
+
+.pc-persona-compact-name {
+  margin: 0;
+  font-family: "Cormorant", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.pc-persona-compact-role {
+  margin: 0.15rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.pc-persona-compact-dl {
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.pc-persona-compact-dl > div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.pc-persona-compact-dl dt {
+  font-family: "Lato", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(95, 211, 224, 0.9);
+}
+
+.pc-persona-compact-dl dd {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.pc-validation-summary {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .pc-validation-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 2rem;
+  }
+}
+
+.pc-validation-summary-col {
+  padding: 1rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.pc-validation-summary-heading {
+  margin: 0 0 0.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.pc-validation-summary-col .pc-insight-list {
+  font-size: 0.92rem;
+}
+
+/* Extra breathing room between major sections on Path Compass */
+.case-layout--top .case-section + .case-section {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .case-layout--top .case-section + .case-section {
+    margin-top: 1rem;
+  }
 }
 
