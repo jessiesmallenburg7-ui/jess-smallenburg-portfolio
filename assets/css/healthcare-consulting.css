@@ -92,7 +92,7 @@ html[data-theme="light"] .case-layout--top .hc-sections .case-section:last-child
 .hc-disclaimer-body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.58);
 }
@@ -781,7 +781,7 @@ html[data-theme="light"] .hc-ba-caption-list > li::before {
 .hc-proto-note {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -876,7 +876,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-fig-note {
   margin: 0.35rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -884,7 +884,7 @@ html[data-theme="light"] .hc-proto-note a {
 .hc-fig-placeholder figcaption {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   line-height: 1.5;
   font-style: italic;
   color: rgba(255, 255, 255, 0.5);
@@ -1486,7 +1486,7 @@ html[data-theme="light"] .hc-learn-close {
 
 .hc-plain-stat-label {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   font-weight: 600;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);

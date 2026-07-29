@@ -121,14 +121,14 @@
 
 .tt-journeys-hint {
   margin: 12px 4px 0;
-  font-size: 13px;
+  font-size: var(--pc-text-meta, 15px);
   color: var(--tt-muted);
   line-height: 1.5;
 }
 
 .tt-journeys-meta {
   margin: 14px 4px 4px;
-  font-size: 14.5px;
+  font-size: var(--pc-text-secondary, 17px);
   color: var(--tt-ink);
   max-width: 70ch;
 }

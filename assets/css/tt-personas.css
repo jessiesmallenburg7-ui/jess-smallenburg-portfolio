@@ -308,7 +308,30 @@
 
 .tt-personas .card ul {
   margin: 0;
-  padding-left: 18px;
+  padding-left: 0;
+}
+
+.tt-personas .grid .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.tt-personas .grid .card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0;
+}
+
+.tt-personas .grid .card li::before {
+  content: "◆";
+  flex-shrink: 0;
+  font-size: 0.45em;
+  line-height: 1;
+  margin-top: 1.25em;
+  color: var(--accent, var(--tt-ink));
 }
 
 .tt-personas .card li {
@@ -376,7 +399,7 @@
 }
 
 .tt-personas .source-item {
-  font-size: 13px;
+  font-size: var(--pc-text-meta, 15px);
   color: var(--tt-muted);
   margin-top: 14px;
   padding-top: 14px;
@@ -404,7 +427,7 @@
   margin: 20px 24px;
   padding: 0;
   color: var(--tt-muted);
-  font-size: 13px;
+  font-size: var(--pc-text-meta, 15px);
   line-height: 1.7;
 }
 
@@ -415,7 +438,6 @@
 @media (max-width: 767.98px) {
   .tt-personas-note {
     margin: 20px 16px;
-    font-size: 14px;
   }
 }
 

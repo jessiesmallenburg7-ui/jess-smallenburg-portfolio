@@ -237,6 +237,18 @@
     @apply h-full w-full object-cover object-top transition-transform duration-500 ease-out;
   }
 
+  .work-card-media--contain {
+    @apply flex items-start justify-center;
+  }
+
+  .work-card-thumb--contain {
+    @apply h-auto w-auto max-h-full max-w-full object-contain object-top;
+  }
+
+  .work-card--ui-shot:hover .work-card-thumb--contain {
+    transform: none;
+  }
+
   .work-card:hover .work-card-thumb {
     transform: scale(1.03);
   }

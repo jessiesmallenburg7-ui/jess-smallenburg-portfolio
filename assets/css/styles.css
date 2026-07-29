@@ -718,13 +718,56 @@ body {
   color: rgb(255 255 255 / 0.8);
 }
 
+/* Site type scale
+ * body:      19px — primary narrative
+ * secondary: 17px — supporting copy, lists, captions with body weight
+ * meta:      15px — hints, notes, footnotes
+ * label:     14px — uppercase UI labels
+ * display:   22px — serif pull quotes
+ */
+:root {
+  --site-text-body: 19px;
+  --site-text-secondary: 17px;
+  --site-text-meta: 15px;
+  --site-text-label: 14px;
+  --site-text-display: 22px;
+  --pc-text-body: var(--site-text-body);
+  --pc-text-secondary: var(--site-text-secondary);
+  --pc-text-meta: var(--site-text-meta);
+  --pc-text-label: var(--site-text-label);
+  --pc-text-display: var(--site-text-display);
+}
+
 /* Body copy */
 
 .prose-body {
   font-family: Lato, Lato Placeholder, sans-serif;
-  font-size: 19px;
+  font-size: var(--site-text-body);
   line-height: 1.7em;
   color: rgb(255 255 255 / 0.75);
+}
+
+.diagram-hint {
+  font-size: var(--site-text-meta);
+  line-height: 1.5;
+}
+
+.evidence-wall-more-hint,
+.evidence-subhead,
+.interview-theme-source,
+.insight-bridge-source,
+.wireframe-persona,
+.he-download-meta {
+  font-size: var(--site-text-meta);
+}
+
+.persona-tfd-label,
+.persona-callout-label,
+.he-sev-label,
+.he-positive-kicker,
+.he-findings-badge,
+.he-finding-kicker {
+  font-size: var(--site-text-label);
 }
 
 /* Diamond bullets: teal, first-line aligned, gap before text */
@@ -1155,6 +1198,27 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.work-card-media--contain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.work-card-thumb--contain {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.work-card--ui-shot:hover .work-card-thumb--contain {
+  transform: none;
 }
 
 .work-card:hover .work-card-thumb {

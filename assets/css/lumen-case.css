@@ -447,7 +447,7 @@
 .iteration-source {
   margin: 0.35rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: var(--site-text-meta);
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -685,7 +685,7 @@
   margin: 0;
   max-width: 48rem;
   font-family: "Lato", sans-serif;
-  font-size: 14.5px;
+  font-size: var(--site-text-meta);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.55);
 }
@@ -742,7 +742,7 @@
   max-width: none;
   width: 100%;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.62);
 }
@@ -830,7 +830,7 @@
     linear-gradient(90deg, rgba(103, 232, 249, 0.1), rgba(103, 232, 249, 0.03) 55%, transparent),
     rgba(7, 11, 22, 0.2);
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: var(--site-text-secondary);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.78);
   font-style: normal;
@@ -912,7 +912,7 @@
   padding: 0 0 0 0.85rem;
   position: relative;
   font-family: "Lato", sans-serif;
-  font-size: 14.5px;
+  font-size: var(--site-text-meta);
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.82);
 }

@@ -23,10 +23,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260727bh">
-  <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260720c">
-  <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260716f">
-  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260728cb">
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260729a">
+  <link rel="stylesheet" href="../../assets/css/tt-personas.css?v=20260729h">
+  <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260729c">
+  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260729refs">
   <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260728cb">
 </head>
 <body>
@@ -268,17 +268,17 @@
                   <span class="tt-process-phase-num">05</span>
                   <span class="tt-process-phase-title">Evaluation &amp; Validation</span>
                 </a>
-                <p class="tt-process-phase-body">Validation centers on expert review rather than primary research with clinic participants, given project scope.</p>
+                <p class="tt-process-phase-body">Validation centers on heuristic evaluation rather than primary research with clinic participants, given project scope.</p>
                 <ul class="tt-process-phase-list">
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Heuristic evaluation against usability heuristics and trauma-informed digital principles</span></li>
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Expert review with clinical and UX stakeholders</span></li>
-                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Refinements focused on accessibility, cognitive load, and trust cues before any future live evaluation</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Heuristic evaluation against Nielsen&rsquo;s usability heuristics and trauma-informed digital principles</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Youth mobile and clinician desktop prototypes reviewed across check-in, privacy, fidelity, and dashboard flows</span></li>
+                  <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span>Findings grouped by severity and translated into prototype refinements before any future live evaluation</span></li>
                 </ul>
               </li>
             </ol>
 
             <p class="prose-body mt-8">
-              Path Compass is a conceptual / speculative UX case study grounded in an existing mixed-methods TF-CBT Evaluation Plan. Because of project scope, validation centers on heuristic evaluation and expert review rather than primary generative or evaluative user research with clinic participants.
+              Path Compass is a conceptual / speculative UX case study grounded in an existing mixed-methods TF-CBT Evaluation Plan. Because of project scope, validation centers on heuristic evaluation rather than primary generative or evaluative user research with clinic participants.
             </p>
           </section>
 
@@ -445,13 +445,39 @@
 
             <h3 id="personas" class="case-subtitle mt-10">Personas</h3>
 
-            <h3 class="case-subtitle mt-4">Why Personas?</h3>
-            <p class="prose-body">
-              Three research-grounded personas&mdash;Nia (youth), Marcus (clinician), and Denise (caregiver)&mdash;translate the evaluation plan&rsquo;s sample, instruments, and five timepoints into concrete design decisions.
-            </p>
-            <p class="prose-body mt-5">
-              They keep trauma-informed principles (safety, choice, trustworthiness, collaboration, empowerment) front and center, so fidelity monitoring and outcome tracking reduce burden without adding harm.
-            </p>
+            <div class="pc-personas-framing">
+              <div class="pc-personas-framing-board">
+                <div class="pc-personas-framing-scope">
+                  <h4 class="pc-personas-framing-heading">Who they represent</h4>
+                  <p class="pc-personas-framing-lede">Three research-grounded personas translate the evaluation plan into concrete design decisions:</p>
+                  <ul class="pc-personas-framing-list">
+                    <li>Nia (youth), Marcus (clinician), and Denise (caregiver) mapped to sample, instruments, and five timepoints</li>
+                    <li>Nia and Denise form a matched youth&ndash;caregiver dyad; Marcus is their clinician</li>
+                    <li>Each profile covers demographics, clinical context, goals, frustrations, and platform role</li>
+                  </ul>
+                </div>
+
+                <div class="pc-personas-framing-split">
+                  <div class="pc-personas-framing-col">
+                    <h4 class="pc-personas-framing-heading">Why Personas?</h4>
+                    <ul class="pc-personas-framing-list">
+                      <li>Ground abstract evaluation requirements in lived clinic experience</li>
+                      <li>Keep youth app, clinician dashboard, and caregiver portal needs distinct before wireframes harden</li>
+                      <li>Pressure-test flows against real constraints&mdash;privacy, documentation load, access, and engagement</li>
+                    </ul>
+                  </div>
+
+                  <div class="pc-personas-framing-col">
+                    <h4 class="pc-personas-framing-heading">Trauma-informed lens</h4>
+                    <ul class="pc-personas-framing-list">
+                      <li>Safety, choice, trustworthiness, collaboration, and empowerment stay front and center</li>
+                      <li>Highlighted chips in each profile flag which principles matter most for that persona</li>
+                      <li>Fidelity monitoring and outcome tracking should reduce burden, not add harm</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="tt-personas">
               <nav class="tt-personas-tabs" aria-label="Persona profiles">
@@ -731,23 +757,43 @@
             </div>
 
             <h3 id="journey-maps" class="case-subtitle mt-12">Journey Maps</h3>
-            <p class="prose-body">
-              Current-state and ideal-state journeys for Nia (youth) and Marcus (clinician) across the six TF-CBT evaluation phases. Use the toggles to switch persona and state; zoom and pan to read detail.
-            </p>
 
-            <h3 class="case-subtitle mt-4">Why Journey Maps?</h3>
-            <p class="prose-body">
-              I developed Current-State and Ideal-State journey maps for Nia (youth) and Marcus (clinician) to visualize the end-to-end experience across the five evaluation timepoints in real-world TF-CBT delivery.
-            </p>
-            <p class="prose-body">
-              By mapping their parallel journeys against the four evaluation questions &mdash; with emphasis on PRACTICE fidelity and longitudinal SDQ/FSSQ tracking &mdash; the maps surfaced key barriers including documentation burden, privacy risks, high dropout potential, and fragmented data processes.
-            </p>
-            <p class="prose-body">
-              This analysis translated the evaluation plan and personas into clear design priorities, directly shaping Path Compass&rsquo;s core features (real-time fidelity checklist, automated surveys, privacy controls, and longitudinal dashboards) to reduce administrative load, uphold trauma-informed principles, and improve implementation fidelity and youth outcomes.
-            </p>
+            <div class="pc-journey-framing">
+              <div class="pc-journey-framing-board">
+                <div class="pc-journey-framing-scope">
+                  <h4 class="pc-journey-framing-heading">What&rsquo;s mapped</h4>
+                  <p class="pc-journey-framing-lede">Current-state and ideal-state journeys for Nia (youth) and Marcus (clinician) across TF-CBT evaluation:</p>
+                  <ul class="pc-journey-framing-list">
+                    <li>Six evaluation phases from intake through follow-up</li>
+                    <li>Toggle persona and state to compare paper-based current vs. Path Compass ideal</li>
+                    <li>Zoom and pan the diagram below to read phase-by-phase detail</li>
+                  </ul>
+                </div>
 
-            <p class="diagram-hint diagram-hint-desktop mt-2 font-sans text-sm text-white/45">Double-click to zoom &middot; Drag to pan &middot; Use the expand control for full screen (Ctrl + / &minus; there)</p>
-            <p class="diagram-hint diagram-hint-mobile mt-2 font-sans text-sm text-white/45">Pinch to zoom &middot; Drag to pan &middot; Tap <span class="sr-only">expand</span><svg class="diagram-hint-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" preserveAspectRatio="xMidYMid meet"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> for full screen</p>
+                <div class="pc-journey-framing-split">
+                  <div class="pc-journey-framing-col">
+                    <h4 class="pc-journey-framing-heading">Why Journey Maps?</h4>
+                    <ul class="pc-journey-framing-list">
+                      <li>Visualize end-to-end experience across five evaluation timepoints in real-world TF-CBT delivery</li>
+                      <li>Map parallel youth and clinician journeys against the four evaluation questions</li>
+                      <li>Stress-test PRACTICE fidelity and longitudinal SDQ/FSSQ tracking where clinic workflows actually break</li>
+                    </ul>
+                  </div>
+
+                  <div class="pc-journey-framing-col">
+                    <h4 class="pc-journey-framing-heading">Design impact</h4>
+                    <ul class="pc-journey-framing-list">
+                      <li>Surfaced documentation burden, privacy risks, dropout potential, and fragmented data processes</li>
+                      <li>Translated evaluation plan and personas into fidelity checklist, automated surveys, privacy controls, and longitudinal dashboards</li>
+                      <li>Reduce administrative load, uphold trauma-informed principles, and improve implementation fidelity and youth outcomes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="diagram-hint diagram-hint-desktop pc-journey-diagram-hint mt-3 font-sans">Double-click to zoom &middot; Drag to pan &middot; Use the expand control for full screen (Ctrl + / &minus; there)</p>
+            <p class="diagram-hint diagram-hint-mobile pc-journey-diagram-hint mt-3 font-sans">Pinch to zoom &middot; Drag to pan &middot; Tap <span class="sr-only">expand</span><svg class="diagram-hint-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" preserveAspectRatio="xMidYMid meet"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> for full screen</p>
 
             <div class="tt-journeys" data-journey-viewer>
               <div class="tt-journeys-controls">
@@ -796,7 +842,7 @@
                     </svg>
                   </button>
                 </div>
-                <p class="tt-journeys-hint">Wide journey maps &mdash; double-click or pinch to zoom, then drag to pan. Expand for full screen where Ctrl + / &minus; zooms the diagram.</p>
+                <p class="tt-journeys-hint pc-journey-diagram-hint">Wide journey maps &mdash; double-click or pinch to zoom, then drag to pan. Expand for full screen where Ctrl + / &minus; zooms the diagram.</p>
               </div>
             </div>
           </section>
@@ -807,20 +853,42 @@
               Competitive analysis pressure-tests the journey findings against tools clinics already touch&mdash;and names the incomplete clusters Path Compass is designed to fill.
             </p>
 
-            <h3 id="competitive-benchmarking" class="case-subtitle mt-10">Competitive Benchmarking</h3>
-            <p class="prose-body">
-              After mapping Nia and Marcus&rsquo;s journeys, I benchmarked adjacent tools against the jobs Path Compass must cover: real-time PRACTICE fidelity, five-timepoint SDQ and FSSQ collection from youth and caregivers, trauma-informed privacy, and community-clinic documentation load. No single product owns that stack&mdash;so the comparison clarifies Path Compass&rsquo;s wedge rather than chasing EHR feature parity.
-            </p>
+            <div class="pc-exploration-framing">
+              <div class="pc-exploration-framing-board">
+                <div class="pc-exploration-framing-scope">
+                  <h3 id="competitive-benchmarking" class="pc-exploration-framing-heading">Competitive Benchmarking</h3>
+                  <p class="pc-exploration-framing-lede">After mapping Nia and Marcus&rsquo;s journeys, I benchmarked adjacent tools against the jobs Path Compass must cover:</p>
+                  <ul class="pc-exploration-framing-list">
+                    <li>Real-time PRACTICE fidelity during sessions</li>
+                    <li>Five-timepoint SDQ and FSSQ collection from youth and caregivers</li>
+                    <li>Trauma-informed privacy across youth, caregiver, and clinician surfaces</li>
+                    <li>Community-clinic documentation load without competing with care</li>
+                  </ul>
+                  <p class="pc-exploration-framing-note">No single product owns that stack&mdash;so the comparison clarifies Path Compass&rsquo;s wedge rather than chasing EHR feature parity.</p>
+                </div>
 
-            <h3 class="case-subtitle mt-6">Why Benchmark?</h3>
-            <p class="prose-body">
-              Competitive review pressure-tested the journey findings against what clinics already use for TF-CBT training, in-session engagement, measurement-based care (MBC), and AI quality improvement. The goal was to name incomplete clusters in the landscape and protect design priorities that would otherwise get diluted by &ldquo;just use our existing EHR&rdquo; or &ldquo;add another PROM tool.&rdquo;
-            </p>
+                <div class="pc-exploration-framing-split">
+                  <div class="pc-exploration-framing-col">
+                    <h3 class="pc-exploration-framing-heading">Why benchmark?</h3>
+                    <ul class="pc-exploration-framing-list">
+                      <li>Pressure-test journey findings against TF-CBT training, in-session engagement, measurement-based care, and AI quality improvement tools clinics already use</li>
+                      <li>Name incomplete clusters in the landscape before design commitments harden</li>
+                      <li>Protect priorities that would otherwise get diluted by &ldquo;just use our existing EHR&rdquo; or &ldquo;add another PROM tool&rdquo;</li>
+                    </ul>
+                  </div>
 
-            <h3 class="case-subtitle mt-6">Shortlist</h3>
-            <p class="prose-body">
-              Six competitors (plus paper status quo) were included if they were TF-CBT/PRACTICE-aligned, common in community behavioral-health quality improvement (QI), or a realistic artifact Marcus would already touch. Full-practice EHRs with optional MBC widgets were treated as adjacent noise, not primary competitors.
-            </p>
+                  <div class="pc-exploration-framing-col">
+                    <h3 class="pc-exploration-framing-heading">Shortlist</h3>
+                    <ul class="pc-exploration-framing-list">
+                      <li>TF-CBT / PRACTICE-aligned delivery or training</li>
+                      <li>Common in community behavioral-health quality improvement</li>
+                      <li>Realistic artifact Marcus would already touch in practice</li>
+                    </ul>
+                    <p class="pc-exploration-framing-note">Six competitors plus paper status quo. Full-practice EHRs with optional MBC widgets were treated as adjacent noise, not primary competitors.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="tt-benchmark">
               <div class="tt-benchmark-shortlist">
@@ -1121,40 +1189,48 @@
             </div>
 
             <h3 id="low-fidelity-explorations" class="case-subtitle mt-12">Low-Fidelity Explorations</h3>
-            <p class="prose-body">
-              Before moving into high-fidelity design, I explored two key screens in low fidelity: the Youth Check-in screen and the Clinician In-Session Fidelity Checklist.
-            </p>
 
-            <div class="mt-8 flex flex-col gap-8">
-              <div>
-                <h4 class="font-sans text-[18px] font-semibold text-sky-accent">Youth Check-In Screen</h4>
-                <p class="prose-body mt-2">
-                  The Youth Check-in allows participants like Nia (14) to complete brief self-report measures at five timepoints during the TF-CBT evaluation. Because many youth have trauma histories, the flow must feel safe and give clear control over personal information.
-                </p>
-                <p class="prose-body mt-4">
-                  I explored the check-in flow in low fidelity to test structure and privacy interactions before committing to high-fidelity design.
-                </p>
-                <p class="prose-body mt-4">
-                  I tested mood-first versus questions-first sequencing and found that starting with mood created a lower-stakes entry point. Discrete response options performed better than open text fields, as they reduced pressure to disclose more than intended. Early versions buried privacy messaging as a footnote, but testing showed this minimized its importance, leading to a more prominent treatment in the final design.
-                </p>
-              </div>
-              <div>
-                <h4 class="font-sans text-[18px] font-semibold text-sky-accent">Clinician In-Session Fidelity Checklist</h4>
-                <p class="prose-body mt-2">
-                  I compared a single flat list of PRACTICE components against collapsible sections. A visible, always-on list performed better, allowing clinicians to track progress at a glance. I also found that keeping the optional note field as a small expandable row (rather than a modal) reduced context switching during a session.
-                </p>
+            <div class="pc-lofi-framing">
+              <div class="pc-lofi-framing-board">
+                <div class="pc-lofi-framing-scope">
+                  <h4 class="pc-lofi-framing-heading">What I experimented with</h4>
+                  <p class="pc-lofi-framing-lede">Before high-fidelity design, I experimented with layout and interaction patterns for two key screens in low fidelity&mdash;checking each direction against trauma-informed digital design literature and the TF-CBT evaluation framework, not live user sessions:</p>
+                  <ul class="pc-lofi-framing-list">
+                    <li><strong>Youth check-in</strong> &mdash; brief self-report at five TF-CBT evaluation timepoints (Goodman et al., 1998), with trauma-informed safety requirements for participants like Nia (14) (Abdulai et al., 2023)</li>
+                    <li><strong>Clinician fidelity checklist</strong> &mdash; in-session PRACTICE component tracking aligned to the <a href="https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/" target="_blank" rel="noopener noreferrer" class="text-sky-accent underline decoration-sky-accent/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white/40">TF-CBT Brief Practice Fidelity Checklist</a> (Deblinger et al., 2014)</li>
+                  </ul>
+                </div>
+
+                <div class="pc-lofi-framing-split">
+                  <div class="pc-lofi-framing-col">
+                    <h4 class="pc-lofi-framing-heading">Youth check-in screen</h4>
+                    <ul class="pc-lofi-framing-list">
+                      <li>Mood-first sequencing drew on affective modulation as a lower-stakes entry before clinical measures (Cohen &amp; Mannarino, 2015) and trauma-informed safety and choice principles (Abdulai et al., 2023)</li>
+                      <li>Discrete response options mirrored validated instruments like the SDQ (Goodman et al., 1998) and limited over-disclosure vs. open text&mdash;in line with choice and empowerment (Abdulai et al., 2023)</li>
+                      <li>Privacy controls needed visible placement upfront; footnote-style messaging conflicted with trustworthiness and choice in digital trauma-informed care (Abdulai et al., 2023)</li>
+                    </ul>
+                  </div>
+
+                  <div class="pc-lofi-framing-col">
+                    <h4 class="pc-lofi-framing-heading">Clinician fidelity checklist</h4>
+                    <ul class="pc-lofi-framing-list">
+                      <li>A single always-visible PRACTICE list aligned with the TF-CBT fidelity checklist structure (Deblinger et al., 2014) and community delivery patterns where post-session recall degrades accuracy (Webb et al., 2014)</li>
+                      <li>Expandable inline note rows preserved in-session presence better than modal entry&mdash;reducing the reconstruction burden described in community fidelity work (Webb et al., 2014)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="pc-lofi-framing-outcome">
+                  <p class="pc-lofi-framing-outcome-label">Carried into high fidelity</p>
+                  <ul class="pc-lofi-framing-list">
+                    <li>Mood-first sequencing and discrete response options retained, grounded in trauma-informed choice (Abdulai et al., 2023) and SDQ-style self-report (Goodman et al., 1998)</li>
+                    <li>Privacy controls surfaced prominently rather than buried (Abdulai et al., 2023)</li>
+                    <li>Fidelity checklist structured as a single scannable list for real-time marking (Deblinger et al., 2014)</li>
+                  </ul>
+                  <p class="pc-lofi-framing-note">Checked against published trauma-informed and TF-CBT literature rather than clinic participants, these explorations pointed toward interactions that prioritize psychological safety for youth and reduce documentation burden for clinicians.</p>
+                </div>
               </div>
             </div>
-
-            <h4 class="case-subtitle mt-10">Key Decisions Carried into High Fidelity</h4>
-            <ul class="mt-4 flex flex-col gap-3">
-              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">Mood-first sequencing and discrete response options were retained.</span></li>
-              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">Privacy controls were made more prominent rather than buried.</span></li>
-              <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">The fidelity checklist was designed as a single, scannable list to support real-time marking with minimal friction.</span></li>
-            </ul>
-            <p class="prose-body mt-6">
-              These explorations confirmed that the core interactions should prioritize psychological safety for youth and reduce documentation burden for clinicians.
-            </p>
           </section>
 
 
@@ -1184,16 +1260,69 @@
 
           <section id="design" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">04</span> Design &amp; Prototyping</h2>
-            <p class="prose-body">
-              Research pointed to three pressure points: youth anxiety and over-disclosure at first use, privacy risk when caregiver visibility is the default, and clinicians postponing fidelity paperwork until after the session so they can stay present with the youth&mdash;then reconstructing adherence from memory. Trauma-informed principles&mdash;safety, choice, trustworthiness, collaboration, and empowerment&mdash;set the bar for every surface: controls stay visible, sharing stays explicit, and documentation must not compete with care.
-            </p>
-            <p class="prose-body mt-4">
-              Those insights drove the design decisions carried forward: mood-first check-ins with discrete choices and a persistent Private signal; private-by-default privacy with granular, reversible share per audience; and a live PRACTICE fidelity checklist with collapsed notes plus a clinician dashboard that surfaces fidelity, PROM completion, and actionable alerts. This phase produced two low-fidelity wireframes (one youth, one clinician), four high-fidelity mockups (two youth mobile, two clinician desktop), and two interactive prototypes&mdash;one linking the youth mobile screens, and one linking the clinician flow.
-            </p>
+            <div class="pc-design-framing">
+              <p class="pc-design-framing-lede">
+                Research surfaced three pressure points. Trauma-informed principles&mdash;safety, choice, trustworthiness, collaboration, empowerment&mdash;set the bar: visible controls, explicit sharing, and documentation that does not compete with care.
+              </p>
 
-            <h3 class="case-subtitle mt-10">Low-fidelity wireframes</h3>
+              <div class="pc-design-framing-board">
+                <div class="pc-design-framing-split">
+                  <div class="pc-design-framing-col">
+                    <h3 class="pc-design-framing-heading">Pressure points</h3>
+                    <ol class="pc-design-framing-list">
+                      <li class="pc-design-framing-item">Youth anxiety and over-disclosure risk at first use</li>
+                      <li class="pc-design-framing-item">Privacy risk when caregiver visibility is the default</li>
+                      <li class="pc-design-framing-item">Clinicians deferring fidelity paperwork until after session, then reconstructing adherence from memory</li>
+                    </ol>
+                  </div>
+
+                  <div class="pc-design-framing-col">
+                    <h3 class="pc-design-framing-heading">Carried into design</h3>
+                    <ol class="pc-design-framing-list">
+                      <li class="pc-design-framing-item">Mood-first check-ins with discrete choices and a persistent Private signal</li>
+                      <li class="pc-design-framing-item">Private-by-default privacy with granular, reversible share per audience</li>
+                      <li class="pc-design-framing-item">Live PRACTICE fidelity checklist with collapsed notes, plus a clinician dashboard for fidelity, PROM completion, and alerts</li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="pc-design-framing-outputs" aria-label="Phase outputs">
+                  <p class="pc-design-framing-outputs-label">Phase outputs</p>
+                  <ul class="pc-design-framing-output-grid">
+                    <li>
+                      <a href="#wireframes" class="pc-design-framing-output-item">
+                        <p class="pc-design-framing-output-count" aria-hidden="true">2</p>
+                        <div class="pc-design-framing-output-copy">
+                          <p class="pc-design-framing-output-title">Wireframes</p>
+                          <p class="pc-design-framing-output-desc">Youth and clinician low-fi screens</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#mockups" class="pc-design-framing-output-item">
+                        <p class="pc-design-framing-output-count" aria-hidden="true">4</p>
+                        <div class="pc-design-framing-output-copy">
+                          <p class="pc-design-framing-output-title">Mockups</p>
+                          <p class="pc-design-framing-output-desc">Two youth mobile and two clinician desktop hi-fi</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#prototypes" class="pc-design-framing-output-item">
+                        <p class="pc-design-framing-output-count" aria-hidden="true">2</p>
+                        <div class="pc-design-framing-output-copy">
+                          <p class="pc-design-framing-output-title">Prototypes</p>
+                          <p class="pc-design-framing-output-desc">Interactive Figma walkthroughs for each flow</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            <h3 id="wireframes" class="case-subtitle mt-10">Low-fidelity wireframes</h3>
             <p class="prose-body mt-3">
-              Two annotated wireframes tested structure before visual polish: youth check-in and the clinician in-session PRACTICE fidelity checklist.
+              Two annotated wireframes explored structure before visual polish&mdash;youth check-in and the clinician in-session PRACTICE fidelity checklist&mdash;with decisions checked against the research cited above.
             </p>
             <p class="diagram-hint diagram-hint-desktop mt-4 font-sans text-sm text-white/45">Click either wireframe to enlarge, zoom, and pan&mdash;annotations stay sharp.</p>
 
@@ -1202,7 +1331,7 @@
                 <button
                   type="button"
                   class="pc-lofi-hit"
-                  data-lightbox-src="./screens/lofi-youth-checkin.svg"
+                  data-lightbox-src="./screens/lofi-youth-checkin.svg?v=privacy2"
                   data-lightbox-title="Youth check-in — Low-fidelity wireframe"
                   data-lightbox-caption="Annotated structure exploration · Youth mobile"
                   data-lightbox-diagram
@@ -1211,7 +1340,7 @@
                 >
                   <img
                     class="pc-lofi-img"
-                    src="./screens/lofi-youth-checkin.svg"
+                    src="./screens/lofi-youth-checkin.svg?v=privacy2"
                     alt="Low-fidelity youth check-in wireframe with annotations for privacy cue, mood-first sequencing, discrete responses, and prominent privacy messaging"
                     width="760"
                     height="672"
@@ -1248,12 +1377,12 @@
                 </button>
                 <figcaption>
                   <p class="pc-screen-caption-title">Clinician in-session fidelity checklist</p>
-                  <p class="pc-screen-caption-body">Tested a live flat PRACTICE list against collapsible sections, and expandable notes against a modal&mdash;favoring glanceable progress with minimal mid-session context switching.</p>
+                  <p class="pc-screen-caption-body">Compared a live flat PRACTICE list against collapsible sections, and expandable notes against a modal&mdash;favoring glanceable progress with minimal mid-session context switching, aligned with community fidelity patterns (Webb et al., 2014).</p>
                 </figcaption>
               </figure>
             </div>
 
-            <h3 class="case-subtitle mt-12">High-fidelity screens</h3>
+            <h3 id="mockups" class="case-subtitle mt-12">High-fidelity screens</h3>
             <p class="prose-body mt-3">
               Four mockups: youth check-in and privacy controls (mobile), plus the clinician PRACTICE fidelity checklist and dashboard (desktop).
             </p>
@@ -1269,13 +1398,13 @@
               </div>
               <div class="pc-hifi-grid" aria-label="Youth high-fidelity screens">
               <figure class="pc-hifi-screen">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-check-in.svg?v=hifi4" data-lightbox-title="Youth check-in" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth check-in screen to zoom and pan">
+                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi5" data-lightbox-title="Youth check-in" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth check-in screen to zoom and pan">
                   <img
                     class="pc-hifi-screen-img"
-                    src="./screens/youth-check-in.svg?v=hifi4"
+                    src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi5"
                     alt="Youth app check-in screen with mood, school safety, and sleep prompts"
                     width="390"
-                    height="844"
+                    height="874"
                     loading="lazy"
                     decoding="async"
                   >
@@ -1295,13 +1424,13 @@
                 </figcaption>
               </figure>
               <figure class="pc-hifi-screen">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/youth-privacy-controls.svg?v=hifi2" data-lightbox-title="Youth privacy controls" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth privacy controls screen to zoom and pan">
+                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/hifi-privacy-sharing-controls.svg?v=hifi5" data-lightbox-title="Youth privacy controls" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth privacy controls screen to zoom and pan">
                   <img
                     class="pc-hifi-screen-img"
-                    src="./screens/youth-privacy-controls.svg?v=hifi2"
+                    src="../../assets/images/path-compass/hifi-privacy-sharing-controls.svg?v=hifi5"
                     alt="Youth privacy controls for sharing check-in and journal content with caregiver or clinician"
                     width="390"
-                    height="864"
+                    height="882"
                     loading="lazy"
                     decoding="async"
                   >
@@ -1332,13 +1461,13 @@
                 </div>
               </div>
             <figure class="pc-hifi-screen pc-hifi-screen--wide" aria-label="Clinician high-fidelity screen">
-              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-fidelity-checklist.svg?v=icons4" data-lightbox-title="Clinician PRACTICE fidelity checklist" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician PRACTICE fidelity checklist to zoom and pan">
+              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/clinician-fidelity-checklist.svg?v=hifi6" data-lightbox-title="Clinician PRACTICE fidelity checklist" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician PRACTICE fidelity checklist to zoom and pan">
                 <img
                   class="pc-hifi-screen-img"
-                  src="./screens/clinician-fidelity-checklist.svg?v=icons4"
+                  src="../../assets/images/path-compass/clinician-fidelity-checklist.svg?v=hifi6"
                   alt="Clinician PRACTICE fidelity checklist with live session timer, shared youth check-in signals, and markable TF-CBT components"
                   width="1440"
-                  height="1355"
+                  height="1971"
                   loading="lazy"
                   decoding="async"
                 >
@@ -1359,10 +1488,10 @@
             </figure>
 
             <figure class="pc-hifi-screen pc-hifi-screen--wide" aria-label="Clinician dashboard high-fidelity screen">
-              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="./screens/clinician-dashboard-updated.svg?v=icons4" data-lightbox-title="Clinician dashboard" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician dashboard to zoom and pan">
+              <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi5" data-lightbox-title="Clinician dashboard" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician dashboard to zoom and pan">
                 <img
                   class="pc-hifi-screen-img"
-                  src="./screens/clinician-dashboard-updated.svg?v=icons4"
+                  src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi5"
                   alt="Clinician dashboard with fidelity average, PROM completion, today's schedule, and priority alerts"
                   width="1440"
                   height="1144"
@@ -1386,7 +1515,7 @@
             </figure>
             </div>
 
-            <h3 class="case-subtitle mt-12">Interactive prototypes</h3>
+            <h3 id="prototypes" class="case-subtitle mt-12">Interactive prototypes</h3>
             <p class="prose-body mt-3">
               Two Figma prototypes: one links the youth mobile screens; the other links the clinician desktop flow.
             </p>
@@ -1407,10 +1536,10 @@
                     rel="noopener noreferrer"
                     aria-label="Open youth app prototype in Figma">
                     <img
-                      src="./screens/youth-check-in.svg?v=hifi4"
+                      src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi5"
                       alt="Youth check-in screen preview"
                       width="390"
-                      height="844"
+                      height="874"
                       loading="lazy"
                       decoding="async"
                     >
@@ -1441,7 +1570,7 @@
                     rel="noopener noreferrer"
                     aria-label="Open clinician dashboard prototype in Figma">
                     <img
-                      src="./screens/clinician-dashboard-updated.svg?v=icons4"
+                      src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi5"
                       alt="Clinician dashboard screen preview"
                       width="1440"
                       height="1144"
@@ -1482,13 +1611,13 @@
                   </li>
                   <li class="tt-proto-refinement-item">
                     <p class="tt-proto-refinement-heuristic">Aesthetic and minimalist design · Recognition rather than recall</p>
-                    <p class="tt-proto-refinement-decision">Condensed measure prompts to single-line labels</p>
+                    <p class="tt-proto-refinement-decision">Condensed measure prompts to a two-word maximum</p>
                     <p class="tt-proto-refinement-rationale">To reduce visual crowding and make each screen easier to scan on a small display.</p>
                   </li>
                   <li class="tt-proto-refinement-item">
                     <p class="tt-proto-refinement-heuristic">Visibility of system status · Error prevention</p>
-                    <p class="tt-proto-refinement-decision">Connected every bottom-nav tab</p>
-                    <p class="tt-proto-refinement-rationale">So the youth prototype reads as one coherent walkthrough, not isolated screens.</p>
+                    <p class="tt-proto-refinement-decision">Connected three of four bottom-nav tabs</p>
+                    <p class="tt-proto-refinement-rationale">Home, Check-in, and My Space are linked so the youth prototype reads as one coherent walkthrough, not isolated screens.</p>
                   </li>
                 </ul>
               </article>
@@ -1512,6 +1641,7 @@
                     <p class="tt-proto-refinement-rationale">So accidental closure is less likely and clinicians see a summary of what will be recorded before the session closes.</p>
                   </li>
                   <li class="tt-proto-refinement-item">
+                    <p class="tt-proto-refinement-heuristic">Flexibility and efficiency of use · Visibility of system status</p>
                     <p class="tt-proto-refinement-decision">Linked the fidelity checklist to the dashboard</p>
                     <p class="tt-proto-refinement-rationale">So reviewers can follow marking in session through to caseload context in one end-to-end flow.</p>
                   </li>
@@ -1526,7 +1656,7 @@
           <section id="validation" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">05</span> Evaluation &amp; Validation</h2>
             <p class="prose-body">
-              This section documents how I evaluated the Path Compass prototypes and what I learned&mdash;the method, scope, and findings. Because this is a conceptual case study grounded in an existing evaluation plan, validation centered on expert heuristic review rather than primary research with clinic participants.
+              This section documents how I evaluated the Path Compass prototypes and what I learned&mdash;the method, scope, and findings. Because this is a conceptual case study grounded in an existing evaluation plan, validation centered on heuristic evaluation rather than primary research with clinic participants.
             </p>
 
             <h3 class="case-subtitle mt-10">Evaluation method</h3>
@@ -1704,10 +1834,16 @@
 
           <section id="references" class="case-section">
             <h2 class="case-section-title">References</h2>
-            <p class="prose-body">
-              Selected sources cited in this case study, formatted in APA 7th edition. Persona expandable notes retain the same bibliography for local reading.
-            </p>
-            <ol class="tt-references" aria-label="APA references">
+            <details class="tt-references-collapse">
+              <summary class="tt-references-summary">
+                <span class="tt-references-summary-label">View bibliography</span>
+                <span class="tt-references-summary-meta">9 sources &middot; APA 7th edition</span>
+              </summary>
+              <div class="tt-references-collapse-body">
+                <p class="prose-body">
+                  Selected sources cited in this case study, formatted in APA 7th edition. Persona expandable notes retain the same bibliography for local reading.
+                </p>
+                <ol class="tt-references" aria-label="APA references">
               <li>Abdulai, A.-F., Naghdali, H., Tekie Ghirmay, E., Adam, F., &amp; Bawafaa, E. (2023). Trauma-informed care in digital health technologies: Protocol for a scoping review. <em>JMIR Research Protocols, 12</em>, e46842. <a href="https://doi.org/10.2196/46842" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/46842</a></li>
               <li>Birkeland, M. S., Holt, T., Ormhaug, S. M., &amp; Jensen, T. K. (2020). Perceived social support and posttraumatic stress symptoms in children and youth in therapy: A parallel process latent growth curve model. <em>Behaviour Research and Therapy, 132</em>, 103655. <a href="https://doi.org/10.1016/j.brat.2020.103655" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.brat.2020.103655</a></li>
               <li>Broadhead, W. E., Gehlbach, S. H., De Gruy, F. V., &amp; Kaplan, B. H. (1988). The Duke-UNC Functional Social Support Questionnaire: Measurement of social support in family medicine patients. <em>Medical Care, 26</em>(7), 709&ndash;723. <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/00005650-198807000-00006</a></li>
@@ -1717,7 +1853,9 @@
               <li>Goodman, R., Meltzer, H., &amp; Bailey, V. (1998). The Strengths and Difficulties Questionnaire: A pilot study on the validity of the self-report version. <em>European Child &amp; Adolescent Psychiatry, 7</em>(3), 125&ndash;130. <a href="https://doi.org/10.1007/s007870050057" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s007870050057</a></li>
               <li>Rudd, B. N., Last, B. S., Gregor, C., Jackson, K., Berkowitz, S., Zinny, A., Kratz, H. E., Cliggitt, L., Adams, D. R., Walsh, L. M., &amp; Beidas, R. S. (2019). Benchmarking treatment effectiveness of community-delivered trauma-focused cognitive behavioral therapy. <em>American Journal of Community Psychology, 64</em>(3-4), 438&ndash;450. <a href="https://doi.org/10.1002/ajcp.12370" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/ajcp.12370</a></li>
               <li>Webb, C., Hayes, A. M., Grasso, D., Laurenceau, J.-P., &amp; Deblinger, E. (2014). Trauma-focused cognitive behavioral therapy for youth: Effectiveness in a community setting. <em>Psychological Trauma: Theory, Research, Practice, and Policy, 6</em>(5), 555&ndash;562. <a href="https://doi.org/10.1037/a0037364" target="_blank" rel="noopener noreferrer">https://doi.org/10.1037/a0037364</a></li>
-            </ol>
+                </ol>
+              </div>
+            </details>
           </section>
 
         </div>
