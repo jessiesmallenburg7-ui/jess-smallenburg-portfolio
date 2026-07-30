@@ -29,7 +29,10 @@
     if (!stage || !content) return null;
 
     const captureModifierZoom = Boolean(options && options.captureModifierZoom);
-    const isSvg = content.tagName.toLowerCase() === 'svg';
+    const isSvg =
+      content.tagName.toLowerCase() === 'svg' ||
+      (content.tagName.toLowerCase() === 'img' &&
+        /\.svg(\?|#|$)/i.test(content.currentSrc || content.getAttribute('src') || ''));
     const optionMaxScale =
       options && typeof options.maxScale === 'number' && options.maxScale > 0
         ? options.maxScale
@@ -44,8 +47,6 @@
     let panScrollTop = 0;
     let pinchStartDistance = 0;
     let pinchStartScale = 1;
-    let pinchScrollLeft = 0;
-    let pinchScrollTop = 0;
     let lastTap = 0;
     let moved = false;
 
@@ -110,6 +111,13 @@
       return content.offsetHeight || baseWidth * scale * contentRatio();
     }
 
+    function clampScroll() {
+      const maxLeft = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
+      const maxTop = Math.max(0, viewport.scrollHeight - viewport.clientHeight);
+      viewport.scrollLeft = clamp(viewport.scrollLeft, 0, maxLeft);
+      viewport.scrollTop = clamp(viewport.scrollTop, 0, maxTop);
+    }
+
     function applyScale(keepPoint) {
       if (!baseWidth) measureBaseWidth();
 
@@ -123,15 +131,28 @@
       content.style.maxHeight = 'none';
       content.style.width = `${nextWidth}px`;
       content.style.height = 'auto';
+      content.style.flexShrink = '0';
+      content.style.minWidth = `${nextWidth}px`;
+      if (stage) {
+        stage.style.width = scale > 1.01 ? 'max-content' : '';
+        stage.style.minWidth = scale > 1.01 ? '100%' : '';
+        stage.style.transform = '';
+      }
 
       viewport.classList.toggle('is-zoomed', scale > 1.01);
       updateCursor();
 
-      if (!keepPoint || scale <= 1) {
-        if (scale <= 1) {
-          viewport.scrollLeft = 0;
-          viewport.scrollTop = 0;
-        }
+      if (scale <= 1.01) {
+        viewport.scrollLeft = 0;
+        viewport.scrollTop = 0;
+        return;
+      }
+
+      // Reflow so scrollWidth/scrollHeight reflect the zoomed layout (scrollbars + drag pan).
+      void viewport.offsetWidth;
+
+      if (!keepPoint) {
+        clampScroll();
         return;
       }
 
@@ -144,6 +165,7 @@
 
       viewport.scrollLeft = (viewport.scrollLeft + anchorX) * widthRatio - anchorX;
       viewport.scrollTop = (viewport.scrollTop + anchorY) * heightRatio - anchorY;
+      clampScroll();
     }
 
     function zoomTo(newScale, clientX, clientY) {
@@ -170,7 +192,13 @@
       content.style.maxWidth = '';
       content.style.maxHeight = '';
       content.style.height = '';
-      stage.style.transform = '';
+      content.style.flexShrink = '';
+      content.style.minWidth = '';
+      if (stage) {
+        stage.style.width = '';
+        stage.style.minWidth = '';
+        stage.style.transform = '';
+      }
       viewport.scrollLeft = 0;
       viewport.scrollTop = 0;
       viewport.classList.remove('is-zoomed', 'is-dragging');
@@ -203,33 +231,109 @@
       }
     }
 
-    function onMouseDown(event) {
-      if (event.button !== 0 || scale <= 1) return;
+    function bindPanTracking() {
+      if (window.PointerEvent) {
+        window.addEventListener('pointermove', onPointerMove, { passive: false });
+        window.addEventListener('pointerup', onPointerUp, { passive: false });
+        window.addEventListener('pointercancel', onPointerCancel, { passive: false });
+      } else {
+        window.addEventListener('mousemove', onMouseMove, { passive: false });
+        window.addEventListener('mouseup', onMouseUp, { passive: false });
+      }
+    }
+
+    function unbindPanTracking() {
+      if (window.PointerEvent) {
+        window.removeEventListener('pointermove', onPointerMove);
+        window.removeEventListener('pointerup', onPointerUp);
+        window.removeEventListener('pointercancel', onPointerCancel);
+      } else {
+        window.removeEventListener('mousemove', onMouseMove);
+        window.removeEventListener('mouseup', onMouseUp);
+      }
+    }
+
+    function startPan(clientX, clientY, pointerId) {
       isPanning = true;
       moved = false;
-      panStartX = event.clientX;
-      panStartY = event.clientY;
+      panStartX = clientX;
+      panStartY = clientY;
       panScrollLeft = viewport.scrollLeft;
       panScrollTop = viewport.scrollTop;
       viewport.classList.add('is-dragging');
       updateCursor();
+      bindPanTracking();
+      if (typeof pointerId === 'number' && viewport.setPointerCapture) {
+        try {
+          viewport.setPointerCapture(pointerId);
+        } catch (_) {
+          /* ignore */
+        }
+      }
+    }
+
+    function movePan(clientX, clientY) {
+      if (!isPanning) return;
+      const dx = clientX - panStartX;
+      const dy = clientY - panStartY;
+      if (Math.abs(dx) > 2 || Math.abs(dy) > 2) moved = true;
+      viewport.scrollLeft = panScrollLeft - dx;
+      viewport.scrollTop = panScrollTop - dy;
+      clampScroll();
+    }
+
+    function endPan(pointerId) {
+      if (!isPanning) return;
+      isPanning = false;
+      viewport.classList.remove('is-dragging');
+      updateCursor();
+      unbindPanTracking();
+      if (typeof pointerId === 'number' && viewport.releasePointerCapture) {
+        try {
+          if (viewport.hasPointerCapture?.(pointerId)) {
+            viewport.releasePointerCapture(pointerId);
+          }
+        } catch (_) {
+          /* ignore */
+        }
+      }
+    }
+
+    function onPointerDown(event) {
+      if (event.pointerType === 'mouse' && event.button !== 0) return;
+      if (scale <= 1.01) return;
+      startPan(event.clientX, event.clientY, event.pointerId);
+      event.preventDefault();
+    }
+
+    function onPointerMove(event) {
+      if (!isPanning) return;
+      movePan(event.clientX, event.clientY);
+      event.preventDefault();
+    }
+
+    function onPointerUp(event) {
+      endPan(event.pointerId);
+    }
+
+    function onPointerCancel(event) {
+      endPan(event.pointerId);
+    }
+
+    function onMouseDown(event) {
+      if (event.button !== 0 || scale <= 1.01) return;
+      startPan(event.clientX, event.clientY, null);
       event.preventDefault();
     }
 
     function onMouseMove(event) {
       if (!isPanning) return;
-      const dx = event.clientX - panStartX;
-      const dy = event.clientY - panStartY;
-      if (Math.abs(dx) > 2 || Math.abs(dy) > 2) moved = true;
-      viewport.scrollLeft = panScrollLeft - dx;
-      viewport.scrollTop = panScrollTop - dy;
+      movePan(event.clientX, event.clientY);
+      event.preventDefault();
     }
 
     function onMouseUp() {
-      if (!isPanning) return;
-      isPanning = false;
-      viewport.classList.remove('is-dragging');
-      updateCursor();
+      endPan(null);
     }
 
     function onDblClick(event) {
@@ -243,19 +347,18 @@
     function onTouchStart(event) {
       moved = false;
 
-      if (event.touches.length === 1 && scale > 1) {
+      if (event.touches.length === 1 && scale > 1.01) {
         isPanning = true;
         panStartX = event.touches[0].clientX;
         panStartY = event.touches[0].clientY;
         panScrollLeft = viewport.scrollLeft;
         panScrollTop = viewport.scrollTop;
         viewport.classList.add('is-dragging');
+        event.preventDefault();
       } else if (event.touches.length === 2) {
         isPanning = false;
         pinchStartDistance = getDistance(event.touches[0], event.touches[1]);
         pinchStartScale = scale;
-        pinchScrollLeft = viewport.scrollLeft;
-        pinchScrollTop = viewport.scrollTop;
         event.preventDefault();
       }
     }
@@ -268,11 +371,7 @@
         moved = true;
         event.preventDefault();
       } else if (isPanning && event.touches.length === 1) {
-        const dx = event.touches[0].clientX - panStartX;
-        const dy = event.touches[0].clientY - panStartY;
-        if (Math.abs(dx) > 2 || Math.abs(dy) > 2) moved = true;
-        viewport.scrollLeft = panScrollLeft - dx;
-        viewport.scrollTop = panScrollTop - dy;
+        movePan(event.touches[0].clientX, event.touches[0].clientY);
         event.preventDefault();
       }
     }
@@ -319,6 +418,11 @@
     function initWhenReady() {
       const start = () => {
         measureBaseWidth();
+        if (content.tagName.toLowerCase() === 'img') {
+          content.draggable = false;
+        }
+        content.style.webkitUserSelect = 'none';
+        content.style.userSelect = 'none';
       };
       if (isSvg) {
         // Inline SVG is ready immediately; fonts may still settle.
@@ -343,9 +447,12 @@
     }
 
     viewport.addEventListener('wheel', onWheel, { passive: false });
-    viewport.addEventListener('mousedown', onMouseDown);
-    window.addEventListener('mousemove', onMouseMove);
-    window.addEventListener('mouseup', onMouseUp);
+    if (window.PointerEvent) {
+      // Capture so drag starts even when the pointer lands on SVG text/paths inside the mockup.
+      viewport.addEventListener('pointerdown', onPointerDown, { capture: true });
+    } else {
+      viewport.addEventListener('mousedown', onMouseDown, { capture: true });
+    }
     viewport.addEventListener('dblclick', onDblClick);
     if (captureModifierZoom) {
       window.addEventListener('keydown', onKeyDown);
@@ -365,10 +472,14 @@
       },
       destroy() {
         reset();
+        endPan(null);
+        unbindPanTracking();
         viewport.removeEventListener('wheel', onWheel);
-        viewport.removeEventListener('mousedown', onMouseDown);
-        window.removeEventListener('mousemove', onMouseMove);
-        window.removeEventListener('mouseup', onMouseUp);
+        if (window.PointerEvent) {
+          viewport.removeEventListener('pointerdown', onPointerDown, { capture: true });
+        } else {
+          viewport.removeEventListener('mousedown', onMouseDown, { capture: true });
+        }
         viewport.removeEventListener('dblclick', onDblClick);
         if (captureModifierZoom) {
           window.removeEventListener('keydown', onKeyDown);

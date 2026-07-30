@@ -710,6 +710,20 @@
     @apply overflow-auto;
   }
 
+  /* Flex stage was shrinking zoomed SVGs back to viewport width — allow true layout growth */
+  .diagram-zoom-viewport.is-zoomed .diagram-zoom-stage {
+    display: block;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  .diagram-zoom-viewport.is-zoomed .diagram-zoom-content,
+  .diagram-zoom-viewport.is-zoomed svg.user-flow-svg,
+  .diagram-zoom-viewport.is-zoomed img {
+    flex-shrink: 0;
+    max-width: none;
+  }
+
   .diagram-expand-btn {
     @apply absolute right-3 top-3 z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full
            border border-[#E5E3DA] bg-white/95 text-[#1F1E1D] shadow-md transition-colors
@@ -1650,6 +1664,13 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: geometricPrecision;
     shape-rendering: geometricPrecision;
+  }
+
+  .wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport.is-zoomed .user-flow-svg,
+  .wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport.is-zoomed img {
+    width: auto;
+    max-width: none;
+    flex-shrink: 0;
   }
 
   .wireframe-lightbox-body--diagram-zoom img[hidden],

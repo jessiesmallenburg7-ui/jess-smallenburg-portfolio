@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="12" x2="52" y1="8" y2="56" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#67E8F9"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs><path stroke="url(#g)" stroke-linejoin="round" stroke-width="2" d="M18 16h28v36H18z"/><path stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 26l3 3 7-7M24 36l3 3 7-7M24 46l3 3 7-7"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-fidelity" x1="14" x2="50" y1="10" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+  <rect x="17" y="14" width="30" height="38" rx="4" stroke="url(#g-fidelity)" stroke-width="1.75"/>
+  <path stroke="url(#g-fidelity)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M23 24h18M23 32h18M23 40h12"/>
+  <path stroke="url(#g-fidelity)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M27 28l2.5 2.5L37 23M27 36l2.5 2.5L37 31"/>
+</svg>

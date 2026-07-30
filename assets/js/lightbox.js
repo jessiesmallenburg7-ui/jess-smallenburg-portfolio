@@ -290,13 +290,13 @@
     }
     if (isTouchDevice()) {
       caption.textContent = base
-        ? `${base} · Pinch to zoom · drag to pan · tap Close to exit`
-        : 'Pinch to zoom · drag to pan · tap Close to exit';
+        ? `${base} · Pinch to zoom · tap Close to exit`
+        : 'Pinch to zoom · tap Close to exit';
       return;
     }
     caption.textContent = base
-      ? `${base} · Ctrl + / − zooms the mockup (not the page) · drag to pan · Esc to close`
-      : 'Ctrl + / − zooms the mockup (not the page) · drag to pan · Esc to close';
+      ? `${base} · Ctrl + / − zooms the mockup · Esc to close`
+      : 'Ctrl + / − zooms the mockup · Esc to close';
   }
 
   function pushLightboxHistory() {

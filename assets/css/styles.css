@@ -2267,11 +2267,35 @@ body {
 
 .diagram-zoom-viewport.is-dragging {
   cursor: grabbing;
-  overflow: hidden;
+  overflow: auto;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .diagram-zoom-viewport.is-zoomed {
   overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: pan-x pan-y;
+}
+
+/* Flex stage was shrinking zoomed SVGs back to viewport width */
+.diagram-zoom-viewport.is-zoomed .diagram-zoom-stage {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  height: max-content;
+}
+
+.diagram-zoom-viewport.is-zoomed .diagram-zoom-content,
+.diagram-zoom-viewport.is-zoomed svg.user-flow-svg,
+.diagram-zoom-viewport.is-zoomed img {
+  flex-shrink: 0;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-user-drag: none;
 }
 
 .diagram-expand-btn {
@@ -4314,12 +4338,30 @@ html.is-lightbox-open .site-header,
   background-color: rgb(245 245 240 / var(--tw-bg-opacity, 1));
 }
 
+/* Scrollbars + drag pan share one scroll container when zoomed */
+.wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport--lightbox.is-zoomed,
+.wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport--lightbox.is-dragging {
+  overflow: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-x pan-y;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(61, 107, 102, 0.45) rgba(31, 41, 55, 0.08);
+}
+
 .wireframe-lightbox-body--diagram-zoom .diagram-zoom-stage {
   min-height: 100%;
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+.wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport.is-zoomed .diagram-zoom-stage {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  height: max-content;
+  transform: none;
 }
 
 .wireframe-lightbox-body--diagram-zoom .user-flow-svg {
@@ -4366,6 +4408,14 @@ html.is-lightbox-open .site-header,
   background: transparent;
   border: 0;
   box-shadow: none;
+}
+
+.wireframe-lightbox-body--diagram-zoom .diagram-zoom-viewport.is-zoomed .user-flow-svg {
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Placeholder <img> must stay hidden while vector SVG is mounted.
