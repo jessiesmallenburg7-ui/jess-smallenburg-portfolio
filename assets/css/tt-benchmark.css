@@ -941,8 +941,8 @@
 .tt-overview-kicker {
   margin: 0 0 0.55rem;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: var(--pc-text-secondary);
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(95, 211, 224, 0.9);
@@ -3022,7 +3022,7 @@
 .pc-key-screens-group-accent {
   flex-shrink: 0;
   width: 3px;
-  height: 1.25rem;
+  height: 1.4rem;
   border-radius: 999px;
   background: linear-gradient(180deg, rgba(103, 232, 249, 0.95), rgba(103, 232, 249, 0.45));
 }
@@ -3030,7 +3030,7 @@
 .pc-key-screens-group-title {
   margin: 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.35rem, 2.2vw, 1.6rem);
+  font-size: clamp(1.5rem, 2.4vw, 1.8rem);
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -3054,7 +3054,11 @@
 }
 
 .pc-key-screen figcaption {
-  margin-top: 1.125rem;
+  margin-top: 1.75rem;
+}
+
+.pc-key-screen .pc-screen-notes {
+  margin-top: 1rem;
 }
 
 .pc-key-screen .pc-screen-note:last-child {
@@ -3418,11 +3422,16 @@
 
 .pc-design-xref-lede {
   margin: 0.75rem 0 0;
-  max-width: 72ch;
   font-family: "Lato", sans-serif;
   font-size: var(--pc-text-secondary);
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.72);
+}
+
+@media (min-width: 960px) {
+  .pc-design-xref-lede {
+    white-space: nowrap;
+  }
 }
 
 .pc-design-xref-screens {
@@ -3496,7 +3505,7 @@
 .pc-constraints-title {
   margin: 0 0 0.65rem;
   font-family: "Lato", sans-serif;
-  font-size: 0.95rem;
+  font-size: var(--pc-text-body);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: rgba(212, 168, 96, 0.95);
@@ -3560,20 +3569,38 @@
 
 .pc-eval-brief {
   margin: 0;
-  padding-left: 1.2rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
   font-family: "Lato", sans-serif;
   font-size: var(--pc-text-secondary, 1rem);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.pc-eval-brief li {
+  padding: 1rem 1.15rem 1.05rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(95, 211, 224, 0.16);
+  border-left: 3px solid rgba(95, 211, 224, 0.55);
+  background:
+    linear-gradient(90deg, rgba(95, 211, 224, 0.07), rgba(95, 211, 224, 0.015) 55%, transparent),
+    rgba(255, 255, 255, 0.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 .pc-eval-brief li + li {
-  margin-top: 0.55rem;
+  margin-top: 0;
 }
 
 .pc-eval-brief strong {
-  color: rgba(95, 211, 224, 0.95);
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: var(--pc-text-label);
   font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(95, 211, 224, 0.95);
 }
 
 .tt-practice-grid--compact {
