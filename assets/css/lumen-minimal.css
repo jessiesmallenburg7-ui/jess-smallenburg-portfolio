@@ -1492,3 +1492,71 @@ html[data-theme="light"] .lumen-version-banner-text {
     padding: 20px;
   }
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .lm-case {
+    font-size: 18px;
+  }
+
+  .case-version-banner-text,
+  .case-version-banner-link,
+  .lumen-version-banner-text,
+  .lumen-version-banner-link {
+    font-size: 16px;
+  }
+
+  .lm-case .eyebrow,
+  .lm-case .hmw .k,
+  .lm-case .card .tagline,
+  .lm-case .fig .who,
+  .lm-case .ev .cnt,
+  .lm-case .stat .src,
+  .lm-case .phase .n,
+  .lm-case .ba h5,
+  .lm-case .prio,
+  .lm-case .pc h5,
+  .lm-case .refl .n {
+    font-size: 15px;
+  }
+
+  .lm-case .tagpill,
+  .lm-case .pill {
+    font-size: 14px;
+  }
+
+  .lm-case .lede {
+    font-size: 20px;
+  }
+
+  .lm-case .meta-row,
+  .lm-case .btn,
+  .lm-case .stat .lbl,
+  .lm-case .fig .ttl,
+  .lm-case .note,
+  .lm-case .pc .role {
+    font-size: 16px;
+  }
+
+  .lm-case .integrity,
+  .lm-case .hmw-why div,
+  .lm-case .ev p,
+  .lm-case .card p,
+  .lm-case .pc blockquote,
+  .lm-case .pc p,
+  .lm-case .phase .d,
+  .lm-case .dec p,
+  .lm-case .ba p,
+  .lm-case .refl p,
+  .lm-case .sevrow,
+  .lm-lb-body p,
+  .lm-lb-body li,
+  .lm-lb-body .resolve {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .lm-case .ev .code {
+    font-size: 14px;
+  }
+}

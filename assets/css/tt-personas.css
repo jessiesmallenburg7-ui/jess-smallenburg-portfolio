@@ -479,3 +479,37 @@
 #panel-denise .avatar {
   background: var(--tt-sage);
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .tt-personas .tab {
+    font-size: 15px;
+  }
+
+  .tt-personas .tab-role {
+    font-size: 14px;
+  }
+
+  .tt-personas .persona-role,
+  .tt-personas .meta-chip,
+  .tt-personas .chip,
+  .tt-personas .card h3,
+  .tt-personas details.sources summary {
+    font-size: 15px;
+  }
+
+  .tt-personas .tic-strip-label {
+    font-size: 14px;
+  }
+
+  .tt-personas .card p,
+  .tt-personas .card li,
+  .tt-personas .impl-list {
+    font-size: 19px;
+  }
+
+  .tt-personas .source-item,
+  .tt-personas-note {
+    font-size: 16px;
+  }
+}

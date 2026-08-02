@@ -246,3 +246,32 @@ html[data-theme="light"] .case-version-banner-text {
   color: #4e3475;
   text-decoration: underline;
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .tt-journeys .control-label {
+    font-size: 14px;
+  }
+
+  .tt-journeys .tab,
+  .tt-journeys .tablist--state .tab {
+    font-size: 15px;
+  }
+
+  .tt-journeys .tab .tab-role {
+    font-size: 14px;
+  }
+
+  .tt-journeys-hint {
+    font-size: 16px;
+  }
+
+  .tt-journeys-meta {
+    font-size: 18px;
+  }
+
+  .case-version-banner-text,
+  .case-version-banner-link {
+    font-size: 16px;
+  }
+}

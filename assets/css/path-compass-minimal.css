@@ -499,3 +499,72 @@ html[data-theme="light"] .case-version-banner-text {
   transition: transform 0.12s ease;
   max-width: 100%;
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .pc-case {
+    font-size: 18px;
+  }
+
+  .case-version-banner-text,
+  .case-version-banner-link {
+    font-size: 16px;
+  }
+
+  .pc-case .eyebrow,
+  .pc-case .hmw .k,
+  .pc-case .card .tagline,
+  .pc-case .fig .who,
+  .pc-case .ev .cnt,
+  .pc-case .stat .src,
+  .pc-case .tag,
+  .pc-case .ba h5,
+  .pc-case .pc-persona h5 {
+    font-size: 15px;
+  }
+
+  .pc-case .tagpill,
+  .pc-case .pill,
+  .pc-case table.mtable th {
+    font-size: 14px;
+  }
+
+  .pc-case .lede {
+    font-size: 20px;
+  }
+
+  .pc-case .case-hero-copy .meta-row,
+  .pc-case .meta-row,
+  .pc-case .btn,
+  .pc-case .stat .lbl,
+  .pc-case .fig .ttl,
+  .pc-case .note,
+  .pc-case .pc-lb-head h4,
+  .pc-case .pc-lb-body h4 {
+    font-size: 16px;
+  }
+
+  .pc-case .integrity,
+  .pc-case .case-hero-copy .integrity,
+  .pc-case .hmw-why div,
+  .pc-case .rstep .d,
+  .pc-case .ev p,
+  .pc-case .ev h4,
+  .pc-case .pl,
+  .pc-case .pc-persona p,
+  .pc-case .pc-persona .implication,
+  .pc-case .pc-persona .role,
+  .pc-case .card p,
+  .pc-case .ba p,
+  .pc-case .sevitem,
+  .pc-case .mkey,
+  .pc-case table.mtable,
+  .pc-case .pc-lb-body p {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .pc-case .ev .code {
+    font-size: 14px;
+  }
+}

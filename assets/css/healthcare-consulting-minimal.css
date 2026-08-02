@@ -357,3 +357,63 @@ html[data-theme="light"] .case-version-banner-text {
   transition: transform 0.12s ease;
   max-width: 100%;
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .hc-case {
+    font-size: 18px;
+  }
+
+  .case-version-banner-text,
+  .case-version-banner-link {
+    font-size: 16px;
+  }
+
+  .hc-case .eyebrow,
+  .hc-case .card .tagline,
+  .hc-case .srow .chip,
+  .hc-case .badir .badge,
+  .hc-case .quote-block .k,
+  .hc-case .rcard .n,
+  .hc-case .take .n,
+  .hc-case .spot-quotes h4 {
+    font-size: 15px;
+  }
+
+  .hc-case .tagpill {
+    font-size: 14px;
+  }
+
+  .hc-case .lede {
+    font-size: 20px;
+  }
+
+  .hc-case .meta-row,
+  .hc-case .btn,
+  .hc-case .spot-num .lbl,
+  .hc-case .skillpill,
+  .hc-case .rcard h4,
+  .hc-case .note {
+    font-size: 16px;
+  }
+
+  .hc-case .take p,
+  .hc-case .ev p,
+  .hc-case .card p,
+  .hc-case .numlist p,
+  .hc-case .rec p,
+  .hc-case .rec .sub li,
+  .hc-case .qgrid blockquote,
+  .hc-case .badir p,
+  .hc-case .badir-note,
+  .hc-case .srow p,
+  .hc-case .rcard p,
+  .hc-case .integrity {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .hc-case .ev .code {
+    font-size: 14px;
+  }
+}

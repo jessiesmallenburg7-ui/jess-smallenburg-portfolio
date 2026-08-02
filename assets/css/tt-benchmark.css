@@ -1641,15 +1641,15 @@
   }
 
   .tt-hero-badge {
-    font-size: var(--pc-text-meta);
+    font-size: 16px;
   }
 
   .tt-disclaimer {
-    font-size: var(--pc-text-meta);
+    font-size: 16px;
   }
 
   .tt-feature-banner-kicker {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .tt-feature-banner-lede {
@@ -1661,7 +1661,7 @@
   }
 
   .tt-pillar-text {
-    font-size: var(--pc-text-meta);
+    font-size: 16px;
   }
 
   .tt-overview-stat-value {
@@ -1669,27 +1669,27 @@
   }
 
   .tt-overview-stat-label {
-    font-size: var(--pc-text-label);
+    font-size: 15px;
   }
 
   .tt-benchmark-item-name {
-    font-size: var(--pc-text-secondary);
+    font-size: 18px;
   }
 
   .tt-benchmark-item-meta {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .tt-benchmark-item-why {
-    font-size: var(--pc-text-secondary);
+    font-size: 18px;
   }
 
   .tt-benchmark-acronyms {
-    font-size: var(--pc-text-secondary);
+    font-size: 16px;
   }
 
   .tt-benchmark-wedge-kicker {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .tt-benchmark-wedge-text {
@@ -1697,11 +1697,11 @@
   }
 
   .tt-benchmark-swipe-hint {
-    font-size: var(--pc-text-label);
+    font-size: 15px;
   }
 
   .tt-benchmark-legend-label {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .tt-benchmark-legend {
@@ -1713,15 +1713,35 @@
   }
 
   .tt-benchmark-matrix thead th {
-    font-size: 14px;
-  }
-
-  .tt-benchmark-matrix tbody th {
     font-size: 15px;
   }
 
+  .tt-benchmark-matrix tbody th {
+    font-size: 16px;
+  }
+
   .tt-target-col-note {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .tt-practice-label {
+    font-size: 18px;
+  }
+
+  .tt-practice-desc,
+  .tt-process-phase-body,
+  .tt-process-phase-list .case-bullet {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .tt-process-phase-title {
+    font-size: 20px;
+  }
+
+  .tt-process-phase-num,
+  .pc-screen-note-label {
+    font-size: 14px;
   }
 }
 

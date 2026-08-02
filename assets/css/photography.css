@@ -596,3 +596,25 @@ html[data-theme="light"] .photo-gallery-empty {
 html[data-theme="light"] .photo-gallery-empty p {
   color: rgba(31, 41, 55, 0.55);
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .photo-hub-card-text {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .photo-hub-card-cta {
+    font-size: 16px;
+  }
+
+  .photo-gallery-caption {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .photo-hub-card-kicker,
+  .photo-hub-card-placeholder span {
+    font-size: 15px;
+  }
+}

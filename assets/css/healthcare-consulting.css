@@ -1744,3 +1744,27 @@ html[data-theme="light"] .case-version-banner-text {
   color: #153f73;
   text-decoration: underline;
 }
+
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .hc-disclaimer-label,
+  .hc-method-num,
+  .hc-insight-kicker,
+  .hc-proto-kicker,
+  .hc-fig-label,
+  .hc-skills-kicker,
+  .hc-outcome-response-label,
+  .hc-why-label,
+  .hc-plain-kicker,
+  .hc-plain-quotes-label,
+  .hc-plain-finding-kicker,
+  .hc-plain-recs-title {
+    font-size: 15px;
+  }
+
+  .case-version-banner-text,
+  .case-version-banner-link {
+    font-size: 16px;
+  }
+}

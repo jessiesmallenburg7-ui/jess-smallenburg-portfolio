@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Site type scale
+ * body:      19px — primary narrative
+ * secondary: 17px — supporting copy, lists, captions with body weight
+ * meta:      15px — hints, notes, footnotes
+ * label:     14px — uppercase UI labels
+ * display:   22px — serif pull quotes
+ *
+ * Mobile floor (max-width: 767.98px): body 20 / secondary 18 / meta 16 / label 15.
+ * Readable copy should rarely drop below ~16px on phones.
+ */
+:root {
+  --site-text-body: 19px;
+  --site-text-secondary: 17px;
+  --site-text-meta: 15px;
+  --site-text-label: 14px;
+  --site-text-display: 22px;
+  --pc-text-body: var(--site-text-body);
+  --pc-text-secondary: var(--site-text-secondary);
+  --pc-text-meta: var(--site-text-meta);
+  --pc-text-label: var(--site-text-label);
+  --pc-text-display: var(--site-text-display);
+}
+
 /* ============================================================
    Base
    ============================================================ */
@@ -94,7 +117,31 @@
 
   /* Body copy */
   .prose-body {
-    @apply font-sans text-[19px] leading-[1.7em] text-white/75;
+    @apply font-sans leading-[1.7em] text-white/75;
+    font-size: var(--site-text-body);
+  }
+
+  .diagram-hint {
+    font-size: var(--site-text-meta);
+    line-height: 1.5;
+  }
+
+  .evidence-wall-more-hint,
+  .evidence-subhead,
+  .interview-theme-source,
+  .insight-bridge-source,
+  .wireframe-persona,
+  .he-download-meta {
+    font-size: var(--site-text-meta);
+  }
+
+  .persona-tfd-label,
+  .persona-callout-label,
+  .he-sev-label,
+  .he-positive-kicker,
+  .he-findings-badge,
+  .he-finding-kicker {
+    font-size: var(--site-text-label);
   }
 
   /* Diamond bullets: teal, first-line aligned, gap before text */
@@ -1862,5 +1909,153 @@
 
   .legend-swatch {
     @apply inline-block h-3 w-3 rounded-sm bg-amber-400/90;
+  }
+}
+
+/* ============================================================
+   Mobile type floor — portfolio-wide readability
+   Keep most copy ≥ 16px; body ~20px. Only dense UI chrome
+   (codes, nav nums, badges) may sit at 14–15px.
+   ============================================================ */
+@media (max-width: 767.98px) {
+  :root {
+    --site-text-body: 20px;
+    --site-text-secondary: 18px;
+    --site-text-meta: 16px;
+    --site-text-label: 15px;
+    --site-text-display: 24px;
+  }
+
+  .prose-body {
+    font-size: var(--site-text-body) !important;
+    line-height: 1.7;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .eyebrow {
+    font-size: 15px;
+  }
+
+  .status-pill {
+    font-size: 16px;
+  }
+
+  .hero-portrait-caption {
+    font-size: 16px;
+  }
+
+  /* Footer: undo intentional desktop shrink on phones */
+  .site-footer .text-sm {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .site-footer .text-\[18px\] {
+    font-size: 16px;
+  }
+
+  .site-footer .text-\[17px\] {
+    font-size: 16px;
+  }
+
+  /* Case study shared components */
+  .case-meta,
+  .case-nav-link,
+  .case-nav-toggle-current,
+  .case-hmw-label {
+    font-size: 15px;
+  }
+
+  .case-nav-toggle-kicker,
+  .case-nav-num {
+    font-size: 14px;
+  }
+
+  .case-block-label,
+  .he-block-label,
+  .interview-meta-label,
+  .interview-theme-num,
+  .interview-role,
+  .insight-bridge-kicker,
+  .wireframe-row-label,
+  .mockup-persona-group-label,
+  .persona-block-title,
+  .wireframe-placeholder-label {
+    font-size: 15px;
+  }
+
+  .persona-list li,
+  .interview-evidence-list li,
+  .interview-insights li,
+  .insight-bridge-body,
+  .evidence-coding-intro,
+  .he-positive-impact,
+  .he-positive-more,
+  .he-finding-impact,
+  .persona-role-line,
+  .persona-stat-label,
+  .persona-stat-value,
+  .evidence-wall-more-btn,
+  .wireframe-screen-title {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .evidence-note,
+  .evidence-ref-list li,
+  .interview-resolved,
+  .interview-question,
+  .interview-theme,
+  .evidence-coding-theme,
+  .persona-meta-line,
+  .he-positive-body,
+  .he-finding-body {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .persona-pain-pill,
+  .persona-design-pill,
+  .persona-meter-head,
+  .evidence-coding-note,
+  .evidence-notes,
+  .diagram-hint,
+  .evidence-wall-more-hint,
+  .evidence-subhead,
+  .interview-theme-source,
+  .insight-bridge-source,
+  .wireframe-persona,
+  .he-download-meta {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .persona-tag,
+  .evidence-code,
+  .evidence-code--scheme,
+  .evidence-ref-more-toggle,
+  .he-sev-level,
+  .persona-questions li::before {
+    font-size: 14px;
+  }
+
+  .persona-tfd-label,
+  .persona-callout-label,
+  .he-sev-label,
+  .he-positive-kicker,
+  .he-findings-badge,
+  .he-finding-kicker {
+    font-size: 15px;
+  }
+
+  .he-download-title {
+    font-size: 17px;
+  }
+
+  .case-bullet-mark {
+    height: calc(var(--site-text-body) * 1.7);
   }
 }

@@ -330,3 +330,23 @@ html[data-theme="light"] .hc-access-error {
     transition: none;
   }
 }
+
+/* Mobile type floor — keep readable copy ≥ 16px */
+@media (max-width: 767.98px) {
+  .hc-access-back {
+    font-size: 16px;
+  }
+
+  .hc-access-label {
+    font-size: 15px;
+  }
+
+  .hc-access-hint,
+  .hc-access-error {
+    font-size: 16px;
+  }
+
+  .hc-access-footnote {
+    font-size: 15px;
+  }
+}
