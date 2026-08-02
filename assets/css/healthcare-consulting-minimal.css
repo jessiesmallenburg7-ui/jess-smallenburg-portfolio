@@ -266,7 +266,26 @@ html[data-theme="light"] .case-version-banner-text {
 .hc-case .srow.done .chip{background:var(--teal-soft); color:var(--teal)}
 .hc-case .srow.partial .chip{background:var(--amber-soft); color:var(--amber-dk)}
 .hc-case .srow.pending .chip{background:var(--rose-soft); color:var(--rose)}
-.hc-case .srow p{margin:0; font-size:14.5px; color:var(--ink-2)}
+.hc-case .srow p{margin:0; font-size:14.5px; color:var(--ink-2); min-width:0; flex:1; line-height:1.5}
+
+/* Stack outcome status rows on tablet/mobile so copy isn't squeezed beside chips */
+@media (max-width: 899.98px) {
+  .hc-case .srow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 16px 18px;
+  }
+
+  .hc-case .srow .chip {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .hc-case .srow p {
+    width: 100%;
+  }
+}
 .hc-case .quote-block{
   background:var(--blue-dk); color:#EAF1FB; border-radius:16px; padding:28px 32px; margin-top:24px;
 }
@@ -284,6 +303,23 @@ html[data-theme="light"] .case-version-banner-text {
 @media(max-width:560px){.hc-case .reflect{grid-template-columns:1fr}}
 .hc-case .skills{display:flex; flex-wrap:wrap; gap:10px}
 .hc-case .skillpill{background:#fff; border:1px solid var(--line); border-radius:999px; padding:9px 18px; font-size:14px; color:var(--ink-2); box-shadow:var(--shadow)}
+
+/* Full-width skill rows on tablet/mobile instead of jagged short pills */
+@media (max-width: 899.98px) {
+  .hc-case .skills {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hc-case .skillpill {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 14px 16px;
+    line-height: 1.45;
+  }
+}
 .hc-case .note{
   display:flex; gap:12px; align-items:flex-start; background:#fff; border:1px solid var(--line);
   border-left:3px solid var(--blue); border-radius:12px; padding:18px 20px; font-size:15px; color:var(--ink-2); margin-top:28px;
