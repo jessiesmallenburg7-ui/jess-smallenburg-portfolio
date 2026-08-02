@@ -113,12 +113,13 @@
   /* Lead paragraph */
   .lead {
     @apply font-sans text-white/80 leading-[1.6em];
+    font-size: var(--site-text-body);
   }
 
-  /* Body copy */
+  /* Body copy — !important so utility overrides (text-[15px], etc.) cannot shrink narrative */
   .prose-body {
     @apply font-sans leading-[1.7em] text-white/75;
-    font-size: var(--site-text-body);
+    font-size: var(--site-text-body) !important;
   }
 
   .diagram-hint {
