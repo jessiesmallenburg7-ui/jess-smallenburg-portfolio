@@ -425,8 +425,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-case .hmw .q {
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(20px, 2.4vw, 28px);
-  line-height: 1.4;
+  font-size: clamp(24px, 3.2vw, 30px);
+  line-height: 1.35;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -468,9 +468,14 @@ html[data-theme="light"] .lumen-version-banner-text {
   }
 
   .lm-case .hmw-why div {
-    font-size: 19px;
+    font-size: 21px;
     line-height: 1.55;
     padding: 16px;
+  }
+
+  .lm-case .hmw .q {
+    font-size: 26px;
+    line-height: 1.35;
   }
 }
 
@@ -1500,17 +1505,17 @@ html[data-theme="light"] .lumen-version-banner-text {
   }
 }
 
-/* Mobile type floor — keep readable copy ≥ 16px */
+/* Mobile type floor — supporting/section copy matches body */
 @media (max-width: 767.98px) {
   .lm-case {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .case-version-banner-text,
   .case-version-banner-link,
   .lumen-version-banner-text,
   .lumen-version-banner-link {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .lm-case .eyebrow,
@@ -1524,16 +1529,21 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-case .prio,
   .lm-case .pc h5,
   .lm-case .refl .n {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .lm-case .tagpill,
   .lm-case .pill {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .lm-case .lede {
     font-size: 21px;
+  }
+
+  .lm-case .hmw .q {
+    font-size: 26px;
+    line-height: 1.35;
   }
 
   .lm-case .meta-row,
@@ -1542,7 +1552,16 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-case .fig .ttl,
   .lm-case .note,
   .lm-case .pc .role {
-    font-size: 17px;
+    font-size: 19px;
+  }
+
+  .lm-case .ev h4,
+  .lm-case .card h4,
+  .lm-case .phase .t,
+  .lm-case .dec h4,
+  .lm-case .refl h4,
+  .lm-case .pc .name {
+    font-size: 22px;
   }
 
   .lm-case .integrity,
@@ -1559,7 +1578,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-lb-body p,
   .lm-lb-body li,
   .lm-lb-body .resolve {
-    font-size: 20px;
+    font-size: 21px;
     line-height: 1.55;
   }
 
@@ -1572,6 +1591,6 @@ html[data-theme="light"] .lumen-version-banner-text {
   }
 
   .lm-case .ev .code {
-    font-size: 14px;
+    font-size: 15px;
   }
 }

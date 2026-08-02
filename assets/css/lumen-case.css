@@ -271,6 +271,18 @@
   line-height: 1.32;
 }
 
+@media (max-width: 767.98px) {
+  .case-hmw-text {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .case-hmw--featured .case-hmw-text {
+    font-size: 28px;
+    line-height: 1.32;
+  }
+}
+
 @media (min-width: 640px) {
   .case-hmw--featured {
     padding: 1.75rem 1.85rem 1.9rem;
@@ -1246,48 +1258,48 @@ html[data-theme="light"] .lumen-version-banner-text {
   text-decoration: underline;
 }
 
-/* Mobile type floor — keep readable copy ≥ 16px */
+/* Mobile type floor — supporting/section copy matches body */
 @media (max-width: 767.98px) {
   .case-hero-badge {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .case-disclaimer {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .case-outcome-body,
   .case-impact-note,
   .decision-body {
-    font-size: 19px;
+    font-size: 21px;
     line-height: 1.6;
   }
 
   .case-outcome-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .case-hero-subtitle {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .case-block-label,
   .case-hmw-label,
   .case-hmw--featured .case-hmw-label {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .lumen-role-block-title,
   .measured-learning-title {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .lumen-version-banner-text,
   .lumen-version-banner-link {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .case-nav--top .case-nav-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 }

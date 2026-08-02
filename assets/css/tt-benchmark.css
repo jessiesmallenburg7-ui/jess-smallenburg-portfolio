@@ -3872,3 +3872,43 @@
   }
 }
 
+
+
+/* Mobile type floor — supporting matches body */
+@media (max-width: 767.98px) {
+  .tt-feature-banner-kicker,
+  .tt-benchmark-item-meta,
+  .tt-benchmark-wedge-kicker,
+  .tt-overview-stat-label,
+  .tt-process-phase-num {
+    font-size: 17px;
+  }
+
+  .tt-pillar-text,
+  .tt-disclaimer,
+  .tt-hero-badge,
+  .tt-benchmark-acronyms,
+  .tt-benchmark-legend,
+  .tt-benchmark-matrix {
+    font-size: 19px;
+  }
+
+  .tt-benchmark-item-why,
+  .tt-practice-desc,
+  .tt-process-phase-body,
+  .tt-feature-banner-lede,
+  .tt-pillar-label,
+  .tt-practice-label {
+    font-size: 21px;
+    line-height: 1.55;
+  }
+
+  .tt-benchmark-item-name,
+  .tt-process-phase-title {
+    font-size: 22px;
+  }
+
+  .tt-benchmark-swipe-hint {
+    font-size: 18px;
+  }
+}
