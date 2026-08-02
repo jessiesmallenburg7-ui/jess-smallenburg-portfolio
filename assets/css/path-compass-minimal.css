@@ -249,9 +249,10 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .hmw .q{font-size:clamp(20px,2.4vw,28px); line-height:1.4; font-weight:600; letter-spacing:-.02em}
 .pc-case .hmw .k{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:#DABCF2; margin-bottom:16px; font-weight:700}
 .pc-case .hmw-why{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:30px}
-.pc-case .hmw-why div{background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:14px 16px; font-size:13.5px; color:#EDE3F7}
+.pc-case .hmw-why div{background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:14px 16px; font-size:16px; line-height:1.5; color:#EDE3F7}
 @media(max-width:860px){.pc-case .hmw{padding:32px 26px}
-.pc-case .hmw-why{grid-template-columns:1fr}}
+.pc-case .hmw-why{grid-template-columns:1fr}
+.pc-case .hmw-why div{font-size:19px; line-height:1.55; padding:16px}}
 .pc-case .rail{position:relative; padding-left:2px}
 .pc-case .rail::before{content:""; position:absolute; left:23px; top:8px; bottom:8px; width:2px; background:var(--line)}
 .pc-case .rstep{display:grid; grid-template-columns:48px 1fr; gap:20px; padding:20px 0}
@@ -583,8 +584,12 @@ html[data-theme="light"] .case-version-banner-text {
   .pc-case .mkey,
   .pc-case table.mtable,
   .pc-case .pc-lb-body p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.55;
+  }
+
+  .pc-case .hmw-why div {
+    padding: 16px 16px;
   }
 
   .pc-case .ev .code {

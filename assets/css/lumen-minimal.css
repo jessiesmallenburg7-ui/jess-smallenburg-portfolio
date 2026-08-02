@@ -453,7 +453,8 @@ html[data-theme="light"] .lumen-version-banner-text {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 10px;
   padding: 14px 16px;
-  font-size: 13.5px;
+  font-size: 16px;
+  line-height: 1.5;
   color: #dcefef;
 }
 
@@ -464,6 +465,12 @@ html[data-theme="light"] .lumen-version-banner-text {
 
   .lm-case .hmw-why {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .lm-case .hmw-why div {
+    font-size: 19px;
+    line-height: 1.55;
+    padding: 16px;
   }
 }
 
@@ -1552,8 +1559,16 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-lb-body p,
   .lm-lb-body li,
   .lm-lb-body .resolve {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.55;
+  }
+
+  .lm-case .hmw-why {
+    gap: 12px;
+  }
+
+  .lm-case .hmw-why div {
+    padding: 16px 16px;
   }
 
   .lm-case .ev .code {
