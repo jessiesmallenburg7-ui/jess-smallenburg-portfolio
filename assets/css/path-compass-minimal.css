@@ -513,6 +513,14 @@ html[data-theme="light"] .case-version-banner-text {
   max-width: 100%;
 }
 
+/* Show swipe cue when the matrix is wider than the viewport */
+@media (max-width: 899.98px) {
+  .pc-case .matrix-swipe-hint {
+    display: block;
+    font-size: 16px;
+  }
+}
+
 /* Mobile type floor — keep readable copy ≥ 16px */
 @media (max-width: 767.98px) {
   .pc-case {
