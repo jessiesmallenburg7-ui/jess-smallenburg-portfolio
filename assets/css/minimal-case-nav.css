@@ -317,3 +317,18 @@ html[data-theme="light"] .pc-case .pc-topbar .minimal-case-nav {
   background: transparent;
   border-bottom: 0;
 }
+
+/* Mobile type floor — temp nav + chrome labels */
+@media (max-width: 767.98px) {
+  .concise-dev-nav-label {
+    font-size: 14px;
+  }
+
+  .concise-dev-nav-link {
+    font-size: 15px;
+  }
+
+  .minimal-topbar-label {
+    font-size: 14px;
+  }
+}

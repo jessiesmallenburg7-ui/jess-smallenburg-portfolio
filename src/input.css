@@ -2058,4 +2058,10 @@
   .case-bullet-mark {
     height: calc(var(--site-text-body) * 1.7);
   }
+
+  /* Supporting links that use text-[15px] utilities in HTML */
+  a.text-\[15px\],
+  .text-\[15px\] {
+    font-size: 16px;
+  }
 }
