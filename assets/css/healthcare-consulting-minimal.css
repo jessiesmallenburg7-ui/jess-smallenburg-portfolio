@@ -361,12 +361,12 @@ html[data-theme="light"] .case-version-banner-text {
 /* Mobile type floor — keep readable copy ≥ 16px */
 @media (max-width: 767.98px) {
   .hc-case {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .case-version-banner-text,
   .case-version-banner-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .hc-case .eyebrow,
@@ -377,7 +377,7 @@ html[data-theme="light"] .case-version-banner-text {
   .hc-case .rcard .n,
   .hc-case .take .n,
   .hc-case .spot-quotes h4 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .hc-case .tagpill {
@@ -385,7 +385,7 @@ html[data-theme="light"] .case-version-banner-text {
   }
 
   .hc-case .lede {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .hc-case .meta-row,
@@ -394,7 +394,7 @@ html[data-theme="light"] .case-version-banner-text {
   .hc-case .skillpill,
   .hc-case .rcard h4,
   .hc-case .note {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .hc-case .take p,
@@ -409,7 +409,7 @@ html[data-theme="light"] .case-version-banner-text {
   .hc-case .srow p,
   .hc-case .rcard p,
   .hc-case .integrity {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.55;
   }
 

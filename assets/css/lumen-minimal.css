@@ -1496,14 +1496,14 @@ html[data-theme="light"] .lumen-version-banner-text {
 /* Mobile type floor — keep readable copy ≥ 16px */
 @media (max-width: 767.98px) {
   .lm-case {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .case-version-banner-text,
   .case-version-banner-link,
   .lumen-version-banner-text,
   .lumen-version-banner-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .lm-case .eyebrow,
@@ -1517,7 +1517,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-case .prio,
   .lm-case .pc h5,
   .lm-case .refl .n {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .lm-case .tagpill,
@@ -1526,7 +1526,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   }
 
   .lm-case .lede {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .lm-case .meta-row,
@@ -1535,7 +1535,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-case .fig .ttl,
   .lm-case .note,
   .lm-case .pc .role {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .lm-case .integrity,
@@ -1552,7 +1552,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-lb-body p,
   .lm-lb-body li,
   .lm-lb-body .resolve {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.55;
   }
 

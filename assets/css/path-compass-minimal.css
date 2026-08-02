@@ -357,12 +357,12 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .matrix-swipe-hint{
   display:none;
   margin:0 0 12px;
-  padding:0.7rem 0.9rem;
+  padding:0.75rem 1rem;
   border-radius:0.75rem;
   border:1px solid rgba(110, 79, 160, 0.22);
   background:rgba(110, 79, 160, 0.07);
   font-family:"Lato", sans-serif;
-  font-size:15px;
+  font-size:17px;
   font-weight:500;
   line-height:1.4;
   color:var(--ink-2);
@@ -517,19 +517,19 @@ html[data-theme="light"] .case-version-banner-text {
 @media (max-width: 899.98px) {
   .pc-case .matrix-swipe-hint {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 /* Mobile type floor — keep readable copy ≥ 16px */
 @media (max-width: 767.98px) {
   .pc-case {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .case-version-banner-text,
   .case-version-banner-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .pc-case .eyebrow,
@@ -542,7 +542,7 @@ html[data-theme="light"] .case-version-banner-text {
   .pc-case .ba h5,
   .pc-case .pc-persona h5,
   .pc-case .sevcol h4 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .pc-case .tagpill,
@@ -552,7 +552,7 @@ html[data-theme="light"] .case-version-banner-text {
   }
 
   .pc-case .lede {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .pc-case .case-hero-copy .meta-row,
@@ -563,7 +563,7 @@ html[data-theme="light"] .case-version-banner-text {
   .pc-case .note,
   .pc-case .pc-lb-head h4,
   .pc-case .pc-lb-body h4 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .pc-case .integrity,
@@ -583,7 +583,7 @@ html[data-theme="light"] .case-version-banner-text {
   .pc-case .mkey,
   .pc-case table.mtable,
   .pc-case .pc-lb-body p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.55;
   }
 

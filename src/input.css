@@ -9,8 +9,8 @@
  * label:     14px — uppercase UI labels
  * display:   22px — serif pull quotes
  *
- * Mobile floor (max-width: 767.98px): body 20 / secondary 18 / meta 16 / label 15.
- * Readable copy should rarely drop below ~16px on phones.
+ * Mobile floor (max-width: 767.98px): body 21 / secondary 19 / meta 17 / label 16.
+ * Readable copy should rarely drop below ~17px on phones.
  */
 :root {
   --site-text-body: 19px;
@@ -418,27 +418,27 @@
   /* Mobile: enlarge approach, work-card, and credentials copy for readability */
   @media (max-width: 767.98px) {
     .metrics-value {
-      font-size: 30px;
+      font-size: 32px;
     }
 
     .metrics-label {
-      font-size: 18px;
+      font-size: 19px;
     }
 
     .work-card-outcome {
-      font-size: 20px;
+      font-size: 21px;
     }
 
     .work-card-tags li {
-      font-size: 16px;
+      font-size: 17px;
     }
 
     .approach-title {
-      font-size: 28px;
+      font-size: 30px;
     }
 
     .approach-body {
-      font-size: 20px;
+      font-size: 21px;
     }
   }
 
@@ -1914,15 +1914,15 @@
 
 /* ============================================================
    Mobile type floor — portfolio-wide readability
-   Keep most copy ≥ 16px; body ~20px. Only dense UI chrome
-   (codes, nav nums, badges) may sit at 14–15px.
+   Keep most copy ≥ 17px; body ~21px. Only dense UI chrome
+   (codes, nav nums, badges) may sit at 15–16px.
    ============================================================ */
 @media (max-width: 767.98px) {
   :root {
-    --site-text-body: 20px;
-    --site-text-secondary: 18px;
-    --site-text-meta: 16px;
-    --site-text-label: 15px;
+    --site-text-body: 21px;
+    --site-text-secondary: 19px;
+    --site-text-meta: 17px;
+    --site-text-label: 16px;
     --site-text-display: 24px;
   }
 
@@ -1932,33 +1932,33 @@
   }
 
   .lead {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .eyebrow {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .status-pill {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .hero-portrait-caption {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   /* Footer: undo intentional desktop shrink on phones */
   .site-footer .text-sm {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.35;
   }
 
   .site-footer .text-\[18px\] {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .site-footer .text-\[17px\] {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   /* Case study shared components */
@@ -1966,12 +1966,12 @@
   .case-nav-link,
   .case-nav-toggle-current,
   .case-hmw-label {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .case-nav-toggle-kicker,
   .case-nav-num {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .case-block-label,
@@ -1984,7 +1984,7 @@
   .mockup-persona-group-label,
   .persona-block-title,
   .wireframe-placeholder-label {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .persona-list li,
@@ -2000,7 +2000,7 @@
   .persona-stat-value,
   .evidence-wall-more-btn,
   .wireframe-screen-title {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.55;
   }
 
@@ -2013,7 +2013,7 @@
   .persona-meta-line,
   .he-positive-body,
   .he-finding-body {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.55;
   }
 
@@ -2029,7 +2029,7 @@
   .insight-bridge-source,
   .wireframe-persona,
   .he-download-meta {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
   }
 
@@ -2039,7 +2039,7 @@
   .evidence-ref-more-toggle,
   .he-sev-level,
   .persona-questions li::before {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .persona-tfd-label,
@@ -2048,11 +2048,11 @@
   .he-positive-kicker,
   .he-findings-badge,
   .he-finding-kicker {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .he-download-title {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .case-bullet-mark {
@@ -2062,6 +2062,6 @@
   /* Supporting links that use text-[15px] utilities in HTML */
   a.text-\[15px\],
   .text-\[15px\] {
-    font-size: 16px;
+    font-size: 17px;
   }
 }

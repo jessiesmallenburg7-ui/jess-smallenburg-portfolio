@@ -1249,45 +1249,45 @@ html[data-theme="light"] .lumen-version-banner-text {
 /* Mobile type floor — keep readable copy ≥ 16px */
 @media (max-width: 767.98px) {
   .case-hero-badge {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .case-disclaimer {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .case-outcome-body,
   .case-impact-note,
   .decision-body {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.6;
   }
 
   .case-outcome-title {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .case-hero-subtitle {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .case-block-label,
   .case-hmw-label,
   .case-hmw--featured .case-hmw-label {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .lumen-role-block-title,
   .measured-learning-title {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .lumen-version-banner-text,
   .lumen-version-banner-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .case-nav--top .case-nav-link {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
