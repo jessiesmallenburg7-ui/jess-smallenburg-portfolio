@@ -147,15 +147,20 @@
 
 .tt-benchmark-swipe-hint {
   display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin: -0.35rem 0 0.15rem;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: var(--pc-text-label);
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0.85rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(95, 211, 224, 0.28);
+  background: rgba(95, 211, 224, 0.08);
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 @media (min-width: 900px) {
@@ -1697,7 +1702,7 @@
   }
 
   .tt-benchmark-swipe-hint {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .tt-benchmark-legend-label {

@@ -1484,7 +1484,9 @@ html[data-theme="light"] .tt-benchmark-acronyms abbr {
 }
 
 html[data-theme="light"] .tt-benchmark-swipe-hint {
-  color: rgba(71, 85, 105, 0.7);
+  border-color: rgba(15, 118, 110, 0.22);
+  background: rgba(15, 118, 110, 0.08);
+  color: rgba(15, 36, 48, 0.78);
 }
 
 html[data-theme="light"] .coming-soon-block {

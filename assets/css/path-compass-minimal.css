@@ -354,7 +354,20 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .fig.wide .shot{aspect-ratio:16/10}
 @media(max-width:900px){.pc-case .figs, .pc-case .figs.two{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.pc-case .figs, .pc-case .figs.two{grid-template-columns:1fr}}
-.pc-case .matrix{overflow-x:auto; background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow)}
+.pc-case .matrix-swipe-hint{
+  display:none;
+  margin:0 0 12px;
+  padding:0.7rem 0.9rem;
+  border-radius:0.75rem;
+  border:1px solid rgba(110, 79, 160, 0.22);
+  background:rgba(110, 79, 160, 0.07);
+  font-family:"Lato", sans-serif;
+  font-size:15px;
+  font-weight:500;
+  line-height:1.4;
+  color:var(--ink-2);
+}
+.pc-case .matrix{overflow-x:auto; background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); -webkit-overflow-scrolling:touch}
 .pc-case table.mtable{border-collapse:collapse; width:100%; min-width:720px; font-size:13.5px}
 .pc-case table.mtable th, .pc-case table.mtable td{padding:12px 14px; text-align:center; border-bottom:1px solid var(--line)}
 .pc-case table.mtable th{background:var(--tint); font-weight:650; color:var(--ink-2); font-size:12px; text-transform:uppercase; letter-spacing:.04em}
