@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <title>Lumen Chart (Concise) &mdash; Jessie Smallenburg</title>
+  <meta name="description" content="Concise Lumen Chart case study: reducing cognitive load in EHR workflows with accountable AI documentation, shallow navigation, and plain-language caregiver summaries.">
+  <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/clinician-flow/minimal">
+  <link rel="icon" href="../../../assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="../../../assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/styles.css?v=20260801minimal">
+  <link rel="stylesheet" href="../../../assets/css/lumen-minimal.css?v=20260802sev">
+  <link rel="stylesheet" href="../../../assets/css/case-hero-visual.css?v=20260802heromobile">
+  <link rel="stylesheet" href="../../../assets/css/minimal-case-nav.css?v=20260802crisp">
+  <link rel="stylesheet" href="../../../assets/css/theme-light.css?v=20260801minimal">
+</head>
+<body>
+  <div id="main">
+    <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
+      <div class="flex items-center justify-between md:contents">
+        <a href="../../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
+        <div class="header-actions relative z-50 md:order-last">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
+            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+          </button>
+          <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="primary-nav" class="site-nav hidden flex-col md:flex md:flex-row md:items-center md:gap-2.5" aria-label="Primary">
+        <a href="../../../" class="nav-link">Home</a>
+        <a href="../../" class="nav-link nav-link-active">Projects</a>
+        <a href="../../../resume" class="nav-link">Résumé</a>
+        <a href="../../../about" class="nav-link">About</a>
+        <a href="../../../contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+    <main class="container-content pb-16 pt-6 lg:pt-12">
+      <!-- TEMPORARY: remove concise-dev-nav before launch -->
+      <nav class="concise-dev-nav" aria-label="Temporary concise case study switcher">
+        <p class="concise-dev-nav-label">Temp · concise drafts</p>
+        <ul class="concise-dev-nav-list">
+          <li><a class="concise-dev-nav-link" href="../../path-compass/minimal/">Path Compass</a></li>
+          <li><a class="concise-dev-nav-link concise-dev-nav-link--active" href="./" aria-current="page">Lumen Chart EHR</a></li>
+          <li><a class="concise-dev-nav-link" href="../../healthcare-consulting/minimal/">Healthcare Consulting</a></li>
+        </ul>
+      </nav>
+      <div class="lumen-version-banner" role="note">
+        <p class="lumen-version-banner-text">You&rsquo;re viewing the <strong>concise</strong> Lumen Chart case study &mdash; banded sections, progressive disclosure, shorter scan path.</p>
+        <a class="lumen-version-banner-link" href="../">View full case study &rarr;</a>
+      </div>
+      <div class="lm-case">
+        <div class="lm-topbar">
+          <div class="wrap">
+            <nav class="case-nav minimal-case-nav" data-case-nav aria-label="Case study sections">
+              <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="lm-case-nav-panel">
+                <span class="case-nav-toggle-meta">
+                  <span class="case-nav-toggle-kicker">On this page</span>
+                  <span class="case-nav-toggle-current" data-case-nav-current>Problem</span>
+                </span>
+                <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </button>
+              <span class="minimal-topbar-label">On this page</span>
+              <div id="lm-case-nav-panel" class="case-nav-panel">
+                <a href="#problem" class="case-nav-link case-nav-link-active" data-nav-label="Problem">Problem</a>
+                <a href="#process" class="case-nav-link" data-nav-label="Process">Process</a>
+                <a href="#research" class="case-nav-link" data-nav-label="Research">Research</a>
+                <a href="#structure" class="case-nav-link" data-nav-label="Structure">Structure</a>
+                <a href="#design" class="case-nav-link" data-nav-label="Design">Design</a>
+                <a href="#testing" class="case-nav-link" data-nav-label="Testing">Testing</a>
+                <a href="#refine" class="case-nav-link" data-nav-label="Refine">Refine</a>
+                <a href="#launch" class="case-nav-link" data-nav-label="Prototype">Prototype</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+<header class="lm-hero">
+  <div class="wrap">
+    <div class="case-hero-main case-hero-main--with-meta">
+      <div class="case-hero-lead">
+        <span class="tagpill">Healthcare UX · Academic case study</span>
+        <h1>Lumen Chart EHR</h1>
+      </div>
+      <figure class="case-hero-visual case-hero-visual--contain">
+        <img src="../mockups/hifi-laura-dashboard.svg" alt="Lumen Chart clinician dashboard with patient overview, schedule, and AI documentation tools" width="960" height="600" loading="eager" decoding="async">
+      </figure>
+      <div class="case-hero-rest">
+        <p class="sub">Reducing cognitive load so clinicians can focus on patients, not paperwork.</p>
+      </div>
+      <div class="meta-row">
+        <span><b>Role</b> &nbsp;Solo UX designer &amp; researcher</span>
+        <span><b>Timeline</b> &nbsp;June–July 2026</span>
+        <span><b>Scope</b> &nbsp;Research → IA → hi-fi → prototype</span>
+        <span><b>Surfaces</b> &nbsp;Physician, nurse, caregiver</span>
+      </div>
+    </div>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://lumen-clinician.netlify.app" target="_blank" rel="noopener">View live prototype →</a>
+      <a class="btn btn-ghost" href="../reports/Lumen_Chart_Design_Brief.pdf" target="_blank" rel="noopener">Design brief (PDF)</a>
+    </div>
+    <p class="integrity"><span>⚑</span><span><b>Scope honesty:</b> solo academic project. No clinician or patient access — “interviews” are conceptual scenarios written from published literature, and personas synthesize that evidence. No real patient data.</span></p>
+  </div>
+</header>
+
+<!-- ============ PROBLEM ============ -->
+<section id="problem" class="lm-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The problem</div>
+      <h2>Clinicians spend more time in the chart than with patients.</h2>
+      <p class="lede">AI scribes promise the time back, but introduce hallucination risk and opaque sourcing — so clinicians won't sign what they can't verify, and caregivers get jargon instead of answers.</p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="num">2:1</div>
+        <div class="lbl">Hours in the EHR for every hour of direct patient care</div>
+        <div class="src">Sinsky et al., 2016</div>
+      </div>
+      <div class="stat">
+        <div class="num">31%</div>
+        <div class="lbl">Of ambient AI notes contained hallucinations in one evaluation (vs 20% of human notes)</div>
+        <div class="src">Palm et al., 2025</div>
+      </div>
+      <div class="stat">
+        <div class="num">13.4<span style="font-size:18px"> min</span></div>
+        <div class="lbl">Daily EHR time saved with AI scribes — but the gain erodes when verification is poor</div>
+        <div class="src">Rotenstein et al., 2026</div>
+      </div>
+      <div class="stat">
+        <div class="num">18%</div>
+        <div class="lbl">Persona AI-trust score for the primary clinician. One-click sign is a disqualifier</div>
+        <div class="src">Synthesized from V1–V4</div>
+      </div>
+    </div>
+    <div class="note"><span>◆</span><span><b>The real design problem is not speed — it's accountability.</b> Time saved in drafting is spent again in unstructured cleanup unless review is designed as deliberately as capture.</span></div>
+  </div>
+</section>
+
+<!-- ============ HMW ============ -->
+<section>
+  <div class="wrap">
+    <div class="hmw">
+      <div class="k">Final how might we</div>
+      <p class="q">How might we redesign EHR review and documentation so clinicians can chart with less cognitive load, reclaim time for patients, and produce trustworthy plain-language updates that keep family caregivers informed — while reducing burnout risk?</p>
+      <div class="hmw-why">
+        <div>Centers efficiency <em>and</em> the human outcome — time back with patients.</div>
+        <div>Names the trust problem AI created, not just the speed problem.</div>
+        <div>Keeps caregivers in scope without going too broad.</div>
+        <div>Actionable for interface design inside real primary-care constraints.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="lm-tint2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The process</div>
+      <h2>Six phases, adapted for clinical constraints.</h2>
+      <p class="lede">Evidence first, then reframing, design, evaluation, and iteration as separate stages — because in a high-liability setting you have to be able to defend a decision from a citation, not from taste.</p>
+    </div>
+    <div class="phases">
+      <div class="phase"><div class="n">01</div><div class="t">Rethink</div><div class="d">Evidence synthesis, conceptual interviews, personas</div></div>
+      <div class="phase"><div class="n">02</div><div class="t">Redefine</div><div class="d">HMW reframing, user flows, information architecture</div></div>
+      <div class="phase"><div class="n">03</div><div class="t">Redesign</div><div class="d">Wireframes, then high-fidelity mockups</div></div>
+      <div class="phase"><div class="n">04</div><div class="t">Revision</div><div class="d">Heuristic evaluation + moderated usability session</div></div>
+      <div class="phase"><div class="n">05</div><div class="t">Refine</div><div class="d">Prioritized iteration, P0 → polish</div></div>
+      <div class="phase"><div class="n">06</div><div class="t">Launch</div><div class="d">Final interactive prototype</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01 Rethink</div>
+      <h2>An evidence wall, coded so every design choice traces to a source.</h2>
+      <p class="lede">Nine themes coded A–V across 2016–2026 literature on documentation burden, ambient AI accuracy, clinician trust, and caregiver needs. Click any theme to read the findings and citations.</p>
+    </div>
+
+    <div class="evgrid">
+      <button class="zoom ev t-rose" data-lb="ev-b">
+        <span class="code c-rose">B</span>
+        <h4>Documentation burden</h4>
+        <p>Two hours of EHR work per hour of care; ~16 min per encounter; 1–2+ hrs after hours.</p>
+        <div class="cnt">2 findings · 3 sources</div>
+      </button>
+      <button class="zoom ev t-green" data-lb="ev-t">
+        <span class="code c-green">T</span>
+        <h4>Ambient AI time savings</h4>
+        <p>Real but conditional — 13.4 fewer EHR minutes, burnout 51.9% → 38.8%, if verification holds.</p>
+        <div class="cnt">3 findings · 3 sources</div>
+      </button>
+      <button class="zoom ev t-amber" data-lb="ev-h">
+        <span class="code c-amber">H</span>
+        <h4>Hallucinations &amp; omissions</h4>
+        <p>1–3% narrow hallucination rates rise sharply when omissions count. AI output is a draft.</p>
+        <div class="cnt">4 findings · 4 sources</div>
+      </button>
+      <button class="zoom ev t-violet" data-lb="ev-v">
+        <span class="code c-violet">V</span>
+        <h4>Trust, liability &amp; verification</h4>
+        <p>“If I didn't see it, I won't sign it.” Weak verification tools raise perceived legal risk.</p>
+        <div class="cnt">4 findings · 3 sources</div>
+      </button>
+      <button class="zoom ev t-blue" data-lb="ev-e">
+        <span class="code c-blue">E</span>
+        <h4>Review load &amp; note bloat</h4>
+        <p>Verbatim capture inflates notes; drafting time saved gets spent on correction.</p>
+        <div class="cnt">3 findings · 2 sources</div>
+      </button>
+      <button class="zoom ev t-rose" data-lb="ev-a">
+        <span class="code c-rose">A</span>
+        <h4>Alert fatigue &amp; hierarchy</h4>
+        <p>Dozens to hundreds of daily alerts; AI features flood the UI without strict hierarchy.</p>
+        <div class="cnt">2 findings · 1 source</div>
+      </button>
+      <button class="zoom ev t-teal" data-lb="ev-n">
+        <span class="code c-teal">N</span>
+        <h4>Nursing workflow</h4>
+        <p>Nurses batch-chart from memory because desktop EHRs pull them from the bedside.</p>
+        <div class="cnt">2 findings · 1 source</div>
+      </button>
+      <button class="zoom ev t-violet" data-lb="ev-c">
+        <span class="code c-violet">C</span>
+        <h4>Caregiver needs</h4>
+        <p>AI summaries fail health literacy and emotional needs. Status-first plain language is high impact.</p>
+        <div class="cnt">2 findings · 1 source</div>
+      </button>
+    </div>
+
+    <div class="note"><span>◆</span><span><b>How to read the codes:</b> every finding carries a letter + number (B1, H4, V2). Later in the case study, design decisions cite those codes — so a hiring manager can trace amber diff highlighting back to D1–D3 and the sign-off gate back to V1–V4.</span></div>
+  </div>
+</section>
+
+<!-- ============ INTERVIEWS + PERSONAS ============ -->
+<section class="lm-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01 Rethink · continued</div>
+      <h2>Three users, three incompatible contexts, one record.</h2>
+      <p class="lede">Personas translate the evidence wall into concrete design targets. Click a persona for the full profile — background, goals, pain points, behaviors, and the conceptual interview excerpts behind each.</p>
+    </div>
+
+    <div class="personas">
+      <button class="zoom pc p1" data-lb="p-laura">
+        <div class="top">
+          <div class="avatar">LM</div>
+          <div class="name">Dr. Laura Mitchell</div>
+          <div class="role">Attending physician · Internal medicine · 42</div>
+        </div>
+        <div class="body">
+          <blockquote>“If I can't tell which line came from the machine and which came from the record, I won't sign it.”</blockquote>
+          <div class="bar"><span class="lab">EHR fluency</span><span class="track"><span class="fill" style="width:92%"></span></span><span class="val">92</span></div>
+          <div class="bar"><span class="lab">AI trust</span><span class="track"><span class="fill" style="width:18%"></span></span><span class="val">18</span></div>
+          <div class="bar"><span class="lab">Change tolerance</span><span class="track"><span class="fill" style="width:42%"></span></span><span class="val">42</span></div>
+        </div>
+      </button>
+
+      <button class="zoom pc p2" data-lb="p-kevin">
+        <div class="top">
+          <div class="avatar">KH</div>
+          <div class="name">Kevin Hartley, RN</div>
+          <div class="role">Charge nurse · Med-surg · 34</div>
+        </div>
+        <div class="body">
+          <blockquote>“I'm responsible for six patients at once and I can't always get to a computer. The system has to keep up with me.”</blockquote>
+          <div class="bar"><span class="lab">EHR fluency</span><span class="track"><span class="fill" style="width:74%"></span></span><span class="val">74</span></div>
+          <div class="bar"><span class="lab">Mobile use</span><span class="track"><span class="fill" style="width:88%"></span></span><span class="val">88</span></div>
+          <div class="bar"><span class="lab">Change tolerance</span><span class="track"><span class="fill" style="width:58%"></span></span><span class="val">58</span></div>
+        </div>
+      </button>
+
+      <button class="zoom pc p3" data-lb="p-diane">
+        <div class="top">
+          <div class="avatar">DS</div>
+          <div class="name">Diane Santos</div>
+          <div class="role">Family caregiver · Non-clinical · 36</div>
+        </div>
+        <div class="body">
+          <blockquote>“I just need to know: is she okay, what does she need to do, and what do I need to do?”</blockquote>
+          <div class="bar"><span class="lab">Mobile use</span><span class="track"><span class="fill" style="width:90%"></span></span><span class="val">90</span></div>
+          <div class="bar"><span class="lab">Health literacy</span><span class="track"><span class="fill" style="width:38%"></span></span><span class="val">38</span></div>
+          <div class="bar"><span class="lab">EHR fluency</span><span class="track"><span class="fill" style="width:22%"></span></span><span class="val">22</span></div>
+        </div>
+      </button>
+    </div>
+
+    <div class="lm-spacer-sm"></div>
+    <div class="sec-head" style="margin-bottom:22px">
+      <h3 style="font-size:22px; margin-bottom:8px">Five cross-cutting themes</h3>
+      <p class="lede" style="font-size:16.5px">What held true across all three roles. Click any theme for the underlying evidence.</p>
+    </div>
+    <div class="evgrid">
+      <button class="zoom ev t-blue" data-lb="th-1"><span class="code c-blue">01</span><h4>Documentation time is the system failure</h4><p>Laura charts at night, Kevin batches at shift end, Diane loses hours to phone calls.</p><div class="cnt">B1–B2</div></button>
+      <button class="zoom ev t-amber" data-lb="th-2"><span class="code c-amber">02</span><h4>Trust needs transparency, not just accuracy</h4><p>The system must make its own uncertainty visible before a clinician will sign.</p><div class="cnt">H1–H4 · V1–V4 · D1–D3</div></button>
+      <button class="zoom ev t-rose" data-lb="th-3"><span class="code c-rose">03</span><h4>Alert fatigue is a hierarchy problem</h4><p>Not a volume problem. When everything looks urgent, nothing reads as urgent.</p><div class="cnt">A1 · A2</div></button>
+      <button class="zoom ev t-teal" data-lb="th-4"><span class="code c-teal">04</span><h4>Meet users where they are</h4><p>Bedside, hallway, phone between meetings. Every screen works under interruption.</p><div class="cnt">N1 · N2 · WCAG 2.5.5</div></button>
+      <button class="zoom ev t-violet" data-lb="th-5"><span class="code c-violet">05</span><h4>For caregivers, ambiguity is an emotional harm</h4><p>Plain language and permission transparency are safety features, not nice-to-haves.</p><div class="cnt">C1 · C2</div></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRUCTURE ============ -->
+<section id="structure">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">02 Redefine</div>
+      <h2>Two trust gates, and nothing more than two clicks from home.</h2>
+      <p class="lede">Laura's chronic-care visit was mapped end to end so the AI review gates sit at the two moments liability actually lands: per-section Accept, and pre-sign confirmation. The IA keeps documentation and handoff at the top level instead of burying the two biggest burnout drivers.</p>
+    </div>
+    <div class="figs two">
+      <button class="zoom fig wide" data-lb="img" data-src="../user-flow-laura-hires.svg" data-title="User flow — chart review to signed note">
+        <span class="shot"><img src="../user-flow-laura-hires.svg" alt="User flow diagram: chart review through signed note, with two AI review gates" loading="lazy"></span>
+        <span class="cap"><span class="who">User flow</span><span class="ttl">Chart review → signed note, with Gate 1 (per-section Accept) and Gate 2 (pre-sign)</span></span>
+      </button>
+      <button class="zoom fig wide" data-lb="img" data-src="../ehr-provider-sitemap.svg" data-title="Information architecture — provider sitemap">
+        <span class="shot"><img src="../ehr-provider-sitemap.svg" alt="EHR provider interface sitemap with five top-level sections" loading="lazy"></span>
+        <span class="cap"><span class="who">Information architecture</span><span class="ttl">Five-column IA — every provider screen within two clicks of home</span></span>
+      </button>
+    </div>
+    <div class="note"><span>◆</span><span><b>Why shallow:</b> depth is where “death by a thousand clicks” lives. Documentation and Team &amp; Handoff were elevated to first-class sections, following NIST-aligned EHR usability principles.</span></div>
+  </div>
+</section>
+
+<!-- ============ DESIGN ============ -->
+<section id="design" class="lm-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">03 Redesign</div>
+      <h2>Structure locked in wireframes, trust made visible in hi-fi.</h2>
+      <p class="lede">Six low-fidelity screens fixed hierarchy, density, and alert treatment across all three roles before any visual polish. Click any screen to view it full size.</p>
+    </div>
+    <div class="figs">
+      <button class="zoom fig" data-lb="img" data-src="../screenshots/laura-dashboard.svg" data-title="Wireframe — Smart daily dashboard (Laura)">
+        <span class="shot"><img src="../screenshots/laura-dashboard.svg" alt="Low-fidelity wireframe of the smart daily dashboard" loading="lazy"></span>
+        <span class="cap"><span class="who">Dr. Laura Mitchell</span><span class="ttl">Smart daily dashboard</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../screenshots/kevin-queue.svg" data-title="Wireframe — Tablet patient queue (Kevin)">
+        <span class="shot"><img src="../screenshots/kevin-queue.svg" alt="Low-fidelity wireframe of the tablet patient queue" loading="lazy"></span>
+        <span class="cap"><span class="who">Kevin Hartley, RN</span><span class="ttl">Tablet patient queue · bedside</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../screenshots/diane-portal.svg" data-title="Wireframe — Caregiver portal home (Diane)">
+        <span class="shot"><img src="../screenshots/diane-portal.svg" alt="Low-fidelity wireframe of the mobile caregiver portal home" loading="lazy"></span>
+        <span class="cap"><span class="who">Diane Santos</span><span class="ttl">Caregiver portal home · mobile</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../screenshots/laura-soap.svg" data-title="Wireframe — SOAP editor, AI diff state (Laura)">
+        <span class="shot"><img src="../screenshots/laura-soap.svg" alt="Low-fidelity wireframe of the SOAP note editor in AI diff state" loading="lazy"></span>
+        <span class="cap"><span class="who">Dr. Laura Mitchell</span><span class="ttl">SOAP editor · AI diff state</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../screenshots/kevin-handoff.svg" data-title="Wireframe — Shift handoff, SBAR (Kevin)">
+        <span class="shot"><img src="../screenshots/kevin-handoff.svg" alt="Low-fidelity wireframe of the SBAR shift handoff screen" loading="lazy"></span>
+        <span class="cap"><span class="who">Kevin Hartley, RN</span><span class="ttl">Shift handoff · SBAR</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../screenshots/diane-meds.svg" data-title="Wireframe — Medication tracker, prior auth (Diane)">
+        <span class="shot"><img src="../screenshots/diane-meds.svg" alt="Low-fidelity wireframe of the caregiver medication tracker" loading="lazy"></span>
+        <span class="cap"><span class="who">Diane Santos</span><span class="ttl">Medication tracker · prior auth</span></span>
+      </button>
+    </div>
+
+    <div class="lm-spacer-md"></div>
+    <div class="sec-head" style="margin-bottom:22px">
+      <h3 style="font-size:24px; margin-bottom:8px">High-fidelity — Laura's full day, end to end</h3>
+      <p class="lede" style="font-size:16.5px">Dashboard triage → AI snapshot → SOAP editor → two-gate pre-sign. Amber marks every AI-generated line until it's accepted.</p>
+    </div>
+    <div class="figs">
+      <button class="zoom fig" data-lb="img" data-src="../mockups/hifi-laura-dashboard.svg" data-title="Hi-fi — Smart daily dashboard">
+        <span class="shot"><img src="../mockups/hifi-laura-dashboard.svg" alt="High-fidelity mockup of the smart daily dashboard" loading="lazy"></span>
+        <span class="cap"><span class="who">Step 1</span><span class="ttl">Smart daily dashboard</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../mockups/hifi-laura-visit-prep-snapshot.svg" data-title="Hi-fi — AI patient snapshot">
+        <span class="shot"><img src="../mockups/hifi-laura-visit-prep-snapshot.svg" alt="High-fidelity mockup of the AI patient snapshot" loading="lazy"></span>
+        <span class="cap"><span class="who">Step 2</span><span class="ttl">AI patient snapshot · visit prep</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../mockups/hifi-laura-soap-editor.svg" data-title="Hi-fi — SOAP editor, AI diff state">
+        <span class="shot"><img src="../mockups/hifi-laura-soap-editor.svg" alt="High-fidelity mockup of the SOAP note editor with amber AI diff" loading="lazy"></span>
+        <span class="cap"><span class="who">Step 3</span><span class="ttl">SOAP editor · amber AI diff</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../mockups/hifi-laura-presign-confirmation.svg" data-title="Hi-fi — Pre-sign confirmation">
+        <span class="shot"><img src="../mockups/hifi-laura-presign-confirmation.svg" alt="High-fidelity mockup of the pre-sign confirmation gate" loading="lazy"></span>
+        <span class="cap"><span class="who">Step 4</span><span class="ttl">Pre-sign confirmation gate</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../mockups/hifi-kevin-tablet-queue.svg" data-title="Hi-fi — Tablet patient queue (Kevin)">
+        <span class="shot"><img src="../mockups/hifi-kevin-tablet-queue.svg" alt="High-fidelity mockup of the nurse tablet patient queue" loading="lazy"></span>
+        <span class="cap"><span class="who">Supporting</span><span class="ttl">Nurse tablet queue · 3-tap vitals</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="../mockups/hifi-diane-portal.svg" data-title="Hi-fi — Caregiver portal home (Diane)">
+        <span class="shot"><img src="../mockups/hifi-diane-portal.svg" alt="High-fidelity mockup of the caregiver portal home" loading="lazy"></span>
+        <span class="cap"><span class="who">Supporting</span><span class="ttl">Caregiver portal · status-first</span></span>
+      </button>
+    </div>
+    <div class="note"><span>◆</span><span><b>Key decision — desktop-first for high-cognitive work.</b> AI review, Accept gates, and signing happen at the workstation where documentation density and liability risk peak. Tablet stays a secondary path for lighter in-room tasks.</span></div>
+  </div>
+</section>
+
+<!-- ============ TESTING ============ -->
+<section id="testing">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">04 Revision</div>
+      <h2>No catastrophes — but four majors worth fixing.</h2>
+      <p class="lede">A full heuristic review against Nielsen's 10, Google PAIR / Microsoft HAX AI guidance, and WCAG 2.2 AA, plus one moderated think-aloud session. Both converged on the same priorities.</p>
+    </div>
+
+    <div class="sev">
+      <div class="sevbars">
+        <div class="sevrow"><span class="lab">4 · Catastrophe</span><span class="track"><span class="fill" style="width:2%; background:var(--rose)"></span></span><span style="width:22px; text-align:right; font-weight:700">0</span></div>
+        <div class="sevrow"><span class="lab">3 · Major</span><span class="track"><span class="fill" style="width:29%; background:#D9743F">4</span></span><span style="width:22px"></span></div>
+        <div class="sevrow"><span class="lab">2 · Minor</span><span class="track"><span class="fill" style="width:50%; background:var(--amber-line); color:#5A3C08">7</span></span><span style="width:22px"></span></div>
+        <div class="sevrow"><span class="lab">1 · Cosmetic</span><span class="track"><span class="fill" style="width:22%; background:var(--blue)">3</span></span><span style="width:22px"></span></div>
+        <div class="sevrow sevrow--positive"><span class="lab">0 · Positive</span><span class="track"><span class="fill" style="width:100%">14</span></span><span class="sevrow-count sevrow-count--positive">14</span></div>
+      </div>
+      <div>
+        <h3 style="font-size:21px; margin-bottom:12px">Zero catastrophic issues — and 14 positive findings.</h3>
+        <p style="color:var(--ink-2); font-size:15.5px; margin-top:0">The evaluation validated the trust mechanics: amber provenance, per-section Accept, and two-gate signing all mapped to Evidence Wall recommendations D1–D5. Four majors were about <em>reversibility</em> — what happens when a clinician changes their mind, or the system fails mid-write.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px">
+          <a class="btn btn-ghost" style="padding:10px 16px; font-size:14px" href="../reports/Lumen_Chart_HE_Summary_Report.docx" target="_blank" rel="noopener">HE summary report</a>
+          <a class="btn btn-ghost" style="padding:10px 16px; font-size:14px" href="../reports/Lumen_Chart_Pre-Test_Questionnaire.pdf" target="_blank" rel="noopener">Pre-test</a>
+          <a class="btn btn-ghost" style="padding:10px 16px; font-size:14px" href="../reports/Lumen_Chart_Post-Test_Questionnaire.pdf" target="_blank" rel="noopener">Post-test</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="lm-spacer-sm"></div>
+    <div class="evgrid">
+      <button class="zoom ev t-rose" data-lb="hf-1"><span class="code c-rose">H3</span><h4>No Unaccept control</h4><p>Once a SOAP section was accepted there was no way back — a false sense of completion.</p><div class="cnt">Severity 3 · Major</div></button>
+      <button class="zoom ev t-rose" data-lb="hf-2"><span class="code c-rose">H5</span><h4>Pre-sign gate could be raced</h4><p>Checkboxes clicked straight through, weakening the two-gate safety model.</p><div class="cnt">Severity 3 · Major</div></button>
+      <button class="zoom ev t-rose" data-lb="hf-3"><span class="code c-rose">H9</span><h4>Weak write-failure recovery</h4><p>“Writing to chart…” could strand the user with no retry path.</p><div class="cnt">Severity 3 · Major</div></button>
+      <button class="zoom ev t-rose" data-lb="hf-4"><span class="code c-rose">H3</span><h4>No mid-flow discard</h4><p>No clear way to cancel a visit or discard an unusable ambient draft.</p><div class="cnt">Severity 3 · Major</div></button>
+    </div>
+
+    <div class="lm-spacer-sm"></div>
+    <div class="cards two">
+      <div class="card" style="border-left:4px solid var(--green)">
+        <div class="tagline">Usability session · what worked</div>
+        <h4>7/7 on all five post-test metrics — from a participant with zero EHR experience</h4>
+        <p>A surgical first assistant completed the full dashboard → snapshot → SOAP → gated sign path cold, rating ease, AI-vs-verified confidence, amber helpfulness, transcript usefulness, and two-gate appropriateness at ceiling. She said she'd trust signing in this system, citing the visible confirm cues.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--amber-line)">
+        <div class="tagline">Usability session · the real finding</div>
+        <h4>Amber drew attention — but it read as “needs attention,” not “AI-generated”</h4>
+        <p>Visual salience worked; semantics didn't. The pencil edit affordance and “Always verify” banner were also easy to miss. Strong scores coexisted with a first-use gap, which became the highest-leverage fix.</p>
+      </div>
+    </div>
+    <div class="note"><span>◆</span><span><b>Scope note:</b> timeboxed access meant one moderated session, not a study. It's reported as a single data point that agreed with the heuristic review — not as statistical evidence.</span></div>
+  </div>
+</section>
+
+<!-- ============ REFINE ============ -->
+<section id="refine" class="lm-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">05 Refine</div>
+      <h2>Fixes prioritized P0 to polish.</h2>
+      <p class="lede">Heuristic majors and the usability findings pointed at the same three things: teach the meaning, make decisions reversible, make the gate real.</p>
+    </div>
+
+    <div class="iter">
+      <div class="iter-head"><span class="prio p0">P0</span><h4>Skippable onboarding wizard</h4><span class="src">Usability test · learnability</span></div>
+      <div class="ba">
+        <div class="before"><h5>Before</h5><p>Amber read as a generic “needs attention” flag. Pencil edit and “Always verify” were overlooked. Participant asked to have “used it before.”</p></div>
+        <div class="after"><h5>After</h5><p>First-load wizard with progressive highlights: amber = AI draft, pencil = edit, per-section Accept + two-gate signing. Dismissible for returning users.</p></div>
+      </div>
+    </div>
+
+    <div class="iter">
+      <div class="iter-head"><span class="prio p0">P0</span><h4>Unaccept / re-review control</h4><span class="src">Heuristic H3 · user control</span></div>
+      <div class="ba">
+        <div class="before"><h5>Before</h5><p>An accepted SOAP section was locked — no path to reverse the decision and re-review AI content before signing.</p></div>
+        <div class="after"><h5>After</h5><p>Any accepted section can be reverted for re-review, restoring clinician agency where skepticism is highest.</p></div>
+      </div>
+    </div>
+
+    <div class="iter">
+      <div class="iter-head"><span class="prio p0">P0</span><h4>Strengthened pre-sign gate</h4><span class="src">Heuristic · error prevention</span></div>
+      <div class="ba">
+        <div class="before"><h5>Before</h5><p>Checkboxes could be raced through, and the chart-write state had no failure or retry guidance.</p></div>
+        <div class="after"><h5>After</h5><p>Progressive disclosure / hold-to-confirm on the gate, plus explicit failure and retry UI for the chart write.</p></div>
+      </div>
+    </div>
+
+    <div class="iter">
+      <div class="iter-head"><span class="prio p1x">P1</span><h4>Persistent visit context</h4><span class="src">Workflow continuity</span></div>
+      <div class="ba">
+        <div class="before"><h5>Before</h5><p>Checked agenda items and open SDOH actions disappeared once the clinician moved into SOAP editing.</p></div>
+        <div class="after"><h5>After</h5><p>Sticky visit summary carries agenda and open SDOH actions across SOAP and pre-sign.</p></div>
+      </div>
+    </div>
+
+    <div class="iter">
+      <div class="iter-head"><span class="prio pp">Polish</span><h4>Accessibility &amp; efficiency</h4><span class="src">Heuristic · WCAG 2.2 AA</span></div>
+      <div class="ba">
+        <div class="before"><h5>Before</h5><p>Incomplete keyboard paths, thin live announcements, unclear remaining-section feedback on the disabled Sign button.</p></div>
+        <div class="after"><h5>After</h5><p>Keyboard accelerators, improved aria-live announcements, and explicit remaining-section indicators.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAUNCH ============ -->
+<section id="launch">
+  <div class="wrap">
+    <div class="launch">
+      <h3>The final interactive prototype</h3>
+      <p>One polished experience built on contextual progressive disclosure — show what's relevant now, reveal the rest on demand. Desktop-first, because that's where Laura's heaviest cognitive work happens.</p>
+      <a class="btn btn-primary" href="https://lumen-clinician.netlify.app" target="_blank" rel="noopener">Open live prototype →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DECISIONS ============ -->
+<section class="lm-tint2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Key decisions</div>
+      <h2>Five choices that make AI assistance accountable.</h2>
+      <p class="lede">Each one traces back to a coded finding on the evidence wall.</p>
+    </div>
+    <div class="dec">
+      <div class="d"><h4>Amber AI diff highlighting</h4><p>All AI-generated text sits on <span style="background:var(--amber); padding:1px 5px; border-radius:4px">#FAEEDA</span> until accepted, then clears. Addresses the top clinician complaint: not knowing what the machine wrote. <b>D1–D3</b></p></div>
+      <div class="d"><h4>Per-section Accept + two-gate signing</h4><p>Sign stays disabled until every section is accepted and both acknowledgments are checked. Deliberate friction where liability lands. <b>V1–V4</b></p></div>
+      <div class="d"><h4>Transcript toggle</h4><p>“Show me what it heard” — speaker-labeled, timestamped lines as ground truth. Rated 7/7 for helpfulness in testing. <b>H1–H4</b></p></div>
+      <div class="d"><h4>Queue-level alerts &amp; SDOH</h4><p>Critical flags and social risk tags visible on queue rows before a chart is opened. <b>A1–A2 · N1–N2</b></p></div>
+      <div class="d"><h4>Simplified view toggle</h4><p>One click to reduce interface density — supports varying tech comfort and interrupted workflows. <b>D5</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFLECTION ============ -->
+<section class="lm-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Reflection</div>
+      <h2>What I'd carry into the next clinical project.</h2>
+    </div>
+    <div class="refl">
+      <div class="r"><div class="n">01</div><h4>Visual salience is not meaning</h4><p>Amber drew the eye but not the concept. Without an explicit map, users invent the wrong story — signifiers matter as much as color.</p></div>
+      <div class="r"><div class="n">02</div><h4>Novices catch foundational gaps</h4><p>An EHR novice exposed discoverability issues an expert would have skipped past. The 7/7 scores validated the flow; missing first-use support was the actual finding.</p></div>
+      <div class="r"><div class="n">03</div><h4>High-stakes AI needs intentional friction</h4><p>Per-section Accept and two-gate signing slow the commitment step on purpose. That's a safety feature, not a usability bug.</p></div>
+      <div class="r"><div class="n">04</div><h4>Convergent evaluation sharpens decisions</h4><p>Heuristic review and one moderated session produced identical priorities. Small sample, clear signal.</p></div>
+    </div>
+    <p class="lede" style="margin-top:30px; font-size:18px">Lumen Chart is less about automating notes and more about making AI-assisted documentation <strong style="color:#fff">accountable, reversible, and learnable under pressure</strong>.</p>
+  </div>
+</section>
+
+
+      </div>
+    </main>
+    <footer class="site-footer mt-auto">
+      <div class="container-content flex flex-col gap-6 py-10">
+        <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. Academic case study &middot; No real patient data</p>
+          <p class="font-sans text-[17px] text-white/40"><a href="../" class="text-white/55 hover:text-white/80">Full Lumen Chart case study</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="lm-lb" id="lm-lb" role="dialog" aria-modal="true" aria-labelledby="lm-lbTitle">
+    <div class="lm-lb-inner">
+      <div class="lm-lb-bar">
+        <span class="t" id="lm-lbTitle">Detail</span>
+        <span class="lm-lb-tools">
+          <button id="lm-lbOut" type="button" title="Zoom out" aria-label="Zoom out">&minus;</button>
+          <button id="lm-lbIn" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+          <button id="lm-lbClose" type="button" title="Close" aria-label="Close">&times;</button>
+        </span>
+      </div>
+      <div class="lm-lb-body" id="lm-lbBody"></div>
+    </div>
+  </div>
+<div class="lm-hidden-src" id="lm-hidden-src">
+
+  <div id="src-ev-b" data-title="B · Pre-AI documentation burden crisis">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>B1</b> — Physicians spend approximately 2 hours on EHR work for every 1 hour of direct patient care. EHR-associated burden is a primary driver of physician burnout.</li>
+      <li><b>B2</b> — For every patient encounter, clinicians spend ~16 minutes in the EHR (chart review ~33%, documentation ~24%, ordering ~17%). Many spend 1–2+ hours after hours finishing documentation at home.</li>
+    </ul>
+    <h4>Sources</h4>
+    <ul>
+      <li>Sinsky, C., et al. (2016). Allocation of physician time in ambulatory practice. <em>Annals of Internal Medicine, 165</em>(11), 753–760.</li>
+      <li>Overhage, J. M., &amp; McCallie, D. (2020). Physician time spent using the EHR during outpatient encounters. <em>Annals of Internal Medicine, 172</em>(3), 169–174.</li>
+      <li>Arndt, B. G., et al. (2017). Tethered to the EHR. <em>Annals of Family Medicine, 15</em>(5), 419–426.</li>
+    </ul>
+    <div class="resolve"><b>In Lumen Chart:</b> unified pre-visit snapshot and ambient SOAP drafts cut hunting across tabs, compressing 3–5 minute chart review toward under 60 seconds.</div>
+  </div>
+
+  <div id="src-ev-t" data-title="T · Ambient AI adoption &amp; conditional time savings">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>T1</b> — AI scribe adoption associated with 13.4 fewer minutes of total EHR time and 16.0 fewer minutes of documentation time (difference-in-differences). Gains greatest for primary care and high users.</li>
+      <li><b>T2</b> — Burnout dropped from 51.9% to 38.8% after 30 days of ambient AI use (adjusted OR 0.26), with after-hours documentation down 0.90 hours. Clinicians must still review all AI output.</li>
+      <li><b>T3</b> — Charting usability issues fall, but poor verification tools offset the time savings.</li>
+    </ul>
+    <h4>Sources</h4>
+    <ul>
+      <li>Rotenstein, L. S., et al. (2026). Changes in clinician time expenditure with AI-powered scribes. <em>JAMA, 335</em>(16), 1408–1417.</li>
+      <li>Olson, K. D., et al. (2025). Use of ambient AI scribes to reduce administrative burden and burnout. <em>JAMA Network Open, 8</em>(10), e2534976.</li>
+    </ul>
+    <div class="resolve"><b>In Lumen Chart:</b> review is structured so the minutes reclaimed in drafting aren't spent again on unstructured cleanup.</div>
+  </div>
+
+  <div id="src-ev-h" data-title="H · AI hallucinations, omissions &amp; accuracy">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>H1</b> — Ambient scribes report ~1–3% hallucination rates under narrow definitions; rates rise substantially when broader clinical inconsistencies and omissions are included.</li>
+      <li><b>H2</b> — AI vs human notes show frequent omissions and excessive shortening in a substantial minority of cases (commonly 20–30%). Clinicians must treat AI content as drafts.</li>
+      <li><b>H3</b> — AI-fabricated errors can lead to poor monitoring and treatment errors if not caught during physician review.</li>
+      <li><b>H4</b> — One evaluation found hallucinations in 31% of ambient AI notes vs 20% of human “gold” notes; others report 20–50% contain omissions or errors that could affect decisions.</li>
+    </ul>
+    <h4>Sources</h4>
+    <ul>
+      <li>Topaz, M., Peltonen, L. M., &amp; Zhang, Z. (2025). Beyond human ears. <em>npj Digital Medicine, 8</em>, 569.</li>
+      <li>Palm, E., et al. (2025). Assessing the quality of AI-generated clinical notes. <em>Frontiers in Artificial Intelligence</em>.</li>
+      <li>Taylor, S. L., et al. (2026). Quality of clinical notes created by ambient listening generative AI. <em>JMIR Medical Informatics, 14</em>, e86474.</li>
+    </ul>
+    <div class="resolve"><b>In Lumen Chart:</b> AI text is visually distinct from chart text; per-section Accept gates and two-gate signing make review mandatory before the note is finalized.</div>
+  </div>
+
+  <div id="src-ev-v" data-title="V · Clinician trust, liability &amp; verification">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>V1</b> — Misinterpreted commands or incorrect summaries undermine trust as damagingly as general inaccuracy.</li>
+      <li><b>V2</b> — Clinician sentiment: “If I don't feel what's in the note is what happened, I won't sign it. If I didn't see it, I won't sign it.”</li>
+      <li><b>V3</b> — Clinicians remain deeply concerned about legal and clinical responsibility for signed AI output. Over-reliance is a liability risk.</li>
+      <li><b>V4</b> — Large majorities report ambient AI increases perceived legal and clinical risk when verification tools are inadequate.</li>
+    </ul>
+    <h4>Sources</h4>
+    <ul>
+      <li>Shah, S. J., et al. (2025). Physician perspectives on ambient AI scribes. <em>JAMA Network Open, 8</em>(3), e251904.</li>
+      <li>Gerke, S., Simon, D., &amp; Roman, B. (2025). Liability risks of ambient clinical workflows with AI. <em>JCO Oncology Practice</em>.</li>
+    </ul>
+    <div class="resolve"><b>In Lumen Chart:</b> provenance timestamps, transcript ground truth, per-section Accept, and a pre-sign confirmation gate that can't be raced.</div>
+  </div>
+
+  <div id="src-ev-e" data-title="E · Editing &amp; review load (note bloat)">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>E1</b> — Note bloat from excessive verbatim capture increases review time and downstream inefficiency.</li>
+      <li><b>E2</b> — Time saved on drafting is often partially offset by review, correction, and confirmation burden.</li>
+      <li><b>E3</b> — AI scribe notes rated lower quality than human notes, especially on thoroughness and usefulness. AI is a draft tool only.</li>
+    </ul>
+    <h4>Sources</h4>
+    <ul>
+      <li>Ohde, J. W., et al. (2026). Barriers and opportunities of scaling ambient AI scribes. <em>npj Digital Medicine</em>.</li>
+      <li>University of Washington Medicine (2026). AI scribe tools produce lower quality medical notes compared to human clinicians.</li>
+    </ul>
+    <div class="resolve"><b>In Lumen Chart:</b> structured section-by-section review instead of open-ended cleanup of a wall of generated text.</div>
+  </div>
+
+  <div id="src-ev-a" data-title="A · Alert fatigue &amp; visual hierarchy">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>A1</b> — Clinicians receive dozens to hundreds of alerts daily; most are low-value, leading to overrides and near-misses.</li>
+      <li><b>A2</b> — AI features risk flooding interfaces unless strict visual hierarchy and prioritization are applied.</li>
+    </ul>
+    <h4>Source</h4>
+    <ul><li>Agency for Healthcare Research and Quality. <em>Alert fatigue</em>. Patient Safety Network (PSNet).</li></ul>
+    <div class="resolve"><b>In Lumen Chart:</b> rose-tier critical signals surface on the patient queue and dashboard; routine items are demoted so attention means something.</div>
+  </div>
+
+  <div id="src-ev-n" data-title="N · Nursing workflow integration">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>N1</b> — Many nurses batch-document vitals from memory or paper because desktop EHRs force them away from the bedside — a patient safety risk.</li>
+      <li><b>N2</b> — Mobile-first, low-tap bedside entry is critical. Tools are abandoned without immediate, visible time savings.</li>
+    </ul>
+    <h4>Source</h4>
+    <ul><li>Moy, A. J., et al. (2021). Measurement of clinical documentation burden among physicians and nurses. <em>JAMIA, 28</em>(5), 998–1008.</li></ul>
+    <div class="resolve"><b>In Lumen Chart:</b> tablet queue with 3-tap vitals entry, 44px touch targets (WCAG 2.5.5), and portrait-mode layouts.</div>
+  </div>
+
+  <div id="src-ev-c" data-title="C · Caregiver &amp; patient needs">
+    <h4>Findings</h4>
+    <ul>
+      <li><b>C1</b> — AI-generated summaries often fail health literacy and emotional needs, causing caregiver distress and confusion.</li>
+      <li><b>C2</b> — Jargon and lack of actionable synthesis are major barriers. Status-first plain-language summaries are high-impact.</li>
+    </ul>
+    <h4>Source</h4>
+    <ul><li>Schoening, M. B., &amp; Cotliar, D. (2026). Patients and caregivers leveraging AI to improve their health care journey. <em>Journal of Participatory Medicine, 18</em>, e69790.</li></ul>
+    <div class="resolve"><b>In Lumen Chart:</b> the caregiver portal answers three questions on load — is she okay, what changed, what do I need to do.</div>
+  </div>
+
+  <div id="src-th-1" data-title="Theme 01 — Documentation time is the primary system failure">
+    <p>All three roles describe documentation consuming time that should belong to patients, recovery, or care coordination.</p>
+    <ul>
+      <li><b>Laura</b> documents at night — uncompensated cognitive labor, 6–7 hrs/day in the EHR on heavy clinic days.</li>
+      <li><b>Kevin</b> batch-charts at shift end, reconstructing six patients from memory.</li>
+      <li><b>Diane</b> loses hours to pharmacy and office phone calls that a status field could answer in seconds.</li>
+    </ul>
+    <p><b>Evidence:</b> B1–B2</p>
+  </div>
+
+  <div id="src-th-2" data-title="Theme 02 — Trust in AI requires transparency, not just accuracy">
+    <p>Laura will use ambient AI, but she needs to see what the model generated versus what came from the chart. Accuracy alone is insufficient — the system has to make its own uncertainty visible.</p>
+    <blockquote>“It got most things right but it hallucinated a medication that was never discussed. I had to read every word… I need to know exactly what it made up versus what it heard. Show me the difference.”</blockquote>
+    <p><b>Evidence:</b> H1–H4 · V1–V4 · D1–D3</p>
+    <div class="resolve"><b>Resolved by:</b> SOAP editor with amber AI diff highlights, transcript panel, per-section Accept, and pre-sign confirmation.</div>
+  </div>
+
+  <div id="src-th-3" data-title="Theme 03 — Alert fatigue is a hierarchy problem, not a volume problem">
+    <p>Laura dismisses alerts reflexively because they all look the same. Kevin misses flags because they require chart navigation to find.</p>
+    <blockquote>“When everything is urgent, nothing is urgent. I once dismissed a drug interaction because I was clicking through thirty alerts in a row.”</blockquote>
+    <p><b>Evidence:</b> A1 · A2</p>
+    <div class="resolve"><b>Resolved by:</b> tiered severity alert panel; critical flags surfaced at queue row level, not buried in the chart.</div>
+  </div>
+
+  <div id="src-th-4" data-title="Theme 04 — The tool must meet users where they are">
+    <p>Kevin is at the bedside. Diane is on her phone between meetings. Laura is in a hallway with thirty seconds before she knocks. Every screen must function under interruption, on a touch device, inside 60 seconds of available attention.</p>
+    <ul>
+      <li>All components meet 44px touch targets (WCAG 2.5.5).</li>
+      <li>Vitals and alert views function on a tablet in portrait mode.</li>
+      <li>Caregiver views are mobile-first, brief, and interruptible.</li>
+    </ul>
+    <p><b>Evidence:</b> N1 · N2 · WCAG 2.5.5</p>
+  </div>
+
+  <div id="src-th-5" data-title="Theme 05 — For caregivers, ambiguity is an emotional harm">
+    <p>Diane's anxiety is a predictable response to a system that withholds clarity. An empty or confusing interface is not neutral — it is actively distressing.</p>
+    <blockquote>“If the system just told me ‘she's okay, here's what happened, here's what to watch for' — that would change everything. I don't need every clinical detail. I need to know she's okay.”</blockquote>
+    <p>Every empty state, status message, and error in the caregiver view is written reassurance-first. Clinical detail like drug interaction data is deliberately withheld from caregiver views.</p>
+    <p><b>Evidence:</b> C1 · C2</p>
+  </div>
+
+  <div id="src-p-laura" data-title="Persona — Dr. Laura Mitchell, attending physician">
+    <p><b>Internal medicine · Chicago, IL · 15 years experience · 18–22 patients/day · Epic EHR</b></p>
+    <blockquote>“I've had AI put words in my chart that I didn't mean. If I can't tell which line came from the machine and which came from the record, I won't sign it.”</blockquote>
+    <h4>Background</h4>
+    <p>Laura spends 6–7 hours daily in the EHR and reviews charts the night before — unpaid cognitive labor. She has experienced AI hallucination where a system attributed symptoms a patient never mentioned, which destroyed her trust in automated signing. Alert fatigue has already caused a documented near-miss.</p>
+    <h4>Goals</h4>
+    <ul>
+      <li>Complete all documentation before leaving the building</li>
+      <li>Access a single-screen pre-visit summary in under 60 seconds</li>
+      <li>Distinguish AI-generated text from verified chart content at a glance</li>
+      <li>Differentiate critical alerts from informational ones visually</li>
+      <li>Recover roughly an hour of personal time per night</li>
+    </ul>
+    <h4>Pain points</h4>
+    <p><span class="pill">6–7 hrs/day in EHR</span><span class="pill">No unified pre-visit view</span><span class="pill">Hallucination destroyed trust</span><span class="pill">Alert fatigue near-miss</span><span class="pill">One-click sign feels dangerous</span><span class="pill">After-hours charting</span></p>
+    <h4>Conceptual interview — on AI documentation and trust</h4>
+    <blockquote>“I've tried one. It was impressive and terrifying at the same time… The promise is real — I'd get back probably an hour a night — but I need to know exactly what it made up versus what it heard.”</blockquote>
+    <h4>Conceptual interview — on pre-visit prep</h4>
+    <blockquote>“I'll pull up the chart right before I knock on the door — sometimes in the hallway — and I'm trying to scan six months of notes in thirty seconds. Instead I'm hunting through tabs.”</blockquote>
+    <div class="resolve"><b>Design implication:</b> Laura abandons any tool where AI-authored content is indistinguishable from human-entered data. Every AI line needs a visible source indicator; explicit per-section Accept must precede an active Sign button. One-click sign is a disqualifier, not a feature.</div>
+    <p style="font-size:13px; color:var(--muted)"><em>Persona synthesized from published literature. Not based on a real interview.</em></p>
+  </div>
+
+  <div id="src-p-kevin" data-title="Persona — Kevin Hartley, RN, charge nurse">
+    <p><b>Medical-surgical unit · Detroit, MI · 9 years experience · 28-bed floor · 3 × 12hr shifts/week</b></p>
+    <blockquote>“I'm responsible for six patients at once and I can't always get to a computer. The system has to keep up with me, not the other way around.”</blockquote>
+    <h4>Background</h4>
+    <p>BSN from Wayne State, pursuing an MSN in nursing informatics. He oversees 4–6 nurses per shift and owns assignments, escalations, and handoffs. He batch-documents vitals hours after collection and uses paper — his hand, a paper towel — as a parallel system, because the digital tool has failed to fit his workflow. He has watched three rollouts regress to paper.</p>
+    <h4>Goals</h4>
+    <ul>
+      <li>Complete handoff notes fast and accurately</li>
+      <li>Surface deteriorating patients at the queue level before opening a chart</li>
+      <li>Document at the bedside — reduce floor-to-chart travel to zero</li>
+      <li>Keep vitals current instead of reconstructing them from memory</li>
+    </ul>
+    <h4>Pain points</h4>
+    <p><span class="pill">Charting from memory</span><span class="pill">Vitals across 4 screens</span><span class="pill">No bedside access</span><span class="pill">Low-priority alert noise</span><span class="pill">Stale handoff notes</span></p>
+    <h4>Conceptual interview — on documentation timing</h4>
+    <blockquote>“Batch charting. I take vitals at 9, document them at 2. I write on my hand sometimes, or a paper towel… That's not safe. I know it's not safe. But I can't leave a patient to go sit at a workstation every time I take a blood pressure.”</blockquote>
+    <h4>Conceptual interview — on deterioration</h4>
+    <blockquote>“The patient just looked different. But to verify my gut I had to open four different screens… By the time I had everything in front of me, ten minutes had passed. The data was all there — it just wasn't together.”</blockquote>
+    <div class="resolve"><b>Design implication:</b> time savings must be visible within the first shift, not after a learning curve. If logging a vital requires leaving the patient or opening more than three screens, the tool is abandoned by shift two.</div>
+    <p style="font-size:13px; color:var(--muted)"><em>Persona synthesized from published literature. Not based on a real interview.</em></p>
+  </div>
+
+  <div id="src-p-diane" data-title="Persona — Diane Santos, family caregiver">
+    <p><b>Daughter of patient Maria Santos · Full-time HR manager · Suburban Detroit · Portal access granted April 2026</b></p>
+    <blockquote>“I love my mom and I want to help, but I'm not a nurse. I just need to know: is she okay, what does she need to do, and what do I need to do?”</blockquote>
+    <h4>Background</h4>
+    <p>Diane coordinates care for her mother (T2DM, hypertension, hyperlipidemia) alongside a full-time career and two kids. She maintains a manual medication list on her phone that diverges from the clinical record every time a dose changes. She has called the pharmacy twice about a Metformin prior auth with no resolution. Interface ambiguity creates active emotional distress, not neutral frustration.</p>
+    <h4>Her three questions after every visit</h4>
+    <ul><li>What did the doctor say?</li><li>What changed?</li><li>What does mom need to do?</li></ul>
+    <h4>Pain points</h4>
+    <p><span class="pill">Jargon she can't decode</span><span class="pill">Unclear access boundaries</span><span class="pill">No summary for missed visits</span><span class="pill">Refill gaps</span><span class="pill">Prior auth phone loop</span></p>
+    <h4>Conceptual interview — on the patient portal</h4>
+    <blockquote>“There's a ‘visit summary' somewhere but it's full of billing codes and abbreviations. It might as well be in another language.”</blockquote>
+    <h4>Conceptual interview — on access boundaries</h4>
+    <blockquote>“I've been nervous to click certain things because I don't know if it'll send a message to the doctor that mom didn't approve… I also don't want my mom to feel like I'm taking over her care. That's a real tension.”</blockquote>
+    <div class="resolve"><b>Design caution:</b> Diane has partial information, no clinical training, and deep personal stakes. Every screen she touches answers: is mom okay, and is there anything I need to do right now? An explicit permissions table with a visible consent date removes the anxiety of guessing.</div>
+    <p style="font-size:13px; color:var(--muted)"><em>Persona synthesized from published literature. Not based on a real interview.</em></p>
+  </div>
+
+  <div id="src-hf-1" data-title="Severity 3 — No Unaccept / re-open control (H3)">
+    <p><b>Heuristic:</b> User control &amp; freedom</p>
+    <p><b>Issue:</b> once a SOAP section was Accepted, there was no clear path to reverse the decision and re-review AI content before signing.</p>
+    <p><b>Why it matters:</b> it creates a false sense of completion and undermines trust for exactly the high-skepticism clinician the system is built for. A gate you can't step back through isn't a safety mechanism — it's a trap.</p>
+    <div class="resolve"><b>Fix (P0):</b> an Unaccept control on every accepted section, reverting it for re-review.</div>
+  </div>
+
+  <div id="src-hf-2" data-title="Severity 3 — Pre-sign acknowledgments can be raced (H5)">
+    <p><b>Heuristic:</b> Error prevention</p>
+    <p><b>Issue:</b> the pre-sign acknowledgments could be cleared with rapid checkbox clicks, weakening the two-gate model meant to prevent signing unreviewed AI content.</p>
+    <p><b>Why it matters:</b> the entire liability argument for the design rests on the gate being real. A gate that can be raced is theater.</p>
+    <div class="resolve"><b>Fix (P0):</b> progressive disclosure or hold-to-confirm on the final acknowledgment.</div>
+  </div>
+
+  <div id="src-hf-3" data-title="Severity 3 — Weak write-failure recovery (H9)">
+    <p><b>Heuristic:</b> Help users recognize, diagnose, and recover from errors</p>
+    <p><b>Issue:</b> the “Writing to chart…” state and gate failures had no clear retry path. A network or state error could strand the clinician mid-sign.</p>
+    <p><b>Why it matters:</b> a stranded signature is a documentation gap, and documentation gaps are the thing this project exists to close.</p>
+    <div class="resolve"><b>Fix (P0):</b> explicit failure and retry UI for the chart-write state.</div>
+  </div>
+
+  <div id="src-hf-4" data-title="Severity 3 — No mid-flow discard (H3)">
+    <p><b>Heuristic:</b> User control &amp; freedom</p>
+    <p><b>Issue:</b> no clear “cancel visit” or “discard ambient draft” path once capture had started.</p>
+    <p><b>Why it matters:</b> if the ambient capture is unusable — wrong room, wrong patient, unusable audio — the clinician needs an exit that doesn't involve signing something they don't want.</p>
+    <div class="resolve"><b>Fix (P0):</b> mid-flow discard with confirmation.</div>
+  </div>
+
+
+  <script src="../../../assets/js/theme.js"></script>
+  <script src="../../../assets/js/nav.js"></script>
+  <script src="../../../assets/js/case-nav.js"></script>
+  <script src="../../../assets/js/lumen-minimal.js?v=20260801minimal"></script>
+</body>
+</html>

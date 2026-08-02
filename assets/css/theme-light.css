@@ -187,6 +187,34 @@ html[data-theme="light"] .case-hmw-label {
   color: rgb(30 90 168 / var(--tw-text-opacity, 1));
 }
 
+html[data-theme="light"] a.text-teal-accent:hover,
+html[data-theme="light"] a.text-sky-accent:hover {
+  color: var(--accent-primary-hover);
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 64, 175, 0.35);
+}
+
+html[data-theme="light"] .project-list-card:hover .text-teal-accent,
+html[data-theme="light"] .work-card:hover .text-teal-accent,
+html[data-theme="light"] details:hover > summary .text-teal-accent,
+html[data-theme="light"] details > summary:hover .text-teal-accent {
+  color: var(--accent-primary-hover);
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 64, 175, 0.35);
+}
+
+html[data-theme="light"] .project-list-card:hover .text-white\/55 {
+  color: rgb(31 41 55 / 0.65);
+}
+
+html[data-theme="light"] .project-list-card__caption {
+  color: rgb(31 41 55 / 0.62);
+}
+
+html[data-theme="light"] a.site-logo:hover {
+  color: rgb(31 41 55 / 0.75);
+}
+
 html[data-theme="light"] .text-rose-300 {
   --tw-text-opacity: 1;
   color: rgb(190 18 60 / var(--tw-text-opacity, 1));
@@ -477,6 +505,30 @@ html[data-theme="light"] .testimonial-bar {
   background-color: #2563EB;
 }
 
+html[data-theme="light"] .testimonial-carousel__btn {
+  border-color: rgba(31, 41, 55, 0.14);
+  background-color: rgba(255, 255, 255, 0.88);
+  color: rgba(31, 41, 55, 0.72);
+}
+
+html[data-theme="light"] .testimonial-carousel__btn:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--accent-primary-hover);
+}
+
+html[data-theme="light"] .testimonial-carousel__dot {
+  background-color: rgba(31, 41, 55, 0.2);
+}
+
+html[data-theme="light"] .testimonial-carousel__dot.is-active {
+  background-color: var(--accent-primary);
+}
+
+html[data-theme="light"] .testimonial-carousel__dot:hover {
+  background-color: rgba(37, 99, 235, 0.55);
+}
+
 html[data-theme="light"] .status-pill {
   background-color: rgba(37, 99, 235, 0.1);
   color: #2563EB;
@@ -488,6 +540,10 @@ html[data-theme="light"] .profile-photo {
     0 0 0 1px rgba(37, 99, 235, 0.1),
     0 0 24px rgba(37, 99, 235, 0.12),
     0 16px 36px rgba(31, 41, 55, 0.12);
+}
+
+html[data-theme="light"] .hero-portrait-caption {
+  color: rgba(31, 41, 55, 0.62);
 }
 
 /* ---------- Footer ---------- */
@@ -1117,6 +1173,22 @@ html[data-theme="light"] .tt-hero-tagline {
 html[data-theme="light"] .tt-hero-badge,
 html[data-theme="light"] .case-hero-badge {
   color: #475569;
+}
+
+html[data-theme="light"] .case-hero-visual {
+  border-color: rgba(15, 23, 42, 0.1);
+  background: #fff;
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.06),
+    0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme="light"] .case-hero-visual--contain {
+  background: #f8fafc;
+}
+
+html[data-theme="light"] .case-hero-visual-shot--ui {
+  background: #f8fafc;
 }
 
 html[data-theme="light"] .tt-hero-eval-mark {

@@ -26,8 +26,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260729b">
-  <link rel="stylesheet" href="assets/css/theme-light.css?v=20260729c">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260802workfix">
+  <link rel="stylesheet" href="assets/css/theme-light.css?v=20260802hero">
 </head>
 <body>
   <div id="main">
@@ -77,18 +77,21 @@
     <!-- ============ Hero ============ -->
     <section class="container-content flex flex-col gap-8 pt-6 pb-10 lg:pt-12">
       <p class="font-sans text-[18px] font-medium uppercase tracking-[0.06em] text-white/85 md:text-[18px] lg:text-[22px]">
-        Healthcare User Experience Research &amp; Design
+        Healthcare User Experience Portfolio
       </p>
       <div class="md:clearfix">
-        <img
-          src="assets/images/jessie-home-page-portrait-photo-3.jpg"
-          srcset="assets/images/jessie-home-page-portrait-photo-1.jpg 512w,
-                  assets/images/jessie-home-page-portrait-photo-2.jpg 1024w,
-                  assets/images/jessie-home-page-portrait-photo-3.jpg 2048w"
-          sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 90vw"
-          width="2048" height="2048"
-          alt="Jessie Smallenburg portrait"
-          class="profile-photo mx-auto mb-8 aspect-square w-[90%] max-w-[360px] rounded-2xl border object-cover object-top md:float-left md:mx-0 md:mb-4 md:mr-8 md:h-[260px] md:w-[260px] md:max-w-none lg:mb-5 lg:mr-10 lg:h-[300px] lg:w-[300px]">
+        <figure class="hero-portrait mx-auto mb-8 w-[90%] max-w-[360px] md:float-left md:mx-0 md:mb-4 md:mr-8 md:w-[260px] md:max-w-none lg:mb-5 lg:mr-10 lg:w-[300px]">
+          <img
+            src="assets/images/jessie-home-page-portrait-photo-3.jpg"
+            srcset="assets/images/jessie-home-page-portrait-photo-1.jpg 512w,
+                    assets/images/jessie-home-page-portrait-photo-2.jpg 1024w,
+                    assets/images/jessie-home-page-portrait-photo-3.jpg 2048w"
+            sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 90vw"
+            width="2048" height="2048"
+            alt="Jessie Smallenburg portrait"
+            class="profile-photo aspect-square w-full rounded-2xl border object-cover object-top md:h-[260px] lg:h-[300px]">
+          <figcaption class="hero-portrait-caption">Healthcare user experience researcher &amp; designer</figcaption>
+        </figure>
         <h1 class="h-statement text-[34px] sm:text-[40px] lg:text-[46px] max-w-[42ch]">
           Combining over a decade of UX research and design experience with community health education to create accessible, evidence-based digital healthcare experiences.
         </h1>
@@ -155,13 +158,41 @@
               class="work-card-thumb">
           </div>
           <div class="work-card-body">
-            <h3 class="work-card-title">Lumen Chart</h3>
-            <p class="work-card-outcome">AI-powered clinical documentation redesign for primary care</p>
-            <ul class="work-card-tags">
-              <li>EHR</li>
-              <li>AI Transparency</li>
-              <li>Clinician Workflow</li>
-              <li>SDOH</li>
+            <h3 class="work-card-title">Lumen EHR Chart</h3>
+            <p class="work-card-outcome">An AI-powered clinical documentation redesign for a primary care electronic health records application</p>
+            <ul class="work-card-tags" aria-label="Key UX methods">
+              <li>Evidence wall</li>
+              <li>Personas</li>
+              <li>User flows</li>
+              <li>Wireframes</li>
+              <li>Hi-fi mockups</li>
+              <li>Heuristic eval</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="./projects/healthcare-consulting/access/" class="work-card work-card--ui-shot">
+          <div class="work-card-media work-card-media--contain">
+            <img
+              src="./assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-720.png?v=20260802"
+              alt="Healthcare consulting prototype showing progressive navigation disclosure for get-coverage pathways on a public health benefits portal"
+              width="720"
+              height="512"
+              loading="lazy"
+              decoding="async"
+              sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 90vw"
+              class="work-card-thumb work-card-thumb--contain">
+          </div>
+          <div class="work-card-body">
+            <h3 class="work-card-title">Healthcare Consulting</h3>
+            <p class="work-card-outcome">Anonymized usability analysis improving eligibility and enrollment findability on a public health benefits portal</p>
+            <ul class="work-card-tags" aria-label="Key UX methods">
+              <li>Behavioral analytics</li>
+              <li>Session replay</li>
+              <li>Heatmaps</li>
+              <li>Survey synthesis</li>
+              <li>Info architecture</li>
+              <li>Prototypes</li>
             </ul>
           </div>
         </a>
@@ -179,52 +210,134 @@
           </div>
           <div class="work-card-body">
             <h3 class="work-card-title">Path Compass</h3>
-            <p class="work-card-outcome">Trauma-informed TF-CBT tooling for fidelity, privacy, and longitudinal outcomes</p>
-            <ul class="work-card-tags">
-              <li>TF-CBT</li>
-              <li>Journey Mapping</li>
-              <li>Fidelity</li>
-              <li>Youth Privacy</li>
-            </ul>
-          </div>
-        </a>
-
-        <a href="./projects/healthcare-consulting/access/" class="work-card work-card--ui-shot">
-          <div class="work-card-media work-card-media--contain">
-            <img
-              src="./assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav.png?v=20260729"
-              alt="Healthcare consulting prototype showing progressive navigation disclosure for get-coverage pathways on a public health benefits portal"
-              width="2880"
-              height="2048"
-              loading="lazy"
-              decoding="async"
-              class="work-card-thumb work-card-thumb--contain">
-          </div>
-          <div class="work-card-body">
-            <h3 class="work-card-title">Healthcare Consulting</h3>
-            <p class="work-card-outcome">Anonymized usability analysis improving eligibility and enrollment findability on a public health benefits portal</p>
-            <ul class="work-card-tags">
-              <li>Public Health</li>
-              <li>Findability</li>
-              <li>Behavioral Analytics</li>
-              <li>Information Architecture</li>
+            <p class="work-card-outcome">Trauma-informed TF-CBT software used by clinicians, youth, and caregivers for fidelity, privacy, and longitudinal outcomes</p>
+            <ul class="work-card-tags" aria-label="Key UX methods">
+              <li>Research synthesis</li>
+              <li>Personas</li>
+              <li>Journey maps</li>
+              <li>Wireframes</li>
+              <li>Hi-fi mockups</li>
+              <li>Heuristic eval</li>
             </ul>
           </div>
         </a>
       </div>
     </section>
 
-    <!-- ============ Testimonial ============ -->
-    <section class="container-content pb-10">
-      <figure class="testimonial">
-        <span class="testimonial-bar" aria-hidden="true"></span>
-        <blockquote class="testimonial-quote">
-          &ldquo;Jessie has the ability to see the creative, human-centered aspects of a project&hellip; Jessie uses her keen artistic perspective and training in the field of cognitive psychology to evaluate and make user interface designs maximally efficient, interactive and aesthetically pleasing.&rdquo;
-        </blockquote>
-        <figcaption class="testimonial-attr">
-          &mdash; <strong class="font-semibold text-white/90">Doug Oliver</strong>, Senior Researcher, Ford Motor Company
-        </figcaption>
-      </figure>
+    <!-- ============ Testimonials ============ -->
+    <section class="container-content pb-10" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading" class="sr-only">Colleague testimonials</h2>
+
+      <div class="testimonial-carousel" data-testimonial-carousel tabindex="0" aria-roledescription="carousel">
+        <div class="testimonial-carousel__viewport">
+          <figure class="testimonial testimonial-carousel__slide is-active" data-carousel-slide aria-hidden="false">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie delivered great value in her usability work. She was insightful, knowledgeable, and organized, and did an excellent job of contextualizing her findings so clients could clearly visualize the usability issues and proposed solutions.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Michelle Miller</strong>, Client Success Manager at Gartner
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie handled UX projects with expertise, uncovering site issues and offering best practices and suggested fixes. Her usability advice enhanced my data findings with actionable next steps.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Ellen Sabor</strong>, Retired (former colleague)
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie has the ability to see the creative, human-centered aspects of a project, then use her engineering knowledge to cascade the technical requirements to developer teams. She evaluates and makes user interface designs maximally efficient, interactive, and aesthetically pleasing.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Doug Oliver</strong>, Senior Researcher (Retired), Ford Motor Company
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie is very conscientious with her work, with a strong desire to create the best deliverables she possibly can. She benchmarked other industries with higher levels of innovation so we could leverage their learnings.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Ken Mayer</strong>, Human Factors &amp; User Experience Expert, Ford Motor Company
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie brought a unique perspective as a UX-trained person. Her enthusiasm and passion for the job, coupled with her background in user experience, was a valuable part of the project.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">John Huber</strong>, NVH Technical Specialist
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie gave valuable feedback that improved the user experience of the software. She is smart, creative, detail-oriented, and a wonderful person to work with.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Anjana Dogra</strong>, Project / Test Coordinator
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;Jessie has a positive attitude, strong work ethic, is dependable, considerate, and creative at aligning customer needs with a top-notch user experience. Her knowledge and attention to detail with respect to usability and interface design is solid.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Scott Beloskur</strong>, Senior Software Project Manager, Ford Motor Company
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;She&rsquo;s a stickler for contextual detail and takes the initiative to gather these details. By her nature and training in HCI, she is loath to jump into solutions without first doing as much exploration of the problem space as time and budget allow.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Dan Klyn</strong>, Information Architect &amp; Lecturer, University of Michigan School of Information
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="testimonial-carousel__controls">
+          <button type="button" class="testimonial-carousel__btn" data-carousel-prev aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+
+          <div class="testimonial-carousel__dots" role="tablist" aria-label="Choose testimonial">
+            <button type="button" class="testimonial-carousel__dot is-active" data-carousel-dot role="tab" aria-label="Testimonial 1 of 8" aria-selected="true" tabindex="0"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 2 of 8" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 3 of 8" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 4 of 8" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 5 of 8" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 6 of 8" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 7 of 8" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 8 of 8" aria-selected="false" tabindex="-1"></button>
+          </div>
+
+          <button type="button" class="testimonial-carousel__btn" data-carousel-next aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+
+        <p class="sr-only" data-carousel-status aria-live="polite">Testimonial 1 of 8</p>
+      </div>
     </section>
 
     <!-- ============ CTA buttons ============ -->
@@ -374,5 +487,6 @@
   </div>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/testimonial-carousel.js?v=20260802"></script>
 </body>
 </html>

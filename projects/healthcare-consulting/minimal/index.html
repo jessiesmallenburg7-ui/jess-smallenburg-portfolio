@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <title>Healthcare Consulting (Concise) &mdash; Jessie Smallenburg</title>
+  <meta name="description" content="Concise healthcare UX consulting case study: behavioral analytics and survey synthesis to improve eligibility and enrollment findability on a public health benefits portal.">
+  <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/healthcare-consulting/minimal">
+  <link rel="icon" href="../../../assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="../../../assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/styles.css?v=20260801hcmin">
+  <link rel="stylesheet" href="../../../assets/css/healthcare-consulting-minimal.css?v=20260801hcmin">
+  <link rel="stylesheet" href="../../../assets/css/case-hero-visual.css?v=20260802heromobile">
+  <link rel="stylesheet" href="../../../assets/css/minimal-case-nav.css?v=20260802captions">
+  <link rel="stylesheet" href="../../../assets/css/theme-light.css?v=20260801hcmin">
+</head>
+<body>
+  <div id="main">
+    <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
+      <div class="flex items-center justify-between md:contents">
+        <a href="../../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
+        <div class="header-actions relative z-50 md:order-last">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
+            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+          </button>
+          <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="primary-nav" class="site-nav hidden flex-col md:flex md:flex-row md:items-center md:gap-2.5" aria-label="Primary">
+        <a href="../../../" class="nav-link">Home</a>
+        <a href="../../" class="nav-link nav-link-active">Projects</a>
+        <a href="../../../resume" class="nav-link">Résumé</a>
+        <a href="../../../about" class="nav-link">About</a>
+        <a href="../../../contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+    <main class="container-content pb-16 pt-6 lg:pt-12">
+      <!-- TEMPORARY: remove concise-dev-nav before launch -->
+      <nav class="concise-dev-nav" aria-label="Temporary concise case study switcher">
+        <p class="concise-dev-nav-label">Temp · concise drafts</p>
+        <ul class="concise-dev-nav-list">
+          <li><a class="concise-dev-nav-link" href="../../path-compass/minimal/">Path Compass</a></li>
+          <li><a class="concise-dev-nav-link" href="../../clinician-flow/minimal/">Lumen Chart EHR</a></li>
+          <li><a class="concise-dev-nav-link concise-dev-nav-link--active" href="./" aria-current="page">Healthcare Consulting</a></li>
+        </ul>
+      </nav>
+      <div class="case-version-banner" role="note">
+        <p class="case-version-banner-text">You&rsquo;re viewing the <strong>concise</strong> healthcare consulting case study &mdash; banded sections, progressive disclosure, shorter scan path.</p>
+        <a class="case-version-banner-link" href="../">View full case study &rarr;</a>
+      </div>
+      <div class="hc-case">
+        <div class="hc-topbar">
+          <div class="wrap">
+            <nav class="case-nav minimal-case-nav" data-case-nav aria-label="Case study sections">
+              <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="hc-case-nav-panel">
+                <span class="case-nav-toggle-meta">
+                  <span class="case-nav-toggle-kicker">On this page</span>
+                  <span class="case-nav-toggle-current" data-case-nav-current>Challenge</span>
+                </span>
+                <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </button>
+              <span class="minimal-topbar-label">On this page</span>
+              <div id="hc-case-nav-panel" class="case-nav-panel">
+                <a href="#challenge" class="case-nav-link case-nav-link-active" data-nav-label="Challenge">Challenge</a>
+                <a href="#methods" class="case-nav-link" data-nav-label="Methods">Methods</a>
+                <a href="#insights" class="case-nav-link" data-nav-label="Insights">Insights</a>
+                <a href="#recommendations" class="case-nav-link" data-nav-label="Recommendations">Recommendations</a>
+                <a href="#visuals" class="case-nav-link" data-nav-label="Design directions">Design directions</a>
+                <a href="#outcomes" class="case-nav-link" data-nav-label="Outcomes">Outcomes</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+<header class="hc-hero">
+  <div class="wrap">
+    <div class="case-hero-main case-hero-main--with-meta">
+      <div class="case-hero-lead">
+        <span class="tagpill">Healthcare UX · Anonymized consulting case study</span>
+        <h1>Improving Findability of Eligibility &amp; Enrollment Information on a Public Health Benefits Portal</h1>
+      </div>
+      <figure class="case-hero-visual">
+        <img src="../../../assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-720.png" alt="Progressive disclosure navigation mockup guiding users to coverage and enrollment information" width="720" height="405" loading="eager" decoding="async">
+      </figure>
+      <div class="case-hero-rest">
+        <p class="sub">High-intent visitors couldn't find their way to coverage information. Behavioral data and survey synthesis showed exactly where they got stuck — and why.</p>
+      </div>
+      <div class="meta-row">
+        <span><b>Role</b> &nbsp;Usability Analyst</span>
+        <span><b>Methods</b> &nbsp;Session replay, heatmaps, survey synthesis</span>
+        <span><b>Year</b> &nbsp;2022</span>
+        <span><b>Deliverable</b> &nbsp;Prioritized recommendations for a live client site</span>
+      </div>
+    </div>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://www.figma.com/proto/oHoODLjAJWIImCRZxMPJJW/Public-Health-Website?node-id=32-1250&scaling=fit-width&content-scaling=fixed&t=MYY2kwvHMXfxelK3-1" target="_blank" rel="noopener">View interactive prototype →</a>
+    </div>
+    <p class="integrity"><span>⚑</span><span><b>Confidentiality:</b> fully anonymized and generalized to respect prior agreements. Describes only my role, process, and learnings — no confidential client data, metrics, or original screenshots. All visuals shown are conceptual mockups I built afterward to illustrate the recommendations.</span></p>
+  </div>
+</header>
+
+<!-- ============ KEY TAKEAWAYS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">At a glance</div>
+      <h2>Three things worth knowing before you scroll.</h2>
+    </div>
+    <div class="takes">
+      <div class="take"><div class="n">01</div><p>High-intent visitors struggled to find coverage pathways because of weak CTAs, complex navigation, buried pagination, and hard-to-read content.</p></div>
+      <div class="take"><div class="n">02</div><p>I recommended clearer CTAs, simpler progressive-disclosure navigation, dual pagination, and plain-language content.</p></div>
+      <div class="take"><div class="n">03</div><p>After the engagement, the live site adopted progressive disclosure and updated key coverage links — dual pagination wasn't implemented.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section id="challenge" class="hc-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The challenge</div>
+      <h2>People seeking health coverage kept losing the thread.</h2>
+      <p class="lede">A major public health benefits portal saw high volumes of visitors seeking coverage and eligibility information — many of whom never found a clear path to it.</p>
+    </div>
+    <div class="numlist">
+      <div class="row"><div class="idx">1</div><p>Many visitors arrived specifically seeking coverage or eligibility information.</p></div>
+      <div class="row"><div class="idx">2</div><p>Key calls-to-action underperformed relative to that intent.</p></div>
+      <div class="row"><div class="idx">3</div><p>Navigation and content discoverability issues led to abandonment or over-reliance on search.</p></div>
+      <div class="row"><div class="idx">4</div><p>Content readability was mismatched with the literacy levels of the target audience — often people navigating government systems under time pressure or with varying health literacy.</p></div>
+    </div>
+    <div class="note"><span>◆</span><span>These barriers delayed access to essential health coverage for vulnerable populations — which is what made findability a health-equity problem, not just a UX one.</span></div>
+  </div>
+</section>
+
+<!-- ============ ROLE & METHODS ============ -->
+<section id="methods">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">My role &amp; methods</div>
+      <h2>Mixed methods, centered on what people actually do.</h2>
+      <p class="lede">As Usability Analyst, I led behavioral UX research on the client's public benefits platform and delivered prioritized, actionable recommendations directly to their team.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="tagline">Method 01</div>
+        <h4>Session replay &amp; heatmaps</h4>
+        <p>Reviewed how visitors actually interacted with critical pages — homepage, navigation, resource and search results — revealing scrolling patterns, hesitation, and navigation struggles in real time.</p>
+      </div>
+      <div class="card">
+        <div class="tagline">Method 02</div>
+        <h4>Survey data synthesis</h4>
+        <p>Analyzed responses from recent site visitors seeking coverage information, prioritizing negative satisfaction signals, visit reasons, and open-ended comments about findability.</p>
+      </div>
+      <div class="card">
+        <div class="tagline">Method 03</div>
+        <h4>Prioritization framework</h4>
+        <p>Ranked findings by negative feedback volume, coverage-seeking intent, and site information-quality metrics to focus recommendations where they'd matter most.</p>
+      </div>
+    </div>
+    <div class="note"><span>◆</span><span><b>Why these methods:</b> session replays and heatmaps show what users actually do, not just what they report — critical for high-stakes public services where people face cognitive load, stress, or time constraints. Survey comments then supplied the why.</span></div>
+  </div>
+</section>
+
+<!-- ============ INSIGHTS ============ -->
+<section id="insights" class="hc-tint2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Key insights</div>
+      <h2>Four barriers, found in the behavior — not just the feedback.</h2>
+      <p class="lede">Each insight is grounded in what people did on the page, then confirmed by what they said about it afterward.</p>
+    </div>
+    <div class="evgrid">
+      <div class="ev t-blue">
+        <span class="code c-blue">01</span>
+        <h4>Primary CTA lacked prominence</h4>
+        <p>No button styling or hover feedback, sometimes below the fold. Many coverage-seekers scrolled past it without recognizing it as interactive.</p>
+      </div>
+      <div class="ev t-teal">
+        <span class="code c-teal">02</span>
+        <h4>Complex megamenu navigation</h4>
+        <p>Visitors hovered over global navigation without selecting, then switched to search — the menu was too broad or deep for quick access.</p>
+      </div>
+      <div class="ev t-amber">
+        <span class="code c-amber">03</span>
+        <h4>Buried pagination</h4>
+        <p>On resource pages, few visitors scrolled far enough to reach pagination controls, so they never discovered additional valuable content.</p>
+      </div>
+      <div class="ev t-rose">
+        <span class="code c-rose">04</span>
+        <h4>Readability &amp; health literacy gap</h4>
+        <p>Open-ended comments repeatedly flagged content as overly complex — confirmed by a formal readability assessment below.</p>
+      </div>
+    </div>
+
+    <div class="spotlight">
+      <div class="spot-num">
+        <div class="big">19</div>
+        <div class="lbl">years of formal education readers needed to comprehend key eligibility pages — several years of post-secondary schooling</div>
+      </div>
+      <div class="spot-quotes">
+        <h4>What visitors actually said</h4>
+        <div class="qgrid">
+          <blockquote>Said the site needed layman's terms — that you'd need a PhD to follow the nuances in the wording.</blockquote>
+          <blockquote>Couldn't find a clear, direct answer to a simple question about eligibility requirements.</blockquote>
+          <blockquote>Asked for simple terms that most people could actually understand.</blockquote>
+          <blockquote>Wanted the site made simple, easy to understand, and easy to navigate.</blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECOMMENDATIONS ============ -->
+<section id="recommendations">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Recommendations</div>
+      <h2>Five priorities, focused on visibility, simplicity, and inclusion.</h2>
+      <p class="lede">Delivered directly to the client as a prioritized, feasible set of changes — not a wish list.</p>
+    </div>
+    <div class="reclist">
+      <div class="rec"><p>Redesign the primary CTA(s) with conventional button styling, strong contrast, hover states, and higher placement — including brief scope notes explaining each pathway.</p></div>
+      <div class="rec"><p>Test variations of CTA wording, comparing common user terms like "enroll" against existing site language.</p></div>
+      <div class="rec"><p>Simplify the megamenu by consolidating categories and reducing depth.</p></div>
+      <div class="rec"><p>Add pagination and "items per page" controls at both the top and bottom of resource lists.</p></div>
+      <div class="rec">
+        <p>Systematically simplify on-page language to plain-language standards, using readability tools to validate and iterate.</p>
+        <ul class="sub">
+          <li>Write for a general audience, not subject-matter experts.</li>
+          <li>Target a 4th- to 7th-grade reading level, guided by established readability tools.</li>
+          <li>Favor shorter sentences, common words, clear structure, and direct answers to common questions.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESIGN DIRECTIONS ============ -->
+<section id="visuals" class="hc-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Proposed design directions</div>
+      <h2>Conceptual mockups built to illustrate the recommendations.</h2>
+      <p class="lede">Since original materials are confidential, these are new portfolio visuals I created afterward in Figma — not the client's actual designs. Click any screen to enlarge.</p>
+    </div>
+
+    <h3 style="font-size:20px; margin-bottom:14px">Homepage CTA improvement</h3>
+    <div class="bapair">
+      <div class="badir before-tag">
+        <button class="zoom shot" data-lb="img" data-src="../../../assets/images/healthcare-consulting/Before.png?v=20260723c" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img src="../../../assets/images/healthcare-consulting/Before.png?v=20260723c" alt="Before: original homepage with a low-prominence text link placed low on the page" loading="lazy">
+        </button>
+        <div class="meta"><span class="badge">Before</span><h4>Low-prominence text link</h4><p>A plain text link sat low on the page with significant unused hero space — easy to scroll past entirely.</p></div>
+      </div>
+      <div class="badir after-tag">
+        <button class="zoom shot" data-lb="img" data-src="../../../assets/images/healthcare-consulting/After.png?v=20260723c" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img src="../../../assets/images/healthcare-consulting/After.png?v=20260723c" alt="After: redesigned homepage with high-contrast CTA buttons and a supporting scope note" loading="lazy">
+        </button>
+        <div class="meta"><span class="badge">After</span><h4>High-contrast CTA + scope note</h4><p>Conceptual redesign with standard button styling, user-centered wording, and a supporting scope note near the hero.</p></div>
+      </div>
+    </div>
+
+    <h3 style="font-size:20px; margin:44px 0 14px">Simplified navigation structure</h3>
+    <div class="bapair">
+      <div class="badir before-tag">
+        <button class="zoom shot" data-lb="img" data-src="../../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img src="../../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a" alt="Before: dense megamenu with many peer links across six subcategories" loading="lazy">
+        </button>
+        <div class="meta"><span class="badge">Before</span><h4>Dense, six-category megamenu</h4><p>Visitors hovered across many options without selecting, then abandoned the menu for search — a sign it was too broad for a high-intent task.</p></div>
+      </div>
+      <div class="badir after-tag">
+        <button class="zoom shot" data-lb="img" data-src="../../../assets/images/healthcare-consulting/After-mega-menu.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img src="../../../assets/images/healthcare-consulting/After-mega-menu.png?v=20260724a" alt="After: simplified navigation consolidated into task-oriented groups" loading="lazy">
+        </button>
+        <div class="meta"><span class="badge">After</span><h4>Task-oriented, consolidated groups</h4><p>Categories consolidated into get coverage, manage benefits, and help — reduced link density, stronger hierarchy and hover feedback.</p></div>
+      </div>
+    </div>
+
+    <div class="badir-note">
+      <b>Why this mattered:</b> the redesigned menu surfaces plain-language labels that match how people actually search for enrollment pathways, not internal site taxonomy.
+      <ul>
+        <li>Consolidates six subcategories into three task-oriented groups.</li>
+        <li>Reduces peer-link density and strengthens visual hierarchy.</li>
+        <li>Adds progressive disclosure — shown live in the prototype below.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:20px; margin:0 0 6px">Progressive navigation disclosure — interactive</h3>
+    <p class="lede" style="font-size:15.5px; margin-bottom:18px">Revealing one section of the menu at a time instead of dozens of peer links. Click any of the four top-level items to move between focused states.</p>
+    <div class="protobox">
+      <div class="frame">
+        <iframe src="https://embed.figma.com/proto/oHoODLjAJWIImCRZxMPJJW/Public-Health-Website?node-id=32-1250&starting-point-node-id=32-1250&embed-host=share&scaling=min-zoom&content-scaling=fixed&page-selector=0&hide-ui=1&hotspot-hints=0&footer=false&theme=light&viewport-controls=false" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="meta"><a href="https://www.figma.com/proto/oHoODLjAJWIImCRZxMPJJW/Public-Health-Website?node-id=32-1250&scaling=fit-width&content-scaling=fixed&t=MYY2kwvHMXfxelK3-1" target="_blank" rel="noopener">Open prototype in Figma →</a> &nbsp;·&nbsp; best experienced full-screen on a larger display.</div>
+    </div>
+
+    <h3 style="font-size:20px; margin:44px 0 14px">Resource pages with dual pagination</h3>
+    <div class="bapair">
+      <div class="badir before-tag">
+        <button class="zoom shot" data-lb="img" data-src="../../../assets/images/healthcare-consulting/Pagination-before.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img src="../../../assets/images/healthcare-consulting/Pagination-before.png?v=20260724a" alt="Before: resource listing with pagination controls only at the bottom of a long list" loading="lazy">
+        </button>
+        <div class="meta"><span class="badge">Before</span><h4>Bottom-only pagination</h4><p>Visitors had to scroll past the entire list before moving to the next page — friction under time pressure or with assistive technology.</p></div>
+      </div>
+      <div class="badir after-tag">
+        <button class="zoom shot" data-lb="img" data-src="../../../assets/images/healthcare-consulting/Pagination-after.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img src="../../../assets/images/healthcare-consulting/Pagination-after.png?v=20260724a" alt="After: dual pagination controls at both top and bottom, with items-per-page selection" loading="lazy">
+        </button>
+        <div class="meta"><span class="badge">After</span><h4>Top-and-bottom controls</h4><p>Pagination at both ends, with items-per-page selection, numbered pages, and a jump-to-last option.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUTCOMES ============ -->
+<section id="outcomes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Outcomes &amp; impact</div>
+      <h2>What actually shipped after the engagement.</h2>
+      <p class="lede">The analysis gave the team evidence-based priorities. Here's what happened after my involvement ended.</p>
+    </div>
+    <div class="status">
+      <div class="srow done"><span class="chip">Implemented</span><p>Progressive disclosure in the navigation — aligned with the direction explored in the prototype above.</p></div>
+      <div class="srow partial"><span class="chip">Partial</span><p>Primary coverage-related links updated to conventional link styling (color + underline) with hover states, though still without distinct button treatment.</p></div>
+      <div class="srow pending"><span class="chip">Not implemented</span><p>Dual pagination — resource lists remain paginated at the bottom only.</p></div>
+    </div>
+    <div class="quote-block">
+      <div class="k">Client response</div>
+      <p>During the presentation, the client expressed strong interest in the findings and treated several recommendations as high-priority next steps.</p>
+    </div>
+    <div class="note"><span>◆</span><span>These later changes suggest the research helped surface usability issues the organization went on to address, at least in part.</span></div>
+  </div>
+</section>
+
+<!-- ============ REFLECTIONS ============ -->
+<section class="hc-tint2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Reflections</div>
+      <h2>What this project reinforced about public-sector UX.</h2>
+    </div>
+    <div class="reflect">
+      <div class="rcard"><div class="n">01</div><h4>Behavioral data is irreplaceable</h4><p>For uncovering hidden friction points that self-reported feedback alone would miss.</p></div>
+      <div class="rcard"><div class="n">02</div><h4>Health literacy is foundational accessibility</h4><p>Complex language creates real barriers to care, not just inconvenience.</p></div>
+      <div class="rcard"><div class="n">03</div><h4>Small details scale dramatically</h4><p>In high-intent, high-stakes flows, a missing hover state has outsized consequences.</p></div>
+      <div class="rcard"><div class="n">04</div><h4>Public benefits UX has human stakes</h4><p>Reinforced the real impact of design decisions on vulnerable populations.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Skills demonstrated</h2>
+    </div>
+    <div class="skills">
+      <span class="skillpill">Behavioral analytics (session replay, heatmaps, scroll analysis)</span>
+      <span class="skillpill">Mixed-methods research synthesis</span>
+      <span class="skillpill">Usability evaluation of complex IA</span>
+      <span class="skillpill">Health literacy assessment</span>
+      <span class="skillpill">Plain-language advocacy</span>
+      <span class="skillpill">Prioritized, feasible recommendations</span>
+      <span class="skillpill">Inclusive design for regulated public services</span>
+    </div>
+  </div>
+</section>
+
+
+      </div>
+    </main>
+    <footer class="site-footer mt-auto">
+      <div class="container-content flex flex-col gap-6 py-10">
+        <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. Anonymized consulting case study</p>
+          <p class="font-sans text-[17px] text-white/40"><a href="../" class="text-white/55 hover:text-white/80">Full healthcare consulting case study</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="hc-lb" id="hc-lb" role="dialog" aria-modal="true" aria-labelledby="hc-lbTitle">
+    <div class="hc-lb-inner">
+      <div class="hc-lb-head">
+        <span class="t" id="hc-lbTitle">Detail</span>
+        <span class="hc-lb-tools">
+          <button id="hc-lbOut" type="button" title="Zoom out" aria-label="Zoom out">&minus;</button>
+          <button id="hc-lbIn" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+          <button id="hc-lbClose" type="button" title="Close" aria-label="Close">&times;</button>
+        </span>
+      </div>
+      <div class="hc-lb-body" id="hc-lbBody"></div>
+    </div>
+  </div>
+  <script src="../../../assets/js/theme.js"></script>
+  <script src="../../../assets/js/nav.js"></script>
+  <script src="../../../assets/js/case-nav.js"></script>
+  <script src="../../../assets/js/healthcare-consulting-minimal.js?v=20260801hcmin"></script>
+</body>
+</html>

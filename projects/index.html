@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260729a">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260802captions">
   <link rel="stylesheet" href="../assets/css/theme-light.css">
 </head>
 <body>
@@ -102,48 +102,138 @@
       <!-- Stacked project cards -->
       <div class="mt-10 flex flex-col gap-6">
 
-        <!-- Card 1 -->
-        <a href="./path-compass/" aria-label="View Path Compass case study" class="card flex flex-col gap-6 transition-colors hover:border-white/20 md:flex-row md:items-center md:gap-10">
-          <img src="../assets/images/mind-icon-layered-with-a-lotus-flower-symbolizing--light.svg"
-               alt="Mind icon layered with a lotus flower symbolizing thoughtful, human-centered design"
-               loading="lazy" width="192" height="192"
-               class="card-icon mx-auto md:mx-0">
-          <div class="flex min-w-0 flex-1 flex-col gap-3">
-            <h2 class="card-title text-[28px] md:text-[32px]">Path Compass</h2>
+        <!-- Lumen Chart -->
+        <a href="./clinician-flow/" aria-label="View Lumen Chart case study" class="project-list-card card transition-colors hover:border-white/20">
+          <div class="project-list-card__visual">
+            <div class="project-list-card__media">
+              <img
+                src="./clinician-flow/mockups/hifi-laura-dashboard.svg"
+                alt="Lumen Chart clinician dashboard mockup showing patient queue, critical alerts, and AI-supported visit snapshot"
+                width="1730"
+                height="924"
+                loading="lazy"
+                decoding="async"
+                class="project-list-card__thumb">
+            </div>
+            <p class="project-list-card__caption">Clinician dashboard mockup for Dr. Laura Mitchell&mdash;patient queue, critical alerts, and an AI-supported visit snapshot.</p>
+          </div>
+          <div class="project-list-card__body">
+            <div class="project-list-card__heading">
+              <h2 class="card-title text-[28px] md:text-[32px]">Lumen Chart &mdash; EHR Clinical Documentation Redesign</h2>
+              <img
+                src="../assets/images/digital-medical-record-document-icon-light.svg"
+                alt=""
+                aria-hidden="true"
+                width="64"
+                height="64"
+                loading="lazy"
+                class="project-list-card__badge">
+            </div>
             <p class="prose-body">
-              From Evaluation Plan to User-Centered Design: Supporting high-fidelity Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) delivery and longitudinal outcome measurement in community clinics.
+              A conceptual UX research and design project addressing provider cognitive overload and inefficient clinical workflows &mdash; reimagining how clinicians move through information-dense systems with clearer AI transparency and caregiver-facing summaries.
             </p>
+            <ul class="work-card-tags project-list-card__tags" aria-label="UX methods used">
+              <li>UX evidence wall</li>
+              <li>Personas</li>
+              <li>User flow diagram</li>
+              <li>Site map</li>
+              <li>Wireframes</li>
+              <li>Mock-ups</li>
+              <li>High-fidelity mockups</li>
+              <li>High-fidelity prototypes</li>
+              <li>Informal user testing</li>
+              <li>Heuristic evaluation</li>
+            </ul>
             <span class="font-sans text-[17px] font-semibold text-teal-accent">View case study &rarr;</span>
           </div>
         </a>
 
-        <!-- Card 2 -->
-        <a href="./healthcare-consulting/access/" aria-label="Access Healthcare Consulting case study" class="card flex flex-col gap-6 transition-colors hover:border-white/20 md:flex-row md:items-center md:gap-10">
-          <img src="../assets/images/glowing-lightbulb-icon-representing-ideas-and-insi-light.svg"
-               alt="Glowing lightbulb icon representing ideas and insight"
-               loading="lazy" width="192" height="192"
-               class="card-icon mx-auto md:mx-0">
-          <div class="flex min-w-0 flex-1 flex-col gap-3">
-            <h2 class="card-title text-[28px] md:text-[32px]">Healthcare Consulting Case Study</h2>
+        <!-- Healthcare Consulting -->
+        <a href="./healthcare-consulting/access/" aria-label="Access Healthcare Consulting case study" class="project-list-card card transition-colors hover:border-white/20">
+          <div class="project-list-card__visual">
+            <div class="project-list-card__media project-list-card__media--contain">
+              <img
+                src="../assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav.png?v=20260729"
+                alt="Healthcare consulting prototype showing progressive navigation disclosure for get-coverage pathways on a public health benefits portal"
+                width="2880"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                class="project-list-card__thumb project-list-card__thumb--contain">
+            </div>
+            <p class="project-list-card__caption">Progressive navigation disclosure prototype&mdash;one focused get-coverage menu state at a time on a public health benefits portal.</p>
+          </div>
+          <div class="project-list-card__body">
+            <div class="project-list-card__heading">
+              <h2 class="card-title text-[28px] md:text-[32px]">Healthcare Consulting Case Study</h2>
+              <img
+                src="../assets/images/glowing-lightbulb-icon-representing-ideas-and-insi-light.svg"
+                alt=""
+                aria-hidden="true"
+                width="64"
+                height="64"
+                loading="lazy"
+                class="project-list-card__badge">
+            </div>
             <p class="prose-body">
               Anonymized usability analysis improving findability of eligibility and enrollment information on a public health benefits portal&mdash;behavioral analytics, survey synthesis, and prioritized recommendations.
             </p>
-            <p class="font-sans text-[15px] font-medium text-white/55">Password required to view this case study.</p>
-            <span class="font-sans text-[17px] font-semibold text-teal-accent">Enter case study &rarr;</span>
+            <ul class="work-card-tags project-list-card__tags" aria-label="UX methods used">
+              <li>Session replay &amp; heatmaps</li>
+              <li>Survey synthesis</li>
+              <li>Behavioral analytics</li>
+              <li>Prioritization framework</li>
+              <li>Information architecture evaluation</li>
+              <li>Health literacy assessment</li>
+              <li>Plain-language recommendations</li>
+              <li>Before/after navigation design</li>
+              <li>Progressive disclosure prototype</li>
+              <li>Interactive prototype</li>
+            </ul>
+            <span class="font-sans text-[17px] font-semibold text-teal-accent">View case study <span class="font-medium text-white/55">(password required)</span> &rarr;</span>
           </div>
         </a>
 
-        <!-- Card 3 -->
-        <a href="./clinician-flow/" aria-label="View Lumen Chart case study" class="card flex flex-col gap-6 transition-colors hover:border-white/20 md:flex-row md:items-center md:gap-10">
-          <img src="../assets/images/digital-medical-record-document-icon-light.svg"
-               alt="Digital medical record document icon"
-               loading="lazy" width="192" height="192"
-               class="card-icon mx-auto md:mx-0">
-          <div class="flex min-w-0 flex-1 flex-col gap-3">
-            <h2 class="card-title text-[28px] md:text-[32px]">Lumen Chart &mdash; EHR Clinical Documentation Redesign</h2>
+        <!-- Path Compass -->
+        <a href="./path-compass/" aria-label="View Path Compass case study" class="project-list-card card transition-colors hover:border-white/20">
+          <div class="project-list-card__visual">
+            <div class="project-list-card__media">
+              <img
+                src="./path-compass/journey-maps/PathCompass_Nia_IdealState.svg"
+                alt="Path Compass ideal-state journey map for Nia showing feelings, actions, and opportunities across TF-CBT evaluation phases"
+                width="1730"
+                height="924"
+                loading="lazy"
+                decoding="async"
+                class="project-list-card__thumb">
+            </div>
+            <p class="project-list-card__caption">Ideal-state journey map for Nia (youth participant) across TF-CBT evaluation phases&mdash;feelings, actions, and design opportunities.</p>
+          </div>
+          <div class="project-list-card__body">
+            <div class="project-list-card__heading">
+              <h2 class="card-title text-[28px] md:text-[32px]">Path Compass</h2>
+              <img
+                src="../assets/images/mind-icon-layered-with-a-lotus-flower-symbolizing--light.svg"
+                alt=""
+                aria-hidden="true"
+                width="64"
+                height="64"
+                loading="lazy"
+                class="project-list-card__badge">
+            </div>
             <p class="prose-body">
-              A conceptual UX research and design project addressing provider cognitive overload and inefficient clinical workflows &mdash; reimagining how clinicians move through information-dense systems with clearer AI transparency and caregiver-facing summaries.
+              From Evaluation Plan to User-Centered Design: Supporting high-fidelity Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) delivery and longitudinal outcome measurement in community clinics.
             </p>
+            <ul class="work-card-tags project-list-card__tags" aria-label="UX methods used">
+              <li>Research synthesis</li>
+              <li>Personas</li>
+              <li>Journey mapping</li>
+              <li>Competitive benchmarking</li>
+              <li>Wireframes</li>
+              <li>High-fidelity mockups</li>
+              <li>Interactive prototypes</li>
+              <li>Heuristic evaluation</li>
+            </ul>
             <span class="font-sans text-[17px] font-semibold text-teal-accent">View case study &rarr;</span>
           </div>
         </a>
