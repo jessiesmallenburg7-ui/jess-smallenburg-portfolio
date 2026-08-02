@@ -946,7 +946,7 @@
 .tt-overview-kicker {
   margin: 0 0 0.55rem;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-label);
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -956,7 +956,7 @@
 .tt-overview-lede {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-body);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.78);
 }
@@ -1007,7 +1007,7 @@
 .tt-overview-close {
   margin: 1.15rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-body);
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.58);
 }
@@ -1021,7 +1021,7 @@
 .tt-feature-banner-kicker {
   margin: 0 0 0.4rem;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 11px;
+  font-size: var(--pc-text-label);
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1031,7 +1031,7 @@
 .tt-feature-banner-lede {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-body);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.72);
 }
@@ -1112,7 +1112,7 @@
 .tt-pillar-text {
   margin-top: 0.25rem;
   font-family: "Lato", sans-serif;
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-body);
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.58);
 }
@@ -2962,7 +2962,7 @@
 }
 
 .pc-at-a-glance .tt-overview-body {
-  font-size: var(--pc-text-secondary);
+  font-size: var(--pc-text-body);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.82);
 }
