@@ -519,7 +519,8 @@ html[data-theme="light"] .case-version-banner-text {
   .pc-case .stat .src,
   .pc-case .tag,
   .pc-case .ba h5,
-  .pc-case .pc-persona h5 {
+  .pc-case .pc-persona h5,
+  .pc-case .sevcol h4 {
     font-size: 15px;
   }
 
