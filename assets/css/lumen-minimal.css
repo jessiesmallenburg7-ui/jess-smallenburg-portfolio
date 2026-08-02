@@ -462,8 +462,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   line-height: 1.5;
   color: #dcefef;
   min-width: 0;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
   box-sizing: border-box;
 }
 
