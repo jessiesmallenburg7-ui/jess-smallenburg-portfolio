@@ -322,6 +322,54 @@
            font-sans text-[13px] font-medium tracking-[0.02em] text-white/60;
   }
 
+  /* Projects listing — vertical stack on all breakpoints:
+     title → screenshot → caption → description → link */
+  .project-list-card {
+    @apply flex flex-col gap-5 overflow-hidden text-inherit no-underline;
+  }
+
+  .project-list-card__title {
+    @apply m-0;
+  }
+
+  .project-list-card__visual {
+    @apply flex w-full flex-col gap-2.5;
+  }
+
+  .project-list-card__media {
+    @apply relative aspect-[16/10] w-full overflow-hidden rounded-xl
+           border border-white/10 bg-[#F5F5F0];
+  }
+
+  .project-list-card__media--contain {
+    @apply flex items-stretch justify-center;
+    aspect-ratio: 2880 / 2048;
+  }
+
+  .project-list-card__thumb {
+    @apply h-full w-full object-cover object-top transition-transform duration-500 ease-out;
+  }
+
+  .project-list-card__thumb--contain {
+    @apply h-full w-full max-h-none max-w-none object-cover object-top;
+  }
+
+  .project-list-card:hover .project-list-card__thumb:not(.project-list-card__thumb--contain) {
+    transform: scale(1.03);
+  }
+
+  .project-list-card__caption {
+    @apply m-0 font-sans text-[14px] leading-[1.55] text-white/60;
+  }
+
+  .project-list-card__body {
+    @apply flex min-w-0 flex-col gap-3 p-0;
+  }
+
+  .project-list-card__tags {
+    @apply mt-0;
+  }
+
   /* Home expertise skill cards */
   .skill-card {
     @apply relative flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-6
