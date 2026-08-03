@@ -8,8 +8,6 @@
   var dots = Array.prototype.slice.call(root.querySelectorAll('[data-carousel-dot]'));
   var status = root.querySelector('[data-carousel-status]');
   var index = 0;
-  var timer = null;
-  var delay = 9000;
 
   function setActive(nextIndex) {
     index = (nextIndex + slides.length) % slides.length;
@@ -40,26 +38,12 @@
     setActive(index - 1);
   }
 
-  function startAutoplay() {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    stopAutoplay();
-    timer = window.setInterval(next, delay);
-  }
-
-  function stopAutoplay() {
-    if (timer) {
-      window.clearInterval(timer);
-      timer = null;
-    }
-  }
-
-  if (prevBtn) prevBtn.addEventListener('click', function () { prev(); startAutoplay(); });
-  if (nextBtn) nextBtn.addEventListener('click', function () { next(); startAutoplay(); });
+  if (prevBtn) prevBtn.addEventListener('click', prev);
+  if (nextBtn) nextBtn.addEventListener('click', next);
 
   dots.forEach(function (dot, i) {
     dot.addEventListener('click', function () {
       setActive(i);
-      startAutoplay();
     });
   });
 
@@ -67,21 +51,11 @@
     if (event.key === 'ArrowLeft') {
       event.preventDefault();
       prev();
-      startAutoplay();
     } else if (event.key === 'ArrowRight') {
       event.preventDefault();
       next();
-      startAutoplay();
     }
   });
 
-  root.addEventListener('mouseenter', stopAutoplay);
-  root.addEventListener('mouseleave', startAutoplay);
-  root.addEventListener('focusin', stopAutoplay);
-  root.addEventListener('focusout', function (event) {
-    if (!root.contains(event.relatedTarget)) startAutoplay();
-  });
-
   setActive(0);
-  startAutoplay();
 })();

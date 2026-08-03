@@ -121,14 +121,14 @@
           <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="case-nav-panel">
             <span class="case-nav-toggle-meta">
               <span class="case-nav-toggle-kicker">On this page</span>
-              <span class="case-nav-toggle-current" data-case-nav-current>Overview</span>
+              <span class="case-nav-toggle-current" data-case-nav-current>Problem</span>
             </span>
             <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m6 9 6 6 6-6"/>
             </svg>
           </button>
           <div id="case-nav-panel" class="case-nav-panel">
-            <a href="#overview" class="case-nav-link case-nav-link-active" data-nav-label="Overview">Overview</a>
+            <a href="#problem" class="case-nav-link case-nav-link-active" data-nav-label="Problem">Problem</a>
             <a href="#process" class="case-nav-link" data-nav-label="Process">Process</a>
             <a href="#rethink" class="case-nav-link" data-nav-label="Rethink">Rethink</a>
             <a href="#redefine" class="case-nav-link" data-nav-label="Redefine">Redefine</a>
@@ -136,16 +136,15 @@
             <a href="#revision" class="case-nav-link" data-nav-label="Revision">Revision</a>
             <a href="#refine" class="case-nav-link" data-nav-label="Refine">Refine</a>
             <a href="#launch" class="case-nav-link" data-nav-label="Launch">Launch</a>
-            <a href="#key-decisions" class="case-nav-link" data-nav-label="Key Decisions">Key Decisions</a>
             <a href="#reflection" class="case-nav-link" data-nav-label="Reflection">Reflection</a>
           </div>
         </nav>
 
         <div class="case-body">
 
-          <!-- Overview -->
-          <section id="overview" class="case-section">
-            <h2 class="case-section-title">Project Overview</h2>
+          <!-- Problem -->
+          <section id="problem" class="case-section">
+            <h2 class="case-section-title">The Problem</h2>
 
             <div class="case-hmw case-hmw--featured">
               <p class="case-hmw-label"><em>&ldquo;How might we&rdquo;</em></p>
@@ -210,7 +209,7 @@
                   </span>
                   <div class="lumen-role-item-copy">
                     <p class="lumen-role-item-title">Personas are research-grounded, not interview-derived</p>
-                    <p class="lumen-role-item-body">They synthesize Evidence Wall findings into design targets; they are not composites of real participants.</p>
+                    <p class="lumen-role-item-body">They synthesize UX Research Synthesis Wall findings into design targets; they are not composites of real participants.</p>
                   </div>
                 </li>
               </ul>
@@ -362,9 +361,9 @@
           <section id="rethink" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">01</span> Rethink &mdash; Research &amp; Personas</h2>
 
-            <!-- UX Evidence Wall -->
+            <!-- UX Research Synthesis Wall -->
             <div class="flex flex-col gap-6">
-              <h3 class="case-subtitle">UX Evidence Wall</h3>
+              <h3 class="case-subtitle">UX Research Synthesis Wall</h3>
               <p class="prose-body">
                 Literature synthesis for ambient AI EHR documentation&mdash;coded into thematic columns so every finding traces to a source.
               </p>
@@ -618,7 +617,7 @@
               <h3 class="case-subtitle">Conceptual Interviews <span class="font-normal text-white/55">(Not Primary Research)</span></h3>
 
               <p class="prose-body">
-                <strong class="text-white">These are not real interviews.</strong> I had no access to clinicians or patients. The quotes below are conceptual scenarios I wrote from Evidence Wall literature&mdash;useful for design pressure-testing, not for claiming field research.
+                <strong class="text-white">These are not real interviews.</strong> I had no access to clinicians or patients. The quotes below are conceptual scenarios I wrote from UX Research Synthesis Wall literature&mdash;useful for design pressure-testing, not for claiming field research.
               </p>
               <p class="prose-body mt-4">
                 Three fictional participants (Laura, Kevin, Diane) voice literature-backed friction patterns in a Metro General Hospital context.
@@ -936,7 +935,7 @@
 
             <h3 class="case-subtitle">Personas</h3>
             <p class="prose-body">
-              Three research-grounded personas shaped design decisions. They are <strong class="text-white">not</strong> based on real interviews&mdash;they translate Evidence Wall themes into concrete user targets.
+              Three research-grounded personas shaped design decisions. They are <strong class="text-white">not</strong> based on real interviews&mdash;they translate UX Research Synthesis Wall themes into concrete user targets.
             </p>
 
             <div class="persona-grid">
@@ -1028,7 +1027,7 @@
 
                   <div class="persona-callout persona-callout--caution">
                     <p class="persona-callout-label">Design Caution &mdash; Diane&rsquo;s Vulnerability</p>
-                    <p class="prose-body text-[15px]">Diane has partial information, no clinical training, and deep personal stakes. Avoid patterns that create ambiguity about her mother&rsquo;s status. Every screen she touches should answer: <em>is mom okay, and is there anything I need to do right now?</em></p>
+                    <p class="prose-body text-[15px]">Diane has partial information, no clinical training, and deep personal stakes. Avoid patterns that create ambiguity about her mother&rsquo;s status. Every screen she touches should answer: <em>is mom okay, and is there anything I need to do right now?</em> She also avoids portal features when she can&rsquo;t tell what caregivers are allowed to do versus the patient &mdash; show a persistent can/can&rsquo;t list and when Maria granted access so she doesn&rsquo;t have to guess before clicking.</p>
                   </div>
 
                   <div class="persona-block">
@@ -1220,7 +1219,7 @@
             <div class="mt-8 flex flex-col gap-4">
               <h3 class="case-subtitle">Early Problem Framing</h3>
               <p class="prose-body">
-                After synthesizing the evidence wall and interview insights, several problem spaces emerged:
+                After synthesizing the UX research synthesis wall and interview insights, several problem spaces emerged:
               </p>
               <ul class="flex flex-col gap-3 pl-1">
                 <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">How might we reduce the 6&ndash;7 hours many primary care clinicians spend in the EHR each day?</span></li>
@@ -1669,7 +1668,7 @@
 
             <h3 class="case-subtitle">Expert Heuristic Evaluation</h3>
             <p class="prose-body">
-              I evaluated against Nielsen&rsquo;s 10 heuristics (2020 refinements), AI-UX guidance (Google PAIR, Microsoft HAX), WCAG 2.2 AA, and NIST-aligned EHR usability principles tied to the Evidence Wall.
+              I evaluated against Nielsen&rsquo;s 10 heuristics (2020 refinements), AI-UX guidance (Google PAIR, Microsoft HAX), WCAG 2.2 AA, and NIST-aligned EHR usability principles tied to the UX Research Synthesis Wall.
             </p>
 
             <div class="he-eval">
@@ -1707,10 +1706,10 @@
                 <div class="measured-learning">
                   <p class="measured-learning-title">What the heuristic evaluation validated</p>
                   <ul>
-                    <li>Amber provenance + per-section Accept + two-gate signing matched Evidence Wall trust recommendations (D1&ndash;D5).</li>
+                    <li>Amber provenance + per-section Accept + two-gate signing matched UX Research Synthesis Wall trust recommendations (D1&ndash;D5).</li>
                     <li>Queue-level critical alerts reduced classic alert-fatigue risk (H8).</li>
                     <li>Clinical language and guideline &ldquo;Why?&rdquo; tooltips matched how clinicians think (H2).</li>
-                    <li>Four major gaps remained: no Unaccept, raceable pre-sign checkboxes, weak write-failure recovery, and no mid-flow discard&mdash;all fixed in Refine.</li>
+                    <li>Four major gaps remained: no Unaccept, pre-sign checkboxes users could click through without reading, weak write-failure recovery, and no mid-flow discard&mdash;all fixed in Refine.</li>
                   </ul>
                 </div>
 
@@ -1723,7 +1722,7 @@
                     <li class="he-positive">
                       <p class="he-positive-kicker">H1 &middot; Visibility of System Status</p>
                       <p class="he-positive-title">Amber AI provenance + per-section Accept gates + two-gate signing</p>
-                      <p class="he-positive-impact">Exemplary trust calibration that directly addresses Evidence Wall recommendations D1&ndash;D5.</p>
+                      <p class="he-positive-impact">Exemplary trust calibration that directly addresses UX Research Synthesis Wall recommendations D1&ndash;D5.</p>
                     </li>
                     <li class="he-positive">
                       <p class="he-positive-kicker">H8 &middot; Aesthetic and Minimalist Design</p>
@@ -1757,7 +1756,7 @@
                   </li>
                   <li class="he-finding-item">
                     <p class="he-finding-kicker">H5 &middot; Error Prevention</p>
-                    <p class="he-finding-title">Pre-sign acknowledgments can be raced through with pure checkbox clicks</p>
+                    <p class="he-finding-title">Pre-sign acknowledgments could be clicked through without reading</p>
                     <p class="he-finding-impact">Weakens the two-gate safety model intended to prevent signing of unreviewed AI content.</p>
                   </li>
                   <li class="he-finding-item">
@@ -1776,13 +1775,13 @@
               <div class="he-downloads">
                 <h4 class="he-block-label">Report</h4>
                 <div class="he-download-row">
-                  <a class="he-download he-download--primary" href="./reports/Lumen_Chart_HE_Summary_Report.docx" download>
+                  <a class="he-download he-download--primary" href="./reports/Lumen_Chart_HE_Summary_Report.pdf" target="_blank" rel="noopener">
                     <span class="he-download-icon" aria-hidden="true">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     </span>
                     <span class="he-download-copy">
-                      <span class="he-download-title">Download Summary Report</span>
-                      <span class="he-download-meta">DOCX &middot; Severity summary, positives &amp; top findings</span>
+                      <span class="he-download-title">View Summary Report</span>
+                      <span class="he-download-meta">PDF &middot; Severity summary, positives &amp; top findings</span>
                     </span>
                   </a>
                 </div>
@@ -1915,7 +1914,7 @@
           <section id="refine" class="case-section">
             <h2 class="case-section-title"><span class="case-step-num">05</span> Refine &mdash; Iteration Story</h2>
             <p class="prose-body">
-              HE + the usability session drove targeted fixes. I shipped Unaccept, stronger pre-sign gates, write-failure recovery, mid-flow discard, and first-load onboarding for amber / pencil / Accept meaning.
+              Heuristic review and the usability session drove complementary fixes — not a checklist repeated twice. Expert review prioritized reversibility: Unaccept, stronger pre-sign gates, write-failure recovery, and mid-flow discard. The moderated session prioritized learnability: amber semantics, overlooked edit affordances, and first-load onboarding. I shipped all of the above in the revised prototype.
             </p>
 
             <h3 class="case-subtitle mt-8">What testing revealed</h3>
@@ -1926,16 +1925,16 @@
               <li class="case-bullet"><span aria-hidden="true" class="case-bullet-mark">&#9670;</span><span class="prose-body">She asked for prior exposure&mdash;first-time support was the highest-leverage fix.</span></li>
             </ul>
             <p class="prose-body mt-4">
-              Those findings plus HE majors (no Unaccept, raceable checkboxes, weak recovery) shaped the iteration below.
+              Those usability findings — amber semantics, missed affordances, and first-use support — combined with heuristic majors on reversibility and recovery shaped the iteration below.
             </p>
 
             <h3 class="case-subtitle mt-10">Planned Iterations</h3>
-            <p class="prose-body mt-2">Implementation priority ordered from P0 (ship before live prototype) through minor polish.</p>
+            <p class="prose-body mt-2">Implementation priority ordered from high (ship before live prototype) through polish.</p>
 
             <div class="iteration-card-list">
               <article class="iteration-card">
                 <div class="iteration-card-head">
-                  <span class="iteration-priority iteration-priority--p0">P0</span>
+                  <span class="iteration-priority iteration-priority--high">High priority</span>
                   <div class="iteration-card-titles">
                     <h4 class="iteration-card-title">Skippable Onboarding Wizard</h4>
                     <p class="iteration-source">Source: Usability test &middot; Learnability &amp; AI transparency</p>
@@ -1958,7 +1957,7 @@
 
               <article class="iteration-card">
                 <div class="iteration-card-head">
-                  <span class="iteration-priority iteration-priority--p0">P0</span>
+                  <span class="iteration-priority iteration-priority--high">High priority</span>
                   <div class="iteration-card-titles">
                     <h4 class="iteration-card-title">Unaccept / Re-review Control</h4>
                     <p class="iteration-source">Source: Heuristic H3 &middot; User Control &amp; Freedom + trust concerns</p>
@@ -1981,7 +1980,7 @@
 
               <article class="iteration-card">
                 <div class="iteration-card-head">
-                  <span class="iteration-priority iteration-priority--p0">P0</span>
+                  <span class="iteration-priority iteration-priority--high">High priority</span>
                   <div class="iteration-card-titles">
                     <h4 class="iteration-card-title">Strengthened Pre-Sign Gate</h4>
                     <p class="iteration-source">Source: Heuristic evaluation &middot; Error prevention &amp; recovery</p>
@@ -1990,7 +1989,7 @@
                 <div class="iteration-ba">
                   <div class="iteration-col iteration-col--before">
                     <p class="iteration-kicker">Before</p>
-                    <p class="iteration-body">Pre-sign checkboxes could be raced through, and the &ldquo;Writing to chart&hellip;&rdquo; state lacked clear failure and retry guidance.</p>
+                    <p class="iteration-body">Pre-sign checkboxes could be clicked through without reading, and the &ldquo;Writing to chart&hellip;&rdquo; state lacked clear failure and retry guidance.</p>
                   </div>
                   <div class="iteration-arrow" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -2004,7 +2003,7 @@
 
               <article class="iteration-card">
                 <div class="iteration-card-head">
-                  <span class="iteration-priority iteration-priority--p1">P1</span>
+                  <span class="iteration-priority iteration-priority--medium">Medium priority</span>
                   <div class="iteration-card-titles">
                     <h4 class="iteration-card-title">Persistent Visit Context</h4>
                     <p class="iteration-source">Source: Heuristic &amp; workflow continuity &middot; Discoverability</p>
@@ -2180,7 +2179,7 @@
 
           <!-- Reflection -->
           <section id="reflection" class="case-section">
-            <h2 class="case-section-title">Reflection &amp; Learnings</h2>
+            <h2 class="case-section-title">Key takeaways for the next clinical project</h2>
 
             <ol class="lumen-reflect-list">
               <li>
@@ -2213,9 +2212,9 @@
               <li>
                 <span class="lumen-reflect-num" aria-hidden="true">04</span>
                 <div class="lumen-reflect-copy">
-                  <h3 class="lumen-reflect-lead">Convergent evaluation sharpens decisions</h3>
+                  <h3 class="lumen-reflect-lead">Complementary evaluation sharpens decisions</h3>
                   <p class="lumen-reflect-body">
-                    HE + one moderated session produced the same priorities: onboarding, Unaccept, stronger gates. Small sample, clear signal.
+                    Heuristic review and one moderated session produced distinct findings that informed the same iteration plan. Expert review stressed reversibility and recovery — Unaccept, stronger signing gates, write-failure paths. The session stressed learnability — onboarding for amber, pencil, and Accept meaning. Different signals; one coherent refinement plan. Small sample, clear signal.
                   </p>
                 </div>
               </li>
@@ -2223,8 +2222,41 @@
 
             <p class="lumen-reflect-close">
               <span class="lumen-reflect-close-label">Overall</span>
-              Ambient AI only works in clinical documentation when trust is designed as carefully as speed. Visual cues draw attention, but users still need a clear map of what AI wrote, what they verified, and how to reverse a choice. Novice testing proved especially useful: strong scores coexisted with first-use gaps experts might overlook. Heuristic evaluation and a moderated session pointed to the same fixes&mdash;onboarding, Unaccept, and stronger signing gates&mdash;showing that high-stakes AI needs intentional friction. Lumen Chart is less about automating notes and more about making AI-assisted documentation accountable, reversible, and learnable under pressure.
+              Ambient AI only works in clinical documentation when trust is designed as carefully as speed. Visual cues draw attention, but users still need a clear map of what AI wrote, what they verified, and how to reverse a choice. Novice testing proved especially useful: strong scores coexisted with first-use gaps experts might overlook. Heuristic evaluation and a moderated session arrived from different angles — expert review on control and recovery, novice testing on meaning and discoverability — and together informed a coherent refinement plan: onboarding, Unaccept, and stronger signing gates. Provenance cues, per-section Accept with Unaccept, transcript ground truth, and gated signing make that friction legible rather than punitive. Lumen Chart is less about automating notes and more about making AI-assisted documentation accountable, reversible, and learnable under pressure.
             </p>
+          </section>
+
+          <!-- References -->
+          <section id="references" class="case-section">
+            <h2 class="case-section-title">References</h2>
+            <details class="lumen-references-collapse">
+              <summary class="lumen-references-summary">
+                <span class="lumen-references-summary-lead">
+                  <span class="lumen-references-summary-label">View bibliography</span>
+                  <span class="lumen-references-summary-meta">16 sources &middot; APA 7th edition</span>
+                </span>
+              </summary>
+              <div class="lumen-references-collapse-body">
+                <ol class="lumen-references" aria-label="APA references">
+                  <li>Agency for Healthcare Research and Quality. (n.d.). Alert fatigue. <em>Patient Safety Network</em>. <a href="https://psnet.ahrq.gov/primer/alert-fatigue" target="_blank" rel="noopener noreferrer">https://psnet.ahrq.gov/primer/alert-fatigue</a></li>
+                  <li>Arndt, B. G., Beasley, J. W., Watkinson, M. D., Temte, J. L., Tuan, W.-J., Sinsky, C. A., &amp; Gilchrist, V. J. (2017). Tethered to the EHR: Primary care physician workload assessment using EHR event log data and time-motion observations. <em>Annals of Family Medicine, 15</em>(5), 419&ndash;426. <a href="https://doi.org/10.1370/afm.2121" target="_blank" rel="noopener noreferrer">https://doi.org/10.1370/afm.2121</a></li>
+                  <li>Gerke, S., Simon, D. A., &amp; Roman, B. R. (2025). Liability risks of ambient clinical workflows with artificial intelligence for clinicians, hospitals, and manufacturers. <em>JCO Oncology Practice</em>. <a href="https://doi.org/10.1200/OP-24-01060" target="_blank" rel="noopener noreferrer">https://doi.org/10.1200/OP-24-01060</a></li>
+                  <li>Moy, A. J., Schwartz, J. M., Chen, R., Sadri, S., Kenyon, E., Dorr, D. A., &amp; Rossetti, S. C. (2021). Measurement of clinical documentation burden among physicians and nurses using electronic health records: A scoping review. <em>Journal of the American Medical Informatics Association, 28</em>(5), 998&ndash;1008. <a href="https://doi.org/10.1093/jamia/ocaa325" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/jamia/ocaa325</a></li>
+                  <li>O&rsquo;Neil, E., Rodman, A., &amp; Lehmann, L. S. (2026). Balancing innovation and ethics: Ambient listening artificial intelligence in health care. <em>Mayo Clinic Proceedings: Digital Health, 4</em>(1), Article 100341. <a href="https://doi.org/10.1016/j.mcpdig.2026.100341" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.mcpdig.2026.100341</a></li>
+                  <li>Ohde, J. W., Thompson, A., Liu, Z., et al. (2026). Barriers and opportunities of scaling ambient AI scribes for clinical documentation across diverse healthcare settings. <em>npj Digital Medicine</em>. <a href="https://doi.org/10.1038/s41746-026-02554-0" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41746-026-02554-0</a></li>
+                  <li>Olson, K. D., Meeker, D., Troup, M., et al. (2025). Use of ambient AI scribes to reduce administrative burden and professional burnout. <em>JAMA Network Open, 8</em>(10), Article e2534976. <a href="https://doi.org/10.1001/jamanetworkopen.2025.34976" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2025.34976</a></li>
+                  <li>Overhage, J. M., &amp; McCallie, D., Jr. (2020). Physician time spent using the electronic health record during outpatient encounters: A descriptive study. <em>Annals of Internal Medicine, 172</em>(3), 169&ndash;174. <a href="https://doi.org/10.7326/M18-3684" target="_blank" rel="noopener noreferrer">https://doi.org/10.7326/M18-3684</a></li>
+                  <li>Palm, E., Manikantan, A., Mahal, H., Subramanya Belwadi, S., &amp; Pepin, M. E. (2025). Assessing the quality of AI-generated clinical notes: Validated evaluation of a large language model ambient scribe. <em>Frontiers in Artificial Intelligence</em>. <a href="https://doi.org/10.3389/frai.2025.1691499" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/frai.2025.1691499</a></li>
+                  <li>Rotenstein, L. S., et al. (2026). Changes in clinician time expenditure and visit quantity with adoption of artificial intelligence&ndash;powered scribes: A multisite study. <em>JAMA, 335</em>(16), 1408&ndash;1417. <a href="https://doi.org/10.1001/jama.2026.2253" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2026.2253</a></li>
+                  <li>Schoening, M. B., &amp; Cotliar, D. (2026). Patients and caregivers leveraging AI to improve their health care journey: Case study and lessons learned. <em>Journal of Participatory Medicine, 18</em>, Article e69790. <a href="https://doi.org/10.2196/69790" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/69790</a></li>
+                  <li>Shah, S. J., Crowell, T., Jeong, Y., et al. (2025). Physician perspectives on ambient AI scribes. <em>JAMA Network Open, 8</em>(3), Article e251904. <a href="https://doi.org/10.1001/jamanetworkopen.2025.1904" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2025.1904</a></li>
+                  <li>Sinsky, C., Colligan, L., Li, L., Prgomet, M., Reynolds, S., Goeders, L., Westbrook, J., Tutty, M., &amp; Blike, G. (2016). Allocation of physician time in ambulatory practice: A time and motion study in 4 specialties. <em>Annals of Internal Medicine, 165</em>(11), 753&ndash;760. <a href="https://doi.org/10.7326/M16-0961" target="_blank" rel="noopener noreferrer">https://doi.org/10.7326/M16-0961</a></li>
+                  <li>Taylor, S. L., Jost, M., MacDonald, S., Ren, Y., Hilton, S., Davenport, S., Aizenberg, D., Hall, B., Lyles, C. R., &amp; Adams, J. Y. (2026). Quality of clinical notes created by ambient listening generative AI: Pragmatic prospective pilot study. <em>JMIR Medical Informatics, 14</em>, Article e86474. <a href="https://doi.org/10.2196/86474" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/86474</a></li>
+                  <li>Topaz, M., Peltonen, L. M., &amp; Zhang, Z. (2025). Beyond human ears: Navigating the uncharted risks of AI scribes in clinical practice. <em>npj Digital Medicine, 8</em>, Article 569. <a href="https://doi.org/10.1038/s41746-025-01895-6" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41746-025-01895-6</a></li>
+                  <li>University of Washington Medicine. (2026, April). AI scribe tools produce lower quality medical notes compared to human clinicians. <a href="https://mednews.uw.edu/news/AI-scribes-lower-quality" target="_blank" rel="noopener noreferrer">https://mednews.uw.edu/news/AI-scribes-lower-quality</a></li>
+                </ol>
+              </div>
+            </details>
           </section>
 
         </div>

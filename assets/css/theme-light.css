@@ -415,6 +415,26 @@ html[data-theme="light"] .metrics-item {
   background-color: #ffffff;
 }
 
+html[data-theme="light"] .metrics-tip-btn {
+  border-color: rgba(31, 41, 55, 0.16);
+  background-color: rgba(31, 41, 55, 0.04);
+  color: rgba(37, 99, 235, 0.85);
+}
+
+html[data-theme="light"] .metrics-tip-btn:hover,
+html[data-theme="light"] .metrics-tip-btn:focus-visible {
+  border-color: rgba(37, 99, 235, 0.35);
+  background-color: rgba(37, 99, 235, 0.08);
+  color: #1e40af;
+}
+
+html[data-theme="light"] .metrics-tip {
+  border-color: rgba(31, 41, 55, 0.12);
+  background-color: #ffffff;
+  box-shadow: 0 10px 28px rgba(31, 41, 55, 0.12);
+  color: rgba(31, 41, 55, 0.88);
+}
+
 /* Project + About graphics — same SVGs, Day Mode prominence
    Cyan/violet strokes were tuned for dark; boost contrast + blue glow on beige */
 html[data-theme="light"] .card-icon,
@@ -501,6 +521,11 @@ html[data-theme="light"] .approach-item {
   border-left-color: rgba(37, 99, 235, 0.4);
 }
 
+html[data-theme="light"] .approach-item::before,
+html[data-theme="light"] .approach-item-head::before {
+  color: rgba(37, 99, 235, 0.38);
+}
+
 html[data-theme="light"] .testimonial-bar {
   background-color: #2563EB;
 }
@@ -540,6 +565,21 @@ html[data-theme="light"] .profile-photo {
     0 0 0 1px rgba(37, 99, 235, 0.1),
     0 0 24px rgba(37, 99, 235, 0.12),
     0 16px 36px rgba(31, 41, 55, 0.12);
+}
+
+html[data-theme="light"] .about-beyond-thumb {
+  border-color: rgba(31, 41, 55, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.08),
+    0 14px 32px rgba(31, 41, 55, 0.1);
+}
+
+html[data-theme="light"] .about-beyond-thumb:hover,
+html[data-theme="light"] .about-beyond-thumb:focus-visible {
+  border-color: rgba(37, 99, 235, 0.28);
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.14),
+    0 16px 36px rgba(31, 41, 55, 0.14);
 }
 
 html[data-theme="light"] .hero-portrait-caption {
@@ -865,12 +905,14 @@ html[data-theme="light"] .iteration-source {
   color: rgba(71, 85, 105, 0.62);
 }
 
+html[data-theme="light"] .iteration-priority--high,
 html[data-theme="light"] .iteration-priority--p0 {
   border-color: rgba(37, 99, 235, 0.4);
   background: rgba(37, 99, 235, 0.14);
   color: #1E40AF;
 }
 
+html[data-theme="light"] .iteration-priority--medium,
 html[data-theme="light"] .iteration-priority--p1 {
   border-color: rgba(37, 99, 235, 0.28);
   background: rgba(37, 99, 235, 0.08);
@@ -2054,7 +2096,7 @@ html[data-theme="light"] .case-disclaimer {
   color: #1e293b !important;
 }
 
-/* Evidence wall + coding scheme (Lumen)
+/* UX research synthesis wall + coding scheme (Lumen)
    EXPERIMENT: unified warm-neutral columns (no rainbow) */
 html[data-theme="light"] .interview-meta-label {
   color: rgba(31, 41, 55, 0.72);
@@ -2171,6 +2213,38 @@ html[data-theme="light"] .tt-references em {
 
 html[data-theme="light"] .tt-references a {
   color: #2563EB;
+  text-decoration-color: rgba(37, 99, 235, 0.4);
+}
+
+html[data-theme="light"] .lumen-references-collapse {
+  border-color: rgba(31, 41, 55, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="light"] .lumen-references-collapse-body {
+  border-top-color: rgba(31, 41, 55, 0.1);
+}
+
+html[data-theme="light"] .lumen-references-summary-label {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .lumen-references-summary-meta {
+  color: rgba(71, 85, 105, 0.78);
+}
+
+html[data-theme="light"] .lumen-references-summary::after {
+  border-right-color: #0e7490;
+  border-bottom-color: #0e7490;
+}
+
+html[data-theme="light"] .lumen-references li,
+html[data-theme="light"] .lumen-references em {
+  color: rgba(71, 85, 105, 0.9);
+}
+
+html[data-theme="light"] .lumen-references a {
+  color: #2563eb;
   text-decoration-color: rgba(37, 99, 235, 0.4);
 }
 

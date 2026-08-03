@@ -48,6 +48,11 @@
   object-position: top center;
 }
 
+.case-hero-visual picture {
+  display: block;
+  width: 100%;
+}
+
 .case-hero-visual--contain {
   background: rgba(248, 250, 252, 0.96);
 }

@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260802type4">
-  <link rel="stylesheet" href="../assets/css/theme-light.css?v=20260802type4">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260803layoutrestore">
+  <link rel="stylesheet" href="../assets/css/theme-light.css?v=20260803layoutrestore">
 </head>
 <body>
   <div id="main">
@@ -98,9 +98,9 @@
       <hr class="hidden border-white/10 my-12 md:block">
 
       <!-- Credentials -->
-      <section class="about-feature-section flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr] md:items-start md:gap-12">
+      <section class="about-feature-section w-full">
         <img src="../assets/images/heart-with-pulse-line-icon-representing-health-and.svg" alt="" loading="lazy" class="feature-icon about-feature-icon">
-        <p class="prose-body w-full max-w-[70ch]">
+        <p class="prose-body about-feature-text w-full">
           With over a decade of UX research and design experience in complex systems, I spent recent years deepening my expertise in public and community health. I recently completed an <strong class="text-white">M.S. in Community Health Education at Wayne State University (Summa Cum Laude)</strong> and earned the <strong class="text-white">Certified Health Education Specialist (CHES) credential</strong>. I also hold <strong class="text-white">CAHIMS certification</strong> in healthcare information and management systems. These credentials reflect my commitment to understanding how people interact with technology and how digital tools can support better health outcomes, health literacy, and equitable access—especially for underserved populations.
         </p>
       </section>
@@ -108,9 +108,9 @@
       <img src="../assets/images/decorative-heartbeat-pulse-line-divider.svg" alt="" loading="lazy" class="mx-auto my-12 h-10 w-auto opacity-80">
 
       <!-- Background -->
-      <section class="about-feature-section flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr] md:items-start md:gap-12">
+      <section class="about-feature-section w-full">
         <img src="../assets/images/growing-sprout-icon-representing-personal-and-prof.svg" alt="" loading="lazy" class="feature-icon about-feature-icon">
-        <p class="prose-body w-full max-w-[70ch]">
+        <p class="prose-body about-feature-text w-full">
           My background spans usability research and human factors work in government, automotive, and healthcare-adjacent systems, where safety and reliability are critical. During my career transition, I deepened my expertise through graduate coursework in public health and hands-on experience as a volunteer in a University of Michigan Health medical procedures unit, where I <strong class="text-white">gained direct insight into clinical workflows</strong>. I also completed coursework in medical and cultural anthropology to <strong class="text-white">strengthen my understanding of cultural contexts in health</strong>. This combination of rigorous UX methods, clinical insight, cultural competence, and training in health behavior, program evaluation, and health informatics allows me to approach digital health challenges from both the user experience and public health perspectives. Colleagues have consistently highlighted the clarity and impact of this approach &mdash; one noted that I &lsquo;did an excellent job of contextualizing my findings so that clients could understand and clearly visualize the usability issues and proposed solutions&rsquo; and that recommendations were &lsquo;going to be integrated.&rsquo; Another observed my &lsquo;maturity and flexibility&rsquo; and &lsquo;grace under considerable pressure&rsquo; when navigating complex group dynamics.
         </p>
       </section>
@@ -118,9 +118,9 @@
       <img src="../assets/images/decorative-heartbeat-pulse-line-divider.svg" alt="" loading="lazy" class="mx-auto my-12 h-10 w-auto opacity-80">
 
       <!-- Interests -->
-      <section class="about-feature-section flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr] md:items-start md:gap-12">
+      <section class="about-feature-section w-full">
         <img src="../assets/images/overlapping-circles-icon-representing-intersecting.svg" alt="" loading="lazy" class="feature-icon about-feature-icon">
-        <p class="prose-body w-full max-w-[70ch]">
+        <p class="prose-body about-feature-text w-full">
           I&rsquo;m particularly interested in designing digital tools that serve <strong class="text-white">patients, providers, and communities</strong> by translating evidence-based health interventions into usable, equitable, and sustainable experiences. My work draws from graduate training in program planning, measurement and evaluation of health education programs, and implementation science. I focus on reducing cognitive and operational burden for clinicians and community health workers, improving health literacy for diverse populations, and addressing equity gaps in mental health support, trauma-informed care, chronic disease management, and community-based prevention. I&rsquo;m currently building a portfolio of healthcare UX projects that explore how digital platforms can support the adoption and sustainment of community health interventions, enable high-fidelity delivery and longitudinal evaluation of mental health programs, and improve well-being for caregivers and care dyads &mdash; all while remaining transparent, ethical, and deeply human-centered.
         </p>
       </section>
@@ -128,13 +128,24 @@
       <img src="../assets/images/decorative-heartbeat-pulse-line-divider.svg" alt="" loading="lazy" class="mx-auto my-12 h-10 w-auto opacity-80">
 
       <!-- Beyond the Screen -->
-      <section class="flex max-w-[70ch] flex-col gap-4 md:max-w-[820px]" aria-labelledby="beyond-the-screen-heading">
+      <section class="about-beyond-section flex w-full flex-col gap-4" aria-labelledby="beyond-the-screen-heading">
         <h2 id="beyond-the-screen-heading" class="font-serif text-[28px] font-semibold leading-[1.2em] tracking-[-0.01em] text-white sm:text-[32px]">
           Beyond the Screen
         </h2>
-        <p class="prose-body">
-          When I&rsquo;m not designing or researching, I&rsquo;m often outdoors with my camera. Nature photography sharpens my observational skills, patience, and attention to subtle patterns &mdash; the same abilities I bring into every UX research session and interface I design.
-        </p>
+        <div class="about-beyond-copy md:clearfix">
+          <a href="../photography/floral/" class="about-beyond-thumb" aria-label="View Ethereal garden III in the floral photography gallery">
+            <img
+              src="../assets/images/photography/floral/ethereal-garden-3.jpg"
+              width="1200"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+              alt="Ethereal garden III — soft floral nature photograph">
+          </a>
+          <p class="prose-body about-beyond-text">
+            When I&rsquo;m not designing or researching, I&rsquo;m often outdoors with my camera. Nature photography sharpens my observational skills, patience, and attention to subtle patterns &mdash; the same abilities I bring into every UX research session and interface I design. Whether I&rsquo;m following light across a landscape or waiting for a single subject to come into focus, I&rsquo;m practicing the same discipline: slow down, look closely, and frame what matters with care. That habit follows me back to my user experience practice &mdash; in how I listen in interviews, synthesize research, and design for people who deserve clarity.
+          </p>
+        </div>
         <p>
           <a href="../photography" class="font-sans text-[17px] font-semibold text-teal-accent underline-offset-4 transition-colors hover:underline">
             View my nature photography gallery&nbsp;&rarr;
@@ -145,8 +156,8 @@
       <img src="../assets/images/decorative-heartbeat-pulse-line-divider.svg" alt="" loading="lazy" class="mx-auto my-12 h-10 w-auto opacity-80">
 
       <!-- Testimonials -->
-      <div class="flex flex-col gap-6">
-        <figure class="testimonial max-w-[820px]">
+      <div class="flex w-full flex-col gap-6">
+        <figure class="testimonial w-full">
           <span class="testimonial-bar" aria-hidden="true"></span>
           <blockquote class="testimonial-quote">
             &ldquo;On several recent projects for federal government websites, Jessie welcomed the idea of helping the real-world citizens who use these sites&hellip; When Jessie presented her work&hellip; she elicited client comments like &lsquo;bravo on all counts,&rsquo; &lsquo;[this was] really, really helpful&rsquo; and &lsquo;[these recommendations are] going to be integrated.&rsquo;&rdquo;
@@ -154,7 +165,7 @@
           <figcaption class="testimonial-attr">&mdash; <strong class="font-semibold text-white/90">Michelle Miller</strong>, Customer Success Manager at Verint</figcaption>
         </figure>
 
-        <figure class="testimonial max-w-[820px]">
+        <figure class="testimonial w-full">
           <span class="testimonial-bar" aria-hidden="true"></span>
           <blockquote class="testimonial-quote">
             &ldquo;Another noteworthy personality trait I&rsquo;ve been able to observe in Ms. Smallenburg is, surprisingly enough, flexibility &mdash; a trait which on the face of it might seem at odds with her being a stickler for context and a consummate preparer. I was surprised and delighted by the maturity and flexibility that Jessie demonstrated in small group conflict situations when figuring out how to move forward. The grace she showed under considerable pressure impressed me.&rdquo;
@@ -164,12 +175,12 @@
       </div>
 
       <!-- Value -->
-      <p class="prose-body mt-10 max-w-[820px]">
+      <p class="prose-body mt-10 w-full">
         Whether you&rsquo;re building patient-facing tools, clinical decision support, or community health platforms, I bring a rare blend of research depth, design craft, and domain knowledge in user experience, health education, and public health systems.
       </p>
 
       <!-- CTA -->
-      <div class="mt-10 flex max-w-[820px] flex-col items-start gap-6">
+      <div class="mt-10 flex w-full flex-col items-start gap-6">
         <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" class="btn btn-lg btn-cta">Connect on LinkedIn</a>
         <p class="font-serif text-[22px] font-medium italic leading-[1.4em] text-white">
           Let&rsquo;s connect on LinkedIn if you&rsquo;re working on meaningful digital health work &mdash; or want to explore how rigorous, equity-informed UX can strengthen your product or initiative.

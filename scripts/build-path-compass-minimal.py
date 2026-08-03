@@ -368,6 +368,15 @@ head = """<!DOCTYPE html>
         <a href="../../../resume" class="nav-link">Résumé</a>
         <a href="../../../about" class="nav-link">About</a>
         <a href="../../../contact" class="nav-link">Contact</a>
+        <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-link gap-3">
+          <span class="nav-linkedin-badge md:hidden" aria-hidden="true">in</span>
+          <svg class="icon-linkedin hidden h-[18px] w-[18px] shrink-0 md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span class="md:hidden">LinkedIn</span>
+        </a>
       </nav>
     </header>
     <main class="container-content pb-16 pt-6 lg:pt-12">
