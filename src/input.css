@@ -511,6 +511,63 @@
     @apply mt-4 font-sans text-[17px] leading-[1.5em] text-white/60;
   }
 
+  /* Homepage testimonial carousel — one slide at a time on all breakpoints */
+  .testimonial-carousel {
+    @apply relative;
+  }
+
+  .testimonial-carousel__viewport {
+    @apply relative;
+  }
+
+  .testimonial-carousel__slide {
+    @apply pointer-events-none absolute inset-0 opacity-0 invisible
+           transition-[opacity,visibility] duration-[450ms] ease-in-out;
+  }
+
+  .testimonial-carousel__slide.is-active {
+    @apply pointer-events-auto relative opacity-100 visible;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonial-carousel__slide {
+      transition-duration: 0ms;
+    }
+  }
+
+  .testimonial-carousel__controls {
+    @apply mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-3;
+  }
+
+  .testimonial-carousel__btn {
+    @apply inline-flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center
+           rounded-full border border-white/15 bg-white/[0.04] text-white/80
+           transition-colors duration-200
+           hover:border-sky-accent/45 hover:bg-sky-accent/10 hover:text-white
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+           focus-visible:outline-teal-accent/75;
+  }
+
+  .testimonial-carousel__btn svg {
+    @apply h-[1.125rem] w-[1.125rem];
+  }
+
+  .testimonial-carousel__dots {
+    @apply flex max-w-[18rem] flex-wrap items-center justify-center gap-2;
+  }
+
+  .testimonial-carousel__dot {
+    @apply h-2 w-2 shrink-0 cursor-pointer rounded-full border-0 bg-white/25 p-0
+           transition-[transform,background-color] duration-200
+           hover:bg-sky-accent/75
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+           focus-visible:outline-teal-accent/75;
+  }
+
+  .testimonial-carousel__dot.is-active {
+    @apply scale-110 bg-teal-accent;
+  }
+
   /* Resume section card */
   .resume-section {
     @apply rounded-2xl border border-white/10 bg-white/[0.03] p-7 lg:p-9;
