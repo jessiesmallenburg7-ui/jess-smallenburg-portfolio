@@ -2354,8 +2354,12 @@
     font-size: 18px;
   }
 
+  .hero-kicker {
+    font-size: 21px;
+  }
+
   .hero-portrait-caption {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .site-footer .text-sm {
