@@ -152,18 +152,18 @@ html[data-theme="light"] .case-version-banner-text {
   border:1px solid var(--blue-soft); padding:6px 13px; border-radius:999px; margin:0 0 22px;
 }
 .hc-case .case-hero-lead .tagpill + h1{margin-top:0}
-.hc-case .hc-hero h1{font-size:clamp(32px,4.6vw,52px); letter-spacing:-.03em; margin-bottom:16px}
-.hc-case .hc-hero .sub{font-size:clamp(19px,2.1vw,24px); color:var(--ink-2); max-width:66ch; margin:0; line-height:1.45}
+.hc-case .hc-hero h1{font-size:clamp(40px,6vw,66px); letter-spacing:-.035em; margin-bottom:12px}
+.hc-case .hc-hero .sub{font-size:clamp(19px,2.1vw,24px); color:var(--ink-2); max-width:62ch; margin:0; line-height:1.45}
 .hc-case .case-hero-copy .meta-row{
   display:flex; flex-direction:column; align-items:flex-start; flex-wrap:nowrap;
-  gap:5px; font-size:15px; color:var(--muted); margin:0;
+  gap:5px; font-size:var(--site-text-secondary); color:var(--muted); margin:0;
 }
 .hc-case .case-hero-actions {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 0.35rem;
-  max-width: 66ch;
+  max-width: 62ch;
   font-size: clamp(19px, 2.1vw, 24px);
 }
 .hc-case .case-hero-copy .btns {
@@ -176,9 +176,20 @@ html[data-theme="light"] .case-version-banner-text {
   max-width: 100%;
   width: 100%;
   margin: 0;
-  font-size: 14.5px;
+  font-size: var(--site-text-secondary);
   line-height: 1.5;
   padding: 12px 15px;
+}
+
+@media (max-width: 767.98px) {
+  .hc-case .case-hero-copy .meta-row {
+    font-size: 19px;
+  }
+
+  .hc-case .case-hero-copy .integrity {
+    font-size: 21px;
+    line-height: 1.55;
+  }
 }
 
 @media (min-width: 1024px) {
