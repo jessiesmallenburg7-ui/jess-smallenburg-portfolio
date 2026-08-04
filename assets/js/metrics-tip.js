@@ -1,60 +1,60 @@
 (function () {
-  function closeTip(btn, tip) {
+  function closeTip(anchor, btn) {
+    anchor.classList.remove('is-open');
     btn.setAttribute('aria-expanded', 'false');
-    tip.hidden = true;
   }
 
-  function openTip(btn, tip) {
+  function openTip(anchor, btn) {
+    anchor.classList.add('is-open');
     btn.setAttribute('aria-expanded', 'true');
-    tip.hidden = false;
   }
 
   function initMetricsTips() {
-    var buttons = document.querySelectorAll('[data-metrics-tip-btn]');
-    if (!buttons.length) return;
+    var anchors = document.querySelectorAll('[data-metrics-tip-anchor]');
+    if (!anchors.length) return;
 
-    buttons.forEach(function (btn) {
-      var tipId = btn.getAttribute('aria-controls');
-      var tip = tipId ? document.getElementById(tipId) : null;
-      if (!tip) return;
+    anchors.forEach(function (anchor) {
+      var btn = anchor.querySelector('[data-metrics-tip-btn]');
+      var tip = anchor.querySelector('[data-metrics-tip]');
+      if (!btn || !tip) return;
 
       btn.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
-        var isOpen = btn.getAttribute('aria-expanded') === 'true';
+        var isOpen = anchor.classList.contains('is-open');
 
-        buttons.forEach(function (otherBtn) {
-          var otherId = otherBtn.getAttribute('aria-controls');
-          var otherTip = otherId ? document.getElementById(otherId) : null;
-          if (!otherTip || otherBtn === btn) return;
-          closeTip(otherBtn, otherTip);
+        anchors.forEach(function (otherAnchor) {
+          if (otherAnchor === anchor) return;
+          var otherBtn = otherAnchor.querySelector('[data-metrics-tip-btn]');
+          if (!otherBtn) return;
+          closeTip(otherAnchor, otherBtn);
         });
 
         if (isOpen) {
-          closeTip(btn, tip);
+          closeTip(anchor, btn);
         } else {
-          openTip(btn, tip);
+          openTip(anchor, btn);
         }
       });
     });
 
     document.addEventListener('click', function (event) {
-      buttons.forEach(function (btn) {
-        var tipId = btn.getAttribute('aria-controls');
-        var tip = tipId ? document.getElementById(tipId) : null;
-        if (!tip || tip.hidden) return;
-        if (btn.contains(event.target) || tip.contains(event.target)) return;
-        closeTip(btn, tip);
+      anchors.forEach(function (anchor) {
+        if (!anchor.classList.contains('is-open')) return;
+        if (anchor.contains(event.target)) return;
+        var btn = anchor.querySelector('[data-metrics-tip-btn]');
+        if (!btn) return;
+        closeTip(anchor, btn);
       });
     });
 
     document.addEventListener('keydown', function (event) {
       if (event.key !== 'Escape') return;
-      buttons.forEach(function (btn) {
-        var tipId = btn.getAttribute('aria-controls');
-        var tip = tipId ? document.getElementById(tipId) : null;
-        if (!tip || tip.hidden) return;
-        closeTip(btn, tip);
+      anchors.forEach(function (anchor) {
+        if (!anchor.classList.contains('is-open')) return;
+        var btn = anchor.querySelector('[data-metrics-tip-btn]');
+        if (!btn) return;
+        closeTip(anchor, btn);
         btn.focus();
       });
     });

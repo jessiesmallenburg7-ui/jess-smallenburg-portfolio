@@ -436,6 +436,12 @@ html[data-theme="light"] .metrics-tip {
   color: rgba(31, 41, 55, 0.88);
 }
 
+html[data-theme="light"] .metrics-tip::before {
+  border-left-color: rgba(31, 41, 55, 0.12);
+  border-top-color: rgba(31, 41, 55, 0.12);
+  background-color: #ffffff;
+}
+
 /* Project + About graphics — same SVGs, Day Mode prominence
    Cyan/violet strokes were tuned for dark; boost contrast + blue glow on beige */
 html[data-theme="light"] .card-icon,

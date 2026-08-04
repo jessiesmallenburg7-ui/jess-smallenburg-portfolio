@@ -246,7 +246,7 @@
 
   /* Home credentials / impact strip */
   .metrics-strip {
-    @apply m-0 grid list-none grid-cols-2 gap-px overflow-hidden rounded-2xl
+    @apply m-0 grid list-none grid-cols-2 gap-px overflow-visible rounded-2xl
            border border-white/10 bg-white/10 p-0
            sm:grid-cols-3 lg:grid-cols-6;
   }
@@ -254,6 +254,56 @@
   .metrics-item {
     @apply relative flex min-w-0 flex-col justify-center gap-1.5 bg-[#070b16]
            px-3.5 py-4 sm:px-3.5 sm:py-5 lg:px-2.5 lg:py-4 xl:px-3;
+  }
+
+  .metrics-item:nth-child(1) {
+    border-top-left-radius: 1rem;
+  }
+
+  .metrics-item:nth-child(2) {
+    border-top-right-radius: 1rem;
+  }
+
+  .metrics-item:nth-child(5) {
+    border-bottom-left-radius: 1rem;
+  }
+
+  .metrics-item:nth-child(6) {
+    border-bottom-right-radius: 1rem;
+  }
+
+  @media (min-width: 640px) and (max-width: 1023.98px) {
+    .metrics-item:nth-child(2) {
+      border-top-right-radius: 0;
+    }
+
+    .metrics-item:nth-child(3) {
+      border-top-right-radius: 1rem;
+    }
+
+    .metrics-item:nth-child(5) {
+      border-bottom-left-radius: 0;
+    }
+
+    .metrics-item:nth-child(4) {
+      border-bottom-left-radius: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .metrics-item:nth-child(2),
+    .metrics-item:nth-child(5) {
+      border-radius: 0;
+    }
+
+    .metrics-item:nth-child(6) {
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .metrics-item:nth-child(1) {
+      border-bottom-left-radius: 1rem;
+    }
   }
 
   .metrics-value-row {
@@ -265,14 +315,30 @@
            sm:text-[26px] lg:text-[28px] lg:leading-[1.15];
   }
 
+  .metrics-tip-anchor {
+    @apply relative z-20 inline-flex shrink-0;
+  }
+
+  .metrics-item:has(.metrics-tip-anchor.is-open),
+  .metrics-item:has(.metrics-tip-anchor:focus-within) {
+    z-index: 5;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .metrics-item:has(.metrics-tip-anchor:hover) {
+      z-index: 5;
+    }
+  }
+
   .metrics-tip-btn {
-    @apply inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full
+    @apply relative z-20 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full
            border border-white/20 bg-white/[0.06] p-0 font-sans text-[12px] font-bold
            leading-none text-sky-accent transition-colors;
   }
 
   .metrics-tip-btn:hover,
   .metrics-tip-btn:focus-visible,
+  .metrics-tip-anchor.is-open .metrics-tip-btn,
   .metrics-tip-btn[aria-expanded="true"] {
     @apply border-sky-accent/50 bg-sky-accent/15 text-white outline-none;
   }
@@ -282,13 +348,34 @@
   }
 
   .metrics-tip {
-    @apply m-0 mt-0.5 w-full rounded-lg border border-white/15
-           bg-[#0d1528] px-2.5 py-2 font-sans text-[13px] font-medium
-           leading-snug text-white/90 sm:text-[14px];
+    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.45rem)] z-30 m-0 w-[min(15.5rem,calc(100vw-2.5rem))]
+           -translate-x-1/2 rounded-lg border border-white/15 bg-[#0d1528] px-2.5 py-2
+           font-sans text-[13px] font-medium leading-snug text-white/90 opacity-0
+           shadow-[0_12px_28px_rgba(0,0,0,0.35)] invisible sm:text-[14px];
   }
 
-  .metrics-tip[hidden] {
-    display: none !important;
+  .metrics-tip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background: #0d1528;
+    transform: translate(-50%, 45%) rotate(45deg);
+  }
+
+  .metrics-tip-anchor.is-open .metrics-tip,
+  .metrics-tip-anchor:focus-within .metrics-tip {
+    @apply pointer-events-auto visible opacity-100;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .metrics-tip-anchor:hover .metrics-tip {
+      @apply pointer-events-auto visible opacity-100;
+    }
   }
 
   .metrics-label {
