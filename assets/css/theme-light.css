@@ -422,7 +422,8 @@ html[data-theme="light"] .metrics-tip-btn {
 }
 
 html[data-theme="light"] .metrics-tip-btn:hover,
-html[data-theme="light"] .metrics-tip-btn:focus-visible {
+html[data-theme="light"] .metrics-tip-btn:focus-visible,
+html[data-theme="light"] .metrics-tip-btn[aria-expanded="true"] {
   border-color: rgba(37, 99, 235, 0.35);
   background-color: rgba(37, 99, 235, 0.08);
   color: #1e40af;

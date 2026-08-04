@@ -252,13 +252,43 @@
   }
 
   .metrics-item {
-    @apply flex min-w-0 flex-col justify-center gap-1.5 bg-[#070b16]
+    @apply relative flex min-w-0 flex-col justify-center gap-1.5 bg-[#070b16]
            px-3.5 py-4 sm:px-3.5 sm:py-5 lg:px-2.5 lg:py-4 xl:px-3;
+  }
+
+  .metrics-value-row {
+    @apply flex min-w-0 items-center gap-2;
   }
 
   .metrics-value {
     @apply font-serif text-[24px] font-semibold leading-tight tracking-[-0.01em] text-sky-accent
            sm:text-[26px] lg:text-[28px] lg:leading-[1.15];
+  }
+
+  .metrics-tip-btn {
+    @apply inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full
+           border border-white/20 bg-white/[0.06] p-0 font-sans text-[12px] font-bold
+           leading-none text-sky-accent transition-colors;
+  }
+
+  .metrics-tip-btn:hover,
+  .metrics-tip-btn:focus-visible,
+  .metrics-tip-btn[aria-expanded="true"] {
+    @apply border-sky-accent/50 bg-sky-accent/15 text-white outline-none;
+  }
+
+  .metrics-tip-btn-icon {
+    @apply block translate-y-px font-serif text-[14px] font-semibold italic leading-none;
+  }
+
+  .metrics-tip {
+    @apply m-0 mt-0.5 w-full rounded-lg border border-white/15
+           bg-[#0d1528] px-2.5 py-2 font-sans text-[13px] font-medium
+           leading-snug text-white/90 sm:text-[14px];
+  }
+
+  .metrics-tip[hidden] {
+    display: none !important;
   }
 
   .metrics-label {
@@ -570,6 +600,15 @@
 
     .metrics-label {
       font-size: 19px;
+    }
+
+    .metrics-tip-btn {
+      width: 1.9rem;
+      height: 1.9rem;
+    }
+
+    .metrics-tip {
+      font-size: 16px;
     }
 
     .work-card-outcome {
