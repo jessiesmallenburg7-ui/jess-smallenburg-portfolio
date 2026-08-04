@@ -172,11 +172,14 @@ html[data-theme="light"] .case-version-banner-text {
   gap: 12px;
   margin-bottom: 0.75rem;
 }
+.hc-case .case-hero-actions .btn {
+  font-size: var(--site-text-body);
+}
 .hc-case .case-hero-copy .integrity {
   max-width: 100%;
   width: 100%;
   margin: 0;
-  font-size: var(--site-text-secondary);
+  font-size: var(--site-text-meta);
   line-height: 1.5;
   padding: 12px 15px;
 }
@@ -187,8 +190,12 @@ html[data-theme="light"] .case-version-banner-text {
   }
 
   .hc-case .case-hero-copy .integrity {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.55;
+  }
+
+  .hc-case .case-hero-actions .btn {
+    font-size: 19px;
   }
 }
 

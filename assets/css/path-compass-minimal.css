@@ -179,7 +179,7 @@ html[data-theme="light"] .case-version-banner-text {
   max-width: 100%;
   width: 100%;
   margin: 0;
-  font-size: var(--site-text-secondary);
+  font-size: var(--site-text-meta);
   line-height: 1.5;
   padding: 12px 15px;
 }
@@ -221,7 +221,7 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .btn-ghost{background:#fff; color:var(--ink); border-color:var(--line)}
 .pc-case .btn-ghost:hover{border-color:var(--violet); color:var(--violet); text-decoration:none}
 .pc-case .integrity{
-  display:flex; gap:11px; align-items:flex-start; font-size:var(--site-text-secondary); color:var(--ink-2);
+  display:flex; gap:11px; align-items:flex-start; font-size:var(--site-text-meta); color:var(--ink-2);
   background:#fff; border:1px solid var(--line); border-left:3px solid var(--gold-line);
   padding:13px 16px; border-radius:10px; max-width:660px;
 }
@@ -580,8 +580,6 @@ html[data-theme="light"] .case-version-banner-text {
     font-size: 22px;
   }
 
-  .pc-case .integrity,
-  .pc-case .case-hero-copy .integrity,
   .pc-case .hmw-why div,
   .pc-case .rstep .d,
   .pc-case .ev p,
@@ -597,6 +595,12 @@ html[data-theme="light"] .case-version-banner-text {
   .pc-case table.mtable,
   .pc-case .pc-lb-body p {
     font-size: 21px;
+    line-height: 1.55;
+  }
+
+  .pc-case .integrity,
+  .pc-case .case-hero-copy .integrity {
+    font-size: 18px;
     line-height: 1.55;
   }
 
