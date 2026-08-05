@@ -1,65 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-	<title>Path Compass &mdash; Jessie Smallenburg</title>
-  <meta name="description" content="Path Compass &mdash; your guide for youth and clinicians on the path to healing. From evaluation plan to user-centered design &mdash; supporting high-fidelity trauma-focused care through guided progress in community mental health.">
+  <script>(function(){try{localStorage.removeItem('theme');localStorage.setItem('portfolio-theme','light');}catch(e){}document.documentElement.setAttribute('data-theme','light');})();</script>
+  <title>Path Compass &mdash; Jessie Smallenburg</title>
+  <meta name="description" content="Path Compass case study: trauma-informed TF-CBT fidelity tooling, youth privacy controls, and clinician documentation support.">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects/path-compass">
-
   <link rel="icon" href="../../assets/images/image-extra-1.png" media="(prefers-color-scheme: light)">
   <link rel="icon" href="../../assets/images/image-extra-2.png" media="(prefers-color-scheme: dark)">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Path Compass &mdash; A guide for youth and clinicians on the path to healing">
-  <meta property="og:description" content="From evaluation plan to user-centered design &mdash; supporting high-fidelity trauma-focused care through guided progress in community mental health.">
-  <meta property="og:url" content="https://www.jessamynsmallenburg.com/projects/path-compass">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Path Compass &mdash; A guide for youth and clinicians on the path to healing">
-  <meta name="twitter:description" content="From evaluation plan to user-centered design &mdash; supporting high-fidelity trauma-focused care through guided progress in community mental health.">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260802type4">
-  <link rel="stylesheet" href="../../assets/css/tt-journeys.css?v=20260802mtype">
-  <link rel="stylesheet" href="../../assets/css/tt-benchmark.css?v=20260802type4">
+  <link rel="stylesheet" href="../../assets/css/path-compass-minimal.css?v=20260802type4">
   <link rel="stylesheet" href="../../assets/css/case-hero-visual.css?v=20260802heromobile">
+  <link rel="stylesheet" href="../../assets/css/minimal-case-nav.css?v=20260802mtype2">
   <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260802type4">
 </head>
 <body>
   <div id="main">
-
-    <!-- ============ Header ============ -->
     <header class="site-header container-content pt-8 pb-4 md:flex md:items-center md:justify-between md:gap-6">
       <div class="flex items-center justify-between md:contents">
         <a href="../../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
         <div class="header-actions relative z-50 md:order-last">
-          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
-            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"/>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-            </svg>
-            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
-            </svg>
-          </button>
           <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-            <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16"/>
-            </svg>
-            <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-              <path d="M18 6 6 18M6 6l12 12"/>
-            </svg>
+            <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="nav-toggle-close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
           </button>
         </div>
       </div>
       <nav id="primary-nav" class="site-nav hidden flex-col md:flex md:flex-row md:items-center md:gap-2.5" aria-label="Primary">
         <a href="../../" class="nav-link">Home</a>
         <a href="../" class="nav-link nav-link-active">Projects</a>
-        <a href="../../resume" class="nav-link">R&eacute;sum&eacute;</a>
+        <a href="../../resume" class="nav-link">Résumé</a>
         <a href="../../about" class="nav-link">About</a>
         <a href="../../contact" class="nav-link">Contact</a>
         <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-link gap-3">
@@ -73,1462 +47,459 @@
         </a>
       </nav>
     </header>
-
     <main class="container-content pb-16 pt-6 lg:pt-12">
-
-      <div class="case-version-banner" role="note">
-        <p class="case-version-banner-text">Prefer a shorter read? Try the <strong>concise</strong> version &mdash; banded sections, progressive disclosure, faster scan path.</p>
-        <a class="case-version-banner-link" href="./minimal/">View concise case study &rarr;</a>
-      </div>
-
-      <!-- Hero -->
-      <section class="tt-hero">
-        <div class="tt-hero-inner flex flex-col gap-5 lg:gap-6">
-          <a href="../" class="font-sans text-[16px] font-medium text-white/55 transition-colors hover:text-white/80">&larr; Back to Projects</a>
-          <div class="case-hero-main case-hero-main--split">
-            <div class="case-hero-copy">
-              <div class="case-hero-lead">
-                <p class="eyebrow">Conceptual UX Case Study</p>
-                <h1 class="h-display w-full max-w-none text-[40px] sm:text-[52px] lg:text-[60px]">Path Compass</h1>
-              </div>
-              <div class="case-hero-rest">
-                <p class="tt-hero-tagline max-w-[36ch] font-serif text-[22px] font-medium leading-[1.3] text-white/85 sm:text-[26px] lg:text-[28px]">
-                  A guide for youth and clinicians on the path to healing.
-                </p>
-                <p class="tt-hero-subtitle">
-                  From evaluation plan to user-centered design &mdash; supporting high-fidelity trauma-focused care through guided progress in community mental health.
-                </p>
-                <div class="tt-hero-meta">
-                  <span class="tt-hero-eval-mark" aria-hidden="true" title="Measurement &amp; Evaluation">
-                    <svg class="tt-hero-eval-icon" viewBox="0 0 32 32" width="40" height="40" fill="none" focusable="false">
-                      <rect x="2" y="2" width="28" height="28" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.32"/>
-                      <path d="M9.5 22.5V15M16 22.5V10.5M22.5 22.5V17" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/>
-                      <path d="M7.5 23h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
-                    </svg>
-                  </span>
-                  <p class="tt-hero-badge m-0">M.S. Community Health Education &middot; Measurement &amp; Evaluation Course &middot; Wayne State University, College of Education, Division of Kinesiology, Health &amp; Sports Studies</p>
-                </div>
-                <p class="tt-disclaimer">
-                  Conceptual case study &middot; Trauma-informed design principles &middot; No real patient data used
-                </p>
-              </div>
-            </div>
-            <div class="case-hero-aside">
-              <figure class="case-hero-visual case-hero-visual--ui">
-                <img src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6" alt="Path Compass clinician dashboard with fidelity metrics, today&rsquo;s schedule, and priority alerts" width="1440" height="1144" loading="eager" decoding="async">
-              </figure>
-              <figure class="case-hero-visual case-hero-visual--photo">
-                <img src="../../assets/images/path-compass/therapist-youth-session-hero-720.jpg" alt="Therapist and teenager in a trauma-informed counseling session" width="720" height="450" loading="eager" decoding="async">
-              </figure>
-            </div>
-          </div>
-
-          <aside class="tt-overview-context pc-at-a-glance" aria-labelledby="pc-at-a-glance-heading">
-            <h2 id="pc-at-a-glance-heading" class="pc-at-a-glance-title">At a glance</h2>
-
-            <ul class="tt-overview-stats pc-at-a-glance-stats" aria-label="Project summary">
-              <li class="tt-overview-stat">
-                <span class="tt-overview-stat-label">Role</span>
-                <span class="tt-overview-stat-value">Solo conceptual UX designer / researcher</span>
-              </li>
-              <li class="tt-overview-stat">
-                <span class="tt-overview-stat-label">Project type</span>
-                <span class="tt-overview-stat-value">Conceptual case study</span>
-              </li>
-              <li class="tt-overview-stat">
-                <span class="tt-overview-stat-label">Prototypes</span>
-                <span class="tt-overview-stat-value">Youth and clinician</span>
-              </li>
-            </ul>
-
-            <p class="tt-overview-body"><strong>Timeline:</strong> Evaluation framework developed during the Measurement &amp; Evaluation course (M.S. Community Health Education, Wayne State University). UX research synthesis, design, and prototyping completed independently after graduation as a portfolio case study.</p>
-            <p class="tt-overview-body"><strong>Methods:</strong> Research synthesis, personas, journey mapping, competitive benchmarking, wireframes, high-fidelity mockups, interactive prototypes, heuristic evaluation.</p>
-            <p class="tt-overview-body"><strong>Constraints:</strong> Conceptual only; no primary research with clinic participants; HIPAA-aware principles; trauma-informed design; no real patient data.</p>
-          </aside>
-
-          <div class="pc-hero-prototypes" aria-labelledby="pc-hero-prototypes-heading">
-            <h2 id="pc-hero-prototypes-heading" class="pc-hero-prototypes-title">Interactive Prototypes</h2>
-            <p class="prototype-launch-note prototype-launch-note--shared">Best experienced full-screen in Figma &middot; Opens in a new tab</p>
-            <ul class="pc-hero-prototype-list">
-              <li class="pc-hero-prototype-item">
-                <p class="pc-hero-prototype-label">Youth mobile prototype</p>
-                <a
-                  class="btn btn-lg btn-cta prototype-launch-cta"
-                  href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Open Live Interactive Prototype &rarr;
-                </a>
-              </li>
-              <li class="pc-hero-prototype-item">
-                <p class="pc-hero-prototype-label">Clinician desktop prototype</p>
-                <a
-                  class="btn btn-lg btn-cta prototype-launch-cta"
-                  href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr/Untitled?node-id=243-2&amp;p=f&amp;t=oKrHEHzMmKqJoN0e-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=2%3A666&amp;starting-point-node-id=243%3A2"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Open Live Interactive Prototype &rarr;
-                </a>
-              </li>
-            </ul>
-            <p class="mt-4">
-              <a href="./minimal/" class="btn btn-lg btn-outline">Concise case study</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div class="case-layout case-layout--top">
-
-        <nav class="case-nav case-nav--top" data-case-nav aria-label="Case study sections">
-          <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="case-nav-panel">
-            <span class="case-nav-toggle-meta">
-              <span class="case-nav-toggle-kicker">On this page</span>
-              <span class="case-nav-toggle-current" data-case-nav-current>Overview</span>
-            </span>
-            <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m6 9 6 6 6-6"/>
-            </svg>
-          </button>
-          <div id="case-nav-panel" class="case-nav-panel">
-            <a href="#overview" class="case-nav-link case-nav-link-active" data-nav-label="Overview">Overview</a>
-            <a href="#key-screens" class="case-nav-link" data-nav-label="Key High-Fidelity Screens">Key High-Fidelity Screens</a>
-            <a href="#process" class="case-nav-link" data-nav-label="Design Process">Design Process</a>
-            <a href="#foundation" class="case-nav-link" data-nav-label="Foundation">Foundation</a>
-            <a href="#synthesis" class="case-nav-link" data-nav-label="Synthesis">Synthesis</a>
-            <a href="#exploration" class="case-nav-link" data-nav-label="Exploration">Exploration</a>
-            <a href="#design" class="case-nav-link" data-nav-label="Design">Design</a>
-            <a href="#validation" class="case-nav-link" data-nav-label="Evaluation">Evaluation</a>
-            <a href="#reflection" class="case-nav-link" data-nav-label="Reflection">Reflection</a>
-            <a href="#references" class="case-nav-link" data-nav-label="References">References</a>
-          </div>
-        </nav>
-
-        <div class="tt-case-body flex min-w-0 flex-col">
-
-          <section id="overview" class="case-section">
-            <h2 class="case-section-title">Project Overview</h2>
-
-            <div class="case-hmw case-hmw--featured">
-              <p class="case-hmw-label"><em>&ldquo;How might we&rdquo;</em></p>
-              <p class="case-hmw-text">How might we support high-fidelity Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) delivery in community clinics while giving youth greater agency over their information and reducing documentation burden for clinicians and caregivers?</p>
-            </div>
-
-            <div class="tt-feature-banner">
-              <div class="tt-feature-banner-copy">
-                <p class="tt-feature-banner-kicker">Design focus</p>
-                <p class="tt-feature-banner-lede">
-                  A HIPAA-aware clinical system that keeps PRACTICE fidelity, longitudinal outcomes, and trauma-informed privacy in one workflow.
-                </p>
-                <ul class="tt-pillar-grid">
-                  <li class="tt-pillar">
-                    <span class="tt-pillar-icon-wrap" aria-hidden="true">
-                      <img src="../../assets/images/tt-icon-fidelity.svg?v=2" alt="" width="56" height="56" class="tt-pillar-icon" decoding="async">
-                    </span>
-                    <div class="tt-pillar-copy">
-                      <p class="tt-pillar-label">Fidelity</p>
-                      <p class="tt-pillar-text">Session-level PRACTICE checklist</p>
-                    </div>
-                  </li>
-                  <li class="tt-pillar">
-                    <span class="tt-pillar-icon-wrap" aria-hidden="true">
-                      <img src="../../assets/images/tt-icon-outcomes.svg?v=2" alt="" width="56" height="56" class="tt-pillar-icon" decoding="async">
-                    </span>
-                    <div class="tt-pillar-copy">
-                      <p class="tt-pillar-label">Outcomes</p>
-                      <p class="tt-pillar-text">Outcome measures across five timepoints</p>
-                    </div>
-                  </li>
-                  <li class="tt-pillar">
-                    <span class="tt-pillar-icon-wrap" aria-hidden="true">
-                      <img src="../../assets/images/tt-icon-privacy.svg?v=2" alt="" width="56" height="56" class="tt-pillar-icon" decoding="async">
-                    </span>
-                    <div class="tt-pillar-copy">
-                      <p class="tt-pillar-label">Privacy</p>
-                      <p class="tt-pillar-text">Trauma-informed consent &amp; control</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <p class="prose-body mt-8">
-              Path Compass translates a master&rsquo;s-level <a href="https://www.nctsn.org/sites/default/files/resources/how_to_implement_tfcbt.pdf" target="_blank" rel="noopener noreferrer" class="pc-resource-link">TF-CBT</a> evaluation plan into trauma-informed product design&mdash;connecting <a href="../../assets/PRACTICE-components.pdf" target="_blank" rel="noopener noreferrer" class="pc-resource-link">PRACTICE fidelity</a>, five-timepoint outcome measurement, and youth agency over disclosure in community outpatient settings.
-            </p>
-          </section>
-
-          <section id="key-screens" class="case-section">
-            <h2 class="case-section-title">Key High-Fidelity Screens</h2>
-            <p class="prose-body">
-              Four final screens across youth mobile and clinician desktop&mdash;youth check-in and privacy with clinician in-session fidelity checklist and dashboard&mdash;where trauma-informed design meets TF-CBT evaluation workflows.
-            </p>
-            <p class="diagram-hint diagram-hint-mobile mt-4 font-sans text-sm text-white/45">Tap any screen to enlarge, zoom, and pan.</p>
-            <p class="diagram-hint diagram-hint-desktop mt-4 font-sans text-sm text-white/45">Click any screen to enlarge, zoom, and pan.</p>
-
-            <div class="pc-key-screens-groups mt-8">
-              <section class="pc-key-screens-group" aria-labelledby="pc-key-screens-youth-heading">
-                <div class="pc-key-screens-group-head">
-                  <span class="pc-key-screens-group-accent" aria-hidden="true"></span>
-                  <h3 id="pc-key-screens-youth-heading" class="pc-key-screens-group-title">Youth mobile screens</h3>
-                </div>
-                <div class="pc-key-screens-grid" aria-label="Youth mobile screens">
-              <figure class="pc-key-screen">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi6" data-lightbox-title="Youth check-in" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth check-in screen">
-                  <img class="pc-hifi-screen-img" src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi6" alt="Youth check-in with mood-first prompts and private-by-default framing" width="390" height="874" loading="eager" decoding="async">
-                </button>
-                <figcaption>
-                  <p class="pc-screen-caption-title">Youth check-in</p>
-                  <div class="pc-screen-notes" aria-label="Check-in annotations">
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Final solution</span>
-                      <span class="pc-screen-note-text">A brief, repeatable check-in for the five evaluation timepoints&mdash;mood first, then discrete school-safety and sleep prompts, with a persistent <em>Private</em> signal.</span>
-                    </p>
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Research insight</span>
-                      <span class="pc-screen-note-text">Journeys showed first-use anxiety and pressure to over-disclose. Lower-stakes mood entry and closed choices reduce cognitive load while keeping trauma-informed choice visible.</span>
-                    </p>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="pc-key-screen">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/hifi-privacy-sharing-controls.svg?v=hifi6" data-lightbox-title="Youth privacy controls" data-lightbox-caption="High-fidelity · Youth mobile" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge youth privacy controls screen">
-                  <img class="pc-hifi-screen-img" src="../../assets/images/path-compass/hifi-privacy-sharing-controls.svg?v=hifi6" alt="Youth privacy controls with per-category share and revoke" width="390" height="882" loading="eager" decoding="async">
-                </button>
-                <figcaption>
-                  <p class="pc-screen-caption-title">Privacy controls</p>
-                  <div class="pc-screen-notes" aria-label="Privacy controls annotations">
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Final solution</span>
-                      <span class="pc-screen-note-text">Private by default, with per-category share controls for mood, sleep, safety, and journal&mdash;explicit, reversible, and separated by caregiver vs clinician.</span>
-                    </p>
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Research insight</span>
-                      <span class="pc-screen-note-text">Competitive review and personas showed risk when tools default to parent visibility or one-time intake settings. Granular revoke preserves trust, empowerment, and multi-party care.</span>
-                    </p>
-                  </div>
-                </figcaption>
-              </figure>
-                </div>
-              </section>
-
-              <section class="pc-key-screens-group" aria-labelledby="pc-key-screens-clinician-heading">
-                <div class="pc-key-screens-group-head">
-                  <span class="pc-key-screens-group-accent" aria-hidden="true"></span>
-                  <h3 id="pc-key-screens-clinician-heading" class="pc-key-screens-group-title">Clinician Desktop Screens</h3>
-                </div>
-                <div class="pc-key-screens-grid" aria-label="Clinician desktop screens">
-              <figure class="pc-key-screen pc-key-screen--wide">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/clinician-fidelity-checklist.svg?v=hifi9" data-lightbox-title="Clinician PRACTICE fidelity checklist (tracking whether each required treatment element was delivered)" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician PRACTICE fidelity checklist">
-                  <img class="pc-hifi-screen-img" src="../../assets/images/path-compass/clinician-fidelity-checklist.svg?v=hifi9" alt="In-session PRACTICE fidelity checklist with live marking and shared youth signals" width="1440" height="1971" loading="eager" decoding="async">
-                </button>
-                <figcaption>
-                  <p class="pc-screen-caption-title">Clinician PRACTICE fidelity checklist (tracking whether each required treatment element was delivered)</p>
-                  <div class="pc-screen-notes" aria-label="Fidelity checklist annotations">
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Final solution</span>
-                      <span class="pc-screen-note-text">A live PRACTICE checklist markable during the session (so clinicians can mark components in real time instead of reconstructing sessions later), fidelity score (how completely the model was delivered), optional collapsed notes, and shared youth check-in signals (mood, safety, sleep) for context.</span>
-                    </p>
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Research insight</span>
-                      <span class="pc-screen-note-text">Personas and journeys showed clinicians choosing presence over after-the-fact paper forms, which erodes fidelity accuracy under high caseloads. In-session marking keeps documentation from competing with care.</span>
-                    </p>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="pc-key-screen pc-key-screen--wide">
-                <button type="button" class="pc-hifi-screen-hit" data-lightbox-src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6" data-lightbox-title="Clinician dashboard" data-lightbox-caption="High-fidelity · Clinician desktop" data-lightbox-diagram data-lightbox-inline-svg aria-label="Enlarge clinician dashboard">
-                  <img class="pc-hifi-screen-img" src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6" alt="Clinician dashboard with fidelity trends, PROM completion, and alerts" width="1440" height="1144" loading="eager" decoding="async">
-                </button>
-                <figcaption>
-                  <p class="pc-screen-caption-title">Clinician dashboard</p>
-                  <div class="pc-screen-notes" aria-label="Dashboard annotations">
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Final solution</span>
-                      <span class="pc-screen-note-text">A day-of workspace for fidelity trends, Patient-reported outcome measure (PROM) completion, today&rsquo;s schedule, and priority alerts&mdash;so longitudinal evaluation data and session prep stay in one glanceable view.</span>
-                    </p>
-                    <p class="pc-screen-note">
-                      <span class="pc-screen-note-label">Research insight</span>
-                      <span class="pc-screen-note-text">Competitive review showed measurement tools that trend outcomes but ignore PRACTICE fidelity, and fidelity tools that never surface youth signals. The dashboard joins both so community-clinic caseloads stay actionable without EHR feature sprawl.</span>
-                    </p>
-                  </div>
-                </figcaption>
-              </figure>
-                </div>
-              </section>
-            </div>
-
-            <p class="pc-key-screens-bridge mt-8">
-              These are the final designs. The research, decisions, and process that produced them are detailed below.
-            </p>
-          </section>
-
-          <section id="process" class="case-section">
-            <h2 class="case-section-title">Design Process</h2>
-            <ol class="tt-process-phases">
-              <li class="tt-process-phase">
-                <a href="#foundation" class="tt-process-phase-link">
-                  <span class="tt-process-phase-row">
-                    <span class="tt-process-phase-num">01</span>
-                    <span class="tt-process-phase-title">Foundation &amp; Research</span>
-                  </span>
-                  <p class="tt-process-phase-body">TF-CBT evaluation plan, PRACTICE fidelity, and trauma-informed constraints.</p>
-                </a>
-              </li>
-              <li class="tt-process-phase">
-                <a href="#synthesis" class="tt-process-phase-link">
-                  <span class="tt-process-phase-row">
-                    <span class="tt-process-phase-num">02</span>
-                    <span class="tt-process-phase-title">Synthesis</span>
-                  </span>
-                  <p class="tt-process-phase-body">Personas and current vs. ideal journey maps.</p>
-                </a>
-              </li>
-              <li class="tt-process-phase">
-                <a href="#exploration" class="tt-process-phase-link">
-                  <span class="tt-process-phase-row">
-                    <span class="tt-process-phase-num">03</span>
-                    <span class="tt-process-phase-title">Exploration &amp; Benchmarking</span>
-                  </span>
-                  <p class="tt-process-phase-body">Competitive gap analysis and pattern comparisons.</p>
-                </a>
-              </li>
-              <li class="tt-process-phase">
-                <a href="#design" class="tt-process-phase-link">
-                  <span class="tt-process-phase-row">
-                    <span class="tt-process-phase-num">04</span>
-                    <span class="tt-process-phase-title">Design &amp; Prototyping</span>
-                  </span>
-                  <p class="tt-process-phase-body">Wireframes, hi-fi mockups, and interactive Figma prototypes.</p>
-                </a>
-              </li>
-              <li class="tt-process-phase">
-                <a href="#validation" class="tt-process-phase-link">
-                  <span class="tt-process-phase-row">
-                    <span class="tt-process-phase-num">05</span>
-                    <span class="tt-process-phase-title">Evaluation &amp; Validation</span>
-                  </span>
-                  <p class="tt-process-phase-body">Heuristic review against Nielsen heuristics and trauma-informed principles.</p>
-                </a>
-              </li>
-            </ol>
-          </section>
-
-          <section id="foundation" class="case-section">
-            <h2 class="case-section-title"><span class="case-step-num">01</span> Foundation &amp; Research</h2>
-            <p class="prose-body">
-              A master&rsquo;s-level TF-CBT evaluation plan defines what Path Compass must support: PRACTICE fidelity, <a href="https://doi.org/10.1007/s007870050057" target="_blank" rel="noopener noreferrer" class="pc-resource-link">Strengths and Difficulties Questionnaire (SDQ)</a> and <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer" class="pc-resource-link">Duke-UNC Functional Social Support Questionnaire (FSSQ)</a> (standard symptom and support questionnaires) at five timepoints, and outcome measurement in community clinics.
-            </p>
-
-            <div class="tt-overview-context mt-8">
-              <p class="tt-overview-kicker">Evaluation overview</p>
-              <p class="tt-overview-lede">300 youth (ages 10&ndash;18) &middot; TF-CBT vs. Therapy as Usual (TAU) &middot; community outpatient settings</p>
-              <ul class="tt-overview-stats" aria-label="Evaluation plan at a glance">
-                <li class="tt-overview-stat">
-                  <span class="tt-overview-stat-value">SDQ + FSSQ</span>
-                  <span class="tt-overview-stat-label">youth and caregiver reports at five timepoints</span>
-                </li>
-                <li class="tt-overview-stat">
-                  <span class="tt-overview-stat-value">PRACTICE fidelity</span>
-                  <span class="tt-overview-stat-label">session-level adherence monitoring</span>
-                </li>
-                <li class="tt-overview-stat">
-                  <span class="tt-overview-stat-value">4 questions</span>
-                  <span class="tt-overview-stat-label">fidelity through long-term outcomes</span>
-                </li>
-              </ul>
-            </div>
-
-            <aside class="pc-constraints-callout mt-8" aria-labelledby="pc-constraints-heading">
-              <h3 id="pc-constraints-heading" class="pc-constraints-title">Constraints that shaped the design</h3>
-              <ul class="pc-constraints-list">
-                <li>Conceptual case study &mdash; no primary research with clinic participants</li>
-                <li>HIPAA-aware workflows; no real patient data</li>
-                <li>Trauma-informed defaults: youth agency, reversible sharing, documentation that does not compete with care</li>
-                <li>Community-clinic caseloads &mdash; fidelity and PROM collection must fit real session workflows</li>
-              </ul>
-            </aside>
-
-            <h3 id="practice" class="case-subtitle mt-12">TF-CBT PRACTICE components</h3>
-            <p class="prose-body mt-3">
-              TF-CBT is delivered through the <a href="../../assets/PRACTICE-components.pdf" target="_blank" rel="noopener noreferrer" class="pc-resource-link">PRACTICE model</a>&mdash;components (the core sequence of TF-CBT skills) clinicians mark for fidelity during care.
-            </p>
-            <ul class="tt-practice-grid tt-practice-grid--compact mt-5">
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>P</strong>sychoeducation &amp; parenting</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>R</strong>elaxation</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>A</strong>ffective modulation</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>C</strong>ognitive coping</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>T</strong>rauma narrative</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>I</strong>n vivo mastery</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>C</strong>onjoint sessions</span></li>
-              <li class="tt-practice-chip"><span class="tt-practice-label"><strong>E</strong>nhancing safety</span></li>
-            </ul>
-
-            <div class="pc-foundation-sources mt-6" aria-label="Source materials">
-              <p class="pc-foundation-sources-kicker">Source materials that informed the design constraints</p>
-              <ul class="pc-foundation-sources-list">
-                <li>
-                  <a href="https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/" target="_blank" rel="noopener noreferrer" class="pc-resource-link">TF-CBT Brief Practice Fidelity Checklist</a>
-                  (Deblinger et al., 2014)
-                </li>
-                <li>
-                  <a href="https://www.nctsn.org/sites/default/files/resources/how_to_implement_tfcbt.pdf" target="_blank" rel="noopener noreferrer" class="pc-resource-link">NCTSN How to Implement TF-CBT guide</a>
-                </li>
-                <li>
-                  <a href="https://doi.org/10.1037/a0037364" target="_blank" rel="noopener noreferrer" class="pc-resource-link">TF-CBT effectiveness in a community setting</a>
-                  (Webb et al., 2014)
-                </li>
-              </ul>
-            </div>
-
-            <h3 id="evaluation-questions" class="case-subtitle mt-12">Evaluation questions</h3>
-            <p class="prose-body mt-3">
-              These evaluation questions formed the foundation of the evaluation and measurement plan I developed for the Measurement &amp; Evaluation in Community Health Education course at Wayne State University&rsquo;s College of Education.
-            </p>
-            <ol class="pc-eval-brief mt-4">
-              <li><strong>Process Evaluation Question:</strong> Was TF-CBT delivered with PRACTICE fidelity in community clinics?</li>
-              <li><strong>Short-term Outcome Evaluation Question:</strong> Reductions in internalizing symptoms (SDQ)?</li>
-              <li><strong>Intermediate-term Outcome Evaluation Question:</strong> Gains in social support (FSSQ) and coping vs. TAU?</li>
-              <li><strong>Long-term Impact Evaluation Question:</strong> Mental health and quality-of-life improvements 12&ndash;18 months post-intervention?</li>
-            </ol>
-          </section>
-
-          <section id="synthesis" class="case-section">
-            <h2 class="case-section-title"><span class="case-step-num">02</span> Synthesis &amp; Insight Generation</h2>
-            <p class="prose-body">
-              Personas and journey maps translate evaluation requirements into lived clinic experience&mdash;where fidelity, privacy, and longitudinal data collection collide.
-            </p>
-
-            <h3 id="personas" class="case-subtitle mt-10">Personas</h3>
-            <p class="prose-body">Three research-grounded personas. Nia and Denise form a matched dyad; Marcus is their clinician.</p>
-
-            <div class="pc-persona-compact-grid mt-6" aria-label="Persona summary cards">
-              <article class="pc-persona-compact-card">
-                <header class="pc-persona-compact-head">
-                  <span class="pc-persona-compact-avatar" aria-hidden="true">N</span>
-                  <div>
-                    <h4 class="pc-persona-compact-name">Nia, 14</h4>
-                    <p class="pc-persona-compact-role">Youth &middot; Mobile App</p>
-                  </div>
-                </header>
-                <dl class="pc-persona-compact-dl">
-                  <div><dt>Goals</dt><dd>Feel safer at home; control what she shares with caregivers and clinicians; stay engaged in treatment without feeling like the app is &ldquo;reporting&rdquo; on her private life</dd></div>
-                  <div><dt>Frustrations</dt><dd>Paper forms feel like homework; fear caregiver will see private answers</dd></div>
-                  <div><dt>Design implications</dt><dd>Default-private entries; warm microcopy; never auto-notify caregivers of scores</dd></div>
-                </dl>
-              </article>
-
-              <article class="pc-persona-compact-card">
-                <header class="pc-persona-compact-head">
-                  <span class="pc-persona-compact-avatar" aria-hidden="true">M</span>
-                  <div>
-                    <h4 class="pc-persona-compact-name">Marcus, 38</h4>
-                    <p class="pc-persona-compact-role">Clinician &middot; Dashboard &amp; Fidelity Tools</p>
-                  </div>
-                </header>
-                <dl class="pc-persona-compact-dl">
-                  <div><dt>Goals</dt><dd>Deliver PRACTICE with fidelity; keep families engaged; document without losing session presence</dd></div>
-                  <div><dt>Frustrations</dt><dd>Post-session forms lose accuracy; no trend view across five timepoints</dd></div>
-                  <div><dt>Design implications</dt><dd>In-session marking; surface caregiver participation; minimize clicks</dd></div>
-                </dl>
-              </article>
-
-              <article class="pc-persona-compact-card">
-                <header class="pc-persona-compact-head">
-                  <span class="pc-persona-compact-avatar" aria-hidden="true">D</span>
-                  <div>
-                    <h4 class="pc-persona-compact-name">Denise, 41</h4>
-                    <p class="pc-persona-compact-role">Caregiver &middot; Portal</p>
-                  </div>
-                </header>
-                <dl class="pc-persona-compact-dl">
-                  <div><dt>Goals</dt><dd>Help Nia heal without blame; keep appointments around retail shifts; stay informed when absent</dd></div>
-                  <div><dt>Frustrations</dt><dd>Scheduling conflicts; lost paper handouts; emotional barriers to staying involved</dd></div>
-                  <div><dt>Design implications</dt><dd>Mobile-first async reports; non-punitive reschedule; plain-language recaps</dd></div>
-                </dl>
-              </article>
-            </div>
-
-            <h3 id="journey-maps" class="case-subtitle mt-12">Journey Maps</h3>
-            <ul class="pc-insight-list mt-4">
-              <li><strong>Key insight:</strong> Paper-based workflows break at privacy handoffs, post-session fidelity recall, and fragmented PROM collection across five timepoints.</li>
-              <li><strong>Current vs. ideal:</strong> Toggle Nia or Marcus to compare paper current state against Path Compass ideal across six evaluation phases.</li>
-              <li><strong>Design impact:</strong> Surfaced documentation burden, over-disclosure risk, and the need for live fidelity + longitudinal dashboards in one workspace.</li>
-            </ul>
-
-            <div class="tt-journeys" data-journey-viewer>
-              <div class="tt-journeys-controls">
-                <div>
-                  <p class="control-label" id="persona-label">Persona</p>
-                  <div class="tablist" role="tablist" aria-labelledby="persona-label">
-                    <button type="button" class="tab" role="tab" id="tab-persona-nia" data-persona="nia" aria-selected="true" aria-controls="journey-map-panel">
-                      Nia, 14
-                      <span class="tab-role">Youth &middot; Mobile App</span>
-                    </button>
-                    <button type="button" class="tab" role="tab" id="tab-persona-marcus" data-persona="marcus" aria-selected="false" tabindex="-1" aria-controls="journey-map-panel">
-                      Marcus
-                      <span class="tab-role">Clinician &middot; Dashboard</span>
-                    </button>
-                  </div>
-                </div>
-                <div>
-                  <p class="control-label" id="state-label">Journey state</p>
-                  <div class="tablist tablist--state" role="tablist" aria-labelledby="state-label">
-                    <button type="button" class="tab" role="tab" id="tab-state-current" data-state="current" aria-selected="true" aria-controls="journey-map-panel">Current-State</button>
-                    <button type="button" class="tab" role="tab" id="tab-state-ideal" data-state="ideal" aria-selected="false" tabindex="-1" aria-controls="journey-map-panel">Ideal-State</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tt-journeys-viewer" id="journey-map-panel" role="tabpanel" aria-live="polite">
-                <p class="tt-journeys-meta" data-journey-meta><strong>Current state</strong> &mdash; Nia (youth) across the six TF-CBT evaluation phases.</p>
-                <div class="user-flow-figure">
-                  <div class="diagram-zoom-viewport" data-journey-zoom>
-                    <div class="diagram-zoom-stage">
-                      <!-- Journey map SVG is inlined by tt-journeys.js for crisp vector zoom -->
-                    </div>
-                  </div>
-                  <button type="button" class="diagram-expand-btn"
-                    data-lightbox-src="./journey-maps/PathCompass_Nia_CurrentState.svg"
-                    data-lightbox-title="Nia's Journey Through TF-CBT &mdash; Current State"
-                    data-lightbox-caption="Nia &middot; Youth &middot; Paper-based current state across six evaluation phases"
-                    data-lightbox-diagram
-                    data-lightbox-inline-svg
-                    aria-label="Open Nia's Journey Through TF-CBT &mdash; Current State full size">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <polyline points="9 21 3 21 3 15"></polyline>
-                      <line x1="21" y1="3" x2="14" y2="10"></line>
-                      <line x1="3" y1="21" x2="10" y2="14"></line>
-                    </svg>
-                  </button>
-                </div>
-                <p class="tt-journeys-hint pc-journey-diagram-hint">Pinch or double-click to zoom &middot; expand for full screen</p>
-              </div>
-            </div>
-          </section>
-
-          <section id="exploration" class="case-section">
-            <h2 class="case-section-title"><span class="case-step-num">03</span> Exploration &amp; Benchmarking</h2>
-            <p class="prose-body">
-              No single product covers in-session PRACTICE fidelity, five-timepoint SDQ/FSSQ collection, and trauma-informed multi-party privacy. Benchmarking six adjacent tools clarified Path Compass&rsquo;s wedge.
-            </p>
-
-            <ul class="pc-insight-list mt-6">
-              <li><strong>Train &amp; certify</strong> (TF-CBTWeb) teaches the model but doesn&rsquo;t run delivery workflows or fidelity logging.</li>
-              <li><strong>Engage in session</strong> (SPARK) supports fidelity in the moment but lacks longitudinal tracking and caregiver portal features.</li>
-              <li><strong>Measure broadly</strong> (Greenspace) trends PROMs but isn&rsquo;t built around PRACTICE fidelity or granular youth privacy.</li>
-              <li><strong>Score with AI</strong> (Lyssn) supports supervision at scale but isn&rsquo;t a youth&ndash;caregiver&ndash;clinician workspace.</li>
-            </ul>
-
-            <div class="tt-benchmark">
-              <h3 id="competitive-benchmarking" class="case-subtitle mt-8">Competitor shortlist</h3>
-              <div class="tt-benchmark-shortlist">
-                <div class="tt-benchmark-shortlist-head" aria-hidden="true">
-                  <span>Competitor</span>
-                  <span>Why it matters / gap</span>
-                </div>
-                <ul class="tt-benchmark-list">
-                  <li class="tt-benchmark-item">
-                    <div class="tt-benchmark-item-info">
-                      <p class="tt-benchmark-item-name">Paper TF-CBT Fidelity Checklist</p>
-                      <p class="tt-benchmark-item-meta">Status quo &middot; Clinician / supervisor</p>
-                    </div>
-                    <p class="tt-benchmark-item-why">What Marcus completes today&mdash;often after the session. Sets the baseline for retroactive fidelity loss.</p>
-                  </li>
-                  <li class="tt-benchmark-item">
-                    <div class="tt-benchmark-item-info">
-                      <p class="tt-benchmark-item-name">TF-CBTWeb 2.0 (MUSC)</p>
-                      <p class="tt-benchmark-item-meta">Clinician training &middot; PRACTICE modules</p>
-                    </div>
-                    <p class="tt-benchmark-item-why">Teaches the model well; does not run delivery workflows, fidelity logging, or longitudinal evaluation.</p>
-                  </li>
-                  <li class="tt-benchmark-item">
-                    <div class="tt-benchmark-item-info">
-                      <p class="tt-benchmark-item-name">SPARK Toolkit</p>
-                      <p class="tt-benchmark-item-meta">In-session TF-CBT platform &middot; Closest digital peer</p>
-                    </div>
-                    <p class="tt-benchmark-item-why">PRACTICE-aligned activities support in-session fidelity; lacks longitudinal tracking and caregiver portal features.</p>
-                  </li>
-                  <li class="tt-benchmark-item">
-                    <div class="tt-benchmark-item-info">
-                      <p class="tt-benchmark-item-name">Greenspace Health</p>
-                      <p class="tt-benchmark-item-meta">Measurement-based care &middot; Youth &amp; family PROMs</p>
-                    </div>
-                    <p class="tt-benchmark-item-why">Strong automated assessment delivery and trends; not native to TF-CBT PRACTICE fidelity or trauma-narrative sharing rules.</p>
-                  </li>
-                  <li class="tt-benchmark-item">
-                    <div class="tt-benchmark-item-info">
-                      <p class="tt-benchmark-item-name">Lyssn</p>
-                      <p class="tt-benchmark-item-meta">AI session QI &middot; Org / supervisor</p>
-                    </div>
-                    <p class="tt-benchmark-item-why">AI supervision at scale&mdash;not a youth&ndash;caregiver&ndash;clinician workspace.</p>
-                  </li>
-                  <li class="tt-benchmark-item">
-                    <div class="tt-benchmark-item-info">
-                      <p class="tt-benchmark-item-name">VA trauma apps (PTSD Coach / CPT Coach)</p>
-                      <p class="tt-benchmark-item-meta">Adult self-help &middot; Treatment companions</p>
-                    </div>
-                    <p class="tt-benchmark-item-why">Adult trauma apps&mdash;no TF-CBT youth clinic infrastructure.</p>
-                  </li>
-                </ul>
-              </div>
-
-              <h3 class="case-subtitle mt-8">Feature gap matrix</h3>
-              <p class="tt-benchmark-swipe-hint">Scroll horizontally to compare <span aria-hidden="true">&rarr;</span></p>
-
-              <div class="tt-benchmark-matrix-panel" role="region" aria-label="Competitive feature gap matrix">
-                <div class="tt-benchmark-legend-block">
-                  <p class="tt-benchmark-legend-label" id="matrix-legend-label">Legend</p>
-                  <ul class="tt-benchmark-legend" aria-labelledby="matrix-legend-label">
-                    <li><span class="cell-strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span> Built-in / strong</li>
-                    <li><span class="cell-partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span> Partial / adjacent</li>
-                    <li><span class="cell-absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span> Absent or not the job</li>
-                  </ul>
-                </div>
-                <div class="tt-benchmark-matrix-scroll">
-                  <div class="tt-benchmark-matrix-wrap" tabindex="0" aria-label="Scrollable comparison table">
-                <table class="tt-benchmark-matrix">
-                  <thead>
-                    <tr>
-                      <th scope="col">Capability</th>
-                      <th scope="col">Paper</th>
-                      <th scope="col">TF-CBTWeb</th>
-                      <th scope="col">SPARK</th>
-                      <th scope="col">Greenspace</th>
-                      <th scope="col">Lyssn</th>
-                      <th scope="col">VA apps</th>
-                      <th scope="col" class="tt-target-col">Path Compass<br><span class="tt-target-col-note">Target</span></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Real-time PRACTICE fidelity</th>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td class="tt-target-col"><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Longitudinal PROM (5 timepoints)</th>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td class="tt-target-col"><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Youth privacy / sharing controls</th>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial &mdash; account model varies; not trauma-narrative granular share" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial &mdash; personal device privacy, not clinic multi-party share controls" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td class="tt-target-col"><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Caregiver portal / parallel support</th>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td class="tt-target-col"><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Low clinician documentation burden</th>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td class="tt-target-col"><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Trauma-informed youth UX</th>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td><span class="cell-absent" title="Absent" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td>
-                      <td><span class="cell-partial" title="Partial &mdash; adult trauma apps, not TF-CBT youth clinic UX" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle class="cell-icon-ring" cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle class="cell-icon-half" cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                      <td class="tt-target-col"><span class="cell-strong" title="Strong" aria-hidden="true"><svg class="cell-icon" viewBox="0 0 16 16" width="22" height="22" focusable="false"><circle cx="8" cy="8" r="7" fill="currentColor"/></svg></span></td>
-                    </tr>
-                  </tbody>
-                </table>
-                  </div>
-                </div>
-              </div>
-
-              <aside class="tt-benchmark-wedge mt-8" aria-label="Path Compass product wedge">
-                <p class="tt-benchmark-wedge-kicker">Path Compass wedge</p>
-                <p class="tt-benchmark-wedge-text">PRACTICE fidelity + five-timepoint SDQ/FSSQ + trauma-informed multi-party privacy in one clinic workspace.</p>
-              </aside>
-
-              <h3 class="case-subtitle mt-8 text-white">Pattern comparisons</h3>
-              <p class="prose-body text-white/65">Four side-by-side diagrams contrast how adjacent products typically handle key workflows with Path Compass&rsquo;s target approach&mdash;youth privacy and sharing, caregiver participation, in-session PRACTICE fidelity, and longitudinal outcome collection. Expand any diagram for full-screen zoom.</p>
-
-              <div class="tt-benchmark-patterns" aria-label="Competitive UI pattern comparisons">
-                <figure class="tt-benchmark-pattern">
-                  <div class="tt-benchmark-pattern-media">
-                    <button type="button" class="tt-benchmark-pattern-hit"
-                      data-lightbox-src="./pattern-comparisons/pattern-privacy.svg"
-                      data-lightbox-title="Youth Privacy &amp; Sharing"
-                      data-lightbox-caption="Patient / youth &middot; Granular, reversible share control vs all-or-nothing or intake-only settings"
-                      data-lightbox-diagram
-                      data-lightbox-inline-svg
-                      aria-label="Open Youth Privacy &amp; Sharing pattern full size">
-                      <img src="./pattern-comparisons/pattern-privacy.svg" alt="Pattern comparison: Youth Privacy and Sharing &mdash; typical all-or-nothing share toggle, intake settings, and Path Compass per-entry private-by-default controls" width="1200" height="780" loading="lazy" decoding="async">
-                      <span class="diagram-expand-btn" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-                      </span>
-                    </button>
-                  </div>
-                  <figcaption>
-                    <p class="tt-benchmark-screen-label">Youth Privacy &amp; Sharing</p>
-                    <p class="tt-benchmark-pattern-role">Patient / youth</p>
-                    <p class="tt-benchmark-screen-note">Private-by-default, per-entry share and revoke vs. blanket parent toggles.</p>
-                  </figcaption>
-                </figure>
-
-                <figure class="tt-benchmark-pattern">
-                  <div class="tt-benchmark-pattern-media">
-                    <button type="button" class="tt-benchmark-pattern-hit"
-                      data-lightbox-src="./pattern-comparisons/pattern-caregiver.svg"
-                      data-lightbox-title="Caregiver Parallel Participation"
-                      data-lightbox-caption="Caregiver &middot; Form-labeled informant reports and non-punitive reschedule instead of red missed flags"
-                      data-lightbox-diagram
-                      data-lightbox-inline-svg
-                      aria-label="Open Caregiver Parallel Participation pattern full size">
-                      <img src="./pattern-comparisons/pattern-caregiver.svg" alt="Pattern comparison: Caregiver Parallel Participation &mdash; missed-session flags, one-way recaps, and Path Compass informant report plus reschedule" width="1200" height="780" loading="lazy" decoding="async">
-                      <span class="diagram-expand-btn" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-                      </span>
-                    </button>
-                  </div>
-                  <figcaption>
-                    <p class="tt-benchmark-screen-label">Caregiver Parallel Participation</p>
-                    <p class="tt-benchmark-pattern-role">Caregiver</p>
-                    <p class="tt-benchmark-screen-note">Informant-report CTAs and warm reschedule vs. punitive missed flags.</p>
-                  </figcaption>
-                </figure>
-
-                <figure class="tt-benchmark-pattern">
-                  <div class="tt-benchmark-pattern-media">
-                    <button type="button" class="tt-benchmark-pattern-hit"
-                      data-lightbox-src="./pattern-comparisons/pattern-fidelity.svg"
-                      data-lightbox-title="In-Session PRACTICE Fidelity"
-                      data-lightbox-caption="Clinician &middot; Live PRACTICE marks with optional per-item notes vs after-session or binary-only checklists"
-                      data-lightbox-diagram
-                      data-lightbox-inline-svg
-                      aria-label="Open In-Session PRACTICE Fidelity pattern full size">
-                      <img src="./pattern-comparisons/pattern-fidelity.svg" alt="Pattern comparison: In-Session PRACTICE Fidelity &mdash; after-session paper form, batch digital checks, and Path Compass live marks with optional notes" width="1200" height="780" loading="lazy" decoding="async">
-                      <span class="diagram-expand-btn" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-                      </span>
-                    </button>
-                  </div>
-                  <figcaption>
-                    <p class="tt-benchmark-screen-label">In-Session PRACTICE Fidelity</p>
-                    <p class="tt-benchmark-pattern-role">Clinician</p>
-                    <p class="tt-benchmark-screen-note">Live PRACTICE marking with optional inline notes vs. post-session paper.</p>
-                  </figcaption>
-                </figure>
-
-                <figure class="tt-benchmark-pattern">
-                  <div class="tt-benchmark-pattern-media">
-                    <button type="button" class="tt-benchmark-pattern-hit"
-                      data-lightbox-src="./pattern-comparisons/pattern-prom.svg"
-                      data-lightbox-title="Longitudinal PROM Timeline"
-                      data-lightbox-caption="Clinician &middot; Five-timepoint SDQ and FSSQ with youth and caregiver respondents on both instruments"
-                      data-lightbox-diagram
-                      data-lightbox-inline-svg
-                      aria-label="Open Longitudinal PROM Timeline pattern full size">
-                      <img src="./pattern-comparisons/pattern-prom.svg" alt="Pattern comparison: Longitudinal PROM Timeline &mdash; single-respondent MBC, SDQ-only timepoints, and Path Compass SDQ plus FSSQ youth and caregiver lines" width="1200" height="780" loading="lazy" decoding="async">
-                      <span class="diagram-expand-btn" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-                      </span>
-                    </button>
-                  </div>
-                  <figcaption>
-                    <p class="tt-benchmark-screen-label">Longitudinal PROM Timeline</p>
-                    <p class="tt-benchmark-pattern-role">Clinician</p>
-                    <p class="tt-benchmark-screen-note">SDQ + FSSQ at five timepoints with youth and caregiver lines on both.</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </section>
-
-
-          <div id="wireframe-lightbox" class="wireframe-lightbox" hidden aria-hidden="true">
-            <div class="wireframe-lightbox-backdrop" data-lightbox-close></div>
-            <div class="wireframe-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
-              <div class="wireframe-lightbox-header">
-                <div>
-                  <h3 id="lightbox-title" class="font-serif text-[22px] font-semibold text-white"></h3>
-                  <p id="lightbox-caption" class="mt-1 font-sans text-[15px] text-white/60"></p>
-                </div>
-                <button type="button" class="wireframe-lightbox-close" data-lightbox-close aria-label="Close">&times;</button>
-              </div>
-              <div class="wireframe-lightbox-body">
-                <div id="lightbox-diagram-zoom" class="diagram-zoom-viewport diagram-zoom-viewport--lightbox" hidden>
-                  <div class="diagram-zoom-stage">
-                    <img id="lightbox-image" alt="" hidden>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="wireframe-lightbox-exit" data-lightbox-close data-lightbox-exit aria-label="Close">
-                <span class="wireframe-lightbox-exit-x" aria-hidden="true">&times;</span>
-                <span class="wireframe-lightbox-exit-label">Close</span>
-              </button>
-            </div>
-          </div>
-
-          <section id="design" class="case-section">
-            <h2 class="case-section-title"><span class="case-step-num">04</span> Design &amp; Prototyping</h2>
-            <p class="prose-body">Three pressure points drove the design: youth over-disclosure risk, default caregiver visibility, and post-session fidelity reconstruction.</p>
-            <ul class="pc-insight-list mt-4">
-              <li>Mood-first check-ins with discrete choices and a persistent <em>Private</em> signal</li>
-              <li>Default-private sharing with granular, reversible controls per audience</li>
-              <li>Live PRACTICE checklist + clinician dashboard for fidelity, PROMs, and alerts</li>
-            </ul>
-
-            <h3 id="wireframes" class="case-subtitle mt-12">Low-fidelity wireframes</h3>
-            <p class="prose-body mt-3">Research-informed layout experiments for youth check-in and clinician fidelity checklist&mdash;checked against trauma-informed literature, not live user sessions. Youth: mood-first sequencing, discrete responses, and a privacy cue before input. Clinician: flat always-visible PRACTICE list with inline notes instead of modals. Click to enlarge.</p>
-
-            <div class="pc-lofi-stack mt-6" aria-label="Low-fidelity wireframes">
-              <figure class="pc-lofi-figure">
-                <button
-                  type="button"
-                  class="pc-lofi-hit"
-                  data-lightbox-src="./screens/lofi-youth-checkin.svg?v=privacy2"
-                  data-lightbox-title="Youth check-in — Low-fidelity wireframe"
-                  data-lightbox-caption="Annotated structure exploration · Youth mobile"
-                  data-lightbox-diagram
-                  data-lightbox-inline-svg
-                  aria-label="Enlarge youth check-in wireframe to zoom and pan"
-                >
-                  <img
-                    class="pc-lofi-img"
-                    src="./screens/lofi-youth-checkin.svg?v=privacy2"
-                    alt="Low-fidelity youth check-in wireframe with annotations for privacy cue, mood-first sequencing, discrete responses, and prominent privacy messaging"
-                    width="760"
-                    height="672"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                </button>
-                <figcaption>
-                  <p class="pc-screen-caption-title">Youth check-in</p>
-                  <p class="pc-screen-caption-body">Mood-first sequencing, discrete responses, privacy cue before input.</p>
-                </figcaption>
-              </figure>
-
-              <figure class="pc-lofi-figure">
-                <button
-                  type="button"
-                  class="pc-lofi-hit"
-                  data-lightbox-src="./screens/lofi-clinician-fidelity.svg?v=ann20"
-                  data-lightbox-title="Clinician PRACTICE fidelity — Low-fidelity wireframe"
-                  data-lightbox-caption="Annotated structure exploration · Clinician desktop"
-                  data-lightbox-diagram
-                  data-lightbox-inline-svg
-                  aria-label="Enlarge clinician fidelity wireframe to zoom and pan"
-                >
-                  <img
-                    class="pc-lofi-img"
-                    src="./screens/lofi-clinician-fidelity.svg?v=ann20"
-                    alt="Low-fidelity clinician PRACTICE fidelity checklist wireframe with annotations for live marking, real-time score, shared youth check-in, flat list, and expandable notes"
-                    width="1060"
-                    height="776"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                </button>
-                <figcaption>
-                  <p class="pc-screen-caption-title">Clinician in-session fidelity checklist</p>
-                  <p class="pc-screen-caption-body">Flat PRACTICE list vs. collapsible sections; inline notes vs. modals.</p>
-                </figcaption>
-              </figure>
-            </div>
-
-            <h3 id="key-decisions" class="case-subtitle mt-12">Key Design Decisions</h3>
-
-            <div class="pc-decisions-panel mt-6">
-              <p class="pc-decisions-intro">
-                The final designs (<a href="#key-screens" class="pc-resource-link">shown earlier in Key High-Fidelity Screens</a>) emerged from the following choices&mdash;each weighed against a plausible alternative from wireframe exploration or competitive review.
-              </p>
-
-            <div class="pc-decision-list" aria-label="Key design decisions">
-              <article class="pc-decision-card">
-                <h4 class="pc-decision-title">Flat, always-visible PRACTICE checklist</h4>
-                <div class="pc-decision-pair">
-                  <div class="pc-decision-col">
-                    <p class="pc-decision-kicker">Decision</p>
-                    <p class="pc-decision-body">Show all PRACTICE components in a single flat list, markable during session, with optional inline notes.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--alternative">
-                    <p class="pc-decision-kicker">Alternative considered</p>
-                    <p class="pc-decision-body">Collapsible sections by PRACTICE phase to reduce visual density.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--rationale">
-                    <p class="pc-decision-kicker">Why this choice</p>
-                    <p class="pc-decision-body">Clinicians reconstruct fidelity from memory after session; flat list keeps all components glanceable mid-narrative.</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="pc-decision-card">
-                <h4 class="pc-decision-title">Default-private youth entries</h4>
-                <div class="pc-decision-pair">
-                  <div class="pc-decision-col">
-                    <p class="pc-decision-kicker">Decision</p>
-                    <p class="pc-decision-body">All check-in and journal content starts private; youth explicitly share per category and per audience (caregiver vs clinician).</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--alternative">
-                    <p class="pc-decision-kicker">Alternative considered</p>
-                    <p class="pc-decision-body">Caregiver-visible by default with opt-out, or one-time intake privacy settings.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--rationale">
-                    <p class="pc-decision-kicker">Why this choice</p>
-                    <p class="pc-decision-body">Parent-visible defaults risk over-disclosure; granular revoke operationalizes trauma-informed choice.</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="pc-decision-card">
-                <h4 class="pc-decision-title">Expandable notes vs. modals</h4>
-                <div class="pc-decision-pair">
-                  <div class="pc-decision-col">
-                    <p class="pc-decision-kicker">Decision</p>
-                    <p class="pc-decision-body">Optional per-item notes expand inline beneath each PRACTICE row.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--alternative">
-                    <p class="pc-decision-kicker">Alternative considered</p>
-                    <p class="pc-decision-body">Modal dialog for notes, separating marking from documentation.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--rationale">
-                    <p class="pc-decision-kicker">Why this choice</p>
-                    <p class="pc-decision-body">Modals force context switching during live sessions. Inline expansion keeps the checklist visible while allowing brief documentation when needed.</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="pc-decision-card">
-                <h4 class="pc-decision-title">Mood-first check-in sequencing</h4>
-                <div class="pc-decision-pair">
-                  <div class="pc-decision-col">
-                    <p class="pc-decision-kicker">Decision</p>
-                    <p class="pc-decision-body">Open youth check-ins with mood, then discrete school-safety and sleep prompts&mdash;with a persistent <em>Private</em> signal before input.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--alternative">
-                    <p class="pc-decision-kicker">Alternative considered</p>
-                    <p class="pc-decision-body">Lead with full clinical measure screens or open-text journaling.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--rationale">
-                    <p class="pc-decision-kicker">Why this choice</p>
-                    <p class="pc-decision-body">First-use anxiety and over-disclosure risk; low-stakes mood entry builds trust before clinical prompts.</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="pc-decision-card">
-                <h4 class="pc-decision-title">Scoped youth signals for clinicians</h4>
-                <div class="pc-decision-pair">
-                  <div class="pc-decision-col">
-                    <p class="pc-decision-kicker">Decision</p>
-                    <p class="pc-decision-body">Show only youth check-in data Nia explicitly shared, in a labeled panel clinicians can collapse mid-session.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--alternative">
-                    <p class="pc-decision-kicker">Alternative considered</p>
-                    <p class="pc-decision-body">Full youth chart visibility or no youth context on the fidelity screen.</p>
-                  </div>
-                  <div class="pc-decision-col pc-decision-col--rationale">
-                    <p class="pc-decision-kicker">Why this choice</p>
-                    <p class="pc-decision-body">Clinical context without over-exposure; labeled, collapsible panel reduces noise mid-session.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            </div>
-
-            <aside class="pc-design-xref mt-10" aria-labelledby="pc-design-xref-heading">
-              <p class="pc-design-xref-kicker">From wireframes to finals</p>
-              <h4 id="pc-design-xref-heading" class="pc-design-xref-title">Final high-fidelity screens</h4>
-              <p class="pc-design-xref-lede">
-                See the polished mockups in the <a href="#key-screens" class="pc-resource-link">Key High-Fidelity Screens</a> section above&mdash;four surfaces that carry the evaluation plan into clinic-ready interfaces.
-              </p>
-              <ul class="pc-design-xref-screens" aria-label="Final high-fidelity screens">
-                <li class="pc-design-xref-screen">Youth check-in</li>
-                <li class="pc-design-xref-screen">Privacy controls</li>
-                <li class="pc-design-xref-screen">PRACTICE fidelity checklist</li>
-                <li class="pc-design-xref-screen">Clinician dashboard</li>
-              </ul>
-              <p class="pc-design-xref-note">
-                The wireframes and decisions here show how those finals were developed; interactive walkthroughs are below.
-              </p>
-            </aside>
-
-            <h3 id="prototypes" class="case-subtitle mt-12">Interactive prototypes</h3>
-            <p class="prototype-launch-note prototype-launch-note--shared mt-3">
-              Best experienced full-screen in Figma &middot; Opens in a new tab
-            </p>
-            <p class="prose-body mt-3">
-              Two Figma prototypes: one links the youth mobile screens; the other links the clinician desktop flow.
-            </p>
-
-            <div class="pc-proto-grid mt-8" aria-label="Interactive prototypes">
-              <article class="pc-proto" aria-labelledby="pc-proto-youth-title">
-                <p class="pc-proto-kicker">Youth &middot; Mobile</p>
-                <h4 id="pc-proto-youth-title" class="pc-proto-title">Youth app prototype</h4>
-                <p class="prose-body mt-3">
-                  Connects the youth check-in and privacy controls into a clickable mobile walkthrough&mdash;best viewed full-screen in Figma.
-                </p>
-
-                <div class="prototype-launch">
-                  <a
-                    class="pc-proto-thumb pc-proto-thumb--mobile"
-                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open youth app prototype in Figma">
-                    <img
-                      src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi6"
-                      alt="Youth check-in screen preview"
-                      width="390"
-                      height="874"
-                      loading="lazy"
-                      decoding="async"
-                    >
-                  </a>
-                  <a
-                    class="btn btn-lg btn-cta prototype-launch-cta"
-                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&amp;starting-point-node-id=0-1&amp;scaling=scale-down&amp;content-scaling=fixed"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Open Live Interactive Prototype &rarr;
-                  </a>
-                </div>
-              </article>
-
-              <article class="pc-proto" aria-labelledby="pc-proto-clinician-title">
-                <p class="pc-proto-kicker">Clinician &middot; Desktop / tablet</p>
-                <h4 id="pc-proto-clinician-title" class="pc-proto-title">Clinician Dashboard Prototype</h4>
-                <p class="prose-body mt-3">
-                  Interactive walkthrough of the in-session PRACTICE fidelity checklist and clinician workflow&mdash;best viewed full-screen in Figma.
-                </p>
-
-                <div class="prototype-launch">
-                  <a
-                    class="pc-proto-thumb pc-proto-thumb--desktop"
-                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr/Untitled?node-id=243-2&amp;p=f&amp;t=oKrHEHzMmKqJoN0e-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=2%3A666&amp;starting-point-node-id=243%3A2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open clinician dashboard prototype in Figma">
-                    <img
-                      src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6"
-                      alt="Clinician dashboard screen preview"
-                      width="1440"
-                      height="1144"
-                      loading="lazy"
-                      decoding="async"
-                    >
-                  </a>
-                  <a
-                    class="btn btn-lg btn-cta prototype-launch-cta"
-                    href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr/Untitled?node-id=243-2&amp;p=f&amp;t=oKrHEHzMmKqJoN0e-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=2%3A666&amp;starting-point-node-id=243%3A2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Open Live Interactive Prototype &rarr;
-                  </a>
-                </div>
-              </article>
-            </div>
-
-            <h3 id="proto-refinements" class="case-subtitle mt-12">Refinements made based on heuristic evaluation</h3>
-            <div class="pc-refinements-panel mt-6">
-              <p class="pc-refinements-intro">Six fixes applied after Nielsen heuristic review and trauma-informed principles&mdash;each tied to a specific usability issue found in the prototypes.</p>
-              <ul class="tt-proto-refinements-grid">
-                <li class="tt-proto-refinement-card">
-                  <p class="tt-proto-refinement-kicker">
-                    <span class="tt-proto-refinement-kicker-label">Youth fixes</span>
-                    <span class="tt-proto-refinement-count" aria-label="3 fixes">3</span>
-                  </p>
-                  <ul class="tt-proto-refinement-list">
-                    <li class="tt-proto-refinement-item">
-                      <p class="tt-proto-refinement-heuristic">H3 &middot; User control and freedom &middot; Safety &middot; Empowerment</p>
-                      <p class="tt-proto-refinement-decision">Save &amp; Close button in check-in flow</p>
-                      <p class="tt-proto-refinement-rationale">Early flows trapped users mid-check-in; Save &amp; Close let youth pause, keep partial answers, and leave without feeling forced to disclose.</p>
-                    </li>
-                    <li class="tt-proto-refinement-item">
-                      <p class="tt-proto-refinement-heuristic">H3 &middot; User control and freedom &middot; Choice &middot; Trustworthiness</p>
-                      <p class="tt-proto-refinement-decision">Back navigation on privacy screen</p>
-                      <p class="tt-proto-refinement-rationale">Privacy settings felt like a dead end; back navigation restored orientation and made sharing choices feel reversible, not final.</p>
-                    </li>
-                    <li class="tt-proto-refinement-item">
-                      <p class="tt-proto-refinement-heuristic">H1 &middot; Visibility of system status &middot; Safety &middot; Trustworthiness</p>
-                      <p class="tt-proto-refinement-decision">Persistent Private status before check-in input</p>
-                      <p class="tt-proto-refinement-rationale">Youth could not see whether answers were shared; a visible <em>Private</em> signal before each prompt reinforced that disclosure stays under their control.</p>
-                    </li>
-                  </ul>
-                </li>
-                <li class="tt-proto-refinement-card">
-                  <p class="tt-proto-refinement-kicker">
-                    <span class="tt-proto-refinement-kicker-label">Clinician fixes</span>
-                    <span class="tt-proto-refinement-count" aria-label="3 fixes">3</span>
-                  </p>
-                  <ul class="tt-proto-refinement-list">
-                    <li class="tt-proto-refinement-item">
-                      <p class="tt-proto-refinement-heuristic">H1 &middot; Visibility of system status &middot; Collaboration</p>
-                      <p class="tt-proto-refinement-decision">PRACTICE progress indicator</p>
-                      <p class="tt-proto-refinement-rationale">Clinicians could not see where they were in the session arc; a progress indicator surfaced phase and component status without pulling attention from the youth in the room.</p>
-                    </li>
-                    <li class="tt-proto-refinement-item">
-                      <p class="tt-proto-refinement-heuristic">H6 &middot; Recognition rather than recall &middot; Safety &middot; Trustworthiness</p>
-                      <p class="tt-proto-refinement-decision">Labeled, collapsible youth check-in panel</p>
-                      <p class="tt-proto-refinement-rationale">Shared youth signals were easy to miss or misread; a labeled, collapsible panel made only consented data visible and reduced accidental over-exposure mid-session.</p>
-                    </li>
-                    <li class="tt-proto-refinement-item">
-                      <p class="tt-proto-refinement-heuristic">H5 &middot; Error prevention &middot; Trustworthiness</p>
-                      <p class="tt-proto-refinement-decision">End Session confirmation; dashboard linkage</p>
-                      <p class="tt-proto-refinement-rationale">Ending a session risked accidental data loss; confirmation plus a clear return path to the dashboard prevented costly mis-taps and preserved session integrity.</p>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <p class="pc-refinements-xref">
-              Patterns the heuristic review affirmed as strengths are in <a href="#validation" class="pc-resource-link">Evaluation &amp; Validation</a>.
-            </p>
-          </section>
-
-          <section id="validation" class="case-section">
-            <h2 class="case-section-title"><span class="case-step-num">05</span> Evaluation &amp; Validation</h2>
-
-            <div class="pc-validation-panel mt-6">
-              <p class="pc-validation-lede">
-                Validation for this conceptual case study relied on expert heuristic review&mdash;not moderated testing with clinic participants. I reviewed youth and clinician prototypes against Nielsen&rsquo;s heuristics and <a href="../../assets/Trauma-informed-design_Chayn.pdf" target="_blank" rel="noopener noreferrer" class="pc-resource-link">trauma-informed digital design principles</a>.
-              </p>
-              <ul class="tt-validation-principles" aria-label="Trauma-informed principles used in review">
-                <li class="tt-validation-principle">Safety</li>
-                <li class="tt-validation-principle">Trustworthiness</li>
-                <li class="tt-validation-principle">Choice</li>
-                <li class="tt-validation-principle">Collaboration</li>
-                <li class="tt-validation-principle">Empowerment</li>
-              </ul>
-
-              <div class="tt-validation-findings-grid mt-8" aria-label="Heuristic evaluation findings by prototype">
-                <div class="tt-validation-findings-flow">
-                  <p class="tt-validation-scope-kicker">Youth &middot; Mobile</p>
-                  <ul class="tt-validation-findings-stack">
-                    <li class="tt-validation-finding tt-validation-finding--strength">
-                      <p class="tt-validation-finding-label">Strengths</p>
-                      <ul class="tt-validation-finding-list">
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-text"><strong>Privacy-first ordering</strong> &mdash; review aligned with trauma-informed choice; control cues precede sensitive prompts</span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-text"><strong>Mood-first, discrete responses</strong> &mdash; low cognitive-load entry pattern; closed scales instead of open text</span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-text"><strong>Equal-weight Share and Revoke</strong> &mdash; consistent affordances support reversible sharing control</span>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="tt-validation-finding tt-validation-finding--priority">
-                      <p class="tt-validation-finding-label">Higher-priority issues</p>
-                      <ul class="tt-validation-finding-list">
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-copy">
-                            <span class="tt-validation-finding-heuristic">H3 &middot; User control and freedom &middot; Safety &middot; Empowerment</span>
-                            <span class="tt-validation-finding-text">No exit path during multi-step check-in</span>
-                          </span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-copy">
-                            <span class="tt-validation-finding-heuristic">H3 &middot; User control and freedom &middot; Choice &middot; Trustworthiness</span>
-                            <span class="tt-validation-finding-text">No back navigation on privacy screen</span>
-                          </span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-copy">
-                            <span class="tt-validation-finding-heuristic">H1 &middot; Visibility of system status &middot; Safety &middot; Trustworthiness</span>
-                            <span class="tt-validation-finding-text">No visible private-status signal before check-in input</span>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="tt-validation-findings-flow">
-                  <p class="tt-validation-scope-kicker">Clinician &middot; Desktop</p>
-                  <ul class="tt-validation-findings-stack">
-                    <li class="tt-validation-finding tt-validation-finding--strength">
-                      <p class="tt-validation-finding-label">Strengths</p>
-                      <ul class="tt-validation-finding-list">
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-text"><strong>Always-visible PRACTICE list</strong> &mdash; supports in-session marking without hiding unmarked components</span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-text"><strong>Scoped youth check-in panel</strong> &mdash; surfaces only consented data, aligned with privacy-by-default model</span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-text"><strong>Running fidelity score</strong> &mdash; session-level adherence visible during marking, supporting recognition over recall without leaving the checklist</span>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="tt-validation-finding tt-validation-finding--priority">
-                      <p class="tt-validation-finding-label">Higher-priority issues</p>
-                      <ul class="tt-validation-finding-list">
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-copy">
-                            <span class="tt-validation-finding-heuristic">H1 &middot; Visibility of system status &middot; Collaboration</span>
-                            <span class="tt-validation-finding-text">No PRACTICE session progress indicator</span>
-                          </span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-copy">
-                            <span class="tt-validation-finding-heuristic">H6 &middot; Recognition rather than recall &middot; Safety &middot; Trustworthiness</span>
-                            <span class="tt-validation-finding-text">Youth check-in panel lacked clear labeling and collapse control</span>
-                          </span>
-                        </li>
-                        <li class="tt-validation-finding-item">
-                          <span class="tt-validation-finding-mark" aria-hidden="true">&#9670;</span>
-                          <span class="tt-validation-finding-copy">
-                            <span class="tt-validation-finding-heuristic">H5 &middot; Error prevention &middot; Trustworthiness</span>
-                            <span class="tt-validation-finding-text">No confirmation before ending session; weak return path to dashboard</span>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <p class="pc-validation-footnote">
-                Six higher-priority issues flagged in review &rarr; addressed in <a href="#proto-refinements" class="pc-resource-link">Refinements made based on heuristic evaluation</a>.
-              </p>
-            </div>
-          </section>
-
-          <section id="reflection" class="case-section">
-            <h2 class="case-section-title">Reflections &amp; Lessons Learned</h2>
-            <p class="pc-reflect-lede">
-              What the project demonstrated, where it fell short, and what would come next in a real clinic setting.
-            </p>
-
-            <div class="pc-reflect-grid">
-              <article class="pc-reflect-card pc-reflect-card--achieved">
-                <h3 class="pc-reflect-heading">What it achieved</h3>
-                <ul class="pc-reflect-items">
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Designed an end-to-end system joining live PRACTICE fidelity, five-timepoint outcomes, and trauma-informed youth privacy</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Gave youth granular, reversible control over disclosure instead of default caregiver visibility</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Shifted clinician documentation from post-session reconstruction to in-session marking</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Delivered interactive prototypes covering both youth mobile and clinician desktop workflows</span>
-                  </li>
-                </ul>
-              </article>
-
-              <article class="pc-reflect-card pc-reflect-card--decisions">
-                <h3 class="pc-reflect-heading">Decisions that mattered</h3>
-                <ul class="pc-reflect-items">
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Used a flat, always-visible PRACTICE list instead of collapsible sections so clinicians can mark fidelity without losing session context</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Defaulted all youth entries to private, with per-category and per-audience share/revoke controls</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Prioritized in-session fidelity marking over post-session paper forms to protect clinical presence</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Sequenced check-ins mood-first with discrete options and a persistent &ldquo;Private&rdquo; signal to reduce first-use anxiety</span>
-                  </li>
-                </ul>
-              </article>
-
-              <article class="pc-reflect-card pc-reflect-card--limitations">
-                <h3 class="pc-reflect-heading">Limitations</h3>
-                <ul class="pc-reflect-items">
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Conceptual case study only &mdash; no primary research with clinicians or youth</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Validation limited to heuristic evaluation; no moderated usability testing</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Personas and insights synthesized from literature and the evaluation plan, not field research</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>No real patient data or live clinic implementation</span>
-                  </li>
-                </ul>
-              </article>
-
-              <article class="pc-reflect-card pc-reflect-card--next">
-                <h3 class="pc-reflect-heading">Next steps</h3>
-                <ul class="pc-reflect-items">
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Conduct moderated usability testing with community clinicians and youth (or youth advocates) on the fidelity checklist and privacy controls</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Compare documentation time and cognitive load against paper PRACTICE checklists</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Test share/revoke flows with matched youth&ndash;caregiver dyads to validate trust and comprehension</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Explore how fidelity and PROM data could support supervisor or quality-improvement views</span>
-                  </li>
-                </ul>
-              </article>
-
-              <article class="pc-reflect-card pc-reflect-card--wide pc-reflect-card--insight">
-                <h3 class="pc-reflect-heading">Transferable insight</h3>
-                <ul class="pc-reflect-items pc-reflect-items--insight">
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Trauma-informed design is operationalized through interaction defaults and control, not visual style</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Privacy in multi-party mental health tools must be granular and revocable at every share point</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>Documentation that competes with clinical presence is rarely sustainable in practice</span>
-                  </li>
-                  <li class="pc-reflect-item">
-                    <span class="pc-reflect-mark" aria-hidden="true">&#9670;</span>
-                    <span>In-session fidelity marking is more realistic than post-session reconstruction under real caseload pressure</span>
-                  </li>
-                </ul>
-              </article>
-            </div>
-          </section>
-
-          <section id="references" class="case-section">
-            <h2 class="case-section-title">References</h2>
-            <details class="tt-references-collapse">
-              <summary class="tt-references-summary">
-                <span class="tt-references-summary-lead">
-                  <span class="tt-references-summary-label">View bibliography</span>
-                  <span class="tt-references-summary-meta">9 sources &middot; APA 7th edition</span>
+<div class="pc-case">
+        <div class="pc-topbar">
+          <div class="wrap">
+            <nav class="case-nav minimal-case-nav" data-case-nav aria-label="Case study sections">
+              <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="pc-case-nav-panel">
+                <span class="case-nav-toggle-meta">
+                  <span class="case-nav-toggle-kicker">On this page</span>
+                  <span class="case-nav-toggle-current" data-case-nav-current>Problem</span>
                 </span>
-              </summary>
-              <div class="tt-references-collapse-body">
-                <p class="prose-body">APA 7th edition bibliography for sources drawn from for this case study.</p>
-                <ol class="tt-references" aria-label="APA references">
-              <li>Abdulai, A.-F., Naghdali, H., Tekie Ghirmay, E., Adam, F., &amp; Bawafaa, E. (2023). Trauma-informed care in digital health technologies: Protocol for a scoping review. <em>JMIR Research Protocols, 12</em>, e46842. <a href="https://doi.org/10.2196/46842" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/46842</a></li>
-              <li>Birkeland, M. S., Holt, T., Ormhaug, S. M., &amp; Jensen, T. K. (2020). Perceived social support and posttraumatic stress symptoms in children and youth in therapy: A parallel process latent growth curve model. <em>Behaviour Research and Therapy, 132</em>, 103655. <a href="https://doi.org/10.1016/j.brat.2020.103655" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.brat.2020.103655</a></li>
-              <li>Broadhead, W. E., Gehlbach, S. H., De Gruy, F. V., &amp; Kaplan, B. H. (1988). The Duke-UNC Functional Social Support Questionnaire: Measurement of social support in family medicine patients. <em>Medical Care, 26</em>(7), 709&ndash;723. <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/00005650-198807000-00006</a></li>
-              <li>Cohen, J. A., &amp; Mannarino, A. P. (2008). Trauma-focused cognitive behavioural therapy for children and parents. <em>Child and Adolescent Mental Health, 13</em>(4), 158&ndash;162. <a href="https://doi.org/10.1111/j.1475-3588.2008.00502.x" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/j.1475-3588.2008.00502.x</a></li>
-              <li>Cohen, J. A., &amp; Mannarino, A. P. (2015). Trauma-focused cognitive behavior therapy for traumatized children and families. <em>Child and Adolescent Psychiatric Clinics of North America, 24</em>(3), 557&ndash;570. <a href="https://doi.org/10.1016/j.chc.2015.02.005" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.chc.2015.02.005</a></li>
-              <li>Deblinger, E., Cohen, J. A., Mannarino, A. P., Murray, L., &amp; Epstein, C. (2014). <em>TF-CBT brief practice fidelity checklist</em> (Rev. ed.). Trauma-Focused Cognitive Behavioral Therapy National Therapist Certification Program. <a href="https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/" target="_blank" rel="noopener noreferrer">https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/</a></li>
-              <li>Goodman, R., Meltzer, H., &amp; Bailey, V. (1998). The Strengths and Difficulties Questionnaire: A pilot study on the validity of the self-report version. <em>European Child &amp; Adolescent Psychiatry, 7</em>(3), 125&ndash;130. <a href="https://doi.org/10.1007/s007870050057" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s007870050057</a></li>
-              <li>Rudd, B. N., Last, B. S., Gregor, C., Jackson, K., Berkowitz, S., Zinny, A., Kratz, H. E., Cliggitt, L., Adams, D. R., Walsh, L. M., &amp; Beidas, R. S. (2019). Benchmarking treatment effectiveness of community-delivered trauma-focused cognitive behavioral therapy. <em>American Journal of Community Psychology, 64</em>(3-4), 438&ndash;450. <a href="https://doi.org/10.1002/ajcp.12370" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/ajcp.12370</a></li>
-              <li>Webb, C., Hayes, A. M., Grasso, D., Laurenceau, J.-P., &amp; Deblinger, E. (2014). Trauma-focused cognitive behavioral therapy for youth: Effectiveness in a community setting. <em>Psychological Trauma: Theory, Research, Practice, and Policy, 6</em>(5), 555&ndash;562. <a href="https://doi.org/10.1037/a0037364" target="_blank" rel="noopener noreferrer">https://doi.org/10.1037/a0037364</a></li>
-                </ol>
+                <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </button>
+              <span class="minimal-topbar-label">On this page</span>
+              <div id="pc-case-nav-panel" class="case-nav-panel">
+                <a href="#problem" class="case-nav-link case-nav-link-active" data-nav-label="Problem">Problem</a>
+                <a href="#research" class="case-nav-link" data-nav-label="Research">Research</a>
+                <a href="#personas" class="case-nav-link" data-nav-label="Personas">Personas</a>
+                <a href="#compete" class="case-nav-link" data-nav-label="Landscape">Landscape</a>
+                <a href="#design" class="case-nav-link" data-nav-label="Design">Design</a>
+                <a href="#validation" class="case-nav-link" data-nav-label="Validation">Validation</a>
+                <a href="#reflection" class="case-nav-link" data-nav-label="Reflection">Reflection</a>
               </div>
-            </details>
-          </section>
-
+            </nav>
+          </div>
         </div>
+<header class="pc-hero">
+  <div class="wrap">
+    <div class="case-hero-main case-hero-main--with-meta case-hero-main--split">
+      <div class="case-hero-copy">
+        <div class="case-hero-lead">
+          <span class="tagpill">Conceptual UX Case Study</span>
+          <h1>Path Compass</h1>
+        </div>
+        <div class="case-hero-rest">
+          <p class="sub">A guide for youth and clinicians on the path to healing — turning a TF-CBT evaluation plan into a trauma-informed clinical product.</p>
+        </div>
+        <div class="meta-row">
+          <span><b>Role</b> &nbsp;Solo UX designer &amp; researcher</span>
+          <span><b>Foundation</b> &nbsp;M.S. Measurement &amp; Evaluation, Wayne State University</span>
+          <span><b>Scope</b> &nbsp;Research → personas → wireframes → hi-fi → prototype</span>
+          <span><b>Surfaces</b> &nbsp;Youth mobile, clinician desktop</span>
+        </div>
+        <div class="case-hero-actions">
+          <div class="btns">
+            <a class="btn btn-primary" href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr?node-id=0-1&starting-point-node-id=0-1&scaling=scale-down&content-scaling=fixed" target="_blank" rel="noopener">Youth prototype →</a>
+            <a class="btn btn-teal" href="https://www.figma.com/proto/qnR6RKNoHxLFvxBb9QaLtr/Untitled?node-id=243-2&p=f&t=oKrHEHzMmKqJoN0e-1&scaling=min-zoom&content-scaling=fixed&page-id=2%3A666&starting-point-node-id=243%3A2" target="_blank" rel="noopener">Clinician prototype →</a>
+          </div>
+          <p class="integrity"><span>⚑</span><span><b>Scope honesty:</b> a conceptual case study built on a real graduate evaluation plan. No primary research with clinicians or youth — personas and journeys are synthesized from literature. HIPAA-aware principles, no real patient data.</span></p>
+        </div>
+      </div>
+      <div class="case-hero-aside">
+        <figure class="case-hero-visual case-hero-visual--ui">
+          <img src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6" alt="Path Compass clinician dashboard with fidelity metrics, today&rsquo;s schedule, and priority alerts" width="1440" height="1144" loading="eager" decoding="async">
+        </figure>
+        <figure class="case-hero-visual case-hero-visual--photo">
+          <img src="../../assets/images/path-compass/therapist-youth-session-hero-720.jpg" alt="Therapist and teenager in a trauma-informed counseling session" width="720" height="450" loading="eager" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROBLEM ============ -->
+<section id="problem" class="pc-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The problem</div>
+      <h2>Paper breaks trauma-informed care in three places.</h2>
+      <p class="lede">TF-CBT only works if it's delivered with fidelity, tracked across five timepoints, and youth feel safe enough to actually disclose. Paper-based workflows undermine all three at once.</p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="num">8</div>
+        <div class="lbl">PRACTICE components a clinician must deliver — and usually reconstructs from memory after the session</div>
+        <div class="src">Deblinger et al., 2014</div>
+      </div>
+      <div class="stat">
+        <div class="num">5×</div>
+        <div class="lbl">Timepoints where SDQ + FSSQ outcomes need to be collected from both youth and caregiver</div>
+        <div class="src">Evaluation plan, WSU</div>
+      </div>
+      <div class="stat">
+        <div class="num">1</div>
+        <div class="lbl">Privacy setting most tools offer at intake — a single all-or-nothing caregiver toggle</div>
+        <div class="src">Competitive review</div>
+      </div>
+      <div class="stat">
+        <div class="num">0</div>
+        <div class="lbl">Adjacent tools that combine fidelity, longitudinal outcomes, and granular youth privacy</div>
+        <div class="src">6-tool benchmark</div>
+      </div>
+    </div>
+    <div class="note"><span>◆</span><span><b>The real design problem isn't measurement — it's trust.</b> A youth who over-discloses to a system that reports everything to a caregiver will stop disclosing at all, which quietly breaks the evaluation plan it was built to support.</span></div>
+  </div>
+</section>
+
+<!-- ============ HMW ============ -->
+<section>
+  <div class="wrap">
+    <div class="hmw">
+      <div class="k">Final how might we</div>
+      <p class="q">How might we support high-fidelity TF-CBT delivery in community clinics while giving youth greater agency over their information and reducing documentation burden for clinicians and caregivers?</p>
+      <div class="hmw-why">
+        <div>Keeps clinical fidelity and youth agency as equal, non-negotiable constraints.</div>
+        <div>Names documentation burden as a design problem, not a training problem.</div>
+        <div>Scopes to three real audiences: youth, clinician, and caregiver.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="pc-tint2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The process</div>
+      <h2>Five phases, starting from a real evaluation plan.</h2>
+      <p class="lede">Most case studies start from a blank problem. This one started from a graduate-level measurement plan already built for TF-CBT — the design challenge was translating it into an interface clinicians and youth would actually use.</p>
+    </div>
+    <div class="rail">
+      <div class="rstep"><div class="dot">01</div><div><div class="t">Foundation &amp; research</div><div class="d">TF-CBT evaluation plan, PRACTICE fidelity model, and trauma-informed constraints from published literature.</div></div></div>
+      <div class="rstep"><div class="dot">02</div><div><div class="t">Synthesis</div><div class="d">Three personas and current-vs-ideal journey maps across six evaluation phases.</div></div></div>
+      <div class="rstep"><div class="dot">03</div><div><div class="t">Exploration &amp; benchmarking</div><div class="d">Six adjacent tools compared on fidelity, outcomes, and privacy to find Path Compass's wedge.</div></div></div>
+      <div class="rstep"><div class="dot">04</div><div><div class="t">Design &amp; prototyping</div><div class="d">Wireframes, high-fidelity screens, and two interactive Figma prototypes.</div></div></div>
+      <div class="rstep"><div class="dot">05</div><div><div class="t">Evaluation &amp; validation</div><div class="d">Heuristic review against Nielsen's heuristics and trauma-informed design principles.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH / FOUNDATION ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01 Foundation</div>
+      <h2>The PRACTICE model, made checkable.</h2>
+      <p class="lede">TF-CBT is delivered through eight components. Fidelity means every session can be checked against them — the design question was where and when that checking happens.</p>
+    </div>
+    <div class="practice">
+      <div class="pl"><b>P</b> Psychoeducation &amp; parenting</div>
+      <div class="pl"><b>R</b> Relaxation</div>
+      <div class="pl"><b>A</b> Affective modulation</div>
+      <div class="pl"><b>C</b> Cognitive coping</div>
+      <div class="pl"><b>T</b> Trauma narrative</div>
+      <div class="pl"><b>I</b> In vivo mastery</div>
+      <div class="pl"><b>C</b> Conjoint sessions</div>
+      <div class="pl"><b>E</b> Enhancing safety</div>
+    </div>
+
+    <div class="evgrid" style="margin-top:32px">
+      <div class="ev t-violet">
+        <span class="code c-violet">Q1</span>
+        <h4>Process evaluation</h4>
+        <p>Was TF-CBT delivered with PRACTICE fidelity in community clinics?</p>
+        <div class="cnt">Process question</div>
+      </div>
+      <div class="ev t-coral">
+        <span class="code c-coral">Q2</span>
+        <h4>Short-term outcome</h4>
+        <p>Are internalizing symptoms (SDQ) reduced after treatment?</p>
+        <div class="cnt">Short-term question</div>
+      </div>
+      <div class="ev t-teal">
+        <span class="code c-teal">Q3</span>
+        <h4>Intermediate outcome</h4>
+        <p>Gains in social support (FSSQ) and coping, versus therapy as usual?</p>
+        <div class="cnt">Intermediate question</div>
+      </div>
+      <div class="ev t-rose">
+        <span class="code c-rose">Q4</span>
+        <h4>Long-term impact</h4>
+        <p>Mental health and quality-of-life improvements 12–18 months later?</p>
+        <div class="cnt">Long-term question</div>
+      </div>
+    </div>
+    <p class="study-meta">300 youth (ages 10–18) · TF-CBT vs. therapy as usual · community outpatient settings · SDQ + FSSQ collected from youth and caregivers at five timepoints.</p>
+  </div>
+</section>
+
+<!-- ============ PERSONAS ============ -->
+<section id="personas" class="pc-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">02 Synthesis</div>
+      <h2>Three people, one shared system.</h2>
+      <p class="lede">Nia and Denise are a matched youth–caregiver dyad. Marcus is their clinician. Every design decision had to hold for all three at once.</p>
+    </div>
+    <div class="personas">
+      <div class="pc-persona p1">
+        <div class="top">
+          <div class="avatar">N</div>
+          <div class="name">Nia, 14</div>
+          <div class="role">Youth · Mobile app</div>
+        </div>
+        <div class="body">
+          <h5>Goal</h5>
+          <p>Feel safer at home and control what she shares — without the app feeling like it's reporting on her.</p>
+          <h5>Frustration</h5>
+          <p>Paper forms feel like homework; she fears her caregiver will see private answers.</p>
+          <div class="implication"><b>Design implication:</b> default-private entries, warm microcopy, never auto-notify caregivers of scores.</div>
+        </div>
+      </div>
+      <div class="pc-persona p2">
+        <div class="top">
+          <div class="avatar">M</div>
+          <div class="name">Marcus, 38</div>
+          <div class="role">Clinician · Dashboard &amp; fidelity tools</div>
+        </div>
+        <div class="body">
+          <h5>Goal</h5>
+          <p>Deliver PRACTICE with fidelity and document without losing presence in the room.</p>
+          <h5>Frustration</h5>
+          <p>Post-session forms lose accuracy; there's no trend view across five timepoints.</p>
+          <div class="implication"><b>Design implication:</b> in-session marking, surfaced caregiver participation, minimal clicks.</div>
+        </div>
+      </div>
+      <div class="pc-persona p3">
+        <div class="top">
+          <div class="avatar">D</div>
+          <div class="name">Denise, 41</div>
+          <div class="role">Caregiver · Portal</div>
+        </div>
+        <div class="body">
+          <h5>Goal</h5>
+          <p>Help Nia heal without blame, around retail shifts, and stay informed when she can't attend.</p>
+          <h5>Frustration</h5>
+          <p>Scheduling conflicts, lost paper handouts, emotional barriers to staying involved.</p>
+          <div class="implication"><b>Design implication:</b> mobile-first async reports, non-punitive reschedule, plain-language recaps.</div>
+        </div>
+      </div>
+    </div>
+    <div class="note"><span>◆</span><span><b>Journey mapping insight:</b> paper workflows break at three handoffs — privacy transfer, post-session fidelity recall, and fragmented PROM collection across five timepoints. That became the design brief.</span></div>
+  </div>
+</section>
+
+<!-- ============ COMPETITIVE LANDSCAPE ============ -->
+<section id="compete">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">03 Exploration &amp; benchmarking</div>
+      <h2>No single tool covers fidelity, outcomes, and privacy.</h2>
+      <p class="lede">Six adjacent products each solve one piece of the problem. Path Compass's wedge is combining all three in one community-clinic workspace.</p>
+    </div>
+    <p class="matrix-swipe-hint">Scroll horizontally to compare <span aria-hidden="true">&rarr;</span></p>
+    <div class="matrix">
+      <table class="mtable">
+        <tr><th>Capability</th><th>Paper</th><th>TF-CBTWeb</th><th>SPARK</th><th>Greenspace</th><th>Lyssn</th><th>VA apps</th><th>Path Compass</th></tr>
+        <tr><td>Real-time PRACTICE fidelity</td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-b"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-a"></span></td><td><span class="dot-b"></span></td></tr>
+        <tr><td>Longitudinal PROM (5 timepoints)</td><td><span class="dot-p"></span></td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-b"></span></td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-b"></span></td></tr>
+        <tr><td>Youth privacy / sharing controls</td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-b"></span></td></tr>
+        <tr><td>Caregiver portal / parallel support</td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-p"></span></td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-b"></span></td></tr>
+        <tr><td>Low clinician documentation burden</td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-p"></span></td><td><span class="dot-p"></span></td><td><span class="dot-a"></span></td><td><span class="dot-b"></span></td></tr>
+        <tr><td>Trauma-informed youth UX</td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-a"></span></td><td><span class="dot-a"></span></td><td><span class="dot-p"></span></td><td><span class="dot-b"></span></td></tr>
+      </table>
+    </div>
+    <div class="mkey">
+      <span><i class="dot-b"></i> Built-in / strong</span>
+      <span><i class="dot-p"></i> Partial / adjacent</span>
+      <span><i class="dot-a"></i> Absent or not the job</span>
+    </div>
+
+    <div class="sec-head" style="margin-top:56px">
+      <h3 style="font-size:22px; margin-bottom:10px">How adjacent tools handle the same four workflows</h3>
+      <p class="lede">Pattern comparisons contrast the typical approach against Path Compass's target design. Click to enlarge.</p>
+    </div>
+    <div class="figs">
+      <button class="zoom fig" data-lb="img" data-src="pattern-comparisons/pattern-privacy.svg" data-title="Pattern comparison — Youth privacy &amp; sharing">
+        <span class="shot"><img src="pattern-comparisons/pattern-privacy.svg" alt="Pattern comparison: youth privacy and sharing" loading="lazy"></span>
+        <span class="cap"><span class="who">Youth</span><span class="ttl">Private-by-default, per-entry share vs. blanket parent toggles</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="pattern-comparisons/pattern-caregiver.svg" data-title="Pattern comparison — Caregiver parallel participation">
+        <span class="shot"><img src="pattern-comparisons/pattern-caregiver.svg" alt="Pattern comparison: caregiver parallel participation" loading="lazy"></span>
+        <span class="cap"><span class="who">Caregiver</span><span class="ttl">Informant-report and warm reschedule vs. punitive missed flags</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="pattern-comparisons/pattern-fidelity.svg" data-title="Pattern comparison — In-session PRACTICE fidelity">
+        <span class="shot"><img src="pattern-comparisons/pattern-fidelity.svg" alt="Pattern comparison: in-session PRACTICE fidelity" loading="lazy"></span>
+        <span class="cap"><span class="who">Clinician</span><span class="ttl">Live marking with inline notes vs. post-session paper</span></span>
+      </button>
+      <button class="zoom fig" data-lb="img" data-src="pattern-comparisons/pattern-prom.svg" data-title="Pattern comparison — Longitudinal PROM timeline">
+        <span class="shot"><img src="pattern-comparisons/pattern-prom.svg" alt="Pattern comparison: longitudinal PROM timeline" loading="lazy"></span>
+        <span class="cap"><span class="who">Clinician</span><span class="ttl">SDQ + FSSQ across five timepoints, youth and caregiver lines</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESIGN DECISIONS ============ -->
+<section id="design" class="pc-tint2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">04 Design &amp; prototyping</div>
+      <h2>Three pressure points, five decisions.</h2>
+      <p class="lede">Youth over-disclosure risk, default caregiver visibility, and post-session fidelity reconstruction drove every choice below — each weighed against a real alternative.</p>
+    </div>
+
+    <div class="ba">
+      <div class="before"><h5>Alternative considered</h5><p>Collapsible sections by PRACTICE phase, to reduce visual density.</p></div>
+      <div class="after"><h5>Decision</h5><p>Flat, always-visible PRACTICE checklist, markable during session with optional inline notes.</p></div>
+      <div class="why"><b>Why:</b> clinicians reconstruct fidelity from memory after a session — a flat list keeps every component glanceable mid-narrative.</div>
+    </div>
+    <div class="ba">
+      <div class="before"><h5>Alternative considered</h5><p>Caregiver-visible by default with opt-out, or one-time intake privacy settings.</p></div>
+      <div class="after"><h5>Decision</h5><p>All check-in and journal content starts private; youth share per category, per audience.</p></div>
+      <div class="why"><b>Why:</b> parent-visible defaults risk over-disclosure. Granular revoke operationalizes trauma-informed choice instead of just stating it.</div>
+    </div>
+    <div class="ba">
+      <div class="before"><h5>Alternative considered</h5><p>Modal dialog for notes, separating marking from documentation.</p></div>
+      <div class="after"><h5>Decision</h5><p>Optional per-item notes expand inline beneath each PRACTICE row.</p></div>
+      <div class="why"><b>Why:</b> modals force a context switch mid-session. Inline expansion keeps the checklist visible while still allowing documentation.</div>
+    </div>
+    <div class="ba">
+      <div class="before"><h5>Alternative considered</h5><p>Lead with full clinical measure screens, or open-text journaling.</p></div>
+      <div class="after"><h5>Decision</h5><p>Mood-first check-ins, then discrete prompts, with a persistent "Private" signal before input.</p></div>
+      <div class="why"><b>Why:</b> first-use anxiety and over-disclosure risk are highest at entry. Low-stakes mood entry builds trust before clinical prompts.</div>
+    </div>
+    <div class="ba">
+      <div class="before"><h5>Alternative considered</h5><p>Full youth chart visibility, or no youth context on the fidelity screen at all.</p></div>
+      <div class="after"><h5>Decision</h5><p>A labeled, collapsible panel shows only youth signals Nia explicitly shared.</p></div>
+      <div class="why"><b>Why:</b> clinical context without over-exposure — collapsible keeps it from competing with the fidelity checklist mid-session.</div>
+    </div>
+
+    <div class="sec-head" style="margin-top:56px">
+      <h3 style="font-size:22px; margin-bottom:10px">Low-fidelity wireframes</h3>
+      <p class="lede">Layout experiments checked against trauma-informed literature — not live sessions. Click to enlarge.</p>
+    </div>
+    <div class="figs two">
+      <button class="zoom fig wide" data-lb="img" data-src="screens/lofi-youth-checkin.svg?v=privacy2" data-title="Wireframe — Youth check-in">
+        <span class="shot"><img src="screens/lofi-youth-checkin.svg?v=privacy2" alt="Low-fidelity youth check-in wireframe" loading="lazy"></span>
+        <span class="cap"><span class="who">Youth</span><span class="ttl">Mood-first sequencing, discrete responses, privacy cue before input</span></span>
+      </button>
+      <button class="zoom fig wide" data-lb="img" data-src="screens/lofi-clinician-fidelity.svg?v=ann20" data-title="Wireframe — Clinician fidelity checklist">
+        <span class="shot"><img src="screens/lofi-clinician-fidelity.svg?v=ann20" alt="Low-fidelity clinician fidelity checklist wireframe" loading="lazy"></span>
+        <span class="cap"><span class="who">Clinician</span><span class="ttl">Flat PRACTICE list, inline notes instead of modals</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY SCREENS ============ -->
+<section id="screens">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Final designs</div>
+      <h2>Four screens where the evaluation plan becomes an interface.</h2>
+      <p class="lede">Youth check-in and privacy controls on mobile; PRACTICE fidelity checklist and dashboard on desktop. Click any screen to zoom.</p>
+    </div>
+    <div class="figs two">
+      <button class="zoom fig wide" data-lb="img" data-src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi6" data-title="Hi-fi — Youth check-in">
+        <span class="shot"><img src="../../assets/images/path-compass/hifi-youth-check-in.svg?v=hifi6" alt="High-fidelity mockup of the youth check-in screen" loading="lazy"></span>
+        <span class="cap"><span class="who">Youth · Mobile</span><span class="ttl">Mood first, then discrete prompts, with a persistent Private signal</span></span>
+      </button>
+      <button class="zoom fig wide" data-lb="img" data-src="../../assets/images/path-compass/hifi-privacy-sharing-controls.svg?v=hifi6" data-title="Hi-fi — Privacy controls">
+        <span class="shot"><img src="../../assets/images/path-compass/hifi-privacy-sharing-controls.svg?v=hifi6" alt="High-fidelity mockup of privacy sharing controls" loading="lazy"></span>
+        <span class="cap"><span class="who">Youth · Mobile</span><span class="ttl">Private by default; per-category share and revoke, split by audience</span></span>
+      </button>
+      <button class="zoom fig wide" data-lb="img" data-src="../../assets/images/path-compass/clinician-fidelity-checklist.svg?v=hifi9" data-title="Hi-fi — Clinician PRACTICE fidelity checklist">
+        <span class="shot"><img src="../../assets/images/path-compass/clinician-fidelity-checklist.svg?v=hifi9" alt="High-fidelity mockup of the clinician PRACTICE fidelity checklist" loading="lazy"></span>
+        <span class="cap"><span class="who">Clinician · Desktop</span><span class="ttl">Live marking, running fidelity score, scoped youth signals</span></span>
+      </button>
+      <button class="zoom fig wide" data-lb="img" data-src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6" data-title="Hi-fi — Clinician dashboard">
+        <span class="shot"><img src="../../assets/images/path-compass/clinician-dashboard-start.svg?v=hifi6" alt="High-fidelity mockup of the clinician dashboard" loading="lazy"></span>
+        <span class="cap"><span class="who">Clinician · Desktop</span><span class="ttl">Fidelity trends, PROM completion, schedule, and alerts in one view</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALIDATION ============ -->
+<section id="validation" class="pc-tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">05 Evaluation &amp; validation</div>
+      <h2>Reviewed against Nielsen's heuristics and trauma-informed principles.</h2>
+      <p class="lede">No moderated testing with clinic participants — validation was an expert heuristic pass against usability heuristics and trauma-informed design values: safety, trustworthiness, choice, collaboration, empowerment.</p>
+    </div>
+    <div class="sev">
+      <div class="sevcol strength">
+        <h4>What held up</h4>
+        <div class="sevitem"><span>◆</span><span><b>Privacy-first ordering</b> — control cues appear before sensitive prompts, aligned with trauma-informed choice.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>Mood-first, discrete responses</b> — low cognitive-load entry pattern using closed scales instead of open text.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>Always-visible PRACTICE list</b> — supports in-session marking without hiding unmarked components.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>Running fidelity score</b> — visible during marking, supporting recognition over recall.</span></div>
+      </div>
+      <div class="sevcol issue">
+        <h4>What the review flagged</h4>
+        <div class="sevitem"><span>◆</span><span><b>No exit path mid-check-in</b> <span class="tag">H3 · User control</span> — youth could get trapped in a multi-step flow.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>No back navigation on privacy screen</b> <span class="tag">H3 · Choice</span> — sharing choices felt final, not reversible.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>No visible private-status signal</b> <span class="tag">H1 · Visibility</span> — youth couldn't tell if answers were shared before submitting.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>No session progress indicator</b> <span class="tag">H1 · Visibility</span> — clinicians lost track of where they were in the PRACTICE arc.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>No confirmation before ending session</b> <span class="tag">H5 · Error prevention</span> — risked accidental data loss.</span></div>
+      </div>
+    </div>
+    <div class="note"><span>◆</span><span><b>All six higher-priority issues were fixed</b> before final delivery — a Save &amp; Close control, back navigation on privacy, a persistent Private signal, a PRACTICE progress indicator, a labeled collapsible youth panel, and an End Session confirmation.</span></div>
+  </div>
+</section>
+
+<!-- ============ REFLECTION ============ -->
+<section id="reflection">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Reflection</div>
+      <h2>What it proved, and what's still open.</h2>
+      <p class="lede">Trauma-informed design shows up in interaction defaults and control — not visual style. That was the transferable lesson of this project.</p>
+    </div>
+    <div class="cards two">
+      <div class="card">
+        <div class="tagline">What it achieved</div>
+        <p>An end-to-end system joining live PRACTICE fidelity, five-timepoint outcomes, and trauma-informed privacy — with granular, reversible youth control instead of default caregiver visibility, and two interactive prototypes covering both surfaces.</p>
+      </div>
+      <div class="card">
+        <div class="tagline">Limitations</div>
+        <p>Conceptual scope only — no primary research with clinicians or youth, and validation limited to heuristic review rather than moderated testing. Personas and insights are synthesized from literature and the evaluation plan.</p>
+      </div>
+      <div class="card">
+        <div class="tagline">Next steps</div>
+        <p>Moderated usability testing with community clinicians and youth on the fidelity checklist and privacy controls, plus comparing documentation time against paper checklists and testing share/revoke flows with matched youth–caregiver dyads.</p>
+      </div>
+      <div class="card">
+        <div class="tagline">Transferable insight</div>
+        <p>Privacy in multi-party mental health tools has to be granular and revocable at every share point — and documentation that competes with clinical presence rarely survives real caseload pressure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       </div>
     </main>
-
-    <!-- ============ Footer ============ -->
     <footer class="site-footer mt-auto">
       <div class="container-content flex flex-col gap-6 py-10">
-        <div class="flex flex-col items-end gap-3">
-          <p class="font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white/45">Connect</p>
-          <div class="flex items-center gap-3">
-            <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
-              <svg class="icon-linkedin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
-            <a href="mailto:jess@jessamynsmallenburg.com" aria-label="Email" class="footer-social">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="m22 7-10 5L2 7"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <hr class="border-white/10">
         <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. All rights reserved.</p>
-          <div class="font-sans text-[17px] text-white/40 md:text-right">
-            <p>Built with AI assistance and human care.</p>
-            <p class="mt-1 max-w-xl md:ml-auto">Research, design, and writing were supported by AI tools. All final decisions and refinements are my own.</p>
-          </div>
-        </div>
+          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. Conceptual case study &middot; No real patient data</p>
+</div>
       </div>
     </footer>
-
   </div>
-
-  <button type="button" class="back-to-top" data-back-to-top hidden aria-label="Back to top" aria-hidden="true">
-    <svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M12 19V5"/>
-      <path d="m5 12 7-7 7 7"/>
-    </svg>
-  </button>
-
+  <div class="pc-lb" id="pc-lb" role="dialog" aria-modal="true" aria-labelledby="pc-lbTitle">
+    <div class="pc-lb-inner">
+      <div class="pc-lb-head">
+        <span class="t" id="pc-lbTitle">Detail</span>
+        <span class="pc-lb-tools">
+          <button id="pc-lbOut" type="button" title="Zoom out" aria-label="Zoom out">&minus;</button>
+          <button id="pc-lbIn" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+          <button id="pc-lbClose" type="button" title="Close" aria-label="Close">&times;</button>
+        </span>
+      </div>
+      <div class="pc-lb-body" id="pc-lbBody"></div>
+    </div>
+  </div>
   <script src="../../assets/js/theme.js"></script>
   <script src="../../assets/js/nav.js"></script>
   <script src="../../assets/js/case-nav.js"></script>
-  <script src="../../assets/js/diagram-zoom.js?v=20260730pan4"></script>
-  <script src="../../assets/js/lightbox.js?v=20260730caption2"></script>
-  <script src="../../assets/js/tt-journeys.js?v=20260720d"></script>
-  <script src="../../assets/js/back-to-top.js"></script>
+  <script src="../../assets/js/path-compass-minimal.js?v=20260801pcmin"></script>
 </body>
 </html>

@@ -212,6 +212,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   font-size: 19px;
   color: var(--lm-ink-2);
   max-width: none;
+  width: 100%;
   margin: 0 0 8px;
 }
 
@@ -239,6 +240,12 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-case .sec-head {
   margin-bottom: 36px;
+  width: 100%;
+}
+
+.lm-case .sec-head .lede {
+  max-width: none;
+  width: 100%;
 }
 
 /* Flow continuity — linked sections via gradient bands and hierarchy */
@@ -289,7 +296,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 .lm-case .sec-head--sub .lede {
   font-size: 16.5px;
   color: var(--lm-ink-2);
-  max-width: 72ch;
+  max-width: none;
+  width: 100%;
 }
 
 .lm-case .lm-prototype-flow {
@@ -493,7 +501,8 @@ html[data-theme="light"] .lumen-version-banner-text {
   border-left: 3px solid var(--lm-amber-line);
   padding: 13px 16px;
   border-radius: 10px;
-  max-width: 640px;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Stats */
@@ -1717,7 +1726,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 /* Decisions */
 .lm-case .dec {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
@@ -1744,6 +1753,10 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-case .dec .d:nth-child(5) {
   border-bottom-color: var(--lm-green);
+}
+
+.lm-case .dec .d:nth-child(6) {
+  border-bottom-color: var(--lm-blue);
 }
 
 .lm-case .dec h4 {

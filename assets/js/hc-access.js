@@ -24,6 +24,11 @@
   }
 
   function goToCaseStudy() {
+    try {
+      sessionStorage.setItem("hc-case-access", "granted");
+    } catch (_) {
+      /* ignore */
+    }
     window.location.href = caseUrl;
   }
 
@@ -47,11 +52,6 @@
       return;
     }
 
-    try {
-      sessionStorage.setItem("hc-case-access", "granted");
-    } catch (e) {
-      /* ignore storage errors */
-    }
     goToCaseStudy();
   });
 })();

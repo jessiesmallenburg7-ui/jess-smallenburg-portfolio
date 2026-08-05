@@ -67,12 +67,14 @@
   gap: 0.25rem;
 }
 
-/* Pin toggle to the far right of the header on desktop.
-   (Tailwind order utilities are not in the compiled stylesheet.) */
+/* Pin mobile menu toggle; desktop nav sits on the right. */
 @media (min-width: 768px) {
   .site-header .header-actions {
-    order: 99;
-    margin-left: 0.25rem;
+    display: none;
+  }
+
+  .site-header .site-nav {
+    margin-left: auto;
   }
 }
 
@@ -523,7 +525,7 @@ html[data-theme="light"] .approach-item {
 
 html[data-theme="light"] .approach-item::before,
 html[data-theme="light"] .approach-item-head::before {
-  color: rgba(37, 99, 235, 0.38);
+  color: rgba(37, 99, 235, 0.88);
 }
 
 html[data-theme="light"] .testimonial-bar {

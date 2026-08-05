@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <script>(function(){try{localStorage.removeItem('theme');localStorage.setItem('portfolio-theme','light');}catch(e){}document.documentElement.setAttribute('data-theme','light');})();</script>
 	<title>Projects — Jessie Smallenburg</title>
     <meta name="description" content="Healthcare UX portfolio projects by Jessie Smallenburg.">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/projects">
@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260803layoutrestore">
-  <link rel="stylesheet" href="../assets/css/theme-light.css?v=20260803layoutrestore">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260804restore">
+  <link rel="stylesheet" href="../assets/css/theme-light.css?v=20260804restore">
 </head>
 <body>
   <div id="main">
@@ -34,15 +34,6 @@
       <div class="flex items-center justify-between md:contents">
         <a href="../" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
         <div class="header-actions relative z-50 md:order-last">
-          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
-            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"/>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-            </svg>
-            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
-            </svg>
-          </button>
           <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
             <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
               <path d="M4 7h16M4 12h16M4 17h16"/>
@@ -85,15 +76,61 @@
         Colleagues across multiple organizations have noted my focus on creating the best possible deliverables and pushing for high-quality outcomes in collaborative environments.
       </p>
 
-      <figure class="testimonial mt-10">
-        <span class="testimonial-bar" aria-hidden="true"></span>
-        <blockquote class="testimonial-quote">
-          &ldquo;She is very conscientious with her work, with a strong desire to create the best deliverables she possibly can, pushing others to do their best as well&hellip; Jessie has been dependable and hard working in every collaboration I&rsquo;ve had with her.&rdquo;
-        </blockquote>
-        <figcaption class="testimonial-attr">
-          &mdash; <strong class="font-semibold text-white/90">Ken Mayer</strong>, Human Factors Expert, Research and Advanced, Ford Motor Company
-        </figcaption>
-      </figure>
+      <div class="testimonial-carousel mt-10" data-testimonial-carousel tabindex="0" aria-roledescription="carousel">
+        <div class="testimonial-carousel__viewport">
+          <figure class="testimonial testimonial-carousel__slide is-active" data-carousel-slide aria-hidden="false">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;She is very conscientious with her work, with a strong desire to create the best deliverables she possibly can, pushing others to do their best as well&hellip; Jessie has been dependable and hard working in every collaboration I&rsquo;ve had with her.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Ken Mayer</strong>, Human Factors Expert, Research and Advanced, Ford Motor Company
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;On several recent projects for federal government websites, Jessie welcomed the idea of helping the real-world citizens who use these sites&hellip; When Jessie presented her work&hellip; she elicited client comments like &lsquo;bravo on all counts,&rsquo; &lsquo;[this was] really, really helpful&rsquo; and &lsquo;[these recommendations are] going to be integrated.&rsquo;&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">Michelle Miller</strong>, Client Success Manager at Gartner
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial-carousel__slide" data-carousel-slide aria-hidden="true">
+            <span class="testimonial-bar" aria-hidden="true"></span>
+            <blockquote class="testimonial-quote">
+              &ldquo;&hellip;She contributed significantly in the development and fine tuning of appropriate survey questions and image prompts, enabling us to collect more than 20,000 quality responses. We valued her positive attitude, generous behavior, and goal-oriented focus as she was a critical part of the team.&rdquo;
+            </blockquote>
+            <figcaption class="testimonial-attr">
+              &mdash; <strong class="font-semibold text-white/90">John Huber</strong>, NVH Technical Specialist
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="testimonial-carousel__controls">
+          <button type="button" class="testimonial-carousel__btn" data-carousel-prev aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+
+          <div class="testimonial-carousel__dots" role="tablist" aria-label="Choose testimonial">
+            <button type="button" class="testimonial-carousel__dot is-active" data-carousel-dot role="tab" aria-label="Testimonial 1 of 3" aria-selected="true" tabindex="0"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 2 of 3" aria-selected="false" tabindex="-1"></button>
+            <button type="button" class="testimonial-carousel__dot" data-carousel-dot role="tab" aria-label="Testimonial 3 of 3" aria-selected="false" tabindex="-1"></button>
+          </div>
+
+          <button type="button" class="testimonial-carousel__btn" data-carousel-next aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+
+        <p class="sr-only" data-carousel-status aria-live="polite">Testimonial 1 of 3</p>
+      </div>
 
       <p class="prose-body mt-12">
         Each project below walks through methods, constraints, and outcomes&mdash;from academic healthcare UX to anonymized consulting analysis.
@@ -141,7 +178,7 @@
         </a>
 
         <!-- Healthcare Consulting -->
-        <a href="./healthcare-consulting/access/" aria-label="Access Healthcare Consulting case study" class="project-list-card card transition-colors hover:border-white/20">
+        <a href="./healthcare-consulting/access/" aria-label="View Healthcare Consulting case study" class="project-list-card card transition-colors hover:border-white/20">
           <div class="project-list-card__visual">
             <div class="project-list-card__media project-list-card__media--contain">
               <img
@@ -256,5 +293,6 @@
   </div>
   <script src="../assets/js/theme.js?v=20260725q"></script>
   <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/testimonial-carousel.js?v=20260804projects"></script>
 </body>
 </html>

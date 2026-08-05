@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>(function(){try{localStorage.removeItem('theme');var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <script>(function(){try{localStorage.removeItem('theme');localStorage.setItem('portfolio-theme','light');}catch(e){}document.documentElement.setAttribute('data-theme','light');})();</script>
 	<title>Jessamyn Smallenburg | Healthcare UX Portfolio</title>
     <meta name="description" content="Crafting intuitive healthcare experiences through empathy and evidence.">
   <link rel="canonical" href="https://www.jessamynsmallenburg.com/">
@@ -26,8 +26,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260803carousel1">
-  <link rel="stylesheet" href="assets/css/theme-light.css?v=20260802type4">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260804header">
+  <link rel="stylesheet" href="assets/css/theme-light.css?v=20260804header">
 </head>
 <body>
   <div id="main">
@@ -37,15 +37,6 @@
       <div class="flex items-center justify-between md:contents">
         <a href="./" class="site-logo relative z-50 font-serif text-[22px] font-semibold text-white">Jessie Smallenburg</a>
         <div class="header-actions relative z-50 md:order-last">
-          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="true">
-            <svg class="theme-toggle-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"/>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-            </svg>
-            <svg class="theme-toggle-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
-            </svg>
-          </button>
           <button type="button" class="nav-toggle flex h-11 w-11 shrink-0 items-center justify-center text-white md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
             <svg class="nav-toggle-open h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
               <path d="M4 7h16M4 12h16M4 17h16"/>
@@ -112,7 +103,16 @@
           <span class="metrics-value">M.S.</span>
           <span class="metrics-label">Community Health Education</span>
         </li>
-        <li class="metrics-item">
+        <li class="metrics-item metrics-item--has-tip">
+          <button type="button" class="metrics-tip-btn" aria-describedby="msi-degree-tip">
+            <svg class="metrics-tip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="10.6" y="10.25" width="2.8" height="7.75" rx="1.4" fill="currentColor"/>
+              <circle cx="12" cy="6.85" r="1.55" fill="currentColor"/>
+            </svg>
+            <span class="sr-only">What does M.S.I. mean?</span>
+          </button>
+          <span id="msi-degree-tip" class="metrics-tip" role="tooltip">Master of Science in Information, Specialization in Human-Computer Interaction.</span>
           <span class="metrics-value">M.S.I.</span>
           <span class="metrics-label">HCI · University of Michigan</span>
         </li>
@@ -171,17 +171,18 @@
           </div>
         </a>
 
-        <a href="./projects/healthcare-consulting/access/" class="work-card work-card--ui-shot">
-          <div class="work-card-media work-card-media--contain">
+        <a href="./projects/healthcare-consulting/access/" class="work-card">
+          <div class="work-card-media">
             <img
-              src="./assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-720.png?v=20260802"
+              src="./assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-720.png?v=20260804"
+              srcset="./assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-720.png 720w, ./assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-1440.png 1440w"
+              sizes="(min-width: 1280px) 400px, (min-width: 768px) 50vw, 90vw"
               alt="Healthcare consulting prototype showing progressive navigation disclosure for get-coverage pathways on a public health benefits portal"
               width="720"
               height="512"
               loading="lazy"
               decoding="async"
-              sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 90vw"
-              class="work-card-thumb work-card-thumb--contain">
+              class="work-card-thumb">
           </div>
           <div class="work-card-body">
             <h3 class="work-card-title">Healthcare Consulting</h3>
@@ -434,19 +435,27 @@
       </p>
       <ul class="approach-grid">
         <li class="approach-item">
-          <h3 class="approach-title">Evidence-based</h3>
+          <div class="approach-item-head">
+            <h3 class="approach-title">Evidence-based</h3>
+          </div>
           <p class="approach-body">I ground design decisions in published research, primary interviews, and usability evidence&mdash;so recommendations are traceable, defensible, and tied to real clinical constraints rather than preference alone.</p>
         </li>
         <li class="approach-item">
-          <h3 class="approach-title">Clinician + patient dual lens</h3>
+          <div class="approach-item-head">
+            <h3 class="approach-title">Clinician + patient dual lens</h3>
+          </div>
           <p class="approach-body">I design for the people delivering care and the people receiving it. Workflows must reduce clinician burden while remaining clear, respectful, and usable for patients and caregivers.</p>
         </li>
         <li class="approach-item">
-          <h3 class="approach-title">AI transparency</h3>
+          <div class="approach-item-head">
+            <h3 class="approach-title">AI transparency</h3>
+          </div>
           <p class="approach-body">When AI enters the workflow, I make provenance, confidence, and human review visible. Trust is designed in through verification gates&mdash;not assumed after the model generates an answer.</p>
         </li>
         <li class="approach-item">
-          <h3 class="approach-title">Health equity</h3>
+          <div class="approach-item-head">
+            <h3 class="approach-title">Health equity</h3>
+          </div>
           <p class="approach-body">I treat literacy, access, culture, and social context as design requirements. Interfaces and content should work for diverse communities, not only for the most digitally fluent users.</p>
         </li>
       </ul>
