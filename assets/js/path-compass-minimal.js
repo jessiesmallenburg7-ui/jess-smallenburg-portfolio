@@ -16,12 +16,14 @@
   function open() {
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
+    document.documentElement.classList.add('is-lightbox-open');
     document.getElementById('pc-lbClose').focus();
   }
 
   function close() {
     lb.classList.remove('open');
     document.body.style.overflow = '';
+    document.documentElement.classList.remove('is-lightbox-open');
     body.innerHTML = '';
     setScale(1);
     if (lastFocus) lastFocus.focus();

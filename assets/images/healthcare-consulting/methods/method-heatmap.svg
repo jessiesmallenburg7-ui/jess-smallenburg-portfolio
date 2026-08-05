@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" fill="none" role="img" aria-label="Abstract heatmap visualization">
+  <rect width="360" height="120" rx="10" fill="#F3F6FB"/>
+  <rect x="16" y="14" width="328" height="92" rx="8" fill="#fff" stroke="#DCE3ED"/>
+  <rect x="28" y="24" width="304" height="14" rx="4" fill="#DCE8F7"/>
+  <rect x="28" y="46" width="118" height="10" rx="3" fill="#E8EDF4"/>
+  <rect x="28" y="62" width="196" height="8" rx="2" fill="#E8EDF4"/>
+  <rect x="28" y="76" width="152" height="8" rx="2" fill="#E8EDF4"/>
+  <rect x="28" y="90" width="88" height="8" rx="2" fill="#E8EDF4"/>
+  <circle cx="248" cy="78" r="34" fill="#E85D4C" fill-opacity="0.18"/>
+  <circle cx="248" cy="78" r="22" fill="#F4A261" fill-opacity="0.28"/>
+  <circle cx="248" cy="78" r="12" fill="#E76F51" fill-opacity="0.42"/>
+  <circle cx="118" cy="52" r="20" fill="#F4A261" fill-opacity="0.2"/>
+  <circle cx="118" cy="52" r="10" fill="#E9C46A" fill-opacity="0.35"/>
+  <circle cx="300" cy="42" r="14" fill="#F4A261" fill-opacity="0.16"/>
+  <path d="M28 108h304" stroke="#DCE3ED" stroke-width="1"/>
+  <rect x="28" y="102" width="42" height="4" rx="2" fill="#1F5FA8" fill-opacity="0.35"/>
+</svg>

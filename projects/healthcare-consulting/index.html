@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260803carousel1">
-  <link rel="stylesheet" href="../../assets/css/healthcare-consulting-minimal.css?v=202608034photomid">
+  <link rel="stylesheet" href="../../assets/css/healthcare-consulting-minimal.css?v=20260728challenge2">
   <link rel="stylesheet" href="../../assets/css/case-hero-visual.css?v=202608034picture">
   <link rel="stylesheet" href="../../assets/css/minimal-case-nav.css?v=20260802captions">
   <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260802type4">
@@ -56,7 +56,7 @@
               <button type="button" class="case-nav-toggle" aria-expanded="false" aria-controls="hc-case-nav-panel">
                 <span class="case-nav-toggle-meta">
                   <span class="case-nav-toggle-kicker">On this page</span>
-                  <span class="case-nav-toggle-current" data-case-nav-current>Challenge</span>
+                  <span class="case-nav-toggle-current" data-case-nav-current></span>
                 </span>
                 <svg class="case-nav-toggle-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"/>
@@ -64,12 +64,14 @@
               </button>
               <span class="minimal-topbar-label">On this page</span>
               <div id="hc-case-nav-panel" class="case-nav-panel">
-                <a href="#challenge" class="case-nav-link case-nav-link-active" data-nav-label="Challenge">Challenge</a>
-                <a href="#methods" class="case-nav-link" data-nav-label="Methods">Methods</a>
+                <a href="#overview" class="case-nav-link" data-nav-label="Overview">Overview</a>
+                <a href="#challenge" class="case-nav-link" data-nav-label="Challenge">Challenge</a>
+                <a href="#methods" class="case-nav-link" data-nav-label="Role &amp; Methods">Role &amp; Methods</a>
                 <a href="#insights" class="case-nav-link" data-nav-label="Insights">Insights</a>
                 <a href="#recommendations" class="case-nav-link" data-nav-label="Recommendations">Recommendations</a>
                 <a href="#visuals" class="case-nav-link" data-nav-label="Design directions">Design directions</a>
                 <a href="#outcomes" class="case-nav-link" data-nav-label="Outcomes">Outcomes</a>
+                <a href="#reflections" class="case-nav-link" data-nav-label="Reflections">Reflections</a>
               </div>
             </nav>
           </div>
@@ -100,7 +102,7 @@
       </div>
       <div class="case-hero-aside">
         <figure class="case-hero-visual case-hero-visual--ui">
-          <img src="../../assets/images/healthcare-consulting/prototype-nav/Progressive-disclosure-get-coverage-nav-card-720.png" alt="Progressive disclosure navigation mockup guiding users to coverage and enrollment information" width="720" height="405" loading="eager" decoding="async">
+          <img src="../../assets/images/healthcare-consulting/Progressive-disclosure-state-local-resources-nav.svg?v=20260728c" alt="Progressive disclosure navigation mockup showing state and local resources pathways" width="1440" height="1024" loading="eager" decoding="async">
         </figure>
         <figure class="case-hero-visual case-hero-visual--photo">
           <img src="../../assets/images/healthcare-consulting/elderly_looking_at_computer.jpg" alt="Elderly person at a laptop, frustrated while trying to find health coverage information online" width="960" height="600" loading="eager" decoding="async">
@@ -111,16 +113,72 @@
 </header>
 
 <!-- ============ KEY TAKEAWAYS ============ -->
-<section>
+<section id="overview">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">At a glance</div>
-      <h2>Three things worth knowing before you scroll.</h2>
+      <div class="eyebrow">Project Overview</div>
+      <h2>At a Glance</h2>
     </div>
     <div class="takes">
       <div class="take"><div class="n">01</div><p>High-intent visitors struggled to find coverage pathways because of weak CTAs, complex navigation, buried pagination, and hard-to-read content.</p></div>
-      <div class="take"><div class="n">02</div><p>I recommended clearer CTAs, simpler progressive-disclosure navigation, dual pagination, and plain-language content.</p></div>
-      <div class="take"><div class="n">03</div><p>After the engagement, the live site adopted progressive disclosure and updated key coverage links — dual pagination wasn't implemented.</p></div>
+      <div class="take"><div class="n">02</div><p>In this report, I recommended clearer CTAs, consolidating the megamenu, dual pagination, and plain-language content. In follow-on work across the same engagement, I also recommended sidebar subcategory navigation.</p></div>
+      <div class="take"><div class="n">03</div><p>After the engagement, the live site adopted progressive disclosure in the navigation, updated key coverage links, and appears to have implemented sidebar subcategory navigation on some pages — dual pagination wasn't implemented.</p></div>
+    </div>
+
+    <div class="overview-visuals" aria-label="Key visuals illustrating the overview">
+      <a href="#visuals-nav" class="overview-visual">
+        <span class="overview-visual-shot overview-visual-shot--ui">
+          <img
+            src="../../assets/images/healthcare-consulting/overview-cards/Before-mega-menu-card-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/overview-cards/Before-mega-menu-card-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/overview-cards/Before-mega-menu-card-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a 2880w"
+            sizes="(min-width: 1024px) 360px, (min-width: 900px) 33vw, 100vw"
+            alt="Before state: dense megamenu with many peer links across six subcategories"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
+        </span>
+        <span class="overview-visual-copy">
+          <span class="overview-visual-kicker">01 · The problem</span>
+          <span class="overview-visual-title">Coverage pathways were hard to find</span>
+          <span class="overview-visual-desc">Weak CTAs, a dense megamenu, buried pagination, and complex language blocked visitors who didn't know how to find what they needed.</span>
+          <span class="overview-visual-link">See before/after navigation &rarr;</span>
+        </span>
+      </a>
+      <a href="#visuals-cta" class="overview-visual">
+        <span class="overview-visual-shot overview-visual-shot--ui">
+          <img
+            src="../../assets/images/healthcare-consulting/After-without-callouts.svg?v=20260728d"
+            alt="Conceptual homepage redesign with high-contrast enrollment CTAs and a supporting scope note"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
+        </span>
+        <span class="overview-visual-copy">
+          <span class="overview-visual-kicker">02 · The recommendation</span>
+          <span class="overview-visual-title">Stronger CTAs, a simpler megamenu, and clearer paths</span>
+          <span class="overview-visual-desc">Conceptual mockups illustrating this report's priorities — including consolidating the megamenu by reducing categories and link density. The interactive prototype below explores one way to deliver on that recommendation.</span>
+          <span class="overview-visual-link">See homepage CTA mockup &rarr;</span>
+        </span>
+      </a>
+      <a href="#outcomes" class="overview-visual">
+        <span class="overview-visual-shot overview-visual-shot--ui">
+          <img
+            src="../../assets/images/healthcare-consulting/Progressive-disclosure-get-coverage-nav.svg?v=20260728e"
+            alt="Navigation mockup showing focused get-coverage menu options after megamenu consolidation"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
+        </span>
+        <span class="overview-visual-copy">
+          <span class="overview-visual-kicker">03 · What shipped</span>
+          <span class="overview-visual-title">Navigation improvements on the live site</span>
+          <span class="overview-visual-desc">The client later adopted progressive disclosure in the main navigation, updated key coverage links, and appears to have implemented sidebar subcategory navigation on some pages — dual pagination was not implemented.</span>
+          <span class="overview-visual-link">See outcomes &rarr;</span>
+        </span>
+      </a>
     </div>
   </div>
 </section>
@@ -131,15 +189,39 @@
     <div class="sec-head">
       <div class="eyebrow">The challenge</div>
       <h2>People seeking health coverage kept losing the thread.</h2>
-      <p class="lede">A major public health benefits portal saw high volumes of visitors seeking coverage and eligibility information — many of whom never found a clear path to it.</p>
+      <p class="lede lede--full">A major public health benefits portal saw high volumes of visitors seeking coverage and eligibility information — many of whom never found a clear path to it.</p>
     </div>
-    <div class="numlist">
-      <div class="row"><div class="idx">1</div><p>Many visitors arrived specifically seeking coverage or eligibility information.</p></div>
-      <div class="row"><div class="idx">2</div><p>Key calls-to-action underperformed relative to that intent.</p></div>
-      <div class="row"><div class="idx">3</div><p>Navigation and content discoverability issues led to abandonment or over-reliance on search.</p></div>
-      <div class="row"><div class="idx">4</div><p>Content readability was mismatched with the literacy levels of the target audience — often people navigating government systems under time pressure or with varying health literacy.</p></div>
+    <div class="challenge-layout">
+      <div class="challenge-main">
+        <div class="numlist">
+          <div class="row"><div class="idx">1</div><p>Many visitors arrived specifically seeking coverage or eligibility information.</p></div>
+          <div class="row"><div class="idx">2</div><p>Key calls-to-action underperformed relative to that intent.</p></div>
+          <div class="row"><div class="idx">3</div><p>Navigation and content discoverability issues led to abandonment or over-reliance on search.</p></div>
+          <div class="row"><div class="idx">4</div><p>Content readability was mismatched with the literacy levels of the target audience — often people navigating government systems under time pressure or with varying health literacy.</p></div>
+        </div>
+        <div class="note"><span>◆</span><span>These barriers delayed access to essential health coverage for vulnerable populations — which is what made findability a health-equity problem, not just a UX one.</span></div>
+      </div>
+      <div class="challenge-aside">
+        <figure class="challenge-visual challenge-visual--photo">
+          <img
+            src="../../assets/images/healthcare-consulting/elderly_looking_at_computer_2.jpg"
+            alt="Older adult at a laptop, frustrated while trying to find health coverage information online"
+            width="1248"
+            height="832"
+            loading="lazy"
+            decoding="async">
+        </figure>
+        <figure class="challenge-visual challenge-visual--ui">
+          <img
+            src="../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a"
+            alt="Dense public health portal navigation with an overwhelming Resources megamenu open"
+            width="2880"
+            height="2048"
+            loading="lazy"
+            decoding="async">
+        </figure>
+      </div>
     </div>
-    <div class="note"><span>◆</span><span>These barriers delayed access to essential health coverage for vulnerable populations — which is what made findability a health-equity problem, not just a UX one.</span></div>
   </div>
 </section>
 
@@ -149,23 +231,32 @@
     <div class="sec-head">
       <div class="eyebrow">My role &amp; methods</div>
       <h2>Mixed methods, centered on what people actually do.</h2>
-      <p class="lede">As Usability Analyst, I led behavioral UX research on the client's public benefits platform and delivered prioritized, actionable recommendations directly to their team.</p>
+      <p class="lede lede--full">As a Usability Analyst, I led behavioral UX research on the client's public benefits platform and delivered prioritized, actionable recommendations directly to their team.</p>
     </div>
-    <div class="cards">
-      <div class="card">
+    <div class="cards cards--methods">
+      <div class="card card--method">
         <div class="tagline">Method 01</div>
         <h4>Session replay &amp; heatmaps</h4>
         <p>Reviewed how visitors actually interacted with critical pages — homepage, navigation, resource and search results — revealing scrolling patterns, hesitation, and navigation struggles in real time.</p>
+        <figure class="method-visual" aria-hidden="true">
+          <img src="../../assets/images/healthcare-consulting/methods/method-heatmap.svg" alt="" width="360" height="120" loading="lazy" decoding="async">
+        </figure>
       </div>
-      <div class="card">
+      <div class="card card--method">
         <div class="tagline">Method 02</div>
         <h4>Survey data synthesis</h4>
         <p>Analyzed responses from recent site visitors seeking coverage information, prioritizing negative satisfaction signals, visit reasons, and open-ended comments about findability.</p>
+        <figure class="method-visual" aria-hidden="true">
+          <img src="../../assets/images/healthcare-consulting/methods/method-scatterplot.svg" alt="" width="360" height="120" loading="lazy" decoding="async">
+        </figure>
       </div>
-      <div class="card">
+      <div class="card card--method">
         <div class="tagline">Method 03</div>
         <h4>Prioritization framework</h4>
         <p>Ranked findings by negative feedback volume, coverage-seeking intent, and site information-quality metrics to focus recommendations where they'd matter most.</p>
+        <figure class="method-visual" aria-hidden="true">
+          <img src="../../assets/images/healthcare-consulting/methods/method-ranking.svg" alt="" width="360" height="120" loading="lazy" decoding="async">
+        </figure>
       </div>
     </div>
     <div class="note"><span>◆</span><span><b>Why these methods:</b> session replays and heatmaps show what users actually do, not just what they report — critical for high-stakes public services where people face cognitive load, stress, or time constraints. Survey comments then supplied the why.</span></div>
@@ -180,7 +271,7 @@
       <h2>Four barriers, found in the behavior — not just the feedback.</h2>
       <p class="lede">Each insight is grounded in what people did on the page, then confirmed by what they said about it afterward.</p>
     </div>
-    <div class="evgrid">
+    <div class="insights-layout">
       <div class="ev t-blue">
         <span class="code c-blue">01</span>
         <h4>Primary CTA lacked prominence</h4>
@@ -191,30 +282,39 @@
         <h4>Complex megamenu navigation</h4>
         <p>Visitors hovered over global navigation without selecting, then switched to search — the menu was too broad or deep for quick access.</p>
       </div>
-      <div class="ev t-amber">
-        <span class="code c-amber">03</span>
+      <div class="ev t-rose">
+        <span class="code c-rose">03</span>
         <h4>Buried pagination</h4>
         <p>On resource pages, few visitors scrolled far enough to reach pagination controls, so they never discovered additional valuable content.</p>
       </div>
-      <div class="ev t-rose">
-        <span class="code c-rose">04</span>
+      <div class="ev t-amber ev--featured" id="insight-readability">
+        <span class="code c-amber">04</span>
         <h4>Readability &amp; health literacy gap</h4>
-        <p>Open-ended comments repeatedly flagged content as overly complex — confirmed by a formal readability assessment below.</p>
+        <p>Open-ended comments repeatedly flagged content as overly complex — confirmed by the formal readability analysis and visitor quotes below.</p>
       </div>
-    </div>
 
-    <div class="spotlight">
-      <div class="spot-num">
-        <div class="big">19</div>
-        <div class="lbl">years of formal education readers needed to comprehend key eligibility pages — several years of post-secondary schooling</div>
-      </div>
-      <div class="spot-quotes">
-        <h4>What visitors actually said</h4>
-        <div class="qgrid">
-          <blockquote>Said the site needed layman's terms — that you'd need a PhD to follow the nuances in the wording.</blockquote>
-          <blockquote>Couldn't find a clear, direct answer to a simple question about eligibility requirements.</blockquote>
-          <blockquote>Asked for simple terms that most people could actually understand.</blockquote>
-          <blockquote>Wanted the site made simple, easy to understand, and easy to navigate.</blockquote>
+      <div class="insight-depth" id="insight-readability-depth">
+        <div class="insight-depth-bridge" aria-hidden="true">
+          <span class="insight-depth-code">04</span>
+          <span class="insight-depth-copy">
+            <span class="insight-depth-kicker">Insight 04 · In depth</span>
+            <span class="insight-depth-title">Readability &amp; health literacy gap</span>
+          </span>
+        </div>
+        <div class="spotlight spotlight--insight-04">
+          <div class="spot-num">
+            <div class="spot-19">19</div>
+            <p class="lbl">My readability analysis showed that readers needed 19 years of formal education to comprehend key eligibility pages — several years of post-secondary schooling.</p>
+          </div>
+          <div class="spot-quotes">
+            <h4>What visitors actually said</h4>
+            <div class="qgrid">
+              <blockquote>Said the site needed layman's terms — that you'd need a PhD to follow the nuances in the wording.</blockquote>
+              <blockquote>Couldn't find a clear, direct answer to a simple question about eligibility requirements.</blockquote>
+              <blockquote>Asked for simple terms that most people could actually understand.</blockquote>
+              <blockquote>Wanted the site made simple, easy to understand, and easy to navigate.</blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -227,12 +327,12 @@
     <div class="sec-head">
       <div class="eyebrow">Recommendations</div>
       <h2>Five priorities, focused on visibility, simplicity, and inclusion.</h2>
-      <p class="lede">Delivered directly to the client as a prioritized, feasible set of changes — not a wish list.</p>
+      <p class="lede">Delivered directly to the client as a prioritized, feasible set of changes — not a wish list. The priorities below are from this report; in follow-on work across the same engagement, I also recommended sidebar subcategory navigation to progressively disclose content on deeper pages.</p>
     </div>
     <div class="reclist">
       <div class="rec"><p>Redesign the primary CTA(s) with conventional button styling, strong contrast, hover states, and higher placement — including brief scope notes explaining each pathway.</p></div>
       <div class="rec"><p>Test variations of CTA wording, comparing common user terms like "enroll" against existing site language.</p></div>
-      <div class="rec"><p>Simplify the megamenu by consolidating categories and reducing depth.</p></div>
+      <div class="rec"><p>Simplify the mega menu by consolidating links and reducing the number of categories.</p></div>
       <div class="rec"><p>Add pagination and "items per page" controls at both the top and bottom of resource lists.</p></div>
       <div class="rec">
         <p>Systematically simplify on-page language to plain-language standards, using readability tools to validate and iterate.</p>
@@ -252,36 +352,68 @@
     <div class="sec-head">
       <div class="eyebrow">Proposed design directions</div>
       <h2>Conceptual mockups built to illustrate the recommendations.</h2>
-      <p class="lede">Since original materials are confidential, these are new portfolio visuals I created afterward in Figma — not the client's actual designs. Click any screen to enlarge.</p>
+      <p class="lede lede--full">Since original materials are confidential, these are new portfolio visuals I created afterward in Figma — not the client's actual designs. The navigation mockups and interactive prototype illustrate recommendations from this report; sidebar subcategory navigation, recommended in follow-on work, is reflected in Outcomes. Click any screen to enlarge.</p>
     </div>
 
-    <h3 style="font-size:20px; margin-bottom:14px">Homepage CTA improvement</h3>
+    <h3 id="visuals-cta" class="hc-visual-anchor" style="font-size:20px; margin-bottom:14px">Homepage CTA improvement</h3>
     <div class="bapair">
       <div class="badir before-tag">
-        <button class="zoom shot" data-lb="img" data-src="../../assets/images/healthcare-consulting/Before.png?v=20260723c" style="border:0; width:100%; padding:0; cursor:zoom-in">
-          <img src="../../assets/images/healthcare-consulting/Before.png?v=20260723c" alt="Before: original homepage with a low-prominence text link placed low on the page" loading="lazy">
+        <button class="zoom shot shot--ui" data-lb="img" data-src="../../assets/images/healthcare-consulting/Before.png?v=20260723c" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img
+            src="../../assets/images/healthcare-consulting/Before-display-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/Before-display-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/Before-display-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/Before.png?v=20260723c 2880w"
+            sizes="(min-width: 820px) 532px, 100vw"
+            alt="Before: original homepage with a low-prominence text link placed low on the page"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
         </button>
         <div class="meta"><span class="badge">Before</span><h4>Low-prominence text link</h4><p>A plain text link sat low on the page with significant unused hero space — easy to scroll past entirely.</p></div>
       </div>
       <div class="badir after-tag">
-        <button class="zoom shot" data-lb="img" data-src="../../assets/images/healthcare-consulting/After.png?v=20260723c" style="border:0; width:100%; padding:0; cursor:zoom-in">
-          <img src="../../assets/images/healthcare-consulting/After.png?v=20260723c" alt="After: redesigned homepage with high-contrast CTA buttons and a supporting scope note" loading="lazy">
+        <button class="zoom shot shot--ui" data-lb="img" data-src="../../assets/images/healthcare-consulting/After.png?v=20260723c" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img
+            src="../../assets/images/healthcare-consulting/After-display-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/After-display-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/After-display-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/After.png?v=20260723c 2880w"
+            sizes="(min-width: 820px) 532px, 100vw"
+            alt="After: redesigned homepage with high-contrast CTA buttons and a supporting scope note"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
         </button>
         <div class="meta"><span class="badge">After</span><h4>High-contrast CTA + scope note</h4><p>Conceptual redesign with standard button styling, user-centered wording, and a supporting scope note near the hero.</p></div>
       </div>
     </div>
 
-    <h3 style="font-size:20px; margin:44px 0 14px">Simplified navigation structure</h3>
+    <h3 id="visuals-nav" class="hc-visual-anchor" style="font-size:20px; margin:44px 0 14px">Simplified navigation structure</h3>
     <div class="bapair">
       <div class="badir before-tag">
-        <button class="zoom shot" data-lb="img" data-src="../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
-          <img src="../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a" alt="Before: dense megamenu with many peer links across six subcategories" loading="lazy">
+        <button class="zoom shot shot--ui" data-lb="img" data-src="../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img
+            src="../../assets/images/healthcare-consulting/Before-mega-menu-display-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/Before-mega-menu-display-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/Before-mega-menu-display-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/Before-mega-menu.png?v=20260724a 2880w"
+            sizes="(min-width: 820px) 532px, 100vw"
+            alt="Before: dense megamenu with many peer links across six subcategories"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
         </button>
         <div class="meta"><span class="badge">Before</span><h4>Dense, six-category megamenu</h4><p>Visitors hovered across many options without selecting, then abandoned the menu for search — a sign it was too broad for a high-intent task.</p></div>
       </div>
       <div class="badir after-tag">
-        <button class="zoom shot" data-lb="img" data-src="../../assets/images/healthcare-consulting/After-mega-menu.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
-          <img src="../../assets/images/healthcare-consulting/After-mega-menu.png?v=20260724a" alt="After: simplified navigation consolidated into task-oriented groups" loading="lazy">
+        <button class="zoom shot shot--ui" data-lb="img" data-src="../../assets/images/healthcare-consulting/After-mega-menu.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img
+            src="../../assets/images/healthcare-consulting/After-mega-menu-display-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/After-mega-menu-display-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/After-mega-menu-display-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/After-mega-menu.png?v=20260724a 2880w"
+            sizes="(min-width: 820px) 532px, 100vw"
+            alt="After: simplified navigation consolidated into task-oriented groups"
+            width="1440"
+            height="1024"
+            loading="lazy"
+            decoding="async">
         </button>
         <div class="meta"><span class="badge">After</span><h4>Task-oriented, consolidated groups</h4><p>Categories consolidated into get coverage, manage benefits, and help — reduced link density, stronger hierarchy and hover feedback.</p></div>
       </div>
@@ -292,12 +424,12 @@
       <ul>
         <li>Consolidates six subcategories into three task-oriented groups.</li>
         <li>Reduces peer-link density and strengthens visual hierarchy.</li>
-        <li>Adds progressive disclosure — shown live in the prototype below.</li>
+        <li>The interactive prototype below illustrates one approach to this report's megamenu recommendation — not the follow-on sidebar subcategory navigation recommended later in the engagement.</li>
       </ul>
     </div>
 
-    <h3 style="font-size:20px; margin:0 0 6px">Progressive navigation disclosure — interactive</h3>
-    <p class="lede" style="font-size:15.5px; margin-bottom:18px">Revealing one section of the menu at a time instead of dozens of peer links. Click any of the four top-level items to move between focused states.</p>
+    <h3 id="visuals-proto" class="hc-visual-anchor" style="font-size:20px; margin:0 0 6px">Simplified megamenu — interactive prototype</h3>
+    <p class="lede lede--full" style="font-size:15.5px; margin-bottom:18px">A conceptual solution to this report's recommendation to consolidate links and reduce categories — revealing one section of the menu at a time instead of dozens of peer links. Click any of the four top-level items to move between focused states.</p>
     <div class="protobox">
       <div class="frame">
         <iframe src="https://embed.figma.com/proto/oHoODLjAJWIImCRZxMPJJW/Public-Health-Website?node-id=32-1250&starting-point-node-id=32-1250&embed-host=share&scaling=min-zoom&content-scaling=fixed&page-selector=0&hide-ui=1&hotspot-hints=0&footer=false&theme=light&viewport-controls=false" allowfullscreen loading="lazy"></iframe>
@@ -305,17 +437,33 @@
       <div class="meta"><a href="https://www.figma.com/proto/oHoODLjAJWIImCRZxMPJJW/Public-Health-Website?node-id=32-1250&scaling=fit-width&content-scaling=fixed&t=MYY2kwvHMXfxelK3-1" target="_blank" rel="noopener">Open prototype in Figma →</a> &nbsp;·&nbsp; best experienced full-screen on a larger display.</div>
     </div>
 
-    <h3 style="font-size:20px; margin:44px 0 14px">Resource pages with dual pagination</h3>
+    <h3 id="visuals-pagination" class="hc-visual-anchor" style="font-size:20px; margin:44px 0 14px">Resource pages with dual pagination</h3>
     <div class="bapair">
       <div class="badir before-tag">
-        <button class="zoom shot" data-lb="img" data-src="../../assets/images/healthcare-consulting/Pagination-before.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
-          <img src="../../assets/images/healthcare-consulting/Pagination-before.png?v=20260724a" alt="Before: resource listing with pagination controls only at the bottom of a long list" loading="lazy">
+        <button class="zoom shot shot--pagination" data-lb="img" data-src="../../assets/images/healthcare-consulting/Pagination-before.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img
+            src="../../assets/images/healthcare-consulting/Pagination-before-display-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/Pagination-before-display-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/Pagination-before-display-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/Pagination-before.png?v=20260724a 2880w"
+            sizes="(min-width: 820px) 532px, 100vw"
+            alt="Before: resource listing with pagination controls only at the bottom of a long list"
+            width="1440"
+            height="1150"
+            loading="lazy"
+            decoding="async">
         </button>
         <div class="meta"><span class="badge">Before</span><h4>Bottom-only pagination</h4><p>Visitors had to scroll past the entire list before moving to the next page — friction under time pressure or with assistive technology.</p></div>
       </div>
       <div class="badir after-tag">
-        <button class="zoom shot" data-lb="img" data-src="../../assets/images/healthcare-consulting/Pagination-after.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
-          <img src="../../assets/images/healthcare-consulting/Pagination-after.png?v=20260724a" alt="After: dual pagination controls at both top and bottom, with items-per-page selection" loading="lazy">
+        <button class="zoom shot shot--pagination" data-lb="img" data-src="../../assets/images/healthcare-consulting/Pagination-after.png?v=20260724a" style="border:0; width:100%; padding:0; cursor:zoom-in">
+          <img
+            src="../../assets/images/healthcare-consulting/Pagination-after-display-1440.png?v=20260728b"
+            srcset="../../assets/images/healthcare-consulting/Pagination-after-display-720.png?v=20260728b 720w, ../../assets/images/healthcare-consulting/Pagination-after-display-1440.png?v=20260728b 1440w, ../../assets/images/healthcare-consulting/Pagination-after.png?v=20260724a 2880w"
+            sizes="(min-width: 820px) 532px, 100vw"
+            alt="After: dual pagination controls at both top and bottom, with items-per-page selection"
+            width="1440"
+            height="1150"
+            loading="lazy"
+            decoding="async">
         </button>
         <div class="meta"><span class="badge">After</span><h4>Top-and-bottom controls</h4><p>Pagination at both ends, with items-per-page selection, numbered pages, and a jump-to-last option.</p></div>
       </div>
@@ -332,7 +480,8 @@
       <p class="lede">The analysis gave the team evidence-based priorities. Here's what happened after my involvement ended.</p>
     </div>
     <div class="status">
-      <div class="srow done"><span class="chip">Implemented</span><p>Progressive disclosure in the navigation — aligned with the direction explored in the prototype above.</p></div>
+      <div class="srow done"><span class="chip">Implemented</span><p>The client decided to simplify the mega menu by implementing progressive disclosure to visually declutter the complex navigation structure. This is explored in the interactive prototype.</p></div>
+      <div class="srow done"><span class="chip">Implemented</span><p>Sidebar subcategory navigation on some pages — consistent with a follow-on recommendation from later in the engagement, though not part of this report.</p></div>
       <div class="srow partial"><span class="chip">Partial</span><p>Primary coverage-related links updated to conventional link styling (color + underline) with hover states, though still without distinct button treatment.</p></div>
       <div class="srow pending"><span class="chip">Not implemented</span><p>Dual pagination — resource lists remain paginated at the bottom only.</p></div>
     </div>
@@ -345,7 +494,7 @@
 </section>
 
 <!-- ============ REFLECTIONS ============ -->
-<section class="hc-tint2">
+<section id="reflections" class="hc-tint2">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Reflections</div>
@@ -361,7 +510,7 @@
 </section>
 
 <!-- ============ SKILLS ============ -->
-<section>
+<section id="capabilities">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Capabilities</div>
@@ -406,6 +555,7 @@
   <script src="../../assets/js/theme.js"></script>
   <script src="../../assets/js/nav.js"></script>
   <script src="../../assets/js/case-nav.js"></script>
-  <script src="../../assets/js/healthcare-consulting-minimal.js?v=20260801hcmin"></script>
+  <script src="../../assets/js/healthcare-consulting-minimal.js?v=20260728lb"></script>
+  <script src="../../assets/js/back-to-top.js"></script>
 </body>
 </html>

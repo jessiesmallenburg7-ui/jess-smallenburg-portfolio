@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" fill="none" role="img" aria-label="Abstract prioritization ranking visualization">
+  <rect width="360" height="120" rx="10" fill="#F3F6FB"/>
+  <rect x="16" y="14" width="328" height="92" rx="8" fill="#fff" stroke="#DCE3ED"/>
+  <rect x="32" y="28" width="18" height="18" rx="5" fill="#1F5FA8"/>
+  <text x="41" y="40" fill="#fff" font-family="Lato, sans-serif" font-size="10" font-weight="700" text-anchor="middle">1</text>
+  <rect x="58" y="32" width="248" height="10" rx="5" fill="#1F5FA8" fill-opacity="0.82"/>
+  <rect x="32" y="50" width="18" height="18" rx="5" fill="#1E8C7C"/>
+  <text x="41" y="62" fill="#fff" font-family="Lato, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2</text>
+  <rect x="58" y="54" width="210" height="10" rx="5" fill="#1E8C7C" fill-opacity="0.72"/>
+  <rect x="32" y="72" width="18" height="18" rx="5" fill="#7C5A9E"/>
+  <text x="41" y="84" fill="#fff" font-family="Lato, sans-serif" font-size="10" font-weight="700" text-anchor="middle">3</text>
+  <rect x="58" y="76" width="168" height="10" rx="5" fill="#7C5A9E" fill-opacity="0.62"/>
+  <rect x="32" y="94" width="18" height="18" rx="5" fill="#DCE8F7" stroke="#DCE3ED"/>
+  <text x="41" y="106" fill="#748099" font-family="Lato, sans-serif" font-size="10" font-weight="700" text-anchor="middle">4</text>
+  <rect x="58" y="98" width="124" height="10" rx="5" fill="#E8EDF4"/>
+  <text x="300" y="40" fill="#748099" font-family="Lato, sans-serif" font-size="8" letter-spacing="0.05em">IMPACT</text>
+</svg>

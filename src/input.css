@@ -2031,7 +2031,8 @@
   html.is-lightbox-open .site-header,
   html.is-lightbox-open [data-case-nav],
   html.is-lightbox-open .case-nav,
-  html.is-lightbox-open .back-to-top {
+  html.is-lightbox-open .back-to-top,
+  html.is-photo-lightbox-open .back-to-top {
     visibility: hidden !important;
     pointer-events: none !important;
   }

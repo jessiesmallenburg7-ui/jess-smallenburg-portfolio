@@ -63,12 +63,14 @@
   function open() {
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
+    document.documentElement.classList.add('is-lightbox-open');
     document.getElementById('lm-lbClose').focus();
   }
 
   function close() {
     lb.classList.remove('open');
     document.body.style.overflow = '';
+    document.documentElement.classList.remove('is-lightbox-open');
     body.innerHTML = '';
     body.className = 'lm-lb-body';
     var inner = lb.querySelector('.lm-lb-inner');

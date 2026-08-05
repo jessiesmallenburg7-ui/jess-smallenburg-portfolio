@@ -60,8 +60,30 @@
     document.querySelectorAll('a.process-step--link[href^="#"]')
   );
 
+  function clearActive() {
+    if (activeId === null) return;
+    activeId = null;
+
+    links.forEach(function (link) {
+      link.classList.remove('case-nav-link-active');
+      link.removeAttribute('aria-current');
+    });
+
+    processSteps.forEach(function (step) {
+      step.classList.remove('is-current');
+    });
+
+    if (currentLabel) {
+      currentLabel.textContent = nav.getAttribute('data-case-nav-idle') || '';
+    }
+  }
+
   function setActive(id) {
-    if (!id || id === activeId) return;
+    if (!id) {
+      clearActive();
+      return;
+    }
+    if (id === activeId) return;
     activeId = id;
 
     links.forEach(function (link) {
@@ -176,7 +198,7 @@
     }
 
     var marker = window.scrollY + Math.max(stickyOffset() + 8, Math.min(160, window.innerHeight * 0.28));
-    var current = sections[0].id;
+    var current = null;
 
     for (var i = 0; i < sections.length; i++) {
       var top = sections[i].getBoundingClientRect().top + window.scrollY;
