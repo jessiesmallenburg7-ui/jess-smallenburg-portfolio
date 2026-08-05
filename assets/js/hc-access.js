@@ -13,7 +13,7 @@
   const form = document.getElementById("hc-access-form");
   if (!form) return;
 
-  const caseUrl = form.getAttribute("data-case-url") || "../minimal/";
+  const caseUrl = form.getAttribute("data-case-url") || "../";
   const passwordInput = document.getElementById("hc-access-password");
   const errorEl = document.getElementById("hc-access-error");
 

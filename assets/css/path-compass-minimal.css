@@ -351,6 +351,15 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .fig:hover{transform:translateY(-3px)}
 .pc-case .fig .shot{background:var(--tint); aspect-ratio:4/3; display:grid; place-items:center; overflow:hidden; border-bottom:1px solid var(--line)}
 .pc-case .fig .shot img{width:100%; height:100%; object-fit:cover; object-position:top center}
+.pc-case .fig--pattern .shot{
+  aspect-ratio:1200/780;
+  background:#060f27;
+  padding:0;
+}
+.pc-case .fig--pattern .shot img{
+  object-fit:contain;
+  object-position:center top;
+}
 .pc-case .fig .who{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--violet); margin:0}
 .pc-case .fig .ttl{font-size:var(--site-text-secondary); font-weight:600; line-height:1.35; margin:0}
 .pc-case .fig.wide .shot{aspect-ratio:16/10}
@@ -614,3 +623,55 @@ html[data-theme="light"] .case-version-banner-text {
 }
 
 .pc-case .study-meta{font-size:var(--site-text-secondary); color:var(--muted); margin-top:18px}
+.pc-case .proto-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+.pc-case .proto-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px 22px 26px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.pc-case .proto-kicker{
+  margin:0 0 8px;
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--violet);
+}
+.pc-case .proto-title{
+  margin:0 0 10px;
+  font-family:"Cormorant", Georgia, serif;
+  font-size:22px;
+  font-weight:650;
+  line-height:1.2;
+}
+.pc-case .proto-desc{
+  margin:0 0 20px;
+  font-size:var(--site-text-body);
+  color:var(--ink-2);
+  line-height:1.5;
+  max-width:34ch;
+}
+.pc-case .proto-thumb{
+  display:block;
+  overflow:hidden;
+  border-radius:10px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  margin-bottom:18px;
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+.pc-case .proto-thumb:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 16px rgba(36,30,51,.1);
+  text-decoration:none;
+}
+.pc-case .proto-thumb img{width:100%; height:100%; object-fit:cover; object-position:top center}
+.pc-case .proto-thumb--mobile{width:min(100%, 150px); aspect-ratio:390/844}
+.pc-case .proto-thumb--desktop{width:min(100%, 320px); aspect-ratio:1440/1144}
+@media(max-width:760px){.pc-case .proto-grid{grid-template-columns:1fr}}
