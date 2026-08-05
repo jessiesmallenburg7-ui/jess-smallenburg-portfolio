@@ -283,88 +283,136 @@
 
   /* Home credentials / impact strip */
   .metrics-strip {
-    @apply m-0 grid list-none grid-cols-2 gap-px overflow-hidden rounded-2xl
+    @apply m-0 grid list-none grid-cols-2 gap-px overflow-visible rounded-2xl
            border border-white/10 bg-white/10 p-0
            sm:grid-cols-3 lg:grid-cols-6;
   }
 
   .metrics-item {
-    @apply flex min-w-0 flex-col justify-center gap-1.5 bg-[#070b16]
+    @apply relative flex min-w-0 flex-col justify-center gap-1.5 bg-[#070b16]
            px-3.5 py-4 sm:px-3.5 sm:py-5 lg:px-2.5 lg:py-4 xl:px-3;
   }
 
-  .metrics-item--has-tip {
-    position: relative;
+  .metrics-item:nth-child(1) {
+    border-top-left-radius: 1rem;
   }
 
-  .metrics-tip-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    z-index: 2;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
-    padding: 0;
-    border: 1px solid rgb(255 255 255 / 0.18);
-    border-radius: 9999px;
-    background-color: rgb(255 255 255 / 0.04);
-    color: rgb(125 211 252 / 0.85);
-    cursor: pointer;
-    transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease;
+  .metrics-item:nth-child(2) {
+    border-top-right-radius: 1rem;
   }
 
-  .metrics-tip-btn svg,
-  .metrics-tip-icon {
-    width: 1.25rem;
-    height: 1.25rem;
+  .metrics-item:nth-child(5) {
+    border-bottom-left-radius: 1rem;
   }
 
-  .metrics-tip-btn:hover,
-  .metrics-tip-btn:focus-visible {
-    border-color: rgb(125 211 252 / 0.45);
-    background-color: rgb(125 211 252 / 0.12);
-    color: rgb(255 255 255);
-    outline: none;
+  .metrics-item:nth-child(6) {
+    border-bottom-right-radius: 1rem;
   }
 
-  .metrics-tip-btn:focus-visible {
-    box-shadow: 0 0 0 2px rgb(95 211 224 / 0.75);
+  @media (min-width: 640px) and (max-width: 1023.98px) {
+    .metrics-item:nth-child(2) {
+      border-top-right-radius: 0;
+    }
+
+    .metrics-item:nth-child(3) {
+      border-top-right-radius: 1rem;
+    }
+
+    .metrics-item:nth-child(5) {
+      border-bottom-left-radius: 0;
+    }
+
+    .metrics-item:nth-child(4) {
+      border-bottom-left-radius: 1rem;
+    }
   }
 
-  .metrics-tip {
-    position: absolute;
-    top: 2.125rem;
-    right: 0.5rem;
-    z-index: 3;
-    width: min(14.5rem, calc(100% - 1rem));
-    padding: 0.625rem 0.75rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgb(255 255 255 / 0.12);
-    background-color: rgb(7 11 22 / 0.98);
-    box-shadow: 0 10px 28px rgb(0 0 0 / 0.35);
-    font-family: Lato, Lato Placeholder, sans-serif;
-    font-size: 13px;
-    line-height: 1.45;
-    color: rgb(255 255 255 / 0.88);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 150ms ease, visibility 150ms ease;
+  @media (min-width: 1024px) {
+    .metrics-item:nth-child(2),
+    .metrics-item:nth-child(5) {
+      border-radius: 0;
+    }
+
+    .metrics-item:nth-child(6) {
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .metrics-item:nth-child(1) {
+      border-bottom-left-radius: 1rem;
+    }
   }
 
-  .metrics-tip-btn:hover + .metrics-tip,
-  .metrics-tip-btn:focus + .metrics-tip,
-  .metrics-tip-btn:focus-visible + .metrics-tip {
-    opacity: 1;
-    visibility: visible;
+  .metrics-value-row {
+    @apply flex min-w-0 items-center gap-2;
   }
 
   .metrics-value {
     @apply font-serif text-[24px] font-semibold leading-tight tracking-[-0.01em] text-sky-accent
            sm:text-[26px] lg:text-[28px] lg:leading-[1.15];
+  }
+
+  .metrics-tip-anchor {
+    @apply relative z-20 inline-flex shrink-0;
+  }
+
+  .metrics-item:has(.metrics-tip-anchor.is-open),
+  .metrics-item:has(.metrics-tip-anchor:focus-within) {
+    z-index: 5;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .metrics-item:has(.metrics-tip-anchor:hover) {
+      z-index: 5;
+    }
+  }
+
+  .metrics-tip-btn {
+    @apply relative z-20 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full
+           border border-white/20 bg-white/[0.06] p-0 font-sans text-[12px] font-bold
+           leading-none text-sky-accent transition-colors;
+  }
+
+  .metrics-tip-btn:hover,
+  .metrics-tip-btn:focus-visible,
+  .metrics-tip-anchor.is-open .metrics-tip-btn,
+  .metrics-tip-btn[aria-expanded="true"] {
+    @apply border-sky-accent/50 bg-sky-accent/15 text-white outline-none;
+  }
+
+  .metrics-tip-btn-icon {
+    @apply block translate-y-px font-serif text-[18px] font-bold italic leading-none;
+  }
+
+  .metrics-tip {
+    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.45rem)] z-30 m-0 w-[min(15.5rem,calc(100vw-2.5rem))]
+           -translate-x-1/2 rounded-lg border border-white/15 bg-[#0d1528] px-2.5 py-2
+           font-sans text-[13px] font-medium leading-snug text-white/90 opacity-0
+           shadow-[0_12px_28px_rgba(0,0,0,0.35)] invisible sm:text-[14px];
+  }
+
+  .metrics-tip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background: #0d1528;
+    transform: translate(-50%, 45%) rotate(45deg);
+  }
+
+  .metrics-tip-anchor.is-open .metrics-tip,
+  .metrics-tip-anchor:focus-within .metrics-tip {
+    @apply pointer-events-auto visible opacity-100;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .metrics-tip-anchor:hover .metrics-tip {
+      @apply pointer-events-auto visible opacity-100;
+    }
   }
 
   .metrics-label {
@@ -533,7 +581,7 @@
   .project-list-card__caption {
     margin: 0;
     font-family: Lato, Lato Placeholder, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.55;
     color: rgb(255 255 255 / 0.58);
   }
@@ -698,6 +746,19 @@
 
     .metrics-label {
       font-size: 19px;
+    }
+
+    .metrics-tip-btn {
+      width: 1.9rem;
+      height: 1.9rem;
+    }
+
+    .metrics-tip-btn-icon {
+      font-size: 19px;
+    }
+
+    .metrics-tip {
+      font-size: 16px;
     }
 
     .work-card-outcome {
@@ -2350,6 +2411,10 @@
 
   .status-pill {
     font-size: 18px;
+  }
+
+  .hero-kicker {
+    font-size: 21px;
   }
 
   .hero-portrait-caption {

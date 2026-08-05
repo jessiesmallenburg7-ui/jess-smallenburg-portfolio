@@ -354,7 +354,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 /* Hero */
 .lm-case .lm-hero {
-  padding: 48px 0 64px;
+  padding: 76px 0 64px;
   background:
     radial-gradient(1100px 460px at 15% -10%, #e4f1f1 0%, rgba(228, 241, 241, 0) 62%),
     radial-gradient(800px 400px at 92% 0%, #fbf1de 0%, rgba(251, 241, 222, 0) 58%);
@@ -364,8 +364,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 .lm-case .tagpill {
   display: inline-block;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 12.5px;
+  font-weight: 650;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--lm-teal-dk);
@@ -381,37 +381,58 @@ html[data-theme="light"] .lumen-version-banner-text {
 }
 
 .lm-case .lm-hero h1 {
-  font-size: clamp(40px, 6vw, 68px);
+  font-size: clamp(40px, 6vw, 66px);
   letter-spacing: -0.035em;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .lm-case .lm-hero .sub {
-  font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(19px, 2.1vw, 26px);
-  font-weight: 500;
+  font-size: clamp(19px, 2.1vw, 24px);
   color: var(--lm-ink-2);
-  max-width: 60ch;
+  max-width: 62ch;
   margin: 0;
   line-height: 1.45;
 }
 
+.lm-case .lm-hero .case-hero-copy .meta-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 5px;
+  font-size: var(--site-text-secondary);
+  color: var(--lm-muted);
+  margin: 0;
+}
+
 .lm-case .lm-hero .case-hero-actions .btns {
-  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.lm-case .lm-hero .case-hero-actions .btn {
+  font-size: var(--site-text-body);
 }
 
 .lm-case .lm-hero .case-hero-actions {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
-  margin-top: 0.25rem;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+  max-width: 62ch;
+  font-size: clamp(19px, 2.1vw, 24px);
 }
 
 .lm-case .lm-hero .case-hero-copy .integrity {
   max-width: 100%;
   width: 100%;
   margin: 0;
+  font-size: var(--site-text-meta);
+  line-height: 1.5;
+  padding: 12px 15px;
 }
 
 @media (min-width: 1024px) {
@@ -432,13 +453,32 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-case .lm-hero .case-hero-main--split .case-hero-copy .integrity {
     margin-top: auto;
   }
+
+  .lm-case .lm-hero .case-hero-main--split .case-hero-copy .btns {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lm-case .lm-hero .case-hero-copy .meta-row {
+    font-size: 19px;
+  }
+
+  .lm-case .lm-hero .case-hero-copy .integrity {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .lm-case .lm-hero .case-hero-actions .btn {
+    font-size: 19px;
+  }
 }
 
 .lm-case .meta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 28px;
-  font-size: 14px;
+  font-size: var(--site-text-secondary);
   color: var(--lm-muted);
 }
 
