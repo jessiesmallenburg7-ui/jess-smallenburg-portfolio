@@ -176,6 +176,20 @@
   color: var(--muted);
 }
 
+/* In-page nav links — no underline unless hovered (beats .pc-case a / .hc-case a) */
+.lm-case .minimal-case-nav .case-nav-link,
+.hc-case .minimal-case-nav .case-nav-link,
+.pc-case .minimal-case-nav .case-nav-link {
+  text-decoration: none;
+}
+
+.lm-case .minimal-case-nav .case-nav-link:hover,
+.hc-case .minimal-case-nav .case-nav-link:hover,
+.pc-case .minimal-case-nav .case-nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 /* Desktop: original horizontal topnav look */
 @media (min-width: 1024px) {
   .lm-case .minimal-case-nav,

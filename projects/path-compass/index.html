@@ -13,9 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260802type4">
-  <link rel="stylesheet" href="../../assets/css/path-compass-minimal.css?v=20260804navproto">
+  <link rel="stylesheet" href="../../assets/css/path-compass-minimal.css?v=20260806nextphoto1">
   <link rel="stylesheet" href="../../assets/css/case-hero-visual.css?v=20260802heromobile">
-  <link rel="stylesheet" href="../../assets/css/minimal-case-nav.css?v=20260802mtype2">
+  <link rel="stylesheet" href="../../assets/css/minimal-case-nav.css?v=20260806navhover1">
   <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260802type4">
 </head>
 <body>
@@ -119,17 +119,17 @@
     <div class="sec-head">
       <div class="eyebrow">Problem</div>
       <h2>Paper breaks trauma-informed care in three places.</h2>
-      <p class="lede">TF-CBT only works if it's delivered with fidelity, tracked across five timepoints, and youth feel safe enough to actually disclose. Paper-based workflows undermine all three at once.</p>
+      <p class="lede"><a href="https://tfcbt.org/about/" target="_blank" rel="noopener noreferrer">TF-CBT</a> only works if it's delivered with fidelity (the program is implemented exactly as intended), tracked across five timepoints, and youth feel safe enough to actually disclose. Paper-based workflows undermine all three at once.</p>
     </div>
     <div class="stats">
       <div class="stat">
         <div class="num">8</div>
-        <div class="lbl">PRACTICE components a clinician must deliver — and usually reconstructs from memory after the session</div>
+        <div class="lbl"><a href="../../assets/PRACTICE-components.pdf" target="_blank" rel="noopener noreferrer">PRACTICE</a> components a clinician must deliver — and usually reconstructs from memory after the session</div>
         <div class="src">Deblinger et al., 2014</div>
       </div>
       <div class="stat">
         <div class="num">5×</div>
-        <div class="lbl">Timepoints where SDQ + FSSQ outcomes need to be collected from both youth and caregiver</div>
+        <div class="lbl">Timepoints where <a href="https://doi.org/10.1007/s007870050057" target="_blank" rel="noopener noreferrer">SDQ</a> + <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer">FSSQ</a> (emotional, behavioral, and social support screening questionnaires) outcomes need to be collected from both youth and caregiver</div>
         <div class="src">Evaluation plan, WSU</div>
       </div>
       <div class="stat">
@@ -281,6 +281,54 @@
         </div>
       </div>
     </div>
+
+    <div class="pc-journey-section" id="journey-maps">
+      <div class="sec-head" style="margin-top:48px">
+        <h3 class="pc-journey-title">Journey maps</h3>
+        <p class="lede">Current-state and ideal-state journeys for Nia and Marcus across six TF-CBT evaluation phases — from recruitment through 18-month follow-up. Denise&rsquo;s caregiver needs are captured in her persona above; these maps focus on the youth&ndash;clinician workflow where fidelity, privacy, and longitudinal data collection collide. Click any map to enlarge and zoom.</p>
+      </div>
+
+      <div class="pc-journey-persona pc-journey-persona--nia">
+        <div class="pc-journey-persona-head">
+          <span class="pc-journey-persona-avatar" aria-hidden="true">N</span>
+          <div class="pc-journey-persona-copy">
+            <strong>Nia, 14</strong>
+            <span>Youth &middot; Mobile app</span>
+          </div>
+        </div>
+        <div class="figs two pc-journey-figs">
+          <button class="zoom fig fig--journey" type="button" data-lb="img" data-src="journey-maps/PathCompass_Nia_CurrentState.svg" data-title="Nia's journey — current state">
+            <span class="shot"><img src="journey-maps/PathCompass_Nia_CurrentState.svg" alt="Current-state journey map for Nia across six TF-CBT evaluation phases" width="1640" height="1316" loading="lazy" decoding="async"></span>
+            <span class="cap"><span class="who who--current">Current state</span><span class="ttl">Paper forms, privacy risk, and fragmented check-ins across five timepoints</span></span>
+          </button>
+          <button class="zoom fig fig--journey" type="button" data-lb="img" data-src="journey-maps/PathCompass_Nia_IdealState.svg" data-title="Nia's journey — ideal state">
+            <span class="shot"><img src="journey-maps/PathCompass_Nia_IdealState.svg" alt="Ideal-state journey map for Nia with Path Compass across six TF-CBT evaluation phases" width="1640" height="1316" loading="lazy" decoding="async"></span>
+            <span class="cap"><span class="who who--ideal">Ideal state</span><span class="ttl">Private-by-default check-ins, granular sharing, and youth-led progress visibility</span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pc-journey-persona pc-journey-persona--marcus">
+        <div class="pc-journey-persona-head">
+          <span class="pc-journey-persona-avatar" aria-hidden="true">M</span>
+          <div class="pc-journey-persona-copy">
+            <strong>Marcus, 38</strong>
+            <span>Clinician &middot; Dashboard &amp; fidelity tools</span>
+          </div>
+        </div>
+        <div class="figs two pc-journey-figs">
+          <button class="zoom fig fig--journey" type="button" data-lb="img" data-src="journey-maps/PathCompass_Marcus_CurrentState.svg" data-title="Marcus's journey — current state">
+            <span class="shot"><img src="journey-maps/PathCompass_Marcus_CurrentState.svg" alt="Current-state journey map for Marcus across six TF-CBT evaluation phases" width="1640" height="1290" loading="lazy" decoding="async"></span>
+            <span class="cap"><span class="who who--current">Current state</span><span class="ttl">Post-session recall, paper fidelity forms, and no longitudinal trend view</span></span>
+          </button>
+          <button class="zoom fig fig--journey" type="button" data-lb="img" data-src="journey-maps/PathCompass_Marcus_IdealState.svg" data-title="Marcus's journey — ideal state">
+            <span class="shot"><img src="journey-maps/PathCompass_Marcus_IdealState.svg" alt="Ideal-state journey map for Marcus with Path Compass across six TF-CBT evaluation phases" width="1640" height="1290" loading="lazy" decoding="async"></span>
+            <span class="cap"><span class="who who--ideal">Ideal state</span><span class="ttl">In-session PRACTICE marking, PROM dashboards, and scoped youth signals</span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="note"><span>◆</span><span><b>Journey mapping insight:</b> paper workflows break at three handoffs — privacy transfer, post-session fidelity recall, and fragmented PROM collection across five timepoints. That became the design brief.</span></div>
   </div>
 </section>
@@ -293,7 +341,7 @@
       <h2>No single tool covers fidelity, outcomes, and privacy.</h2>
       <p class="lede">Six adjacent products each solve one piece of the problem. Path Compass's wedge is combining all three in one community-clinic workspace.</p>
     </div>
-    <p class="matrix-swipe-hint">Scroll horizontally to compare <span aria-hidden="true">&rarr;</span></p>
+    <p class="matrix-swipe-hint" hidden>Scroll/swipe to compare <span aria-hidden="true">&rarr;</span></p>
     <div class="matrix">
       <table class="mtable">
         <tr><th>Capability</th><th>Paper</th><th>TF-CBTWeb</th><th>SPARK</th><th>Greenspace</th><th>Lyssn</th><th>VA apps</th><th>Path Compass</th></tr>
@@ -315,7 +363,7 @@
       <h3 style="font-size:22px; margin-bottom:10px">How adjacent tools handle the same four workflows</h3>
       <p class="lede">Pattern comparisons contrast the typical approach against Path Compass's target design. Click to enlarge.</p>
     </div>
-    <div class="figs">
+    <div class="figs two">
       <button class="zoom fig fig--pattern" data-lb="img" data-src="pattern-comparisons/pattern-privacy.svg" data-title="Pattern comparison — Youth privacy &amp; sharing">
         <span class="shot"><img src="pattern-comparisons/pattern-privacy.svg" alt="Pattern comparison: youth privacy and sharing" loading="lazy"></span>
         <span class="cap"><span class="who">Youth</span><span class="ttl">Private-by-default, per-entry share vs. blanket parent toggles</span></span>
@@ -464,6 +512,7 @@
         <div class="sevitem"><span>◆</span><span><b>No back navigation on privacy screen</b> <span class="tag">H3 · Choice</span> — sharing choices felt final, not reversible.</span></div>
         <div class="sevitem"><span>◆</span><span><b>No visible private-status signal</b> <span class="tag">H1 · Visibility</span> — youth couldn't tell if answers were shared before submitting.</span></div>
         <div class="sevitem"><span>◆</span><span><b>No session progress indicator</b> <span class="tag">H1 · Visibility</span> — clinicians lost track of where they were in the PRACTICE arc.</span></div>
+        <div class="sevitem"><span>◆</span><span><b>No scoped youth-context panel</b> <span class="tag">H1 · Visibility</span> — fidelity screen showed full chart visibility or none; shared youth signals weren&rsquo;t labeled or collapsible.</span></div>
         <div class="sevitem"><span>◆</span><span><b>No confirmation before ending session</b> <span class="tag">H5 · Error prevention</span> — risked accidental data loss.</span></div>
       </div>
     </div>
@@ -477,7 +526,7 @@
     <div class="sec-head">
       <div class="eyebrow">Reflection</div>
       <h2>What it proved, and what's still open.</h2>
-      <p class="lede">Trauma-informed design shows up in interaction defaults and control — not visual style. That was the transferable lesson of this project.</p>
+      <p class="lede">Trauma-informed design isn&rsquo;t about soft colors or calming visuals &mdash; it&rsquo;s about what happens by default. For Path Compass, that meant what starts private, when the clinician documents care, and whether a young person can take back something they shared.</p>
     </div>
     <div class="cards two">
       <div class="card">
@@ -491,12 +540,54 @@
       <div class="card">
         <div class="tagline">Next steps</div>
         <p>Moderated usability testing with community clinicians and youth on the fidelity checklist and privacy controls, plus comparing documentation time against paper checklists and testing share/revoke flows with matched youth–caregiver dyads.</p>
+        <figure class="card-photo">
+          <img src="../../assets/images/path-compass/therapist-tablet-checklist.jpg" alt="Clinician completing a fidelity checklist on a tablet during a session with a youth" loading="lazy" decoding="async">
+        </figure>
       </div>
       <div class="card">
         <div class="tagline">Transferable insight</div>
-        <p>Privacy in multi-party mental health tools has to be granular and revocable at every share point — and documentation that competes with clinical presence rarely survives real caseload pressure.</p>
+        <p>Youth privacy can&rsquo;t rely on a single sign-up checkbox or &ldquo;parent sees everything&rdquo; &mdash; the competitive benchmark showed that&rsquo;s what most adjacent tools offer, and Nia&rsquo;s persona flagged caregiver visibility as a disclosure risk. The heuristic review found the same gaps in the prototypes: no Private signal before sensitive input, no way back on sharing.</p>
+        <p>Post-session documentation pushes clinicians to reconstruct PRACTICE from memory &mdash; Marcus&rsquo;s journey and the heuristic review both raised that recall risk, which is why in-session marking became the design direction. The journey maps showed paper failing wherever surveys, privacy, and fidelity were planned separately; that pattern comes from the evaluation plan and literature, not yet tested with clinicians or youth.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ REFERENCES ============ -->
+<section id="references">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">References</div>
+      <h2>Sources referenced in this case study.</h2>
+    </div>
+    <details class="pc-references-collapse">
+      <summary class="pc-references-summary">
+        <span class="pc-references-summary-lead">
+          <span class="pc-references-summary-label">View bibliography</span>
+          <span class="pc-references-summary-meta">16 sources &middot; APA 7th edition</span>
+        </span>
+      </summary>
+      <div class="pc-references-collapse-body">
+        <ol class="pc-references" aria-label="APA references">
+          <li>Abdulai, A.-F., Naghdali, H., Tekie Ghirmay, E., Adam, F., &amp; Bawafaa, E. (2023). Trauma-informed care in digital health technologies: Protocol for a scoping review. <em>JMIR Research Protocols, 12</em>, e46842. <a href="https://doi.org/10.2196/46842" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/46842</a></li>
+          <li>Birkeland, M. S., Holt, T., Ormhaug, S. M., &amp; Jensen, T. K. (2020). Perceived social support and posttraumatic stress symptoms in children and youth in therapy: A parallel process latent growth curve model. <em>Behaviour Research and Therapy, 132</em>, 103655. <a href="https://doi.org/10.1016/j.brat.2020.103655" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.brat.2020.103655</a></li>
+          <li>Broadhead, W. E., Gehlbach, S. H., De Gruy, F. V., &amp; Kaplan, B. H. (1988). The Duke-UNC Functional Social Support Questionnaire: Measurement of social support in family medicine patients. <em>Medical Care, 26</em>(7), 709&ndash;723. <a href="https://doi.org/10.1097/00005650-198807000-00006" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/00005650-198807000-00006</a></li>
+          <li>Cohen, J. A., &amp; Mannarino, A. P. (2008). Trauma-focused cognitive behavioural therapy for children and parents. <em>Child and Adolescent Mental Health, 13</em>(4), 158&ndash;162. <a href="https://doi.org/10.1111/j.1475-3588.2008.00502.x" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/j.1475-3588.2008.00502.x</a></li>
+          <li>Cohen, J. A., &amp; Mannarino, A. P. (2015). Trauma-focused cognitive behavior therapy for traumatized children and families. <em>Child and Adolescent Psychiatric Clinics of North America, 24</em>(3), 557&ndash;570. <a href="https://doi.org/10.1016/j.chc.2015.02.005" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.chc.2015.02.005</a></li>
+          <li>Deblinger, E., Cohen, J. A., Mannarino, A. P., Murray, L., &amp; Epstein, C. (2014). <em>TF-CBT brief practice fidelity checklist</em> (Rev. ed.). Trauma-Focused Cognitive Behavioral Therapy National Therapist Certification Program. <a href="https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/" target="_blank" rel="noopener noreferrer">https://tfcbt.org/tf-cbt-brief-practice-fidelity-checklist/</a></li>
+          <li>Goodman, R., Meltzer, H., &amp; Bailey, V. (1998). The Strengths and Difficulties Questionnaire: A pilot study on the validity of the self-report version. <em>European Child &amp; Adolescent Psychiatry, 7</em>(3), 125&ndash;130. <a href="https://doi.org/10.1007/s007870050057" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s007870050057</a></li>
+          <li>Hussain, H. (2023). <em>Trauma-informed design: The whitepaper</em>. Chayn. <a href="https://assets.website-files.com/60fdc9111506063bb9fe8e49/64b081438e3221d7ffc92b12_Trauma-informed%20design_%20the%20whitepaper%20by%20Chayn.pdf" target="_blank" rel="noopener noreferrer">https://assets.website-files.com/60fdc9111506063bb9fe8e49/64b081438e3221d7ffc92b12_Trauma-informed%20design_%20the%20whitepaper%20by%20Chayn.pdf</a></li>
+          <li>National Child Traumatic Stress Network. (n.d.). <em>How to implement trauma-focused cognitive behavioral therapy (TF-CBT)</em>. <a href="https://www.nctsn.org/sites/default/files/resources/how_to_implement_tfcbt.pdf" target="_blank" rel="noopener noreferrer">https://www.nctsn.org/sites/default/files/resources/how_to_implement_tfcbt.pdf</a></li>
+          <li>Nielsen, J. (1994, April 24). 10 usability heuristics for user interface design. <em>Nielsen Norman Group</em>. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
+          <li>Rudd, B. N., Last, B. S., Gregor, C., Jackson, K., Berkowitz, S., Zinny, A., Kratz, H. E., Cliggitt, L., Adams, D. R., Walsh, L. M., &amp; Beidas, R. S. (2019). Benchmarking treatment effectiveness of community-delivered trauma-focused cognitive behavioral therapy. <em>American Journal of Community Psychology, 64</em>(3&ndash;4), 438&ndash;450. <a href="https://doi.org/10.1002/ajcp.12370" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/ajcp.12370</a></li>
+          <li>Smallenburg, J. (n.d.). <em>TF-CBT evaluation plan</em> [Unpublished master&rsquo;s evaluation plan]. Wayne State University, M.S. Community Health Education program.</li>
+          <li>Substance Abuse and Mental Health Services Administration. (2014). <em>SAMHSA&rsquo;s concept of trauma and guidance for a trauma-informed approach</em> (HHS Publication No. SMA 14-4884). <a href="https://store.samhsa.gov/product/samhsa-s-concept-of-trauma-and-guidance-for-a-trauma-informed-approach/SMA14-4884" target="_blank" rel="noopener noreferrer">https://store.samhsa.gov/product/samhsa-s-concept-of-trauma-and-guidance-for-a-trauma-informed-approach/SMA14-4884</a></li>
+          <li>Trauma-Focused Cognitive Behavioral Therapy National Therapist Certification Program. (n.d.). About TF-CBT. <a href="https://tfcbt.org/about/" target="_blank" rel="noopener noreferrer">https://tfcbt.org/about/</a></li>
+          <li>Webb, C., Hayes, A. M., Grasso, D., Laurenceau, J.-P., &amp; Deblinger, E. (2014). Trauma-focused cognitive behavioral therapy for youth: Effectiveness in a community setting. <em>Psychological Trauma: Theory, Research, Practice, and Policy, 6</em>(5), 555&ndash;562. <a href="https://doi.org/10.1037/a0037364" target="_blank" rel="noopener noreferrer">https://doi.org/10.1037/a0037364</a></li>
+          <li>Youthinmind. (n.d.). Strengths and Difficulties Questionnaire (SDQ). <a href="https://www.sdqinfo.org/" target="_blank" rel="noopener noreferrer">https://www.sdqinfo.org/</a></li>
+        </ol>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -527,7 +618,7 @@
   <script src="../../assets/js/theme.js"></script>
   <script src="../../assets/js/nav.js"></script>
   <script src="../../assets/js/case-nav.js"></script>
-  <script src="../../assets/js/path-compass-minimal.js?v=20260801pcmin"></script>
+  <script src="../../assets/js/path-compass-minimal.js?v=20260806matrixhint1"></script>
   <script src="../../assets/js/back-to-top.js"></script>
 </body>
 </html>
