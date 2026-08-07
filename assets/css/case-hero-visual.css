@@ -229,3 +229,121 @@
   align-items: center;
   gap: 0.35em;
 }
+
+.btn-platform {
+  font-size: inherit;
+  font-weight: 500;
+  opacity: 0.88;
+  white-space: nowrap;
+  line-height: inherit;
+}
+
+.btn-label {
+  display: inline;
+  line-height: inherit;
+}
+
+/* Minimal case studies — shared supporting type scale */
+.lm-case,
+.hc-case,
+.pc-case {
+  --case-text-support: var(--site-text-secondary);
+  --case-text-caption: var(--site-text-meta);
+}
+
+.lm-case .eyebrow,
+.hc-case .eyebrow,
+.pc-case .eyebrow {
+  font-size: 15px;
+}
+
+.lm-case .stat .lbl,
+.pc-case .stat .lbl {
+  font-size: var(--case-text-support);
+  line-height: 1.5;
+}
+
+.lm-case .stat .src,
+.pc-case .stat .src {
+  font-size: var(--case-text-caption);
+  line-height: 1.45;
+}
+
+.lm-case .note,
+.hc-case .note,
+.pc-case .note {
+  font-size: var(--case-text-support);
+  line-height: 1.6;
+}
+
+.lm-case .integrity,
+.pc-case .integrity {
+  font-size: var(--case-text-caption);
+  line-height: 1.55;
+}
+
+.lm-case .card .tagline,
+.hc-case .card .tagline,
+.pc-case .card .tagline,
+.lm-case .lm-sub-eyebrow {
+  font-size: var(--site-text-label);
+}
+
+.lm-case .ev p,
+.hc-case .ev p,
+.pc-case .ev p {
+  font-size: var(--case-text-support);
+  line-height: 1.6;
+}
+
+.hc-case .take p,
+.hc-case .rcard p,
+.hc-case .rec .sub li,
+.hc-case .rec-visual-caption,
+.hc-case .card p,
+.hc-case .badir p,
+.hc-case .badir-note,
+.hc-case .overview-visual-desc,
+.hc-case .overview-visual-link,
+.hc-case .numlist p,
+.hc-case .rec p,
+.hc-case .skillpill,
+.hc-case .qgrid blockquote {
+  font-size: var(--case-text-support);
+  line-height: 1.6;
+}
+
+.hc-case .card h4,
+.hc-case .badir h4,
+.hc-case .ev h4,
+.hc-case .rcard h4 {
+  font-size: var(--site-text-body);
+}
+
+.hc-case .overview-visual-kicker,
+.hc-case .take .n,
+.hc-case .rcard .n {
+  font-size: var(--site-text-label);
+}
+
+.hc-case .srow p {
+  font-size: var(--case-text-support);
+  line-height: 1.55;
+}
+
+.hc-case .srow .chip,
+.hc-case .badir .badge,
+.pc-case .tag,
+.pc-case .pill,
+.pc-case .ev .cnt,
+.lm-case .ev .cnt {
+  font-size: var(--site-text-label);
+}
+
+@media (max-width: 767.98px) {
+  .lm-case .eyebrow,
+  .hc-case .eyebrow,
+  .pc-case .eyebrow {
+    font-size: 17px;
+  }
+}

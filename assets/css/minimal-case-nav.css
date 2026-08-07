@@ -332,6 +332,15 @@ html[data-theme="light"] .pc-case .pc-topbar .minimal-case-nav {
   border-bottom: 0;
 }
 
+@media (max-width: 767.98px) {
+  body.is-site-nav-open .lm-case .lm-topbar,
+  body.is-site-nav-open .hc-case .hc-topbar,
+  body.is-site-nav-open .pc-case .pc-topbar {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
 /* Mobile type floor — temp nav + chrome labels */
 @media (max-width: 767.98px) {
   .concise-dev-nav-label {

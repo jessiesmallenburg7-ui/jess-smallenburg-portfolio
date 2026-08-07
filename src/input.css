@@ -15,8 +15,8 @@
 :root {
   --site-text-body: 19px;
   --site-text-secondary: 17px;
-  --site-text-meta: 15px;
-  --site-text-label: 14px;
+  --site-text-meta: 16px;
+  --site-text-label: 15px;
   --site-text-display: 22px;
   --pc-text-body: var(--site-text-body);
   --pc-text-secondary: var(--site-text-secondary);

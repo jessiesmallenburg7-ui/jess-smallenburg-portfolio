@@ -12,10 +12,17 @@
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       document.body.classList.toggle('overflow-hidden', open && !desktopQuery.matches);
+      document.body.classList.toggle('is-site-nav-open', open && !desktopQuery.matches);
+
+      if (open && !desktopQuery.matches) {
+        var caseNav = document.querySelector('[data-case-nav].is-open');
+        if (caseNav) caseNav.classList.remove('is-open');
+      }
 
       if (desktopQuery.matches) {
         nav.classList.remove('hidden');
         document.body.classList.remove('overflow-hidden');
+        document.body.classList.remove('is-site-nav-open');
         return;
       }
 
