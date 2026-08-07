@@ -381,7 +381,8 @@
   }
 
   .metrics-tip-btn-icon {
-    @apply block translate-y-px font-serif text-[18px] font-bold italic leading-none;
+    @apply inline-flex h-full w-full items-center justify-center font-sans text-[13px] font-bold not-italic leading-none;
+    padding-bottom: 1px;
   }
 
   .metrics-tip {
@@ -754,7 +755,7 @@
     }
 
     .metrics-tip-btn-icon {
-      font-size: 19px;
+      font-size: 14px;
     }
 
     .metrics-tip {

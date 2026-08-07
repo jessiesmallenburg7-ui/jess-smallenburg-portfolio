@@ -216,3 +216,16 @@
     margin-top: 1.5rem;
   }
 }
+
+/* Opens-in-new-tab icon on prototype links */
+.btn-external-icon {
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+}
+
+.proto-external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
