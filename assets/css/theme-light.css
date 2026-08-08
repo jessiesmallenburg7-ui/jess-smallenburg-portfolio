@@ -382,7 +382,6 @@ html[data-theme="light"] .btn-cta:hover {
 
 /* ---------- Cards / surfaces ---------- */
 html[data-theme="light"] .card,
-html[data-theme="light"] .skill-card,
 html[data-theme="light"] .work-card,
 html[data-theme="light"] .testimonial,
 html[data-theme="light"] .resume-section,
@@ -392,8 +391,7 @@ html[data-theme="light"] .nested-card {
   box-shadow: 0 1px 2px rgba(31, 41, 55, 0.04);
 }
 
-html[data-theme="light"] .work-card:hover,
-html[data-theme="light"] .skill-card:hover {
+html[data-theme="light"] .work-card:hover {
   border-color: rgba(37, 99, 235, 0.35);
   background-color: rgba(37, 99, 235, 0.05);
 }
@@ -492,47 +490,116 @@ html[data-theme="light"] img[src*="decorative-heartbeat-pulse-line-divider"] {
     hue-rotate(10deg);
 }
 
-html[data-theme="light"] .skill-card-icon-wrap {
-  border-color: rgba(37, 99, 235, 0.22);
-  background-image: linear-gradient(to bottom right, rgba(37, 99, 235, 0.12), rgba(37, 99, 235, 0.08), transparent);
+html[data-theme="light"] .skill-card {
+  border-color: color-mix(in srgb, var(--skill-accent) 26%, #dce3ed);
+  background:
+    radial-gradient(110% 80% at 0% 0%, var(--skill-tint) 0%, transparent 55%),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 248, 244, 0.94) 100%);
+  box-shadow: 0 1px 2px rgba(19, 35, 57, 0.04), 0 8px 22px rgba(19, 35, 57, 0.05);
 }
 
-html[data-theme="light"] .skill-card:hover .skill-card-icon-wrap {
-  border-color: rgba(37, 99, 235, 0.4);
-  background-color: rgba(37, 99, 235, 0.1);
+html[data-theme="light"] .skill-card:nth-child(1) {
+  --skill-accent: #2563eb;
+  --skill-accent-2: #0ea5e9;
+  --skill-tint: rgba(37, 99, 235, 0.1);
+}
+
+html[data-theme="light"] .skill-card:nth-child(2) {
+  --skill-accent: #0d9488;
+  --skill-accent-2: #14b8a6;
+  --skill-tint: rgba(13, 148, 136, 0.1);
+}
+
+html[data-theme="light"] .skill-card:nth-child(3) {
+  --skill-accent: #7c3aed;
+  --skill-accent-2: #db2777;
+  --skill-tint: rgba(124, 58, 237, 0.09);
+}
+
+html[data-theme="light"] .skill-card-icon-wrap {
+  border-color: color-mix(in srgb, var(--skill-accent) 26%, transparent);
+  background:
+    radial-gradient(90% 90% at 30% 20%, color-mix(in srgb, var(--skill-accent) 16%, white) 0%, transparent 62%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(243, 246, 251, 0.92) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 6px 16px color-mix(in srgb, var(--skill-accent) 12%, transparent);
+  color: var(--skill-accent);
 }
 
 html[data-theme="light"] .skill-icon-glow {
-  fill: rgba(37, 99, 235, 0.08);
+  fill: color-mix(in srgb, var(--skill-accent) 10%, transparent);
 }
 
 html[data-theme="light"] .skill-icon-soft {
-  fill: rgba(37, 99, 235, 0.14);
+  fill: color-mix(in srgb, var(--skill-accent) 14%, transparent);
 }
 
 html[data-theme="light"] .skill-icon-stroke {
-  stroke: #2563EB;
+  stroke: var(--skill-accent);
 }
 
 html[data-theme="light"] .skill-icon-accent {
-  stroke: #2563EB;
+  stroke: var(--skill-accent-2);
 }
 
 html[data-theme="light"] .skill-icon-accent-fill {
-  fill: rgba(37, 99, 235, 0.9);
+  fill: var(--skill-accent-2);
 }
 
 html[data-theme="light"] .skill-icon-on-accent {
-  stroke: #F0EDE4;
+  stroke: #f0ede4;
 }
 
 html[data-theme="light"] .approach-item {
-  border-left-color: rgba(37, 99, 235, 0.4);
+  border-color: color-mix(in srgb, var(--approach-accent) 28%, #dce3ed);
+  background:
+    radial-gradient(120% 90% at 100% 0%, var(--approach-tint) 0%, transparent 58%),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.96) 0%, rgba(250, 248, 244, 0.92) 100%);
+  box-shadow: 0 1px 2px rgba(19, 35, 57, 0.04), 0 8px 22px rgba(19, 35, 57, 0.05);
 }
 
-html[data-theme="light"] .approach-item::before,
+html[data-theme="light"] .approach-item:nth-child(1) {
+  --approach-accent: #2563eb;
+  --approach-tint: rgba(37, 99, 235, 0.1);
+}
+
+html[data-theme="light"] .approach-item:nth-child(2) {
+  --approach-accent: #0d9488;
+  --approach-tint: rgba(13, 148, 136, 0.1);
+}
+
+html[data-theme="light"] .approach-item:nth-child(3) {
+  --approach-accent: #7c3aed;
+  --approach-tint: rgba(124, 58, 237, 0.1);
+}
+
+html[data-theme="light"] .approach-item:nth-child(4) {
+  --approach-accent: #db2777;
+  --approach-tint: rgba(219, 39, 119, 0.09);
+}
+
 html[data-theme="light"] .approach-item-head::before {
-  color: rgba(37, 99, 235, 0.88);
+  color: var(--approach-accent);
+  border-color: color-mix(in srgb, var(--approach-accent) 30%, transparent);
+  background: color-mix(in srgb, var(--approach-accent) 10%, white);
+}
+
+html[data-theme="light"] #expertise .skill-card:hover {
+  border-color: color-mix(in srgb, var(--skill-accent) 26%, #dce3ed);
+  box-shadow: 0 1px 2px rgba(19, 35, 57, 0.04), 0 8px 22px rgba(19, 35, 57, 0.05);
+}
+
+html[data-theme="light"] #expertise .skill-card:hover .skill-card-icon-wrap {
+  border-color: color-mix(in srgb, var(--skill-accent) 26%, transparent);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 6px 16px color-mix(in srgb, var(--skill-accent) 12%, transparent);
+}
+
+html[data-theme="light"] #approach .approach-item:hover {
+  border-color: color-mix(in srgb, var(--approach-accent) 28%, #dce3ed);
+  box-shadow: 0 1px 2px rgba(19, 35, 57, 0.04), 0 8px 22px rgba(19, 35, 57, 0.05);
 }
 
 html[data-theme="light"] .testimonial-bar {

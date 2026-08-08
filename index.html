@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260807msitip1">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260808nohover">
   <link rel="stylesheet" href="assets/css/theme-light.css?v=20260804header">
 </head>
 <body>
@@ -363,16 +363,27 @@
         <article class="skill-card">
           <div class="skill-card-head">
             <div class="skill-card-icon-wrap" aria-hidden="true">
-              <svg class="skill-card-icon" viewBox="0 0 64 64" fill="none">
-                <circle class="skill-icon-glow" cx="32" cy="32" r="28"/>
-                <rect class="skill-icon-soft" x="10" y="12" width="24" height="32" rx="4"/>
-                <rect class="skill-icon-stroke" x="10" y="12" width="24" height="32" rx="4"/>
-                <path class="skill-icon-stroke" d="M16 22h12M16 28h12M16 34h8" stroke-linecap="round"/>
-                <circle class="skill-icon-soft" cx="42" cy="38" r="12"/>
-                <circle class="skill-icon-stroke" cx="42" cy="38" r="11"/>
-                <circle class="skill-icon-accent" cx="42" cy="38" r="4.5"/>
-                <path class="skill-icon-stroke" d="M50 46l7 7" stroke-linecap="round" stroke-width="2.25"/>
-                <path class="skill-icon-accent" d="M42 18v6M39 21h6" stroke-linecap="round"/>
+              <svg class="skill-card-icon" viewBox="0 0 128 128" fill="none" shape-rendering="geometricPrecision">
+                <defs>
+                  <linearGradient id="skill-research-fill" x1="24" y1="20" x2="104" y2="108" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="currentColor" stop-opacity="0.24"/>
+                    <stop offset="1" stop-color="currentColor" stop-opacity="0.07"/>
+                  </linearGradient>
+                </defs>
+                <circle class="skill-icon-glow" cx="64" cy="64" r="54"/>
+                <rect x="24" y="28" width="48" height="64" rx="10" fill="url(#skill-research-fill)" class="skill-icon-tint"/>
+                <rect class="skill-icon-stroke" x="24" y="28" width="48" height="64" rx="10"/>
+                <path class="skill-icon-stroke" d="M24 40h48" stroke-linecap="square"/>
+                <rect class="skill-icon-soft" x="32" y="48" width="32" height="4" rx="2"/>
+                <rect class="skill-icon-soft" x="32" y="58" width="24" height="4" rx="2"/>
+                <rect class="skill-icon-soft" x="32" y="68" width="28" height="4" rx="2"/>
+                <rect class="skill-icon-accent-fill" x="36" y="78" width="6" height="10" rx="2"/>
+                <rect class="skill-icon-accent-fill" x="46" y="72" width="6" height="16" rx="2" opacity="0.85"/>
+                <rect class="skill-icon-accent-fill" x="56" y="76" width="6" height="12" rx="2" opacity="0.7"/>
+                <circle class="skill-icon-soft" cx="86" cy="78" r="26"/>
+                <circle class="skill-icon-stroke" cx="86" cy="78" r="23"/>
+                <circle class="skill-icon-accent-fill" cx="86" cy="78" r="8"/>
+                <path class="skill-icon-stroke" d="M102 94l15 15" stroke-linecap="round"/>
               </svg>
             </div>
             <h3 class="card-title text-[26px] sm:text-[28px]">UX Research</h3>
@@ -384,15 +395,21 @@
         <article class="skill-card">
           <div class="skill-card-head">
             <div class="skill-card-icon-wrap" aria-hidden="true">
-              <svg class="skill-card-icon" viewBox="0 0 64 64" fill="none">
-                <circle class="skill-icon-glow" cx="32" cy="32" r="28"/>
-                <rect class="skill-icon-soft" x="12" y="12" width="40" height="40" rx="10"/>
-                <rect class="skill-icon-stroke" x="14" y="14" width="36" height="36" rx="8"/>
-                <circle class="skill-icon-soft" cx="32" cy="28" r="8"/>
-                <circle class="skill-icon-stroke" cx="32" cy="28" r="7"/>
-                <path class="skill-icon-soft" d="M20 46c2.5-7 7.5-11 12-11s9.5 4 12 11"/>
-                <path class="skill-icon-stroke" d="M21 45c2.4-6.2 7-10 11-10s8.6 3.8 11 10" stroke-linecap="round"/>
-                <path class="skill-icon-accent" d="M18 18h6M18 18v6M46 18h-6M46 18v6M18 46h6M18 46v-6M46 46h-6M46 46v-6" stroke-linecap="round"/>
+              <svg class="skill-card-icon" viewBox="0 0 128 128" fill="none" shape-rendering="geometricPrecision">
+                <defs>
+                  <linearGradient id="skill-hcd-fill" x1="28" y1="24" x2="100" y2="104" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="currentColor" stop-opacity="0.22"/>
+                    <stop offset="1" stop-color="currentColor" stop-opacity="0.06"/>
+                  </linearGradient>
+                </defs>
+                <circle class="skill-icon-glow" cx="64" cy="64" r="54"/>
+                <rect x="28" y="30" width="72" height="72" rx="18" fill="url(#skill-hcd-fill)" class="skill-icon-tint"/>
+                <rect class="skill-icon-stroke" x="32" y="34" width="64" height="64" rx="14"/>
+                <circle class="skill-icon-soft" cx="64" cy="58" r="14"/>
+                <circle class="skill-icon-stroke" cx="64" cy="58" r="12"/>
+                <path class="skill-icon-soft" d="M46 90c3.5-10 10.5-16 18-16s14.5 6 18 16"/>
+                <path class="skill-icon-stroke" d="M48 89c3-8.5 9-14 16-14s13 5.5 16 14" stroke-linecap="round"/>
+                <rect class="skill-icon-soft" x="44" y="44" width="40" height="4" rx="2"/>
               </svg>
             </div>
             <h3 class="card-title text-[26px] sm:text-[28px]">Human-Centered Design</h3>
@@ -404,22 +421,25 @@
         <article class="skill-card">
           <div class="skill-card-head">
             <div class="skill-card-icon-wrap" aria-hidden="true">
-              <svg class="skill-card-icon" viewBox="0 0 64 64" fill="none">
-                <circle class="skill-icon-glow" cx="32" cy="32" r="28"/>
-                <circle class="skill-icon-soft" cx="20" cy="24" r="7"/>
-                <circle class="skill-icon-soft" cx="44" cy="24" r="7"/>
-                <circle class="skill-icon-soft" cx="32" cy="20" r="8"/>
-                <circle class="skill-icon-stroke" cx="20" cy="24" r="6"/>
-                <circle class="skill-icon-stroke" cx="44" cy="24" r="6"/>
-                <circle class="skill-icon-stroke" cx="32" cy="20" r="7"/>
-                <path class="skill-icon-soft" d="M10 46c1.8-6 5.5-9.5 10-9.5S28.2 40 30 46"/>
-                <path class="skill-icon-soft" d="M34 46c1.8-6 5.5-9.5 10-9.5S52.2 40 54 46"/>
-                <path class="skill-icon-soft" d="M21 48c2.2-7 6.8-11 11-11s8.8 4 11 11"/>
-                <path class="skill-icon-stroke" d="M11 45c1.6-5 5-8 9-8s7.4 3 9 8" stroke-linecap="round"/>
-                <path class="skill-icon-stroke" d="M35 45c1.6-5 5-8 9-8s7.4 3 9 8" stroke-linecap="round"/>
-                <path class="skill-icon-stroke" d="M22 47c2-6.2 6.2-9.5 10-9.5s8 3.3 10 9.5" stroke-linecap="round"/>
-                <circle class="skill-icon-accent-fill" cx="32" cy="40" r="7"/>
-                <path class="skill-icon-on-accent" d="M32 36.5v7M28.5 40h7" stroke-linecap="round"/>
+              <svg class="skill-card-icon" viewBox="0 0 128 128" fill="none" shape-rendering="geometricPrecision">
+                <defs>
+                  <linearGradient id="skill-community-fill" x1="20" y1="32" x2="108" y2="104" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="currentColor" stop-opacity="0.2"/>
+                    <stop offset="1" stop-color="currentColor" stop-opacity="0.05"/>
+                  </linearGradient>
+                </defs>
+                <circle class="skill-icon-glow" cx="64" cy="64" r="54"/>
+                <path class="skill-icon-soft" d="M24 88c12-20 32-28 52-24 16 3 28 14 32 30" fill="url(#skill-community-fill)"/>
+                <path class="skill-icon-stroke" d="M24 88c12-20 32-28 52-24 16 3 28 14 32 30" stroke-linecap="round"/>
+                <circle class="skill-icon-soft" cx="42" cy="52" r="13"/>
+                <circle class="skill-icon-stroke" cx="42" cy="52" r="11"/>
+                <circle class="skill-icon-soft" cx="86" cy="52" r="13"/>
+                <circle class="skill-icon-stroke" cx="86" cy="52" r="11"/>
+                <circle class="skill-icon-soft" cx="64" cy="42" r="15"/>
+                <circle class="skill-icon-stroke" cx="64" cy="42" r="13"/>
+                <path class="skill-icon-stroke" d="M30 86c4-9 10-14 18-14M98 86c-4-9-10-14-18-14M44 96c5-12 13-18 20-18s15 6 20 18" stroke-linecap="round"/>
+                <circle class="skill-icon-accent-fill" cx="64" cy="84" r="16"/>
+                <path class="skill-icon-on-accent" d="M64 77v14M57 84h14" stroke-linecap="round"/>
               </svg>
             </div>
             <h3 class="card-title text-[26px] sm:text-[28px]">Community Health Education</h3>

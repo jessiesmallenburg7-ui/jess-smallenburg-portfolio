@@ -625,73 +625,135 @@
 
   /* Home expertise skill cards */
   .skill-card {
-    @apply relative flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-6
-           transition-colors duration-200 sm:p-7;
+    --skill-accent: #7dd3fc;
+    --skill-accent-2: #5fd3e0;
+    --skill-tint: rgba(125, 211, 252, 0.1);
+    --skill-border: rgba(125, 211, 252, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    border-radius: 1.125rem;
+    border: 1px solid var(--skill-border);
+    padding: 1.5rem;
+    background:
+      radial-gradient(110% 80% at 0% 0%, var(--skill-tint) 0%, transparent 55%),
+      linear-gradient(165deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(0, 0, 0, 0.07);
+  }
+
+  .skill-card:nth-child(1) {
+    --skill-accent: #7dd3fc;
+    --skill-accent-2: #5fd3e0;
+    --skill-tint: rgba(125, 211, 252, 0.12);
+    --skill-border: rgba(125, 211, 252, 0.22);
+  }
+
+  .skill-card:nth-child(2) {
+    --skill-accent: #5eead4;
+    --skill-accent-2: #2dd4bf;
+    --skill-tint: rgba(94, 234, 212, 0.11);
+    --skill-border: rgba(94, 234, 212, 0.2);
+  }
+
+  .skill-card:nth-child(3) {
+    --skill-accent: #c4b5fd;
+    --skill-accent-2: #f9a8d4;
+    --skill-tint: rgba(196, 181, 253, 0.11);
+    --skill-border: rgba(196, 181, 253, 0.2);
   }
 
   .skill-card::before {
     content: "";
-    @apply absolute bottom-4 left-0 top-4 w-0.5 rounded-full bg-sky-accent/30
-           transition-colors duration-200;
-  }
-
-  .skill-card:hover {
-    @apply border-sky-accent/35 bg-sky-accent/[0.05];
-  }
-
-  .skill-card:hover::before {
-    @apply bg-sky-accent;
-  }
-
-  .skill-card:hover .skill-card-icon-wrap {
-    @apply border-sky-accent/40 bg-sky-accent/[0.12];
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--skill-accent), var(--skill-accent-2) 55%, transparent 92%);
+    opacity: 0.88;
   }
 
   .skill-card-head {
     @apply flex flex-col items-center gap-4 text-center
-           md:flex-row md:items-center md:gap-4 md:text-left;
+           md:flex-row md:items-center md:gap-5 md:text-left;
   }
 
   .skill-card-icon-wrap {
-    @apply flex h-28 w-28 shrink-0 items-center justify-center rounded-2xl
-           border border-sky-accent/20 bg-gradient-to-br from-sky-accent/15 via-teal-accent/10 to-transparent
-           transition-colors duration-200
-           md:h-[4.25rem] md:w-[4.25rem] md:rounded-xl;
+    position: relative;
+    display: flex;
+    height: 6.5rem;
+    width: 6.5rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.125rem;
+    border: 1px solid color-mix(in srgb, var(--skill-accent) 28%, transparent);
+    background:
+      radial-gradient(90% 90% at 30% 20%, color-mix(in srgb, var(--skill-accent) 24%, transparent) 0%, transparent 62%),
+      linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 6px 18px rgba(0, 0, 0, 0.08);
+    color: var(--skill-accent);
+  }
+
+  @media (min-width: 768px) {
+    .skill-card-icon-wrap {
+      height: 5.75rem;
+      width: 5.75rem;
+      border-radius: 1rem;
+    }
   }
 
   .skill-card-icon {
-    @apply h-[5.25rem] w-[5.25rem] md:h-[3.35rem] md:w-[3.35rem];
+    display: block;
+    width: 5.25rem;
+    height: 5.25rem;
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+  }
+
+  @media (min-width: 768px) {
+    .skill-card-icon {
+      width: 4.75rem;
+      height: 4.75rem;
+    }
   }
 
   .skill-icon-glow {
-    fill: rgba(125, 211, 252, 0.08);
+    fill: color-mix(in srgb, var(--skill-accent) 12%, transparent);
   }
 
   .skill-icon-soft {
-    fill: rgba(125, 211, 252, 0.16);
+    fill: color-mix(in srgb, var(--skill-accent) 22%, transparent);
     stroke: none;
   }
 
+  .skill-icon-tint {
+    color: var(--skill-accent);
+  }
+
   .skill-icon-stroke {
-    stroke: #7dd3fc;
-    stroke-width: 1.75;
+    stroke: var(--skill-accent);
+    stroke-width: 3;
     fill: none;
   }
 
   .skill-icon-accent {
-    stroke: #5fd3e0;
-    stroke-width: 1.75;
+    stroke: var(--skill-accent-2);
+    stroke-width: 3;
     fill: none;
   }
 
   .skill-icon-accent-fill {
-    fill: rgba(95, 211, 224, 0.9);
+    fill: var(--skill-accent-2);
     stroke: none;
   }
 
   .skill-icon-on-accent {
     stroke: #04060e;
-    stroke-width: 2;
+    stroke-width: 3.5;
     fill: none;
   }
 
@@ -700,34 +762,110 @@
            md:text-left;
   }
 
+  #expertise .skill-card:hover,
+  #expertise .skill-card:hover .skill-card-icon-wrap,
+  #approach .approach-item:hover {
+    transform: none;
+  }
+
+  #expertise .skill-card:hover {
+    border-color: var(--skill-border);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(0, 0, 0, 0.07);
+  }
+
+  #expertise .skill-card:hover .skill-card-icon-wrap {
+    border-color: color-mix(in srgb, var(--skill-accent) 28%, transparent);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  #approach .approach-item:hover {
+    border-color: var(--approach-border);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 10px 28px rgba(0, 0, 0, 0.08);
+  }
+
   /* Home — My approach principles */
   .approach-grid {
-    @apply mt-8 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 sm:gap-8;
+    @apply mt-10 grid list-none grid-cols-1 gap-5 p-0 sm:grid-cols-2 sm:gap-6;
     counter-reset: approach-step;
   }
 
   .approach-item {
-    @apply relative border-l-2 border-sky-accent/35 pl-5;
+    --approach-accent: #7dd3fc;
+    --approach-tint: rgba(125, 211, 252, 0.1);
+    --approach-border: rgba(125, 211, 252, 0.22);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1.125rem;
+    border: 1px solid var(--approach-border);
+    padding: 1.625rem 1.5rem 1.5rem;
+    background:
+      radial-gradient(120% 90% at 100% 0%, var(--approach-tint) 0%, transparent 58%),
+      linear-gradient(165deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 10px 28px rgba(0, 0, 0, 0.08);
     counter-increment: approach-step;
+  }
+
+  .approach-item:nth-child(1) {
+    --approach-accent: #7dd3fc;
+    --approach-tint: rgba(125, 211, 252, 0.14);
+    --approach-border: rgba(125, 211, 252, 0.24);
+  }
+
+  .approach-item:nth-child(2) {
+    --approach-accent: #5eead4;
+    --approach-tint: rgba(94, 234, 212, 0.13);
+    --approach-border: rgba(94, 234, 212, 0.22);
+  }
+
+  .approach-item:nth-child(3) {
+    --approach-accent: #c4b5fd;
+    --approach-tint: rgba(196, 181, 253, 0.14);
+    --approach-border: rgba(196, 181, 253, 0.24);
+  }
+
+  .approach-item:nth-child(4) {
+    --approach-accent: #f9a8d4;
+    --approach-tint: rgba(249, 168, 212, 0.13);
+    --approach-border: rgba(249, 168, 212, 0.22);
+  }
+
+  .approach-item::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--approach-accent), transparent 88%);
+    opacity: 0.9;
   }
 
   .approach-item-head {
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 0.85rem;
   }
 
   .approach-item-head::before {
-    content: counter(approach-step);
+    content: counter(approach-step, decimal-leading-zero);
     flex: 0 0 auto;
-    min-width: 1.375rem;
-    font-family: "Cormorant", Georgia, serif;
-    font-size: 1.625rem;
-    font-weight: 600;
+    display: grid;
+    place-items: center;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--approach-accent) 35%, transparent);
+    background: color-mix(in srgb, var(--approach-accent) 14%, transparent);
+    font-family: "Lato", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
     font-variant-numeric: lining-nums;
+    letter-spacing: 0.05em;
     line-height: 1;
-    letter-spacing: 0.04em;
-    color: rgb(125 211 252 / 0.92);
+    color: var(--approach-accent);
   }
 
   .approach-title {
@@ -735,8 +873,7 @@
   }
 
   .approach-body {
-    @apply mt-1.5 font-sans text-[16px] leading-[1.6em] text-white/65 sm:text-[17px];
-    margin-left: calc(1.375rem + 0.75rem);
+    @apply mt-3 font-sans text-[16px] leading-[1.65em] text-white/65 sm:text-[17px];
   }
 
   /* Mobile: enlarge approach, work-card, and credentials copy for readability */
