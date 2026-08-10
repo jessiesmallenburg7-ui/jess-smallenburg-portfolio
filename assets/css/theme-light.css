@@ -783,19 +783,20 @@ html[data-theme="light"] .case-nav-link:hover {
   color: #1F2937;
 }
 
-html[data-theme="light"] .case-nav-link-active {
-  background-color: rgba(37, 99, 235, 0.1);
-  color: #1F2937;
+html[data-theme="light"] .case-nav:not(.minimal-case-nav) .case-nav-link-active {
+  background-color: rgba(37, 99, 235, 0.12);
+  color: #1E40AF;
 }
 
 @media (min-width: 1024px) {
-  html[data-theme="light"] .case-nav:not(.case-nav--top) .case-nav-link:hover {
-    background-color: transparent;
+  html[data-theme="light"] .case-nav:not(.case-nav--top):not(.minimal-case-nav) .case-nav-link:hover {
+    background-color: rgba(37, 99, 235, 0.06);
   }
 
-  html[data-theme="light"] .case-nav:not(.case-nav--top) .case-nav-link-active {
-    background-color: transparent;
+  html[data-theme="light"] .case-nav:not(.case-nav--top):not(.minimal-case-nav) .case-nav-link-active {
+    background-color: rgba(37, 99, 235, 0.12);
     border-left-color: #2563EB;
+    color: #1E40AF;
   }
 }
 
@@ -813,19 +814,13 @@ html[data-theme="light"] .case-hmw--featured {
 }
 
 /* Beat dark-theme cyan hard-codes from lumen-case.css / styles.css */
-html[data-theme="light"] .case-nav--top .case-nav-link-active,
-html[data-theme="light"] .case-nav-link-active {
+html[data-theme="light"] .case-nav--top .case-nav-link-active {
   background-color: rgba(37, 99, 235, 0.12);
   border-color: rgba(37, 99, 235, 0.32);
   color: #1E40AF;
 }
 
 @media (min-width: 1024px) {
-  html[data-theme="light"] .case-nav:not(.case-nav--top) .case-nav-link-active {
-    background-color: transparent;
-    border-left-color: #2563EB;
-  }
-
   html[data-theme="light"] .case-nav--top .case-nav-link-active {
     background: rgba(37, 99, 235, 0.14);
     border-color: rgba(37, 99, 235, 0.36);
