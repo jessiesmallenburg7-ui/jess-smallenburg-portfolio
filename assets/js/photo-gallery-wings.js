@@ -70,6 +70,11 @@ window.PHOTO_GALLERY_WINGS = [
     caption: "Eastern Tiger Swallowtail (dark morph)",
   },
   {
+    file: "eastern-tiger-swallowtail-cranbrook.jpg",
+    alt: "Eastern Tiger Swallowtail butterfly photographed at Cranbrook",
+    caption: "Eastern Tiger Swallowtail — Cranbrook",
+  },
+  {
     file: "monarch.jpg",
     alt: "Monarch butterfly with orange and black wings perched on small white flowers",
     caption: "Monarch",
@@ -86,7 +91,7 @@ window.PHOTO_GALLERY_WINGS = [
   },
   {
     file: "IMG_7174e.jpg",
-    alt: "Eastern Tiger Swallowtail butterfly",
-    caption: "Eastern Tiger Swallowtail",
+    alt: "Eastern Tiger Swallowtail butterfly photographed in the Cayman Islands",
+    caption: "Eastern Tiger Swallowtail - Cayman Islands",
   },
 ];

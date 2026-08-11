@@ -30,6 +30,11 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Dahlia garden",
   },
   {
+    file: "cranbrook-2.jpg",
+    alt: "Soft pink Japanese anemones with yellow centers on slender stems at Cranbrook",
+    caption: "Cranbrook anemones",
+  },
+  {
     file: "pink-dahlia.jpg",
     alt: "Close layers of vibrant pink dahlia petals",
     caption: "Pink dahlia",
@@ -90,11 +95,6 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Pink peony",
   },
   {
-    file: "ethereal-garden-2.jpg",
-    alt: "Soft ethereal garden floral study II",
-    caption: "Ethereal garden II",
-  },
-  {
     file: "daffodil.jpg",
     alt: "Single daffodil",
     caption: "Daffodil",
@@ -108,6 +108,11 @@ window.PHOTO_GALLERY_FLORAL = [
     file: "gerbera-daisy-2.jpg",
     alt: "Gerbera daisy study",
     caption: "Gerbera daisy II",
+  },
+  {
+    file: "cranbrook.jpg",
+    alt: "Cluster of pale pink Japanese anemones against stone and vines at Cranbrook",
+    caption: "Cranbrook",
   },
   {
     file: "orange-dahlia-2.jpg",
@@ -151,8 +156,8 @@ window.PHOTO_GALLERY_FLORAL = [
   },
   {
     file: "ethereal-garden-3.jpg",
-    alt: "Soft ethereal garden floral study III",
-    caption: "Ethereal garden III",
+    alt: "Soft ethereal garden floral study II",
+    caption: "Ethereal garden II",
   },
   {
     file: "loire-valley.jpg",
@@ -168,6 +173,11 @@ window.PHOTO_GALLERY_FLORAL = [
     file: "echinacea.jpg",
     alt: "Magenta echinacea flowers with deep orange cone centers in a sunlit garden",
     caption: "Echinacea",
+  },
+  {
+    file: "cranbrook-with-tree-shadow-2.jpg",
+    alt: "Pink anemones catching dappled light and tree shadow at Cranbrook",
+    caption: "Dappled light",
   },
   {
     file: "american-pokeweed.jpg",
