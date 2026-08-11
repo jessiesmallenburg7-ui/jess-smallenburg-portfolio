@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/styles.css?v=20260807type">
-  <link rel="stylesheet" href="../../assets/css/lumen-minimal.css?v=20260810launch7">
+  <link rel="stylesheet" href="../../assets/css/lumen-minimal.css?v=20260811refl205">
   <link rel="stylesheet" href="../../assets/css/case-hero-visual.css?v=20260807type">
   <link rel="stylesheet" href="../../assets/css/theme-light.css?v=20260810navactive">
   <link rel="stylesheet" href="../../assets/css/minimal-case-nav.css?v=20260810onpage">
@@ -81,7 +81,7 @@
     <div class="case-hero-main case-hero-main--with-meta case-hero-main--split">
       <div class="case-hero-copy">
         <div class="case-hero-lead">
-          <span class="tagpill">Healthcare UX · Academic case study</span>
+          <span class="tagpill"><span class="tagpill-a">Healthcare UX ·</span> <span class="tagpill-b">Academic case study</span></span>
           <h1>Lumen Chart EHR</h1>
         </div>
         <div class="case-hero-rest">
@@ -98,7 +98,7 @@
             <a class="btn btn-primary" href="https://lumen-clinician.netlify.app" target="_blank" rel="noopener noreferrer">View live prototype <svg class="btn-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
             <a class="btn btn-ghost" href="reports/Lumen_Chart_Design_Brief.pdf" target="_blank" rel="noopener">Design brief (PDF)</a>
           </div>
-          <p class="integrity"><span>⚑</span><span><b>Scope honesty:</b> solo academic project. No clinician or patient access — “interviews” are conceptual scenarios written from published literature, and personas synthesize that evidence. No real patient data.</span></p>
+          <p class="integrity"><span>⚑</span><span><b>Scope honesty:</b> solo academic project. No clinician or patient access — personas are fictional composites grounded in published literature. No real patient data.</span></p>
         </div>
       </div>
       <div class="case-hero-aside">
@@ -175,7 +175,7 @@
       <p class="lede">Evidence first, then reframing, design, evaluation, and iteration as separate stages — because in a high-liability setting you have to be able to defend a decision from a citation, not from taste.</p>
     </div>
     <div class="phases">
-      <div class="phase"><div class="n">01</div><div class="t">Rethink</div><div class="d">Evidence synthesis, conceptual interviews, personas</div></div>
+      <div class="phase"><div class="n">01</div><div class="t">Rethink</div><div class="d">Evidence synthesis, literature-grounded personas</div></div>
       <div class="phase"><div class="n">02</div><div class="t">Redefine</div><div class="d">&ldquo;How might we&rdquo; questions, user flows, information architecture</div></div>
       <div class="phase"><div class="n">03</div><div class="t">Redesign</div><div class="d">Wireframes, then high-fidelity mockups</div></div>
       <div class="phase"><div class="n">04</div><div class="t">Revision</div><div class="d">Heuristic evaluation + moderated usability session</div></div>
@@ -255,13 +255,14 @@
   </div>
 </section>
 
-<!-- ============ INTERVIEWS + PERSONAS ============ -->
+<!-- ============ PERSONAS ============ -->
 <section class="lm-tint lm-flow-personas">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">01 Rethink · continued</div>
       <h2>Three users, three incompatible contexts, one record.</h2>
-      <p class="lede">Personas translate the UX research synthesis wall into concrete design targets. Click a persona for the full profile — background, goals, pain points, behaviors, and the conceptual interview excerpts behind each.</p>
+      <p class="lede">These personas translate the research synthesis into concrete design targets. Each was developed as a fictional composite grounded in published literature on healthcare roles and workflows, with AI assistance used to help structure and refine the profiles. Click any persona to view the full background, goals, pain points, behaviors, and research-backed quotes.</p>
+      <p class="lm-persona-note">Personas are fictional composites created for educational purposes. Any resemblance to real individuals or organizations is coincidental.</p>
     </div>
 
     <div class="personas">
@@ -310,9 +311,9 @@
 
     <div class="lm-flow-step lm-flow-step--themes">
       <div class="sec-head sec-head--sub">
-        <p class="lm-sub-eyebrow">From all three research-grounded conceptual interviews</p>
+        <p class="lm-sub-eyebrow">From the three literature-grounded personas</p>
         <h3>Five cross-cutting themes</h3>
-        <p class="lede">These themes were coded across all three conceptual interviews&mdash;shared breakdowns like documentation burden and interrupted workflows, alongside role-specific needs like AI signing trust, alert hierarchy, and caregiver reassurance. Not every pattern applies to every persona; each card notes where it surfaced. Click any theme for interview excerpts and evidence codes.</p>
+        <p class="lede">These themes were coded across the three personas&mdash;shared breakdowns like documentation burden and interrupted workflows, alongside role-specific needs like AI signing trust, alert hierarchy, and caregiver reassurance. Not every pattern applies to every persona; each card notes where it surfaced. Click any theme for research-backed quotes and evidence codes.</p>
       </div>
     <div class="evgrid evgrid--themes">
       <button class="zoom ev ev--theme t-blue" data-lb="th-1">
@@ -523,8 +524,6 @@
         <p class="sev-summary-body">The evaluation validated the trust mechanics: amber provenance, per-section Accept, and two-gate signing all mapped to UX Research Synthesis Wall recommendations D1–D5. Four majors were about <em>reversibility</em> — what happens when a clinician changes their mind, or the system fails mid-write.</p>
         <div class="sev-summary-actions">
           <a class="btn btn-ghost btn-rev-doc" href="reports/Lumen_Chart_HE_Summary_Report.pdf" target="_blank" rel="noopener">HE summary report (PDF)</a>
-          <a class="btn btn-ghost btn-rev-doc" href="reports/Lumen_Chart_Pre-Test_Questionnaire.pdf" target="_blank" rel="noopener">Pre-test</a>
-          <a class="btn btn-ghost btn-rev-doc" href="reports/Lumen_Chart_Post-Test_Questionnaire.pdf" target="_blank" rel="noopener">Post-test</a>
         </div>
       </div>
     </div>
@@ -697,6 +696,22 @@
         </ol>
       </div>
     </details>
+
+    <details class="lm-references-collapse lm-about-collapse">
+      <summary class="lm-references-summary">
+        <span class="lm-references-summary-lead">
+          <span class="lm-references-summary-label">About this project</span>
+        </span>
+      </summary>
+      <div class="lm-references-collapse-body">
+        <div class="lm-about-body">
+          <h3>About This Project</h3>
+          <p>This case study was developed as part of the Foster Healthcare UX program in 2026. It focuses on redesigning clinician documentation workflows in an electronic health record (EHR) system, with particular attention to AI-assisted note generation, transparency, and clinician trust. This is a hypothetical academic project created for portfolio and learning purposes. It does not represent work performed for any employer, health system, or commercial product.</p>
+          <h3>Personas and Names</h3>
+          <p>All personas, patient names, and scenarios in this case study are fictional and created for illustrative purposes only. They do not represent any real individuals, patients, or healthcare professionals. Any resemblance to actual persons, living or dead, is purely coincidental.</p>
+        </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -705,9 +720,32 @@
     </main>
     <footer class="site-footer mt-auto">
       <div class="container-content flex flex-col gap-6 py-10">
+        <div class="flex flex-col items-end gap-3">
+          <p class="font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white/45">Connect</p>
+          <div class="flex items-center gap-3">
+            <a href="https://www.linkedin.com/in/jessamynellen/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
+              <svg class="icon-linkedin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="mailto:jess@jessamynsmallenburg.com" aria-label="Email" class="footer-social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 5L2 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="border-white/10">
         <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. Academic case study &middot; No real patient data</p>
-</div>
+          <p class="font-sans text-[18px] text-white/50">&copy; 2026 Jessie Smallenburg. All rights reserved.</p>
+          <div class="font-sans text-[17px] text-white/40 md:text-right">
+            <p>Built with AI assistance and human care.</p>
+            <p class="mt-1 max-w-xl md:ml-auto">Research, design, and writing were supported by AI tools. All final decisions and refinements are my own.</p>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
@@ -885,7 +923,7 @@
         <p class="theme-lead">Laura will use ambient AI, but she needs to see what the model generated versus what came from the chart. Accuracy alone is insufficient &mdash; the system has to make its own uncertainty visible.</p>
       </header>
       <section class="theme-panel theme-panel--quote">
-        <h4>From the interview</h4>
+        <h4>Research-backed quote</h4>
         <blockquote class="theme-quote">&ldquo;It got most things right but it hallucinated a medication that was never discussed. I had to read every word&hellip; I need to know exactly what it made up versus what it heard. Show me the difference.&rdquo;</blockquote>
       </section>
       <div class="theme-resolve">
@@ -907,7 +945,7 @@
         <p class="theme-lead">Laura dismisses alerts reflexively because they all look the same. Kevin misses flags because they require chart navigation to find.</p>
       </header>
       <section class="theme-panel theme-panel--quote">
-        <h4>From the interview</h4>
+        <h4>Research-backed quote</h4>
         <blockquote class="theme-quote">&ldquo;When everything is urgent, nothing is urgent. I once dismissed a drug interaction because I was clicking through thirty alerts in a row.&rdquo;</blockquote>
       </section>
       <div class="theme-resolve">
@@ -951,7 +989,7 @@
         <p class="theme-lead">Diane&rsquo;s anxiety is a predictable response to a system that withholds clarity. An empty or confusing interface is not neutral &mdash; it is actively distressing.</p>
       </header>
       <section class="theme-panel theme-panel--quote">
-        <h4>From the interview</h4>
+        <h4>Research-backed quote</h4>
         <blockquote class="theme-quote">&ldquo;If the system just told me &lsquo;she&rsquo;s okay, here&rsquo;s what happened, here&rsquo;s what to watch for&rsquo; &mdash; that would change everything. I don&rsquo;t need every clinical detail. I need to know she&rsquo;s okay.&rdquo;</blockquote>
       </section>
       <section class="theme-panel">
@@ -990,13 +1028,13 @@
         <p><span class="pill">6–7 hrs/day in EHR</span><span class="pill">No unified pre-visit view</span><span class="pill">Hallucination destroyed trust</span><span class="pill">Alert fatigue near-miss</span><span class="pill">One-click sign feels dangerous</span><span class="pill">After-hours charting</span></p>
       </section>
       <section class="persona-panel persona-panel--voices">
-        <h4>Conceptual interview — on AI documentation and trust</h4>
+        <h4>On AI documentation and trust</h4>
         <blockquote>“I've tried one. It was impressive and terrifying at the same time… The promise is real — I'd get back probably an hour a night — but I need to know exactly what it made up versus what it heard.”</blockquote>
-        <h4>Conceptual interview — on pre-visit prep</h4>
+        <h4>On pre-visit prep</h4>
         <blockquote>“I'll pull up the chart right before I knock on the door — sometimes in the hallway — and I'm trying to scan six months of notes in thirty seconds. Instead I'm hunting through tabs.”</blockquote>
       </section>
       <div class="resolve"><b>Design implication:</b> Laura abandons any tool where AI-authored content is indistinguishable from human-entered data. Every AI line needs a visible source indicator; explicit per-section Accept must precede an active Sign button. One-click sign is a disqualifier, not a feature.</div>
-      <p class="persona-disclaimer"><em>Persona synthesized from published literature. Not based on a real interview.</em></p>
+      <p class="persona-disclaimer"><em>Persona synthesized from published literature.</em></p>
     </div>
   </div>
 
@@ -1024,13 +1062,13 @@
         <p><span class="pill">Charting from memory</span><span class="pill">Vitals across 4 screens</span><span class="pill">No bedside access</span><span class="pill">Low-priority alert noise</span><span class="pill">Stale handoff notes</span></p>
       </section>
       <section class="persona-panel persona-panel--voices">
-        <h4>Conceptual interview — on documentation timing</h4>
+        <h4>On documentation timing</h4>
         <blockquote>“Batch charting. I take vitals at 9, document them at 2. I write on my hand sometimes, or a paper towel… That's not safe. I know it's not safe. But I can't leave a patient to go sit at a workstation every time I take a blood pressure.”</blockquote>
-        <h4>Conceptual interview — on deterioration</h4>
+        <h4>On deterioration</h4>
         <blockquote>“The patient just looked different. But to verify my gut I had to open four different screens… By the time I had everything in front of me, ten minutes had passed. The data was all there — it just wasn't together.”</blockquote>
       </section>
       <div class="resolve"><b>Design implication:</b> time savings must be visible within the first shift, not after a learning curve. If logging a vital requires leaving the patient or opening more than three screens, the tool is abandoned by shift two.</div>
-      <p class="persona-disclaimer"><em>Persona synthesized from published literature. Not based on a real interview.</em></p>
+      <p class="persona-disclaimer"><em>Persona synthesized from published literature.</em></p>
     </div>
   </div>
 
@@ -1053,13 +1091,13 @@
         <p><span class="pill">Jargon she can't decode</span><span class="pill">Unclear access boundaries</span><span class="pill">No summary for missed visits</span><span class="pill">Refill gaps</span><span class="pill">Prior auth phone loop</span></p>
       </section>
       <section class="persona-panel persona-panel--voices">
-        <h4>Conceptual interview — on the patient portal</h4>
+        <h4>On the patient portal</h4>
         <blockquote>“There's a ‘visit summary' somewhere but it's full of billing codes and abbreviations. It might as well be in another language.”</blockquote>
-        <h4>Conceptual interview — on access boundaries</h4>
+        <h4>On access boundaries</h4>
         <blockquote>“I've been nervous to click certain things because I don't know if it'll send a message to the doctor that mom didn't approve… I also don't want my mom to feel like I'm taking over her care. That's a real tension.”</blockquote>
       </section>
       <div class="resolve"><b>Design caution:</b> Diane has partial information, no clinical training, and deep personal stakes. Every screen should answer: is mom okay, and is there anything I need to do right now? She also underuses the portal because she can't tell which actions are hers versus Maria's — and worries that clicking the wrong thing might overstep or act without approval. Show a persistent can/can't permissions list and when access was granted (e.g. "Access granted by Maria Santos, Apr 2, 2026") so she knows the boundary is documented before she acts.</div>
-      <p class="persona-disclaimer"><em>Persona synthesized from published literature. Not based on a real interview.</em></p>
+      <p class="persona-disclaimer"><em>Persona synthesized from published literature.</em></p>
     </div>
   </div>
 

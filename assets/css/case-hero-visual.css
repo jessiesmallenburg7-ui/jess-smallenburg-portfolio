@@ -346,4 +346,15 @@
   .pc-case .eyebrow {
     font-size: 17px;
   }
+
+  /* HC card serif titles — one shared size on mobile */
+  .hc-case .card h4,
+  .hc-case .ev h4,
+  .hc-case .badir h4,
+  .hc-case .rcard h4,
+  .hc-case .overview-visual-title,
+  .hc-case .insight-depth-title {
+    font-size: 23px;
+    line-height: 1.25;
+  }
 }

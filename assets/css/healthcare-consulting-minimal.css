@@ -138,7 +138,7 @@ html[data-theme="light"] .case-version-banner-text {
 .hc-case section.hc-dark .eyebrow{color:#8FBAEE}
 .hc-case section.hc-dark .eyebrow::before{background:#8FBAEE}
 .hc-case h2{font-size:clamp(28px,3.4vw,40px); margin-bottom:14px}
-.hc-case .lede{font-size:19px; color:var(--ink-2); max-width:72ch; margin:0 0 8px}
+.hc-case .lede{font-size:19px; color:var(--ink-2); max-width:none; margin:0 0 8px}
 .hc-case .lede--full{max-width:none}
 .hc-case section.hc-dark .lede{color:#C4D3E8}
 .hc-case .sec-head{margin-bottom:36px}
@@ -186,17 +186,8 @@ html[data-theme="light"] .case-version-banner-text {
 }
 
 @media (max-width: 767.98px) {
-  .hc-case .case-hero-copy .meta-row {
-    font-size: 19px;
-  }
-
-  .hc-case .case-hero-copy .integrity {
-    font-size: 18px;
-    line-height: 1.55;
-  }
-
-  .hc-case .case-hero-actions .btn {
-    font-size: 19px;
+  .hc-case .tagpill {
+    text-align: center;
   }
 }
 
@@ -354,7 +345,13 @@ html[data-theme="light"] .case-version-banner-text {
 }
 .hc-case .overview-visual:nth-child(2) .overview-visual-link{color:var(--teal)}
 .hc-case .overview-visual:nth-child(3) .overview-visual-link{color:var(--amber-dk)}
-.hc-case .hc-visual-anchor{scroll-margin-top:6rem}
+.hc-case .hc-visual-anchor{
+  scroll-margin-top:6rem;
+  font-size:20px;
+  margin:0 0 14px;
+}
+.hc-case .hc-visual-anchor--spaced{margin:44px 0 14px}
+.hc-case .hc-visual-anchor--tight{margin:0 0 6px}
 @media(max-width:900px){.hc-case .overview-visuals{grid-template-columns:1fr}}
 .hc-case .numlist{display:flex; flex-direction:column; gap:0; background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden}
 .hc-case .numlist .row{display:flex; gap:18px; padding:19px 24px; border-top:1px solid var(--line); align-items:flex-start}
@@ -456,8 +453,7 @@ html[data-theme="light"] .case-version-banner-text {
   grid-template-columns:repeat(4,1fr);
   gap:14px;
 }
-.hc-case .ev{border-radius:var(--radius); padding:18px 17px; border:1px solid var(--line); background:#fff; box-shadow:var(--shadow); min-height:150px; transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease}
-.hc-case .ev:hover{transform:translateY(-2px)}
+.hc-case .ev{border-radius:var(--radius); padding:18px 17px; border:1px solid var(--line); background:#fff; box-shadow:var(--shadow); min-height:150px}
 .hc-case .ev--featured.t-amber{
   position:relative;
   border-color:rgba(124,90,158,.35);
@@ -559,7 +555,17 @@ html[data-theme="light"] .case-version-banner-text {
   .hc-case .evgrid,
   .hc-case .insights-layout{grid-template-columns:1fr}
   .hc-case .insight-depth-bridge{width:100%; margin-left:0}
-  .hc-case .ev--featured.t-amber::after{display:none}
+
+  /* Purple stem across the gap — same idea as desktop */
+  .hc-case .ev--featured.t-amber::after{
+    display:block;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-20px;
+    width:2px;
+    height:20px;
+    background:linear-gradient(180deg,var(--amber),rgba(124,90,158,.15));
+  }
 }
 .hc-case .spotlight{
   display:grid; grid-template-columns:280px 1fr; gap:0; background:#fff; border:1px solid var(--line);
@@ -703,17 +709,19 @@ html[data-theme="light"] .case-version-banner-text {
 .hc-case .badir-note{background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; box-shadow:var(--shadow); font-size:var(--site-text-secondary); line-height:1.55; color:var(--ink-2); margin-bottom:36px}
 .hc-case .badir-note ul{margin:10px 0 0; padding-left:1.35rem; list-style:disc}
 .hc-case .badir-note li{margin-bottom:6px; display:list-item}
+.hc-case .lede--proto{margin-bottom:18px}
 .hc-case .protobox{background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden}
 .hc-case .protobox .frame{aspect-ratio:16/10; background:var(--ink)}
 .hc-case .protobox .frame iframe{width:100%; height:100%; border:0}
-.hc-case .protobox .meta{padding:18px 22px}
+.hc-case .protobox .meta{padding:18px 22px; font-size:var(--site-text-secondary); line-height:1.55; color:var(--ink-2)}
+.hc-case .protobox .meta .proto-external-link{font-size:inherit}
 .hc-case .status{display:flex; flex-direction:column; gap:12px}
 .hc-case .srow{display:flex; gap:14px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; box-shadow:var(--shadow)}
 .hc-case .srow .chip{font-size:var(--site-text-label); font-weight:750; text-transform:uppercase; letter-spacing:.06em; padding:5px 11px; border-radius:999px; flex:none; margin-top:1px}
 .hc-case .srow.done .chip{background:var(--teal-soft); color:var(--teal)}
 .hc-case .srow.partial .chip{background:var(--amber-soft); color:var(--amber-dk)}
 .hc-case .srow.pending .chip{background:var(--rose-soft); color:var(--rose)}
-.hc-case .srow p{margin:0; font-size:var(--site-text-secondary); color:var(--ink-2); line-height:1.55}
+.hc-case .srow p{margin:0; font-size:var(--site-text-secondary); color:var(--ink-2); line-height:1.55; min-width:0; flex:1}
 .hc-case .quote-block{
   background:var(--blue-dk); color:#EAF1FB; border-radius:16px; padding:28px 32px; margin-top:24px;
 }
@@ -816,4 +824,107 @@ html[data-theme="light"] .case-version-banner-text {
   height: auto;
   max-width: none;
   transition: width 0.12s ease;
+}
+
+/* ============================================================
+   Mobile type system — HC case only
+   Body copy: 19px · Headers stay larger · Labels/chrome stay smaller
+   ============================================================ */
+@media (max-width: 767.98px) {
+  .hc-case {
+    --site-text-body: 19px;
+    --site-text-secondary: 19px;
+    --site-text-meta: 16px;
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  .hc-case .hc-hero .sub,
+  .hc-case .lede,
+  .hc-case .lede--full,
+  .hc-case .meta-row,
+  .hc-case .case-hero-copy .meta-row,
+  .hc-case .case-hero-actions .btn,
+  .hc-case .note,
+  .hc-case .take p,
+  .hc-case .numlist p,
+  .hc-case .card p,
+  .hc-case .overview-visual-desc,
+  .hc-case .overview-visual-link,
+  .hc-case .ev p,
+  .hc-case .spot-num .lbl,
+  .hc-case .qgrid blockquote,
+  .hc-case .rec p,
+  .hc-case .rec .sub li,
+  .hc-case .badir p,
+  .hc-case .badir-note,
+  .hc-case .badir-note li,
+  .hc-case .srow p,
+  .hc-case .quote-block p,
+  .hc-case .rcard p,
+  .hc-case .skillpill,
+  .hc-case .lede--proto,
+  .hc-case .protobox .meta,
+  .hc-case .protobox .meta .proto-external-link,
+  .hc-lb-head .t,
+  .hc-lb-head h4 {
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  /* Serif card headers — one size, larger than body
+     (more specific than case-hero-visual.css body-size reset) */
+  .hc-case .card > h4,
+  .hc-case .ev > h4,
+  .hc-case .badir .meta h4,
+  .hc-case .rcard > h4,
+  .hc-case .overview-visual-title,
+  .hc-case .insight-depth-title {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  /* Outcomes cards: chip above text so copy can use full width */
+  .hc-case .srow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hc-case .srow .chip {
+    margin-top: 0;
+  }
+
+  .hc-case .srow p {
+    width: 100%;
+  }
+
+  /* Screen / mockup section labels */
+  .hc-case .hc-visual-anchor {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  /* Skills: full-width stack so short/long pills align */
+  .hc-case .skills {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .hc-case .skillpill {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 14px;
+    padding: 12px 16px;
+  }
+
+  /* Match Lumen Chart scope-honesty note */
+  .hc-case .integrity,
+  .hc-case .case-hero-copy .integrity {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

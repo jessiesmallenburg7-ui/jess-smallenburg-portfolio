@@ -317,9 +317,8 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .evgrid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
 .pc-case .ev{
   border-radius:var(--radius); padding:18px 17px; border:1px solid var(--line);
-  background:#fff; box-shadow:var(--shadow); min-height:150px; transition:transform .16s ease;
+  background:#fff; box-shadow:var(--shadow); min-height:150px;
 }
-.pc-case .ev:hover{transform:translateY(-2px)}
 .pc-case .ev .code{
   display:inline-flex; align-items:center; justify-content:center; min-width:26px; height:26px;
   border-radius:7px; font-size:12.5px; font-weight:750; padding:0 7px; margin-bottom:11px;
@@ -356,9 +355,8 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .personas{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
 .pc-case .pc-persona{
   border-radius:18px; overflow:hidden; border:1px solid var(--line); background:#fff;
-  box-shadow:var(--shadow); transition:transform .16s ease;
+  box-shadow:var(--shadow);
 }
-.pc-case .pc-persona:hover{transform:translateY(-3px)}
 .pc-case .pc-persona .top{padding:22px 22px 18px; color:#fff}
 .pc-case .pc-persona.p1 .top{background:linear-gradient(140deg,#C24875,#8E2F55)}
 .pc-case .pc-persona.p2 .top{background:linear-gradient(140deg,#1F8C82,#125F58)}
@@ -450,7 +448,7 @@ html[data-theme="light"] .case-version-banner-text {
   gap:2px;
 }
 .pc-case .pc-journey-persona-copy strong{
-  font-size:18px;
+  font-size:21px;
   font-family:"Cormorant", Georgia, serif;
   font-weight:650;
   letter-spacing:-.02em;
@@ -717,6 +715,10 @@ html[data-theme="light"] .case-version-banner-text {
     font-size: 17px;
   }
 
+  .pc-case .proto-kicker {
+    font-size: 16px;
+  }
+
   .pc-case .tagpill,
   .pc-case .pill,
   .pc-case table.mtable th {
@@ -783,7 +785,7 @@ html[data-theme="light"] .case-version-banner-text {
   }
 }
 
-.pc-case .study-meta{font-size:var(--site-text-secondary); color:var(--muted); margin-top:18px}
+.pc-case .study-meta{font-size:var(--site-text-secondary); color:var(--ink-2); margin-top:18px}
 .pc-case .proto-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
 .pc-case .proto-card{
   background:#fff;
@@ -798,7 +800,7 @@ html[data-theme="light"] .case-version-banner-text {
 }
 .pc-case .proto-kicker{
   margin:0 0 8px;
-  font-size:11.5px;
+  font-size:13px;
   font-weight:700;
   letter-spacing:.1em;
   text-transform:uppercase;

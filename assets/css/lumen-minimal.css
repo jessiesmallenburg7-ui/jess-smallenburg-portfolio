@@ -255,6 +255,14 @@ html[data-theme="light"] .lumen-version-banner-text {
     linear-gradient(180deg, var(--lm-tint) 0%, var(--lm-tint) 48%, #e8efee 82%, var(--lm-tint-2) 100%);
 }
 
+.lm-case .lm-persona-note {
+  margin: 10px 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--lm-muted, #64748b);
+}
+
 .lm-case .lm-flow-step {
   margin-top: 52px;
   padding: 44px 0 0;
@@ -377,6 +385,38 @@ html[data-theme="light"] .lumen-version-banner-text {
   margin: 0 0 22px;
 }
 
+@media (max-width: 767.98px) {
+  .lm-case .case-hero-lead {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lm-case .tagpill {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 3px;
+    text-align: center;
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 14px;
+    line-height: 1.35;
+  }
+
+  .lm-case .tagpill-a,
+  .lm-case .tagpill-b {
+    display: block;
+  }
+
+  .lm-case .case-hero-lead h1 {
+    text-align: left;
+    align-self: stretch;
+  }
+}
+
 .lm-case .case-hero-lead .tagpill + h1 {
   margin-top: 0;
 }
@@ -460,28 +500,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   }
 }
 
-@media (max-width: 767.98px) {
-  .lm-case .eyebrow {
-    font-size: 17px;
-  }
-
-  .lm-case .sec-head--sub .eyebrow {
-    font-size: 16px;
-  }
-
-  .lm-case .lm-hero .case-hero-copy .meta-row {
-    font-size: 19px;
-  }
-
-  .lm-case .lm-hero .case-hero-copy .integrity {
-    font-size: 18px;
-    line-height: 1.55;
-  }
-
-  .lm-case .lm-hero .case-hero-actions .btn {
-    font-size: 19px;
-  }
-}
+/* Mobile type system defined at end of file */
 
 .lm-case .meta-row {
   display: flex;
@@ -681,19 +700,38 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 @media (max-width: 860px) {
   .lm-case .hmw {
-    padding: 32px 26px;
+    padding: 28px 18px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .lm-case .hmw .q {
+    font-size: 26px;
+    line-height: 1.35;
   }
 
   .lm-case .hmw-why {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+
+  .lm-case .hmw-why div {
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 14px 12px;
   }
 }
 
 /* Process phases */
 .lm-case .phases {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 12px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
 }
 
 .lm-case .phase {
@@ -704,6 +742,8 @@ html[data-theme="light"] .lumen-version-banner-text {
   text-align: left;
   box-shadow: var(--lm-shadow);
   color: var(--lm-ink);
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .lm-case .phase .n {
@@ -758,13 +798,28 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 @media (max-width: 960px) {
   .lm-case .phases {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 560px) {
+  .lm-case #process .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow-x: clip;
+  }
+
   .lm-case .phases {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    justify-content: center;
+    justify-items: stretch;
+  }
+
+  .lm-case .phase {
+    width: 100%;
+    padding: 16px 12px;
   }
 }
 
@@ -1048,9 +1103,9 @@ html[data-theme="light"] .lumen-version-banner-text {
   margin: 0;
   padding: 0 17px;
   flex: 1;
-  font-size: 14.5px;
+  font-size: 18px;
   color: var(--lm-ink-2);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .lm-case .ev.ev--theme .ev-theme-foot {
@@ -1083,7 +1138,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 @media (max-width: 960px) {
   .lm-case .evgrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lm-case .evgrid:not(.evgrid--heuristics):not(.evgrid--themes) .ev:last-child {
@@ -1093,31 +1148,81 @@ html[data-theme="light"] .lumen-version-banner-text {
   }
 
   .lm-case .evgrid--heuristics {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* Themes: keep 2-up on tablet only */
   .lm-case .evgrid--themes {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lm-case .evgrid--themes .ev {
+  .lm-case .evgrid--themes .ev,
+  .lm-case .evgrid--themes .ev:nth-child(4),
+  .lm-case .evgrid--themes .ev:nth-child(5) {
     grid-column: auto;
+    width: auto;
+    max-width: none;
   }
 
   .lm-case .evgrid--themes .ev:last-child {
     grid-column: 1 / -1;
-    width: calc(50% - 7px);
-    justify-self: center;
+    width: auto;
+    max-width: none;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Themes: single column on phone — avoids crushed evidence footers */
+  .lm-case .evgrid--themes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .lm-case .evgrid--themes .ev,
+  .lm-case .evgrid--themes .ev:nth-child(4),
+  .lm-case .evgrid--themes .ev:nth-child(5),
+  .lm-case .evgrid--themes .ev:last-child {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
+    min-height: 0;
+  }
+
+  .lm-case .ev.ev--theme .ev-theme-foot {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6px 12px;
+  }
+
+  .lm-case .ev.ev--theme .cnt {
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: manual;
+    line-height: 1.45;
+  }
+
+  .lm-case .ev.ev--theme h4 {
+    font-size: 18px;
+  }
+
+  .lm-case .ev.ev--theme .ev-theme-desc {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 520px) {
   .lm-case .evgrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
-  .lm-case .evgrid--themes .ev:last-child {
+  .lm-case .evgrid:not(.evgrid--heuristics):not(.evgrid--themes) .ev:last-child {
     width: auto;
+    max-width: none;
+    grid-column: 1 / -1;
     justify-self: stretch;
   }
 }
@@ -1176,13 +1281,13 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-case .pc .name {
   font-family: "Cormorant", Georgia, serif;
-  font-size: var(--site-text-display);
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
 .lm-case .pc .role {
-  font-size: var(--site-text-meta);
+  font-size: 15px;
   opacity: 0.86;
   margin-top: 4px;
   line-height: 1.45;
@@ -1197,7 +1302,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-case .pc blockquote {
   margin: 0 0 18px;
-  font-size: var(--site-text-secondary);
+  font-size: 18px;
   line-height: 1.55;
   color: var(--lm-ink-2);
   font-style: italic;
@@ -1208,7 +1313,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-  font-size: var(--site-text-secondary);
+  font-size: 15px;
   color: var(--lm-ink-2);
 }
 
@@ -1255,6 +1360,34 @@ html[data-theme="light"] .lumen-version-banner-text {
 @media (max-width: 900px) {
   .lm-case .personas {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Front persona cards — matched to lightbox body type (18px) */
+@media (max-width: 767.98px) {
+  .lm-case .pc .name {
+    font-size: 25px;
+  }
+
+  .lm-case .pc .role {
+    font-size: 15.5px;
+  }
+
+  .lm-case .pc .avatar {
+    font-size: 15px;
+  }
+
+  .lm-case .pc blockquote {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .lm-case .pc .bar {
+    font-size: 15.5px;
+  }
+
+  .lm-case .pc .bar .val {
+    font-size: 14.5px;
   }
 }
 
@@ -1394,7 +1527,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-case .artifact-step-label {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1736,13 +1869,16 @@ html[data-theme="light"] .lumen-version-banner-text {
     font-size: var(--site-text-body);
   }
 
-  .lm-case #revision .sev-summary-title,
+  .lm-case #revision .sev-summary-title {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
   .lm-case #revision .ev h4,
   .lm-case #revision .card h4 {
     font-size: 19px;
   }
 
-  .lm-case #revision .ev .code--heuristic,
   .lm-case #revision .ev .cnt,
   .lm-case #revision .card .tagline,
   .lm-case #revision .sevrow {
@@ -1751,6 +1887,21 @@ html[data-theme="light"] .lumen-version-banner-text {
 
   .lm-case #revision .btn-rev-doc {
     font-size: 16px;
+  }
+
+  /* Multi-line heuristic titles — highlight must cover every wrapped line */
+  .lm-case #revision .ev .code.code--heuristic,
+  .lm-case .evgrid--heuristics .ev .code.code--heuristic {
+    display: inline;
+    height: auto;
+    min-height: 0;
+    max-width: none;
+    white-space: normal;
+    padding: 0.2em 0.55em;
+    border-radius: 8px;
+    line-height: 1.45;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 }
 
@@ -1901,14 +2052,6 @@ html[data-theme="light"] .lumen-version-banner-text {
   .lm-case #refine .iter-head h4 {
     font-size: 20px;
   }
-
-  .lm-case #refine .ba h5 {
-    font-size: 13px;
-  }
-
-  .lm-case #refine .ba p {
-    font-size: 17px;
-  }
 }
 
 /* Decisions */
@@ -2025,6 +2168,19 @@ html[data-theme="light"] .lumen-version-banner-text {
 @media (max-width: 800px) {
   .lm-case .refl {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lm-case .refl .r .n,
+  .lm-case .refl .r p {
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  .lm-case .refl .r h4 {
+    font-size: 20.5px;
+    line-height: 1.55;
   }
 }
 
@@ -2220,7 +2376,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .lm-lb-bar .t {
   font-weight: 650;
-  font-size: 15.5px;
+  font-size: 17px;
 }
 
 .lm-lb-tools {
@@ -2285,7 +2441,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 }
 
 .lm-lb-body h4 {
-  font-size: 16px;
+  font-size: 17.5px;
   margin: 20px 0 8px;
 }
 
@@ -2299,13 +2455,13 @@ html[data-theme="light"] .lumen-version-banner-text {
 }
 
 .lm-lb-body li {
-  font-size: 14.5px;
+  font-size: 16px;
   color: var(--lm-ink-2);
   margin-bottom: 7px;
 }
 
 .lm-lb-body p {
-  font-size: 14.5px;
+  font-size: 16px;
   color: var(--lm-ink-2);
 }
 
@@ -2317,7 +2473,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   border-radius: 0 10px 10px 0;
   font-style: italic;
   color: var(--lm-ink-2);
-  font-size: 14.5px;
+  font-size: 16px;
 }
 
 .lm-lb-body .pill {
@@ -2336,7 +2492,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   border-left: 3px solid var(--lm-green);
   padding: 12px 16px;
   border-radius: 0 10px 10px 0;
-  font-size: 14px;
+  font-size: 15.5px;
   color: #1f5c42;
   margin-bottom: 16px;
 }
@@ -2428,7 +2584,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   padding: 0;
   border: 0;
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   letter-spacing: 0.01em;
   text-transform: none;
@@ -2449,7 +2605,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   border-radius: 0;
   background: transparent;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.9rem, 2.6vw, 2.2rem);
+  font-size: clamp(2rem, 2.8vw, 2.35rem);
   font-weight: 600;
   line-height: 1.36;
   font-style: italic;
@@ -2482,7 +2638,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 .persona-panel h4 {
   margin: 0 0 0.6rem;
   font-family: "Lato", sans-serif;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -2495,8 +2651,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .persona-panel p {
   margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.55;
   color: var(--lm-ink-2);
 }
 
@@ -2507,7 +2663,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .persona-panel li {
   margin-bottom: 0.45rem;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.55;
   color: var(--lm-ink-2);
 }
@@ -2524,7 +2680,7 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .persona-panel .pill {
   display: inline-block;
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 650;
   padding: 6px 13px;
   border-radius: 99px;
@@ -2550,7 +2706,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   margin: 0.35rem 0 0;
   padding: 12px 14px;
   font-family: "Lato", sans-serif;
-  font-size: 14.5px;
+  font-size: 18px;
   font-style: italic;
   line-height: 1.55;
   color: var(--lm-ink-2);
@@ -2567,7 +2723,7 @@ html[data-theme="light"] .lumen-version-banner-text {
   border-left: 4px solid var(--lm-green);
   padding: 1rem 1.15rem;
   border-radius: 12px;
-  font-size: 14.5px;
+  font-size: 18px;
   line-height: 1.55;
   color: #1f5c42;
 }
@@ -2576,10 +2732,49 @@ html[data-theme="light"] .lumen-version-banner-text {
   margin: 0;
   padding: 0.85rem 0.25rem 0;
   border-top: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-style: italic;
   text-align: center;
   color: var(--lm-muted);
+}
+
+@media (max-width: 640px) {
+  .persona-frame .lm-lb-bar .t {
+    font-size: 19px;
+  }
+
+  .persona-meta {
+    font-size: 19px;
+  }
+
+  .persona-hero .persona-quote {
+    font-size: 1.85rem;
+  }
+
+  .persona-panel h4 {
+    font-size: 16px;
+  }
+
+  .persona-panel p,
+  .persona-panel li {
+    font-size: 19px;
+  }
+
+  .persona-panel .pill {
+    font-size: 16px;
+  }
+
+  .persona-panel--voices blockquote {
+    font-size: 19px;
+  }
+
+  .lm-lb-body.persona .resolve {
+    font-size: 19px;
+  }
+
+  .lm-lb-body.persona .persona-disclaimer {
+    font-size: 16px;
+  }
 }
 
 /* Theme lightbox detail — subtle editorial layout */
@@ -2692,8 +2887,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .theme-lead {
   margin: 0;
-  font-size: 16.5px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.55;
   color: var(--lm-ink-2);
 }
 
@@ -2721,8 +2916,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .theme-panel p {
   margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.55;
   color: var(--lm-ink-2);
 }
 
@@ -2733,8 +2928,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .theme-role-list li {
   margin-bottom: 0.6rem;
-  font-size: 16px;
-  line-height: 1.58;
+  font-size: 18px;
+  line-height: 1.55;
   color: var(--lm-ink-2);
 }
 
@@ -2754,10 +2949,10 @@ html[data-theme="light"] .lumen-version-banner-text {
   border-radius: 0;
   background: transparent;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(1.45rem, 2.2vw, 1.7rem);
+  font-size: 19px;
   font-weight: 600;
   font-style: italic;
-  line-height: 1.48;
+  line-height: 1.55;
   color: var(--lm-ink);
 }
 
@@ -2782,8 +2977,8 @@ html[data-theme="light"] .lumen-version-banner-text {
 
 .theme-resolve p {
   margin: 0;
-  font-size: 16px;
-  line-height: 1.58;
+  font-size: 18px;
+  line-height: 1.55;
   color: var(--lm-ink-2);
 }
 
@@ -2933,8 +3128,223 @@ html[data-theme="light"] .lumen-version-banner-text {
   text-decoration-color: rgba(29, 78, 216, 0.55);
 }
 
+.lm-about-collapse {
+  margin-top: 1rem;
+}
+
+.lm-about-body {
+  margin-top: 1.25rem;
+}
+
+.lm-about-body h3 {
+  margin: 0 0 0.65rem;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--lm-ink);
+}
+
+.lm-about-body h3 + p {
+  margin-top: 0;
+}
+
+.lm-about-body h3:not(:first-child) {
+  margin-top: 1.35rem;
+}
+
+.lm-about-body p {
+  margin: 0 0 0.85rem;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--lm-ink-2);
+}
+
+.lm-about-body p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 640px) {
   .lm-lb-body {
     padding: 20px;
+  }
+}
+
+/* ============================================================
+   Mobile type system — Lumen case only
+   Main copy: 19px · Headers: larger · Footnotes/meta: smaller
+   ============================================================ */
+@media (max-width: 767.98px) {
+  .lm-case {
+    --site-text-body: 19px;
+    --site-text-secondary: 19px;
+    --site-text-meta: 16px;
+    --site-text-label: 15px;
+    --site-text-display: 24px;
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  /* —— Headers (keep larger) —— */
+  .lm-case h1 {
+    font-size: clamp(32px, 8vw, 40px);
+  }
+
+  .lm-case h2 {
+    font-size: clamp(28px, 7vw, 34px);
+  }
+
+  .lm-case h3,
+  .lm-case .sec-head--sub h2,
+  .lm-case .sec-head--sub h3 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .lm-case .hmw .q {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .lm-case .pc .name {
+    font-size: 24px;
+  }
+
+  .lm-case .stat .num {
+    font-size: 32px;
+  }
+
+  .lm-case .persona-hero .persona-quote {
+    font-size: 1.85rem;
+  }
+
+  .lm-case .theme-title,
+  .theme-title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  /* —— Main copy (19px) —— */
+  .lm-case .lede,
+  .lm-case .sec-head--sub .lede,
+  .lm-case .lm-flow-step--themes .sec-head--sub .lede,
+  .lm-case .meta-row,
+  .lm-case .integrity,
+  .lm-case .note,
+  .lm-case .hmw-why div,
+  .lm-case .phase .t,
+  .lm-case .phase .d,
+  .lm-case .stat .lbl,
+  .lm-case .ev:not(.ev--theme) h4,
+  .lm-case .ev:not(.ev--theme) p,
+  .lm-case .ev.ev--theme h4,
+  .lm-case .ev.ev--theme .ev-theme-desc,
+  .lm-case .pc .role,
+  .lm-case .pc blockquote,
+  .lm-case .pc .bar,
+  .lm-case .card h4,
+  .lm-case .card p,
+  .lm-case .dec .d,
+  .lm-case .dec .d h4,
+  .lm-case .dec .d p,
+  .lm-case .lm-reflect-close,
+  .lm-case .artifact-band-title,
+  .lm-case .artifact-band-note,
+  .lm-case .artifact-band-foot,
+  .lm-case .sev-summary-body,
+  .lm-case .refl p,
+  .lm-case .fig .ttl,
+  .lm-case .btn,
+  .lm-case .lm-hero .case-hero-actions .btn,
+  .lm-case .lm-references,
+  .lm-case .lm-references li,
+  .lm-case .lm-about-body p,
+  .lm-case .lm-references-summary-label {
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  /* Lightbox body copy — 19px (also outside nested .lm-case paths) */
+  .lm-lb .lm-lb-bar .t,
+  .lm-lb-body,
+  .lm-lb-body h4,
+  .lm-lb-body p,
+  .lm-lb-body li,
+  .lm-lb-body blockquote,
+  .lm-lb-body .resolve,
+  .lm-lb-body.persona .resolve,
+  .persona-meta,
+  .persona-panel p,
+  .persona-panel li,
+  .persona-panel--voices blockquote,
+  .theme-lead,
+  .theme-panel p,
+  .theme-role-list li,
+  .theme-resolve p {
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  .lm-lb-body .theme-quote {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .lm-case .persona-panel .pill,
+  .persona-panel .pill {
+    font-size: 16px;
+  }
+
+  /* —— Footnotes / meta / chrome (smaller than body, still readable) —— */
+  .lm-case .eyebrow,
+  .lm-case .sec-head--sub .eyebrow,
+  .lm-case .lm-sub-eyebrow,
+  .lm-case .hmw .k,
+  .lm-case .phase .n,
+  .lm-case .ev .cnt,
+  .lm-case .ev.ev--theme .cnt,
+  .lm-case .ev-theme-foot-label,
+  .lm-case .ev-role-tag,
+  .lm-case .fig .who,
+  .lm-case .pc .bar .val,
+  .lm-case .persona-panel h4,
+  .lm-case .persona-disclaimer,
+  .lm-case .lm-lb-body.persona .persona-disclaimer,
+  .lm-case .theme-kicker,
+  .lm-case .theme-panel h4,
+  .lm-case .theme-resolve-label,
+  .lm-case .theme-evidence-label,
+  .lm-case .theme-evidence-codes,
+  .lm-case .lm-references-summary-meta,
+  .lm-case .lm-about-body h3,
+  .lm-case .code,
+  .lm-case .ev .code {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .lm-case .ev .code--heuristic {
+    font-size: 14px;
+  }
+
+  .lm-case .artifact-band-kicker {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  /* Match key-decision body size on mobile */
+  .lm-case #refine .ba h5,
+  .lm-case #refine .ba p,
+  .lm-case .launch p,
+  .lm-case .refl .r .n,
+  .lm-case .refl .r p {
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  .lm-case .refl .r h4 {
+    font-size: 20.5px;
+    line-height: 1.55;
   }
 }
