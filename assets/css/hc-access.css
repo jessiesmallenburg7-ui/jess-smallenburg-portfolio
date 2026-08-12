@@ -36,7 +36,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 28.5rem;
+  max-width: 34rem;
   padding: 2rem 1.65rem 1.85rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1.35rem;
@@ -64,7 +64,7 @@
   display: inline-block;
   margin-bottom: 1.35rem;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
@@ -76,12 +76,12 @@
 }
 
 .hc-access-mark {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  margin-bottom: 1.1rem;
+  margin: 0 auto 1.1rem;
   border-radius: 0.9rem;
   border: 1px solid rgba(95, 211, 224, 0.28);
   background: rgba(95, 211, 224, 0.08);
@@ -101,17 +101,18 @@
 .hc-access-title {
   margin: 0;
   font-family: Cormorant, serif;
-  font-size: clamp(2.1rem, 5vw, 2.85rem);
+  font-size: clamp(1.85rem, 4.8vw, 2.65rem);
   font-weight: 600;
   line-height: 1.12;
   color: #fff;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .hc-access-lead {
   margin: 0.85rem 0 0;
   font-family: "Lato", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.35rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.62);
 }
@@ -131,7 +132,7 @@
 
 .hc-access-label {
   font-family: "Lato", sans-serif;
-  font-size: 0.92rem;
+  font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.88);
@@ -144,7 +145,7 @@
   border-radius: 0.85rem;
   background: rgba(255, 255, 255, 0.04);
   font-family: "Lato", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: #fff;
   outline: none;
   transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
@@ -180,7 +181,7 @@
   border: 1px solid rgba(248, 113, 113, 0.35);
   background: rgba(248, 113, 113, 0.08);
   font-family: "Lato", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   color: #fecaca;
 }
 
@@ -224,8 +225,8 @@
   padding-top: 1.15rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   font-family: "Lato", sans-serif;
-  font-size: 0.84rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.55;
   color: rgba(255, 255, 255, 0.38);
 }
 
@@ -334,19 +335,22 @@ html[data-theme="light"] .hc-access-error {
 /* Mobile type floor — keep readable copy ≥ 16px */
 @media (max-width: 767.98px) {
   .hc-access-back {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .hc-access-lead {
+    font-size: 1.4rem;
   }
 
   .hc-access-label {
-    font-size: 15px;
+    font-size: 1.2rem;
   }
 
-  .hc-access-hint,
   .hc-access-error {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   .hc-access-footnote {
-    font-size: 15px;
+    font-size: 1.25rem;
   }
 }

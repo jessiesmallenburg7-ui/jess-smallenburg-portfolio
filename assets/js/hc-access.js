@@ -1,14 +1,10 @@
 /**
  * Healthcare consulting access gate.
- *
- * Auth is OFF for now (preview). Flip AUTH_ENABLED to true and set
- * EXPECTED_PASSWORD (or replace with a real auth check) before publish.
+ * Client-side password check for invited reviewers (sessionStorage unlock).
  */
 (function () {
-  const AUTH_ENABLED = false;
-  // Placeholder only — replace before enabling auth. Do not commit a real secret
-  // to a public repo; prefer a server-side or edge check when you publish.
-  const EXPECTED_PASSWORD = "";
+  const AUTH_ENABLED = true;
+  const EXPECTED_PASSWORD = "findability-first-99";
 
   const form = document.getElementById("hc-access-form");
   if (!form) return;
@@ -36,13 +32,12 @@
     event.preventDefault();
     showError("");
 
-    // Preview: skip password check and open the case study.
     if (!AUTH_ENABLED) {
       goToCaseStudy();
       return;
     }
 
-    const entered = (passwordInput && passwordInput.value) || "";
+    const entered = ((passwordInput && passwordInput.value) || "").trim();
     if (!EXPECTED_PASSWORD || entered !== EXPECTED_PASSWORD) {
       showError("That password is incorrect. Please try again or request access.");
       if (passwordInput) {
