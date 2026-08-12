@@ -495,7 +495,7 @@ html[data-theme="light"] .case-version-banner-text {
   border-radius:8px;
   background:var(--amber-soft);
   color:var(--amber-dk);
-  font-size:12.5px;
+  font-size:15px;
   font-weight:750;
 }
 .hc-case .insight-depth-copy{
@@ -529,7 +529,7 @@ html[data-theme="light"] .case-version-banner-text {
   border-left-color:var(--amber-line);
   background:var(--amber-soft);
 }
-.hc-case .ev .code{display:inline-flex; align-items:center; justify-content:center; min-width:26px; height:26px; border-radius:7px; font-size:12.5px; font-weight:750; padding:0 7px; margin-bottom:11px}
+.hc-case .ev .code{display:inline-flex; align-items:center; justify-content:center; min-width:30px; height:30px; border-radius:7px; font-size:15px; font-weight:750; padding:0 8px; margin-bottom:11px}
 .hc-case .ev h4{font-size:var(--site-text-body); margin-bottom:7px; line-height:1.3}
 .hc-case .ev p{margin:0; font-size:var(--site-text-secondary); color:var(--ink-2); line-height:1.55}
 .hc-case .c-blue{background:var(--blue-soft); color:var(--blue-dk)}
@@ -578,7 +578,7 @@ html[data-theme="light"] .case-version-banner-text {
 .hc-case .spot-num .lbl{font-size:var(--site-text-secondary); margin:0; opacity:.96; line-height:1.55}
 .hc-case .spot-num .spot-19{font-size:56px; font-weight:800; letter-spacing:-.03em; line-height:1; margin-bottom:10px}
 .hc-case .spot-quotes{padding:30px 32px}
-.hc-case .spot-quotes h4{font-size:var(--site-text-label); font-weight:750; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-2); margin-bottom:18px}
+.hc-case .spot-quotes h4{font-size:var(--site-text-body); font-weight:750; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-2); margin-bottom:18px}
 .hc-case .qgrid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
 .hc-case .qgrid blockquote{margin:0; font-size:var(--site-text-secondary); line-height:1.55; color:var(--ink-2); font-style:italic; background:var(--tint2,var(--tint)); border-left:3px solid var(--amber-line); padding:14px 16px; border-radius:0 8px 8px 0}
 @media(max-width:860px){

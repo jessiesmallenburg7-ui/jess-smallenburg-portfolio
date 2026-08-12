@@ -612,6 +612,10 @@ html[data-theme="light"] .photo-gallery-empty p {
     line-height: 1.45;
   }
 
+  .photo-masonry-caption {
+    font-size: 15px;
+  }
+
   .photo-hub-card-title {
     font-size: 2.2rem;
   }
