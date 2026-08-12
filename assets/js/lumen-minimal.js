@@ -91,11 +91,16 @@
         if (innerImg) innerImg.className = 'lm-lb-inner';
         body.className = 'lm-lb-body img';
         title.textContent = el.getAttribute('data-title') || 'View';
+        var thumb = el.querySelector('img');
+        var imgAlt =
+          (thumb && thumb.getAttribute('alt')) ||
+          el.getAttribute('data-title') ||
+          '';
         body.innerHTML =
           '<div class="lm-lb-img-stage"><img src="' +
           el.getAttribute('data-src') +
           '" alt="' +
-          (el.getAttribute('data-title') || '') +
+          imgAlt.replace(/"/g, '&quot;') +
           '"></div>';
         setZoomVisible(true);
         open();

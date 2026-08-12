@@ -33,7 +33,9 @@
     root.innerHTML = photos
       .map((photo, i) => {
         const src = basePath + photo.file;
-        const caption = photo.caption ? `<figcaption class="photo-masonry-caption">${esc(photo.caption)}</figcaption>` : "";
+        const caption = photo.caption
+          ? `<figcaption class="photo-masonry-caption">${esc(photo.caption)}</figcaption>`
+          : "";
         return `
           <figure class="photo-masonry-item">
             <button type="button" class="photo-masonry-trigger" data-index="${i}" aria-label="View ${esc(photo.alt || photo.caption || "photograph")} full size">

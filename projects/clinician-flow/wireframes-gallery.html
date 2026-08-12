@@ -28,7 +28,7 @@
       <div onclick="openModal('laura-dashboard', 'Smart Daily Dashboard', 'Dr. Laura Mitchell')"
            class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
         <div class="bg-zinc-100 overflow-hidden">
-          <img src="screenshots/laura-dashboard.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Smart Daily Dashboard">
+          <img src="screenshots/laura-dashboard.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Low-fidelity wireframe of the smart daily dashboard for Dr. Laura Mitchell">
         </div>
         <div class="p-5">
           <div class="text-xs text-zinc-500">Dr. Laura Mitchell</div>
@@ -41,7 +41,7 @@
       <div onclick="openModal('kevin-queue', 'Tablet Patient Queue', 'Kevin Hartley, RN')"
            class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
         <div class="bg-zinc-100 overflow-hidden">
-          <img src="screenshots/kevin-queue.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Tablet Patient Queue">
+          <img src="screenshots/kevin-queue.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Low-fidelity wireframe of the tablet patient queue for Kevin Hartley, RN">
         </div>
         <div class="p-5">
           <div class="text-xs text-zinc-500">Kevin Hartley, RN</div>
@@ -54,7 +54,7 @@
       <div onclick="openModal('diane-portal', 'Caregiver Portal Home', 'Diane Santos')"
            class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
         <div class="bg-zinc-100 overflow-hidden">
-          <img src="screenshots/diane-portal.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Caregiver Portal Home">
+          <img src="screenshots/diane-portal.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Low-fidelity wireframe of the caregiver portal home for Diane Santos">
         </div>
         <div class="p-5">
           <div class="text-xs text-zinc-500">Diane Santos</div>
@@ -67,7 +67,7 @@
       <div onclick="openModal('laura-soap', 'SOAP Note Editor + AI', 'Dr. Laura Mitchell')"
            class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
         <div class="bg-zinc-100 overflow-hidden">
-          <img src="screenshots/laura-soap.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="SOAP Note Editor">
+          <img src="screenshots/laura-soap.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Low-fidelity wireframe of the SOAP note editor with AI diff highlights">
         </div>
         <div class="p-5">
           <div class="text-xs text-zinc-500">Dr. Laura Mitchell</div>
@@ -80,7 +80,7 @@
       <div onclick="openModal('kevin-handoff', 'Shift Handoff (SBAR)', 'Kevin Hartley, RN')"
            class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
         <div class="bg-zinc-100 overflow-hidden">
-          <img src="screenshots/kevin-handoff.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Shift Handoff">
+          <img src="screenshots/kevin-handoff.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Low-fidelity wireframe of the SBAR shift handoff screen">
         </div>
         <div class="p-5">
           <div class="text-xs text-zinc-500">Kevin Hartley, RN</div>
@@ -93,7 +93,7 @@
       <div onclick="openModal('diane-meds', 'Medication Tracker', 'Diane Santos')"
            class="group bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer">
         <div class="bg-zinc-100 overflow-hidden">
-          <img src="screenshots/diane-meds.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Medication Tracker">
+          <img src="screenshots/diane-meds.svg" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform" alt="Low-fidelity wireframe of the caregiver medication tracker">
         </div>
         <div class="p-5">
           <div class="text-xs text-zinc-500">Diane Santos</div>
@@ -122,7 +122,7 @@
 
       <!-- Image -->
       <div class="p-6 bg-zinc-100 flex justify-center">
-        <img id="modal-image" class="w-full max-h-[80vh] object-contain rounded-xl shadow" alt="Wireframe">
+        <img id="modal-image" class="w-full max-h-[80vh] object-contain rounded-xl shadow" alt="Low-fidelity wireframe">
       </div>
     </div>
   </div>
@@ -135,6 +135,7 @@
       const subtitleEl = document.getElementById('modal-subtitle');
 
       img.src = `screenshots/${id}.svg`;
+      img.alt = `Low-fidelity wireframe: ${title}`;
       titleEl.textContent = title;
       subtitleEl.textContent = subtitle;
 

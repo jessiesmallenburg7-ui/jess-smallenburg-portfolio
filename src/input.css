@@ -97,7 +97,7 @@
 
   /* Eyebrow / section label — uppercase tracked sky accent */
   .eyebrow {
-    @apply font-sans text-base font-semibold uppercase tracking-[0.18em] text-sky-accent;
+    @apply font-sans text-[19px] font-semibold uppercase tracking-[0.18em] text-sky-accent;
   }
 
   /* Large page heading (Cormorant) */
@@ -598,6 +598,10 @@
 
   .project-list-card__tags {
     margin-top: 0;
+  }
+
+  .project-list-card__tags li {
+    padding: 5px 13px; /* +1px vs shared work-card-tags (4px 12px) */
   }
 
   .project-list-card__caption {
@@ -2556,7 +2560,7 @@
   }
 
   .eyebrow {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .status-pill {

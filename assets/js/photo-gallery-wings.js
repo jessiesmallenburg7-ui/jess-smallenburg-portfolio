@@ -15,63 +15,58 @@
  */
 window.PHOTO_GALLERY_WINGS = [
   {
-    file: "screech-owl-2.jpg",
-    alt: "Screech owl study",
-    caption: "Screech owl",
+    file: "screech-owl-nesting-in-tree.jpg",
+    alt: "Eastern Screech-Owl peeking from a nest cavity in a weathered tree trunk",
+    caption: "Screech owl nesting in tree",
   },
   {
     file: "barred-owl-2.jpg",
-    alt: "Barred owl perched and looking toward the camera",
+    alt: "Barred Owl perched among branches and looking toward the camera",
     caption: "Barred owl",
   },
   {
     file: "great-horned-owl.jpg",
-    alt: "Great horned owl",
+    alt: "Great Horned Owl with yellow eyes and ear tufts perched on a pine branch in winter",
     caption: "Great horned owl",
   },
   {
     file: "snowy-owl.jpg",
-    alt: "Snowy owl",
+    alt: "Snowy Owl with white and dark-spotted plumage and yellow eyes perched on a wooden post",
     caption: "Snowy owl",
   },
   {
     file: "barred-owl.jpg",
-    alt: "Barred owl among tree branches",
+    alt: "Barred Owl nestled among tree branches with brown-and-white barred feathers",
     caption: "Barred owl II",
   },
   {
-    file: "screech-owl.jpg",
-    alt: "Screech owl",
-    caption: "Screech owl II",
-  },
-  {
     file: "cardinals.jpg",
-    alt: "Cardinals",
+    alt: "Two bright red male Northern Cardinals on bare winter branches during a light snowfall",
     caption: "Cardinals",
   },
   {
     file: "great-horned-owl-2.jpg",
-    alt: "Great horned owl study",
+    alt: "Close view of a Great Horned Owl looking forward from a mossy tree trunk",
     caption: "Great horned owl II",
   },
   {
     file: "barred-owl-zoom.jpg",
-    alt: "Close study of a barred owl",
+    alt: "Close portrait of a Barred Owl in evergreen needles with dark eyes and barred plumage",
     caption: "Barred owl detail",
   },
   {
     file: "snowy-owl-2.jpg",
-    alt: "Snowy owl study",
+    alt: "Snowy Owl with spotted wings on a fence post, looking back over its shoulder",
     caption: "Snowy owl II",
   },
   {
     file: "swallowtail.jpg",
-    alt: "Eastern Tiger Swallowtail butterfly, dark morph",
+    alt: "Dark morph Eastern Tiger Swallowtail with black wings and pale yellow markings on a flower",
     caption: "Eastern Tiger Swallowtail (dark morph)",
   },
   {
     file: "eastern-tiger-swallowtail-cranbrook.jpg",
-    alt: "Eastern Tiger Swallowtail butterfly photographed at Cranbrook",
+    alt: "Yellow Eastern Tiger Swallowtail with black tiger stripes on bright orange flowers at Cranbrook",
     caption: "Eastern Tiger Swallowtail — Cranbrook",
   },
   {
@@ -81,7 +76,7 @@ window.PHOTO_GALLERY_WINGS = [
   },
   {
     file: "swallowtail-butterfly.jpg",
-    alt: "Eastern Tiger Swallowtail butterfly, dark morph",
+    alt: "Dark morph Eastern Tiger Swallowtail resting with wings partly open on foliage",
     caption: "Eastern Tiger Swallowtail (dark morph) II",
   },
   {
@@ -91,7 +86,7 @@ window.PHOTO_GALLERY_WINGS = [
   },
   {
     file: "IMG_7174e.jpg",
-    alt: "Eastern Tiger Swallowtail butterfly photographed in the Cayman Islands",
+    alt: "Yellow Eastern Tiger Swallowtail feeding on red-orange tubular flowers in the Cayman Islands",
     caption: "Eastern Tiger Swallowtail - Cayman Islands",
   },
 ];

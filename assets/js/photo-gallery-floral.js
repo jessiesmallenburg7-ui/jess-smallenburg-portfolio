@@ -35,6 +35,11 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Cranbrook anemones",
   },
   {
+    file: "peony-glow.jpg",
+    alt: "Close-up of a luminous magenta peony with ruffled petals and a soft pink background",
+    caption: "Peony glow",
+  },
+  {
     file: "pink-dahlia.jpg",
     alt: "Close layers of vibrant pink dahlia petals",
     caption: "Pink dahlia",
@@ -51,62 +56,62 @@ window.PHOTO_GALLERY_FLORAL = [
   },
   {
     file: "gerbera-daisy.jpg",
-    alt: "Gerbera daisy in bloom",
+    alt: "Bright orange-red gerbera daisy with a dark center in soft garden light",
     caption: "Gerbera daisy",
   },
   {
     file: "ethereal-garden-1.jpg",
-    alt: "Soft ethereal garden floral study",
+    alt: "Meadow of pink-purple coneflowers and white wildflowers before a wrought-iron gate",
     caption: "Ethereal garden I",
   },
   {
     file: "daffodils.jpg",
-    alt: "Cluster of daffodils",
+    alt: "Cluster of yellow daffodils with trumpet centers in soft spring light",
     caption: "Daffodils",
   },
   {
     file: "orange-dahlia.jpg",
-    alt: "Orange dahlia bloom",
+    alt: "Fully open orange dahlia with tightly layered petals",
     caption: "Orange dahlia",
   },
   {
     file: "dark-pink-peony.jpg",
-    alt: "Dark pink peony bloom",
+    alt: "Deep pink peony bloom with dense ruffled petals",
     caption: "Dark pink peony",
   },
   {
     file: "dahlia.jpg",
-    alt: "Dahlia flower close-up",
+    alt: "Close-up of a multicolored dahlia with pointed petal tips",
     caption: "Dahlia",
   },
   {
     file: "pink-dahlia-2.jpg",
-    alt: "Pink dahlia petals",
+    alt: "Soft pink dahlia petals radiating from a yellow center",
     caption: "Pink dahlia II",
   },
   {
     file: "lilies.jpg",
-    alt: "Lilies in bloom",
+    alt: "Group of white and pink lilies in bloom among green foliage",
     caption: "Lilies",
   },
   {
     file: "pink-peony.jpg",
-    alt: "Pink peony bloom",
+    alt: "Open pink peony with layered petals and a soft green background",
     caption: "Pink peony",
   },
   {
     file: "daffodil.jpg",
-    alt: "Single daffodil",
+    alt: "Single yellow daffodil in sharp focus against a soft blurred background",
     caption: "Daffodil",
   },
   {
     file: "dark-pink-dahlia.jpg",
-    alt: "Dark pink dahlia bloom",
+    alt: "Dark magenta dahlia with dense, pointed petals",
     caption: "Dark pink dahlia",
   },
   {
     file: "gerbera-daisy-2.jpg",
-    alt: "Gerbera daisy study",
+    alt: "Close view of a gerbera daisy with vivid petals and a textured center",
     caption: "Gerbera daisy II",
   },
   {
@@ -116,57 +121,57 @@ window.PHOTO_GALLERY_FLORAL = [
   },
   {
     file: "orange-dahlia-2.jpg",
-    alt: "Orange dahlia study",
+    alt: "Orange dahlia bloom with layered petals in warm light",
     caption: "Orange dahlia II",
   },
   {
     file: "dahlia-petals.jpg",
-    alt: "Dahlia petal detail",
+    alt: "Macro detail of overlapping dahlia petals in soft pink and cream",
     caption: "Dahlia petals",
   },
   {
     file: "dark-pink-peony-2.jpg",
-    alt: "Dark pink peony study",
+    alt: "Dark pink peony in soft focus with lush petal folds",
     caption: "Dark pink peony II",
   },
   {
     file: "excitement.jpg",
-    alt: "Vibrant floral study",
+    alt: "Bright pink peony in full sun with tightly ruffled petals and soft green bokeh",
     caption: "Excitement",
   },
   {
     file: "pink-dahlia-3.jpg",
-    alt: "Pink dahlia bloom III",
+    alt: "Third pink dahlia study with radiating petals and a pale center",
     caption: "Pink dahlia III",
   },
   {
     file: "dark-pink-dahlia-2.jpg",
-    alt: "Dark pink dahlia study",
+    alt: "Second dark pink dahlia with rich magenta petals in close crop",
     caption: "Dark pink dahlia II",
   },
   {
     file: "collage.jpg",
-    alt: "Plains Coreopsis, also known as Calliopsis or Golden Tickseed",
+    alt: "Deep red Plains Coreopsis with yellow-tipped petals among purple buds in a green meadow",
     caption: "Plains Coreopsis — also known as Calliopsis or Golden Tickseed",
   },
   {
     file: "rose.jpg",
-    alt: "Rose bloom",
+    alt: "Macro of rose petals grading from soft pink edges to a deep red center",
     caption: "Rose",
   },
   {
     file: "ethereal-garden-3.jpg",
-    alt: "Soft ethereal garden floral study II",
+    alt: "Soft ethereal garden blooms in muted pinks and whites with dreamy blur",
     caption: "Ethereal garden II",
   },
   {
     file: "loire-valley.jpg",
-    alt: "Floral study from the Loire Valley",
+    alt: "White and pale pink daisy-like wildflowers with yellow centers in the Loire Valley",
     caption: "Loire Valley",
   },
   {
     file: "loire-valley-rose.jpg",
-    alt: "Rose photographed in the Loire Valley",
+    alt: "Soft pink rose photographed in the Loire Valley with gentle natural light",
     caption: "Loire Valley rose",
   },
   {
@@ -175,19 +180,14 @@ window.PHOTO_GALLERY_FLORAL = [
     caption: "Echinacea",
   },
   {
-    file: "cranbrook-with-tree-shadow-2.jpg",
-    alt: "Pink anemones catching dappled light and tree shadow at Cranbrook",
-    caption: "Dappled light",
-  },
-  {
     file: "american-pokeweed.jpg",
-    alt: "American pokeweed",
+    alt: "Vertical macro of dark magenta pokeweed florets with pale centers against an orange leaf",
     caption: "American pokeweed",
   },
   // Lower resolution than the rest (~1024px) — remove if it looks soft in lightbox:
   {
     file: "zinnia.jpg",
-    alt: "Zinnia bloom",
+    alt: "Creamy white zinnia with a bright yellow center against soft green foliage",
     caption: "Zinnia",
   },
 ];

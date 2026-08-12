@@ -17,27 +17,37 @@ window.PHOTO_GALLERY_LANDSCAPE = [
   {
     file: "bryce.jpg",
     alt: "Bryce Canyon hoodoos in warm orange and cream under a soft blue sky",
-    caption: "Bryce Canyon",
-  },
-  {
-    file: "zion.jpg",
-    alt: "River winding through a canyon toward a jagged mountain peak",
-    caption: "Zion",
-  },
-  {
-    file: "big_sur_1.jpg",
-    alt: "Ocean wave crashing against rocky cliffs along the Big Sur coast",
-    caption: "Big Sur",
+    caption: "Bryce Canyon National Park",
   },
   {
     file: "wagner_falls.jpg",
     alt: "Multi-tiered forest waterfall with long-exposure silky water",
-    caption: "Wagner Falls",
+    caption: "Wagner Falls, Michigan's Upper Peninsula",
+  },
+  {
+    file: "santa-monica-beach.jpg",
+    alt: "Waves at Santa Monica Beach against a rocky jetty under a cloudy sky with sun breaking through",
+    caption: "Santa Monica Beach coastal landscape",
+  },
+  {
+    file: "reflection-pool.jpg",
+    alt: "S-curved pool on sandstone overlooking a red rock canyon",
+    caption: "Reflection Pool - Canyon de Chelly",
+  },
+  {
+    file: "zion.jpg",
+    alt: "River winding through a canyon toward a jagged mountain peak",
+    caption: "Zion National Park, Utah",
+  },
+  {
+    file: "big_sur_1.jpg",
+    alt: "Ocean wave crashing against rocky cliffs along the Big Sur coast",
+    caption: "Big Sur, California Coast",
   },
   {
     file: "spider-rock.jpg",
     alt: "Sandstone spire rising from a desert canyon floor at golden hour",
-    caption: "Spider Rock",
+    caption: "Spider Rock, Canyon de Chelly",
   },
   {
     file: "arizona.jpg",
@@ -45,49 +55,39 @@ window.PHOTO_GALLERY_LANDSCAPE = [
     caption: "Arizona",
   },
   {
-    file: "reflection-pool.jpg",
-    alt: "S-curved pool on sandstone overlooking a red rock canyon",
-    caption: "Reflection pool",
-  },
-  {
     file: "taqhuamenon_falls.jpg",
     alt: "Amber tannin waterfall framed by evergreen branches",
-    caption: "Tahquamenon Falls",
+    caption: "Tahquamenon Falls, Michigan's Upper Peninsula",
   },
   {
     file: "mountain-ridges.jpg",
     alt: "Desert mountain ridges under a clear blue sky",
-    caption: "Mountain ridges",
+    caption: "Mountain ridges, Canyon de Chelly",
   },
   {
     file: "zion_2.jpg",
     alt: "Layered red and cream sandstone cliffs rising above green trees",
-    caption: "Zion cliffs",
-  },
-  {
-    file: "CRW_0121.jpg",
-    alt: "Wooden footbridge over a long-exposure stream in autumn forest",
-    caption: "Autumn bridge",
+    caption: "Zion National Park, Utah",
   },
   {
     file: "big_sur_2.jpg",
     alt: "Turquoise surf and orange-stained rocks along a rugged coastline",
-    caption: "Big Sur II",
+    caption: "Big Sur II, California Coast",
   },
   {
     file: "IMG_3522.jpg",
     alt: "Tahquamenon Falls framed by dense green forest",
-    caption: "Tahquamenon Falls II",
+    caption: "Tahquamenon Falls II, Michigan's Upper Peninsula",
   },
   {
-    file: "beach-CA.jpg",
-    alt: "California beach and coastal landscape",
-    caption: "California coast",
+    file: "horseshoe-falls.jpg",
+    alt: "Long-exposure Horseshoe Falls cascading over mossy rock ledges amid yellow autumn leaves in Michigan's Upper Peninsula",
+    caption: "Horseshoe Falls, Michigan's Upper Peninsula",
   },
   {
     file: "mountain-ridges-2.jpg",
     alt: "Layered mountain ridges in soft atmospheric light",
-    caption: "Mountain ridges II",
+    caption: "Mountain ridges II, Canyon de Chelly",
   },
   {
     file: "out-west.jpg",
@@ -102,7 +102,7 @@ window.PHOTO_GALLERY_LANDSCAPE = [
   {
     file: "mountain-ridges-3.jpg",
     alt: "Sunlit mountain ridges with deep canyon shadows",
-    caption: "Mountain ridges III",
+    caption: "Mountain ridges III, Canyon de Chelly",
   },
   {
     file: "stream-michigan.jpg",
@@ -111,7 +111,12 @@ window.PHOTO_GALLERY_LANDSCAPE = [
   },
   {
     file: "laguna.jpg",
-    alt: "Laguna Beach coastline",
-    caption: "Laguna Beach",
+    alt: "Long-exposure Laguna Beach rocks at sunset with misty water and an orange-streaked sky",
+    caption: "Laguna Beach, California",
+  },
+  {
+    file: "beach-CA.jpg",
+    alt: "California beach at sunset with wet sand reflecting orange light and a rock jetty",
+    caption: "California coast",
   },
 ];
