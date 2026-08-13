@@ -291,6 +291,7 @@
   border-radius: 0.85rem;
   overflow: hidden;
   cursor: zoom-in;
+  position: relative;
   -webkit-tap-highlight-color: transparent;
   background: rgba(255, 255, 255, 0.04);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
@@ -312,7 +313,7 @@
 .photo-masonry-caption {
   margin: 0.55rem 0.15rem 0;
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.02em;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.48);
@@ -354,6 +355,7 @@
   justify-content: center;
   min-height: 0;
   flex: 1 1 auto;
+  position: relative;
 }
 
 .photo-lightbox-stage img {
@@ -613,7 +615,7 @@ html[data-theme="light"] .photo-gallery-empty p {
   }
 
   .photo-masonry-caption {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .photo-hub-card-title {
@@ -624,4 +626,23 @@ html[data-theme="light"] .photo-gallery-empty p {
   .photo-hub-card-placeholder span {
     font-size: 20px;
   }
+}
+
+/* Deter save / open-image-in-new-tab (not a true copy-protection lock) */
+html[data-photo-protect] .photo-hub-card-media img,
+html[data-photo-protect] .photo-masonry-trigger img,
+html[data-photo-protect] .photo-lightbox-stage img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
+}
+
+html[data-photo-protect] .photo-hub-card-media::after,
+html[data-photo-protect] .photo-masonry-trigger::after,
+html[data-photo-protect] .photo-lightbox-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }

@@ -4,13 +4,14 @@
  */
 (function () {
   const AUTH_ENABLED = true;
-  const EXPECTED_PASSWORD = "findability-first-99";
+  const EXPECTED_PASSWORD = "findability-26";
 
   const form = document.getElementById("hc-access-form");
   if (!form) return;
 
   const caseUrl = form.getAttribute("data-case-url") || "../";
   const passwordInput = document.getElementById("hc-access-password");
+  const revealBtn = document.getElementById("hc-access-reveal");
   const errorEl = document.getElementById("hc-access-error");
 
   function showError(message) {
@@ -49,4 +50,13 @@
 
     goToCaseStudy();
   });
+
+  if (revealBtn && passwordInput) {
+    revealBtn.addEventListener("click", function () {
+      const showing = passwordInput.type === "text";
+      passwordInput.type = showing ? "password" : "text";
+      revealBtn.setAttribute("aria-pressed", showing ? "false" : "true");
+      revealBtn.textContent = showing ? "Show" : "Hide";
+    });
+  }
 })();

@@ -42,6 +42,7 @@
               <img
                 src="${esc(src)}"
                 alt="${esc(photo.alt || "")}"
+                draggable="false"
                 loading="${i < 4 ? "eager" : "lazy"}"
                 decoding="async"
                 sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
@@ -79,7 +80,7 @@
           <span aria-hidden="true">&#8250;</span>
         </button>
         <div class="photo-lightbox-stage">
-          <img id="photo-lightbox-image" alt="">
+          <img id="photo-lightbox-image" alt="" draggable="false">
         </div>
         <div class="photo-lightbox-meta">
           <p id="photo-lightbox-caption" class="photo-lightbox-caption"></p>

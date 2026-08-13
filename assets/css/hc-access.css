@@ -138,9 +138,13 @@
   color: rgba(255, 255, 255, 0.88);
 }
 
+.hc-access-input-wrap {
+  position: relative;
+}
+
 .hc-access-input {
   width: 100%;
-  padding: 0.95rem 1.05rem;
+  padding: 0.95rem 5.1rem 0.95rem 1.05rem;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 0.85rem;
   background: rgba(255, 255, 255, 0.04);
@@ -164,6 +168,31 @@
   border-color: rgba(95, 211, 224, 0.65);
   background: rgba(255, 255, 255, 0.06);
   box-shadow: 0 0 0 3px rgba(95, 211, 224, 0.15);
+}
+
+.hc-access-reveal {
+  position: absolute;
+  top: 50%;
+  right: 0.55rem;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0.35rem 0.7rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.62);
+  cursor: pointer;
+}
+
+.hc-access-reveal:hover,
+.hc-access-reveal:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
 }
 
 .hc-access-hint {
@@ -305,6 +334,16 @@ html[data-theme="light"] .hc-access-input:focus {
   box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.14);
 }
 
+html[data-theme="light"] .hc-access-reveal {
+  color: rgba(15, 23, 42, 0.55);
+}
+
+html[data-theme="light"] .hc-access-reveal:hover,
+html[data-theme="light"] .hc-access-reveal:focus-visible {
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.06);
+}
+
 html[data-theme="light"] .hc-access-hint,
 html[data-theme="light"] .hc-access-footnote {
   color: rgba(15, 23, 42, 0.48);
@@ -344,6 +383,10 @@ html[data-theme="light"] .hc-access-error {
 
   .hc-access-label {
     font-size: 1.2rem;
+  }
+
+  .hc-access-reveal {
+    font-size: 1.05rem;
   }
 
   .hc-access-error {

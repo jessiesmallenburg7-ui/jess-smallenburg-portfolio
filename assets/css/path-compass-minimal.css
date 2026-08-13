@@ -295,7 +295,8 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .hmw .q{font-size:26px; line-height:1.35}}
 .pc-case .rail{position:relative; padding-left:2px}
 .pc-case .rail::before{content:""; position:absolute; left:23px; top:8px; bottom:8px; width:2px; background:var(--line)}
-.pc-case .rstep{display:grid; grid-template-columns:48px 1fr; gap:20px; padding:20px 0}
+.pc-case .rstep{display:grid; grid-template-columns:48px minmax(0,1fr); gap:20px; padding:20px 0; width:100%}
+.pc-case .rstep > div:last-child{min-width:0; width:100%}
 .pc-case .rstep .dot{
   width:48px; height:48px; border-radius:50%; background:#fff; border:2px solid var(--violet);
   color:var(--violet); font-weight:700; font-size:16px; display:grid; place-items:center; z-index:1;
@@ -305,7 +306,7 @@ html[data-theme="light"] .case-version-banner-text {
 .pc-case .rstep:nth-child(4) .dot{border-color:var(--rose); color:var(--rose)}
 .pc-case .rstep:nth-child(5) .dot{border-color:var(--gold-line); color:var(--gold)}
 .pc-case .rstep .t{font-size:var(--site-text-body); font-weight:670; margin-bottom:4px}
-.pc-case .rstep .d{font-size:var(--site-text-body); color:var(--ink-2); max-width:60ch}
+.pc-case .rstep .d{font-size:var(--site-text-body); color:var(--ink-2); max-width:none; width:100%}
 .pc-case .zoom{cursor:zoom-in; position:relative; text-align:left; font:inherit; color:inherit; border:0; padding:0; background:none; width:100%}
 .pc-case .zoom::after{
   content:"⤢"; position:absolute; top:10px; right:10px; width:26px; height:26px;
