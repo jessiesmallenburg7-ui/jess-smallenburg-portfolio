@@ -1,12 +1,9 @@
-import type { Config, Context } from "@netlify/edge-functions";
-
-export default async (request: Request, context: Context) => {
-  const password = Netlify.env.get("CASE_STUDY_PASSWORD");
+export default async (request, context) => {
   const url = new URL(request.url);
 
-  // Only protect the main case study page, not the /access/ page itself
+  // Let the access page through
   if (url.pathname.includes("/access")) {
-    return; // let the access page through
+    return;
   }
 
   // Check for the auth cookie
@@ -19,6 +16,6 @@ export default async (request: Request, context: Context) => {
   return Response.redirect(new URL("./access/", url).toString(), 302);
 };
 
-export const config: Config = {
+export const config = {
   path: "/projects/healthcare-consulting/*",
 };
