@@ -812,9 +812,11 @@ html[data-theme="light"] .case-version-banner-text {
 }
 
 .hc-lb-body.img .hc-lb-stage {
-  display: block;
-  width: max-content;
-  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 100%;
   margin: 0 auto;
 }
 
@@ -822,7 +824,14 @@ html[data-theme="light"] .case-version-banner-text {
   display: block;
   width: auto;
   height: auto;
-  max-width: none;
+  max-width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hc-lb-body.img img.is-fitted {
+  opacity: 1;
+  pointer-events: auto;
   transition: width 0.12s ease;
 }
 

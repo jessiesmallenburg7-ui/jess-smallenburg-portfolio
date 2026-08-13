@@ -29,6 +29,7 @@
     img.style.maxWidth = 'none';
     img.style.height = 'auto';
     img.style.transform = '';
+    img.classList.add('is-fitted');
 
     requestAnimationFrame(function () {
       body.scrollLeft = Math.max(
@@ -48,8 +49,14 @@
   }
 
   function initImage(img) {
-    var maxW = Math.max(200, body.clientWidth - 32);
-    var maxH = Math.max(200, body.clientHeight - 32);
+    var maxW = body.clientWidth - 32;
+    var maxH = body.clientHeight - 32;
+    if (maxW < 200 || maxH < 200) {
+      requestAnimationFrame(function () {
+        initImage(img);
+      });
+      return;
+    }
     var nw = img.naturalWidth || 1200;
     var nh = img.naturalHeight || 900;
     fitWidth = Math.min(nw, maxW, nw * (maxH / nh));
@@ -90,14 +97,21 @@
         ((thumb && thumb.alt) || '') +
         '"></div>';
       var img = getImg();
-      if (img.complete && img.naturalWidth) {
+      img.classList.remove('is-fitted');
+      open();
+      function fitWhenReady() {
+        if (!img.naturalWidth) return;
         initImage(img);
+      }
+      if (img.complete && img.naturalWidth) {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(fitWhenReady);
+        });
       } else {
         img.addEventListener('load', function () {
-          initImage(img);
+          requestAnimationFrame(fitWhenReady);
         });
       }
-      open();
     });
   });
 
