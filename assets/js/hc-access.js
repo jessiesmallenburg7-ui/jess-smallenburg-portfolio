@@ -1,11 +1,9 @@
 /**
  * Healthcare consulting access gate.
- * Client-side password check for invited reviewers (sessionStorage unlock).
+ * Submits the password to a Netlify Function.
+ * If no password is configured (local testing), it lets the user through.
  */
 (function () {
-  const AUTH_ENABLED = true;
-  const EXPECTED_PASSWORD = "findability-26";
-
   const form = document.getElementById("hc-access-form");
   if (!form) return;
 
@@ -23,34 +21,51 @@
   function goToCaseStudy() {
     try {
       sessionStorage.setItem("hc-case-access", "granted");
-    } catch (_) {
-      /* ignore */
-    }
+    } catch (_) {}
     window.location.href = caseUrl;
   }
 
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function (event) {
     event.preventDefault();
     showError("");
 
-    if (!AUTH_ENABLED) {
-      goToCaseStudy();
-      return;
-    }
-
     const entered = ((passwordInput && passwordInput.value) || "").trim();
-    if (!EXPECTED_PASSWORD || entered !== EXPECTED_PASSWORD) {
-      showError("That password is incorrect. Please try again or request access.");
-      if (passwordInput) {
-        passwordInput.focus();
-        passwordInput.select();
-      }
-      return;
-    }
 
-    goToCaseStudy();
+    // If the user left the field empty, try the unlock endpoint anyway
+    // (the function will allow access if no password is set in the env var)
+    try {
+      const res = await fetch("/.netlify/functions/hc-login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: entered }),
+      });
+
+      if (res.ok) {
+        goToCaseStudy();
+      } else {
+        // Fallback for pure local testing (no Netlify Functions running)
+        // If the fetch fails completely (e.g. file:// or simple local server),
+        // just let the user through.
+        if (res.status === 0 || res.type === "opaque") {
+          goToCaseStudy();
+          return;
+        }
+
+        showError("That password is incorrect. Please try again or request access.");
+        if (passwordInput) {
+          passwordInput.focus();
+          passwordInput.select();
+        }
+      }
+    } catch (err) {
+      // Network error = almost certainly local testing without Netlify Dev
+      // → allow access so you can keep working
+      console.warn("Login function not available (local testing). Allowing access.");
+      goToCaseStudy();
+    }
   });
 
+  // Show / Hide password button
   if (revealBtn && passwordInput) {
     revealBtn.addEventListener("click", function () {
       const showing = passwordInput.type === "text";
