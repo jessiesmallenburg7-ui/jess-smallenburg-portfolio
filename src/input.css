@@ -1,3 +1,36 @@
+/* Local fallbacks for the Placeholder families already in the Tailwind
+   font stack. Without these, font-weight 600 matches Times/Arial Bold
+   while Google Fonts load — the homepage statement flashes extra-heavy. */
+@font-face {
+  font-family: "Cormorant Placeholder";
+  src: local("Times New Roman"), local("Times"), local("Georgia");
+  font-weight: 100 600;
+  font-style: normal;
+  size-adjust: 112%;
+}
+
+@font-face {
+  font-family: "Cormorant Placeholder";
+  src: local("Times New Roman Italic"), local("Times Italic"), local("Georgia Italic");
+  font-weight: 100 600;
+  font-style: italic;
+  size-adjust: 112%;
+}
+
+@font-face {
+  font-family: "Lato Placeholder";
+  src: local("Arial"), local("Helvetica Neue"), local("Helvetica");
+  font-weight: 100 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Placeholder";
+  src: local("Arial Bold"), local("Helvetica Neue Bold"), local("Helvetica Bold");
+  font-weight: 600 900;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -108,6 +141,7 @@
   /* Hero statement (Cormorant, slightly smaller than display) */
   .h-statement {
     @apply font-serif font-semibold leading-[1.12em] text-white;
+    font-synthesis: none;
   }
 
   /* Lead paragraph */
