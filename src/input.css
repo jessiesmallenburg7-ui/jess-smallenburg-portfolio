@@ -1,20 +1,45 @@
-/* Local fallbacks for the Placeholder families already in the Tailwind
-   font stack. Without these, font-weight 600 matches Times/Arial Bold
-   while Google Fonts load — the homepage statement flashes extra-heavy. */
+/* Pin Regular system faces (PostScript names) so 500/600 cannot
+   match Times Bold. Palatino/Garamond sit closer to Cormorant. */
 @font-face {
   font-family: "Cormorant Placeholder";
-  src: local("Times New Roman"), local("Times"), local("Georgia");
-  font-weight: 100 600;
+  src: local("PalatinoLinotype-Roman"), local("Palatino Linotype"), local("Georgia"), local("TimesNewRomanPSMT");
+  font-weight: 400;
   font-style: normal;
-  size-adjust: 112%;
 }
 
 @font-face {
   font-family: "Cormorant Placeholder";
-  src: local("Times New Roman Italic"), local("Times Italic"), local("Georgia Italic");
-  font-weight: 100 600;
+  src: local("PalatinoLinotype-Roman"), local("Palatino Linotype"), local("Georgia"), local("TimesNewRomanPSMT");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant Placeholder";
+  src: local("PalatinoLinotype-Roman"), local("Palatino Linotype"), local("Georgia"), local("TimesNewRomanPSMT");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant Placeholder";
+  src: local("PalatinoLinotype-Italic"), local("Palatino Linotype Italic"), local("Georgia Italic"), local("TimesNewRomanPS-ItalicMT");
+  font-weight: 400;
   font-style: italic;
-  size-adjust: 112%;
+}
+
+@font-face {
+  font-family: "Cormorant Placeholder";
+  src: local("PalatinoLinotype-Italic"), local("Palatino Linotype Italic"), local("Georgia Italic"), local("TimesNewRomanPS-ItalicMT");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cormorant Placeholder";
+  src: local("PalatinoLinotype-Italic"), local("Palatino Linotype Italic"), local("Georgia Italic"), local("TimesNewRomanPS-ItalicMT");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
@@ -138,9 +163,10 @@
     @apply font-serif font-semibold leading-[1.1em] tracking-[-0.01em] text-white;
   }
 
-  /* Hero statement (Cormorant, slightly smaller than display) */
+  /* Hero statement (Cormorant). Medium (500) so the system fallback
+     matches Regular, not Bold, while the webfont loads. */
   .h-statement {
-    @apply font-serif font-semibold leading-[1.12em] text-white;
+    @apply font-serif font-medium leading-[1.12em] text-white;
     font-synthesis: none;
   }
 
