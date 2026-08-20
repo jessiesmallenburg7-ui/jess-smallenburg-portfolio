@@ -2087,9 +2087,12 @@ html[data-theme="light"] .diagram-hint-mobile {
 html[data-theme="light"] .process-step .prose-body,
 html[data-theme="light"] .interview-theme p,
 html[data-theme="light"] .insight-bridge p,
-html[data-theme="light"] .evidence-ref-body,
-html[data-theme="light"] .resume-section .prose-body {
+html[data-theme="light"] .evidence-ref-body {
   color: rgba(71, 85, 105, 0.88);
+}
+
+html[data-theme="light"] .resume-section .prose-body {
+  color: #111;
 }
 
 html[data-theme="light"] .insight-bridge-kicker {
