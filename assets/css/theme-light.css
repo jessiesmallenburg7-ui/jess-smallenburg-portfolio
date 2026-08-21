@@ -261,16 +261,18 @@ html[data-theme="light"] .lead {
 }
 
 html[data-theme="light"] .prose-body {
-  color: rgb(71 85 105 / 0.92);
+  color: #111;
 }
 
-html[data-theme="light"] .work-card-outcome,
-html[data-theme="light"] .skill-card-body,
-html[data-theme="light"] .approach-body,
 html[data-theme="light"] .testimonial-attr,
-html[data-theme="light"] .metrics-label,
 html[data-theme="light"] .case-meta {
   color: rgb(71 85 105 / 0.82);
+}
+
+html[data-theme="light"] .approach-body,
+html[data-theme="light"] .work-card-outcome,
+html[data-theme="light"] .skill-card-body {
+  color: #111;
 }
 
 /* ---------- Nav ---------- */
@@ -1981,7 +1983,7 @@ html[data-theme="light"] .case-nav-link {
 }
 
 html[data-theme="light"] .metrics-label {
-  color: rgba(71, 85, 105, 0.78);
+  color: #111;
 }
 
 html[data-theme="light"] .tt-process-phase-body,
