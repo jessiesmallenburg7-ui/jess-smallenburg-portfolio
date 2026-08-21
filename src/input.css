@@ -1189,7 +1189,7 @@
 
   /* Nested card (certifications etc.) */
   .nested-card {
-    @apply flex min-w-0 items-start gap-4 rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4;
+    @apply flex min-w-0 items-center gap-4 rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4;
   }
 
   /* Footer */
@@ -2613,6 +2613,11 @@
   .prose-body {
     font-size: var(--site-text-body) !important;
     line-height: 1.7;
+  }
+
+  .resume-nested-title {
+    font-size: 28px !important;
+    line-height: 1.2;
   }
 
   .lead {
