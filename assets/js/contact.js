@@ -6,7 +6,7 @@
   var statusEl = document.getElementById("contact-form-status");
   var emailInput = document.getElementById("contact-email");
   var replyTo = form.querySelector('input[name="_replyto"]');
-  var endpoint = "https://formsubmit.co/ajax/jess@jessamynsmallenburg.com";
+  var endpoint = "https://formsubmit.co/ajax/1dc9cda0f18c57a7115cf960813163b0";
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -18,6 +18,13 @@
     }
 
     var data = new FormData(form);
+
+    if ((data.get("_honey") || "").trim() !== "") {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Message sent!";
+      form.reset();
+      return;
+    }
 
     // Immediate feedback — don't wait for the network response
     submitBtn.disabled = true;
@@ -35,7 +42,7 @@
     }).catch(function () {
       if (statusEl) {
         statusEl.textContent =
-          "If you don't hear back, please email jess@jessamynsmallenburg.com directly.";
+          "If you don't hear back, please message me on LinkedIn.";
         statusEl.classList.remove("hidden");
       }
     });

@@ -15,7 +15,7 @@ heavy animations — just fast, editable static pages.
 | `/projects`    | `projects/index.html` | Selected work (in-progress case studies)        |
 | `/resume`      | `resume/index.html`| Full résumé                                        |
 | `/about`       | `about/index.html` | Bio, credentials, testimonials, LinkedIn CTA       |
-| `/contact`     | `contact/index.html` | Contact form (Formspree-ready)                   |
+| `/contact`     | `contact/index.html` | Contact form (FormSubmit)                        |
 
 ---
 
@@ -119,18 +119,9 @@ only used for minor type scaling.
 
 ## Contact form setup
 
-The contact form (`contact/index.html`) posts to [Formspree](https://formspree.io) so
-it works on static hosting with no backend.
-
-1. Create a free form at https://formspree.io — you'll get an endpoint like
-   `https://formspree.io/f/abcdwxyz`.
-2. Open `contact/index.html` and replace the `action` value:
-   ```html
-   <form action="https://formspree.io/f/your-form-id" method="POST">
-   ```
-3. Rebuild is not needed (HTML change only).
-
-Submissions are emailed to the address you configure in Formspree.
+The contact form (`contact/index.html`) posts to [FormSubmit](https://formsubmit.co)
+using a random form id, so the inbox address is not in the HTML or client-side
+JavaScript. Rebuild is not needed (HTML/JS change only).
 
 ---
 
